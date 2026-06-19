@@ -9,6 +9,7 @@
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/components.css">
 </head>
 <body class="newspaper">
   <header class="site-header">
@@ -75,10 +76,10 @@
   <h2>Diagrama (equipar → turno)</h2>
   <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="Equipamiento a turno tablero">
-    <rect class="diagram-box" x="10" y="20" width="200" height="160"/>
+    <rect class="diagram-box" fill="none" stroke="currentColor" stroke-width="1" x="10" y="20" width="200" height="160"/>
     <text class="diagram-label" x="110" y="45" text-anchor="middle">Equipamiento</text>
     <text class="diagram-sublabel" x="110" y="70" text-anchor="middle">skill → perfil → boot</text>
-    <rect class="diagram-box" x="250" y="20" width="460" height="160"/>
+    <rect class="diagram-box" fill="none" stroke="currentColor" stroke-width="1" x="250" y="20" width="460" height="160"/>
     <text class="diagram-label" x="480" y="45" text-anchor="middle">Turno</text>
     <text class="diagram-sublabel" x="300" y="75">ASENTAMIENTO</text>
     <text class="diagram-sublabel" x="400" y="75">Cotas</text>

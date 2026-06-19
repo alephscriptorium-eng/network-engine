@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import shutil
 from pathlib import Path
 
@@ -93,7 +94,7 @@ def _copiar_shared(dest: Path) -> None:
             shutil.copy2(item, assets_dir / item.name)
 
 
-def _leer_asentamiento() -> str:
+def _cuerpo_asentamiento() -> str:
     path = (
         PROJECT_ROOT
         / "logs-skill/sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md"
@@ -106,6 +107,26 @@ def _leer_asentamiento() -> str:
         if end != -1:
             return text[end + 3 :].strip()
     return text.strip()
+
+
+def _leer_asentamiento_filas() -> list[tuple[str, str]]:
+    """Parsea bloque ASENTAMIENTO (markdown **clave:** valor) en filas etiqueta/valor."""
+    text = _cuerpo_asentamiento()
+    if not text:
+        return []
+    rows: list[tuple[str, str]] = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        for segment in line.split("|"):
+            segment = segment.strip()
+            match = re.match(r"\*\*(.+?):\*\*\s*(.+)", segment)
+            if match:
+                rows.append((match.group(1).strip(), match.group(2).strip()))
+            elif segment:
+                rows.append(("", segment))
+    return rows
 
 
 def build_prensa() -> None:
@@ -135,7 +156,7 @@ def build_prensa() -> None:
         **ctx_root,
         **_href_context("../", "prensa"),
         "loadout_id": "default-tablero",
-        "asentamiento": _leer_asentamiento(),
+        "asentamiento_filas": _leer_asentamiento_filas(),
     }
     (equipamiento_dir / "index.html").write_text(
         env.get_template("equipamiento/index.html").render(**ctx_eq),

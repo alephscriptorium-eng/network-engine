@@ -78,17 +78,70 @@
 }
 
 /* —— Asentamiento —— */
+.asentamiento-dl {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 8.5rem) 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  background: var(--surface-2);
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.asentamiento-dl dt {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.asentamiento-dl dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.asentamiento-dl .asentamiento-line {
+  grid-column: 1 / -1;
+}
+
 .asentamiento {
   font-family: var(--font, ui-monospace, "Cascadia Code", monospace);
   font-size: 0.82rem;
   line-height: 1.45;
   white-space: pre-wrap;
   word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+  min-width: 0;
   background: var(--surface-2);
   border: 1px solid var(--border);
   padding: 0.85rem 1rem;
   margin: 0.75rem 0 1rem;
   overflow-x: auto;
+}
+
+/* —— Secciones de contenido (prensa, fuera del grid .cards) —— */
+.content-section {
+  margin: 1.5rem 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+
+.content-section:first-of-type {
+  border-top: 2px solid var(--border);
+  margin-top: 1.25rem;
+}
+
+.content-section h2 {
+  margin-top: 0;
 }
 
 /* —— Loadout grid —— */
@@ -155,6 +208,8 @@
 .diagram-wrap {
   margin: 0.75rem 0 1rem;
   color: var(--text);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .diagram-wrap svg {
@@ -227,6 +282,13 @@
     grid-template-columns: 1fr;
     gap: 0.15rem;
   }
+
+  .asentamiento-dl {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .asentamiento-dl dt { margin-top: 0.35rem; }
 
   .ficha-dl dt { margin-top: 0.35rem; }
 }

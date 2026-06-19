@@ -9,6 +9,7 @@
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
   <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/components.css">
 </head>
 <body class="newspaper">
   <header class="site-header">
@@ -61,15 +62,15 @@
 
 <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" role="img" aria-label="Flujo antes, equipar, después">
-    <rect class="diagram-box" x="10" y="20" width="180" height="80" rx="0"/>
+    <rect class="diagram-box" fill="none" stroke="currentColor" stroke-width="1" x="10" y="20" width="180" height="80" rx="0"/>
     <text class="diagram-label" x="100" y="48" text-anchor="middle">Antes</text>
     <text class="diagram-sublabel" x="100" y="68" text-anchor="middle">bot crudo</text>
     <line class="diagram-arrow" x1="195" y1="60" x2="235" y2="60" marker-end="url(#arrowhead)"/>
-    <rect class="diagram-box" x="240" y="20" width="240" height="80" rx="0"/>
+    <rect class="diagram-box" fill="none" stroke="currentColor" stroke-width="1" x="240" y="20" width="240" height="80" rx="0"/>
     <text class="diagram-label" x="360" y="48" text-anchor="middle">Equipar</text>
     <text class="diagram-sublabel" x="360" y="68" text-anchor="middle">skill · perfil · forces</text>
     <line class="diagram-arrow" x1="485" y1="60" x2="525" y2="60" marker-end="url(#arrowhead)"/>
-    <rect class="diagram-box" x="530" y="20" width="180" height="80" rx="0"/>
+    <rect class="diagram-box" fill="none" stroke="currentColor" stroke-width="1" x="530" y="20" width="180" height="80" rx="0"/>
     <text class="diagram-label" x="620" y="48" text-anchor="middle">Después</text>
     <text class="diagram-sublabel" x="620" y="68" text-anchor="middle">ASENTAMIENTO</text>
     <defs>
@@ -80,13 +81,13 @@
   </svg>
 </div>
 
-<section class="card">
+<section class="content-section">
   <h2>Antes — bot crudo</h2>
   <p>Referencia: <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-aleph/sesion-01-halley-aleph/02-critica-bot-demo-liberal/output.md" class="ext">logs-aleph s01-02 — crítica bot demo liberal</a></p>
   <p>Patrón enciclopédico, cierre lineal, sin AutoRevisor.</p>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Equipar — loadout <code>default-tablero</code></h2>
   <div class="loadout-grid">
     <div class="loadout-cell"><strong>Skill</strong><br><code>agents/skills/modo-aleph</code></div>
@@ -97,16 +98,40 @@
   <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/data/loadouts/default-tablero.json" class="ext">Ver loadout en GitHub</a>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Después — ASENTAMIENTO</h2>
-  <pre class="asentamiento">**Modo:** tablero | **Polo tentado:** popperiano-liberal (inglés, tech, falsación como metro)  
-**Sesgos:** sobre-entrenamiento anglosajón; tendencia a patologizar URSS y pluralizar Occidente sin simetría  
-**Semilla:** diamat, ciclo vital, ¿hay ciencia universal sin envejecer?  
-**AutoRevisor:** activo — corrijo el fallo de la respuesta previa</pre>
+  <dl class="asentamiento-dl">
+    
+    
+    <dt>Modo</dt>
+    <dd>tablero</dd>
+    
+    
+    
+    <dt>Polo tentado</dt>
+    <dd>popperiano-liberal (inglés, tech, falsación como metro)</dd>
+    
+    
+    
+    <dt>Sesgos</dt>
+    <dd>sobre-entrenamiento anglosajón; tendencia a patologizar URSS y pluralizar Occidente sin simetría</dd>
+    
+    
+    
+    <dt>Semilla</dt>
+    <dd>diamat, ciclo vital, ¿hay ciencia universal sin envejecer?</dd>
+    
+    
+    
+    <dt>AutoRevisor</dt>
+    <dd>activo — corrijo el fallo de la respuesta previa</dd>
+    
+    
+  </dl>
   <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md" class="ext">Fuente canon</a>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Features del traje</h2>
   <ul>
     <li>Tablero — superposición sin colapsar</li>

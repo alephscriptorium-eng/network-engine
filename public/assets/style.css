@@ -43,6 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.25rem 0;
 }
 
 a:link { color: var(--link); }
@@ -92,13 +93,14 @@ h1 {
 
 .lead {
   color: var(--muted);
-  margin: 1.25rem 0 2rem;
+  margin: 1.25rem 0 2.25rem;
   font-family: system-ui, sans-serif;
 }
 
 .portals {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .portal {
@@ -191,6 +193,7 @@ footer {
 .site-footer {
   border-top: 1px solid var(--border);
   padding-top: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .provenance-footer-chain,
@@ -199,10 +202,15 @@ footer {
   font-size: 0.78rem;
   color: var(--muted);
   line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem 0.45rem;
 }
 
 .provenance-footer-meta {
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
   font-size: 0.72rem;
 }
 
@@ -216,6 +224,6 @@ footer {
 }
 
 .provenance-sep {
-  margin: 0 0.3em;
+  margin: 0 0.1em;
   opacity: 0.55;
 }

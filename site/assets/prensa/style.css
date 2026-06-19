@@ -67,6 +67,11 @@ a:hover { color: var(--link-hover); }
   max-width: 720px;
   margin: 0 auto;
   padding: 0 1.25rem;
+  min-width: 0;
+}
+
+main.wrap {
+  overflow-wrap: break-word;
 }
 
 /* —— Cabecera tipo periódico —— */
@@ -128,6 +133,13 @@ a:hover { color: var(--link-hover); }
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
 }
 
 .site-header nav a {
@@ -686,6 +698,11 @@ h3 {
   letter-spacing: 0.08em;
   color: var(--muted);
   line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem 0.45rem;
 }
 
 .provenance-chain a,
@@ -709,7 +726,7 @@ h3 {
 }
 
 .provenance-footer-meta {
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
   font-size: 0.68rem;
 }
 
