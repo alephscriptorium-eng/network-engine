@@ -29,22 +29,22 @@ def test_catalog_sync_produces_valid_json(tmp_path, monkeypatch):
 
 
 def test_loadout_validate_default_tablero():
-  loadout = cargar_loadout("default-tablero")
-  errors = validar_loadout(loadout)
-  assert errors == [], errors
+    loadout = cargar_loadout("default-tablero")
+    errors = validar_loadout(loadout)
+    assert errors == [], errors
 
 
 def test_build_all_smoke():
-  run_build(target="all")
-  assert (PUBLIC_DIR / "index.html").exists()
-  assert (PUBLIC_FOSS / "index.html").exists()
-  assert (PUBLIC_PRENSA / "index.html").exists()
-  assert (PUBLIC_PRENSA / "engines" / "index.html").exists()
-  assert (PUBLIC_PRENSA / "tablero" / "index.html").exists()
+    run_build(target="all")
+    assert (PUBLIC_DIR / "index.html").exists()
+    assert (PUBLIC_FOSS / "index.html").exists()
+    assert (PUBLIC_PRENSA / "index.html").exists()
+    assert (PUBLIC_PRENSA / "engines" / "index.html").exists()
+    assert (PUBLIC_PRENSA / "tablero" / "index.html").exists()
 
 
 def test_cargar_catalog_uses_file():
-  if not CATALOG_PATH.exists():
-    sincronizar_catalog()
-  cat = cargar_catalog()
-  assert isinstance(cat["engines"], list)
+    if not CATALOG_PATH.exists():
+        sincronizar_catalog()
+    cat = cargar_catalog()
+    assert isinstance(cat["engines"], list)
