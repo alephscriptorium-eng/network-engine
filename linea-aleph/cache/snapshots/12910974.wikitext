@@ -1,0 +1,790 @@
+{{discutido}}
+[[Imagen:Phrenologychart.png|thumb|right|250px]]
+'''Pseudociencia''' (del [[idioma griego|griego]] ''pseudo'' -falso- y del [[idioma latín|latín]] ''scientia'', -conocimiento-, resultando ''pseudoscientia'' -falsa ciencia-) es un término que da cuenta de un conjunto de supuestos conocimientos, metodologías, prácticas o creencias no [[ciencia|científicas]] pero que reclaman dicho carácter. {{Añadir referencias}}Este concepto es utilizado por los enfoques epistemológicos preocupados por el [[criterio de demarcación]] de la ciencia y tiene mayor consenso entre las [[ciencias formales|ciencias exactas]] y [[ciencias naturales|naturales]]. {{Añadir referencias}}
+
+El criterio de demarcación trata de definir los límites que configuran el concepto "ciencia", intentando delimitar entre lo que es conocimiento científico y no científico, entre ciencia y pseudociencia, y entre ciencia y religión. Sin embargo, tras más de un siglo de diálogo entre [[filosofía de la ciencia|filósofos de la ciencia]] y científicos en diversos campos, los límites que demarcan lo que es ciencia, y lo que no lo es, continúan siendo profundamente debatidos, sin existir en la actualidad ningún consenso al respecto. <ref>Cover, J.A., Curd, Martin. W. W. Norton & Company, 1998. ''Philosophy of Science: The Central Issues'', 1-82. ISBN 0393971759</ref> Para [[Imre Lakatos]], el [[falsacionismo]] propuesto por [[Karl Popper]] no es la solución para resolver el criterio de demarcación entre ciencia y pseudociencia. <ref name="lakatos">[[Imre Lakatos]], en ''Philosophy in the Open and in The Methodology of Scientific Research Programmes: Philosophical Papers Volume 1''. [http://www.lse.ac.uk/collections/lakatos/scienceAndPseudoscienceTranscript.htm Science and Pseudoscience. (transcript)]</ref>
+
+Según [[Mario Bunge]] la pseudociencia queda definida de la siguiente manera: 
+{{Cita|Una pseudociencia es un montón de macanas <ref>Término coloquial en [[Argentina]], nacionalidad de Mario Bunge, para ''mentira, desatino''.</ref> que se vende como ciencia. Ejemplos: alquimia, astrología, caracteriología, comunismo científico, creacionismo científico, grafología, ufología, parapsicología, psicoanálisis <ref>[http://www.arp-sapc.org/docentes/bungeprinc.html Qué son las pseudociencias], Mario Bunge.</ref>y la [[Teoría de cuerdas]].<ref>[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref>|Mario Bunge.}} 
+
+Esta definición, además de limitarse a ser una simple enumeración arbitraria de algunas disciplinas y sin aportar ninguna justificación objetiva, sin embargo no está consensuada por otros [[Filosofía de la ciencia|filósofos de la ciencia]], <ref>[[Imre Lakatos]]. Howson, Colin, Ed. ''Method and Appraisal in the Physical Sciences: The Critical Background to Modern Science 1800-1905'' Cambridge University Press 1976  ISBN 0521211107</ref><ref>[[Thomas Kuhn]]. ''La estructura de las revoluciones científicas''. Fondo de Cultura Económica, 1995. ISBN 9681604431</ref><ref>Bas C. van Fraassen. ''Laws and symmetry''. Oxford University Press, 1990. ISBN 0198248601</ref><ref>Larry Laudan. ''Science and Relativism: Some Key Controversies in the Philosophy of Science''. University Of Chicago Press, 1990. ISBN 0226469492</ref><ref>{{ref-libro
+| autor = [[Paul Feyerabend|Feyerabend, Paul]]
+| título = Contra el Método
+| año = 2003
+| publicación = Barcelona. Ediciones Folio, S.A. 
+| id = ISBN 8441318603
+ }}</ref> un controvertido intento de definición que se demuestra en las recientes declaraciones de Mario Bunge, quien en su faceta de [[física|físico]] también ha calificado a una teoría supuestamente científica como la teoría de cuerdas como sospechosa de ser pseudociencia, <ref>[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref> lo cual pone de manifiesto la dificultad y relatividad implícita en cualquier intento de definición.
+
+Para ilustrar esta falta de consenso, de forma muy significativa, el filósofo de la ciencia [[Paul Feyerabend]], en su libro ''Adiós a la Razón'', <ref>{{Cita libro
+| apellidos = Feyerabend
+| nombre = Paul
+| título = Adiós a la Razón, Cap. 3-7
+| año = 1987
+| publicación = Madrid: Tecnos
+| id = ISBN 9788430910717
+}}.</ref>advierte que no se pueden despreciar como inútiles la astrología o la [[medicina alternativa]], a las que atribuye un estatus científico.
+
+De forma remarcable, para Karl Popper, "una teoría puede ser científica incluso si no existe ni una sola evidencia a su favor, y puede ser pseudocientífica incluso si todas las evidencias disponibles están en su favor." <ref name="lakatos" />
+
+Karl Popper argumentó que la probabilidad matemática de todas las [[teoría]]s (de ser correctas), ya sean científicas o pseudocientíficas, para cualquier tipo de evidencias, es cero. Según Imre Lakatos, si Popper está en lo correcto, las teorías científicas no sólamente son igualmente no probables (en cuanto a la imposibilidad para encontrar [[prueba]]s), sino igualmente improbables (de [[probabilidad]]). <ref name="lakatos" />
+
+Para Imre Lakatos, un enunciado puede ser pseudocientífico incluso si es eminentemente ''plausible'' y todo el mundo cree en él, y puede ser científicamente valioso incluso si resulta increíble y nadie cree en él. Es más, una teoría puede tener un valor científico supremo incluso si nadie la entiende o ni siquiera cree en ella. <ref name="lakatos" />
+
+[[Image:Grey square optical illusion.PNG|thumb|350px|[[Metáfora]]: inutilidad de la lógica para determinar lo [[subjetividad|subjetivo]]. Por sorprendente que parezca, los cuadros A y B son del mismo color.
+
+Según la tesis de [[Willard van Orman Quine|Quine]]-[[Pierre Duhem|Duhem]], llamada [[holismo confirmacional]] u holismo epistemológico, no es posible demostrar que un enunciado ha sido falsado. Las [[observación|observaciones]] dependen de la teoría, las [[evidencia]]s subjetivas por sí solas son insuficientes para determinar qué teoría es correcta. Así, los científicos deben consensuar qué teorías improbradas aceptar y cuáles rechazar, pero ningún fundamento lógico convertirá dicho consenso en realidad. <ref>Curd, Martin; Cover, J.A. (Eds.) (1998). Philosophy of Science, Section 3,  The Duhem-Quine Thesis and Underdetermination, W.W. Norton & Company. Duhem, Pierre. ''The Aim and Structure of Physical Theory''.  Princeton, New Jersey, Princeton University Press, 1954.</ref><ref>* W. V. Quine. ''Two Dogmas of Empiricism''. ''The Philosophical Review'', 60 (1951), pp. 20-43. [http://www.ditext.com/quine/quine.html texto online]</ref><ref>* W. V. Quine. ''Word and Object''. Cambridge, Mass., MIT Press, 1960.</ref><ref>* W. V. Quine. 'Ontological Relativity.' In ''Ontological Relativity and Other Essays'', New York, Columbia University Press, 1969, pp. 26-68.</ref><ref>* D. Davidson. 'On the Very Idea of Conceptual Scheme.' ''Proceedings of the American Philosophical Association'', 17 (1973-74), pp. 5-20.</ref> Es lo que se conoce como [[Criterio de demarcación#El problema de la inducción|el problema de la inducción.]]]]
+
+El término tiene connotaciones negativas, porque se usa para indicar que las materias así etiquetadas son errónea o engañosamente presentadas como científicas. Por este motivo, aquellos que propugnan por determinada "pseudociencia" normalmente rechazan esta clasificación.
+
+Filósofos de la ciencia que se han ocupado extensamente de esta cuestión, como Karl Popper, consideran que el carácter de ''pseudociencia'' depende menos del ámbito u objeto de estudio que de la actitud de sus seguidores hacia la crítica y, en general, hacia el [[método científico]]. Así, un físico o un biólogo podrían comportarse de un modo dogmático, mientras que un historiador o un sociólogo pueden presentar sus tesis de una manera que inviten a la refutación (o «[[falsación]]», en lenguaje popperiano).<ref>{{cita web
+|url = http://www.sedin.org/propesp/X0164_Po.htm 
+|título = Sir Karl Popper: Psicoanálisis, ciencia y pseudociencia
+|fechaacceso = 15-11
+|añoacceso = 2007
+|autor = Phillip Johnson
+|año = 1995
+|obra = Proceso a Darwin
+|editorial = Portavoz 
+}}</ref> En general, la metodología científica exige que las teorías puedan someterse a pruebas empíricas rigurosas, mientras que las pseudociencias, o bien no será posible aplicarles sistemas de refutación (por tratarse de formulaciones ambiguas) o bien protegerán su teoría (por ejemplo, con hipótesis auxiliares o ''ad hoc'', formuladas a posteriori), en lugar de someterla a ensayos que puedan refutarla. {{Añadir referencias}}
+
+Puesto que no existe un criterio de demarcación delimitado, [[metodología|metodológico]], objetivo, lógico ni [[racionalidad|racional]] para determinar con certeza qué es ciencia de qué se considera no ciencia, pseudociencia o religión, <ref>Curd, Martin; Cover, J.A. (Eds.) (1998). Philosophy of Science, Section 3,  The Duhem-Quine Thesis and Underdetermination, W.W. Norton & Company. Duhem, Pierre. ''The Aim and Structure of Physical Theory''.  Princeton, New Jersey, Princeton University Press, 1954.</ref><ref>* W. V. Quine. ''Two Dogmas of Empiricism''. ''The Philosophical Review'', 60 (1951), pp. 20-43. [http://www.ditext.com/quine/quine.html texto online]</ref><ref>* W. V. Quine. ''Word and Object''. Cambridge, Mass., MIT Press, 1960.</ref><ref>* W. V. Quine. 'Ontological Relativity.' In ''Ontological Relativity and Other Essays'', New York, Columbia University Press, 1969, pp. 26-68.</ref><ref>* D. Davidson. 'On the Very Idea of Conceptual Scheme.' ''Proceedings of the American Philosophical Association'', 17 (1973-74), pp. 5-20.</ref><ref>Okasha, Samir. ''Philosophy of Science. A very short introduction''. p. 38. Oxford University Press. 2002. ISBN 0192802836</ref><ref>Okasha, Samir. ''Philosophy of Science. A very short introduction''. p. 27. Oxford University Press. 2002. ISBN 0192802836</ref>
+<ref>{{ref-libro
+| autor = [[Paul Feyerabend|Feyerabend, Paul]]
+| título = Contra el Método
+| año = 2003
+| publicación = Barcelona. Ediciones Folio, S.A. 
+| id = ISBN 8441318603
+ }}</ref><ref>{{Cita libro
+| apellidos = Feyerabend
+| nombre = Paul
+| título = Adiós a la Razón
+| año = 1987
+| publicación = Madrid: Tecnos
+| id = ISBN 9788430910717
+}}.</ref><ref name="ToddJones">[http://www.blackwell-synergy.com/doi/abs/10.1111/j.1467-9973.2004.00341.x?journalCode=meta Todd Jones, Reductionism and Antireductionism: Rights and Wrongs, Metaphilosophy, Volume 35, Number 5, October 2004, pp. 614-647]</ref><ref>Peter W. Ross and Dale Turner, "Sensibility Theory and Conservative Complacency."</ref><ref>{{ref-libro
+| autor = [[Douglas Hofstadter|Hofstadter, Douglas]]
+| título = Gödel, Escher, Bach: un eterno y grácil bucle.
+| año = 1989
+| publicación = Tusquets
+| id = ISBN 8472234592
+ }}</ref><ref>{{ref-libro
+| autor = [[Isaiah Berlin|Belian, Isaiah]]
+| título = Three Critics of the Enlightenment: Vico, Hamann, Herder, p. 123
+| año = 2000
+| publicación = Princeton: Princeton University Press
+| id = ISBN 0691057273
+ }}</ref><ref name="conjeturas" /><ref name="The_Creative_Mind">Henri Bergson, ''The Creative Mind: An Introduction to Metaphysics'', páginas 159 a 162. ISBN 0806504218</ref><ref>[[Henri Bergson]]. ''La pensée et le mouvant'', 3 ed. 1934. ISBN 2130537812</ref><ref>[[Edmund Husserl]]. ''Crisis of European Humanity'', Pt. II. Conferencia de Viena, 10 de Mayo de 1935.</ref><ref>[[Martin Heidegger]]. 1977. Basic writings (BW). New York: Harper and Row, 349. Vortraege und Aufsaetze, II, 7. ISBN 0060637633</ref><ref>[[Martin Heidegger]]. 1977. ''Basic writings.'' New York: Harper and Row, 348. Vortraege und Aufsaetze, II, 7. BW 348, ZSD, II, 6. ISBN 0060637633</ref><ref>Tao Teh King by Lao Tzu Interpreted as Nature and Intelligence by Archie J. Bahm. Philosophy East and West, Vol. 8, No. 1/2 (Apr. - Jul., 1958), pp. 69-70
+doi:10.2307/1397425.</ref><ref>[http://www.empireclubfoundation.com/details.asp?SpeechID=2359&FT=yes Scientific Imperialism an Address], Delivered by Ellis T. Powell, LL.B. D.Sc.</ref><ref name=Dupre1994>{{cite journal
+ | author = Dupre, J.
+ | authorlink = 
+ | year = 1994
+ | title = Against Scientific Imperialism
+ | journal = PSA: Proceedings of the Biennial Meeting of the Philosophy of Science Association
+ | volume = 1994
+ | pages = 374-381
+ | url = http://cogprints.org/342/
+ | accessdate = 2007-07-16
+ }} ([http://links.jstor.org/sici?sici=0270-8647(1994)1994%3C374%3AASI%3E2.0.CO%3B2-E JSTOR link for this paper])</ref><ref>William J. Beaty, 1996. [http://amasci.com/pathsk2.txt ''Symptoms of pathological Skepticism.'']</ref><ref>{{Cita libro
+| apellidos = Newton-Smith
+| nombre = William H.
+| título = A Companion to the Philosophy of Science
+| año = 2001
+| publicación = Blackwell Publishing Limited
+| id = ISBN 0631230203
+}}</ref> todo intento de diferenciación es necesariamente aribitrario, subjetivo, ilógico e irracional.
+
+==Características de las pseudociencias==
+
+Los autores que diferencian entre ciencias reales y pseudociencias señalan algunas de las siguientes características para ayudar a reconocer a las pseudociencias como tales:<ref>{{ref-libro|autor=Sagan, Carl|título=El mundo y sus demonios|año=2005|publicación=Barcelona: Planeta|ISBN=8408058193}}</ref><ref>{{ref-libro|autor=Park, Robert L.|título=Ciencia o vudú|año=2003|publicación=Barcelona: Debolsillo|ISBN=8497596242}}</ref><ref>Robert L. Park, 2003. "[http://chronicle.com/free/v49/i21/21b02001.htm The Seven Warning Signs of Bogus Science]."</ref><ref>{{ref-libro|autor=Randi, James|título=Flim-Flam!|año=1988|publicación=Prometheus|ISBN=0-87975-198-3}}</ref><ref>Shermer, Michael, 2001. "[http://www.sciam.com/article.cfm?articleID=000D743A-CC5C-1C6E-84A9809EC588EF21&pageNumber=1&catID=2 How to draw boundaries between science and pseudoscience]."</ref>
+
+<small>Nota: La siguiente no es una lista [[wiktionary:es:monotético|monotética]]:</small>
+
+*No aplican una metodología de carácter científico.
+Sin embargo, para filósofos de la ciencia como Paul Feyerabend, el [[conocimiento]] no es una serie de teorías consistentes que convergan hacia un punto de vista ideal, sino que es un océano permanentemente creciente de alternativas mutuamente incompatibles y quizás incluso [[Inconmensurabilidad (filosofía)|inconmensurables]], cada una un cuento de hadas, cada una un mito. <ref>Against Method: Outline of an Anarchistic Theory of Knowledge by Paul Feyerabend
+Author(s) of Review: Ernest Nagel
+The American Political Science Review, Vol. 71, No. 3 (Sep., 1977), pp. 1132-1134
+doi:10.2307/1960121</ref>
+
+Por otra parte, la completa carencia de una metodología científica se ha demostrado en disciplinas tan supuestamente científicas como la [[psiquiatría]], tal y como probó el [http://www.reddevoto.com.ar/unpocodetodo/fraude/locura.htm experimento Rosenhan], mediante el cual los hospitales internaron a ''pseudopacientes'' que previamente habían acordado simular [[psicosis]], [[alucinación|alucinaciones]], [[esquizofrenia]]s y [[trastorno bipolar|trastornos bipolares]]. El experimento concluyó que "queda claro que en los hospitales [[psiquiatría|psiquiátricos]] no somos capaces de distinguir entre pacientes sanos y enfermos mentales". <ref>Rosenhan, D.L. (1973). [http://www.stanford.edu/~kocabas/onbeingsane.pdf On being sane in insane places]. ''Science, 179, 70,'' pp. 250-8.</ref><ref>Spitzer, R.L. (1975). [http://www.ncbi.nlm.nih.gov/sites/entrez?Db=pubmed&Cmd=ShowDetailView&TermToSearch=1194504 On pseudoscience in science, logic in remission, and psychiatric diagnosis: a critique of Rosenhan's "On being sane in insane places"]. ''Journal of Abnormal Psychology, 84, 5,'' pp. 442-52.</ref><ref>{{cite book
+  | last = Slater
+  | first = Laura
+  | title = Opening Skinner's Box:  Great Psychological Experiments of the Twentieth Century
+  | publisher = [[W._W._Norton]]
+  |date=2004
+  | pages = 64-94
+  | isbn = 0-393-05095-5 }}</ref>
+
+Además, según el [[química|químico]] y Presidente de la [[Universidad de Harvard]] James B. Conant, no existe "un" método científico. El científico usa métodos definitorios, métodos clasificatorios, métodos estadísticos, métodos hipotético-deductivos, procedimientos de medición, etc. Según esto, referirse a "el" método científico es referirse a este conjunto de tácticas empleadas para constituir el conocimiento, sujetas al devenir histórico, y que pueden ser otras en el futuro, pero no existe una definición estricta ni [[consenso científico]] acerca de en qué consiste paso a paso ''"el"'' método científico, que varía para cada disciplina. <ref>Gregorio Klimovsky, ''Las desventuras del conocimiento científico. Una introducción a la epistemología'', A-Z editora, Bs.As., 1997, ISBN 9505342756</ref>
+
+*Son dogmáticas. Sus principios están planteados en términos tales que no admiten refutación, a diferencia de las ciencias, donde las condiciones de refutación de las hipótesis o teorías están determinadas con precisión.
+Sin embargo, teorías supuestamente científicas como la teoría de cuerdas, tras casi 40 años de desarrollo matemático continúan siendo incapaces de publicar ni un sólo experimento científico en ningúna [[revista científica|publicación científica]] de [[revisión por pares]], <ref name="bunge">[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref><ref>M. R. Douglas. [http://www.physics.rutgers.edu/~mrd/test3.pdf ''Are There Testable Predictions of String Theory?''] Feb. 2007 Texas A&M</ref> lo cual ha dado lugar a un profundo debate que ha cuestionado a la teoría de cuerdas como de pseudociencia, <ref name="greatdebate">The Great String debate. [http://www.symmetrymagazine.org/cms/?pid=1000481 Wisecracks fly when Brian Greene and Lawrence Krauss tangle over string theory.]</ref>al no cumplir el falsacionismo de [[Popper]], condición según éste indispensable para que una teoría pueda ser considerada como científica.
+*Proclaman teorías para las que no aportan pruebas empíricas, que a menudo contradicen abiertamente resultados experimentales conocidos y aceptados por las ciencias bien establecidas.
+Sin embargo, como se ha visto, esta misma nulidad [[empirismo|empírica]] ocurre con la teoría de cuerdas.
+Por otra parte, para filósofos de la ciencia como [[Thomas Kuhn]], la refutación (falsación) ocurriría cuando la comunidad científica se pone ''de acuerdo'', consensúa en que ha sido falsado, es decir, correspondería a una ''moda'' <ref>Collins, H.M. (1983). How the Laws of Physics Lie. Oxford. Oxford University Press.</ref><ref>Constant, E. W. (1984). Communities and Hierarchies: Structure in the Practice of Science and Technology. In R. Laudan (ed.), The Nature of Technological Knowledge (Dordrecht: Reidel), pp 27-46.</ref>
+<ref>Mulkay, M. (1977). The Scientific research community. In I. Spiegel-Rösing and D. de Solla Price (eds), Science, Technology and Society (London: Sage). pp 93-148.</ref><ref>Foucaul, M. (1977). ''Discipline and Punish.'' (Harmondsworth: Penguin Books).</ref><ref>"El conocimiento va intrínsecamente conectado a prácticas sociales, al poder social y a las instituciones sociales." Rouse, J. (1987) ''Knowledge and Power''. (Ithaca: Cornell University Press)</ref> más o menos pasajera, modas éstas estudiadas por la [[Sociología de la ciencia]].
+*Proclaman teorías inconexas con los conocimientos y teorías de la ciencia.
+Lo cual, por otra parte, no puede considerarse más que parte del proceso natural del progreso científico, tal y como demuestran las innumerables hipótesis que postulan teorías supuestamente científicas, completamente inconexas e incompatibles entre sí, tal y como se ha dado el caso recientemente con los descubrimientos de Markus Aspelmeyer y Anton Zeilinger, <ref>[http://physicsweb.org/articles/news/11/4/14 Quantum physics says goodbye to reality]</ref>al haber realizado un experimento publicado en la prestigiosa [[revista científica]] [[Nature]] <ref>Nature 446, 871-875 (19 April 2007). [http://www.nature.com/nature/journal/v446/n7138/abs/nature05677.html ''An experimental test of non-local realism.'']</ref><ref>Nature 446, 871-875 (2007). Simon Groeblacher, Tomasz Paterek, Rainer Kaltenbaek, Caslav Brukner, Marek Zukowski, Markus Aspelmeyer, Anton Zeilinger. [http://arxiv.org/abs/0704.2529 ''An experimental test of non-local realism.'']</ref> mediante el que se descarta a una clase amplia de [[Teoría_de_las_variables_ocultas|Teorías sobre variables ocultas]] que se centran en el [[realismo]], al ser incompatibles entre sí. <ref>24 Abril, 2007. [http://physicsworld.com/cws/article/news/27640 ''Quantum physics says goodbye to reality'']. [http://www.maikelnai.es/?p=475 ''La física cuántica le dice adios a la realidad.'']</ref>
+
+*Son inmutables. Al no tener bases experimentales, no cambian incluso ante nuevos descubrimientos.
+
+Sin embargo, eso no es justificación para abandonar una teoría, pues ningún descubrimiento puede jamás probar una teoría, tal y como ya argumentó [[Stephen Hawking]] en su libro ''[[Historia del tiempo]]'':
+
+{{cita|Cualquier teoría física es siempre provisional, en el sentido que es sólo una hipótesis; nunca puede ser probada. No importa cuántas veces los resultados de los experimentos concuerden con alguna teoría, nunca se puede estar seguro de que la próxima vez el resultado no la contradirá. Por otro lado, se puede refutar una teoría con encontrar sólo una observación que esté en desacuerdo con las predicciones de la misma.|Stephen Hawkin, 1988.<ref>Hawkin, S. (1992). Historia del Tiempo. Crítica, 1992. ISBN 8474234662</ref>}}
+
+Por otra parte, tras casi 40 años de matemáticas, una teoría supuestamente científica como la teoría de cuerdas no dispone de ni un sólo experimento que avale sus hipótesis. <ref name="bunge">[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref><ref>M. R. Douglas. [http://www.physics.rutgers.edu/~mrd/test3.pdf ''Are There Testable Predictions of String Theory?''] Feb. 2007 Texas A&M</ref><ref name="greatdebate">The Great String debate. [http://www.symmetrymagazine.org/cms/?pid=1000481 Wisecracks fly when Brian Greene and Lawrence Krauss tangle over string theory.]</ref>
+
+*Utilizan lenguaje científico pero sólo en apariencia, desconociendo o malinterpretando su significado.
+Por otra parte, esa situación se ha dado recientemente en la física, en el desgraciadamente famoso [[escándalo Bogdanov]], dos hermanos que consiguieron publicar en prestigiosas revistas científicas teorías absurdas y carentes de sentido. El [[físico]] alemán Max Niedermaier concluyó que se trataba de pseudociencia, escrita con una densa jerga técnica, para evitar el sistema de [[revisión por pares]] de la física teórica. Según el físico-matemático [[John Baez]], su trabajo "es una mezcolanza de frases aparentemente plausibles que contienen las palabras técnicas correctas en el orden aproximadamente correcto. Pero no hay lógica ni cohesión en lo que escriben." Según el físico Peter Woit en la prestigiosa revista [[Nature]]: "El trabajo de los Bogdanoff resulta significativamente más incoherente que cualquier otra cosa publicada. Pero el creciente bajo nivel de coherencia en todo el campo les permitió pensar que habían hecho algo sensato y publicarlo."<ref>[[John Baez]]. [http://math.ucr.edu/home/baez/bogdanoff/ The Bogdanoff Affair.]</ref>
+
+* Otro escándalo similar ha sido el del físico [http://dfmf.uned.es/actividades/no_reglada/hospitalaria/Un_verano_triste.htm Jan Hendrik Schön], quien recientemente ha engañado a [[revista científica|publicaciones científicas]] de primera línea, sometidas a [[revisión por pares]], tan prestigiosas como [[Nature]], <ref>{{cite journal | author = J. H. Schon, C. Kloc, E. Bucher and B. Batlogg | title = retraction: Efficient organic photovoltaic diodes based on doped pentacene | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 93 | doi = 10.1038/nature01468}}</ref><ref>{{cite journal | author = J. H. Schon, C. Kloc and B. Batlogg | title = retraction: Superconductivity in molecular crystals induced by charge injection | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 93 | doi = 10.1038/nature01467}}</ref><ref>{{cite journal | author = J. H. Schon, C. Kloc and B. Batlogg | title = retraction: Superconductivity at 52&thinsp;K in hole-doped C60 | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 93 | doi = 10.1038/nature01466}}</ref><ref>{{cite journal | author = J. H. Schon, A. Dodabalapur, Z. Bao, C. Kloc, O. Schenker and B. Batlogg | title = retraction: Gate-induced superconductivity in a solution-processed organic polymer film | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 92 | doi = 10.1038/nature01465}}</ref><ref>{{cite journal | author = J. H. Schon, H. Meng and Z. Bao | title = retraction: Self-assembled monolayer organic field-effect transistors | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 92 | doi = 10.1038/nature01464}}</ref><ref>{{cite journal | author = J. H. Schon, C. Kloc, T. Siegrist, M. Steigerwald, C. Svensson and B. Batlogg | title = retraction: Superconductivity in single crystals of the fullerene C70 | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 92 | doi = 10.1038/nature01463}}</ref><ref>{{cite journal | author = J. H. Schon, M. Dorget, F. C. Beuran, X. Z. Zu, E. Arushanov, C. D. Cavellin and M. Lagues | title = retraction: Superconductivity in CaCuO2 as a result of field-effect doping | year = 2003 | journal = [[Nature]] | volume = 422 | issue = 6927 | pages = 92 | doi = 10.1038/nature01462}}</ref>[[Science]] <ref>J. H. Schön, Ch. Kloc, R. A. Laudise, and B. Batlogg, Electrical properties of single crystals of rigid rodlike conjugated molecules, Phys. Rev. B 58, 12952-12957 (1998)</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Hole transport in pentacene single crystals, Phys. Rev. B 63, 245201 (2001)</ref><ref>J. H. Schön, Ch. Kloc, D. Fichou, and B. Batlogg, Conjugation length dependence of the charge transport in oligothiophene single crystals, Phys. Rev. B 64, 035209 (2001)</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Mobile iodine dopants in organic semiconductors, Phys. Rev. B 61, 10803-10806</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Low-temperature transport in high-mobility polycrystalline pentacene field-effect transistors, Phys. Rev. B 63, 125304 (2001)</ref><ref>
+J. H. Schön, Ch. Kloc, and B. Batlogg, Universal Crossover from Band to Hopping Conduction in Molecular Organic, Phys. Rev. Lett. 86, 3843-3846 (2001)</ref><ref>{{cite journal | author = Z. Bao, B. Batlogg, S. Berg, A. Dodabalapur, R. C. Haddon, H. Hwang, C. Kloc, H. Meng and J. H. Schon | title = Retraction | year = 2002 | journal = [[Science]] | volume = 298 | issue = 5595 | pages = 961b- | doi = 10.1126/science.298.5595.961b}}</ref> o el Physical Review journal. <ref>J. H. Schön, Ch. Kloc, R. A. Laudise, and B. Batlogg, Electrical properties of single crystals of rigid rodlike conjugated molecules, Phys. Rev. B 58, 12952-12957 (1998)</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Hole transport in pentacene single crystals, Phys. Rev. B 63, 245201 (2001)</ref><ref>J. H. Schön, Ch. Kloc, D. Fichou, and B. Batlogg, Conjugation length dependence of the charge transport in oligothiophene single crystals, Phys. Rev. B 64, 035209 (2001)</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Mobile iodine dopants in organic semiconductors, Phys. Rev. B 61, 10803-10806
+J. H. Schön, Ch. Kloc, and B. Batlogg, Low-temperature transport in high-mobility polycrystalline pentacene field-effect transistors, Phys. Rev. B 63, 125304 (2001)</ref><ref>J. H. Schön, Ch. Kloc, and B. Batlogg, Universal Crossover from Band to Hopping Conduction in Molecular Organic, Phys. Rev. Lett. 86, 3843-3846 (2001)</ref>
+
+* Más recientemente, en el conocido escándalo [http://javarm.blogalia.com/historias/38399 SCIgen], tres estudiantes del [[Instituto Tecnológico de Massachusetts]] diseñaron un programa de ordenador ([http://javarm.blogalia.com/historias/38399 SCIgen]) que generaba imposturas pseudocientíficas, mediante frases aleatorias que aparentaban tener sentido, al más puro estilo [[Escándalo Sokal|Sokal-Brimont]]. El artículo era ''"un completo batiburrillo de estupideces que pasó directamente el supuesto filtro del comité de selección"''. <ref>Javier Armentia. [http://javarm.blogalia.com/historias/38399  Congresos Sacacuartos]</ref> Uno de los artículos generados completamente al azar por SCIgen consiguió que invitaran a los autores a dar una conferencia sobre su investigación en el congreso internacional de Computación WMSCI. <ref>{{cite web | url = http://pdos.csail.mit.edu/scigen/ | title = SCIgen - An Automatic CS Paper Generator | publisher = MIT }}</ref><ref name="rooter">{{cite web
+ | url = http://pdos.csail.mit.edu/scigen/rooter.pdf
+ | title = Rooter: A Methodology for the Typical Unification of Access Points and Redundancy
+ | author = Stribling, Jeremy
+ | coauthors = Aguayo, Daniel; Krohn, Maxwell
+ | format = PDF
+ | quote = Many physicists would agree that, had it not been for congestion control, the evaluation of web browsers might never have occurred. In fact, few hackers worldwide would disagree with the essential unification of voice-over-IP and public/private key pair. In order to solve this riddle, we confirm that SMPs can be made stochastic, cacheable, and interposable.
+}}</ref>
+
+[[Image:Mandel zoom 12 to 13.png|thumb|350px| [[Espiral]] [[fractal]]. ¿Qué nos hace pensar que a nuestra [[escala]], el [[Universo]] ''parezca'' simple y ordenado, en lugar de ''realmente'' ser [[Sistema complejo|complejo]] y [[caos|caótico]] a otra [[escala]], [[Nivel macroscópico|macroscópica]] o [[Nivel microscópico|microscópica]]? ¿Y si el [[Universo]] y la ''[[realidad]]'' misma tuvieran una estructura [[fractal]]? <ref>Amanda Gefter. New Scientist, 9 de Marzo de 2007. [http://space.newscientist.com/article/mg19325941.600 ''Is the Universe a fractal?''.]</ref><ref>D F Roscoe. arXiv:astro-ph/0609432v1. [http://arxiv.org/abs/astro-ph/0609432 ''Via Aristotle, Leibnitz and Mach to a Fractal D=2 Universe''.]</ref><ref>J. R. Mureika. J. Cosmol. Astropart. Phys. JCAP05(2007)021. [http://arxiv.org/abs/gr-qc/0609001 ''Fractal Holography: a geometric re-interpretation of cosmological large scale structure''.]</ref><ref>Marcelo B. Ribeiro. Gen.Rel.Grav. 33 (2001) 1699-1730. [http://arxiv.org/abs/astro-ph/0104181 ''The Apparent Fractal Conjecture: Scaling Features in Standard Cosmologies''.]</ref><ref>Reginald T. Cahill, Christopher M. Klinger, Kirsty Kitto. The Physicist 37 (2000) 191-195. [http://arxiv.org/abs/gr-qc/0009023 ''Process Physics: Modelling Reality as Self-Organising Information''.]</ref>]]
+*No cumplen la estrategia de la [[navaja de Occam]].
+
+Sin embargo, la [[Navaja de Occam]] no implica la negación de la existencia de ningún tipo de entidad, ni siquiera es una recomendación de que la teoría más simple sea la más válida.<ref>[http://www.skepdic.com/occam.html Skeptic's Dictionary]</ref> Su sentido es que ''a igualdad de condiciones'', sean preferidas las teorías más simples. Otra cuestión diferente serán las evidencias que apoyen la teoría.<ref>[http://math.ucr.edu/home/baez/physics/ Usenet Phyics FAQs]</ref> Así pues, de acuerdo con este principio, una teoría más simple pero menos correcta no debería ser preferida a una teoría más compleja pero más correcta.
+
+Además, para el filósofo Paul Newall, el punto principal que hace que la [[Navaja de Occam]] sea de poca ayuda, si no explícitamente entorpecedora y detrimente, es que las consecuencias de añadir entidades adicionales son imposibles de establecer [[a priori]]. Puesto que la ciencia nunca finaliza, siempre estamos en la posición "antes" y nunca llegamos a la posición "después", que según [[Niels Böhr]] era el único momento en el que se podría introducir la [[navaja de Occam]] <ref>Newall, Paul. [http://www.galilean-library.org/or.html Ockham’s Razor (2005)]</ref> lo cual, obviamente, ya no es de ninguna ayuda para juzgar de antemano una teoría.
+
+Ver '''[[Criterio de demarcación#Controversia en la parsimonia de la Navaja de Occam|Controversia en la parsimonia de la Navaja de Occam]] y [[Criterio de demarcación#Anti-navajas de Occam|Anti-navajas de Occam]]'''.
+*No buscan leyes generales.
+Sin embargo, no se puede aducir el hecho de que la [[naturaleza]] se haya comportado siempre de la misma forma uniforme hasta el momento, puesto que esto presupone que lo que ha sido válido en el pasado, continuará siéndolo en el futuro, es decir, la uniformidad de la naturaleza, hecho éste de la supuesta [[Constante|constancia]] de la [[naturaleza]] que la propia ciencia ha cuestionado recientemente. <ref>Wandelt, Ben. 2Physics.com, July 25, 2007. ''"Ni siquiera la constancia de las Constantes de la Naturaleza está garantizada"''. [http://2physics.blogspot.com/2007/07/changing-constants-dark-energy-and.html ''Changing Constants, Dark Energy and the Absorption of 21 cm Radiation'']</ref> <ref>Uzan, Jean-Philippe. Rev.Mod.Phys. 75 (2003) 403. [http://arxiv.org/abs/hep-ph/0205340 The fundamental constants and their variation: observational status and theoretical motivations.]</ref><ref>Duff, M.J. arXiv:hep-th/0208093v3. [http://www.arxiv.org/abs/hep-th/0208093 ''Comment on time-variation of fundamental constants.'']</ref><ref>Barrow, John. D. arXiv:astro-ph/9811022v1. [http://www.arxiv.org/abs/astro-ph/9811022 ''Cosmologies with Varying Light-Speed'']</ref> Si se trata de argumentar sobre la uniformidad de la naturaleza, se termina [[razonamiento circular|razonando en círculos]], argumentaba [[David Hume|Hume]]. De modo que las [[inferencia]]s [[inducción|inductivas]] reposan en una asunción de una ''uniformidad de la naturaleza'' para la que no existen fundamentos, y que, como se ha visto, incluso está siendo cuestionada ''científicamente''. [[David Hume|Hume]] concluía que nuestra confianza en la [[inducción]] es simple [[Fe]] ciega, que no admite absolutamente ningún tipo de justificación [[razonamiento|racional]]. <ref>Okasha, Samir. ''Philosophy of Science. A very short introduction''. p. 27. Oxford University Press. 2002. ISBN 0192802836</ref>
+
+*Descalifican las críticas por parte de las ciencias, a menudo, utilizando falacias ''[[ad hominem]]'', aduciendo [[teoría conspirativa|conspiraciones]] o proclamándose objeto de [[persecución]] cuando sus planteamientos son rebatidos.
+Sin embargo, el [[etnología|etnólogo]] David J. Hufford de la universidad del estado de Pennsylvania utiliza el término "escepticismo radical", [[pseudoescepticismo]] o escepticismo patológico según otros, <ref>William J. Beaty, 1996. [http://amasci.com/pathsk2.txt ''Symptoms of pathological Skepticism.'']</ref><ref>Professor Brian D. Josephson. Theory of Condensed Matter Group at the Cavendish Laboratory, Cambridge, U.K. [http://www.lindau-nobel.de/content/view/19/32/ ''Pathological disbelief'']</ref>para referirse a los prejuicios y discriminaciones que según él adoptan muchos — quizá la mayoría, dice — de los científicos académicos. Después de leer y analizar los trabajos de muchos escépticos y [[debunker]]s, Hufford sostiene que se puede encontrar rápidamente:
+
+{{cita|[[Argumentum ad verecundiam|invocaciones a la autoridad]], falacias ''[[Post hoc ergo propter hoc|post hoc]]'', argumentos ''[[ad hominem]]'' y un amplio abanico de otros [[Prejuicio cognitivo|prejuicios cognitivos]]. No obstante, debido a que esta dimensión inductiva del análisis académico normalmente no presenta a escrutinio y debido a que una gran parte del trabajo consistente en enmarcar las preguntas y establecer las fronteras para el discurso académico sobre 'lo sobrenatural' en una gran medida se estableció entre varias generaciones... y varios siglos atrás... la parcialidad sistemática de esta tradición hoy en día opera de forma casi invisible.|David J. Hufford, 1993.<ref>Clark, Jerome, ''Unexplained! 347 Strange Sightings, Incredible Occurrences, and Puzzling Physical Phenomena''; Detroit, Visible Ink Press; 1993, ISBN 0810394367; pág. 117</ref>}}
+
+Mientras que el mejor y más conocido análisis del [[pseudoescepticismo]] ha sido llevado a cabo por el [[sociología|sociólogo]] norteamericano Marcello Truzzi, de la Eastern Michigan University, quien en 1987 manifestó:
+
+{{cita|En tanto que el "escepticismo" se refiere más bien a la duda que a la refutación — al dudar más que al creer — los críticos que toman una posición negadora en vez de una [[Agnosticismo|agnóstica]] son en realidad pseudoescépticos.|Marcello Truzzi, 1987.<ref>"Marcello Truzzi, [http://www.anomalist.com/commentaries/pseudo.html On Pseudo-Skepticism]" ''Zetetic Scholar'' (1987)  No. 12/13, 3-4.</ref>}}
+
+*Invocan entes inmateriales o sobrenaturales inaccesibles a la investigación empírica, tales como fuerza vital, creación divina, inconsciente metafísico, necesidad histórica, etc.
+Sin embargo, la misma inaccesibilidad a la investigación empírica se puede también atribuir a la teoría de cuerdas, que después de casi 40 años de desarrollo matemático de la teoría, todavía no ha aportado ni un sólo resultado [[física experimental|experimental]] predecido por la teoría de cuerdas que haya sido publicado en ningúna [[revista científica|publicación científica]] de [[revisión por pares]], <ref name="bunge">[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref><ref>M. R. Douglas. [http://www.physics.rutgers.edu/~mrd/test3.pdf ''Are There Testable Predictions of String Theory?''] Feb. 2007 Texas A&M</ref><ref name="greatdebate">The Great String debate. [http://www.symmetrymagazine.org/cms/?pid=1000481 Wisecracks fly when Brian Greene and Lawrence Krauss tangle over string theory.]</ref>tal y como requiere el falsacionismo de [[Popper]] para que una teoría pueda ser considerada como científica.
+
+Por otra parte, tales entes inmateriales son igualmente propuestos por científicos tan prestigiosos como Sir [[Roger Penrose]], para quienes, al más puro estilo [[Platón|platónico]], vivimos en una única realidad con tres [[dimensión|dimensiones]]: matemática, física y [[psique|psíquica]]. Para [[Roger Penrose|Penrose]], las matemáticas habitan en un mundo del [[ser]], [[eternidad|eterno]], [[armonía|armónico]] y [[perfección|perfecto]], <ref>[[Roger Penrose]]. ''El camino a la realidad: Una guía completa de las leyes del universo'', Editorial Debate, 2006, ISBN 8483066815</ref>mientras que para otros como el colega de [[Albert Einstein]] Henry Margenau, recientes descubrimientos de la física demuestran que la realidad está inextricablemente ligada a la [[naturaleza]] de la [[Conciencia]] humana, y que la [[creencia]] de que existe una única realidad verdadera ha dejado de tener validez y utilidad para el conocimiento, <ref name="margenau">Margenau, Henry; Le Shan, Lawrence. ''El espacio de Einstein y el cielo de Van Gogh : Un paso más alla de la realidad física''. Gedisa, S.A., 1985. ISBN 847432226X</ref>habiendo presentado una audaz teoría científica de la realidad que pretende establecer una base científica para las experiencias no físicas y los [[paranormal|fenómenos paranormales]]. <ref name="margenau" />
+
+*Proclaman y exigen que se reconozca su carácter científico, pero sólo ante el público general, renunciando a poner a prueba sus explicaciones ante la comunidad científica establecida. El hecho de reclamar estatus científico las diferencia de otras actividades como las religiones.
+
+Sin embargo, muchos investigadores de los [[fenómenos paranormales]] no están en absoluto de acuerdo con esta arbitraria descripción, al perseguir precisamente una metodología científica en cada una de sus investigaciones, tal y como es el caso, por ilustrar con un ejemplo de tantos, del [[Premio Nobel]] de Física en 1973 <ref>[http://nobelprize.org/nobel_prizes/physics/laureates/1973/index.html Instituto Nobel, Premio Nobel de Física 1973]</ref>[[Brian David Josephson]], quien sostiene que el [[misticismo]] oriental puede tener relevancia para el conocimiento científico, <ref>Encyclopedia Britannica Online, accedido el 17 de Septiembre de 2007. [http://www.britannica.com/eb/article-9044004/Brian-D-Josephson ''Brian D. Josephson''.]</ref> [[Brian David Josephson|Josephson]], habiendo presentado un modelo consistente con la teoría de cuerdas que explicaría los fenómenos de [[Percepción extrasensorial]]. <ref>[[Brian David Josephson]]. arXiv:physics/0312012v3, 2 Dec 2003. [http://arxiv.org/abs/physics/0312012 ''String Theory, Universal Mind, and the Paranormal''.]</ref>
+
+Algunos autores afines al relativismo epistémico o al llamado «programa fuerte» (o «estándar») de la sociología de la ciencia, como Paul Feyerabend, [[Bruno Latour]] o [[David Bloor]], ponen en duda que sea posible diferenciar con rigor y objetividad "ciencia" de "pseudociencia", respaldando en algunos casos posiciones abiertamente contrarias a la ciencia o a la validez del método científico<ref>Paul Feyerabend se asocia particularmente con la idea de que intentar distinguir entre ciencia y pseudociencia es algo que no se sostiene cuando es tratado con rigor epistemológico, y además es pernicioso. "La idea de que la ciencia puede, y debería, desarrollarse de acuerdo a reglas fijas y universales, es no realista y es pernicioso. ...la idea va en detrimento de la ciencia, debido a la negligencia de omitir las condiciones físicas e históricas que influyen en el cambio científico. Hace a la ciencia menos adaptable y más dogmática."[http://www.marxists.org/reference/subject/philosophy/works/ge/feyerabe.htm]</ref>. Estas posiciones relativistas han sido ampliamente contestadas por los científicos [[Alan Sokal]] y [[Jean Bricmont]] en su libro ''[[Imposturas intelectuales]]''.<ref>Sokal-Bricmont, ''[[Imposturas intelectuales]]'', Barcelona, Paidós, 1999, págs. 66-113.</ref> Sin embargo, el [[matemáticas|matemático]] Gabriel Stolzenberg argumenta en innumerables ocasiones que [[Alan Sokal|Sokal]] y [[Jean Bricmont|Bricmont]] no poseen la suficiente comprensión de las posturas filosóficas que critican y que tal carencia de entendimiento convierte su crítica en carente de significado. <ref>Gabriel Stolzenberg. [http://math.bu.edu/people/nk/rr/ ''Debunk: Expose as a Sham or False.'']</ref>
+
+Algunos críticos de la pseudociencia consideran algunas o todas las formas de pseudociencia como [[pasatiempo]]s inofensivos. Otros, como [[Richard Feynman]]<ref>Richard Feynman, 1974. "[http://wwwcdf.pd.infn.it/~loreti/science.html Cargo Cult Science]."</ref>, [[Richard Dawkins]]<ref>Richard Dawkins, 1998. ''Unweaving The Rainbow.'' Penguin.</ref>, [[Carl Sagan]]<ref>Carl Sagan, 1987. "[http://astro-digital.com/9/sagan.html La carga del escepticismo]."</ref> y Mario Bunge<ref name="bunge">Mario Bunge. "[http://www.arp-sapc.org/docentes/bungeprinc.html ¿Qué son las pseudociencias?]."</ref>, consideran que todas las formas de pseudociencia son dañinas, causen o no daños inmediatos a sus seguidores. Estos críticos generalmente consideran que la defensa de la pseudociencia puede suceder por varias razones, que van desde la simple candidez sobre la naturaleza de la ciencia y el método científico, hasta un engaño deliberado por beneficios económicos o políticos. Por otra parte toda creencia como hecho [[subjetivo]] no puede considerarse como pseudociencia ya que no trata de indagar en el conocimiento sino que cree en unos determinados elementos, el hecho de que una creencia pase a ser una pseudociencia es cuando intenta darle carácter científico para apoyar su propia creencia subjetiva utilizando para ello todos los elementos nombrados anteriormente.
+
+==El problema de la demarcación de las ciencias==
+
+{{AP|Criterio de demarcación}}
+
+El criterio de demarcación se encarga de tratar de dilucidar qué es ciencia de qué es conocimiento no científico, pseudociencia o religión.
+
+La dificultad para establecer un criterio preciso que permita distinguir con certeza entre, utilizando la terminología de Karl Popper, ciencia y no ciencia se pone de manifiesto al considerar los conceptos de [[Emergentismo]], [[Holismo]] y [[Reduccionismo]].
+
+Dependiendo del [[concepto]] de reducción y de [[sustancia]] o componente natural, se definirán unas u otras formas de emergentismo. Por ejemplo, el filósofo y científico Mario Bunge (1977, 1980) <ref>Bunge, Mario. 1977. Neuroscience. 1977;2(4):501-9. [http://www.ncbi.nlm.nih.gov/entrez/utils/fref.fcgi?PrId=3048&itool=Citation-def&uid=917278&db=pubmed&url=http://linkinghub.elsevier.com/retrieve/pii/0306-4522(77)90047-1 ''Emergence and the mind'']</ref><ref>{{ref-libro
+| autor = [[Mario Bunge|Bunge, Mario]]
+| título = The Mind-Body Problem: A Psychobiological Approach
+| año = 1980
+| publicación = Pergamon International Library of Science
+| id = ISBN 0080247202
+ }}</ref>, se considera a sí mismo emergentista en oposición a la reducción por separación de componentes (al modo de un ingeniero mecánico) y define como emergente toda propiedad sistémica de carácter [[Holismo|holista]]. Sin embargo, según algunas concepciones del [[reduccionismo]], como la de filósofo [[Thomas Nagel]] (1960), según el [[Premio Nobel]] de [[Medicina]], el neuropsicólogo [[Roger Wolcott Sperry]], Bunge no sería un emergentista sino un [[reduccionismo|reduccionista]] <ref>Sperry, R. W., and Henninger, P. (1994). Anthropology of Consciousness 5(3), 3-7.[http://people.uncw.edu/puente/sperry/sperrypapers/80s-90s/285-1994.pdf ''Consciousness and the cognitive revolution: an true worldview paradigm shift'']</ref>, ya que, a pesar de invocar la naturaleza [[Holismo|holista]] de algunas propiedades, éstas serían, en última instancia, redefinibles en términos de una teoría más general (p.e. la física).
+
+Una de las argumentaciones más lúcidas de ''antireduccionismo'' jamás hechas, se puede encontrar en el libro de [[Douglas Hofstadter]] y ganador del [[Premio Pulitzer]], ''[[Gödel, Escher, Bach: un eterno y grácil bucle]]'' <ref>{{ref-libro
+| autor = [[Douglas Hofstadter|Hofstadter, Douglas]]
+| título = Gödel, Escher, Bach: un eterno y grácil bucle.
+| año = 1989
+| publicación = Tusquets
+| id = ISBN 8472234592
+ }}</ref>.
+
+{{cita|El [[Teoremas de la incompletitud de Gödel|segundo teorema de Gödel]] sugiere ([[Teoremas de la incompletitud de Gödel|Segundo Teorema de Incompletitud]] de [[Kurt Gödel|Gödel]]: ''Ningún sistema consistente se puede usar para demostrarse a sí mismo.'') -¡aunque de ninguna forma lo prueba!- que podrían existir formas de ver la mente/cerebro a alto nivel, que involucrasen conceptos que no aparecerían —ni siquiera en principio— a niveles inferiores. Eso significaría que algunos hechos se podrían explicar fácilmente en ese nivel más alto, pero de ninguna forma tendrían explicación a niveles más bajos. ¿Qué tipo de conceptos podrían ser esos de tan alto nivel? Se ha propuesto hace eones, por parte de varios científicos [[holismo|holistas]] o [[humanismo|humanistas]] inclinados hacia lo espiritual, que la [[conciencia]] es un fenómeno que escapa a una explicación en términos de componentes [[cerebro|cerebrales]]. Al fin, he aquí a una candidata para tal concepto. De modo que quizá estas cualidades podrían ser [[Emergencia (filosofía)|emergentes]], en el sentido de requerir explicaciones que no pueden ser satisfechas simplemente por la [[fisiología]].|[[Douglas Hofstadter]], 1979}}
+
+Ver '''[[Criterio de demarcación#Críticas al problema de la demarcación|Críticas al problema de la demarcación]]'''.
+
+Se han hecho varios intentos para aplicar rigor filosófico a la demarcación de la ciencia con resultados diversos. Estos incluyen el criterio de falsabilidad de Karl Popper y la aproximación histórica de Imre Lakatos, que lo menciona en su ''Methodology of scientific research programmes'' ''(Metodología de los programas de investigación científica, ISBN 0521280311)''.
+Historiadores y filósofos de la ciencia, principalmente Thomas Kuhn y Paul Feyerabend, sostienen desde otras perspectivas epistemológicas del conocimiento, que incluye la dimensión social, que no siempre es posible una distinción nítida y objetiva entre ciencia y pseudociencia.
+
+Tal y como afirma también Popper, las teorías no son nunca verificables empíricamente:
+
+{{cita|No existe nada que pueda llamarse inducción. Por tanto será lógicamente inadmisible la inferencia de teorías a partir de enunciados singulares que estén «verificados por la experiencia». Así, pues, las teorías no son nunca verificables empíricamente.|Karl Popper, 1934. <ref>[[Karl Popper]]. ''La lógica de la investigación científica''. Círculo de Lectores, 1995. ISBN 8422656280</ref>}}
+
+[[Image:Carl Sagan Planetary Society.JPG|thumb|250px|[[Carl Sagan]], notable [[escéptico]], abierto a la [[investigación]] científica de los [[fenómenos paranormales]].]]
+Mario Bunge, filósofo de la ciencia, es conocido por su posición de incluir al [[psicoanálisis]] entre las pseudociencias. Críticas hacia la inconsistencia entre teoría y experiencia, o hacia el carácter especulativo del discurso se dirigen también a veces desde las [[ciencias naturales]] hacia ciertas [[ciencias sociales]], como la [[economía]] o la [[psicopedagogía]]. {{Añadir referencias}}El ''[[Escándalo Sokal|asunto Sokal]]'', por el nombre del físico que lo puso en marcha, mostró que desde una cierta orientación de la Sociología de la Ciencia, una [[posmodernismo|postmoderna]] y [[deconstrucción|deconstruccionista]], también se ha recurrido a veces a usar inconsistentemente el lenguaje de las llamadas ''ciencias duras'', en lo que parece un intento irregular de legitimación científica, siendo esta una de las líneas de conducta frecuentemente reprochadas hacia las llamadas pseudociencias.
+
+Notables científicos [[escepticismo|escépticos]] como [[Carl Sagan]] han manifestado su apertura hacia la investigación de los [[fenómenos paranormales]], entendidos como aquellos [[paranormal|fenómenos]] que, según la definición del psicólogo James Alcock: <ref>Definición de Alcock, J.E. (1981). ''Parapsychology - Science or Magic? A psychological perspective''. Nueva York: Pergamon Press. ISBN 0080257739</ref>
+
+* O no se pueden explicar en términos de la ciencia actual;
+* O únicamente se pueden explicar mediante una amplia revisión de los [[principio]]s de base de la ciencia; 
+* O no son compatibles con la norma de las [[percepción|percepciones]], de las [[creencia|creencias]] y de las expectativas referentes a la realidad. 
+
+Es decir, todos aquellos [[paranormal|fenómenos]] que, por definición, se encuentran fuera del consenso científico o desafían el [[sentido común]].
+
+[[Carl Sagan]], miembro del Instituto [[SETI]] para la Búsqueda de Inteligencia Extraterrestre, poco antes de morir, declaró:
+
+{{cita|En el momento de escribir estas líneas hay tres afirmaciones en el campo de la [[percepción extrasensorial]] que, en mi opinión, merecen un estudio serio:
+* 1) que sólo con el pensamiento los humanos pueden afectar (levemente) a los generadores de [[Número aleatorio|números aleatorios]] en los [[ordenador]]es; <ref>[http://en.wikipedia.org/wiki/Princeton_Engineering_Anomalies_Research_Lab Princeton Engineering Anomalies Research]</ref><ref>[http://www.nytimes.com/2007/02/10/science/10princeton.html?_r=3&oref=slogin&oref=slogin&oref=slogin A Princeton Lab on ESP Plans to Close Its Doors]</ref><ref>"Nuestros resultados demuestran que la descarga de emociones intensas en una situación terapéutica tiene correlación con la salida anómala de un generador aleatorio de eventos cercano." R. A. Blasband (2000). Journal of Scientific Exploration, 14 (2), pp.195–216. [http://www.icrl.org/pdf/blasband_orderingrandomevents_jse.pdf The Ordering of Random Events by Emotional Expression.]</ref>
+* 2) que la gente sometida a una [[privación sensorial]] ligera puede recibir pensamientos o imágenes «proyectados»,<ref name="ConsciousUniverse"> ''The Conscious Universe: The Scientific Truth of Psychic Phenomena'' by Dean I. Radin Harper Edge, ISBN 0-06-251502-0</ref><ref>Metzger, W. (1930). Optische Untersuchungen am Ganzfeld: II. Zur Phanomenologie des homogenen Ganzfelds. Psychologische Forschung, 13, 6-29.</ref> (Ver [[Experimento ganzfeld]].)
+* 3) que los niños pequeños a veces hablan de detalles de una [[vida]] anterior que, si se comprueban, resultan muy precisos y sólo podrían haberlos sabido mediante la [[reencarnación]]. <ref>[http://en.wikipedia.org/wiki/Reincarnation_research Investigaciones científicas sobre la reencarnación (ing).]</ref><ref>[http://ajp.psychiatryonline.org/cgi/content/full/162/4/823?rss=1 European Cases of the Reincarnation Type.]  Am J Psychiatry 162:823-824, April 2005.</ref>
+Elijo esas afirmaciones no porque crea que probablemente sean válidas (que no lo creo), sino como ejemplos de opiniones que podrían ser verdad. Las tres citadas tienen al menos un fundamento [[experimento|experimental]], aunque todavía dudoso. Desde luego, podría equivocarme.|[[Carl Sagan]], 1996. <ref>[[Carl Sagan]]. ''El mundo y sus demonios''. Editorial Planeta, 2005. ISBN 8408058193</ref>}}
+
+* El físico [[Brian David Josephson]], descubridor del [[efecto Josephson]], lo que le valió el [[Premio Nobel]] de [[Física]] en 1973 <ref>[http://nobelprize.org/nobel_prizes/physics/laureates/1973/index.html Instituto Nobel, Premio Nobel de Física 1973]</ref>, actualmente es Director de los [[Laboratorios Cavendish]] de la [[Universidad de Cambridge]]. [[Brian David Josephson|Josephson]] sostiene que el [[misticismo]] oriental puede tener relevancia para el conocimiento científico. <ref>Encyclopedia Britannica Online, accedido el 17 de Septiembre de 2007. [http://www.britannica.com/eb/article-9044004/Brian-D-Josephson ''Brian D. Josephson''.]</ref> [[Brian David Josephson|Josephson]] ha presentado un modelo consistente con la teoría de cuerdas que explicaría los fenómenos de [[Percepción extrasensorial]]. <ref>[[Brian David Josephson]]. arXiv:physics/0312012v3, 2 Dec 2003. [http://arxiv.org/abs/physics/0312012 ''String Theory, Universal Mind, and the Paranormal''.]</ref>
+
+[[Image:Matrix core.jpg|thumb|350px|[[Matrix (trilogía)]]. ¿Sería ciencia o pseudociencia una teoría que plantease la hipótesis de estar inmersos en un [[Universo]] dentro de una [[simulación]] por ordenador? Es evidente que no sería falsable, y sin embargo, para los filósofos [[Nick Bostrom]] y David Chalmers es perfectamente [[racional]] y plausible considerar que la probabilidad es de al menos un 20%. <ref>Nick Bostrom, 16 de Mayo de 2003. [http://www.simulation-argument.com/matrix-spanish.html ''El argumento de la simulación: por qué la probabilidad de que usted viva en Matrix es bastante alta''.]</ref> Para el físico [[Frank J. Tipler]], el viaje en el [[tiempo]] y la [[resurrección]] de los muertos serán posibles en el Punto Omega, gracias a este [[ordenador]] cósmico, que él identifica con [[Dios]], y como especie inteligente, no estaríamos aquí si Dios no lo hubiese planeado de antemano desde el [[futuro]].<ref>Debats 81. Encontres. [http://www.alfonselmagnanim.com/DEBATS/81/encontres01.htm ''La inmortalidad según Frank J. Tipler: una entrevista.'']</ref><ref>{{ref-libro
+| id = ISBN 9788420628400
+| título = La Física de la [[Inmortalidad]]: la [[Cosmología]] moderna y su relación con Dios y la resurrección de los muertos.
+| año = 2005
+| autor = Tipler, Frank J. 
+| publicación = Alianza Editorial}}
+</ref><ref>[http://www.rtve.es/tve/b/redes/semanal/prg170/entrevista.htm ''Entrevista de Eduard Punset a [[Frank J. Tipler]] en "Redes", TVE.'']</ref><ref>[http://www.alfonselmagnanim.com/DEBATS/81/encontres01.htm ''La inmortalidad según [[Frank J. Tipler]]: una entrevista.'']</ref><ref>[http://divulgamat.ehu.es/weborriak/Cultura/Paginas/01122004.asp ''La Gran esperanza final. La Física de la inmortalidad.'']</ref>]]
+* El físico [[Frank J. Tipler]], co-autor de ''El [[Principio antrópico]]'' <ref>{{ref-libro
+| id = ISBN 0192821474
+| título = The Anthropic Cosmological Principle
+| año = 1988
+| autor = Barrow, John D. Tipler, Frank J. 
+| publicación = Oxford University Press}}
+</ref> con el [[cosmología|cosmólogo]] de la [[Universidad de Cambridge]] [[John David Barrow]], afirma estar en disposición de probar la existencia de [[vida]] después de la [[muerte]], debido a una [[inteligencia artificial]] que él denomina ''El punto Omega'', y que identifica con [[Dios]]. <ref name="Tipler1986>Frank J. Tipler, [http://www.springerlink.com/content/vlj3180664373268/ "Cosmological Limits on Computation,"] ''International Journal of Theoretical Physics'', Vol. 25, No. 6 (June 1986), pp. 617-661. (First paper on the Omega Point Theory.)</ref><ref name="Tipler1987">Frank J. Tipler, [http://adsabs.harvard.edu/abs/1987Natur.325..201T "Achieved spacetime infinity,"] ''Nature'', Vol. 325, No. 6101 (January 15, 1987), pp. 201-202.</ref><ref name="Tipler1992">Frank J. Tipler, [http://adsabs.harvard.edu/abs/1992PhLB..286...36T "The ultimate fate of life in universes which undergo inflation,"] ''Physics Letters B'', Vol. 286, Issues 1-2 (July 23, 1992), pp. 36-43.</ref><ref name="Tipler2001">Frank J. Tipler, [http://arxiv.org/abs/astro-ph/0104011 "The Ultimate Future of the Universe, Black Hole Event Horizon Topologies, Holography, and the Value of the Cosmological Constant,"] arXiv:astro-ph/0104011, April 1, 2001. Published in [http://adsabs.harvard.edu/abs/2001AIPC..586.....W ''Relativistic Astrophysics: 20th Texas Symposium, Austin, TX, 10-15 December 2000'',] edited by J. Craig Wheeler and Hugo Martel (Melville, N.Y.: American Institute of Physics, 2001), ISBN 0735400261; [http://scitation.aip.org/getabs/servlet/GetabsServlet?prog=normal&id=APCPCS000586000001000769000001&idtype=cvips&gifs=yes ''AIP Conference Proceedings'', Vol. 586 (October 15, 2001), pp. 769-772.]</ref><ref name="Tipler2003">Frank J. Tipler, [http://www.geocities.com/theophysics/tipler-intelligent-life-in-cosmology.pdf "Intelligent life in cosmology,"] ''International Journal of Astrobiology'', Vol. 2, Issue 2 (April 2003), pp. 141-148; also available [http://math.tulane.edu/~tipler/intelligentlife.pdf here.] See also [http://www.journals.cambridge.org/action/displayAbstract?fromPage=online&aid=185973 here] and [http://adsabs.harvard.edu/abs/2003IJAsB...2..141T here.] Also at [http://arxiv.org/abs/0704.0058 arXiv:0704.0058, March 31, 2007.]</ref><ref name="Tipler2005">F. J. Tipler, [http://math.tulane.edu/~tipler/theoryofeverything.pdf "The structure of the world from pure numbers,"] ''Reports on Progress in Physics'', Vol. 68, No. 4 (April 2005), pp. 897-964. (Note: citation formatting in the above-quoted passage has been modified for clarity.) See also [http://adsabs.harvard.edu/abs/2005RPPh...68..897T here.] Also released as [http://arxiv.org/abs/0704.3276 "Feynman-Weinberg Quantum Gravity and the Extended Standard Model as a Theory of Everything,"] arXiv:0704.3276, April 24, 2007.</ref><ref name="Tipler2007">Frank J. Tipler, Jessica Graber, Matthew McGinley, Joshua Nichols-Barrer and Christopher Staecker, [http://arxiv.org/abs/gr-qc/0003082 "Closed Universes With Black Holes But No Event Horizons As a Solution to the Black Hole Information Problem,"] arXiv:gr-qc/0003082, March 20, 2000. Published in [http://adsabs.harvard.edu/abs/2007MNRAS.379..629T ''Monthly Notices of the Royal Astronomical Society'', Vol. 379, Issue 2 (August 2007), pp. 629-640.]</ref> El científico argumenta que la [[evolución]] natural de las [[especie]]s [[inteligencia|inteligentes]] dará como resultado el crecimiento exponencial del progreso científico, posibilitando un control absoluto sobre el [[universo]], incluso a la mayor escala. [[Frank J. Tipler|Tipler]] predice que este proceso debe culminar con una [[inteligencia artificial]] todopoderosa, [[omnipotencia|omnipotente]], omnipresente y omnisciente, cuya velocidad de computación y capacidad de almacenamiento informático crecerán del mismo modo exponencialmente, y a un ritmo que impedirá el colapso del [[Universo]], proporcionando así un [[infinito]] "[[tiempo]] virtual", el cual será utilizado para desarrollar [[simulación|simulaciones informáticas]] de toda forma de [[vida]] inteligente que alguna vez haya existido en la historia del universo. Dicho ejercicio de [[realidad virtual]] es lo que Tipler denomina ''la resurrección de los muertos'', y tomará precisamente la forma de [[programa]]s de ordenador ya que, según [[Frank J. Tipler|Tipler]]: "Es necesario considerar a la "persona" como un caso particular (pero muy complejo) de un programa de ordenador". <ref>{{ref-libro
+| id = ISBN 9788420628400
+| título = La Física de la [[Inmortalidad]]: la [[Cosmología]] moderna y su relación con Dios y la resurrección de los muertos.
+| año = 2005
+| autor = Tipler, Frank J. 
+| publicación = Alianza Editorial}}
+</ref><ref>[http://www.rtve.es/tve/b/redes/semanal/prg170/entrevista.htm ''Entrevista de Eduard Punset a [[Frank J. Tipler]] en "Redes", TVE.'']</ref><ref>[http://www.alfonselmagnanim.com/DEBATS/81/encontres01.htm ''La inmortalidad según [[Frank J. Tipler]]: una entrevista.'']</ref><ref>[http://divulgamat.ehu.es/weborriak/Cultura/Paginas/01122004.asp ''La Gran esperanza final. La Física de la inmortalidad.'']</ref>
+
+* La misma tesis de que el [[Universo]] pudiera ser en sí mismo una retícula de computadoras ya la adelantó en [[1967]] el [[ingeniero]] [[Alemania|alemán]] y pionero de la computación [[Konrad Zuse]], inventor en [[1941]] de la que puede ser que haya sido la "primera computadora", la [[Z3]]. [[Konrad Zuse|Zuse]] aportó sus investigaciones al respecto, sobre [[Física computacional]], en su libro ''Rechnender Raum''. <ref>;* [ftp://ftp.idsia.ch/pub/juergen/zuse67scan.pdf ''Rechnender Raum''] (PDF document), Elektronische Datenverarbeitung, 8: 336–344, 1967.</ref><ref>[ftp://ftp.idsia.ch/pub/juergen/zuserechnenderraum.pdf ''Calculating Space''] English translation as PDF document.</ref>
+
+El prestigioso físico de la [[Universidad de Oxford]], ganador de la medalla [[Paul Dirac]] y la primera persona del mundo en formular específicamente un algoritmo de [[computación cuántica]], <ref name="Deutsch1985">D. Deutsch, [http://web.archive.org/web/20030915061044/http://www.qubit.org/oldsite/resource/deutsch85.pdf "Quantum theory, the Church-Turing principle and the universal quantum computer,"] ''Proceedings of the Royal Society of London; Series A, Mathematical and Physical Sciences'', Vol. 400, No. 1818 (July 1985), pp. 97-117. Also available [http://www.ceid.upatras.gr/tech_news/papers/quantum_theory.pdf here.] See also [http://adsabs.harvard.edu/abs/1985RSPSA.400...97D here.]</ref>David Deutsch, encuentra los argumentos de un universo computerizado de [[Frank J. Tipler|Tipler]] consistentes. En su libro ''La estructura de la realidad'' (1997), Deutsch incorpora ''El punto Omega'' de Tipler como motivo central de su [[Teoría del todo]]. <ref>{{ref-libro
+| id = ISBN 9788433905840
+| título = La estructura de la realidad 
+| año = 2002
+| autor = Deutsch, David
+| publicación = Editorial Anagrama
+}}</ref>David Deutsch sostiene que la Teoría del Punto Omega de Frank J. Tipler merece convertirse en la teoría prevaleciente del espacio-tiempo. <ref>{{ref-libro
+| id = ISBN 9788433905840
+| título = La estructura de la realidad, pág. 355
+| año = 2002
+| autor = Deutsch, David
+| publicación = Editorial Anagrama
+}}</ref>
+
+* El mismo David Deutsch, Premio Edge de Computación 2005, <ref>David Deutsch. [http://www.edge.org/3rd_culture/bios/deutsch.html Recipient of the 2005 
+100,000 dollars Edge of Computation Science Prize.]</ref> propone la existencia de un [[Multiverso]], hipótesis que ya teorizó [[Hugh Everett]], como el conjunto de todos los infinitos [[Universos paralelos]] posibles, tal y como relató [[Carl Sagan]] que describe la Cosmología [[Hinduismo|Hindú]] en los [[Purana|Purāna]], <ref>[[Carl Sagan]], Placido P D'Souza (1980s). [http://www.rediff.com/news/jan/29sagan.htm Hindu cosmology's time-scale for the universe is in consonance with modern science.]; Dick Teresi (2002). ''Lost Discoveries : The Ancient Roots of Modern Science - from the Babylonians to the Maya''.</ref> o el [[Sikhismo]] en el Japji, <ref>[http://www.sikhnet.com/Sikhnet/Register.nsf/Files/Japji/$file/JapjiSahib-Spanish.pdf ''Japji, Sahib Satnza 22''] 'patala patal lakh agasa agas': "Ilimitados son los mundos superiores e ilimitados los inferiores; uno puede cansarse intentando encontrar Sus límites."
+Es imposible alcanzar el límite de Su enormidad. ਖੰਡ ਪਤਾਲ ਅਸੰਖ ਮੈ ਗਣਤ ਨ ਹੋਈ : "Inaccesibles son las incalculables esferas. Hablar de lo incalculable supera nuestra mente."</ref>de los que el nuestro tan sólo sería uno de ellos. En una conferencia en Septiembre de 2007 sobre los [[Universos paralelos]], <ref>[http://www.perimeterinstitute.ca/manyworlds/ Perimeter Institute, Many worlds at 50 conference, September 21-24, 2007]</ref>el filósofo de la física David Wallace, anunció una prueba por parte de David Deutsch y por él mismo de la Regla de [[Max Born|Born]], <ref>''Zur Quantenmechanik der Stoßvorgänge'', Max Born, 
+Zeitschrift für Physik, ''37'', #12 (Dec. 1926), pp. 863&ndash;867 (German); English translation in ''Quantum theory and measurement'', section I.2, J. A. Wheeler and W. H. Zurek, eds., Princeton, NJ: Princeton University Press, 1983.</ref><ref>[http://nobelprize.org/physics/laureates/1954/born-lecture.pdf Born's Nobel Lecture on the statistical interpretation of quantum mechanics]</ref><ref>''Mathematische grundlagen der quantenmechanik'', John von Neumann, Berlin: Springer, 1932 (German); English translation ''Mathematical foundations of quantum mechanics'', transl. Robert T. Beyer, Princeton, NJ: Princeton University Press, 1955.</ref>a partir de los postulados de [[Hugh Everett|Hugh Everett]], <ref>[http://www.perimeterinstitute.ca/index.php?option=com_content&task=view&id=50&Itemid=83&lecture_id=6167 Perimeter Institute, Seminar overview, Probability in the Everett interpretation: state of play, David Wallace - Oxford University, 21 Sept 2007]</ref>lo cual se ha anunciado como respaldo a la teoría de los [[Universos paralelos]]. <ref>[http://www.breitbart.com/article.php?id=paUniverse_sun14_parallel_universes&show_article=1&cat=0 Breitbart.com, Parallel universes exist - study, Sept 23 2007]</ref><ref name="newsci">
+{{ref-internet| 
+|Apellido = Merali
+|Nombre = Zeeya
+|Vínculo autor =
+|Título = Parallel universes make quantum sense
+|Año = 2007
+|Edición = 2622
+|Lugar = United Kingdom
+|Editorial = New Scientist
+|ID = 
+|ISBN = 02624079
+|URL = http://space.newscientist.com/article/mg19526223.700-parallel-universes-make-quantum-sense.html
+|Fecha de acceso = 21 de Septiembre de 2007
+|}}</ref>
+
+El físico Andy Albrecht, de la [[Universidad de California, Davis]] ha declarado que "Este trabajo pasará como uno de los avances más importantes en la [[Historia de la ciencia]]. <ref name="newsci" /> 
+
+[[Image:CERN shiva.jpg|left|thumb|350px|¿Religión, ciencia o pseudociencia? Estatua de [[Shiva]], el dios destructor de la [[Trimurti|Tri-murti]] [[hinduismo|hindú]], junto a [[Brahmā|Brahmá]] (dios creador) y a [[Vishnú]] (dios preservador) de los [[Universos_paralelos|infinitos Universos]], tal y como postula la [[multiverso|Teoría del Multiverso]], el [[dios]] supremo para el [[Shivaísmo]], a la entrada del mayor laboratorio de investigación en [[Física de partículas]] del mundo, el [[CERN]]. [http://www.youtube.com/watch?v=DSX_TFmHXlY Cosmología e Hinduismo. Vídeo ]de [[Carl Sagan]] de su serie [[Cosmos: Un viaje personal|COSMOS]].]]
+
+* Anteriormente, [[Max Planck]], dejó clara su convicción personal de que detrás de la [[materia]] se encontraría una [[mente]] [[conciencia|consciente]] e [[inteligencia|inteligente]], [[Matriz]] de toda la materia:
+
+{{cita|Como un hombre que ha dedicado toda su vida a la ciencia más preclara, el estudio de la [[materia]], esto es todo lo que puedo decirles sobre los resultados de mi investigación sobre los átomos: ¡La materia no existe! Toda la materia se origina y existe tan sólo por virtud de una fuerza que hace vibrar a las partículas de un átomo y hace que este [[sistema solar]] en miniatura permanezca unido. Debemos asumir que detrás de esta [[fuerza]] se encuentra la existencia de una [[Mente]] [[conciencia|consciente]] e [[inteligencia|inteligente]]. Esta [[Mente]] es la [[Matriz]] de toda la [[materia]].|[[Max Planck]], 1944 <ref>[[Max Planck]]. Florencia, Italia, 1944. Das Wesen der Materie” (The Essence/Nature/Character of Matter) Quelle: Archiv zur Geschichte der Max-Planck-Gesellschaft, Abt. Va, Rep. 11 Planck, Nr. 1797.</ref>}}
+
+* Así como la [[Conciencia]] era fundamental para [[Erwin Schrödinger]]. El pensamiento místico-metafísico de [[Erwin Schrödinger|Schrödinger]] se resume en su creencia en la unicidad última de la(s) conciencia(s), y la identidad de ésta(s) con la Divinidad no personal. Se trata de una de las nociones centrales del [[hinduísmo]], sintetizada en la fórmula [[Atman]] = [[Brahman (hinduismo)|Brahman]], a la que [[Erwin Schrödinger|Schrödinger]] se refiere explícitamente:
+
+{{cita|La [[Conciencia]] es un singular del que se desconoce plural. Existe una sola cosa y que lo que parece ser una pluralidad no es más que una serie de aspectos diferentes de esa misma cosa, originados por una quimera (la palabra hindú [[Maya]]). La misma [[ilusión]] se produce en una galería de [[espejo]]s y, en forma análoga, el Gaurisankar y el [[Monte Everest]] parecen ser una misma cima vistos desde valles diferentes.|[[Erwin Schrödinger]], ''¿Qué es la Vida?'', 1946<ref>[[Erwin Schrödinger]]. ¿Qué es la vida? Tusquets Editores, 1984. ISBN 8472236072</ref>}}
+
+* En un planteamiento aún más extraño, el actual Profesor emérito de física de las universidades de [[Universidad de Princeton|Princeton]] y Texas y [[Premio Wolf]] 1997 (el más prestigioso tras el [[Premio Nobel|Nobel]]), [[John Archibald Wheeler]], a partir del enigmático comportamiento de un electrón en el [[Experimento de Young|experimento de doble rejilla]] <ref>[http://es.youtube.com/watch?v=elQYG5brROY Experimento de doble rejilla. Vídeo educativo]</ref>, argumenta que las [[elección|elecciones]] que realiza el [[observador]] controlan las variables de un experimento físico <ref>Ross Rhodes. [http://www.bottomlayer.com/bottom/basic_delayed_choice.htm ''Wheeler's Classic Delayed Choice Experiment'']</ref>, lo cual contradice por completo el supuesto ''[[sentido común]]''. Finalmente, este experimento se ha llevado a cabo en el año 2006. <ref>Vincent Jacques (LPQM), E. Wu (LPQM), Frédéric Grosshans (LPQM), François Treussart (LPQM), Philippe Grangier (LCFIO), Alain Aspect (LCFIO), Jean-François Roch (LPQM). arXiv:quant-ph/0610241v1.[http://www.arxiv.org/abs/quant-ph/0610241 ''Experimental realization of Wheeler's delayed-choice GedankenExperiment'']</ref> En el equipo se encontraba Alain Aspect, el mismo científico francés que ya en 1981 realizó su famoso experimento <ref>* A. Aspect et al., Phys. Rev. Lett. 47, 460 (1981). [http://prola.aps.org/abstract/PRL/v47/i7/p460_1 ''Experimental Tests of Realistic Local Theories via Bell's Theorem'']. 
+*  A. Aspect et al., , Phys. Rev. Lett. 49, 91 (1982). [http://prola.aps.org/abstract/PRL/v49/i2/p91_1 ''Experimental Realization of Einstein-Podolsky-Rosen-Bohm Gedankenexperiment: A New Violation of Bell's Inequalities'']
+*  A. Aspect et al., Phys. Rev. Lett. 49, 1804 (1982). [http://prola.aps.org/abstract/PRL/v49/i25/p1804_1 ''Experimental Test of Bell's Inequalities Using Time-Varying Analyzers'']. 
+* M. A. Rowe1, D. Kielpinski, V. Meyer, C. A. Sackett, W. M. Itano, C. Monroe and D. J. Wineland. Nature 409, 791-794 (15 February 2001). [http://www.nature.com/nature/journal/v409/n6822/full/409791a0.html Experimental violation of a Bell's inequality with efficient detection.]</ref>, demostrando que se violaban las desigualdades de [[John Bell]] y probando la incompatibilidad del realismo local con la [[mecánica cuántica]]. Estas desigualdades de [[John Bell]] pretendían demostrar que una serie de [[Teoría de la variable escondida|Teorías locales de variables ocultas]] eran incompatibles con la [[mecánica cuántica]].
+
+* Para el [[Premio Nobel de química]] en [[1977]], [[Ilya Prigogine]], "La probabilidad estadística de que las estructuras orgánicas y las reacciones más exactamente armónicas que tipifican a los seres vivos se generasen por accidente, es cero." <ref>I. Prigogine, N. Gregair, A. Babbyabtz, Physics Today 25, pp. 23-28</ref>
+
+* El propio [[Albert Einstein]] observó que la [[Teoría de la Relatividad Especial|relatividad especial]] no nos lleva a negar la existencia del [[Éter_(física)|Éter]], y que, de hecho, según la [[Relatividad general|Teoría general de la relatividad]], el [[espacio]] está dotado de cualidades físicas, de modo que, en este sentido, existe el [[Éter_(física)|Éter]]. <ref>[[Albert Einstein]]. ''El Éter y la Teoría de la Relatividad.'' Conferencia del 5 de Mayo de 1920 en la Universidad de Leyden.</ref>
+
+* En el año 2002, el científico [[Henry Margenau]], junto con [[Lawrence LeShan]], [[psicología|psicólogo]] experimental y autor de varios libros en el campo de los fenómenos de [[conciencia]], publican el libro titulado: [http://www.agapea.com/El-espacio-de-Einstein-y-el-cielo-de-Van-Gogh-n75842i.htm El espacio de Einstein y el cielo de Van Gogh : Un paso más alla de la realidad física]. <ref>Margenau, Henry; Le Shan, Lawrence. ''El espacio de Einstein y el cielo de Van Gogh : Un paso más alla de la realidad física''. Gedisa, S.A., 1985. ISBN 847432226X</ref>En él, los autores presentan una audaz teoría científica de la realidad que pretende establecer una base científica para las experiencias no físicas y los [[paranormal|fenómenos paranormales]].
+
+Según las tesis del libro, recientes descubrimientos de la física demuestran que la realida] está inextricablemente ligada a la [[naturaleza]] de la [[conciencia]] humana, y que la [[creencia]] de que existe una única realidad verdadera ha dejado de tener validez y utilidad para el conocimiento. Los autores analizan la ciencia de nuestro [[tiempo]] y revelan las bases [[historia|históricas]], [[Cultura|culturales]] y [[Filosofía|filosóficas]] que sostienen la interpretación tradicional de la realidad. En su estudio exponen las limitaciones propias de este enfoque científico cuando se aplica a áreas lejanas de las llamadas ciencias duras, tales como el [[arte]], la [[música]], la [[ética]], las [[ciencias sociales]] y los [[fenómenos paranormales]], ámbitos que se consideran pertenecientes al campo de la [[conciencia]]. La argumentación fundamental de su libro es que la aplicación de criterios convencionales de realidad en este campo nos ha llevado a un bloqueo intelectual y científico que afecta seriamente a las posibilidades de extender y ampliar los límites de la [[conciencia]] humana.
+
+Henry Margenau también ha cuestionado el postulado de proyección cuántica <ref>Margenau, H. Foundations of Physics. Volume 22, Number 5 / May, 1992. 10.1007/BF01889676. [http://www.springerlink.com/content/p0t26w7637kk0t77/ ''Quantum mechanics without the projection postulate.'']</ref>  y publicó varios artículos sobre el estudio científico de los [[fenómenos paranormales]] y de [[percepción extrasensorial]] <ref>Margenau, H. Luncheon address given at the ESP Forum sponsored by the A.S.P.R., 20 November 1965. [http://www.survivalafterdeath.org/articles/margenau/framework.htm ''ESP in the Framework of Modern Science''.]</ref>, en los que cuestionaba entre otros, el [[Principio de causalidad]] y la [[Conservación de la energía|Ley de Conservación de la energía]].
+
+[[Image:SwansCygnus olor edit2.jpg|thumb|350px|[[Problema de la inducción]]: ¿Cómo se puede asegurar que todos los [[cisne]]s son blancos, por más [[cisne]]s blancos que puedan verse? ¿O cómo justificar e incluso hasta [[inferencia|inferir]] de ello que no sólo son blancos, sino que ''tienen que ser blancos'' según las ''leyes naturales''? Hasta el siglo XVII, momento en el que se descubrió el primer [[cisne]] negro en [[Australia]], se creía que ''todos los cisnes son blancos''.
+Para Hume, no existe ningún fundamento lógico que justifique el [[Problema de la inducción|Principio de inducción]], al que considera una [[creencia]], un acto no [[racional]] de [[Fe]] ciega. Hasta el momento, ningún filósofo ha argumentando concluyentemente en contra, y se considera que la ciencia descansa sobre una asunción no [[prueba|probada]]. <ref>Okasha, Samir. ''Philosophy of Science. A very short introduction''. p. 38. Oxford University Press. 2002. ISBN 0192802836</ref>]]
+
+* En cuanto al concepto de el [[tiempo]], los esfuerzos para entender el [[tiempo]] por debajo de la escala de [[Max Planck|Planck]] han llevado a un extraño cruce de caminos en la física. El problema es que el tiempo puede no existir al nivel más fundamental de la realidad física.
+
+Según el físico Julian Barbour, autor del libro ''El fin del Tiempo: la siguiente revolución en la física'' <ref>Barbour, Julian. The End of Time: The Next Revolution in Physics. Oxford University Press, 2001. ISBN 0195145925</ref>, el [[tiempo]] no existe en absoluto:
+
+{{cita|Creo que, en última instancia, el tiempo no existe en absoluto. Que el Universo es estático. E incluso, que el movimiento es una ilusión. Cuando miras mis manos moverse en el Universo real, si pudieras permanecer fuera del Universo como si fueras Dios, y vieras el Universo como realmente es, verías que esta apariencia de movimiento es una ilusión.|Julian Barbour, 2001 <ref>[http://www.youtube.com/v/Ztgu1W5Ns1U ''Redes, emisión 407. El tiempo no existe. Vídeo.'']</ref>}}
+
+* Para el [[Filosofía de la física|filósofo de la física]] de la [[Universidad de Oxford]], Simon Saunders: 
+
+{{cita|El significado del tiempo se ha convertido en terriblemente problemático en la física contemporánea. La situación es tan incómoda que, con mucho, lo mejor que se puede hacer es declararse agnóstico al respecto.|Simon Saunders, 2007 <ref>Tim Folger. Discover Magazine. 06.12.2007. [http://discovermagazine.com/2007/jun/in-no-time ''Time May Not Exist''.]</ref>}}
+
+* Recientemente, los científicos de la [[Universidad de Viena]], Markus Aspelmeyer y Anton Zeilinger, parecen haberle dicho ''adiós a la realidad'' <ref>[http://physicsweb.org/articles/news/11/4/14 Quantum physics says goodbye to reality]</ref>, al haber realizado un experimento publicado en la prestigiosa [[revista científica]] [[Nature]], <ref>Nature 446, 871-875 (19 April 2007). [http://www.nature.com/nature/journal/v446/n7138/abs/nature05677.html ''An experimental test of non-local realism.'']</ref><ref>Nature 446, 871-875 (2007). Simon Groeblacher, Tomasz Paterek, Rainer Kaltenbaek, Caslav Brukner, Marek Zukowski, Markus Aspelmeyer, Anton Zeilinger. [http://arxiv.org/abs/0704.2529 ''An experimental test of non-local realism.'']</ref> que descarta a una clase amplia de [[Teoría_de_las_variables_ocultas|Teorías sobre variables ocultas]] que se centran en el [[realismo]], lo cual da lugar a la incómoda consecuencia de que la realidad no existe cuando no la estamos observando. <ref>24 Abril, 2007. [http://physicsworld.com/cws/article/news/27640 ''Quantum physics says goodbye to reality'']. [http://www.maikelnai.es/?p=475 ''La física cuántica le dice adios a la realidad.'']</ref>
+
+Llegados a este punto, los desacuerdos fundamentales sobre la naturaleza de aquello en lo que consiste una [[explicación]] científica consensuada sobre la ''realidad'' son de dos tipos:
+
+Por una parte, existen desacuerdos [[metafísica|metafísicos]]. Los [[realismo|realistas]] y los anti[[realismo|realistas]] siguen discrepando en torno a qué tipo de compromisos [[ontología|ontológicos]] se deben hacer para aceptar una explicación como válida.
+
+Por otra parte, los [[naturalismo|naturalistas]] y los no-[[naturalismo|naturalistas]] siguen disputando en lo concerniente a la relevancia de la búsqueda científica (es decir, un cuestionamiento acerca del modo de pensar de los científicos, la gente común y los [[ordenador]]es) de una Teoría Filosófica de la [[explicación|Explicación]]. Es poco probable que estas disputas se resuelvan a corto plazo. <ref>G. Randolph Mayes. ''Theories of Explanation''. California State University Sacramento, 2005.</ref>
+
+Ver '''[[Criterio de demarcación#El problema de la inducción|El problema de la inducción.]]'''
+
+==Falsacionismo y Teoría de cuerdas==
+
+[[Image:Violin metallic mute.jpg|thumb|300px|La teoría de cuerdas o la [[Teoría M]] podrían no ser falsables, según algunos críticos. <ref>Smolin, Lee. Mariner Books, 2007. ''The trouble with Physics.'' ISBN 061891868X</ref><ref>Woit, Peter. Basic Books, 2007. ''Not even wrong.'' ISBN 0465092764</ref><ref>Sheldon Glashow & Paul Ginsparg, "Desperately Seeking Superstrings", ''Physics Today'', Mayo, 1986, p.7.</ref><ref>Howard Georgi, en ''The New Physics'',ed. Paul Davies, Cambridge University Press, Cambridge, 1989, p. 446</ref>¿Habría que revisar el concepto de qué se considera científico o habría que desechar el falsacionismo propuesto por Popper como requisito para que una teoría pueda ser considerada científica? Si así fuera, ¿cómo sería posible delimitar con[objetividad qué es ciencia y qué pseudociencia?]]
+
+Aunque la teoría de cuerdas pudiera llegar a convertirse en una de las teorías físicas más predictivas, capaz de explicar algunas de las propiedades más fundamentales desde la naturaleza en términos geométricos, paradójicamente, después de casi 40 años de desarrollo matemático de la teoría, todavía no existe ni un sólo resultado experimental predicho por la teoría de cuerdas que haya sido publicado en ningúna [[revista científica|publicación científica]] de [[revisión por pares]], <ref name="bunge">[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref><ref>M. R. Douglas. [http://www.physics.rutgers.edu/~mrd/test3.pdf ''Are There Testable Predictions of String Theory?''] Feb. 2007 Texas A&M</ref><ref name="greatdebate">The Great String debate. [http://www.symmetrymagazine.org/cms/?pid=1000481 Wisecracks fly when Brian Greene and Lawrence Krauss tangle over string theory.]</ref><ref>Jim Holt. The Newyorker. Octubre, 2006. ''Si existiera más de una versión de la Teoría de Cuerdas, ¿cómo podríamos decidir qué versión es la correcta? Ningún experimento podría resolver la cuestión, puesto que la Teoría de Cuerdas trata con energías que exceden por increíblemente mucho las que se puedan alcanzar en un acelerador de partículas. (Harían falta aceleradores de partículas de un tamaño muy superior al de la [[Galaxia]]).'' [http://www.newyorker.com/archive/2006/10/02/061002crat_atlarge?printable=true Unstrung]</ref> tal y como requiere el falsacionismo de [[Popper]] para que una teoría pueda ser considerada como científica.
+
+Lo que es más, tal y como se entiende en la actualidad, tiene un número gigantesco de posibles soluciones. <ref name = "KKLT">S. Kachru, R. Kallosh, A. Linde and S. P. Trivedi, [http://arxiv.org/abs/hep-th/0301240 de Sitter Vacua in String Theory], Phys.Rev.D68:046005,2003</ref> Lo que es más, habría más de un 1 seguido de 500 ceros de posibles teorías de cuerdas, de las cuales tan sólo una de ellas sería válida. <ref>Jim Holt. The Newyorker. Octubre, 2006. "El número de teorías de cuerdas que se estiman es de un uno seguido de 500 ceros." [http://www.newyorker.com/archive/2006/10/02/061002crat_atlarge?printable=true Unstrung]</ref>
+
+Así pues, muchos científicos han declarado su preocupación de que la teoría de cuerdas no sea falsable y que además, carezca de poder predictivo, y como tal, y siguiendo las tesis de Popper, la teoría de cuerdas sería equivalente a una pseudociencia. <ref name = "Wrong">[http://www.math.columbia.edu/~woit/wordpress/?cat=2 Peter Woit's ''Not Even Wrong'' weblog ]</ref><ref>P. Woit (Columbia University) [http://arxiv.org/abs/physics/0102051 String theory: An Evaluation],Feb 2001, e-Print: physics/0102051</ref><ref>P. Woit, [http://www.math.columbia.edu/~woit/testable.pdf Is String Theory Testable?] INFN Rome March 2007</ref><ref name = "Smolin">[http://www.thetroublewithphysics.com Lee Smolin's ''The Trouble With Physics'' webpage]</ref><ref>[http://www.slate.com/id/2149598/ ''The Trouble With String Theory''.]</ref><ref name="greatdebate" />
+
+Sin embargo, sus defensores han argumentado que conceptos [[subjetivo]]s como la ''armonía, elegancia y generalidad'' de la teoría son en sí mismas tan impresionantes como para hacer que merezca la pena trabajar en dicho campo y esperar lo que haga falta hasta que aparezcan resultados contrastables con experimentos.
+
+Mario Bunge ha manifestado recientemente:
+
+{{cita|* La consistencia, la sofisticación y la [[belleza]] nunca son suficientes en la investigación científica.
+* La teoría de cuerdas es sospechosa (de pseudociencia). Parece científica porque aborda un problema abierto que es a la vez importante y difícil, el de construir una teoría [[gravedad cuántica|cuántica de la gravitación]]. Pero la teoría postula que el espacio físico tiene seis o siete dimensiones, en lugar de tres, simplemente para asegurarse consistencia matemática. Puesto que estas dimensiones extra son inobservables, y puesto que la teoría se ha resistido a la confirmación experimental durante más de tres décadas, parece ciencia ficción, o al menos, ciencia fallida.
+* La física de partículas está inflada con sofisticadas teorías matemáticas que postulan la existencia de entidades extrañas que no interactúan de forma apreciable, o para nada en absoluto, con la materia ordinaria, y como consecuencia, quedan a salvo al ser indetectables. Puesto que estas teorías se encuentran en discrepancia con el conjunto de la física, y violan el requerimiento de falsacionismo, pueden calificarse de pseudocientíficas, incluso aunque lleven pululando un cuarto de siglo y se sigan publicando en las revistas científicas más prestigiosas.|Mario Bunge, 2006. <ref>[[Mario Bunge]]. Skeptical Inquirer, July/Aug, 2006.</ref>}}
+
+Según recientes declaraciones de la Física y Profesora de la [[Universidad de Harvard]], [http://www.seas.harvard.edu/haulab/lene_vestergaard_hau/lene_vestergaard_hau.htm Lene Hau]:
+
+{{cita|Incluso si no existen modelos que le hagan la competencia, eso no significa que la Teoría de Cuerdas sea correcta. Lo que es preocupante es tener a tanta gente trabajando en ella, pero no parece ser falsable. Hasta que existan consecuencias falsables, en cierta manera, son matemáticas.|Lene Hau, 2007. <ref>Boston Globe. 17 de Marzo de 2007. [http://www.boston.com/news/globe/ideas/articles/2007/03/18/qa_with_lene_hau/?page=full Q&A with Lene Hau.]</ref>}}
+
+De hecho hasta hace relativamente poco la teoría sólo permitía hacer cálculos perturbativos aproximados en términos de cantidades que por el momento no conocemos, como las [[Constante de acoplamiento|constantes de acoplamiento]] entre las cuerdas, y algunas ecuaciones importantes para la teoría sólo se conocen formas linealizadas que no permiten sacar conclusiones.
+
+La crítica principal de que es objeto la teoría de cuerdas es de que sea, fundamentalmente, imposible de falsar, debido a su naturaleza intrínseca: tiene la suficiente flexibilidad matemática como para que sus parámetros se puedan moldear para encajar con cualquier tipo de ''realidad'' observada. <ref>Smolin, Lee. Mariner Books, 2007. ''The trouble with Physics.'' ISBN 061891868X</ref><ref>Woit, Peter. Basic Books, 2007. ''Not even wrong.'' ISBN 0465092764</ref>
+
+Para ilustrar la confusa situación que domina este campo de investigación, baste citar el reciente [[escándalo Bogdanov]], dos hermanos que consiguieron publicar en prestigiosas revistas científicas teorías absurdas y carentes de sentido. El [[físico]] alemán Max Niedermaier concluyó que se trataba de pseudociencia, escrita con una densa jerga técnica, para evitar el sistema de [[revisión por pares]] de la física teórica. Según el físico-matemático [[John Baez]], su trabajo "es una mezcolanza de frases aparentemente plausibles que contienen las palabras técnicas correctas en el orden aproximadamente correcto. Pero no hay lógica ni cohesión en lo que escriben." Según el físico Peter Woit en la prestigiosa revista [[Nature]]: "El trabajo de los Bogdanoff resulta significativamente más incoherente que cualquier otra cosa publicada. Pero el creciente bajo nivel de coherencia en todo el campo les permitió pensar que habían hecho algo sensato y publicarlo."<ref>[[John Baez]]. [http://math.ucr.edu/home/baez/bogdanoff/ The Bogdanoff Affair.]</ref>
+
+==Pseudoescepticismo==
+
+Ver '''[[Criterio de demarcación#Cientifismo y pseudoescepticismo|Cientifismo y pseudoescepticismo]]'''.
+
+[[Image:Neptune.jpg|thumb|250px|[[Neptuno (planeta)|Planeta Neptuno]]. Según las acusaciones de Karl Popper al [[marxismo]] y al [[psicoanálisis]] de ser pseudociencias, el método seguido por [[John Couch Adams|Adams]] y [[Urbain Le Verrier|Le Verrier]] que condujo al descubrimiento de [[Neptuno]], también sería pseudociencia. <ref>Okasha, Samir. ''Philosophy of Science. A very short introduction''. p. 16. Oxford University Press. 2002. ISBN 0192802836</ref>]]
+
+A la hora de tratar de determinar qué es ciencia de qué no es ciencia, es necesario evitar caer en una actitud [[cientifismo|cientifista]] o [[pseudoescepticismo|pseudoescéptica]]. Para el filósofo Gregory Peterson, lo que caracteriza la mentalidad [[cientifismo|cientifista]], que no hay que confundir con la [[científico|científica]], es la pretensión de objetivar toda [[causa]], de no conocer más que la objetividad, de integrar el mundo humano en el mundo de los objetos. El mismo Karl Popper reconoce que "La ciencia no es un sistema de enunciados seguros y bien asentados, ni uno que avanzase firmemente hacia un estado final. Nuestra ciencia no es conocimiento (episteme): nunca puede pretender que ha alcanzado la verdad, ni siquiera el sustituto de ésta que es la probabilidad." <ref name="conjeturas">[[Karl Popper]]. ''Conjeturas y refutaciones.'' Paidós, 1994. ISBN 8475091466</ref>
+
+Para Peterson, dos son fundamentalmente los principios esenciales que están implicados en esta mentalidad [[cientifismo|cientifista]]: 
+
+:* La verdadera ciencia sería una especie de [[mecánica]] universal, capaz de traducir en términos racionales todos los [[fenómenos]], sin conceder una posición privilegiada a ninguno de ellos, ni siquiera a aquellos que se presentan en la [[escala]] humana y, por tanto, con caracteres [[cualidad|cualitativos]], sino reduciéndolos todos a [[ecuación|ecuaciones]] [[Análisis cuantitativo|cuantitativas]]; 
+
+:* El método de la ciencia consistiría exclusivamente en ordenar y explicar los hechos según la necesidad [[Causalidad (filosofía)|causal]]. Aplicación, pues, del [[determinismo]] universal al mundo entero, incluyendo al mundo humano.<ref name="fallacy">Peterson, Gregory R. (2003) Demarcation and the Scientistic Fallacy. ''Zygon: Journal of Religion and Science.'' 38 (4), 751-761. doi: 10.1111/j.1467-9744.2003.00536.x"</ref>
+
+Existen serios problemas para considerar la validez de una explicación científica en simples términos de [[Causalidad (filosofía)|causalidad]] o de [[reduccionismo]] mecanicista. 
+
+Tal y como argumentó el filósofo [[Ludwig Wittgenstein]] con respecto al problema de la determinación de los efectos a partir de las causas en el [[Tractatus logico-philosophicus]]:
+
+{{cita|* 5.134 De una proposición elemental no se puede inferir ninguna otra.
+* 5.135 De ningún modo es posible inferir de la existencia de un estado de cosas la existencia de otro estado de cosas enteramente diferente de aquél.
+* 5.136 No existe nexo causal que justifique tal [[inferencia]].
+** 5.1361 No podemos inferir los acontecimientos futuros de los presentes. La fe en el nexo causal es la [[Superstición|superstición]].
+** 5.1362 La libertad de la voluntad consiste en que no podemos conocer ahora las acciones futuras. Sólo podríamos conocerlas si la causalidad fuese una necesidad interna, la necesidad de la conclusión lógica. La conexión entre conocer y conocido es la de la necesidad lógica. ("A conoce que P acaece" no tiene sentido si P es una [[tautología]].)
+** 5.1363 Lo mismo que del hecho de que una proposición nos sea evidente, no se sigue que sea verdadera, del mismo modo la [[evidencia]] no justifica nuestra creencia en su verdad.|[[Ludwig Wittgenstein]], 1921 <ref>[[Ludwig Wittgenstein|Wittgenstein, Ludwig]]. ''[[Tractatus logico-philosophicus]]''. Alianza Editorial S.A. 2005. ISBN 8420655708</ref>}}
+
+Que las teorías sólo puedan ser probadas por su relación con otras teorías implica que siempre se puede declarar que los resultados de las pruebas que parecen refutar una teoría científica no la refutan en absoluto. En lugar de eso, se puede sostener que esos resultados chocan con las predicciones porque alguna otra teoría es falsa o desconocida. Quizá el equipo de pruebas esté desalineado o quizá haya [[materia oscura]] en el universo que sea la causante de los extraños movimientos de algunas galaxias.
+
+El hecho de que no sea posible determinar qué teoría es refutada por datos inesperados significa que los científicos deben consensuar qué teorías aceptar y cuáles rechazar. La lógica por sí sola no sirve de guía en estas decisiones.
+<br>
+El verdadero [[escepticismo|escéptico]] es alguien que profesa duda o está en desacuerdo con lo que generalmente está aceptado como verdad. La palabra escéptico viene del griego ''skeptikoi'', el nombre dado a los seguidores del filosofo griego [[Pirrón]].
+
+Pirrón profesó una [[doctrina]] que abandonaba el [[juicio]] y creía que no había nada verdadero o [[mentira|falso]], [[bueno]] o [[malo]], inmundo o [[sagrado]].
+Pirrón estaba en contra del [[pensamiento]] [[dogma|dogmático]]. Tal [[doctrina]] consiste en afirmar que la verdad no existe, o que, si existe, el hombre es incapaz de conocerla. Pirrón no dejo nada escrito, pero a él se le atribuyen frases como:
+
+#''Nunca llegarás a conocer la verdad''
+#''No digas "Así es", sino "Me parece que es"''
+#''La diversidad de opinión existe entre sabios igual que entre ignorantes. Cualquier opinión que yo tenga puede ser repudiada por personas igual de listas y preparadas que yo, y con argumentos tan válidos como los míos.''
+
+Sin embargo, quienes critican la mentalidad [[cientifismo|cientifista]], indican que un ejemplo de este pensamiento estaría presente en lo que se llama hoy en día [[escepticismo]] moderno (también llamado escepticismo científico). Los términos [[pseudoescepticismo]] y escepticismo patológico <ref>William J. Beaty, 1996. [http://amasci.com/pathsk2.txt ''Symptoms of pathological Skepticism.'']</ref><ref>Professor Brian D. Josephson. Theory of Condensed Matter Group at the Cavendish Laboratory, Cambridge, U.K. [http://www.lindau-nobel.de/content/view/19/32/ ''Pathological disbelief'']</ref> se utilizan para referirse al fenómeno que se da cuando ciertas formas de [[escepticismo]] se desvían de la objetividad y neutralidad científica. El uso del término ha permanecido circunscrito a la discusión filosófica durante más de un siglo, pero no ha sido hasta hace poco que ha sido objeto de intentos sistemáticos de definir y delimitar el concepto. El mejor y más conocido análisis del escepticismo ha sido llevado a cabo por el sociólogo norteamericano Marcello Truzzi, de la Eastern Michigan University, quien en 1987 manifestó:
+
+{{cita|En tanto que el "escepticismo" se refiere más bien a la duda que a la refutación — al dudar más que al creer — los críticos que toman una posición negadora en vez de una [[Agnosticismo|agnóstica]] son en realidad pseudoescépticos|Marcello Truzzi, 1987.<ref>"Marcello Truzzi, [http://www.anomalist.com/commentaries/pseudo.html On Pseudo-Skepticism]" ''Zetetic Scholar'' (1987)  No. 12/13, 3-4.</ref>}}
+
+El [[etnología|etnólogo]] David J. Hufford de la universidad del estado de Pennsylvania utiliza el término "escepticismo radical" para referirse a los prejuicios y discriminaciones que según él adoptan muchos — quizá la mayoría — de los científicos académicos. Después de leer y analizar los trabajos de muchos escépticos y [[debunker]]s, Hufford sostiene que se puede encontrar rápidamente:
+
+{{cita|[[Argumentum ad verecundiam|invocaciones a la autoridad]], falacias ''[[Post hoc ergo propter hoc|post hoc]]'', argumentos ''[[ad hominem]]'' y un amplio abanico de otros [[Prejuicio cognitivo|prejuicios cognitivos]]. No obstante, debido a que esta dimensión inductiva del análisis académico normalmente no presenta a escrutinio y debido a que una gran parte del trabajo consistente en enmarcar las preguntas y establecer las fronteras para el discurso académico sobre 'lo sobrenatural' en una gran medida se estableció entre varias generaciones... y varios siglos atrás... la parcialidad sistemática de esta tradición hoy en día opera de forma casi invisible.|David J. Hufford, 1993.<ref>Clark, Jerome, ''Unexplained! 347 Strange Sightings, Incredible Occurrences, and Puzzling Physical Phenomena''; Detroit, Visible Ink Press; 1993, ISBN 0810394367; pág. 117</ref>}}
+
+Según [[Gaston Bachelard|Bachelard]], la ciencia no puede producir verdad. Lo que debe hacer es buscar mejores maneras de preguntar. Para ejemplificarlo, utiliza una metáfora: ''"el conocimiento de lo real es una luz que siempre proyecta alguna sombra"''.
+
+Cada superación de algún obstáculo epistemológico conlleva necesariamente otro obstáculo más complejo, contrariamente a lo supuesto por Popper, quien posteriormente abandonó el simple falsacionismo como una ''lógica de la ciencia'', puesto que se dio cuenta de que cualquier teoría lo suficientemente rica puede eludir ser falsada recurriendo a hábiles movimientos de prestidigitación lógica <ref>{{Cita libro
+| apellidos = Newton-Smith
+| nombre = William H. 
+| título = A Companion to the Philosophy of Science
+| año = 2001
+| publicación = Blackwell Publishing Limited
+| id = ISBN 0631230203
+}}</ref>, y finalmente admitió que las continuas modificaciones ''ad hoc'' de una teoría le permitirían evitar ser falsada.<ref>{{Cita libro
+| apellidos = Popper
+| nombre = Karl
+| título = Conjectures and Refutations: The Growth of Scientific Knowledge
+| año = 1987
+| publicación = HarperCollins
+| id = ISBN 0415285941
+}}</ref>
+
+Así pues, el falsacionismo, en todas y cada una de sus múltiples formas, es una idea interesante, pero insuficiente como para caracterizar qué es lo que es ciencia o para resolver el problema de demarcación. Sufre de una serie de dificultades lógicas y epistemológicas que deberían hacernos detenernos si lo que buscamos es obtener una respuesta en cuanto a qué es buena ciencia y qué no. <ref>Newall, Paul. 2005. [http://www.galilean-library.org/falsificationism.html ''Falsificationism.'']</ref>
+
+==Peligros de la medicina pseudocientífica para la salud==   
+Un campo en el que se usa frecuentemente de alegaciones pseudocientíficas es el de la curación de enfermedades. {{Añadir referencias}}Ocurre incluso dentro de la medicina convencional, por ejemplo cuando algunas compañías farmacéuticas promueven el uso de sus productos para fines distintos de los que justificaron su aprobación y sin ensayos clínicos suficientes o adecuados.
+
+Existe además un importante mercado de métodos curativos, que en muchos casos actualizan métodos mágicos tradicionales, como la imposición de manos. {{Añadir referencias}}La mayoría de estos curanderismos, cuya extensión creciente debe mucho a Internet, {{Añadir referencias}} busca la credibilidad y el prestigio de la ciencia, alegando desconocidas propiedades del agua<ref>[http://www.chem1.com/CQ/index.html Water pseudoscience], página de Stephen Lower, un profesor de química retirado.</ref> o la acción de fenómenos cuánticos. {{Añadir referencias}}
+
+El cartílago de tiburón se ha promocionado falsamente como cura para el cáncer en base una supuesta inexistencia de cánceres en tiburones. De acuerdo con Ostrander ''et al'' (2004), esta práctica ha llevado a una continua disminución de las poblaciones de tiburones y, lo que es más importante, esta práctica ha alejado a los pacientes de terapias contra el cáncer que sí son efectivas.<ref>Ostrander GK ''et al.'' (2004) Shark cartilage, cancer and the growing threat of pseudoscience. ''Cancer Res''64:8485-91. Erratum in: Cancer Res. 65:374. 
+PMID 15574750 </ref> Sugieren que "los mecanismos basados en la evidencia por la comunidad científica día a día deberían añadirse al aprendizaje de los profesionales de los medios de comunicación y gubernamentales".
+
+Un caso especial, por su extensión, es el de la [[homeopatía]], cuya incongruencia con el conocimiento científico fue mostrada {{Añadir referencias}} ya en vida de su fundador, [[Samuel Hahnemann]], y respecto a la que se han utilizado recientemente términos prestados de la mecánica cuántica (como ''entanglement'') de manera admitidamente metafórica. {{Añadir referencias}}
+
+Algunos tratamientos alternativos de carácter pseudocientífico han producido accidentes graves,  {{Añadir referencias}}incluso muertes; {{Añadir referencias}} pero se admite en general {{Añadir referencias}} que el mayor peligro para la salud de los pacientes se realiza cuando, confiando en un método ineficaz, renuncian a medidas más efectivas, como hábitos más saludables o un tratamiento médico de eficacia demostrada. {{Añadir referencias}}
+
+==Explicaciones psicológicas==
+El pensamiento pseudocientífico se ha explicado en términos de [[psicología]] y [[psicología social]]. La tendencia humana a buscar confirmación en vez de refutación,<ref>(Devilly 2005:439)</ref> la tendencia a mantenerse en las creencias confortables, y la tendencia a sobregeneralizar han sido propuestas como razones comunes para la adherencia al pensamiento pseudocientífico. De acuerdo con Beyerstein (1991) los humanos son propensos a realizar asociaciones en función de la apariencia, y a menudo cometen errores en el pensamiento sobre causa y efecto.<ref>[http://www.naya.org.ar/congreso2000/ponencias/Jose_Antonio_Plaza.htm Pensamiento Magico y Eficacia Terapéutica] ''José Antonio Plaza Rincón'' <small>Licenciado en Antropología (U.C.M.) </small></ref>
+
+Por otra parte, como se demuestra continuamente, <ref>Base de datos PubMed. [http://www.ncbi.nlm.nih.gov/sites/entrez?Db=PubMed&Cmd=search&Term=%22Publication+Bias%22%5BMesh%5D Sesgos de publicación. Búsqeda MESH.]</ref>este sesgo cognitivo también se da en ámbitos científicos, estando cuestionado y en entredicho el sistema de [[revisión por pares]], al permitirse el control de qué artículos se publican por una élite y por celosías personales. <ref>"[http://www.eurekalert.org/pub_releases/2004-08/cu-bse081204.php British scientists exclude 'maverick' colleagues, says report]" (2004) EurekAlert Public release date: 16-Aug-2004</ref> El proceso de [[revisión por pares]] puede suprimir teorías disidentes con las del consenso científico imperante, tal y como se ha demostrado en múltiples ocasiones. <ref>Brian Martin,  "[http://www.uow.edu.au/arts/sts/bmartin/dissent/documents/ss/ Suppression Stories]" (1997) in ''Fund for Intellectual Dissent''  ISBN 0-646-30349-X</ref><ref>Ver también Juan Miguel Campanario, "[http://www2.uah.es/jmc/nobel.html Rechazando artículos de clase Nobel y resistiendo ante descubrimientos clasificados de Nobel.]", citado en ''Nature'', 16-Oct-2003, Vol 425, Issue 6959, p.645</ref><ref>Juan Miguel Campanario and Brian Martin, "[http://www.uow.edu.au/arts/sts/bmartin/pubs/04jse.html Challenging dominant physics paradigms]" (2004) ''Journal of Scientific Exploration'', vol. 18, no. 3, Fall 2004, pp. 421-438</ref>
+
+Los revisores tienden a ser especialmente críticos con las conclusiones que contradicen a sus propios puntos de vista. Como resultado, las ideas que armonizan con la élite tienen más posibilidades de ser publicadas en revistas científicas que las ideas iconoclastas o revolucionarias, tal y como argumentó Thomas Kuhn en [[La estructura de las revoluciones científicas]]. <ref>Ver también: Sophie Petit-Zeman, "[http://www.guardian.co.uk/print/0,3858,4583809-111019,00.html Trial by peers comes up short]" (2003) The Guardian, Thursday January 16, 2003</ref><ref>Base de datos PubMed. [http://www.ncbi.nlm.nih.gov/sites/entrez?Db=PubMed&Cmd=search&Term=%22Publication+Bias%22%5BMesh%5D Sesgos de publicación. Búsqeda MESH.]</ref>
+
+Por añadidura, existen [[Criterio de demarcación#El problema de la causalidad como explicación|serias dificultades para determinar en qué consiste la causalidad como explicación]].
+
+==Campos considerados como pseudociencias==
+Si bien como se ha visto, no existe un [[Criterio de demarcación]] delimitado, metodológico, objetivo, lógico ni racional para determinar con certeza qué es ciencia de qué se considera no ciencia, pseudociencia o religión, quienes arbitraria y subjetivamente defienden la posibilidad de un Criterio de demarcación estricto entre ciencia y pseudociencia consideran que en los campos siguientes una parte significativa de sus practicantes presentan su disciplina como más o menos equivalente a campos del conocimiento rigurosos, {{Añadir referencias}} imitándolos a veces formalmente en el lenguaje o las formas de comunicación, {{Añadir referencias}} y adoptando títulos científicamente prestigiosos ante el público como «doctor» o «profesor», legitimados o no académicamente. {{Añadir referencias}}Tal como se deduce de la caracterización del concepto, los practicantes de estas actividades afirman su carácter científico. {{Añadir referencias}}
+
+<br style="clear:both;">
+{|{{Lindatabla}}
+|+ Ejemplos de disciplinas pseudocientificas
+|-----
+
+| [[Astrología]]<ref>[http://diec.unizar.es/intranet/articulos/uploads/AC2WS.pdf Astrology and Science: Two Worldviews searching for a Synthesis] ''J. Navarro Artigas''</ref>
+
+| Es la creencia en una relación causal entre la posición relativa de determinados planetas, satélites y estrellas y la personalidad y expectativas futuras de las personas.<ref>{{Cita libro
+ | apellidos = Tester
+ | nombre = S J
+ | enlaceautor = 
+ | coautores = 
+ | editor = Ed. Siglo XXI
+ | otros = 
+ | título = Historia de la Astrología Occidental
+ | edición = 
+ | fecha = 
+ | año = 1990
+ | mes = 
+ | publicación = 
+ | ubicación = 
+ | id = 
+ | páginas = pág. 23
+ | capítulo =
+ | URLcapítulo = 
+ | cita = La astrología es la interpretación y predicción de acontecimientos que suceden en la tierra, así como el carácter y las aptitudes de los hombres, a partir de la medición y el trazo de los movimientos y las posiciones relativas de los cuerpos celestes, estrellas y planetas, incluyendo entre estos últimos al Sol y la Luna.
+}}</ref>
+
+Aunque la astrología tiene una larga tradición como sistema de creencias desde la antigüedad, sus bases como ciencia están refutadas desde el [[Renacimiento]]<ref>[[Pico della Mirandola]], ''Disputationes adversus astrologiam divinicatrium''</ref>, a pesar de lo cual hoy en día existen intentos de reivindicar este papel.
+
+Sin embargo, el filósofo de la ciencia Paul Feyerabend, en su libro ''Adiós a la Razón'', <ref>{{Cita libro
+| apellidos = Feyerabend
+| nombre = Paul
+| título = Adiós a la Razón, Cap. 3-7
+| año = 1987
+| publicación = Madrid: Tecnos
+| id = ISBN 9788430910717
+}}.</ref>afirma que no se puede despreciar como inútil a la astrología, a la que atribuye un estatus científico.
+
+Además, algunos astrólogos han argumentado que existen obstáculos significativos para llevar a cabo investigaciones científicas, incluyendo la financiación <ref name="Eysenck">H.J. Eysenck & D.K.B. Nias, ''Astrology: Science or Superstition?'' Penguin Books (1982) ISBN 0-14-022397-5</ref><ref name="Phillipson">G. Phillipson, ''Astrology in the Year Zero''. Flare Publications (London, 2000) ISBN 0-9530261-9-1</ref>, la carencia de formación científica y estadística por parte de los astrólogos y un nivel de experiencia en astrología insuficiente por parte de los científicos. <ref name="Harding">{{cite web | title=Prejudice in Astrological Research | author=M. Harding | publisher=Correlation, Vol 19(1) | url=http://www.astrozero.co.uk/astroscience/harding.htm}}</ref><ref name="Eysenck"/><ref name="Phillipson"/>
+Algunos astrólogos han manifestado que muy pocos practicantes persiguen la validación científica de la astrología porque el trabajo diario con clientes es prueba suficiente de validación. <ref name="Phillipson"/><ref name="Irving">{{cite web | title=Science, Astrology and the Gauquelin Planetary Effects | author=K. Irving | url=http://www.planetos.info/sciast1.html}}</ref>
+
+Otros investigadores han argumentado que las correlaciones empíricas son suficientemente consistentes y que no necesitan del apoyo de ninguna teoría o mecanismo. <ref name="Harding"/>
+
+Para algunos observadores, la astrología es compatible con el método científico, dados métodos analíticos suficientemente sofisticados, y han citado estudios piloto que lo demuestran. <ref name="HARASTRES">D. Cochrane, ''Towards a Proof of Astrology: An AstroSignature for Mathematical Ability'' International Astrologer ISAR Journal Winter-Spring 2005, Vol 33, #2</ref> Consecuentemente, varios astrólogos han abogado por continuar realizando estudios sobre astrología, basados en una validación estadística. <ref>M. Pottenger (ed), ''Astrological Research Methods, Volume 1: An ISAR Anthology.'' International Society for Astrological Research (Los Angeles 1995) ISBN 0-9646366-0-3</ref>
+
+Otro argumento por parte de los astrólogos es que la mayoría de los estudios en astrología no reflejan la naturaleza de la práctica astrológica y que los métodos experimentales existentes y las herramientas de investigación no son adecuadas para estudiar una disciplina tan compleja. <ref name="MUL-MVA">M. Urban-Lurain, ''Introduction to Multivariate Analysis'', Astrological Research Methods, Volume 1: An ISAR Anthology. International Society for Astrological Research (Los Angeles 1995) ISBN 0-9646366-0-3</ref><ref name="Perry">G. Perry, ''How do we Know What we Think we Know? From Paradigm to Method in Astrological Research'', Astrological Research Methods, Volume 1: An ISAR Anthology. International Society for Astrological Research (Los Angeles 1995) ISBN 0-9646366-0-3</ref> Algunos proponentes de la astrología argumentan que prevalecen actitudes y motivos de muchos oponentes a la astrología que introducen sesgos conscientes o inconscientes en la formulación de las hipótesis a verificar, durante las investigaciones y a la hora de elaborar los resultados. <ref name="Harding"/>
+
+El científico [[Carl Sagan]] se negó a firmar una carta de condena a la [[astrología]] <ref name="humanist">{{cite web | title=<nowiki>Objections to Astrology: A Statement by 186 Leading Scientists</nowiki> | publisher=<nowiki>The Humanist, September/October 1975</nowiki>|url=http://www.americanhumanist.org/about/astrology.html}}</ref> y sugirió que la carencia de un mecanismo causal en la [[astrología]] era relevante pero no detrimente. <ref name="Sagan">Sagan, Carl. "Letter." The Humanist 36 (1976): 2</ref><ref>{{cite web | title=Astrology: What it is and what it isn't, | author=Mariapaula Karadimas | publisher=The Peak Publications Society | url=http://www.peak.sfu.ca/the-peak/2006-1/issue7/fe-astro.html}}</ref>
+Aún así, Sagan afirmó con rotundidad la invalidez de la astrología, citando objeciones como "su aceptación de los equinoccions al anunciar una 'era de Acuario' y su rechazo de la precesión de los equinoccios al hacer horóscopos; su ignorancia de la refracción atmosférica; su lista de objetos supuestamente celestiales que se limita principalmente a objetos conocidos por Tolomeo en el siglo II e ignora una enorme variedad de nuevos objetos astronómicos descubiertos desde entonces; (...) la imposibilidad de la astrología de pasar el test de los gemelos idénticos, etc." <ref>[[Carl Sagan]], "[[El mundo y sus demonios]]" Editorial Planeta (Barcelona, 2000), pág. 330</ref>
+
+|-----
+
+| [[Cerealogía]]<ref>Joe Nickel, 2002. "[http://www.csicop.org/si/2002-09/crop-circles.html Circular Reasoning: The 'Mystery' of Crop Circles and Their 'Orbs' of Light]".</ref> ||{{Añadir referencias}}
+
+|-----
+
+| [[Creacionismo]] y [[Diseño inteligente]] ||
+Algunas interpretaciones literales del [[Génesis]] niegan la [[Teoría de la evolución]] y plantean hipótesis alternativas como si tuvieran la misma validez. {{Añadir referencias}} La teoría de la evolución no es sólo una hipótesis sino la teoría más sustentada que actualmente existe sobre el origen de los seres vivientes y es el cuerpo teórico unificador de las ciencias biológicas. Por esto, la gran mayoría de los científicos e instituciones científicas rechazan las afirmaciones sobre creacionismo científico y diseño inteligente por su falta de base científica y lo clasifican como pseudociencia. {{Añadir referencias}} La comunidad científica califica de infundadas las acusaciones de tautología hacia algunas hipótesis evolutivas, como la selección natural. {{Añadir referencias}}
+
+
+|-----
+
+| [[Criptozoología]]<ref>[http://digital.el-esceptico.org/leer.php?id=2101&autor=740&tema=105 Criptozoología.] La pseudociencia que estudia los animales ocultos.</ref> ||
+Es el estudio de animales mitológicos, no reconocidos como reales por la ciencia. {{Añadir referencias}} No cumple con el método científico al no ocupar mediciones y observaciones directas para sacar sus conclusiones, sino que se basa en dichos de otras personas y tradiciones orales. {{Añadir referencias}} Ésto es como tomar por cierto que el suelo de piedra de una habitación está más frío que la alfombra que está sobre él, sólo porque alguien nos dijo "que lo sintió más frío". El método científico demanda hacer mediciones antes de sacar conclusiones, y fácilmente se puede comprobar con un termómetro que ambos llegan a un equilibrio térmico con el ambiente, y tienen la misma temperatura. 
+Además sus predicciones, por su naturaleza, carecen completamente de falsabilidad, pues los animales mitológicos que estudian no dejan de serlo hasta que se comprueba su existencia real. 
+|-----
+
+| [[Dianética]] (la “ciencia” de la [[cienciología]])<ref name="gardner">{{ref-libro|autor=Gardner, Martin|año=1957|título=Fads and Fallacies in the Name of Science|publicación=Dover Publications|ISBN=978-0486203942}}</ref> ||
+
+La dianética es una parte de la cienciología, consistente en una especie de "psicología" basada en los principios de la cienciología.<ref>{{Cita libro
+ | apellidos = Drury
+ | nombre = Nevill
+ | enlaceautor = 
+ | coautores = 
+ | editor = Ed. HarperCollins 
+ | otros = 
+ | título = Dictionary of Mysticism and the Occult
+ | edición = 
+ | fecha = 
+ | año = 1985
+ | mes = marzo
+ | publicación = 
+ | ubicación = 
+ | id = 
+ | páginas =
+ | capítulo =
+ | URLcapítulo = 
+ | cita = 
+}}</ref>
+
+Hubbard insiste varias veces a lo largo de su libro en que la Dianética es una ciencia<ref>[http://mx.geocities.com/cienciologia/dianetica.html La verdad acerca de Dianética y Cienciología.</ref> y que su sistema, basado en la localización y eliminación de los [[engrama]]s, permite la curación de toda clase de compulsiones, obsesiones, neurosis, y demás afecciones o enfermedades, incluyendo parálisis, cáncer y leucemia.<ref>{{Cita libro
+ | apellidos = 
+ | nombre = 
+ | enlaceautor = 
+ | coautores = 
+ | editor = 
+ | otros = 
+ | título = The Anderson Report
+ | edición = 
+ | fecha = 
+ | año = 
+ | mes = 
+ | publicación = 
+ | ubicación = 
+ | id = 
+ | páginas =
+ | capítulo = 11
+ | URLcapítulo = http://www.cs.cmu.edu/~dst/Library/Shelf/anderson/ar11.html
+ | cita = 
+}}</ref> Sin embargo nunca ha habido ninguna demostración científica de tales afirmaciones.
+|-----
+
+| [[Fisiognomía]] ||
+En la Antigüedad la fisiognomía se desarrolló com un arte adivinatoria, que buscaba el destino en los rasgos de la cara, en parte por culpa de algunos párrafos de la ''Historia animalium'' de Aristóteles<ref>Pack, R.A. (1978) Aristotle's chiromantic principle and its influence. ''Transactions of the American Philological Association'', 108: 121-130.</ref>. Lavater, a finales del XVIII llamó así a la ciencia («una ciencia con reglas fijas») que permitiría conocer el carácter de una persona por los rasgos de su cara y la forma de su frente. Un obituario tras su muerte, señalaba que tras Lavater un noble no escogería un criado sin antes comparar su rostro con las láminas del libro. Darwin cuenta que estuvo a punto de no ser elegido como naturalista del Beagle, porque Fitzroy no veía con buenos ojos la forma de su nariz.<ref>Shookman, E.,  ''Pseudo-science, social fad, literary wonder: Johann Caspar Lavater, and the art of physiognomy'', in Shookman, E., ed. (1993)  ''The faces of physiognomy: Interdisciplinary approaches to Johann Casper Lavater'' Columbia, SC, Camden House, pp. 25-39. Citado en: Staum, M. (1995) Physiognomy and Phrenology at the Paris Athenee. ''Journal of the History of Ideas'', 56(3): 443-462.</ref>
+
+|-----
+
+| [[Flores de Bach]] ([[terapia floral|terapias florales]])<ref>{{ref-libro|autor=Carroll, Robert Todd|título=The Skeptic's Dictionary: A Collection of Strange Beliefs, Amusing Deceptions, and Dangerous Delusions|año=2003|publicación=Wiley|ISBN=978-0471272427}}</ref><ref>Robert Todd Carroll, 2005. "[http://skepdic.com/bachflower.html The Skeptics Dictionary: Bach flower therapy]".</ref> ||
+Los ensayos no demuestran ningún valor terapéutico más allá del efecto placebo.<ref name=Ernst_2002>{{cita revista | autor= Ernst, E. | título= "Flower remedies": a systematic review of the clinical evidence | revista= Wien Klin Wochenschr | año= 2002 | páginas= 963-6 | volumen= 114 | número= 23-24}}</ref> <ref name=Walach&al_2001>{{cita revista | autor= Walach, H., Rilling, C. & Engelke, U. | título= Efficacy of Bach-flower remedies in test anxiety: a double-blind, placebo-controlled, randomized trial with partial crossover | revista= J Anxiety Disord | año= 2001 | páginas= 359-66 | volumen= 15 | número= 4}}</ref> La preparación de los remedios, dejando algunas flores en agua al sol y diluyendo el filtrado despúes, no es compatible con ningún mecanismo físico-químico específico. Los pronentes dicen que se basa en «vibraciones», sin que se justifique que son o cómo se pueden observar.
+
+La selección de los remedios se basa en criterios ajenos a la experiencia, como la [[teoría de las signaturas]],<ref name=Richardson-Boedler_2000>{{cita revista | autor= Richardson-Boedler, C. | título= The Doctrine of Signatures: a historical, philosophical, scientific view (II) | revista= Br Homeopath J | año= 2000 | páginas= 26-8 | volumen= 89 | número= 1}}</ref> una doctrina precientífica propia de la medicina medieval, según la cual la virtud curativa ha sido marcada sobre las cosas o sobre sus nombres. Por ejemplo, la planta que [[Carlos Linneo|Lineo]] llamó ''Impatiens'' porque dispara sus semillas, es propuesta para curar la impaciencia.
+
+|-----
+
+| [[Frenología]]<ref>{{ref-libro|autor=Gould, Stephen Jay|título=La falsa medida del hombre|año=2003|publicación=Barcelona: Editorial Críticca|ISBN=8484324567}}</ref><ref>Robert Todd Carroll, 2005. "[http://skepdic.com/phren.html The Skeptics Dictionary: Phrenology]".</ref> ||
+Era una teoría que afirmaba ser capaz de determinar el carácter y los rasgos de personalidad basándose en la forma del cráneo.
+Se basaba en la creencia de que diversos comportamientos están controlados por sitios distintos del cerebro, y que el mayor desarrollo de esas secciones supone un mayor tamaño, que se ve reflejado en la forma del cráneo. No se debe confundir con la [[craniometría]] o la [[fisonomía]], que estudian los huesos del cráneo o los rasgos faciales sin intentar extraer información sobre la personalidad.
+
+|-----
+
+| [[Grafología]]<ref name="bunge">x</ref><ref>Robert Todd Carroll, 2005. "[http://skepdic.com/graphol.html The Skeptics Dictionary: Graphology]".</ref> ||{{Añadir referencias}}
+
+|-----
+
+| [[Homeopatía]]||
+Muchos {{Añadir referencias}} consideran la homeopatía como un residuo pseudocientífico de la época de la [[alquimia]]. Los resultados atribuidos a la homeopatía se pueden explicar por el [[efecto placebo]].<ref>{{cite journal | author=Shang A, Huwiler-Muntener K, Nartey L, Juni P, Dorig S, Sterne JA, Pewsner D, Egger M | title=Are the clinical effects of homoeopathy placebo effects? Comparative study of placebo-controlled trials of homoeopathy and allopathy | journal=Lancet | year=2005 | pages=726-32 | volume=366 | issue=9487 | id=PMID 16125589}}</ref>
+
+Otra crítica a la homeopatía es su falta de consistencia externa. {{Añadir referencias}} Esta teoría asume que el agua de algún modo "recuerda" las propiedades químicas de las moléculas que alguna vez estuvieron en contacto con ella, pese a que la investigación empírica no confirma la hipótesis de la llamada [[memoria del agua]]. {{Añadir referencias}}
+
+|-----
+
+|[[Negacionismo del Holocausto]]<ref>[http://www.nizkor.org/features/techniques-of-denial/index-sp.html Engaño y Tergiversación. Técnicas de Negación del Holocausto], en concreto el epígrafe: [http://www.nizkor.org/features/techniques-of-denial/denial-of-science-sp.html La "Ciencia" de la Negación, la Negación de la Ciencia], The Nikzor Project.</ref>  ||
+El negacionismo del Holocausto está considerado una pseudociencia (en la disciplina de la historia) no porque sea [[Revisionismo histórico|revisionista]] (el revisionismo es una actividad legítima del historiador, por ejemplo, a la luz de nuevas evidencias), sino porque para lograr su objetivo de negar el [[Holocausto]] necesitan negar todos y cada uno de los principios del método científico: deciden primero cómo quieren que sean los "hechos", en lugar de recurrir a testigos oculares y a pruebas físicas y documentales. Elaboran teorías para "probar" que los hechos "auténticos" son como ellos quieren que sean.  Reescriben la historia para dar apoyo a una agenda, a menudo política, usando un sinnúmero de [[falacia]]s lógicas que corroboren sus tesis. Nunca someten sus trabajos a la [[revisión por pares]]. A causa de todo ello, la comunidad de historiadores consideran a estos escritos como defectuosos y no fiables desde el punto de vista científico. {{Añadir referencias}}
+|-----
+
+| [[Numerología]]<ref>{{ref-libro|autor=Allen Paulos, John|título=El hombre anumérico|año=1990|publicación=Barcelona: Tusquets Editores|ISBN=8472231496}}</ref><ref>Robert Todd Carroll, 2005. "[http://skepdic.com/numology.html The Skeptics Dictionary: Numerology]".</ref> ||{{Añadir referencias}}
+
+|-----
+
+| [[Parapsicología]]<ref>{{Cita libro
+ | apellidos = Bunge
+ | nombre = Mario
+ | enlaceautor =
+ | coautores = 
+ | editor = Ed. Siglo XXI
+ | otros = 
+ | título = La investigación científica: Su estrategia y su filosofía
+ | edición = 
+ | fecha = 
+ | año = 2000
+ | mes = 
+ | publicación = 
+ | ubicación = 
+ | id = 
+ | páginas = pag. 34
+ | capítulo = 
+ | URLcapítulo = 
+ | cita =
+}}</ref> ||
+
+La parapsicología es el nombre moderno que recibe el espiritismo. {{Añadir referencias}}Esta doctrina sostiene la existencia de fenómenos como la telepatía, la videncia a distancia y del futuro, y la telequinesis, entre otros. La parapsicología atribuye esos supuestos hechos a la percepción extrasensorial y a otras capacidades supra-normales que no pretende explicar. {{Añadir referencias}} Es bastante ambigua no sólo porque trata de entidades no físicas como los fantasmas y acontecimientos no físicos como la telepatía, sino también porque no ofrece afirmaciones detalladas acerca de sus mecanismos de acción o regularidades. {{Añadir referencias}}
+
+Sin embargo, existen evidencias empíricas de anomalías detectadas por investigadores sometidos a riguroso control y metodología científica. <ref>[http://www.nytimes.com/2007/02/10/science/10princeton.html?_r=3&oref=slogin&oref=slogin&oref=slogin A Princeton Lab on ESP Plans to Close Its Doors]</ref><ref>"Nuestros resultados demuestran que la descarga de emociones intensas en una situación terapéutica tiene correlación con la salida anómala de un generador aleatorio de eventos cercano." R. A. Blasband (2000). Journal of Scientific Exploration, 14 (2), pp.195–216. [http://www.icrl.org/pdf/blasband_orderingrandomevents_jse.pdf The Ordering of Random Events by Emotional Expression.]</ref><ref name="ConsciousUniverse"> ''The Conscious Universe: The Scientific Truth of Psychic Phenomena'' by Dean I. Radin Harper Edge, ISBN 0-06-251502-0</ref><ref>Metzger, W. (1930). Optische Untersuchungen am Ganzfeld: II. Zur Phanomenologie des homogenen Ganzfelds. Psychologische Forschung, 13, 6-29.</ref><ref>[http://en.wikipedia.org/wiki/Reincarnation_research Investigaciones científicas sobre la reencarnación (ing).]</ref><ref>[http://ajp.psychiatryonline.org/cgi/content/full/162/4/823?rss=1 European Cases of the Reincarnation Type.]  Am J Psychiatry 162:823-824, April 2005.</ref><ref>[[Brian David Josephson]]. arXiv:physics/0312012v3, 2 Dec 2003. [http://arxiv.org/abs/physics/0312012 ''String Theory, Universal Mind, and the Paranormal''.]</ref>
+
+|-----
+
+| [[Piramidología]]<ref name="gardner">x</ref> ||{{Añadir referencias}}
+
+|-----
+
+| [[Programación neurolingüística]]<ref name=Devilly_2005>{{cita revista | autor= Devilly, G. J. | título= Power Therapies and possible threats to the science of psychology and psychiatry | revista= Aust N Z J Psychiatry | año= 2005 | páginas= 437-45 | volumen= 39 | número= 6}}</ref> ||{{Añadir referencias}}
+
+|-----
+
+| [[Psicoanálisis]] ||
+En su modelo de demarcación de la ciencia, Karl Popper tomó al psicoanálisis como ejemplo de pseudociencia, en contraste con la [[teoría de la relatividad]] de [[Albert Einstein]]. {{Añadir referencias}}Popper observó que mientras las condiciones de refutación de las hipótesis de Einstein estaban determinadas con precisión y Einstein estaba dispuesto a empezar de nuevo si la evidencia no las sustentaba, las teorías de [[Sigmund Freud]] eran [[falsacionismo|infalsables]] y le permitían reinterpretar la evidencia para mantener las hipótesis. {{Añadir referencias}}
+
+[[Alan Sokal]] y [[Jean Bricmont]] explican en ''[[Imposturas Intelectuales]]'' cómo [[Jacques Lacan]] usa el lenguaje matemático en su teoría del psicoanálisis de forma incorrecta y totalmente fuera de contexto para aparentar carácter científico.<ref>Alan Sokal, Jean Bricmont (1997). ''Imposturas Intelectuales''. ISBN 84-493-0531-4.</ref>
+
+Mario Bunge también usa al psicoanálisis como ejemplo  en su modelo de demarcación de la ciencia. Sostiene que el psicoanálisis es una forma de pseudociencia porque carece de consistencia externa: las diferentes disciplinas científicas interactúan apoyándose las unas a las otras tanto en sus aspectos teóricos como empíricos. El grave problema del psicoanálisis, sostiene Bunge, es que se trata de una disciplina aislada del resto del conocimiento (no interactúa con disciplinas obviamente pertinentes, tales como la psicología experimental , la neurociencia cognitiva y las ciencias biológicas). Más aún, el psicoanálisis es incongruente con los descubrimientos de estas disciplinas.<ref>Bunge, M. (2002) ''Crisis y reconstrucción de la filosofía''. Barcelona, Gedisa.</ref><ref>Bunge, M. & R. Ardila (2002) ''Filosofía de la psicología''. 2º ed. México, Siglo XXI Editores.</ref><ref>Bunge, M. (2006) "Psicoanálisis a un siglo de distancia". En ''100 Ideas. El libro para pensar y discutir en el café''. Buenos Aires, Sudamericana. Pp. 200-205.</ref>
+
+Autores como Van Rillaer recopilaron ejemplos sobre la forma en que Freud y otros psicoanalistas descalifican a sus críticos empleando argumentos de autoridad y falacias ''ad hominem''.<ref>{{Cita libro
+ | apellidos = Van Rillaer
+ | nombre = Jacques
+ | editor = Ariel
+ | título = Las ilusiones del Psicoanálisis
+ | año = 1985
+ | páginas = 411
+ | ubicación = Barcelona
+ |ISBN = 843448014X
+}}</ref>
+<ref>{{Cita libro
+ | apellidos = Van Rillaer
+ | nombre = Jacques
+ | coautores = Meyer, Catherine
+ | editor = Ed. Sudamericana
+ | título = El libro negro del Psicoanálisis. Parte 3: Cómo el psicoanálisis se ha inmunizado contra la crítica
+ | año = 2007
+ | isbn = 9789500727969
+}}</ref>
+|-----
+
+| [[Radiestesia]]<ref name=Charpak&Broch_2003>{{ref-libro | autor= [[Georges Charpak|Charpak, G.]] & Broch, H. | título= Conviértase en brujo, conviértase en sabio : la desmitificación científica de las supersticiones y los fenómenos paranormales | año= 2003 | publicación= Barcelona: Ediciones B;  | id= }}</ref>||La dependencia de los fenómenos en que se basa la radiestesia respecto al eefecto ideomotor y las expectativas del sujeto, está demostrada desde el siglo XIX.<ref name=Chevreul_1854>{{ref-libro | autor= [[Michel Eugène Chevreul|Chevreul, M.-E.]] | título= De la baguette divinatoire, du pendule dit explorateur et des tables tournantes, au point de vue de l'histoire, de la critique et de la méthode expérimentale | año= 1854 | publicación= Paris; Mallet-Bachelier | id= }}</ref>
+
+|-----
+
+| [[Ufología]]<ref>{{ref-libro
+| autor = Hernández Franch, Luis
+| título =  Los ovnis desmitificados. Informes I y II
+| año = 1984
+| publicación = Edición del Autor. Bilbao.
+| id = 
+}}</ref><ref>{{ref-libro
+| autor = Kaminer, Wendy
+| título =  Durmiendo con extraterrestres. El auge del irracionalismo y los peligros de la devoción.
+| año = 2001
+| publicación = Alba Editorial (Col. "Trayectos", Nº 25). Barcelona
+| id = 
+}}</ref><ref>{{ref-libro
+| autor = Stoczkowski, Wiktor
+| título = Para entender a los extraterrestres. Estudio etnológico de una creencia contemporánea
+| año = 2001
+| publicación = Acento Editorial (Col. "Acento Agudo"). Madrid
+| id = 
+}}</ref> ||
+La [[Ufología]] es el estudio de los [[Ovni|objetos voladores no identificados]] (OVNIs) y frecuentemente incluye la creencia de que los OVNIs son la evidencia de visitantes [[Extraterrestre|extraterrestres]].<ref name="scientificamerican">[http://eric.ed.gov/ERICWebPortal/Home.portal?_nfpb=true&_pageLabel=RecordDetails&ERICExtSearch_SearchValue_0=ED460829&ERICExtSearch_SearchType_0=eric_accno&objectId=0900000b8006f304 Scientific American]</ref>
+|}
+
+== Véase también ==
+*[[Ciencias ocultas]]
+*[[Cientificismo]]
+*[[Filosofía de la ciencia]]
+*[[Protociencia]]
+*[[Método científico]]
+*[[Pseudohistoria]]
+*[[Pseudomedicina]]
+
+==Referencias==
+<div style="width:100%; height:500px; overflow:auto;">
+{{reflist|2}}
+</div>
+
+==Bibliografía en español==
+<div class="references-small" style="-moz-column-count:3; column-count:3;">
+* ACHINSTEIN, P.: La Naturaleza de la Explicación, F.C.E. México, 1989.
+* ALONSO, C. J.: La agonía del cientifismo. Una aproximación a la filosofía de la ciencia. Eunsa, 1999. ISBN 9788431317126
+* AGAZZI, E.: The Problem of Reductionism in Science. Springer, 1991. ISBN 0792314069
+* ARTIGAS, M.: El desafío de la racionalidad. Eunsa, 1994. ISBN 9788431313074
+* [[Mario Bunge|BUNGE, Mario]], ''Crisis y reconstrucción de la filosofía'', Barcelona, Gedisa, 2002.
+* [[Richard Dawkins|DAWKINS, Richard]], ''Destejiendo el arco iris'', Barcelona, Tusquets, 2000.
+* [[Paul Feyerabend|FEYERABEND, Paul]]: Adiós a la razón. Altaya, 1995. ISBN 8448702093
+* [[Paul Feyerabend|FEYERABEND, Paul]]: Contra el Método: esquema de una teoría anarquista del conocimiento. Ariel, 1989. ISBN 8434410729
+* [[Paul Feyerabend|FEYERABEND, Paul]]: La ciencia en una sociedad libre. Siglo XXI de España Editores, 1982. ISBN 8432304387
+* [[Paul Feyerabend|FEYERABEND, Paul]]: Límites de la ciencia: explicación, reducción y empirismo. Paidós, Barcelona, 1989. ISBN 9788475095363
+* [[Martin Gardner|GARDNER, Martin]], ''La ciencia. Lo bueno, lo malo, lo falso'', Madrid, Alianza, 1988.
+* GONZÁLEZ FERNÁNDEZ, W. J.: Análisis de Thomas Kuhn: Las revoluciones científicas, Trotta, 2004 ISBN 9788481646290
+* HEMPEl, C. G.: La explicación científica: estudios sobre la filosofía de la ciencia. Paidós, Buenos Aires, 1979. ISBN  8449318114
+* JONES, R. H.: Reductionism: Analysis and the Fullness of Reality. Bucknell University Press, 2000. ISBN 0838754392
+* [[Thomas Kuhn|KUHN, Thomas]]: La estructura de las revoluciones científicas.  Fondo de Cultura Económica de España, S.L., 2005. ISBN 8437505798.
+* [[Imre Lakatos|LAKATOS, Imre]]: La Historia de la Ciencia y sus Reconstrucciones Racionales, Tecnos, Madrid, 1982. ISBN 8430905383
+* [[Imre Lakatos|LAKATOS, Imre]]: La Metodología de los Programas de Investigación Científica, Alianza Universidad (nº349), Madrid, 1983. ISBN 8420623490
+* MOULINES, U.: Exploraciones Metacientíficas, Alianza, Madrid, 1982.
+* [[Carl Sagan|SAGAN, Carl]], ''El mundo y sus demonios'', Barcelona, Planeta, 2000.
+* SUPPES, P.: Estudios de Filosofía y Metodología de la Ciencia, Alianza Univ., Madrid, 1988.
+* VV.AA. ''Ciencia y pseudociencias: realidades y mitos''. Prólogo de [[Manuel Toharia]]. Madrid, Equipo Sirius, 2004.
+* [[Steven Weinberg|WEINBERG, Steven]], ''Plantar cara. La ciencia y sus adversarios culturales'', Barcelona, Paidós, 2003.
+</div>
+
+==Enlaces externos==
+*[http://www.elpater.com/arqueopatol03.html ElPater.com] (definiciones de pseudociencia)
+*[http://www.lanacion.com.ar/52951 Qué son las seudociencias], [[Mario Bunge]].
+*[http://www.physics.nyu.edu/faculty/sokal/pseudoscience_rev.pdf Pseudociencia y postmodernismo: ¿antagonistas o compañeros de viaje?], por Alan Sokal (en inglés)
+*[http://webpages.ull.es/users/esceptic/ Ciencia y pseudociencias.] Un curso en la Universidad de la Laguna con textos de acceso libre.
+*[http://www.fisica.uh.cu/rationalis/index.htm "Rationalis" Un sitio Web en defensa del Pensamiento Racional y de análisis de las manifestaciones pseudocientíficas]
+
+[[Categoría:Pseudociencia| ]]
+
+[[ar:علوم زائفة]]
+[[bg:Лъженаука]]
+[[bs:Pseudonauka]]
+[[ca:Pseudociència]]
+[[cs:Pseudověda]]
+[[da:Pseudovidenskab]]
+[[de:Pseudowissenschaft]]
+[[en:Pseudoscience]]
+[[eo:Pseŭdoscienco]]
+[[et:Pseudoteadus]]
+[[fa:شبه علم]]
+[[fi:Näennäistiede]]
+[[fo:Pseudovísindi]]
+[[fr:Pseudo-science]]
+[[gl:Pseudociencia]]
+[[he:פסבדו-מדע]]
+[[hr:Pseudoznanost]]
+[[hu:Áltudomány]]
+[[ia:Pseudoscientia]]
+[[id:Ilmu semu]]
+[[is:Hjáfræði]]
+[[it:Pseudoscienza]]
+[[ja:疑似科学]]
+[[ko:의사과학]]
+[[lt:Pseudomokslas]]
+[[ms:Pseudosains]]
+[[nl:Pseudowetenschap]]
+[[no:Pseudovitenskap]]
+[[pl:Pseudonauka]]
+[[pt:Pseudociência]]
+[[ro:Pseudoştiinţă]]
+[[ru:Псевдонаука]]
+[[simple:Pseudoscience]]
+[[sr:Псеудонаука]]
+[[sv:Pseudovetenskap]]
+[[tr:Sözdebilim]]
+[[vi:Giả khoa học]]
+[[zh:伪科学]]

@@ -1,0 +1,1013 @@
+# SolveCoagula — contribuciones NS0 (es.wikipedia)
+# generado: 2026-06-19T11:53:43Z · total: 1006
+
+Usuario: SolveCoagula · editcount: 1258 · registration: 2007-10-10T01:12:33Z
+
+Nota linea1: `raw/linea.md` tiene 677 registros sobre «Problema de la demarcación»; esta API lista 713 (gap +36 — export 2018 vs contribuciones completas).
+
+- [2007-10-10 04:53] **Problema de la demarcación** · oldid 11951034 · +15584 · Traducción completa del original en inglés
+- [2007-10-10 05:09] **Problema de la demarcación** · oldid 11951151 · +41
+- [2007-10-10 05:11] **Problema de la demarcación** · oldid 11951164 · -15582
+- [2007-10-10 05:17] **Problema de la demarcación** · oldid 11951236 · -477 · Fusión con el artículo Criterio de demarcación
+- [2007-10-10 05:18] **Problema de la demarcación** · oldid 11951247 · +16050 · Proviene del artículo Problema de la demarcación
+- [2007-10-10 05:20] **Filosofía de la ciencia** · oldid 11951269 · -3
+- [2007-10-10 05:35] **Pseudociencia** · oldid 11951464 · +4
+- [2007-10-10 05:37] **Pseudociencia** · oldid 11951488 · +14
+- [2007-10-10 06:23] **Problema de la demarcación** · oldid 11951916 · +2267 · Ampliada sección Véase También
+- [2007-10-10 06:26] **Problema de la demarcación** · oldid 11951944 · +38
+- [2007-10-10 06:30] **Problema de la demarcación** · oldid 11951977 · +2 · /* Kuhn y los cambios de paradigma */
+- [2007-10-10 06:32] **Problema de la demarcación** · oldid 11951986 · +0 · /* Kuhn y los cambios de paradigma */
+- [2007-10-10 06:32] **Problema de la demarcación** · oldid 11951988 · +0 · /* Separación entre ciencia y religión */
+- [2007-10-10 06:33] **Problema de la demarcación** · oldid 11951993 · +0 · /* Positivismo Lógico */
+- [2007-10-10 06:56] **Falsacionismo** · oldid 11952207 · +30 · /* Véase también */
+- [2007-10-10 06:57] **Problema de la demarcación** · oldid 11952220 · +51 · /* Véase también */
+- [2007-10-10 07:02] **La estructura de las revoluciones científicas** · oldid 11952268 · +578 · Añadida sección Véase También
+- [2007-10-10 07:02] **La estructura de las revoluciones científicas** · oldid 11952278 · -1 · /* Véase también */
+- [2007-10-10 07:05] **La estructura de las revoluciones científicas** · oldid 11952303 · +3
+- [2007-10-10 07:14] **Pseudociencia** · oldid 11952378 · +1602 · Ampliada sección /* Véase también */
+- [2007-10-10 07:22] **Karl Popper** · oldid 11952465 · +1596 · Ampliada sección /* Véase también */
+- [2007-10-10 07:26] **Ciencia: abriendo la caja negra** · oldid 11952514 · +1028 · Ampliada sección /* Véase también */
+- [2007-10-10 07:28] **Problema de la demarcación** · oldid 11952526 · +39 · /* Véase también */
+- [2007-10-10 07:33] **Filosofía de la ciencia** · oldid 11952564 · +1518 · Ampliada sección /* Véase también */
+- [2007-10-10 07:34] **Filosofía de la ciencia** · oldid 11952568 · -314 · /* Véase también */
+- [2007-10-10 07:37] **Paul Feyerabend** · oldid 11952595 · +1708 · Ampliada sección /* Véase también */
+- [2007-10-10 08:04] **Inconmensurabilidad (filosofía)** · oldid 11952891 · +1773 · Añadida sección /* Enlaces externos */. Ampliada sección /* Véase también */
+- [2007-10-10 08:14] **Inconmensurabilidad (filosofía)** · oldid 11953001 · +32
+- [2007-10-10 08:19] **Inconmensurabilidad (filosofía)** · oldid 11953062 · +990 · Añadida Bibliografía. Ampliada sección /* Ver también */
+- [2007-10-10 08:33] **Problema de la demarcación** · oldid 11953212 · +183 · Bibliografía
+- [2007-10-10 08:35] **Problema de la demarcación** · oldid 11953240 · +1
+- [2007-10-10 08:39] **Problema de la demarcación** · oldid 11953279 · +0 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-10 08:45] **Problema de la demarcación** · oldid 11953336 · +235 · Referencias
+- [2007-10-10 08:52] **Inconmensurabilidad (filosofía)** · oldid 11953418 · +175 · /* Bibliografía */
+- [2007-10-10 08:53] **Inconmensurabilidad (filosofía)** · oldid 11953423 · -1
+- [2007-10-10 08:54] **Inconmensurabilidad (filosofía)** · oldid 11953439 · +174
+- [2007-10-10 08:59] **Paul Feyerabend** · oldid 11953499 · +251
+- [2007-10-10 09:00] **Paul Feyerabend** · oldid 11953520 · +0
+- [2007-10-10 11:07] **Pseudoescepticismo** · oldid 11955090 · +2 · /* Características de los pseudoescépticos */
+- [2007-10-10 11:17] **Pseudoescepticismo** · oldid 11955205 · +71 · /* Estudios académicos */
+- [2007-10-10 11:18] **Pseudoescepticismo** · oldid 11955223 · +2 · /* Estudios académicos */
+- [2007-10-10 11:19] **Pseudoescepticismo** · oldid 11955234 · -21 · /* Estudios académicos */
+- [2007-10-10 11:19] **Pseudoescepticismo** · oldid 11955244 · -1 · /* Estudios académicos */
+- [2007-10-10 16:45] **Problema de la demarcación** · oldid 11960655 · +17 · /* Kuhn y los cambios de paradigma */
+- [2007-10-10 16:59] **Karl Popper** · oldid 11960989 · +0 · /* Véase también */
+- [2007-10-10 16:59] **Karl Popper** · oldid 11961007 · +1 · /* Véase también */
+- [2007-10-10 17:23] **Problema de la demarcación** · oldid 11961575 · +185 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-10 17:24] **Problema de la demarcación** · oldid 11961606 · -1 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-10 17:30] **Problema de la demarcación** · oldid 11961772 · +2373 · Ampliada sección /* Véase también */
+- [2007-10-10 17:31] **Problema de la demarcación** · oldid 11961806 · +3 · /* Véase también */
+- [2007-10-10 17:33] **Problema de la demarcación** · oldid 11961865 · +0 · /* Véase también */
+- [2007-10-10 18:24] **Problema de la demarcación** · oldid 11963085 · -45 · Ordenación alfabética de la sección /* Véase también */
+- [2007-10-10 18:25] **Problema de la demarcación** · oldid 11963100 · +0 · /* Véase también */
+- [2007-10-10 18:25] **Problema de la demarcación** · oldid 11963115 · +0 · /* Positivismo Lógico */
+- [2007-10-10 18:28] **Karl Popper** · oldid 11963171 · +53
+- [2007-10-10 20:19] **Problema de la demarcación** · oldid 11965765 · +2413 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-10 20:39] **Problema de la demarcación** · oldid 11966194 · +2714 · Ampliación de /* Emergentismo y Reduccionismo== */
+- [2007-10-10 20:41] **Problema de la demarcación** · oldid 11966234 · +13 · /* Emergentismo y Reduccionismo */
+- [2007-10-10 20:43] **Problema de la demarcación** · oldid 11966271 · +15 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-10 20:45] **Problema de la demarcación** · oldid 11966317 · +12 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-10 20:46] **Problema de la demarcación** · oldid 11966339 · +47 · /* Véase también */
+- [2007-10-10 20:47] **Problema de la demarcación** · oldid 11966355 · +49 · /* Véase también */
+- [2007-10-10 20:47] **Problema de la demarcación** · oldid 11966366 · +33 · /* Véase también */
+- [2007-10-10 20:49] **Problema de la demarcación** · oldid 11966410 · -4 · /* Naturalismo anti-reduccionista */
+- [2007-10-10 20:51] **Problema de la demarcación** · oldid 11966459 · +25 · /* Véase también */
+- [2007-10-10 20:52] **Problema de la demarcación** · oldid 11966482 · +21 · /* Véase también */
+- [2007-10-10 21:37] **Problema de la demarcación** · oldid 11967615 · +33 · /* Véase también */
+- [2007-10-10 21:37] **Problema de la demarcación** · oldid 11967620 · +1 · /* Véase también */
+- [2007-10-10 21:38] **Problema de la demarcación** · oldid 11967645 · +13 · /* Véase también */
+- [2007-10-10 21:40] **Problema de la demarcación** · oldid 11967682 · +28 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-11 01:05] **Problema de la demarcación** · oldid 11972032 · +40
+- [2007-10-11 01:59] **Problema de la demarcación** · oldid 11972817 · +121
+- [2007-10-11 02:02] **Problema de la demarcación** · oldid 11972860 · +5 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-11 15:17] **Problema de la demarcación** · oldid 11983154 · +1425 · /* Emergentismo y Reduccionismo */
+- [2007-10-11 15:19] **Problema de la demarcación** · oldid 11983187 · +0 · /* Emergentismo, Holismo y Reduccionismo */
+- [2007-10-11 15:20] **Emergencia (filosofía)** · oldid 11983202 · +0 · /* Características del emergentismo */
+- [2007-10-11 15:22] **Problema de la demarcación** · oldid 11983254 · +355 · /* Naturalismo anti-reduccionista */
+- [2007-10-11 15:25] **Problema de la demarcación** · oldid 11983311 · +35
+- [2007-10-11 15:27] **Problema de la demarcación** · oldid 11983355 · +23 · /* Véase también */
+- [2007-10-11 19:15] **Problema de la demarcación** · oldid 11988665 · +4
+- [2007-10-11 20:25] **Problema de la demarcación** · oldid 11990186 · -1057
+- [2007-10-12 01:23] **Problema de la demarcación** · oldid 11995807 · +5160 · Sección /* Críticas al criterio de demarcación */
+- [2007-10-12 01:31] **Problema de la demarcación** · oldid 11995945 · +1260 · /* Críticas al criterio de demarcación */
+- [2007-10-12 01:32] **Problema de la demarcación** · oldid 11995954 · +0 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 01:33] **Problema de la demarcación** · oldid 11995973 · +12 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 01:35] **Problema de la demarcación** · oldid 11995991 · +6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 01:35] **Problema de la demarcación** · oldid 11996003 · -4 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 01:38] **Problema de la demarcación** · oldid 11996035 · -11 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 01:48] **Problema de la demarcación** · oldid 11996190 · +197 · Integración de /* Emergentismo, Holismo y Reduccionismo */
+- [2007-10-12 01:49] **Problema de la demarcación** · oldid 11996205 · +2 · /* Naturalismo anti-reduccionista */
+- [2007-10-12 01:50] **Problema de la demarcación** · oldid 11996223 · +27 · /* Críticas al problema de la demarcación */
+- [2007-10-12 01:51] **Problema de la demarcación** · oldid 11996243 · +55 · /* Críticas al problema de la demarcación */
+- [2007-10-12 01:51] **Problema de la demarcación** · oldid 11996250 · +6 · /* Críticas al problema de la demarcación */
+- [2007-10-12 02:59] **Problema de la demarcación** · oldid 11997102 · +5362 · Sección /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-12 03:01] **Problema de la demarcación** · oldid 11997136 · -1013 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-12 03:03] **Problema de la demarcación** · oldid 11997147 · -4 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-12 15:12] **Problema de la demarcación** · oldid 12006003 · -10 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-12 15:14] **Problema de la demarcación** · oldid 12006043 · +8 · /* Naturalismo anti-reduccionista */
+- [2007-10-12 15:17] **Problema de la demarcación** · oldid 12006102 · +76 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-12 16:47] **Problema de la demarcación** · oldid 12008271 · +4647 · Sección /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 17:41] **Problema de la demarcación** · oldid 12009553 · +2917 · Sección /* Anti-navajas de Occam */
+- [2007-10-12 17:43] **Problema de la demarcación** · oldid 12009596 · -1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 17:43] **Problema de la demarcación** · oldid 12009615 · -2 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 17:45] **Problema de la demarcación** · oldid 12009644 · +4 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 17:47] **Problema de la demarcación** · oldid 12009721 · -202 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 18:39] **Problema de la demarcación** · oldid 12011055 · -8 · /* Kuhn y los cambios de paradigma */
+- [2007-10-12 18:39] **Problema de la demarcación** · oldid 12011070 · -11 · /* Kuhn y los cambios de paradigma */
+- [2007-10-12 18:40] **Problema de la demarcación** · oldid 12011090 · -8 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-12 18:41] **Problema de la demarcación** · oldid 12011112 · +0 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 18:42] **Problema de la demarcación** · oldid 12011145 · -4 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 18:43] **Problema de la demarcación** · oldid 12011170 · -86 · /* Véase también */
+- [2007-10-12 18:44] **Problema de la demarcación** · oldid 12011194 · -1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 18:46] **Problema de la demarcación** · oldid 12011238 · +0 · /* Naturalismo anti-reduccionista */
+- [2007-10-12 18:46] **Problema de la demarcación** · oldid 12011254 · +1 · /* Anti-navajas de Occam */
+- [2007-10-12 18:49] **Problema de la demarcación** · oldid 12011319 · +44 · /* Anti-navajas de Occam */
+- [2007-10-12 18:50] **Problema de la demarcación** · oldid 12011341 · +2 · /* Anti-navajas de Occam */
+- [2007-10-12 18:51] **Problema de la demarcación** · oldid 12011360 · +4 · /* Anti-navajas de Occam */
+- [2007-10-12 19:01] **Problema de la demarcación** · oldid 12011615 · -312 · /* Naturalismo anti-reduccionista */
+- [2007-10-12 19:07] **Problema de la demarcación** · oldid 12011767 · +5 · /* Anti-navajas de Occam */
+- [2007-10-12 19:08] **Problema de la demarcación** · oldid 12011802 · +6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-12 22:54] **Problema de la demarcación** · oldid 12017295 · +10 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 22:55] **Problema de la demarcación** · oldid 12017318 · -5 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 22:56] **Problema de la demarcación** · oldid 12017343 · -1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 22:59] **Problema de la demarcación** · oldid 12017402 · +24 · /* Naturalismo anti-reduccionista */
+- [2007-10-12 23:01] **Problema de la demarcación** · oldid 12017448 · +21 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 23:02] **Problema de la demarcación** · oldid 12017468 · +1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-12 23:12] **Problema de la demarcación** · oldid 12017735 · +1 · /* Anti-navajas de Occam */
+- [2007-10-12 23:57] **Problema de la demarcación** · oldid 12018649 · +1675 · /* Anti-navajas de Occam */
+- [2007-10-12 23:58] **Problema de la demarcación** · oldid 12018668 · +1 · /* Anti-navajas de Occam */
+- [2007-10-13 00:02] **Problema de la demarcación** · oldid 12018760 · -385 · /* Anti-navajas de Occam */
+- [2007-10-13 01:00] **Problema de la demarcación** · oldid 12019844 · +4 · /* Naturalismo anti-reduccionista */  (Gracias 85.*) ;-)
+- [2007-10-13 01:04] **Problema de la demarcación** · oldid 12019918 · +95 · /* Anti-navajas de Occam */
+- [2007-10-13 01:05] **Problema de la demarcación** · oldid 12019932 · +5 · /* Anti-navajas de Occam */
+- [2007-10-13 01:07] **Problema de la demarcación** · oldid 12019966 · +6 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-13 01:09] **Problema de la demarcación** · oldid 12019991 · -3 · /* Anti-navajas de Occam */
+- [2007-10-13 01:10] **Problema de la demarcación** · oldid 12020023 · +15 · /* Anti-navajas de Occam */
+- [2007-10-13 01:15] **Problema de la demarcación** · oldid 12020111 · +28 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 01:16] **Problema de la demarcación** · oldid 12020118 · +0 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 01:20] **Problema de la demarcación** · oldid 12020196 · +2 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 01:22] **Problema de la demarcación** · oldid 12020214 · +38 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 01:24] **Problema de la demarcación** · oldid 12020240 · +16 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 01:47] **Problema de la demarcación** · oldid 12020595 · +36 · /* Emergentismo, Holismo y Reduccionismo */
+- [2007-10-13 01:48] **Problema de la demarcación** · oldid 12020602 · +1 · /* Emergentismo, Holismo y Reduccionismo */
+- [2007-10-13 02:08] **Problema de la demarcación** · oldid 12020961 · +922 · /* Falsacionismo */
+- [2007-10-13 02:09] **Problema de la demarcación** · oldid 12020984 · +57 · /* Falsacionismo */
+- [2007-10-13 02:36] **Problema de la demarcación** · oldid 12021399 · +6 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-13 02:37] **Problema de la demarcación** · oldid 12021417 · -1 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-13 02:38] **Problema de la demarcación** · oldid 12021429 · +5 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-13 02:41] **Problema de la demarcación** · oldid 12021465 · +129 · /* Falsacionismo */
+- [2007-10-13 02:49] **Problema de la demarcación** · oldid 12021544 · +208 · /* Falsacionismo */
+- [2007-10-13 03:08] **Problema de la demarcación** · oldid 12021786 · +431 · /* Anti-navajas de Occam */
+- [2007-10-13 03:09] **Problema de la demarcación** · oldid 12021801 · +1 · /* Anti-navajas de Occam */
+- [2007-10-13 03:09] **Problema de la demarcación** · oldid 12021805 · +12 · /* Anti-navajas de Occam */
+- [2007-10-13 03:10] **Problema de la demarcación** · oldid 12021818 · +14 · /* Anti-navajas de Occam */
+- [2007-10-13 03:13] **Problema de la demarcación** · oldid 12021860 · +42 · /* Anti-navajas de Occam */
+- [2007-10-13 03:17] **Problema de la demarcación** · oldid 12021918 · +251 · /* Anti-navajas de Occam */
+- [2007-10-13 03:18] **Problema de la demarcación** · oldid 12021924 · +1 · /* Anti-navajas de Occam */
+- [2007-10-13 03:19] **Problema de la demarcación** · oldid 12021938 · +7 · /* Anti-navajas de Occam */
+- [2007-10-13 03:27] **Problema de la demarcación** · oldid 12022032 · +166 · /* Anti-navajas de Occam */
+- [2007-10-13 03:28] **Problema de la demarcación** · oldid 12022045 · +16 · /* Anti-navajas de Occam */
+- [2007-10-13 03:30] **Problema de la demarcación** · oldid 12022078 · +56 · /* Anti-navajas de Occam */
+- [2007-10-13 03:32] **Problema de la demarcación** · oldid 12022098 · +10 · /* Anti-navajas de Occam */
+- [2007-10-13 03:33] **Problema de la demarcación** · oldid 12022109 · +17 · /* Anti-navajas de Occam */
+- [2007-10-13 03:34] **Problema de la demarcación** · oldid 12022133 · +148 · /* Anti-navajas de Occam */
+- [2007-10-13 03:37] **Problema de la demarcación** · oldid 12022163 · +51 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-13 03:41] **Problema de la demarcación** · oldid 12022215 · +4 · /* Separación entre ciencia y religión */
+- [2007-10-13 03:44] **Problema de la demarcación** · oldid 12022265 · +178 · /* Separación entre ciencia y religión */
+- [2007-10-13 03:48] **Problema de la demarcación** · oldid 12022312 · -9 · /* Separación entre ciencia y religión */
+- [2007-10-13 03:49] **Problema de la demarcación** · oldid 12022328 · +46 · /* Separación entre ciencia y religión */
+- [2007-10-13 03:49] **Problema de la demarcación** · oldid 12022332 · -1 · /* Separación entre ciencia y religión */
+- [2007-10-13 03:54] **Problema de la demarcación** · oldid 12022374 · +950 · /* Anti-navajas de Occam */
+- [2007-10-13 03:55] **Problema de la demarcación** · oldid 12022396 · -61 · /* Anti-navajas de Occam */
+- [2007-10-13 03:58] **Problema de la demarcación** · oldid 12022418 · -1 · /* Falsacionismo */
+- [2007-10-13 04:49] **Problema de la demarcación** · oldid 12022898 · +261 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 04:54] **Problema de la demarcación** · oldid 12022952 · +230 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 04:56] **Problema de la demarcación** · oldid 12022973 · +248 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 04:58] **Problema de la demarcación** · oldid 12022998 · +88 · /* Naturalismo anti-reduccionista */
+- [2007-10-13 05:06] **Problema de la demarcación** · oldid 12023102 · +174 · /* Anti-navajas de Occam */
+- [2007-10-13 05:07] **Problema de la demarcación** · oldid 12023108 · +6 · /* Anti-navajas de Occam */
+- [2007-10-13 05:09] **Problema de la demarcación** · oldid 12023132 · +0 · /* Anti-navajas de Occam */
+- [2007-10-13 05:12] **Problema de la demarcación** · oldid 12023152 · +1 · /* Anti-navajas de Occam */
+- [2007-10-13 06:44] **Problema de la demarcación** · oldid 12023794 · +169 · /* Anti-navajas de Occam */
+- [2007-10-13 23:48] **Problema de la demarcación** · oldid 12043139 · +1123 · /* Anti-navajas de Occam */
+- [2007-10-13 23:49] **Problema de la demarcación** · oldid 12043162 · -2 · /* Anti-navajas de Occam */
+- [2007-10-13 23:53] **Problema de la demarcación** · oldid 12043241 · +35 · /* Anti-navajas de Occam */
+- [2007-10-13 23:53] **Problema de la demarcación** · oldid 12043251 · +1 · /* Anti-navajas de Occam */
+- [2007-10-13 23:54] **Problema de la demarcación** · oldid 12043279 · -2 · /* Anti-navajas de Occam */
+- [2007-10-13 23:56] **Problema de la demarcación** · oldid 12043312 · -1 · /* Anti-navajas de Occam */
+- [2007-10-13 23:57] **Problema de la demarcación** · oldid 12043329 · -5 · /* Anti-navajas de Occam */
+- [2007-10-14 00:00] **Problema de la demarcación** · oldid 12043383 · +86 · /* Anti-navajas de Occam */
+- [2007-10-14 00:11] **Problema de la demarcación** · oldid 12043558 · +89 · Universum - C. Flammarion, Holzschnitt, Paris 1888
+- [2007-10-14 00:16] **Problema de la demarcación** · oldid 12043648 · +37
+- [2007-10-14 00:17] **Problema de la demarcación** · oldid 12043669 · -34
+- [2007-10-14 00:18] **Problema de la demarcación** · oldid 12043696 · -3
+- [2007-10-14 00:49] **Problema de la demarcación** · oldid 12044338 · +226 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-14 00:49] **Problema de la demarcación** · oldid 12044350 · -3 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-14 01:03] **Problema de la demarcación** · oldid 12044649 · +351 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-14 01:04] **Problema de la demarcación** · oldid 12044663 · -2 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-14 01:18] **Problema de la demarcación** · oldid 12044959 · +454 · /* Falsacionismo */
+- [2007-10-14 01:19] **Problema de la demarcación** · oldid 12044983 · +5 · /* Falsacionismo */
+- [2007-10-14 01:24] **Problema de la demarcación** · oldid 12045097 · +490 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 01:28] **Problema de la demarcación** · oldid 12045143 · +46 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 01:29] **Problema de la demarcación** · oldid 12045169 · +1 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-14 01:36] **Problema de la demarcación** · oldid 12045302 · +1 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-14 01:40] **Problema de la demarcación** · oldid 12045360 · +0
+- [2007-10-14 01:48] **Problema de la demarcación** · oldid 12045537 · -4 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 01:50] **Problema de la demarcación** · oldid 12045560 · -942 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 01:52] **Problema de la demarcación** · oldid 12045583 · +993
+- [2007-10-14 01:53] **Problema de la demarcación** · oldid 12045607 · +4 · /* Conclusión */
+- [2007-10-14 01:54] **Problema de la demarcación** · oldid 12045625 · +2 · /* Conclusión */
+- [2007-10-14 01:58] **Problema de la demarcación** · oldid 12045686 · -1 · /* Conclusión */
+- [2007-10-14 02:02] **Problema de la demarcación** · oldid 12045740 · +0 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 02:09] **Problema de la demarcación** · oldid 12045845 · +117
+- [2007-10-14 02:10] **Problema de la demarcación** · oldid 12045873 · +8 · /* Conclusión */
+- [2007-10-14 02:12] **Problema de la demarcación** · oldid 12045889 · +10 · /* Conclusión */
+- [2007-10-14 02:17] **Problema de la demarcación** · oldid 12045957 · +12 · /* Conclusión */
+- [2007-10-14 02:58] **Problema de la demarcación** · oldid 12046505 · -21 · /* Anti-navajas de Occam */
+- [2007-10-14 02:59] **Problema de la demarcación** · oldid 12046509 · +1 · /* Anti-navajas de Occam */
+- [2007-10-14 03:00] **Problema de la demarcación** · oldid 12046527 · +8 · /* Anti-navajas de Occam */
+- [2007-10-14 03:00] **Problema de la demarcación** · oldid 12046540 · +0 · /* Anti-navajas de Occam */
+- [2007-10-14 03:04] **Problema de la demarcación** · oldid 12046574 · +5 · /* Anti-navajas de Occam */
+- [2007-10-14 03:06] **Problema de la demarcación** · oldid 12046606 · +37 · /* Anti-navajas de Occam */
+- [2007-10-14 17:15] **Problema de la demarcación** · oldid 12057593 · +3496 · Añadida Sección /* Bibliografía */. Revertida sección /* Conclusión */.
+- [2007-10-14 17:57] **Problema de la demarcación** · oldid 12058685 · +511 · /* Bibliografía */
+- [2007-10-14 17:58] **Problema de la demarcación** · oldid 12058699 · -1 · /* Bibliografía */
+- [2007-10-14 18:04] **Problema de la demarcación** · oldid 12058852 · +65 · /* Falsacionismo */
+- [2007-10-14 18:11] **Problema de la demarcación** · oldid 12059095 · +270 · /* Falsacionismo */
+- [2007-10-14 18:16] **Problema de la demarcación** · oldid 12059193 · +205 · /* Falsacionismo */
+- [2007-10-14 18:16] **Problema de la demarcación** · oldid 12059210 · +6 · /* Falsacionismo */
+- [2007-10-14 18:23] **Problema de la demarcación** · oldid 12059385 · +1658 · /* Kuhn y los cambios de paradigma */
+- [2007-10-14 18:24] **Problema de la demarcación** · oldid 12059438 · -8 · /* Kuhn y los cambios de paradigma */
+- [2007-10-14 18:28] **Consenso científico** · oldid 12059529 · -200 · /* El consenso científico y las minorías científicas */
+- [2007-10-14 18:30] **Consenso científico** · oldid 12059565 · +200 · Deshecha la edición 12059529 de [[Special:Contributions/SolveCoagula|SolveCoagula]] ([[Usuario Discusión:SolveCoagula...
+- [2007-10-14 18:37] **Problema de la demarcación** · oldid 12059730 · +107 · /* Bibliografía */
+- [2007-10-14 18:47] **Problema de la demarcación** · oldid 12059955 · +19 · /* Kuhn y los cambios de paradigma */
+- [2007-10-14 19:00] **Problema de la demarcación** · oldid 12060209 · +4 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 19:04] **Problema de la demarcación** · oldid 12060261 · +0 · /* Anti-navajas de Occam */
+- [2007-10-14 19:06] **Problema de la demarcación** · oldid 12060339 · +50 · /* Anti-navajas de Occam */
+- [2007-10-14 19:18] **Problema de la demarcación** · oldid 12060573 · +89 · /* Falsacionismo */
+- [2007-10-14 19:22] **Problema de la demarcación** · oldid 12060639 · +206 · /* Falsacionismo */
+- [2007-10-14 19:56] **Problema de la demarcación** · oldid 12061333 · +60 · /* Anti-navajas de Occam */
+- [2007-10-14 19:57] **Problema de la demarcación** · oldid 12061356 · +6 · /* Anti-navajas de Occam */
+- [2007-10-14 20:00] **Problema de la demarcación** · oldid 12061398 · +178 · /* Anti-navajas de Occam */
+- [2007-10-14 20:02] **Problema de la demarcación** · oldid 12061449 · +28 · /* Anti-navajas de Occam */
+- [2007-10-14 20:18] **Problema de la demarcación** · oldid 12061788 · +8234 · Sección /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:21] **Problema de la demarcación** · oldid 12061863 · -8 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:31] **Problema de la demarcación** · oldid 12062098 · +394 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:31] **Problema de la demarcación** · oldid 12062113 · +134 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:33] **Problema de la demarcación** · oldid 12062146 · -1 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:40] **Problema de la demarcación** · oldid 12062308 · +795 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:51] **Problema de la demarcación** · oldid 12062535 · +944 · /* Falsacionismo */
+- [2007-10-14 20:52] **Problema de la demarcación** · oldid 12062552 · -40 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 20:53] **Problema de la demarcación** · oldid 12062571 · +133 · /* Falsacionismo */
+- [2007-10-14 21:16] **Problema de la demarcación** · oldid 12063055 · +2287 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:17] **Problema de la demarcación** · oldid 12063092 · -1 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:18] **Problema de la demarcación** · oldid 12063109 · -1 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:22] **Problema de la demarcación** · oldid 12063217 · +218 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:23] **Problema de la demarcación** · oldid 12063234 · +25 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:31] **Problema de la demarcación** · oldid 12063414 · +289 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:32] **Problema de la demarcación** · oldid 12063448 · +22 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:42] **Problema de la demarcación** · oldid 12063677 · +600 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:44] **Problema de la demarcación** · oldid 12063702 · -4 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 21:49] **Problema de la demarcación** · oldid 12063837 · +140 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-14 21:55] **Problema de la demarcación** · oldid 12064005 · +68 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 21:57] **Problema de la demarcación** · oldid 12064051 · -12 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 22:01] **Problema de la demarcación** · oldid 12064142 · +0 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-14 22:54] **Problema de la demarcación** · oldid 12065304 · +2492 · /* Falsacionismo */
+- [2007-10-14 22:57] **Problema de la demarcación** · oldid 12065380 · +50 · /* Falsacionismo */
+- [2007-10-14 23:00] **Problema de la demarcación** · oldid 12065459 · +78 · /* Falsacionismo */
+- [2007-10-14 23:13] **Problema de la demarcación** · oldid 12065740 · +779 · /* Falsacionismo */
+- [2007-10-14 23:41] **Problema de la demarcación** · oldid 12066294 · +125 · /* Bibliografía */
+- [2007-10-14 23:47] **Problema de la demarcación** · oldid 12066396 · +291 · /* Bibliografía */
+- [2007-10-15 00:07] **Problema de la demarcación** · oldid 12066761 · +1727 · /* Falsacionismo */
+- [2007-10-15 00:08] **Problema de la demarcación** · oldid 12066775 · +0 · /* Falsacionismo */
+- [2007-10-15 00:13] **Problema de la demarcación** · oldid 12066869 · +1 · /* Bibliografía */
+- [2007-10-15 00:20] **Problema de la demarcación** · oldid 12067011 · +431 · /* Falsacionismo */
+- [2007-10-15 00:20] **Problema de la demarcación** · oldid 12067019 · +0 · /* Falsacionismo */
+- [2007-10-15 00:23] **Problema de la demarcación** · oldid 12067060 · +880 · /* Falsacionismo */
+- [2007-10-15 00:32] **Problema de la demarcación** · oldid 12067231 · +556 · /* Falsacionismo */
+- [2007-10-15 00:34] **Problema de la demarcación** · oldid 12067271 · +13 · /* Falsacionismo */
+- [2007-10-15 00:48] **Problema de la demarcación** · oldid 12067482 · +458 · /* Falsacionismo */
+- [2007-10-15 00:49] **Problema de la demarcación** · oldid 12067499 · +2 · /* Falsacionismo */
+- [2007-10-15 00:49] **Problema de la demarcación** · oldid 12067512 · +0 · /* Falsacionismo */
+- [2007-10-15 00:51] **Problema de la demarcación** · oldid 12067532 · +1 · /* Falsacionismo */
+- [2007-10-15 01:03] **Problema de la demarcación** · oldid 12067744 · +639 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 01:08] **Problema de la demarcación** · oldid 12067843 · +239 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 01:11] **Problema de la demarcación** · oldid 12067881 · -38 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:29] **Problema de la demarcación** · oldid 12068947 · +0 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:30] **Problema de la demarcación** · oldid 12068975 · +1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:33] **Problema de la demarcación** · oldid 12069018 · +68 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:38] **Problema de la demarcación** · oldid 12069084 · +20
+- [2007-10-15 02:41] **Problema de la demarcación** · oldid 12069107 · +61 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:43] **Problema de la demarcación** · oldid 12069136 · -2 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 02:51] **Problema de la demarcación** · oldid 12069238 · +53 · /* Falsacionismo */
+- [2007-10-15 03:05] **Problema de la demarcación** · oldid 12069395 · +1245 · /* Kuhn y los cambios de paradigma */
+- [2007-10-15 03:09] **Problema de la demarcación** · oldid 12069444 · +787 · /* Kuhn y los cambios de paradigma */
+- [2007-10-15 03:10] **Problema de la demarcación** · oldid 12069452 · -4 · /* Kuhn y los cambios de paradigma */
+- [2007-10-15 03:11] **Problema de la demarcación** · oldid 12069463 · +27 · /* Kuhn y los cambios de paradigma */
+- [2007-10-15 04:35] **Problema de la demarcación** · oldid 12070365 · +4923 · Sección /* El problema de la causalidad como explicación */
+- [2007-10-15 04:35] **Problema de la demarcación** · oldid 12070371 · +1 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:39] **Problema de la demarcación** · oldid 12070403 · +1 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:51] **Problema de la demarcación** · oldid 12070528 · +1193 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:52] **Problema de la demarcación** · oldid 12070531 · +0 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:52] **Problema de la demarcación** · oldid 12070535 · -4 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:54] **Problema de la demarcación** · oldid 12070549 · +15 · /* El problema de la causalidad como explicación */
+- [2007-10-15 04:58] **Problema de la demarcación** · oldid 12070602 · -2 · /* El problema de la causalidad como explicación */
+- [2007-10-15 05:00] **Problema de la demarcación** · oldid 12070648 · +1 · /* El problema de la causalidad como explicación */
+- [2007-10-15 05:02] **Problema de la demarcación** · oldid 12070659 · -2 · /* El problema de la causalidad como explicación */
+- [2007-10-15 05:03] **Problema de la demarcación** · oldid 12070667 · -1 · /* El problema de la causalidad como explicación */
+- [2007-10-15 05:31] **Problema de la demarcación** · oldid 12070890 · -1 · /* Separación entre ciencia y religión */
+- [2007-10-15 05:35] **Problema de la demarcación** · oldid 12070940 · -1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-15 05:43] **Problema de la demarcación** · oldid 12070991 · +287 · /* Bibliografía */
+- [2007-10-15 05:51] **Problema de la demarcación** · oldid 12071044 · +126 · /* Bibliografía */
+- [2007-10-15 06:49] **Problema de la demarcación** · oldid 12071435 · +1706 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 06:50] **Problema de la demarcación** · oldid 12071438 · +1 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 06:51] **Problema de la demarcación** · oldid 12071449 · +19 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 06:53] **Problema de la demarcación** · oldid 12071462 · +5 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 06:54] **Problema de la demarcación** · oldid 12071467 · -13 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 06:57] **Problema de la demarcación** · oldid 12071495 · +39 · /* El problema de la causalidad como explicación */
+- [2007-10-15 06:59] **Problema de la demarcación** · oldid 12071507 · +5 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:00] **Problema de la demarcación** · oldid 12071522 · +47 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:12] **Problema de la demarcación** · oldid 12071637 · +4 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:14] **Problema de la demarcación** · oldid 12071660 · +21 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:16] **Problema de la demarcación** · oldid 12071669 · +13 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:34] **Problema de la demarcación** · oldid 12071842 · +731 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:37] **Problema de la demarcación** · oldid 12071881 · +30 · /* El problema de la causalidad como explicación */
+- [2007-10-15 07:43] **Problema de la demarcación** · oldid 12071974 · +35 · /* El problema de la causalidad como explicación */
+- [2007-10-15 08:53] **Problema de la demarcación** · oldid 12072691 · +93 · /* El problema de la causalidad como explicación */
+- [2007-10-15 08:55] **Problema de la demarcación** · oldid 12072709 · +0 · /* El problema de la causalidad como explicación */
+- [2007-10-15 08:57] **Problema de la demarcación** · oldid 12072743 · +25 · /* La demarcación en el método científico contemporáneo */
+- [2007-10-15 08:59] **Problema de la demarcación** · oldid 12072758 · +27 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 09:02] **Problema de la demarcación** · oldid 12072805 · +9 · /* El problema de la causalidad como explicación */
+- [2007-10-15 09:03] **Problema de la demarcación** · oldid 12072811 · +26 · /* El problema de la causalidad como explicación */
+- [2007-10-15 09:06] **Presente** · oldid 12072840 · +102 · Añadida imagen
+- [2007-10-15 09:17] **Problema de la demarcación** · oldid 12072973 · +1477 · /* Falsacionismo */
+- [2007-10-15 09:19] **Problema de la demarcación** · oldid 12073008 · +6 · /* Falsacionismo */
+- [2007-10-15 09:21] **Problema de la demarcación** · oldid 12073037 · +10 · /* Falsacionismo */
+- [2007-10-15 09:23] **Problema de la demarcación** · oldid 12073060 · +37 · /* Falsacionismo */
+- [2007-10-15 11:00] **Problema de la demarcación** · oldid 12074317 · +4 · /* Falsacionismo */
+- [2007-10-15 11:01] **Problema de la demarcación** · oldid 12074326 · +4 · /* Naturalismo anti-reduccionista */
+- [2007-10-15 11:03] **Problema de la demarcación** · oldid 12074344 · +4 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-15 13:43] **Problema de la demarcación** · oldid 12076595 · -4 · /* Separación entre ciencia y religión */
+- [2007-10-16 01:09] **Problema de la demarcación** · oldid 12093016 · +1211 · /* Falsacionismo */
+- [2007-10-16 01:10] **Problema de la demarcación** · oldid 12093052 · +15 · /* Falsacionismo */
+- [2007-10-16 01:11] **Problema de la demarcación** · oldid 12093060 · -1 · /* Falsacionismo */
+- [2007-10-16 01:13] **Problema de la demarcación** · oldid 12093106 · +4 · /* Falsacionismo */
+- [2007-10-16 01:42] **Problema de la demarcación** · oldid 12093590 · +1742 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:43] **Problema de la demarcación** · oldid 12093601 · +2 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:45] **Problema de la demarcación** · oldid 12093630 · +20 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:45] **Problema de la demarcación** · oldid 12093640 · -90 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:47] **Problema de la demarcación** · oldid 12093656 · +14 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:49] **Problema de la demarcación** · oldid 12093704 · +26 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:52] **Problema de la demarcación** · oldid 12093761 · +19 · /* El problema de la causalidad como explicación */
+- [2007-10-16 01:57] **Problema de la demarcación** · oldid 12093865 · +2 · /* El problema de la causalidad como explicación */
+- [2007-10-16 02:03] **Problema de la demarcación** · oldid 12093976 · +803 · /* El problema de la causalidad como explicación */
+- [2007-10-16 02:33] **Problema de la demarcación** · oldid 12094403 · +962 · Sección /*El problema de la explicación científica */
+- [2007-10-16 03:21] **Problema de la demarcación** · oldid 12095040 · +108 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-16 03:24] **Problema de la demarcación** · oldid 12095073 · +16 · /* El problema de la explicación científica */
+- [2007-10-16 03:28] **Problema de la demarcación** · oldid 12095106 · +87 · /* Falsacionismo */
+- [2007-10-16 03:38] **Problema de la demarcación** · oldid 12095240 · +36 · /* El problema de la causalidad como explicación */
+- [2007-10-16 04:24] **Problema de la demarcación** · oldid 12095682 · +110 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-16 04:26] **Problema de la demarcación** · oldid 12095699 · +6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-16 04:30] **Problema de la demarcación** · oldid 12095722 · +78 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-16 04:31] **Problema de la demarcación** · oldid 12095735 · +1 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-16 05:02] **Problema de la demarcación** · oldid 12095963 · +675 · /* El problema de la explicación científica */
+- [2007-10-16 05:06] **Problema de la demarcación** · oldid 12095991 · +5 · /* El problema de la explicación científica */
+- [2007-10-16 05:07] **Problema de la demarcación** · oldid 12095997 · -21 · /* El problema de la explicación científica */
+- [2007-10-16 05:08] **Problema de la demarcación** · oldid 12096009 · +14 · /* El problema de la explicación científica */
+- [2007-10-16 05:19] **Problema de la demarcación** · oldid 12096084 · +1915 · /* El problema de la explicación científica */
+- [2007-10-16 05:51] **Problema de la demarcación** · oldid 12096306 · +794 · /* El problema de la explicación científica */
+- [2007-10-16 05:53] **Problema de la demarcación** · oldid 12096321 · +2 · /* El problema de la explicación científica */
+- [2007-10-16 05:54] **Problema de la demarcación** · oldid 12096325 · +1 · /* El problema de la explicación científica */
+- [2007-10-16 06:01] **Problema de la demarcación** · oldid 12096356 · +207 · /* Holismo */
+- [2007-10-16 06:02] **Problema de la demarcación** · oldid 12096364 · +44 · /* Holismo */
+- [2007-10-16 06:18] **Problema de la demarcación** · oldid 12096471 · +813 · /* El problema de la explicación científica */
+- [2007-10-16 06:19] **Problema de la demarcación** · oldid 12096475 · +2 · /* El problema de la explicación científica */
+- [2007-10-16 06:20] **Problema de la demarcación** · oldid 12096478 · +27 · /* El problema de la explicación científica */
+- [2007-10-16 06:21] **Problema de la demarcación** · oldid 12096485 · +11 · /* El problema de la explicación científica */
+- [2007-10-16 06:22] **Problema de la demarcación** · oldid 12096492 · +14 · /* El problema de la explicación científica */
+- [2007-10-16 06:23] **Problema de la demarcación** · oldid 12096493 · +0 · /* El problema de la explicación científica */
+- [2007-10-16 06:54] **Problema de la demarcación** · oldid 12096678 · +1291 · /* El problema de la explicación científica */
+- [2007-10-16 06:55] **Problema de la demarcación** · oldid 12096684 · -5 · /* El problema de la explicación científica */
+- [2007-10-16 06:57] **Problema de la demarcación** · oldid 12096694 · +4 · /* El problema de la explicación científica */
+- [2007-10-16 07:01] **Problema de la demarcación** · oldid 12096733 · +3 · /* El problema de la explicación científica */
+- [2007-10-16 07:13] **Problema de la demarcación** · oldid 12096839 · +585 · /* El problema de la explicación científica */
+- [2007-10-16 07:14] **Problema de la demarcación** · oldid 12096849 · +26 · /* El problema de la explicación científica */
+- [2007-10-16 07:15] **Problema de la demarcación** · oldid 12096860 · +9 · /* El problema de la explicación científica */
+- [2007-10-16 07:16] **Problema de la demarcación** · oldid 12096875 · +19 · /* El problema de la explicación científica */
+- [2007-10-16 07:19] **Problema de la demarcación** · oldid 12096901 · -1 · /* El problema de la explicación científica */
+- [2007-10-16 07:22] **Problema de la demarcación** · oldid 12096940 · +45 · /* Falsacionismo */
+- [2007-10-16 09:46] **Problema de la demarcación** · oldid 12098355 · +599 · /* El problema de la explicación científica */
+- [2007-10-16 09:46] **Problema de la demarcación** · oldid 12098366 · -2 · /* El problema de la explicación científica */
+- [2007-10-16 09:47] **Problema de la demarcación** · oldid 12098370 · +3 · /* El problema de la explicación científica */
+- [2007-10-16 09:48] **Problema de la demarcación** · oldid 12098381 · -2 · /* El problema de la explicación científica */
+- [2007-10-16 10:04] **Problema de la demarcación** · oldid 12098576 · +821 · /* El problema de la explicación científica */
+- [2007-10-16 10:09] **Problema de la demarcación** · oldid 12098635 · -5 · /* El problema de la explicación científica */
+- [2007-10-16 10:25] **Problema de la demarcación** · oldid 12098843 · -4545 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-16 10:26] **Problema de la demarcación** · oldid 12098854 · +4 · /* Kuhn y los cambios de paradigma */
+- [2007-10-16 10:27] **Problema de la demarcación** · oldid 12098866 · +1 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-16 10:39] **Problema de la demarcación** · oldid 12098998 · +19 · /* El problema de la explicación científica */
+- [2007-10-16 21:16] **Problema de la demarcación** · oldid 12111499 · +0
+- [2007-10-17 01:48] **Problema de la demarcación** · oldid 12117543 · +12 · /* El problema de la explicación científica */
+- [2007-10-17 01:50] **Problema de la demarcación** · oldid 12117576 · +0 · /* El problema de la explicación científica */
+- [2007-10-17 01:53] **Problema de la demarcación** · oldid 12117631 · +18 · /* Naturalismo anti-reduccionista */
+- [2007-10-17 01:54] **Problema de la demarcación** · oldid 12117653 · +2 · /* Naturalismo anti-reduccionista */
+- [2007-10-18 00:58] **Problema de la demarcación** · oldid 12140477 · +3 · /* El problema de la explicación científica */
+- [2007-10-18 00:59] **Problema de la demarcación** · oldid 12140499 · +1 · /* El problema de la explicación científica */
+- [2007-10-18 01:36] **Problema de la demarcación** · oldid 12141086 · +1552 · /* El problema de la explicación científica */
+- [2007-10-18 01:37] **Problema de la demarcación** · oldid 12141113 · +6 · /* El problema de la explicación científica */
+- [2007-10-18 01:39] **Problema de la demarcación** · oldid 12141141 · +37 · /* El problema de la explicación científica */
+- [2007-10-18 01:47] **Problema de la demarcación** · oldid 12141314 · +347 · /* El problema de la explicación científica */
+- [2007-10-18 01:50] **Problema de la demarcación** · oldid 12141360 · +70 · /* El problema de la explicación científica */
+- [2007-10-18 02:03] **Problema de la demarcación** · oldid 12141582 · +690 · /* El problema de la explicación científica */
+- [2007-10-18 02:05] **Problema de la demarcación** · oldid 12141607 · +26 · /* El problema de la explicación científica */
+- [2007-10-18 02:07] **Problema de la demarcación** · oldid 12141641 · +47 · /* El problema de la explicación científica */
+- [2007-10-18 02:08] **Problema de la demarcación** · oldid 12141653 · +18 · /* El problema de la explicación científica */
+- [2007-10-18 02:09] **Problema de la demarcación** · oldid 12141674 · +7 · /* El problema de la explicación científica */
+- [2007-10-18 02:48] **Problema de la demarcación** · oldid 12142249 · +713 · /* El problema de la explicación científica */
+- [2007-10-18 02:49] **Problema de la demarcación** · oldid 12142271 · +9 · /* El problema de la explicación científica */
+- [2007-10-18 02:52] **Problema de la demarcación** · oldid 12142301 · -20 · /* El problema de la explicación científica */
+- [2007-10-18 02:54] **Problema de la demarcación** · oldid 12142335 · -1 · /* El problema de la explicación científica */
+- [2007-10-18 02:59] **Problema de la demarcación** · oldid 12142392 · +89 · /* El problema de la explicación científica */
+- [2007-10-18 03:07] **Problema de la demarcación** · oldid 12142516 · +392 · /* El problema de la explicación científica */
+- [2007-10-18 03:26] **Problema de la demarcación** · oldid 12142705 · +950 · /* El problema de la explicación científica */
+- [2007-10-18 03:28] **Problema de la demarcación** · oldid 12142721 · -159 · /* El problema de la explicación científica */
+- [2007-10-18 03:29] **Problema de la demarcación** · oldid 12142734 · +0 · /* El problema de la explicación científica */
+- [2007-10-18 03:41] **Problema de la demarcación** · oldid 12142862 · +456 · /* El problema de la explicación científica */
+- [2007-10-18 03:42] **Problema de la demarcación** · oldid 12142874 · +0 · /* El problema de la explicación científica */
+- [2007-10-18 03:44] **Problema de la demarcación** · oldid 12142899 · +14 · /* El problema de la explicación científica */
+- [2007-10-18 03:52] **Problema de la demarcación** · oldid 12142970 · +237 · /* El problema de la explicación científica */
+- [2007-10-18 04:06] **Problema de la demarcación** · oldid 12143098 · +240 · /* El problema de la explicación científica */
+- [2007-10-18 05:49] **Problema de la demarcación** · oldid 12143908 · +588 · /* El problema de la explicación científica */
+- [2007-10-18 05:50] **Problema de la demarcación** · oldid 12143918 · +1 · /* El problema de la explicación científica */
+- [2007-10-18 05:59] **Problema de la demarcación** · oldid 12143988 · -502 · /* El problema de la explicación científica */
+- [2007-10-18 06:00] **Problema de la demarcación** · oldid 12143996 · +509 · /* El problema de la explicación científica */
+- [2007-10-18 06:03] **Problema de la demarcación** · oldid 12144013 · -11 · /* El problema de la explicación científica */
+- [2007-10-18 06:05] **Problema de la demarcación** · oldid 12144031 · +13 · /* El problema de la explicación científica */
+- [2007-10-18 06:14] **Problema de la demarcación** · oldid 12144083 · +0 · /* El problema de la explicación científica */
+- [2007-10-18 06:20] **Problema de la demarcación** · oldid 12144135 · -7 · /* El problema de la explicación científica */
+- [2007-10-18 06:23] **Problema de la demarcación** · oldid 12144154 · +41 · /* El problema de la explicación científica */
+- [2007-10-18 06:25] **Problema de la demarcación** · oldid 12144164 · +9 · /* El problema de la explicación científica */
+- [2007-10-18 06:35] **Problema de la demarcación** · oldid 12144223 · +1 · /* El problema de la explicación científica */
+- [2007-10-18 06:37] **Problema de la demarcación** · oldid 12144246 · -1 · /* El problema de la explicación científica */
+- [2007-10-18 06:40] **Problema de la demarcación** · oldid 12144263 · +2 · /* El problema de la explicación científica */
+- [2007-10-18 06:45] **Problema de la demarcación** · oldid 12144307 · +245 · /* El problema de la explicación científica */
+- [2007-10-18 06:48] **Problema de la demarcación** · oldid 12144342 · -2 · /* El problema de la explicación científica */
+- [2007-10-18 06:56] **David Kellogg Lewis** · oldid 12144404 · +0 · Casualmente por causalmente aislados.
+- [2007-10-18 07:16] **David Kellogg Lewis** · oldid 12144537 · +32 · Redirección David Kellog Lewis
+- [2007-10-18 07:17] **David Kellogg Lewis** · oldid 12144541 · -32 · Deshecha la edición 12144537 de [[Special:Contributions/SolveCoagula|SolveCoagula]] ([[Usuario Discusión:SolveCoagula...
+- [2007-10-18 07:21] **Problema de la demarcación** · oldid 12144585 · +554 · /* Anti-navajas de Occam */
+- [2007-10-18 07:23] **Problema de la demarcación** · oldid 12144605 · +37 · /* Anti-navajas de Occam */
+- [2007-10-18 07:25] **Problema de la demarcación** · oldid 12144619 · -8 · /* Anti-navajas de Occam */
+- [2007-10-18 07:39] **Problema de la demarcación** · oldid 12144733 · +138 · /* Bibliografía */
+- [2007-10-18 07:43] **Problema de la demarcación** · oldid 12144778 · -4 · /* Anti-navajas de Occam */
+- [2007-10-19 04:07] **Problema de la demarcación** · oldid 12171348 · +671 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-19 04:09] **Problema de la demarcación** · oldid 12171363 · -5 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-19 05:58] **Problema de la demarcación** · oldid 12171969 · +123 · /* Holismo */
+- [2007-10-19 05:59] **Problema de la demarcación** · oldid 12171976 · -1 · /* Holismo */
+- [2007-10-19 05:59] **Problema de la demarcación** · oldid 12171981 · +1 · /* Holismo */
+- [2007-10-19 06:00] **Problema de la demarcación** · oldid 12171986 · -1 · /* Holismo */
+- [2007-10-19 06:03] **Problema de la demarcación** · oldid 12172009 · +0 · /* Holismo */
+- [2007-10-19 08:09] **Problema de la demarcación** · oldid 12172981 · -1 · /* Holismo */
+- [2007-10-19 13:41] **Problema de la demarcación** · oldid 12176865 · +1547 · /* El problema de la explicación científica */
+- [2007-10-19 13:43] **Problema de la demarcación** · oldid 12176916 · +2 · /* El problema de la explicación científica */
+- [2007-10-19 13:44] **Problema de la demarcación** · oldid 12176941 · +8 · /* El problema de la explicación científica */
+- [2007-10-19 13:46] **Problema de la demarcación** · oldid 12176991 · -8 · /* Anti-navajas de Occam */
+- [2007-10-19 14:05] **Problema de la demarcación** · oldid 12177718 · +691 · /* El problema de la explicación científica */
+- [2007-10-19 14:07] **Problema de la demarcación** · oldid 12177811 · +9 · /* El problema de la explicación científica */
+- [2007-10-19 14:09] **Problema de la demarcación** · oldid 12177879 · +5 · /* El problema de la explicación científica */
+- [2007-10-19 14:11] **Problema de la demarcación** · oldid 12177963 · +12 · /* El problema de la explicación científica */
+- [2007-10-19 14:12] **Problema de la demarcación** · oldid 12178011 · +1 · /* El problema de la explicación científica */
+- [2007-10-19 14:14] **Problema de la demarcación** · oldid 12178062 · +33 · /* El problema de la explicación científica */
+- [2007-10-19 16:33] **Problema de la demarcación** · oldid 12181427 · +1488 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-19 16:34] **Problema de la demarcación** · oldid 12181455 · -44 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-19 16:36] **Problema de la demarcación** · oldid 12181488 · -11 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-19 17:31] **Problema de la demarcación** · oldid 12182810 · +534 · /* Falsacionismo */
+- [2007-10-19 18:05] **Problema de la demarcación** · oldid 12183539 · +3439 · /* El problema de la explicación científica */
+- [2007-10-19 18:06] **Problema de la demarcación** · oldid 12183556 · +0 · /* El problema de la explicación científica */
+- [2007-10-19 18:16] **Problema de la demarcación** · oldid 12183773 · +150 · Sección /* Ciencia paranormal */
+- [2007-10-19 18:18] **Problema de la demarcación** · oldid 12183814 · +6 · Sección /* Ciencia paranormal */
+- [2007-10-19 18:24] **Problema de la demarcación** · oldid 12183957 · +52 · /* Ciencia paranormal */
+- [2007-10-19 18:27] **Problema de la demarcación** · oldid 12184016 · +20 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-19 18:30] **Problema de la demarcación** · oldid 12184083 · +4 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-19 18:31] **Problema de la demarcación** · oldid 12184114 · +25 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-19 18:37] **Problema de la demarcación** · oldid 12184242 · +9 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-19 18:42] **Problema de la demarcación** · oldid 12184389 · +0 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-19 19:02] **Problema de la demarcación** · oldid 12184872 · +549 · /* El problema de la explicación científica */
+- [2007-10-19 19:25] **Problema de la demarcación** · oldid 12185480 · +799 · /* El problema de la explicación científica */
+- [2007-10-19 19:26] **Problema de la demarcación** · oldid 12185506 · +0 · /* El problema de la explicación científica */
+- [2007-10-19 19:30] **Problema de la demarcación** · oldid 12185591 · -2 · Estructuración /* El problema de la explicación científica */
+- [2007-10-19 19:33] **Problema de la demarcación** · oldid 12185668 · +1 · Reubicación de /* La demarcación en el método científico contemporáneo */
+- [2007-10-19 19:34] **Problema de la demarcación** · oldid 12185689 · -2 · /* El problema de la causalidad como explicación */
+- [2007-10-20 00:38] **Problema de la demarcación** · oldid 12191849 · -18 · /* El problema de la explicación científica */
+- [2007-10-20 00:53] **Círculo de Viena** · oldid 12192117 · +644 · /* Filosofía */
+- [2007-10-20 00:54] **Problema de la demarcación** · oldid 12192136 · +644 · /* Positivismo Lógico */
+- [2007-10-20 00:57] **Problema de la demarcación** · oldid 12192196 · +8 · /* Positivismo Lógico */
+- [2007-10-20 00:59] **Problema de la demarcación** · oldid 12192234 · +28 · /* Positivismo Lógico */
+- [2007-10-20 01:08] **Subjetivismo** · oldid 12192350 · +21 · Enlace Subjectivism
+- [2007-10-20 01:09] **Problema de la demarcación** · oldid 12192374 · +36 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-20 01:10] **Problema de la demarcación** · oldid 12192384 · -1 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-20 01:55] **Problema de la demarcación** · oldid 12193056 · +1022 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-20 01:56] **Problema de la demarcación** · oldid 12193072 · +6 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-20 01:59] **Problema de la demarcación** · oldid 12193126 · -20 · /* ¿Ciencia paranormal o pseudociencias? */
+- [2007-10-20 02:06] **Problema de la demarcación** · oldid 12193237 · +221 · /* Falsacionismo y Psicoanálisis */
+- [2007-10-20 02:15] **Problema de la demarcación** · oldid 12193367 · +0 · /* El problema de la explicación científica */
+- [2007-10-20 06:38] **Problema de la demarcación** · oldid 12195505 · +1198 · /* El problema de la causalidad como explicación */
+- [2007-10-20 06:40] **Problema de la demarcación** · oldid 12195514 · +47 · /* El problema de la causalidad como explicación */
+- [2007-10-20 06:41] **Problema de la demarcación** · oldid 12195520 · +15 · /* El problema de la causalidad como explicación */
+- [2007-10-20 06:42] **Problema de la demarcación** · oldid 12195525 · -12 · /* El problema de la causalidad como explicación */
+- [2007-10-20 12:35] **Problema de la demarcación** · oldid 12198733 · +1242 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:37] **Problema de la demarcación** · oldid 12198750 · +12 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:40] **Problema de la demarcación** · oldid 12198787 · +16 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:42] **Problema de la demarcación** · oldid 12198812 · +15 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:46] **Problema de la demarcación** · oldid 12198848 · +64 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:47] **Problema de la demarcación** · oldid 12198855 · +1 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:49] **Problema de la demarcación** · oldid 12198873 · +8 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 12:50] **Problema de la demarcación** · oldid 12198892 · +18 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-20 13:07] **Problema de la demarcación** · oldid 12199097 · +415 · /* Kuhn y los cambios de paradigma */
+- [2007-10-20 13:31] **Problema de la demarcación** · oldid 12199425 · +198 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-21 18:48] **Problema de la demarcación** · oldid 12229407 · +3 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 18:53] **Problema de la demarcación** · oldid 12229566 · +79 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 18:54] **Problema de la demarcación** · oldid 12229594 · +6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 18:59] **Problema de la demarcación** · oldid 12229704 · -52 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:09] **Problema de la demarcación** · oldid 12229938 · +128 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:12] **Problema de la demarcación** · oldid 12230045 · +125 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:13] **Problema de la demarcación** · oldid 12230069 · -6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:14] **Problema de la demarcación** · oldid 12230097 · +6 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:20] **Problema de la demarcación** · oldid 12230242 · +161 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-21 19:44] **Problema de la demarcación** · oldid 12230856 · +81 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-22 00:02] **Problema de la demarcación** · oldid 12237327 · +1 · /* Separación entre ciencia y religión */
+- [2007-10-22 00:13] **Problema de la demarcación** · oldid 12237533 · +1 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-22 00:41] **Problema de la demarcación** · oldid 12238104 · +0 · /* Falsacionismo */
+- [2007-10-22 00:50] **Problema de la demarcación** · oldid 12238261 · -4 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-23 02:43] **Problema de la demarcación** · oldid 12266142 · +356 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-23 02:46] **Problema de la demarcación** · oldid 12266191 · +27 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-23 03:13] **Problema de la demarcación** · oldid 12266564 · +497 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:16] **Problema de la demarcación** · oldid 12266608 · +1 · Sección /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:43] **Problema de la demarcación** · oldid 12266919 · +819 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:43] **Problema de la demarcación** · oldid 12266929 · +0 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:44] **Problema de la demarcación** · oldid 12266936 · +0 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:46] **Problema de la demarcación** · oldid 12266966 · +113 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 03:47] **Problema de la demarcación** · oldid 12266990 · +0 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 04:10] **Problema de la demarcación** · oldid 12267231 · +1536 · /* Falsacionismo */
+- [2007-10-23 04:13] **Problema de la demarcación** · oldid 12267270 · -1 · /* Falsacionismo */
+- [2007-10-23 04:15] **Problema de la demarcación** · oldid 12267309 · +28 · /* Falsacionismo */
+- [2007-10-23 04:17] **Problema de la demarcación** · oldid 12267329 · +21 · /* Falsacionismo */
+- [2007-10-23 04:34] **Problema de la demarcación** · oldid 12267495 · +13 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 05:36] **Problema de la demarcación** · oldid 12267944 · +295 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-23 05:39] **Problema de la demarcación** · oldid 12267962 · +145 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-23 05:42] **Problema de la demarcación** · oldid 12267996 · +155 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-23 07:41] **Problema de la demarcación** · oldid 12268993 · +43 · /* Falsacionismo */
+- [2007-10-23 13:41] **Problema de la demarcación** · oldid 12273896 · +966 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 13:42] **Problema de la demarcación** · oldid 12273919 · -4 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 13:43] **Problema de la demarcación** · oldid 12273934 · +22 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 13:49] **Problema de la demarcación** · oldid 12274029 · +90 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 13:50] **Problema de la demarcación** · oldid 12274078 · -21 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-23 13:59] **Problema de la demarcación** · oldid 12274254 · +39 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-24 07:10] **Problema de la demarcación** · oldid 12295678 · +342 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-24 07:12] **Problema de la demarcación** · oldid 12295698 · +10 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-24 07:13] **Problema de la demarcación** · oldid 12295724 · +82 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-24 07:15] **Problema de la demarcación** · oldid 12295751 · +8 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 07:31] **Problema de la demarcación** · oldid 12321538 · +2874 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 07:34] **Problema de la demarcación** · oldid 12321562 · +4 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 07:36] **Problema de la demarcación** · oldid 12321586 · +32 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:00] **Problema de la demarcación** · oldid 12321880 · +646 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:02] **Problema de la demarcación** · oldid 12321905 · +4 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:03] **Problema de la demarcación** · oldid 12321916 · +4 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:06] **Problema de la demarcación** · oldid 12321956 · +32 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:09] **Problema de la demarcación** · oldid 12321994 · -1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:14] **Problema de la demarcación** · oldid 12322061 · +23 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:16] **Problema de la demarcación** · oldid 12322104 · +1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:36] **Problema de la demarcación** · oldid 12322362 · +385 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:40] **Problema de la demarcación** · oldid 12322408 · +20 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:41] **Problema de la demarcación** · oldid 12322419 · +24 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:43] **Problema de la demarcación** · oldid 12322434 · +6 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 08:48] **Problema de la demarcación** · oldid 12322497 · -2 · /* El problema de la explicación científica */
+- [2007-10-25 09:26] **Problema de la demarcación** · oldid 12322903 · +1649 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 09:31] **Problema de la demarcación** · oldid 12322952 · +39 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 09:33] **Problema de la demarcación** · oldid 12322978 · -16 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 09:34] **Problema de la demarcación** · oldid 12322992 · +1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 10:09] **Problema de la demarcación** · oldid 12323398 · +336 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 10:10] **Problema de la demarcación** · oldid 12323406 · +1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 10:32] **Problema de la demarcación** · oldid 12323708 · +1038 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 10:35] **Problema de la demarcación** · oldid 12323743 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 11:45] **Problema de la demarcación** · oldid 12324748 · +163 · /* Anti-navajas de Occam */
+- [2007-10-25 12:04] **Problema de la demarcación** · oldid 12325054 · +1269 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:07] **Problema de la demarcación** · oldid 12325110 · +152 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:08] **Problema de la demarcación** · oldid 12325122 · +3 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:18] **Problema de la demarcación** · oldid 12325270 · +423 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:19] **Problema de la demarcación** · oldid 12325287 · +2 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:21] **Problema de la demarcación** · oldid 12325309 · +133 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:24] **Problema de la demarcación** · oldid 12325351 · -164 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:27] **Problema de la demarcación** · oldid 12325392 · +1 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:29] **Problema de la demarcación** · oldid 12325435 · +210 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:31] **Problema de la demarcación** · oldid 12325463 · +1 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:32] **Problema de la demarcación** · oldid 12325480 · +6 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:34] **Problema de la demarcación** · oldid 12325514 · +42 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:36] **Problema de la demarcación** · oldid 12325534 · +62 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:51] **Problema de la demarcación** · oldid 12325757 · +494 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:54] **Problema de la demarcación** · oldid 12325786 · +51 · /* El problema de la causalidad como explicación */
+- [2007-10-25 12:55] **Problema de la demarcación** · oldid 12325810 · +6 · /* El problema de la causalidad como explicación */
+- [2007-10-25 13:10] **Problema de la demarcación** · oldid 12326038 · +698 · /* El problema de la explicación científica */
+- [2007-10-25 13:12] **Problema de la demarcación** · oldid 12326057 · +2 · /* El problema de la explicación científica */
+- [2007-10-25 13:19] **Problema de la demarcación** · oldid 12326146 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 13:54] **Problema de la demarcación** · oldid 12326815 · +879 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-25 13:56] **Problema de la demarcación** · oldid 12326850 · +31 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-25 14:14] **Problema de la demarcación** · oldid 12327234 · +208 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-25 14:15] **Problema de la demarcación** · oldid 12327254 · +1 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-25 23:08] **Problema de la demarcación** · oldid 12340098 · +19 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-25 23:10] **Problema de la demarcación** · oldid 12340135 · +8 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 00:11] **Problema de la demarcación** · oldid 12341267 · +147 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-26 08:47] **Problema de la demarcación** · oldid 12347163 · +1005 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 08:49] **Problema de la demarcación** · oldid 12347186 · +18 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 08:58] **Problema de la demarcación** · oldid 12347293 · +142 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:16] **Problema de la demarcación** · oldid 12347497 · +151 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:16] **Problema de la demarcación** · oldid 12347510 · +8 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:17] **Problema de la demarcación** · oldid 12347519 · -7 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:19] **Problema de la demarcación** · oldid 12347547 · +0 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:23] **Problema de la demarcación** · oldid 12347596 · +52 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:25] **Problema de la demarcación** · oldid 12347610 · +16 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:40] **Problema de la demarcación** · oldid 12347790 · +1785 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:41] **Problema de la demarcación** · oldid 12347798 · +13 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:43] **Problema de la demarcación** · oldid 12347813 · +16 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:44] **Problema de la demarcación** · oldid 12347838 · +15 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:45] **Problema de la demarcación** · oldid 12347844 · -5 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 09:55] **Problema de la demarcación** · oldid 12347993 · +180 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-26 09:59] **Problema de la demarcación** · oldid 12348040 · -283 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-26 10:02] **Problema de la demarcación** · oldid 12348097 · +69 · /* Controversia en la parsimonia de la Navaja de Occam */
+- [2007-10-26 11:01] **Problema de la demarcación** · oldid 12348878 · +1833 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:08] **Problema de la demarcación** · oldid 12349028 · +422 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:10] **Problema de la demarcación** · oldid 12349075 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:15] **Problema de la demarcación** · oldid 12349141 · +883 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:21] **Problema de la demarcación** · oldid 12349245 · +290 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:23] **Problema de la demarcación** · oldid 12349282 · +37 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:25] **Problema de la demarcación** · oldid 12349302 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:34] **Problema de la demarcación** · oldid 12349434 · +327 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:35] **Problema de la demarcación** · oldid 12349442 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 11:59] **Problema de la demarcación** · oldid 12349812 · +399 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 12:00] **Problema de la demarcación** · oldid 12349829 · +6 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 12:02] **Problema de la demarcación** · oldid 12349856 · +5 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 12:05] **Problema de la demarcación** · oldid 12349893 · +39 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 13:32] **Problema de la demarcación** · oldid 12351180 · +336 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-26 13:43] **Problema de la demarcación** · oldid 12351393 · +246 · /* El problema de la causalidad como explicación */
+- [2007-10-26 14:31] **Problema de la demarcación** · oldid 12352611 · +1297 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 14:32] **Problema de la demarcación** · oldid 12352645 · -7 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 14:34] **Problema de la demarcación** · oldid 12352686 · +39 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 14:37] **Problema de la demarcación** · oldid 12352785 · +17 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 14:40] **Problema de la demarcación** · oldid 12352846 · +12 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 14:41] **Problema de la demarcación** · oldid 12352874 · -1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 15:06] **Problema de la demarcación** · oldid 12353485 · +418 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 15:08] **Problema de la demarcación** · oldid 12353519 · +45 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 15:09] **Problema de la demarcación** · oldid 12353540 · +9 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-26 16:46] **Problema de la demarcación** · oldid 12355642 · +1815 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:46] **Problema de la demarcación** · oldid 12355654 · +1 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:48] **Problema de la demarcación** · oldid 12355679 · -10 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:49] **Problema de la demarcación** · oldid 12355704 · +16 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:50] **Problema de la demarcación** · oldid 12355745 · +3 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:52] **Problema de la demarcación** · oldid 12355778 · -1 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:55] **Problema de la demarcación** · oldid 12355839 · +0 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-26 16:56] **Problema de la demarcación** · oldid 12355891 · -192 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-10-27 01:27] **Problema de la demarcación** · oldid 12366655 · -4 · /* Falsacionismo */
+- [2007-10-27 01:30] **Problema de la demarcación** · oldid 12366697 · +133 · /* Falsacionismo */
+- [2007-10-27 01:31] **Problema de la demarcación** · oldid 12366719 · +2 · /* Falsacionismo */
+- [2007-10-27 01:35] **Problema de la demarcación** · oldid 12366789 · +4 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 01:41] **Problema de la demarcación** · oldid 12366859 · +39 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-27 01:57] **Problema de la demarcación** · oldid 12367081 · +269 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 02:02] **Problema de la demarcación** · oldid 12367138 · -27 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 02:24] **Problema de la demarcación** · oldid 12367407 · +30 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-27 03:28] **Problema de la demarcación** · oldid 12368267 · +2203 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 03:30] **Problema de la demarcación** · oldid 12368302 · -3 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 03:44] **Problema de la demarcación** · oldid 12368448 · +73 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 03:46] **Problema de la demarcación** · oldid 12368477 · -10 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:00] **Problema de la demarcación** · oldid 12368624 · +419 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:17] **Problema de la demarcación** · oldid 12368782 · +330 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:18] **Problema de la demarcación** · oldid 12368791 · +1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:28] **Problema de la demarcación** · oldid 12368865 · +101 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:35] **Problema de la demarcación** · oldid 12368918 · +83 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:36] **Problema de la demarcación** · oldid 12368926 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:43] **Problema de la demarcación** · oldid 12368976 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 04:52] **Problema de la demarcación** · oldid 12369030 · +90 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 06:57] **Problema de la demarcación** · oldid 12369819 · +462 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:05] **Problema de la demarcación** · oldid 12369845 · +50 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:09] **Problema de la demarcación** · oldid 12369859 · +0 · /* Kuhn y los cambios de paradigma */
+- [2007-10-27 07:13] **Problema de la demarcación** · oldid 12369878 · +35 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:15] **Problema de la demarcación** · oldid 12369889 · +16 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:16] **Problema de la demarcación** · oldid 12369899 · -1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:27] **Problema de la demarcación** · oldid 12369960 · +38 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:28] **Problema de la demarcación** · oldid 12369970 · +6 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:30] **Problema de la demarcación** · oldid 12369983 · +1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-27 07:39] **Problema de la demarcación** · oldid 12370021 · +33 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-28 21:36] **Problema de la demarcación** · oldid 12408012 · +428 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 21:38] **Problema de la demarcación** · oldid 12408078 · +16 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 21:39] **Problema de la demarcación** · oldid 12408092 · +12 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 21:39] **Problema de la demarcación** · oldid 12408115 · +15 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 21:48] **Problema de la demarcación** · oldid 12408318 · -70 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 21:51] **Problema de la demarcación** · oldid 12408381 · +1086 · /* Falsacionismo */
+- [2007-10-28 21:51] **Problema de la demarcación** · oldid 12408398 · +2 · /* Falsacionismo */
+- [2007-10-28 21:54] **Problema de la demarcación** · oldid 12408482 · +40 · /* Falsacionismo */
+- [2007-10-28 21:57] **Problema de la demarcación** · oldid 12408542 · +6 · /* El problema de la inducción */
+- [2007-10-28 21:58] **Problema de la demarcación** · oldid 12408602 · +3 · /* El problema de la inducción */
+- [2007-10-28 22:09] **Problema de la demarcación** · oldid 12408865 · +528 · /* El problema de la inducción */
+- [2007-10-28 22:11] **Problema de la demarcación** · oldid 12408912 · +5 · /* El problema de la inducción */
+- [2007-10-28 22:12] **Problema de la demarcación** · oldid 12408928 · +5 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 22:14] **Problema de la demarcación** · oldid 12408979 · +0 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-28 22:15] **Problema de la demarcación** · oldid 12409008 · +7 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-10-28 22:18] **Problema de la demarcación** · oldid 12409060 · +1 · /* Cientifismo y pseudoescepticismo */
+- [2007-10-28 22:33] **Problema de la demarcación** · oldid 12409384 · +1256 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:34] **Problema de la demarcación** · oldid 12409401 · -4 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:36] **Problema de la demarcación** · oldid 12409455 · +45 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:42] **Problema de la demarcación** · oldid 12409608 · +162 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:49] **Problema de la demarcación** · oldid 12409763 · +84 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:49] **Problema de la demarcación** · oldid 12409779 · +1 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-28 22:52] **Problema de la demarcación** · oldid 12409856 · +45 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:21] **Problema de la demarcación** · oldid 12411838 · +700 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:22] **Problema de la demarcación** · oldid 12411862 · +53 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:25] **Problema de la demarcación** · oldid 12411909 · +46 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:27] **Problema de la demarcación** · oldid 12411937 · +6 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:40] **Problema de la demarcación** · oldid 12412180 · +603 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:41] **Problema de la demarcación** · oldid 12412211 · +4 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 00:58] **Teoría de cuerdas** · oldid 12412535 · +5203 · Sección /* Falsacionismo y Teoría de cuerdas */ - Ver comentario en página de discusión
+- [2007-10-29 01:13] **Teoría de cuerdas** · oldid 12412800 · -14 · /* Controversia sobre la teoría */ Añado referencias
+- [2007-10-29 01:15] **Teoría de cuerdas** · oldid 12412833 · +159 · /* Falsacionismo y Teoría de cuerdas */ Añado referencias
+- [2007-10-29 02:58] **Problema de la demarcación** · oldid 12414596 · +110 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 03:00] **Teoría de cuerdas** · oldid 12414629 · +100 · /* Falsacionismo y Teoría de cuerdas */ Completando cita
+- [2007-10-29 03:00] **Teoría de cuerdas** · oldid 12414640 · -2 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 03:44] **Teoría de cuerdas** · oldid 12415278 · +336 · /* Predicciones */ Revisiones de pares
+- [2007-10-29 03:46] **Teoría de cuerdas** · oldid 12415293 · +1 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 04:12] **Teoría de cuerdas** · oldid 12415609 · +656 · /* Predicciones */ Comentario de Lene Hau.
+- [2007-10-29 04:13] **Teoría de cuerdas** · oldid 12415631 · +35 · /* Predicciones */
+- [2007-10-29 04:14] **Teoría de cuerdas** · oldid 12415644 · +4 · /* Predicciones */
+- [2007-10-29 04:14] **Teoría de cuerdas** · oldid 12415647 · -4 · /* Predicciones */
+- [2007-10-29 04:15] **Teoría de cuerdas** · oldid 12415653 · +4 · /* Predicciones */
+- [2007-10-29 04:20] **Problema de la demarcación** · oldid 12415699 · +1079 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 04:21] **Problema de la demarcación** · oldid 12415712 · +1 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 04:22] **Problema de la demarcación** · oldid 12415719 · -10 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 04:27] **Problema de la demarcación** · oldid 12415767 · +159 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-10-29 20:37] **Teoría M** · oldid 12431365 · +5391 · /* Falsacionismo y Teoría M */ Añado sección. Ver comentario en página de discusión.
+- [2007-10-29 20:37] **Teoría M** · oldid 12431391 · +1 · /* Falsacionismo y Teoría M */
+- [2007-10-29 20:42] **Teoría de supercuerdas** · oldid 12431483 · +5405 · /* Integrando Relatividad General con Mecanica Cuántica */
+- [2007-10-29 20:42] **Teoría de supercuerdas** · oldid 12431499 · +1 · /* Falsacionismo y Teoría de supercuerdas */ Añado sección. Ver comentario en página de discusión.
+- [2007-10-30 15:08] **Pseudociencia** · oldid 12447480 · +25442 · Añado sección /* Falsacionismo y Teoría de cuerdas */. Amplío referencias. Ver comentario en página de discusión.
+- [2007-10-30 15:10] **Pseudociencia** · oldid 12447567 · +1
+- [2007-10-30 15:12] **Pseudociencia** · oldid 12447599 · +37 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 15:14] **Pseudociencia** · oldid 12447686 · +777 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 15:15] **Pseudociencia** · oldid 12447694 · +1 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 15:18] **Pseudociencia** · oldid 12447798 · +86 · /* El problema de la demarcación de las ciencias */ Amplío referencias.
+- [2007-10-30 15:19] **Pseudociencia** · oldid 12447809 · +1 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 15:22] **Pseudociencia** · oldid 12447910 · -1
+- [2007-10-30 15:32] **Pseudociencia** · oldid 12448120 · +305 · /* El problema de la demarcación de las ciencias */ Amplío referencias.
+- [2007-10-30 15:33] **Pseudociencia** · oldid 12448141 · +1
+- [2007-10-30 15:35] **Pseudociencia** · oldid 12448187 · +160 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 15:45] **Pseudociencia** · oldid 12448412 · +398 · /* El problema de la demarcación de las ciencias */ Amplío referencias.
+- [2007-10-30 15:46] **Pseudociencia** · oldid 12448441 · +1
+- [2007-10-30 16:54] **Pseudociencia** · oldid 12449994 · +8284 · /* El problema de la demarcación de las ciencias */ Amplío referencias
+- [2007-10-30 16:55] **Pseudociencia** · oldid 12450010 · +1 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 17:00] **Pseudociencia** · oldid 12450134 · +61 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 17:08] **Pseudociencia** · oldid 12450324 · +240 · /* Explicaciones psicológicas */ Causalidad como explicación
+- [2007-10-30 17:08] **Pseudociencia** · oldid 12450340 · +8 · /* Explicaciones psicológicas */
+- [2007-10-30 17:13] **Pseudociencia** · oldid 12450469 · +1814 · /* El problema de la demarcación de las ciencias */ Añado imagen.
+- [2007-10-30 17:14] **Pseudociencia** · oldid 12450525 · +1 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 17:18] **Pseudociencia** · oldid 12450617 · +71 · /* Campos considerados como pseudociencias */
+- [2007-10-30 17:20] **Pseudociencia** · oldid 12450664 · +23 · /* Campos considerados como pseudociencias */
+- [2007-10-30 17:28] **Pseudociencia** · oldid 12450905 · +2302 · /* Campos considerados como pseudociencias */ Amplío argumentos en Astrología.
+- [2007-10-30 17:32] **Pseudociencia** · oldid 12451013 · +50 · /* Campos considerados como pseudociencias */
+- [2007-10-30 17:37] **Pseudociencia** · oldid 12451160 · +731 · /* Campos considerados como pseudociencias */
+- [2007-10-30 17:49] **Pseudociencia** · oldid 12451477 · +913 · /* Campos considerados como pseudociencias */ Amplío referencias.
+- [2007-10-30 18:44] **Pseudociencia** · oldid 12453172 · +30 · /* Véase también */ Orden alfabético.
+- [2007-10-30 18:53] **Pseudociencia** · oldid 12453395 · +1984 · /* Bibliografía en español */ Amplío Bibliografía, reordeno alfabéticamente y organizo a 3 columnas
+- [2007-10-30 18:54] **Pseudociencia** · oldid 12453419 · +24 · /* Bibliografía en español */
+- [2007-10-30 19:02] **Pseudociencia** · oldid 12453624 · +890 · /* Características de las pseudociencias */ Amplío Navaja de Occam.
+- [2007-10-30 19:07] **Pseudociencia** · oldid 12453748 · +1580 · /* Características de las pseudociencias */  Amplío con imagen.
+- [2007-10-30 19:12] **Pseudociencia** · oldid 12453883 · +134 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-10-30 19:15] **Alan Sokal** · oldid 12453994 · +29 · /* Véase también */ Amplío entrada
+- [2007-10-30 19:17] **Pseudociencia** · oldid 12454048 · +1561 · /* El problema de la demarcación de las ciencias */ Amplío Tiempo y Física.
+- [2007-10-30 19:21] **Pseudociencia** · oldid 12454152 · +129 · /* El problema de la demarcación de las ciencias */ Amplío referencias.
+- [2007-10-30 19:22] **Pseudociencia** · oldid 12454183 · +6 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 19:22] **Pseudociencia** · oldid 12454201 · +6 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 19:25] **Pseudociencia** · oldid 12454262 · +23 · /* Campos considerados como pseudociencias */
+- [2007-10-30 19:27] **Pseudociencia** · oldid 12454315 · +92 · /* Campos considerados como pseudociencias */ Ampliaciónd e referencias
+- [2007-10-30 19:33] **Pseudociencia** · oldid 12454489 · +1556 · /* El problema de la demarcación de las ciencias */ Amplío argumentación de Popper.
+- [2007-10-30 19:41] **Pseudociencia** · oldid 12454682 · +1724 · Amplío imagen.
+- [2007-10-30 19:56] **Pseudociencia** · oldid 12455090 · +6591 · /* Pseudoescepticismo */ Amplío sección.
+- [2007-10-30 20:00] **Pseudociencia** · oldid 12455177 · +82 · /* Pseudoescepticismo */
+- [2007-10-30 20:00] **Pseudociencia** · oldid 12455205 · -4 · /* Pseudoescepticismo */
+- [2007-10-30 20:03] **Pseudociencia** · oldid 12455274 · +2874 · /* Pseudoescepticismo */ Amplío argumentos.
+- [2007-10-30 20:07] **Pseudociencia** · oldid 12455375 · +134 · /* Pseudoescepticismo */
+- [2007-10-30 20:11] **Pseudociencia** · oldid 12455472 · +400 · /* El problema de la demarcación de las ciencias */ Amplío enlaces.
+- [2007-10-30 20:11] **Pseudociencia** · oldid 12455485 · +1 · /* El problema de la demarcación de las ciencias */
+- [2007-10-30 20:17] **Pseudociencia** · oldid 12455656 · +6
+- [2007-10-30 20:21] **Pseudociencia** · oldid 12455749 · +3305 · /* El problema de la demarcación de las ciencias */ Amplío referencias.
+- [2007-10-30 20:24] **Pseudociencia** · oldid 12455820 · +464 · /* Características de las pseudociencias */ Ampliación de referencias.
+- [2007-10-30 20:34] **Pseudociencia** · oldid 12456032 · +1305 · /* Campos considerados como pseudociencias */ Amplío referencias.
+- [2007-10-30 20:34] **Pseudociencia** · oldid 12456045 · +6 · /* Campos considerados como pseudociencias */
+- [2007-10-30 20:45] **Pseudociencia** · oldid 12456292 · +1780 · /* Campos considerados como pseudociencias */ Amplío referencias
+- [2007-10-30 20:51] **Pseudociencia** · oldid 12456407 · +1514 · /* Campos considerados como pseudociencias */ Amplío referencias.
+- [2007-10-30 20:52] **Pseudociencia** · oldid 12456433 · -1 · /* Campos considerados como pseudociencias */
+- [2007-10-30 20:56] **Pseudociencia** · oldid 12456492 · +24 · /* Campos considerados como pseudociencias */
+- [2007-10-30 20:58] **Pseudociencia** · oldid 12456528 · +16 · /* Campos considerados como pseudociencias */
+- [2007-10-30 21:00] **Pseudociencia** · oldid 12456578 · +107 · /* Campos considerados como pseudociencias */
+- [2007-10-30 23:31] **Pseudociencia** · oldid 12460389 · -5 · /* Explicaciones psicológicas */
+- [2007-10-31 00:29] **Pseudociencia** · oldid 12461607 · +8090 · Amplío argumentaciones. Revisión de referencias requeridas.
+- [2007-10-31 00:29] **Pseudociencia** · oldid 12461628 · +25 · /* Características de las pseudociencias */
+- [2007-10-31 11:38] **Pseudociencia** · oldid 12468620 · -1 · /* Características de las pseudociencias */
+- [2007-10-31 11:54] **Pseudociencia** · oldid 12468859 · +5528 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-10-31 11:56] **Pseudociencia** · oldid 12468882 · +19 · /* Características de las pseudociencias */
+- [2007-10-31 12:06] **Pseudociencia** · oldid 12469037 · +1365 · /* Características de las pseudociencias */
+- [2007-10-31 12:09] **Pseudociencia** · oldid 12469084 · +5 · /* Características de las pseudociencias */
+- [2007-10-31 12:11] **Pseudociencia** · oldid 12469120 · -226 · /* Características de las pseudociencias */
+- [2007-10-31 12:14] **Pseudociencia** · oldid 12469172 · +384 · /* Características de las pseudociencias */ Amplío referencias
+- [2007-10-31 12:15] **Pseudociencia** · oldid 12469188 · +0 · /* Características de las pseudociencias */
+- [2007-10-31 12:18] **Pseudociencia** · oldid 12469232 · +653 · /* Características de las pseudociencias */ Amplío referencias del concepto escepticismo.
+- [2007-10-31 12:19] **Pseudociencia** · oldid 12469253 · +7 · /* Características de las pseudociencias */
+- [2007-10-31 12:21] **Pseudociencia** · oldid 12469284 · +2 · /* Características de las pseudociencias */
+- [2007-10-31 12:40] **Pseudociencia** · oldid 12469559 · -1 · /* Características de las pseudociencias */
+- [2007-10-31 13:16] **Problema de la demarcación** · oldid 12470050 · +654 · /* ¿Ciencia normal, paranormal o pseudociencias? */ Amplío referencias
+- [2007-10-31 13:21] **Pseudociencia** · oldid 12470114 · +758 · /* El problema de la demarcación de las ciencias */ Amplío referencia a Konrad Zuse.
+- [2007-10-31 13:40] **Pseudociencia** · oldid 12470350 · +1352 · /* Pseudoescepticismo */ Amplío argumentos sobre causalidad.
+- [2007-10-31 13:40] **Pseudociencia** · oldid 12470362 · +6 · /* Pseudoescepticismo */
+- [2007-10-31 13:41] **Pseudociencia** · oldid 12470375 · +6 · /* Pseudoescepticismo */
+- [2007-10-31 13:42] **Pseudociencia** · oldid 12470386 · +6 · /* Pseudoescepticismo */
+- [2007-10-31 14:24] **Pseudociencia** · oldid 12470978 · +48 · /* Campos considerados como pseudociencias */ Preciso enunciado.
+- [2007-10-31 14:24] **Pseudociencia** · oldid 12470995 · +1 · /* Campos considerados como pseudociencias */
+- [2007-10-31 14:27] **Pseudociencia** · oldid 12471046 · +32 · /* Campos considerados como pseudociencias */
+- [2007-10-31 14:30] **Pseudociencia** · oldid 12471104 · +216 · /* Campos considerados como pseudociencias */ Preciso términos.
+- [2007-10-31 14:31] **Pseudociencia** · oldid 12471132 · -5 · /* Campos considerados como pseudociencias */
+- [2007-10-31 14:32] **Pseudociencia** · oldid 12471158 · +2 · /* Campos considerados como pseudociencias */
+- [2007-10-31 14:53] **Pseudociencia** · oldid 12471593 · +10 · /* Campos considerados como pseudociencias */
+- [2007-10-31 15:03] **Pseudociencia** · oldid 12471847 · +12 · /* Características de las pseudociencias */
+- [2007-10-31 15:05] **Pseudociencia** · oldid 12471886 · +12 · /* Características de las pseudociencias */
+- [2007-10-31 15:07] **Pseudociencia** · oldid 12471932 · +6 · /* Características de las pseudociencias */
+- [2007-10-31 15:09] **Pseudociencia** · oldid 12471983 · +5 · /* Características de las pseudociencias */
+- [2007-10-31 15:10] **Pseudociencia** · oldid 12471998 · +8 · /* Características de las pseudociencias */
+- [2007-10-31 15:14] **Pseudociencia** · oldid 12472060 · +1107 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-10-31 15:16] **Pseudociencia** · oldid 12472102 · -3 · /* Características de las pseudociencias */
+- [2007-10-31 15:17] **Pseudociencia** · oldid 12472128 · -1 · /* Características de las pseudociencias */
+- [2007-10-31 15:18] **Pseudociencia** · oldid 12472154 · +12 · /* Características de las pseudociencias */
+- [2007-10-31 15:19] **Pseudociencia** · oldid 12472182 · +6 · /* Características de las pseudociencias */
+- [2007-10-31 15:24] **Pseudociencia** · oldid 12472324 · +12 · /* Características de las pseudociencias */
+- [2007-10-31 15:26] **Pseudociencia** · oldid 12472368 · +40 · /* Características de las pseudociencias */
+- [2007-10-31 18:16] **Problema de la demarcación** · oldid 12476224 · +1 · /* Cientifismo y pseudoescepticismo */ Gracias Amoceann. Corrijo al plural. Véase http://buscon.rae.es/draeI/SrvltObt...
+- [2007-10-31 23:35] **Pseudociencia** · oldid 12483807 · +511 · /* Pseudociencia */ Amplío referencias.
+- [2007-10-31 23:36] **Pseudociencia** · oldid 12483821 · +43
+- [2007-10-31 23:38] **Pseudociencia** · oldid 12483869 · -31
+- [2007-10-31 23:40] **Pseudociencia** · oldid 12483930 · -407
+- [2007-10-31 23:42] **Pseudociencia** · oldid 12483968 · +0
+- [2007-10-31 23:51] **Pseudociencia** · oldid 12484162 · +10 · /* Características de las pseudociencias */
+- [2007-11-01 00:00] **Pseudociencia** · oldid 12484330 · -2 · /* Características de las pseudociencias */
+- [2007-11-01 00:59] **Pseudociencia** · oldid 12485444 · +2239 · /* Características de las pseudociencias */ Amplío referencias a Sokal
+- [2007-11-01 01:04] **Pseudociencia** · oldid 12485508 · +159 · /* Características de las pseudociencias */
+- [2007-11-01 01:06] **Pseudociencia** · oldid 12485534 · +44 · /* Características de las pseudociencias */
+- [2007-11-01 01:33] **Pseudociencia** · oldid 12485901 · +414 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 01:35] **Pseudociencia** · oldid 12485929 · -4 · /* Explicaciones psicológicas */
+- [2007-11-01 01:39] **Pseudociencia** · oldid 12485981 · +430
+- [2007-11-01 01:40] **Pseudociencia** · oldid 12485998 · -1 · /* Campos considerados como pseudociencias */ Amplío referencias.
+- [2007-11-01 01:58] **Pseudociencia** · oldid 12486220 · +1386 · /* Características de las pseudociencias */ Amplío experimento Rosenhan
+- [2007-11-01 02:00] **Pseudociencia** · oldid 12486240 · +4 · /* Características de las pseudociencias */
+- [2007-11-01 02:12] **Pseudociencia** · oldid 12486403 · +855 · /* Características de las pseudociencias */ Amplío referencias método científico
+- [2007-11-01 02:13] **Pseudociencia** · oldid 12486432 · +42 · /* Características de las pseudociencias */
+- [2007-11-01 02:15] **Pseudociencia** · oldid 12486462 · +9 · /* Características de las pseudociencias */
+- [2007-11-01 02:26] **Problema de la demarcación** · oldid 12486612 · +764 · /* El problema de la explicación científica */ Amplío sección
+- [2007-11-01 02:28] **Problema de la demarcación** · oldid 12486661 · +238 · Amplío referencias
+- [2007-11-01 02:30] **Problema de la demarcación** · oldid 12486681 · +1 · /* El problema de la explicación científica */
+- [2007-11-01 02:36] **Problema de la demarcación** · oldid 12486781 · +866 · /* Cientifismo y pseudoescepticismo */
+- [2007-11-01 02:42] **Pseudociencia** · oldid 12486862 · +70 · /* Características de las pseudociencias */ Amplío referencias
+- [2007-11-01 02:51] **Pseudociencia** · oldid 12486972 · +2471 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 02:53] **Pseudociencia** · oldid 12486999 · +44 · /* Características de las pseudociencias */
+- [2007-11-01 02:54] **Pseudociencia** · oldid 12487012 · -6 · /* Características de las pseudociencias */
+- [2007-11-01 02:59] **Pseudociencia** · oldid 12487069 · +6 · /* Campos considerados como pseudociencias */
+- [2007-11-01 09:28] **Pseudociencia** · oldid 12489868 · +1195 · /* Pseudoescepticismo */ Amplío referencias Pirrón.
+- [2007-11-01 09:30] **Pseudociencia** · oldid 12489874 · +0 · /* Pseudoescepticismo */
+- [2007-11-01 09:34] **Pseudociencia** · oldid 12489908 · +13 · /* Pseudoescepticismo */
+- [2007-11-01 09:40] **Pseudociencia** · oldid 12489953 · +20 · Muevo párrafo Thoms Kuhn.
+- [2007-11-01 09:43] **Pseudociencia** · oldid 12489983 · +22 · /* Características de las pseudociencias */
+- [2007-11-01 09:50] **Pseudociencia** · oldid 12490062 · +59 · /* Características de las pseudociencias */
+- [2007-11-01 09:53] **Pseudociencia** · oldid 12490094 · +4 · /* Características de las pseudociencias */
+- [2007-11-01 09:54] **Pseudociencia** · oldid 12490106 · +14 · /* Características de las pseudociencias */
+- [2007-11-01 09:55] **Pseudociencia** · oldid 12490111 · +4 · /* Características de las pseudociencias */
+- [2007-11-01 09:56] **Pseudociencia** · oldid 12490123 · +4 · /* Características de las pseudociencias */
+- [2007-11-01 09:58] **Pseudociencia** · oldid 12490143 · +6 · /* Características de las pseudociencias */
+- [2007-11-01 10:02] **Pseudociencia** · oldid 12490172 · +940 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 10:05] **Pseudociencia** · oldid 12490201 · +961 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 10:06] **Pseudociencia** · oldid 12490209 · -1 · /* Características de las pseudociencias */
+- [2007-11-01 10:13] **Pseudociencia** · oldid 12490265 · +602 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 10:14] **Pseudociencia** · oldid 12490270 · +10 · /* Características de las pseudociencias */
+- [2007-11-01 10:20] **Pseudociencia** · oldid 12490349 · +6 · /* Características de las pseudociencias */
+- [2007-11-01 10:22] **Pseudociencia** · oldid 12490370 · +7 · /* Pseudoescepticismo */
+- [2007-11-01 10:53] **Pseudociencia** · oldid 12490814 · +1525 · /* Características de las pseudociencias */ Amplío referencias SCIgen.
+- [2007-11-01 10:55] **Pseudociencia** · oldid 12490836 · +6 · /* Características de las pseudociencias */
+- [2007-11-01 10:56] **Pseudociencia** · oldid 12490852 · +6 · /* Características de las pseudociencias */
+- [2007-11-01 11:05] **Pseudociencia** · oldid 12490963 · +228 · /* Características de las pseudociencias */ Amplío referencias.
+- [2007-11-01 11:11] **Escándalo Sokal** · oldid 12491045 · +7442 · Amplío sección /* Escándalos similares */
+- [2007-11-01 11:14] **Escándalo Sokal** · oldid 12491077 · +31
+- [2007-11-01 11:16] **Escándalo Sokal** · oldid 12491106 · -1
+- [2007-11-01 15:26] **Redes (programa de televisión)** · oldid 12495470 · +1909 · Añado sección /* Televisión Española retira Redes */ y plantilla de noticia de actualidad.
+- [2007-11-01 15:29] **Redes (programa de televisión)** · oldid 12495530 · +31 · Añado plantilla Referencias
+- [2007-11-01 15:30] **Redes (programa de televisión)** · oldid 12495544 · +1 · /* Televisión Española retira Redes */
+- [2007-11-01 15:31] **Redes (programa de televisión)** · oldid 12495558 · +1 · /* Televisión Española retira Redes */
+- [2007-11-01 15:34] **Redes (programa de televisión)** · oldid 12495611 · +80 · /* Enlaces externos */ Amplío enlaces.
+- [2007-11-02 22:19] **Filosofía de la ciencia** · oldid 12529448 · +1949 · La uniformidad de la naturaleza está ampliamente cuestionada por la ciencia.
+- [2007-11-02 22:21] **Filosofía de la ciencia** · oldid 12529480 · +1028 · Amplío Problema de la Inducción con imagen
+- [2007-11-02 22:23] **Filosofía de la ciencia** · oldid 12529527 · +23 · /* El falsacionismo */
+- [2007-11-02 22:29] **Filosofía de la ciencia** · oldid 12529605 · +5021 · Amplío referencias sobre Criterio de Demarcación
+- [2007-11-02 22:30] **Filosofía de la ciencia** · oldid 12529629 · +12
+- [2007-11-02 22:32] **Filosofía de la ciencia** · oldid 12529652 · +30 · Añado plantilla referencias
+- [2007-11-02 23:13] **Filosofía de la ciencia** · oldid 12530456 · +82
+- [2007-11-02 23:14] **Filosofía de la ciencia** · oldid 12530472 · +13
+- [2007-11-02 23:17] **Filosofía de la ciencia** · oldid 12530555 · +7771 · Añado sección Falsacionismo y Teoría de Cuerdas
+- [2007-11-02 23:18] **Filosofía de la ciencia** · oldid 12530573 · +2 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-11-02 23:44] **Filosofía de la ciencia** · oldid 12531117 · +3490 · /* Falsacionismo y Teoría de cuerdas */ Amplío sección
+- [2007-11-02 23:51] **Filosofía de la ciencia** · oldid 12531242 · -59 · /* La ciencia como producto de la lógica y la razón */ Juicio de valor sin referencias
+- [2007-11-02 23:53] **Filosofía de la ciencia** · oldid 12531279 · +23863 · /* El problema de la explicación científica */ Añado sección
+- [2007-11-02 23:56] **Filosofía de la ciencia** · oldid 12531351 · +34412 · /* ¿Ciencia normal, paranormal o pseudociencias? */ Añado sección
+- [2007-11-02 23:59] **Filosofía de la ciencia** · oldid 12531394 · +17877 · /* Cientifismo y pseudoescepticismo */ Añado sección.
+- [2007-11-02 23:59] **Filosofía de la ciencia** · oldid 12531410 · -1 · /* Cientifismo y pseudoescepticismo= */
+- [2007-11-03 00:02] **Filosofía de la ciencia** · oldid 12531471 · +4 · /* Cientifismo y pseudoescepticismo */
+- [2007-11-03 00:04] **Filosofía de la ciencia** · oldid 12531517 · +155 · /* El problema de la explicación científica */ Amplío referencias
+- [2007-11-03 00:17] **Filosofía de la ciencia** · oldid 12531724 · +24843 · /* La ciencia cuestiona la validez de la lógica y la razón */ Amplío sección.
+- [2007-11-03 00:19] **Filosofía de la ciencia** · oldid 12531760 · -4 · /* Los precursores */
+- [2007-11-03 00:20] **Filosofía de la ciencia** · oldid 12531777 · -8 · /* La filosofía analítica */
+- [2007-11-03 00:21] **Filosofía de la ciencia** · oldid 12531792 · -4 · /* La filosofía analítica */
+- [2007-11-03 00:48] **Método científico** · oldid 12532134 · +23863 · /* El problema de la explicación científica */ Añado sección
+- [2007-11-03 00:49] **Método científico** · oldid 12532163 · +155 · /* El problema de la explicación científica */
+- [2007-11-03 00:51] **Método científico** · oldid 12532195 · +39017 · /* Falsacionismo */ Añado sección.
+- [2007-11-03 00:54] **Método científico** · oldid 12532234 · +16907 · /* Anti-navajas de Occam */ Añado sección.
+- [2007-11-03 00:55] **Método científico** · oldid 12532260 · +17878 · /* Véase también */
+- [2007-11-03 01:00] **Método científico** · oldid 12532361 · +25919 · /* Cientifismo y pseudoescepticismo */ Añado sección
+- [2007-11-03 01:02] **Método científico** · oldid 12532385 · +0 · /* Notas */
+- [2007-11-03 01:10] **Método científico** · oldid 12532508 · +1411 · Amplío referencias
+- [2007-11-03 01:12] **Método científico** · oldid 12532532 · +24 · Amplío referencias
+- [2007-11-03 01:15] **Método científico** · oldid 12532573 · -157 · Edito sintaxis
+- [2007-11-03 01:16] **Método científico** · oldid 12532604 · +6
+- [2007-11-03 01:17] **Método científico** · oldid 12532633 · +6
+- [2007-11-03 01:27] **Método científico** · oldid 12532787 · +6057 · Amplío referencias
+- [2007-11-03 01:28] **Método científico** · oldid 12532808 · -2
+- [2007-11-03 01:32] **Método científico** · oldid 12532846 · +673 · Amplío referencias.
+- [2007-11-03 01:49] **Método científico** · oldid 12533079 · +525 · Amplío referencias
+- [2007-11-03 01:53] **Método científico** · oldid 12533126 · -22
+- [2007-11-03 01:54] **Método científico** · oldid 12533135 · +6
+- [2007-11-03 02:02] **Método científico** · oldid 12533209 · -3 · Reestructuración de /* El problema de inducción */
+- [2007-11-03 02:06] **Método científico** · oldid 12533264 · -1 · Ilustración
+- [2007-11-03 02:07] **Método científico** · oldid 12533282 · +0
+- [2007-11-03 02:28] **Método científico** · oldid 12533544 · +1803 · Amplío referencias
+- [2007-11-03 02:34] **Método científico** · oldid 12533629 · +875 · Amplío referencias
+- [2007-11-03 02:36] **Método científico** · oldid 12533662 · +7
+- [2007-11-03 02:38] **Método científico** · oldid 12533677 · +6
+- [2007-11-03 02:42] **Método científico** · oldid 12533723 · +21 · /* Cientifismo y pseudoescepticismo */
+- [2007-11-03 02:43] **Método científico** · oldid 12533739 · +6 · /* Falsacionismo */
+- [2007-11-03 02:45] **Método científico** · oldid 12533766 · +5
+- [2007-11-03 02:47] **Método científico** · oldid 12533797 · -5
+- [2007-11-03 03:07] **Método científico** · oldid 12534027 · +415 · /* Tipologías */  Añado ilustración
+- [2007-11-03 07:47] **Método científico** · oldid 12536076 · -6
+- [2007-11-03 07:50] **Método científico** · oldid 12536098 · +1030 · Amplío referencias
+- [2007-11-03 07:56] **Método científico** · oldid 12536133 · +373 · Amplío referencias
+- [2007-11-05 06:19] **Método científico** · oldid 12584415 · +17539 · Añado sección /* Método científico: ¿Ciencia normal, ciencia paranormal o pseudociencias? */
+- [2007-11-05 06:21] **Método científico** · oldid 12584427 · +9
+- [2007-11-05 06:22] **Método científico** · oldid 12584434 · -1 · /* Método científico: ¿Ciencia normal, ciencia paranormal o pseudociencias? = */
+- [2007-11-05 06:24] **Método científico** · oldid 12584451 · +9
+- [2007-11-05 06:43] **Método científico** · oldid 12584554 · +6
+- [2007-11-05 19:15] **Problema de la demarcación** · oldid 12596716 · +6 · /* ¿Ciencia normal, paranormal o pseudociencias? */ negrita
+- [2007-11-05 19:16] **Problema de la demarcación** · oldid 12596772 · +6 · /* ¿Ciencia normal, paranormal o pseudociencias? */ negrita
+- [2007-11-10 01:07] **Pseudociencia** · oldid 12705323 · +5338 · Amplío referencias en introducción.
+- [2007-11-10 01:13] **Pseudociencia** · oldid 12705438 · +418 · Amplío introducción.
+- [2007-11-10 19:12] **Pseudociencia** · oldid 12719502 · +108874 · VANDALISMO. Deshecha la edición 12719465 de [[Special:Contributions/Analiza|Analiza]] ([[Usuario Discusión:Analiza|di...
+- [2007-11-10 19:16] **Pseudociencia** · oldid 12719613 · +108874 · VANDALISMO. Deshecha la edición 12719557 de [[Special:Contributions/Analiza|Analiza]] ([[Usuario Discusión:Analiza|di...
+- [2007-11-10 19:17] **Pseudociencia** · oldid 12719637 · +422 · Restauro PVN. Ver página de discusión.
+- [2007-11-10 19:45] **Pseudociencia** · oldid 12720368 · +108874 · VANDALISMO en curso del usuario Analiza. Deshecha la edición 12719652 de [[Special:Contributions/Analiza|Analiza]] ([...
+- [2007-11-11 02:45] **Problema de la demarcación** · oldid 12728661 · +415 · La imagen ilustra de forma MUY acertada la IMPORTANCIA de las predicciones fallidas dentro de teorías supuestamente c...
+- [2007-11-11 02:52] **Problema de la demarcación** · oldid 12728744 · +271 · Todos y cada uno de los enlaces de la sección Véase También tienen una relación directa y estrecha con el artículo. E...
+- [2007-11-11 03:00] **Problema de la demarcación** · oldid 12728832 · +95 · Revierto enlaces. La función de la sección Véase también consiste en ayudar al lector a abundar en el tema si lo dese...
+- [2007-11-11 03:24] **Pseudociencia** · oldid 12729129 · +642 · /* Falsacionismo y Teoría de cuerdas */ Amplío referencias
+- [2007-11-11 03:25] **Pseudociencia** · oldid 12729143 · -86 · /* Falsacionismo y Teoría de cuerdas */
+- [2007-11-11 03:30] **Pseudociencia** · oldid 12729211 · +370 · /* Falsacionismo y Teoría de cuerdas */ Amplío referencias.
+- [2007-11-11 03:33] **Problema de la demarcación** · oldid 12729252 · +2288 · /* Falsacionismo y Teoría de cuerdas */ Amplío referencias.
+- [2007-11-11 03:35] **Problema de la demarcación** · oldid 12729273 · -1934 · /* Falsacionismo y Teoría de cuerdas */ Reestructuro referencias
+- [2007-11-11 14:11] **Problema de la demarcación** · oldid 12735647 · +1 · /* Separación entre ciencia y religión */
+- [2007-11-11 14:12] **Problema de la demarcación** · oldid 12735660 · -1 · /* ¿Ciencia normal, paranormal o pseudociencias? */
+- [2007-11-11 15:16] **Método científico** · oldid 12736647 · +154459 · Restauro imagen, al presentar de una forma visual muy intuitiva para el lector un excelente resumen de Puntos de Vist...
+- [2007-11-11 23:31] **Problema de la demarcación** · oldid 12748887 · +90 · Usuario entorpeciendo el desarrollo del artículo con acusaciones vagas que no vulneran en absoluto NINGUNA política d...
+- [2007-11-11 23:32] **Problema de la demarcación** · oldid 12748915 · -104 · Usuario entorpeciendo el desarrollo del artículo con acusaciones vagas que no vulneran en absoluto NINGUNA política d...
+- [2007-11-11 23:43] **Problema de la demarcación** · oldid 12749126 · -10 · Tamaño del artículo y Punto de Vista estrictamente Neutral. Ver página de discusión.
+- [2007-11-12 00:00] **Método científico** · oldid 12749440 · -37 · Revirtiendo acusaciones vagas del usuario Fernando Estel que no violan NINGUNA política de Wikipedia. Ver página de d...
+- [2007-11-12 11:03] **Problema de la demarcación** · oldid 12756058 · -10 · Elimino plantilla de tamaño por considerarlo necesario para el tratamiento en profundidad del tema. Ver lista de artí...
+- [2007-11-12 12:20] **Problema de la demarcación** · oldid 12756993 · -24 · Retiro plantillas temporalmente, en vista de la ausencia de explicación ni de argumentación.
+- [2007-11-12 17:42] **Problema de la demarcación** · oldid 12763524 · +604 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-11-12 17:45] **Problema de la demarcación** · oldid 12763608 · +648 · /* Feyerabend y el problema de la autonomía en la ciencia */ Amplío referencias.
+- [2007-11-12 17:46] **Problema de la demarcación** · oldid 12763637 · +144 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-11-12 17:51] **Problema de la demarcación** · oldid 12763773 · +110 · /* Feyerabend y el problema de la autonomía en la ciencia */ Introduzco referencia.
+- [2007-11-12 17:55] **Problema de la demarcación** · oldid 12763862 · +465 · /* Feyerabend y el problema de la autonomía en la ciencia */ Añado cita.
+- [2007-11-12 17:56] **Problema de la demarcación** · oldid 12763886 · +12 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-11-12 17:57] **Problema de la demarcación** · oldid 12763920 · +147 · /* Feyerabend y el problema de la autonomía en la ciencia */
+- [2007-11-14 21:45] **Pseudociencia** · oldid 12821003 · -5 · /* El problema de la demarcación de las ciencias */ Corrijo error en un <ref> de más que impedía la visión correcta d...
+- [2007-11-15 16:55] **Pseudociencia** · oldid 12838109 · +127 · Recupero excelente explicación de la imagen que le permite al lector contextualizar la metáfora.
+- [2007-11-15 16:58] **Pseudociencia** · oldid 12838165 · +32 · /* El problema de la demarcación de las ciencias */ Amplío enlace interno.
+- [2007-11-16 18:24] **Pseudociencia** · oldid 12862881 · +733 · Que un científico Y paradigmático *escéptico* sobre la astrología como Carl Sagan se retractase de firmar una carta e...
+- [2007-11-16 18:46] **Imposturas intelectuales** · oldid 12863450 · +676 · Explicito cita, literalmente.
+- [2007-11-16 18:47] **Imposturas intelectuales** · oldid 12863471 · -110
+- [2007-11-16 19:19] **Pseudociencia** · oldid 12864221 · +425 · /* Características de las pseudociencias */ Complemento referencia para mejor PVN.
+- [2007-11-16 19:21] **Pseudociencia** · oldid 12864262 · +4 · /* Campos considerados como pseudociencias */ Restituyo enlace determinante en sección directamente relacionada.
+- [2007-11-16 21:03] **Pseudociencia** · oldid 12866386 · +249 · Completo el concepto de lo que Mario Bunge entiende por pseudociencias.
+- [2007-11-16 21:04] **Pseudociencia** · oldid 12866403 · +1
+- [2007-11-16 21:10] **Pseudociencia** · oldid 12866540 · +57 · /* Características de las pseudociencias */ Amplío referencias externas.
+- [2007-11-18 01:32] **Pseudociencia** · oldid 12893402 · +1672 · La fotografía aclara de una forma ampliamente intuitiva para el lector cómo la lógica no es suficiente para determina...
+- [2007-11-18 01:37] **Pseudociencia** · oldid 12893497 · +660 · La estatua representa la TRIMURTI (3 dioses en uno) personificada en Shiva,en el mismísimo CERN. Excelente imagen que...
+- [2007-11-18 01:41] **Pseudociencia** · oldid 12893554 · +1328 · La posible fractalidad y complejidad del Universo pondría de manifiesto la cuestionabilidad de la Navaja de Occam com...
+- [2007-11-18 19:54] **Pseudociencia** · oldid 12910943 · +102467 · Revierto VANDALISMO por parte del usuario Chabacano de *más de 150 ediciones y más de 250 referencias aportadas*. Ver...
+- [2007-11-18 19:55] **Pseudociencia** · oldid 12910974 · -11 · /* Referencias */

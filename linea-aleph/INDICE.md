@@ -11,6 +11,9 @@ falsacionismo, Kuhn, Feyerabend…). El agente navegador-caché expande desde ca
 
 Relacionado: [`logs-aleph`](../logs-aleph/INDICE.md) (sesión demarcación / Gaia / diamat).
 
+**Segunda línea gruesa:** [`pseudociencia/INDICE.md`](pseudociencia/INDICE.md) —
+historial artículo *Pseudociencia* (ventana SolveCoagula).
+
 ## Preamble (linea.md)
 
 Gallardonegro, caballero de la Orden del insigne C. del Dragón y de Gea. Equinocio de primavera norte, 2018. Tartessos.
@@ -20,11 +23,13 @@ P.D: Insisto: **Deseable**... vean:
 
 | Rol | Registro | oldid | Fecha (WP) | Carpeta |
 |-----|----------|-------|------------|---------|
-| **Final** (más reciente en linea.md) | `r0001` | 12370021 | 07:39 27 oct 2007 | [snapshots/final](snapshots/final/) |
+| **Previo** (antes de SolveCoagula) | — | 11663303 | 28 sep 2007 | [snapshots/previo](snapshots/previo/) |
 | **Inicial** (traducción / arranque) | `r0677` | 11951034 | 04:53 10 oct 2007 | [snapshots/inicial](snapshots/inicial/) |
+| **Final** (más reciente en linea.md) | `r0001` | 12370021 | 07:39 27 oct 2007 | [snapshots/final](snapshots/final/) |
+| **SC cierre** (última edit SolveCoagula, linea2) | — | 12763920 | 2007-11-12 17:57 | [snapshots/sc_cierre](snapshots/sc_cierre/) |
+| **Actual** (Wikipedia hoy) | — | 166864369 | 2025-04-15T16:18:15Z | [snapshots/actual](snapshots/actual/) |
 
-Entre ambos: **677** registros en [`manifest.json`](manifest.json).
-
+Delta extremo: [`snapshots/delta-extremo.md`](snapshots/delta-extremo.md) (previo → final). Delta SC→hoy: [`snapshots/delta-sc-actual.md`](snapshots/delta-sc-actual.md). Entre inicial y final: **677** registros en [`manifest.json`](manifest.json).
 ## ¿Markdown para snapshots intermedios?
 
 **No como cuerpo del artículo.** Recomendación:
@@ -36,7 +41,7 @@ Entre ambos: **677** registros en [`manifest.json`](manifest.json).
 | Snapshot de revisión WP | `.wikitext` + `.meta.json` en `cache/` | `fetch_snapshot.py` / agente |
 | Viajes hipervinculados | `cache/viajes/*.json` | skill navegador-caché |
 
-Materializar los **677** snapshots completos sería bulk innecesario: usar milestones
+Materializar todos los snapshots completos sería bulk innecesario: usar milestones
 (99 marcados) + fetch bajo demanda.
 
 ## Hitos (milestones)
@@ -146,18 +151,19 @@ linea-aleph/
 ├── manifest.json
 ├── INDICE.md
 ├── ontology-seeds.json
-├── snapshots/inicial|final/
+├── snapshots/previo|inicial|final|sc_cierre|actual/
+├── snapshots/delta-extremo.md
+├── snapshots/delta-sc-actual.md
 ├── registros/          # milestones por defecto
-└── cache/              # wikitext + viajes (agente)
+└── ../cache/           # wikitext compartido (agente)
 ```
 
 ## Comandos
 
 ```bash
-python3 segment_linea.py                    # fase 1
-python3 segment_linea.py --expand milestones
-python3 segment_linea.py --expand r0426    # un registro
-python3 scripts/fetch_snapshot.py --oldid 11951034
+python3 segment_linea.py --corpus-dir . --expand milestones
+python3 scripts/fetch_snapshot.py --oldid <oldid> --title Problema de la demarcación
+python3 scripts/fetch_snapshot.py --latest --title "Problema de la demarcación"
 ```
 
 ## Curación de deltas

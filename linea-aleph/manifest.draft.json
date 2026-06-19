@@ -2,7 +2,7 @@
   "corpus": "linea-aleph",
   "title": "Problema de la demarcación (historial WP es)",
   "source": "raw/linea.md",
-  "generated_at": "2026-06-18T23:22:51Z",
+  "generated_at": "2026-06-19T13:32:56Z",
   "preamble": {
     "lines": [
       1,
@@ -13,6 +13,14 @@
   "registro_count": 677,
   "ordering": "newest_first_in_linea_md",
   "snapshots": {
+    "previo": {
+      "role": "previo",
+      "registro_id": null,
+      "oldid": 11663303,
+      "timestamp": "28 sep 2007",
+      "user": "Dhidalgo",
+      "path": "snapshots/previo"
+    },
     "final": {
       "role": "final",
       "registro_id": "r0001",
@@ -27,6 +35,16 @@
       "timestamp": "04:53 10 oct 2007",
       "summary": "Traducción completa del original en inglés",
       "path": "snapshots/inicial"
+    },
+    "sc_cierre": {
+      "role": "sc_cierre",
+      "oldid": 12763920,
+      "path": "snapshots/sc_cierre"
+    },
+    "actual": {
+      "role": "actual",
+      "oldid": null,
+      "path": "snapshots/actual"
     }
   },
   "ontology_sections": [
@@ -807,10 +825,7 @@
       "milestone_reasons": [
         "byte_delta_2203"
       ],
-      "files": {
-        "registro": "registros/r0022-oldid-12368267-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0022-oldid-12368267-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -1228,10 +1243,7 @@
       "milestone_reasons": [
         "byte_delta_1815"
       ],
-      "files": {
-        "registro": "registros/r0038-oldid-12355642-feyerabend-y-el-problema-de-la/registro.md",
-        "delta": "registros/r0038-oldid-12355642-feyerabend-y-el-problema-de-la/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -1467,10 +1479,7 @@
       "milestone_reasons": [
         "byte_delta_1297"
       ],
-      "files": {
-        "registro": "registros/r0047-oldid-12352611-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0047-oldid-12352611-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -1784,10 +1793,7 @@
       "milestone_reasons": [
         "byte_delta_883"
       ],
-      "files": {
-        "registro": "registros/r0059-oldid-12349141-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0059-oldid-12349141-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -1867,10 +1873,7 @@
       "milestone_reasons": [
         "byte_delta_1833"
       ],
-      "files": {
-        "registro": "registros/r0062-oldid-12348878-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0062-oldid-12348878-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -2080,10 +2083,7 @@
       "milestone_reasons": [
         "byte_delta_1785"
       ],
-      "files": {
-        "registro": "registros/r0070-oldid-12347790-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0070-oldid-12347790-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -2319,10 +2319,7 @@
       "milestone_reasons": [
         "byte_delta_1005"
       ],
-      "files": {
-        "registro": "registros/r0079-oldid-12347163-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0079-oldid-12347163-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -2506,10 +2503,7 @@
       "milestone_reasons": [
         "byte_delta_879"
       ],
-      "files": {
-        "registro": "registros/r0086-oldid-12326815-controversia-en-la-parsimonia-/registro.md",
-        "delta": "registros/r0086-oldid-12326815-controversia-en-la-parsimonia-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -2589,10 +2583,7 @@
       "milestone_reasons": [
         "byte_delta_698"
       ],
-      "files": {
-        "registro": "registros/r0089-oldid-12326038-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0089-oldid-12326038-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3010,10 +3001,7 @@
       "milestone_reasons": [
         "byte_delta_1269"
       ],
-      "files": {
-        "registro": "registros/r0105-oldid-12325054-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0105-oldid-12325054-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3093,10 +3081,7 @@
       "milestone_reasons": [
         "byte_delta_1038"
       ],
-      "files": {
-        "registro": "registros/r0108-oldid-12323708-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0108-oldid-12323708-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3254,10 +3239,7 @@
       "milestone_reasons": [
         "byte_delta_1649"
       ],
-      "files": {
-        "registro": "registros/r0114-oldid-12322903-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0114-oldid-12322903-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3571,10 +3553,7 @@
       "milestone_reasons": [
         "byte_delta_646"
       ],
-      "files": {
-        "registro": "registros/r0126-oldid-12321880-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0126-oldid-12321880-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3654,10 +3633,7 @@
       "milestone_reasons": [
         "byte_delta_2874"
       ],
-      "files": {
-        "registro": "registros/r0129-oldid-12321538-ciencia-normal-paranormal-o-ps/registro.md",
-        "delta": "registros/r0129-oldid-12321538-ciencia-normal-paranormal-o-ps/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -3919,10 +3895,7 @@
       "milestone_reasons": [
         "byte_delta_966"
       ],
-      "files": {
-        "registro": "registros/r0139-oldid-12273896-falsacionismo-y-teoria-de-cuer/registro.md",
-        "delta": "registros/r0139-oldid-12273896-falsacionismo-y-teoria-de-cuer/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -4158,10 +4131,7 @@
       "milestone_reasons": [
         "byte_delta_1536"
       ],
-      "files": {
-        "registro": "registros/r0148-oldid-12267231-falsacionismo/registro.md",
-        "delta": "registros/r0148-oldid-12267231-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -4293,10 +4263,7 @@
       "milestone_reasons": [
         "byte_delta_819"
       ],
-      "files": {
-        "registro": "registros/r0153-oldid-12266919-falsacionismo-y-teoria-de-cuer/registro.md",
-        "delta": "registros/r0153-oldid-12266919-falsacionismo-y-teoria-de-cuer/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5052,10 +5019,7 @@
       "milestone_reasons": [
         "byte_delta_1242"
       ],
-      "files": {
-        "registro": "registros/r0182-oldid-12198733-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0182-oldid-12198733-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5161,10 +5125,7 @@
       "milestone_reasons": [
         "byte_delta_1198"
       ],
-      "files": {
-        "registro": "registros/r0186-oldid-12195505-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0186-oldid-12195505-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5296,10 +5257,7 @@
       "milestone_reasons": [
         "byte_delta_1022"
       ],
-      "files": {
-        "registro": "registros/r0191-oldid-12193056-ciencia-paranormal-o-pseudocie/registro.md",
-        "delta": "registros/r0191-oldid-12193056-ciencia-paranormal-o-pseudocie/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5431,10 +5389,7 @@
       "milestone_reasons": [
         "byte_delta_644"
       ],
-      "files": {
-        "registro": "registros/r0196-oldid-12192136-positivismo-logico/registro.md",
-        "delta": "registros/r0196-oldid-12192136-positivismo-logico/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5592,10 +5547,7 @@
       "milestone_reasons": [
         "byte_delta_799"
       ],
-      "files": {
-        "registro": "registros/r0202-oldid-12185480-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0202-oldid-12185480-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5623,10 +5575,7 @@
       "milestone_reasons": [
         "byte_delta_549"
       ],
-      "files": {
-        "registro": "registros/r0203-oldid-12184872-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0203-oldid-12184872-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5888,10 +5837,7 @@
       "milestone_reasons": [
         "byte_delta_3439"
       ],
-      "files": {
-        "registro": "registros/r0213-oldid-12183539-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0213-oldid-12183539-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -5919,10 +5865,7 @@
       "milestone_reasons": [
         "byte_delta_534"
       ],
-      "files": {
-        "registro": "registros/r0214-oldid-12182810-falsacionismo/registro.md",
-        "delta": "registros/r0214-oldid-12182810-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6002,10 +5945,7 @@
       "milestone_reasons": [
         "byte_delta_1488"
       ],
-      "files": {
-        "registro": "registros/r0217-oldid-12181427-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0217-oldid-12181427-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6163,10 +6103,7 @@
       "milestone_reasons": [
         "byte_delta_691"
       ],
-      "files": {
-        "registro": "registros/r0223-oldid-12177718-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0223-oldid-12177718-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6272,10 +6209,7 @@
       "milestone_reasons": [
         "byte_delta_1547"
       ],
-      "files": {
-        "registro": "registros/r0227-oldid-12176865-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0227-oldid-12176865-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6511,10 +6445,7 @@
       "milestone_reasons": [
         "byte_delta_671"
       ],
-      "files": {
-        "registro": "registros/r0236-oldid-12171348-controversia-en-la-parsimonia-/registro.md",
-        "delta": "registros/r0236-oldid-12171348-controversia-en-la-parsimonia-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6646,10 +6577,7 @@
       "milestone_reasons": [
         "byte_delta_554"
       ],
-      "files": {
-        "registro": "registros/r0241-oldid-12144585-anti-navajas-de-occam/registro.md",
-        "delta": "registros/r0241-oldid-12144585-anti-navajas-de-occam/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6963,10 +6891,7 @@
       "milestone_reasons": [
         "byte_delta_509"
       ],
-      "files": {
-        "registro": "registros/r0253-oldid-12143996-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0253-oldid-12143996-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -6994,10 +6919,7 @@
       "milestone_reasons": [
         "byte_delta_-502"
       ],
-      "files": {
-        "registro": "registros/r0254-oldid-12143988-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0254-oldid-12143988-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7051,10 +6973,7 @@
       "milestone_reasons": [
         "byte_delta_588"
       ],
-      "files": {
-        "registro": "registros/r0256-oldid-12143908-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0256-oldid-12143908-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7264,10 +7183,7 @@
       "milestone_reasons": [
         "byte_delta_950"
       ],
-      "files": {
-        "registro": "registros/r0264-oldid-12142705-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0264-oldid-12142705-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7425,10 +7341,7 @@
       "milestone_reasons": [
         "byte_delta_713"
       ],
-      "files": {
-        "registro": "registros/r0270-oldid-12142249-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0270-oldid-12142249-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7560,10 +7473,7 @@
       "milestone_reasons": [
         "byte_delta_690"
       ],
-      "files": {
-        "registro": "registros/r0275-oldid-12141582-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0275-oldid-12141582-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7695,10 +7605,7 @@
       "milestone_reasons": [
         "byte_delta_1552"
       ],
-      "files": {
-        "registro": "registros/r0280-oldid-12141086-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0280-oldid-12141086-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -7986,10 +7893,7 @@
       "milestone_reasons": [
         "byte_delta_-4545"
       ],
-      "files": {
-        "registro": "registros/r0291-oldid-12098843-falsacionismo-y-psicoanalisis/registro.md",
-        "delta": "registros/r0291-oldid-12098843-falsacionismo-y-psicoanalisis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8043,10 +7947,7 @@
       "milestone_reasons": [
         "byte_delta_821"
       ],
-      "files": {
-        "registro": "registros/r0293-oldid-12098576-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0293-oldid-12098576-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8152,10 +8053,7 @@
       "milestone_reasons": [
         "byte_delta_599"
       ],
-      "files": {
-        "registro": "registros/r0297-oldid-12098355-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0297-oldid-12098355-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8313,10 +8211,7 @@
       "milestone_reasons": [
         "byte_delta_585"
       ],
-      "files": {
-        "registro": "registros/r0303-oldid-12096839-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0303-oldid-12096839-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8422,10 +8317,7 @@
       "milestone_reasons": [
         "byte_delta_1291"
       ],
-      "files": {
-        "registro": "registros/r0307-oldid-12096678-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0307-oldid-12096678-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8583,10 +8475,7 @@
       "milestone_reasons": [
         "byte_delta_813"
       ],
-      "files": {
-        "registro": "registros/r0313-oldid-12096471-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0313-oldid-12096471-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8718,10 +8607,7 @@
       "milestone_reasons": [
         "byte_delta_794"
       ],
-      "files": {
-        "registro": "registros/r0318-oldid-12096306-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0318-oldid-12096306-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8749,10 +8635,7 @@
       "milestone_reasons": [
         "byte_delta_1915"
       ],
-      "files": {
-        "registro": "registros/r0319-oldid-12096084-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0319-oldid-12096084-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -8858,10 +8741,7 @@
       "milestone_reasons": [
         "byte_delta_675"
       ],
-      "files": {
-        "registro": "registros/r0323-oldid-12095963-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0323-oldid-12095963-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9097,10 +8977,7 @@
       "milestone_reasons": [
         "byte_delta_962"
       ],
-      "files": {
-        "registro": "registros/r0332-oldid-12094403-el-problema-de-la-explicacion-/registro.md",
-        "delta": "registros/r0332-oldid-12094403-el-problema-de-la-explicacion-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9128,10 +9005,7 @@
       "milestone_reasons": [
         "byte_delta_803"
       ],
-      "files": {
-        "registro": "registros/r0333-oldid-12093976-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0333-oldid-12093976-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9341,10 +9215,7 @@
       "milestone_reasons": [
         "byte_delta_1742"
       ],
-      "files": {
-        "registro": "registros/r0341-oldid-12093590-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0341-oldid-12093590-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9450,10 +9321,7 @@
       "milestone_reasons": [
         "byte_delta_1211"
       ],
-      "files": {
-        "registro": "registros/r0345-oldid-12093016-falsacionismo/registro.md",
-        "delta": "registros/r0345-oldid-12093016-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9715,10 +9583,7 @@
       "milestone_reasons": [
         "byte_delta_1477"
       ],
-      "files": {
-        "registro": "registros/r0355-oldid-12072973-falsacionismo/registro.md",
-        "delta": "registros/r0355-oldid-12072973-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -9954,10 +9819,7 @@
       "milestone_reasons": [
         "byte_delta_731"
       ],
-      "files": {
-        "registro": "registros/r0364-oldid-12071842-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0364-oldid-12071842-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -10245,10 +10107,7 @@
       "milestone_reasons": [
         "byte_delta_1706"
       ],
-      "files": {
-        "registro": "registros/r0375-oldid-12071435-naturalismo-anti-reduccionista/registro.md",
-        "delta": "registros/r0375-oldid-12071435-naturalismo-anti-reduccionista/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -10562,10 +10421,7 @@
       "milestone_reasons": [
         "byte_delta_1193"
       ],
-      "files": {
-        "registro": "registros/r0387-oldid-12070528-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0387-oldid-12070528-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -10645,10 +10501,7 @@
       "milestone_reasons": [
         "byte_delta_4923"
       ],
-      "files": {
-        "registro": "registros/r0390-oldid-12070365-el-problema-de-la-causalidad-c/registro.md",
-        "delta": "registros/r0390-oldid-12070365-el-problema-de-la-causalidad-c/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -10728,10 +10581,7 @@
       "milestone_reasons": [
         "byte_delta_787"
       ],
-      "files": {
-        "registro": "registros/r0393-oldid-12069444-kuhn-y-los-cambios-de-paradigm/registro.md",
-        "delta": "registros/r0393-oldid-12069444-kuhn-y-los-cambios-de-paradigm/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -10759,10 +10609,7 @@
       "milestone_reasons": [
         "byte_delta_1245"
       ],
-      "files": {
-        "registro": "registros/r0394-oldid-12069395-kuhn-y-los-cambios-de-paradigm/registro.md",
-        "delta": "registros/r0394-oldid-12069395-kuhn-y-los-cambios-de-paradigm/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11024,10 +10871,7 @@
       "milestone_reasons": [
         "byte_delta_639"
       ],
-      "files": {
-        "registro": "registros/r0404-oldid-12067744-controversia-en-la-parsimonia-/registro.md",
-        "delta": "registros/r0404-oldid-12067744-controversia-en-la-parsimonia-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11185,10 +11029,7 @@
       "milestone_reasons": [
         "byte_delta_556"
       ],
-      "files": {
-        "registro": "registros/r0410-oldid-12067231-falsacionismo/registro.md",
-        "delta": "registros/r0410-oldid-12067231-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11216,10 +11057,7 @@
       "milestone_reasons": [
         "byte_delta_880"
       ],
-      "files": {
-        "registro": "registros/r0411-oldid-12067060-falsacionismo/registro.md",
-        "delta": "registros/r0411-oldid-12067060-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11351,10 +11189,7 @@
       "milestone_reasons": [
         "byte_delta_1727"
       ],
-      "files": {
-        "registro": "registros/r0416-oldid-12066761-falsacionismo/registro.md",
-        "delta": "registros/r0416-oldid-12066761-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11434,10 +11269,7 @@
       "milestone_reasons": [
         "byte_delta_779"
       ],
-      "files": {
-        "registro": "registros/r0419-oldid-12065740-falsacionismo/registro.md",
-        "delta": "registros/r0419-oldid-12065740-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11517,10 +11349,7 @@
       "milestone_reasons": [
         "byte_delta_2492"
       ],
-      "files": {
-        "registro": "registros/r0422-oldid-12065304-falsacionismo/registro.md",
-        "delta": "registros/r0422-oldid-12065304-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11678,10 +11507,7 @@
       "milestone_reasons": [
         "byte_delta_600"
       ],
-      "files": {
-        "registro": "registros/r0428-oldid-12063677-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0428-oldid-12063677-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11865,10 +11691,7 @@
       "milestone_reasons": [
         "byte_delta_2287"
       ],
-      "files": {
-        "registro": "registros/r0435-oldid-12063055-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0435-oldid-12063055-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11948,10 +11771,7 @@
       "milestone_reasons": [
         "byte_delta_944"
       ],
-      "files": {
-        "registro": "registros/r0438-oldid-12062535-falsacionismo/registro.md",
-        "delta": "registros/r0438-oldid-12062535-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -11979,10 +11799,7 @@
       "milestone_reasons": [
         "byte_delta_795"
       ],
-      "files": {
-        "registro": "registros/r0439-oldid-12062308-falsacionismo-y-psicoanalisis/registro.md",
-        "delta": "registros/r0439-oldid-12062308-falsacionismo-y-psicoanalisis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -12140,10 +11957,7 @@
       "milestone_reasons": [
         "byte_delta_8234"
       ],
-      "files": {
-        "registro": "registros/r0445-oldid-12061788-falsacionismo-y-psicoanalisis/registro.md",
-        "delta": "registros/r0445-oldid-12061788-falsacionismo-y-psicoanalisis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -12561,10 +12375,7 @@
       "milestone_reasons": [
         "byte_delta_1658"
       ],
-      "files": {
-        "registro": "registros/r0461-oldid-12059385-kuhn-y-los-cambios-de-paradigm/registro.md",
-        "delta": "registros/r0461-oldid-12059385-kuhn-y-los-cambios-de-paradigm/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -12722,10 +12533,7 @@
       "milestone_reasons": [
         "byte_delta_511"
       ],
-      "files": {
-        "registro": "registros/r0467-oldid-12058685-bibliografia/registro.md",
-        "delta": "registros/r0467-oldid-12058685-bibliografia/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -12753,10 +12561,7 @@
       "milestone_reasons": [
         "byte_delta_3496"
       ],
-      "files": {
-        "registro": "registros/r0468-oldid-12057593-bibliografia/registro.md",
-        "delta": "registros/r0468-oldid-12057593-bibliografia/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -12784,10 +12589,7 @@
       "milestone_reasons": [
         "user_desconocido"
       ],
-      "files": {
-        "registro": "registros/r0469-oldid-12052188-kuhn-y-los-cambios-de-paradigm/registro.md",
-        "delta": "registros/r0469-oldid-12052188-kuhn-y-los-cambios-de-paradigm/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -13231,10 +13033,7 @@
       "milestone_reasons": [
         "byte_delta_993"
       ],
-      "files": {
-        "registro": "registros/r0486-oldid-12045583/registro.md",
-        "delta": "registros/r0486-oldid-12045583/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -13262,10 +13061,7 @@
       "milestone_reasons": [
         "byte_delta_-942"
       ],
-      "files": {
-        "registro": "registros/r0487-oldid-12045560-cientifismo-y-pseudoescepticis/registro.md",
-        "delta": "registros/r0487-oldid-12045560-cientifismo-y-pseudoescepticis/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -13891,10 +13687,7 @@
       "milestone_reasons": [
         "byte_delta_1123"
       ],
-      "files": {
-        "registro": "registros/r0511-oldid-12043139-anti-navajas-de-occam/registro.md",
-        "delta": "registros/r0511-oldid-12043139-anti-navajas-de-occam/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -14234,10 +14027,7 @@
       "milestone_reasons": [
         "byte_delta_950"
       ],
-      "files": {
-        "registro": "registros/r0524-oldid-12022374-anti-navajas-de-occam/registro.md",
-        "delta": "registros/r0524-oldid-12022374-anti-navajas-de-occam/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -14941,10 +14731,7 @@
       "milestone_reasons": [
         "byte_delta_922"
       ],
-      "files": {
-        "registro": "registros/r0551-oldid-12020961-falsacionismo/registro.md",
-        "delta": "registros/r0551-oldid-12020961-falsacionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -15388,10 +15175,7 @@
       "milestone_reasons": [
         "byte_delta_1675"
       ],
-      "files": {
-        "registro": "registros/r0568-oldid-12018649-anti-navajas-de-occam/registro.md",
-        "delta": "registros/r0568-oldid-12018649-anti-navajas-de-occam/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -15445,10 +15229,7 @@
       "milestone_reasons": [
         "user_desconocido"
       ],
-      "files": {
-        "registro": "registros/r0570-oldid-12018383-separacion-entre-ciencia-y-rel/registro.md",
-        "delta": "registros/r0570-oldid-12018383-separacion-entre-ciencia-y-rel/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16178,10 +15959,7 @@
       "milestone_reasons": [
         "byte_delta_2917"
       ],
-      "files": {
-        "registro": "registros/r0598-oldid-12009553-anti-navajas-de-occam/registro.md",
-        "delta": "registros/r0598-oldid-12009553-anti-navajas-de-occam/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16209,10 +15987,7 @@
       "milestone_reasons": [
         "byte_delta_4647"
       ],
-      "files": {
-        "registro": "registros/r0599-oldid-12008271-controversia-en-la-parsimonia-/registro.md",
-        "delta": "registros/r0599-oldid-12008271-controversia-en-la-parsimonia-/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16292,10 +16067,7 @@
       "milestone_reasons": [
         "user_PipepBot"
       ],
-      "files": {
-        "registro": "registros/r0602-oldid-12006077/registro.md",
-        "delta": "registros/r0602-oldid-12006077/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16401,10 +16173,7 @@
       "milestone_reasons": [
         "byte_delta_-1013"
       ],
-      "files": {
-        "registro": "registros/r0606-oldid-11997136-falsacionismo-y-teoria-de-cuer/registro.md",
-        "delta": "registros/r0606-oldid-11997136-falsacionismo-y-teoria-de-cuer/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16432,10 +16201,7 @@
       "milestone_reasons": [
         "byte_delta_5362"
       ],
-      "files": {
-        "registro": "registros/r0607-oldid-11997102-falsacionismo-y-teoria-de-cuer/registro.md",
-        "delta": "registros/r0607-oldid-11997102-falsacionismo-y-teoria-de-cuer/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16723,10 +16489,7 @@
       "milestone_reasons": [
         "byte_delta_1260"
       ],
-      "files": {
-        "registro": "registros/r0618-oldid-11995945-criticas-al-criterio-de-demarc/registro.md",
-        "delta": "registros/r0618-oldid-11995945-criticas-al-criterio-de-demarc/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16754,10 +16517,7 @@
       "milestone_reasons": [
         "byte_delta_5160"
       ],
-      "files": {
-        "registro": "registros/r0619-oldid-11995807-criticas-al-criterio-de-demarc/registro.md",
-        "delta": "registros/r0619-oldid-11995807-criticas-al-criterio-de-demarc/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16811,10 +16571,7 @@
       "milestone_reasons": [
         "byte_delta_-1057"
       ],
-      "files": {
-        "registro": "registros/r0621-oldid-11990186/registro.md",
-        "delta": "registros/r0621-oldid-11990186/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -16972,10 +16729,7 @@
       "milestone_reasons": [
         "byte_delta_1425"
       ],
-      "files": {
-        "registro": "registros/r0627-oldid-11983154-emergentismo-y-reduccionismo/registro.md",
-        "delta": "registros/r0627-oldid-11983154-emergentismo-y-reduccionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17419,10 +17173,7 @@
       "milestone_reasons": [
         "byte_delta_2714"
       ],
-      "files": {
-        "registro": "registros/r0644-oldid-11966194-emergentismo-y-reduccionismo/registro.md",
-        "delta": "registros/r0644-oldid-11966194-emergentismo-y-reduccionismo/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17450,10 +17201,7 @@
       "milestone_reasons": [
         "byte_delta_2413"
       ],
-      "files": {
-        "registro": "registros/r0645-oldid-11965765-la-demarcacion-en-el-metodo-ci/registro.md",
-        "delta": "registros/r0645-oldid-11965765-la-demarcacion-en-el-metodo-ci/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17533,10 +17281,7 @@
       "milestone_reasons": [
         "keyword_ordenación_alfabética"
       ],
-      "files": {
-        "registro": "registros/r0648-oldid-11963085-vease-tambien/registro.md",
-        "delta": "registros/r0648-oldid-11963085-vease-tambien/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17617,10 +17362,7 @@
         "byte_delta_2373",
         "keyword_ampliada_sección"
       ],
-      "files": {
-        "registro": "registros/r0651-oldid-11961772-vease-tambien/registro.md",
-        "delta": "registros/r0651-oldid-11961772-vease-tambien/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17831,10 +17573,7 @@
         "byte_delta_16018",
         "user_Ctrl_Z"
       ],
-      "files": {
-        "registro": "registros/r0659-oldid-11958095/registro.md",
-        "delta": "registros/r0659-oldid-11958095/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -17864,10 +17603,7 @@
         "keyword_fusión",
         "user_Ctrl_Z"
       ],
-      "files": {
-        "registro": "registros/r0660-oldid-11957942/registro.md",
-        "delta": "registros/r0660-oldid-11957942/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -18182,10 +17918,7 @@
         "byte_delta_2267",
         "keyword_ampliada_sección"
       ],
-      "files": {
-        "registro": "registros/r0672-oldid-11951916/registro.md",
-        "delta": "registros/r0672-oldid-11951916/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -18214,10 +17947,7 @@
         "byte_delta_16050",
         "keyword_proviene_del_artículo"
       ],
-      "files": {
-        "registro": "registros/r0673-oldid-11951247/registro.md",
-        "delta": "registros/r0673-oldid-11951247/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -18245,10 +17975,7 @@
       "milestone_reasons": [
         "keyword_fusión"
       ],
-      "files": {
-        "registro": "registros/r0674-oldid-11951236/registro.md",
-        "delta": "registros/r0674-oldid-11951236/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -18276,10 +18003,7 @@
       "milestone_reasons": [
         "byte_delta_-15582"
       ],
-      "files": {
-        "registro": "registros/r0675-oldid-11951164/registro.md",
-        "delta": "registros/r0675-oldid-11951164/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     },
@@ -18334,10 +18058,7 @@
         "byte_delta_15584",
         "keyword_traducción"
       ],
-      "files": {
-        "registro": "registros/r0677-oldid-11951034/registro.md",
-        "delta": "registros/r0677-oldid-11951034/delta.md"
-      },
+      "files": {},
       "delta_status": "pending",
       "confidence": "high"
     }

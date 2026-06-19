@@ -1,0 +1,2035 @@
+{
+  "meta": {
+    "title": "Pseudociencia",
+    "wiki": "es",
+    "generated_at": "2026-06-19T12:36:14Z",
+    "corpus_dir": "pseudociencia",
+    "window": {
+      "previo_oldid": 11597663,
+      "first_sc_oldid": 11951464,
+      "last_sc_oldid": 12910974,
+      "previo_timestamp": "2007-09-25T21:21:14Z",
+      "first_sc_timestamp": "2007-10-10T05:35:07Z"
+    },
+    "revision_count": 223,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "previo": {
+    "revid": 11597663,
+    "parentid": 11484945,
+    "timestamp": "2007-09-25T21:21:14Z",
+    "user": "200.56.160.140",
+    "comment": "",
+    "size": 33598,
+    "title": "Pseudociencia"
+  },
+  "revisiones": [
+    {
+      "revid": 11951464,
+      "parentid": 11597663,
+      "timestamp": "2007-10-10T05:35:07Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 33602,
+      "byte_delta": 4
+    },
+    {
+      "revid": 11951488,
+      "parentid": 11951464,
+      "timestamp": "2007-10-10T05:37:24Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 33616,
+      "byte_delta": 14
+    },
+    {
+      "revid": 11952378,
+      "parentid": 11951488,
+      "timestamp": "2007-10-10T07:14:11Z",
+      "user": "SolveCoagula",
+      "comment": "Ampliada sección /* Véase también */",
+      "size": 35218,
+      "byte_delta": 1602
+    },
+    {
+      "revid": 11960140,
+      "parentid": 11952378,
+      "timestamp": "2007-10-10T16:23:43Z",
+      "user": "Chewie",
+      "comment": "rv (lista excesivamente larga, pierde toda utilidad)",
+      "size": 33602,
+      "byte_delta": -1616
+    },
+    {
+      "revid": 12006615,
+      "parentid": 11960140,
+      "timestamp": "2007-10-12T15:41:16Z",
+      "user": "85.56.193.202",
+      "comment": "repongo enlaces en 3 columnas",
+      "size": 35300,
+      "byte_delta": 1698
+    },
+    {
+      "revid": 12006751,
+      "parentid": 12006615,
+      "timestamp": "2007-10-12T15:48:05Z",
+      "user": "Chewie",
+      "comment": "sigue siendo inútilmente larga",
+      "size": 33602,
+      "byte_delta": -1698
+    },
+    {
+      "revid": 12019253,
+      "parentid": 12006751,
+      "timestamp": "2007-10-13T00:28:56Z",
+      "user": "85.56.193.202",
+      "comment": "/* Características de las pseudociencias */ pequeña precisión",
+      "size": 33646,
+      "byte_delta": 44
+    },
+    {
+      "revid": 12019624,
+      "parentid": 12019253,
+      "timestamp": "2007-10-13T00:48:50Z",
+      "user": "Pabloallo",
+      "comment": "/* Enlaces externos */",
+      "size": 33647,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12238425,
+      "parentid": 12019624,
+      "timestamp": "2007-10-22T00:59:19Z",
+      "user": "Prietoquilmes",
+      "comment": "",
+      "size": 33647,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12238466,
+      "parentid": 12238425,
+      "timestamp": "2007-10-22T01:01:39Z",
+      "user": "Prietoquilmes",
+      "comment": "/* Peligros de la medicina pseudocientífica para la salud */",
+      "size": 33647,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12401934,
+      "parentid": 12238466,
+      "timestamp": "2007-10-28T17:50:48Z",
+      "user": "89.130.39.141",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 33635,
+      "byte_delta": -12
+    },
+    {
+      "revid": 12447480,
+      "parentid": 12401934,
+      "timestamp": "2007-10-30T15:08:04Z",
+      "user": "SolveCoagula",
+      "comment": "Añado sección /* Falsacionismo y Teoría de cuerdas */. Amplío referencias. Ver comentario en página de discusión.",
+      "size": 59077,
+      "byte_delta": 25442
+    },
+    {
+      "revid": 12447567,
+      "parentid": 12447480,
+      "timestamp": "2007-10-30T15:10:48Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 59078,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12447599,
+      "parentid": 12447567,
+      "timestamp": "2007-10-30T15:12:04Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 59115,
+      "byte_delta": 37
+    },
+    {
+      "revid": 12447686,
+      "parentid": 12447599,
+      "timestamp": "2007-10-30T15:14:54Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 59892,
+      "byte_delta": 777
+    },
+    {
+      "revid": 12447694,
+      "parentid": 12447686,
+      "timestamp": "2007-10-30T15:15:16Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 59893,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12447798,
+      "parentid": 12447694,
+      "timestamp": "2007-10-30T15:18:48Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 59979,
+      "byte_delta": 86
+    },
+    {
+      "revid": 12447809,
+      "parentid": 12447798,
+      "timestamp": "2007-10-30T15:19:11Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 59980,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12447910,
+      "parentid": 12447809,
+      "timestamp": "2007-10-30T15:22:57Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 59979,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12448120,
+      "parentid": 12447910,
+      "timestamp": "2007-10-30T15:32:13Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 60284,
+      "byte_delta": 305
+    },
+    {
+      "revid": 12448141,
+      "parentid": 12448120,
+      "timestamp": "2007-10-30T15:33:05Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 60285,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12448187,
+      "parentid": 12448141,
+      "timestamp": "2007-10-30T15:35:26Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 60445,
+      "byte_delta": 160
+    },
+    {
+      "revid": 12448412,
+      "parentid": 12448187,
+      "timestamp": "2007-10-30T15:45:06Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 60843,
+      "byte_delta": 398
+    },
+    {
+      "revid": 12448441,
+      "parentid": 12448412,
+      "timestamp": "2007-10-30T15:46:20Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 60844,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12449994,
+      "parentid": 12448441,
+      "timestamp": "2007-10-30T16:54:58Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias",
+      "size": 69128,
+      "byte_delta": 8284
+    },
+    {
+      "revid": 12450010,
+      "parentid": 12449994,
+      "timestamp": "2007-10-30T16:55:42Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 69129,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12450134,
+      "parentid": 12450010,
+      "timestamp": "2007-10-30T17:00:54Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 69190,
+      "byte_delta": 61
+    },
+    {
+      "revid": 12450324,
+      "parentid": 12450134,
+      "timestamp": "2007-10-30T17:08:23Z",
+      "user": "SolveCoagula",
+      "comment": "/* Explicaciones psicológicas */ Causalidad como explicación",
+      "size": 69430,
+      "byte_delta": 240
+    },
+    {
+      "revid": 12450340,
+      "parentid": 12450324,
+      "timestamp": "2007-10-30T17:08:59Z",
+      "user": "SolveCoagula",
+      "comment": "/* Explicaciones psicológicas */",
+      "size": 69438,
+      "byte_delta": 8
+    },
+    {
+      "revid": 12450469,
+      "parentid": 12450340,
+      "timestamp": "2007-10-30T17:13:08Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Añado imagen.",
+      "size": 71252,
+      "byte_delta": 1814
+    },
+    {
+      "revid": 12450525,
+      "parentid": 12450469,
+      "timestamp": "2007-10-30T17:14:37Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 71253,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12450617,
+      "parentid": 12450525,
+      "timestamp": "2007-10-30T17:18:34Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 71324,
+      "byte_delta": 71
+    },
+    {
+      "revid": 12450664,
+      "parentid": 12450617,
+      "timestamp": "2007-10-30T17:20:38Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 71347,
+      "byte_delta": 23
+    },
+    {
+      "revid": 12450905,
+      "parentid": 12450664,
+      "timestamp": "2007-10-30T17:28:49Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío argumentos en Astrología.",
+      "size": 73649,
+      "byte_delta": 2302
+    },
+    {
+      "revid": 12451013,
+      "parentid": 12450905,
+      "timestamp": "2007-10-30T17:32:34Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 73699,
+      "byte_delta": 50
+    },
+    {
+      "revid": 12451160,
+      "parentid": 12451013,
+      "timestamp": "2007-10-30T17:37:48Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 74430,
+      "byte_delta": 731
+    },
+    {
+      "revid": 12451477,
+      "parentid": 12451160,
+      "timestamp": "2007-10-30T17:49:10Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío referencias.",
+      "size": 75343,
+      "byte_delta": 913
+    },
+    {
+      "revid": 12453172,
+      "parentid": 12451477,
+      "timestamp": "2007-10-30T18:44:28Z",
+      "user": "SolveCoagula",
+      "comment": "/* Véase también */ Orden alfabético.",
+      "size": 75373,
+      "byte_delta": 30
+    },
+    {
+      "revid": 12453395,
+      "parentid": 12453172,
+      "timestamp": "2007-10-30T18:53:34Z",
+      "user": "SolveCoagula",
+      "comment": "/* Bibliografía en español */ Amplío Bibliografía, reordeno alfabéticamente y organizo a 3 columnas",
+      "size": 77357,
+      "byte_delta": 1984
+    },
+    {
+      "revid": 12453419,
+      "parentid": 12453395,
+      "timestamp": "2007-10-30T18:54:25Z",
+      "user": "SolveCoagula",
+      "comment": "/* Bibliografía en español */",
+      "size": 77381,
+      "byte_delta": 24
+    },
+    {
+      "revid": 12453624,
+      "parentid": 12453419,
+      "timestamp": "2007-10-30T19:02:18Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío Navaja de Occam.",
+      "size": 78271,
+      "byte_delta": 890
+    },
+    {
+      "revid": 12453748,
+      "parentid": 12453624,
+      "timestamp": "2007-10-30T19:07:13Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */  Amplío con imagen.",
+      "size": 79851,
+      "byte_delta": 1580
+    },
+    {
+      "revid": 12453883,
+      "parentid": 12453748,
+      "timestamp": "2007-10-30T19:12:06Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 79985,
+      "byte_delta": 134
+    },
+    {
+      "revid": 12454048,
+      "parentid": 12453883,
+      "timestamp": "2007-10-30T19:17:10Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío Tiempo y Física.",
+      "size": 81546,
+      "byte_delta": 1561
+    },
+    {
+      "revid": 12454152,
+      "parentid": 12454048,
+      "timestamp": "2007-10-30T19:21:05Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 81675,
+      "byte_delta": 129
+    },
+    {
+      "revid": 12454183,
+      "parentid": 12454152,
+      "timestamp": "2007-10-30T19:22:04Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 81681,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12454201,
+      "parentid": 12454183,
+      "timestamp": "2007-10-30T19:22:42Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 81687,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12454262,
+      "parentid": 12454201,
+      "timestamp": "2007-10-30T19:25:04Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 81710,
+      "byte_delta": 23
+    },
+    {
+      "revid": 12454315,
+      "parentid": 12454262,
+      "timestamp": "2007-10-30T19:27:16Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Ampliaciónd e referencias",
+      "size": 81802,
+      "byte_delta": 92
+    },
+    {
+      "revid": 12454489,
+      "parentid": 12454315,
+      "timestamp": "2007-10-30T19:33:53Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío argumentación de Popper.",
+      "size": 83358,
+      "byte_delta": 1556
+    },
+    {
+      "revid": 12454682,
+      "parentid": 12454489,
+      "timestamp": "2007-10-30T19:41:30Z",
+      "user": "SolveCoagula",
+      "comment": "Amplío imagen.",
+      "size": 85082,
+      "byte_delta": 1724
+    },
+    {
+      "revid": 12455090,
+      "parentid": 12454682,
+      "timestamp": "2007-10-30T19:56:46Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */ Amplío sección.",
+      "size": 91673,
+      "byte_delta": 6591
+    },
+    {
+      "revid": 12455177,
+      "parentid": 12455090,
+      "timestamp": "2007-10-30T20:00:03Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 91755,
+      "byte_delta": 82
+    },
+    {
+      "revid": 12455205,
+      "parentid": 12455177,
+      "timestamp": "2007-10-30T20:00:47Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 91751,
+      "byte_delta": -4
+    },
+    {
+      "revid": 12455274,
+      "parentid": 12455205,
+      "timestamp": "2007-10-30T20:03:33Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */ Amplío argumentos.",
+      "size": 94625,
+      "byte_delta": 2874
+    },
+    {
+      "revid": 12455375,
+      "parentid": 12455274,
+      "timestamp": "2007-10-30T20:07:21Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 94759,
+      "byte_delta": 134
+    },
+    {
+      "revid": 12455472,
+      "parentid": 12455375,
+      "timestamp": "2007-10-30T20:11:16Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío enlaces.",
+      "size": 95159,
+      "byte_delta": 400
+    },
+    {
+      "revid": 12455485,
+      "parentid": 12455472,
+      "timestamp": "2007-10-30T20:11:46Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 95160,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12455656,
+      "parentid": 12455485,
+      "timestamp": "2007-10-30T20:17:53Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 95166,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12455749,
+      "parentid": 12455656,
+      "timestamp": "2007-10-30T20:21:21Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 98471,
+      "byte_delta": 3305
+    },
+    {
+      "revid": 12455820,
+      "parentid": 12455749,
+      "timestamp": "2007-10-30T20:24:34Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Ampliación de referencias.",
+      "size": 98935,
+      "byte_delta": 464
+    },
+    {
+      "revid": 12456032,
+      "parentid": 12455820,
+      "timestamp": "2007-10-30T20:34:07Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío referencias.",
+      "size": 100240,
+      "byte_delta": 1305
+    },
+    {
+      "revid": 12456045,
+      "parentid": 12456032,
+      "timestamp": "2007-10-30T20:34:42Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 100246,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12456292,
+      "parentid": 12456045,
+      "timestamp": "2007-10-30T20:45:09Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío referencias",
+      "size": 102026,
+      "byte_delta": 1780
+    },
+    {
+      "revid": 12456407,
+      "parentid": 12456292,
+      "timestamp": "2007-10-30T20:51:55Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío referencias.",
+      "size": 103540,
+      "byte_delta": 1514
+    },
+    {
+      "revid": 12456433,
+      "parentid": 12456407,
+      "timestamp": "2007-10-30T20:52:51Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 103539,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12456492,
+      "parentid": 12456433,
+      "timestamp": "2007-10-30T20:56:31Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 103563,
+      "byte_delta": 24
+    },
+    {
+      "revid": 12456528,
+      "parentid": 12456492,
+      "timestamp": "2007-10-30T20:58:13Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 103579,
+      "byte_delta": 16
+    },
+    {
+      "revid": 12456578,
+      "parentid": 12456528,
+      "timestamp": "2007-10-30T21:00:22Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 103686,
+      "byte_delta": 107
+    },
+    {
+      "revid": 12460389,
+      "parentid": 12456578,
+      "timestamp": "2007-10-30T23:31:12Z",
+      "user": "SolveCoagula",
+      "comment": "/* Explicaciones psicológicas */",
+      "size": 103681,
+      "byte_delta": -5
+    },
+    {
+      "revid": 12461607,
+      "parentid": 12460389,
+      "timestamp": "2007-10-31T00:29:10Z",
+      "user": "SolveCoagula",
+      "comment": "Amplío argumentaciones. Revisión de referencias requeridas.",
+      "size": 111771,
+      "byte_delta": 8090
+    },
+    {
+      "revid": 12461628,
+      "parentid": 12461607,
+      "timestamp": "2007-10-31T00:29:54Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 111796,
+      "byte_delta": 25
+    },
+    {
+      "revid": 12467056,
+      "parentid": 12461628,
+      "timestamp": "2007-10-31T09:10:27Z",
+      "user": "Fernando Estel",
+      "comment": "",
+      "size": 111810,
+      "byte_delta": 14
+    },
+    {
+      "revid": 12468620,
+      "parentid": 12467056,
+      "timestamp": "2007-10-31T11:38:05Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 111809,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12468859,
+      "parentid": 12468620,
+      "timestamp": "2007-10-31T11:54:44Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 117337,
+      "byte_delta": 5528
+    },
+    {
+      "revid": 12468882,
+      "parentid": 12468859,
+      "timestamp": "2007-10-31T11:56:31Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 117356,
+      "byte_delta": 19
+    },
+    {
+      "revid": 12469037,
+      "parentid": 12468882,
+      "timestamp": "2007-10-31T12:06:36Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 118721,
+      "byte_delta": 1365
+    },
+    {
+      "revid": 12469084,
+      "parentid": 12469037,
+      "timestamp": "2007-10-31T12:09:19Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 118726,
+      "byte_delta": 5
+    },
+    {
+      "revid": 12469120,
+      "parentid": 12469084,
+      "timestamp": "2007-10-31T12:11:34Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 118500,
+      "byte_delta": -226
+    },
+    {
+      "revid": 12469172,
+      "parentid": 12469120,
+      "timestamp": "2007-10-31T12:14:29Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias",
+      "size": 118884,
+      "byte_delta": 384
+    },
+    {
+      "revid": 12469188,
+      "parentid": 12469172,
+      "timestamp": "2007-10-31T12:15:36Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 118884,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12469232,
+      "parentid": 12469188,
+      "timestamp": "2007-10-31T12:18:52Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias del concepto escepticismo.",
+      "size": 119537,
+      "byte_delta": 653
+    },
+    {
+      "revid": 12469253,
+      "parentid": 12469232,
+      "timestamp": "2007-10-31T12:19:56Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 119544,
+      "byte_delta": 7
+    },
+    {
+      "revid": 12469284,
+      "parentid": 12469253,
+      "timestamp": "2007-10-31T12:21:47Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 119546,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12469559,
+      "parentid": 12469284,
+      "timestamp": "2007-10-31T12:40:27Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 119545,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12470114,
+      "parentid": 12469559,
+      "timestamp": "2007-10-31T13:21:30Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencia a Konrad Zuse.",
+      "size": 120303,
+      "byte_delta": 758
+    },
+    {
+      "revid": 12470350,
+      "parentid": 12470114,
+      "timestamp": "2007-10-31T13:40:11Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */ Amplío argumentos sobre causalidad.",
+      "size": 121655,
+      "byte_delta": 1352
+    },
+    {
+      "revid": 12470362,
+      "parentid": 12470350,
+      "timestamp": "2007-10-31T13:40:56Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 121661,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12470375,
+      "parentid": 12470362,
+      "timestamp": "2007-10-31T13:41:43Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 121667,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12470386,
+      "parentid": 12470375,
+      "timestamp": "2007-10-31T13:42:43Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 121673,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12470978,
+      "parentid": 12470386,
+      "timestamp": "2007-10-31T14:24:01Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Preciso enunciado.",
+      "size": 121721,
+      "byte_delta": 48
+    },
+    {
+      "revid": 12470995,
+      "parentid": 12470978,
+      "timestamp": "2007-10-31T14:24:46Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 121722,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12471046,
+      "parentid": 12470995,
+      "timestamp": "2007-10-31T14:27:10Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 121754,
+      "byte_delta": 32
+    },
+    {
+      "revid": 12471104,
+      "parentid": 12471046,
+      "timestamp": "2007-10-31T14:30:28Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Preciso términos.",
+      "size": 121970,
+      "byte_delta": 216
+    },
+    {
+      "revid": 12471132,
+      "parentid": 12471104,
+      "timestamp": "2007-10-31T14:31:56Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 121965,
+      "byte_delta": -5
+    },
+    {
+      "revid": 12471158,
+      "parentid": 12471132,
+      "timestamp": "2007-10-31T14:32:55Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 121967,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12471593,
+      "parentid": 12471158,
+      "timestamp": "2007-10-31T14:53:36Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 121977,
+      "byte_delta": 10
+    },
+    {
+      "revid": 12471847,
+      "parentid": 12471593,
+      "timestamp": "2007-10-31T15:03:46Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 121989,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12471886,
+      "parentid": 12471847,
+      "timestamp": "2007-10-31T15:05:10Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 122001,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12471932,
+      "parentid": 12471886,
+      "timestamp": "2007-10-31T15:07:04Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 122007,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12471983,
+      "parentid": 12471932,
+      "timestamp": "2007-10-31T15:09:29Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 122012,
+      "byte_delta": 5
+    },
+    {
+      "revid": 12471998,
+      "parentid": 12471983,
+      "timestamp": "2007-10-31T15:10:22Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 122020,
+      "byte_delta": 8
+    },
+    {
+      "revid": 12472060,
+      "parentid": 12471998,
+      "timestamp": "2007-10-31T15:14:37Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 123127,
+      "byte_delta": 1107
+    },
+    {
+      "revid": 12472102,
+      "parentid": 12472060,
+      "timestamp": "2007-10-31T15:16:02Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123124,
+      "byte_delta": -3
+    },
+    {
+      "revid": 12472128,
+      "parentid": 12472102,
+      "timestamp": "2007-10-31T15:17:11Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123123,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12472154,
+      "parentid": 12472128,
+      "timestamp": "2007-10-31T15:18:15Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123135,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12472182,
+      "parentid": 12472154,
+      "timestamp": "2007-10-31T15:19:03Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123141,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12472324,
+      "parentid": 12472182,
+      "timestamp": "2007-10-31T15:24:54Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123153,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12472368,
+      "parentid": 12472324,
+      "timestamp": "2007-10-31T15:26:40Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123193,
+      "byte_delta": 40
+    },
+    {
+      "revid": 12483807,
+      "parentid": 12472368,
+      "timestamp": "2007-10-31T23:35:12Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudociencia */ Amplío referencias.",
+      "size": 123704,
+      "byte_delta": 511
+    },
+    {
+      "revid": 12483821,
+      "parentid": 12483807,
+      "timestamp": "2007-10-31T23:36:18Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 123747,
+      "byte_delta": 43
+    },
+    {
+      "revid": 12483869,
+      "parentid": 12483821,
+      "timestamp": "2007-10-31T23:38:07Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 123716,
+      "byte_delta": -31
+    },
+    {
+      "revid": 12483930,
+      "parentid": 12483869,
+      "timestamp": "2007-10-31T23:40:23Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 123309,
+      "byte_delta": -407
+    },
+    {
+      "revid": 12483968,
+      "parentid": 12483930,
+      "timestamp": "2007-10-31T23:42:16Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 123309,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12484162,
+      "parentid": 12483968,
+      "timestamp": "2007-10-31T23:51:47Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123319,
+      "byte_delta": 10
+    },
+    {
+      "revid": 12484330,
+      "parentid": 12484162,
+      "timestamp": "2007-11-01T00:00:09Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 123317,
+      "byte_delta": -2
+    },
+    {
+      "revid": 12485444,
+      "parentid": 12484330,
+      "timestamp": "2007-11-01T00:59:45Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias a Sokal",
+      "size": 125556,
+      "byte_delta": 2239
+    },
+    {
+      "revid": 12485508,
+      "parentid": 12485444,
+      "timestamp": "2007-11-01T01:04:08Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 125715,
+      "byte_delta": 159
+    },
+    {
+      "revid": 12485534,
+      "parentid": 12485508,
+      "timestamp": "2007-11-01T01:06:33Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 125759,
+      "byte_delta": 44
+    },
+    {
+      "revid": 12485901,
+      "parentid": 12485534,
+      "timestamp": "2007-11-01T01:33:14Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 126173,
+      "byte_delta": 414
+    },
+    {
+      "revid": 12485929,
+      "parentid": 12485901,
+      "timestamp": "2007-11-01T01:35:08Z",
+      "user": "SolveCoagula",
+      "comment": "/* Explicaciones psicológicas */",
+      "size": 126169,
+      "byte_delta": -4
+    },
+    {
+      "revid": 12485981,
+      "parentid": 12485929,
+      "timestamp": "2007-11-01T01:39:23Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 126599,
+      "byte_delta": 430
+    },
+    {
+      "revid": 12485998,
+      "parentid": 12485981,
+      "timestamp": "2007-11-01T01:40:51Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Amplío referencias.",
+      "size": 126598,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12486220,
+      "parentid": 12485998,
+      "timestamp": "2007-11-01T01:58:44Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío experimento Rosenhan",
+      "size": 127984,
+      "byte_delta": 1386
+    },
+    {
+      "revid": 12486240,
+      "parentid": 12486220,
+      "timestamp": "2007-11-01T02:00:07Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 127988,
+      "byte_delta": 4
+    },
+    {
+      "revid": 12486403,
+      "parentid": 12486240,
+      "timestamp": "2007-11-01T02:12:00Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias método científico",
+      "size": 128843,
+      "byte_delta": 855
+    },
+    {
+      "revid": 12486432,
+      "parentid": 12486403,
+      "timestamp": "2007-11-01T02:13:50Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 128885,
+      "byte_delta": 42
+    },
+    {
+      "revid": 12486462,
+      "parentid": 12486432,
+      "timestamp": "2007-11-01T02:15:43Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 128894,
+      "byte_delta": 9
+    },
+    {
+      "revid": 12486862,
+      "parentid": 12486462,
+      "timestamp": "2007-11-01T02:42:44Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias",
+      "size": 128964,
+      "byte_delta": 70
+    },
+    {
+      "revid": 12486972,
+      "parentid": 12486862,
+      "timestamp": "2007-11-01T02:51:35Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 131435,
+      "byte_delta": 2471
+    },
+    {
+      "revid": 12486999,
+      "parentid": 12486972,
+      "timestamp": "2007-11-01T02:53:45Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 131479,
+      "byte_delta": 44
+    },
+    {
+      "revid": 12487012,
+      "parentid": 12486999,
+      "timestamp": "2007-11-01T02:54:37Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 131473,
+      "byte_delta": -6
+    },
+    {
+      "revid": 12487069,
+      "parentid": 12487012,
+      "timestamp": "2007-11-01T02:59:32Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 131479,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12489868,
+      "parentid": 12487069,
+      "timestamp": "2007-11-01T09:28:56Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */ Amplío referencias Pirrón.",
+      "size": 132674,
+      "byte_delta": 1195
+    },
+    {
+      "revid": 12489874,
+      "parentid": 12489868,
+      "timestamp": "2007-11-01T09:30:01Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 132674,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12489908,
+      "parentid": 12489874,
+      "timestamp": "2007-11-01T09:34:12Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 132687,
+      "byte_delta": 13
+    },
+    {
+      "revid": 12489953,
+      "parentid": 12489908,
+      "timestamp": "2007-11-01T09:40:19Z",
+      "user": "SolveCoagula",
+      "comment": "Muevo párrafo Thoms Kuhn.",
+      "size": 132707,
+      "byte_delta": 20
+    },
+    {
+      "revid": 12489983,
+      "parentid": 12489953,
+      "timestamp": "2007-11-01T09:43:38Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132729,
+      "byte_delta": 22
+    },
+    {
+      "revid": 12490062,
+      "parentid": 12489983,
+      "timestamp": "2007-11-01T09:50:30Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132788,
+      "byte_delta": 59
+    },
+    {
+      "revid": 12490094,
+      "parentid": 12490062,
+      "timestamp": "2007-11-01T09:53:16Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132792,
+      "byte_delta": 4
+    },
+    {
+      "revid": 12490106,
+      "parentid": 12490094,
+      "timestamp": "2007-11-01T09:54:38Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132806,
+      "byte_delta": 14
+    },
+    {
+      "revid": 12490111,
+      "parentid": 12490106,
+      "timestamp": "2007-11-01T09:55:12Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132810,
+      "byte_delta": 4
+    },
+    {
+      "revid": 12490123,
+      "parentid": 12490111,
+      "timestamp": "2007-11-01T09:56:35Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132814,
+      "byte_delta": 4
+    },
+    {
+      "revid": 12490143,
+      "parentid": 12490123,
+      "timestamp": "2007-11-01T09:58:55Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 132820,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12490172,
+      "parentid": 12490143,
+      "timestamp": "2007-11-01T10:02:18Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 133760,
+      "byte_delta": 940
+    },
+    {
+      "revid": 12490201,
+      "parentid": 12490172,
+      "timestamp": "2007-11-01T10:05:45Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 134721,
+      "byte_delta": 961
+    },
+    {
+      "revid": 12490209,
+      "parentid": 12490201,
+      "timestamp": "2007-11-01T10:06:53Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 134720,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12490265,
+      "parentid": 12490209,
+      "timestamp": "2007-11-01T10:13:13Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 135322,
+      "byte_delta": 602
+    },
+    {
+      "revid": 12490270,
+      "parentid": 12490265,
+      "timestamp": "2007-11-01T10:14:06Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 135332,
+      "byte_delta": 10
+    },
+    {
+      "revid": 12490349,
+      "parentid": 12490270,
+      "timestamp": "2007-11-01T10:20:30Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 135338,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12490370,
+      "parentid": 12490349,
+      "timestamp": "2007-11-01T10:22:53Z",
+      "user": "SolveCoagula",
+      "comment": "/* Pseudoescepticismo */",
+      "size": 135345,
+      "byte_delta": 7
+    },
+    {
+      "revid": 12490814,
+      "parentid": 12490370,
+      "timestamp": "2007-11-01T10:53:46Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias SCIgen.",
+      "size": 136870,
+      "byte_delta": 1525
+    },
+    {
+      "revid": 12490836,
+      "parentid": 12490814,
+      "timestamp": "2007-11-01T10:55:33Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 136876,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12490852,
+      "parentid": 12490836,
+      "timestamp": "2007-11-01T10:56:28Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 136882,
+      "byte_delta": 6
+    },
+    {
+      "revid": 12490963,
+      "parentid": 12490852,
+      "timestamp": "2007-11-01T11:05:36Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias.",
+      "size": 137110,
+      "byte_delta": 228
+    },
+    {
+      "revid": 12539239,
+      "parentid": 12490963,
+      "timestamp": "2007-11-03T13:11:47Z",
+      "user": "Gerwoman",
+      "comment": "/* Falsacionismo y Teoría de cuerdas */",
+      "size": 137109,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12705323,
+      "parentid": 12539239,
+      "timestamp": "2007-11-10T01:07:07Z",
+      "user": "SolveCoagula",
+      "comment": "Amplío referencias en introducción.",
+      "size": 142447,
+      "byte_delta": 5338
+    },
+    {
+      "revid": 12705438,
+      "parentid": 12705323,
+      "timestamp": "2007-11-10T01:13:27Z",
+      "user": "SolveCoagula",
+      "comment": "Amplío introducción.",
+      "size": 142865,
+      "byte_delta": 418
+    },
+    {
+      "revid": 12710901,
+      "parentid": 12705438,
+      "timestamp": "2007-11-10T11:42:14Z",
+      "user": "Fernando Estel",
+      "comment": "quito parrafo que es investigación original (WP:NFP)",
+      "size": 142447,
+      "byte_delta": -418
+    },
+    {
+      "revid": 12713475,
+      "parentid": 12710901,
+      "timestamp": "2007-11-10T14:44:53Z",
+      "user": "84.9.50.181",
+      "comment": "Restauro párrafo que es creencia. \"La neutralidad es mostrar la diversidad, para que cada persona adopte la opinión que prefiera, decir lo que la gente cree que es cierto, sin tomar partido.\" (WP:NFP)",
+      "size": 142869,
+      "byte_delta": 422
+    },
+    {
+      "revid": 12714032,
+      "parentid": 12713475,
+      "timestamp": "2007-11-10T15:15:51Z",
+      "user": "Fernando Estel",
+      "comment": "\"esta lista sería la única pseudociencia posible\" ¿referencias o es una afirmación original?",
+      "size": 142447,
+      "byte_delta": -422
+    },
+    {
+      "revid": 12714073,
+      "parentid": 12714032,
+      "timestamp": "2007-11-10T15:18:41Z",
+      "user": "Fernando Estel",
+      "comment": "/* Referencias */  la lista ocupa mucha ongitud, asi mejor",
+      "size": 142509,
+      "byte_delta": 62
+    },
+    {
+      "revid": 12719465,
+      "parentid": 12714073,
+      "timestamp": "2007-11-10T19:11:36Z",
+      "user": "Analiza",
+      "comment": "Vamos a consensuar los cambios e ir discutiendolos, ya según tengo entendido costo mucho dejar el artículo a gusto de todos, asi que hay que consensuar antes de meter todo esto.",
+      "size": 33635,
+      "byte_delta": -108874
+    },
+    {
+      "revid": 12719502,
+      "parentid": 12719465,
+      "timestamp": "2007-11-10T19:12:53Z",
+      "user": "SolveCoagula",
+      "comment": "VANDALISMO. Deshecha la edición 12719465 de [[Special:Contributions/Analiza|Analiza]] ([[Usuario Discusión:Analiza|disc.]])",
+      "size": 142509,
+      "byte_delta": 108874
+    },
+    {
+      "revid": 12719557,
+      "parentid": 12719502,
+      "timestamp": "2007-11-10T19:14:39Z",
+      "user": "Analiza",
+      "comment": "COnsensuar, dialogar, antes de meter todo esto, por favor un poco de sentido común",
+      "size": 33635,
+      "byte_delta": -108874
+    },
+    {
+      "revid": 12719613,
+      "parentid": 12719557,
+      "timestamp": "2007-11-10T19:16:38Z",
+      "user": "SolveCoagula",
+      "comment": "VANDALISMO. Deshecha la edición 12719557 de [[Special:Contributions/Analiza|Analiza]] ([[Usuario Discusión:Analiza|disc.]])",
+      "size": 142509,
+      "byte_delta": 108874
+    },
+    {
+      "revid": 12719637,
+      "parentid": 12719613,
+      "timestamp": "2007-11-10T19:17:54Z",
+      "user": "SolveCoagula",
+      "comment": "Restauro PVN. Ver página de discusión.",
+      "size": 142931,
+      "byte_delta": 422
+    },
+    {
+      "revid": 12719652,
+      "parentid": 12719637,
+      "timestamp": "2007-11-10T19:18:27Z",
+      "user": "Analiza",
+      "comment": "¿Vamos a dialogar o no? El artículo no cumple con PVN de esta forma",
+      "size": 34057,
+      "byte_delta": -108874
+    },
+    {
+      "revid": 12719795,
+      "parentid": 12719652,
+      "timestamp": "2007-11-10T19:23:08Z",
+      "user": "Analiza",
+      "comment": "/* Véase también */",
+      "size": 34087,
+      "byte_delta": 30
+    },
+    {
+      "revid": 12720368,
+      "parentid": 12719795,
+      "timestamp": "2007-11-10T19:45:20Z",
+      "user": "SolveCoagula",
+      "comment": "VANDALISMO en curso del usuario Analiza. Deshecha la edición 12719652 de [[Special:Contributions/Analiza|Analiza]] ([[Usuario Discusión:Analiza|disc.]])",
+      "size": 142961,
+      "byte_delta": 108874
+    },
+    {
+      "revid": 12721075,
+      "parentid": 12720368,
+      "timestamp": "2007-11-10T20:14:28Z",
+      "user": "Retama",
+      "comment": "Revertidos los cambios de [[User:SolveCoagula|SolveCoagula]] a la última edición de [[User:Fernando Estel|Fernando Estel]] usando [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]] (Revierto a la ú",
+      "size": 142509,
+      "byte_delta": -452
+    },
+    {
+      "revid": 12729129,
+      "parentid": 12721075,
+      "timestamp": "2007-11-11T03:24:37Z",
+      "user": "SolveCoagula",
+      "comment": "/* Falsacionismo y Teoría de cuerdas */ Amplío referencias",
+      "size": 143151,
+      "byte_delta": 642
+    },
+    {
+      "revid": 12729143,
+      "parentid": 12729129,
+      "timestamp": "2007-11-11T03:25:48Z",
+      "user": "SolveCoagula",
+      "comment": "/* Falsacionismo y Teoría de cuerdas */",
+      "size": 143065,
+      "byte_delta": -86
+    },
+    {
+      "revid": 12729211,
+      "parentid": 12729143,
+      "timestamp": "2007-11-11T03:30:31Z",
+      "user": "SolveCoagula",
+      "comment": "/* Falsacionismo y Teoría de cuerdas */ Amplío referencias.",
+      "size": 143435,
+      "byte_delta": 370
+    },
+    {
+      "revid": 12732274,
+      "parentid": 12729211,
+      "timestamp": "2007-11-11T09:53:15Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 144254,
+      "byte_delta": 819
+    },
+    {
+      "revid": 12732458,
+      "parentid": 12732274,
+      "timestamp": "2007-11-11T10:14:31Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 146933,
+      "byte_delta": 2679
+    },
+    {
+      "revid": 12732491,
+      "parentid": 12732458,
+      "timestamp": "2007-11-11T10:18:09Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 147259,
+      "byte_delta": 326
+    },
+    {
+      "revid": 12732549,
+      "parentid": 12732491,
+      "timestamp": "2007-11-11T10:24:41Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío referencias.",
+      "size": 147873,
+      "byte_delta": 614
+    },
+    {
+      "revid": 12732556,
+      "parentid": 12732549,
+      "timestamp": "2007-11-11T10:25:40Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 147871,
+      "byte_delta": -2
+    },
+    {
+      "revid": 12732577,
+      "parentid": 12732556,
+      "timestamp": "2007-11-11T10:28:01Z",
+      "user": "84.9.50.181",
+      "comment": "/* El problema de la demarcación de las ciencias */",
+      "size": 147375,
+      "byte_delta": -496
+    },
+    {
+      "revid": 12745255,
+      "parentid": 12732577,
+      "timestamp": "2007-11-11T21:10:02Z",
+      "user": "PaintBot",
+      "comment": "Bot: Cambiada Categoría:Pseudociencia y ciencia oculta",
+      "size": 147359,
+      "byte_delta": -16
+    },
+    {
+      "revid": 12797908,
+      "parentid": 12745255,
+      "timestamp": "2007-11-13T22:57:16Z",
+      "user": "83.60.137.95",
+      "comment": "",
+      "size": 147373,
+      "byte_delta": 14
+    },
+    {
+      "revid": 12821003,
+      "parentid": 12797908,
+      "timestamp": "2007-11-14T21:45:12Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Corrijo error en un <ref> de más que impedía la visión correcta de referencias.",
+      "size": 147368,
+      "byte_delta": -5
+    },
+    {
+      "revid": 12827393,
+      "parentid": 12821003,
+      "timestamp": "2007-11-15T02:43:56Z",
+      "user": "Ignacio Icke",
+      "comment": "retiro referencias que apuntan a la propia wikipedia. Wikipedia no es referencia válida en wikipedia",
+      "size": 146088,
+      "byte_delta": -1280
+    },
+    {
+      "revid": 12827486,
+      "parentid": 12827393,
+      "timestamp": "2007-11-15T02:49:30Z",
+      "user": "Ignacio Icke",
+      "comment": "elimino enlaces al drae desperdigados por el artículo",
+      "size": 144934,
+      "byte_delta": -1154
+    },
+    {
+      "revid": 12827831,
+      "parentid": 12827486,
+      "timestamp": "2007-11-15T03:10:06Z",
+      "user": "Ignacio Icke",
+      "comment": "retiro negritas innecesarias y enlaces a pseudociencia desde el artículo pseudociencia",
+      "size": 144004,
+      "byte_delta": -930
+    },
+    {
+      "revid": 12828682,
+      "parentid": 12827831,
+      "timestamp": "2007-11-15T04:26:12Z",
+      "user": "Ignacio Icke",
+      "comment": "",
+      "size": 144006,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12829261,
+      "parentid": 12828682,
+      "timestamp": "2007-11-15T05:34:53Z",
+      "user": "Ignacio Icke",
+      "comment": "añado referencia (no es la mejor, pero a falta de Conjectures and Refutations...) Quito peticiones de referencias repetidas en la misma frase. Ya se entiende que se piden referencias a toda la frase",
+      "size": 144148,
+      "byte_delta": 142
+    },
+    {
+      "revid": 12829279,
+      "parentid": 12829261,
+      "timestamp": "2007-11-15T05:36:32Z",
+      "user": "Ignacio Icke",
+      "comment": "ups",
+      "size": 144158,
+      "byte_delta": 10
+    },
+    {
+      "revid": 12835889,
+      "parentid": 12829279,
+      "timestamp": "2007-11-15T15:23:17Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Campos considerados como pseudociencias */ esto ya está citado arriba. Las quito, que si no es un cristo editarlas en varios sitios a la vez.",
+      "size": 140160,
+      "byte_delta": -3998
+    },
+    {
+      "revid": 12837067,
+      "parentid": 12835889,
+      "timestamp": "2007-11-15T16:13:46Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Características de las pseudociencias */ Creo que esta referencia es la peor de todas",
+      "size": 139909,
+      "byte_delta": -251
+    },
+    {
+      "revid": 12837941,
+      "parentid": 12837067,
+      "timestamp": "2007-11-15T16:48:32Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Características de las pseudociencias */",
+      "size": 139911,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12838109,
+      "parentid": 12837941,
+      "timestamp": "2007-11-15T16:55:49Z",
+      "user": "SolveCoagula",
+      "comment": "Recupero excelente explicación de la imagen que le permite al lector contextualizar la metáfora.",
+      "size": 140038,
+      "byte_delta": 127
+    },
+    {
+      "revid": 12838165,
+      "parentid": 12838109,
+      "timestamp": "2007-11-15T16:58:23Z",
+      "user": "SolveCoagula",
+      "comment": "/* El problema de la demarcación de las ciencias */ Amplío enlace interno.",
+      "size": 140070,
+      "byte_delta": 32
+    },
+    {
+      "revid": 12850129,
+      "parentid": 12838165,
+      "timestamp": "2007-11-16T01:30:11Z",
+      "user": "Libertad y Saber",
+      "comment": "/* Explicaciones psicológicas */",
+      "size": 140011,
+      "byte_delta": -59
+    },
+    {
+      "revid": 12850194,
+      "parentid": 12850129,
+      "timestamp": "2007-11-16T01:33:22Z",
+      "user": "Libertad y Saber",
+      "comment": "",
+      "size": 140059,
+      "byte_delta": 48
+    },
+    {
+      "revid": 12850390,
+      "parentid": 12850194,
+      "timestamp": "2007-11-16T01:47:03Z",
+      "user": "Libertad y Saber",
+      "comment": "",
+      "size": 140053,
+      "byte_delta": -6
+    },
+    {
+      "revid": 12850517,
+      "parentid": 12850390,
+      "timestamp": "2007-11-16T01:55:51Z",
+      "user": "Libertad y Saber",
+      "comment": "",
+      "size": 140050,
+      "byte_delta": -3
+    },
+    {
+      "revid": 12850556,
+      "parentid": 12850517,
+      "timestamp": "2007-11-16T01:58:51Z",
+      "user": "Libertad y Saber",
+      "comment": "no me conduce el link...",
+      "size": 139961,
+      "byte_delta": -89
+    },
+    {
+      "revid": 12853381,
+      "parentid": 12850556,
+      "timestamp": "2007-11-16T08:10:28Z",
+      "user": "Ignacio Icke",
+      "comment": "que sagan se negase a firmar la carta de condena a la astrología por su tono es irrelevante y en todo caso menos relevante que que la firmasen 192 científicos, 19 premios Nobel",
+      "size": 139228,
+      "byte_delta": -733
+    },
+    {
+      "revid": 12853863,
+      "parentid": 12853381,
+      "timestamp": "2007-11-16T09:01:15Z",
+      "user": "Ignacio Icke",
+      "comment": "quito unos cuantos enlaces repetidos (hay cientos) para intentar hacer el texto legible con algo de comodidad",
+      "size": 137142,
+      "byte_delta": -2086
+    },
+    {
+      "revid": 12853968,
+      "parentid": 12853863,
+      "timestamp": "2007-11-16T09:09:37Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Características de las pseudociencias */ muevo extensa digresión de críticas a [[imposturas intelectuales]] a dicho artículo",
+      "size": 134327,
+      "byte_delta": -2815
+    },
+    {
+      "revid": 12854234,
+      "parentid": 12853968,
+      "timestamp": "2007-11-16T09:32:18Z",
+      "user": "Ignacio Icke",
+      "comment": "más enlaces repetidos fuera",
+      "size": 133892,
+      "byte_delta": -435
+    },
+    {
+      "revid": 12862881,
+      "parentid": 12854234,
+      "timestamp": "2007-11-16T18:24:20Z",
+      "user": "SolveCoagula",
+      "comment": "Que un científico Y paradigmático *escéptico* sobre la astrología como Carl Sagan se retractase de firmar una carta es MUY significativo para el lector, independientemente de que otros sí lo hicieran.",
+      "size": 134625,
+      "byte_delta": 733
+    },
+    {
+      "revid": 12864221,
+      "parentid": 12862881,
+      "timestamp": "2007-11-16T19:19:59Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Complemento referencia para mejor PVN.",
+      "size": 135050,
+      "byte_delta": 425
+    },
+    {
+      "revid": 12864247,
+      "parentid": 12864221,
+      "timestamp": "2007-11-16T19:20:51Z",
+      "user": "Hanjin",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 135734,
+      "byte_delta": 684
+    },
+    {
+      "revid": 12864262,
+      "parentid": 12864247,
+      "timestamp": "2007-11-16T19:21:17Z",
+      "user": "SolveCoagula",
+      "comment": "/* Campos considerados como pseudociencias */ Restituyo enlace determinante en sección directamente relacionada.",
+      "size": 135738,
+      "byte_delta": 4
+    },
+    {
+      "revid": 12864274,
+      "parentid": 12864262,
+      "timestamp": "2007-11-16T19:21:38Z",
+      "user": "Hanjin",
+      "comment": "/* Campos considerados como pseudociencias */",
+      "size": 135739,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12864325,
+      "parentid": 12864274,
+      "timestamp": "2007-11-16T19:23:35Z",
+      "user": "Hanjin",
+      "comment": "/* Campos considerados como pseudociencias */ Corrijo referencia",
+      "size": 135741,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12866386,
+      "parentid": 12864325,
+      "timestamp": "2007-11-16T21:03:33Z",
+      "user": "SolveCoagula",
+      "comment": "Completo el concepto de lo que Mario Bunge entiende por pseudociencias.",
+      "size": 135990,
+      "byte_delta": 249
+    },
+    {
+      "revid": 12866403,
+      "parentid": 12866386,
+      "timestamp": "2007-11-16T21:04:26Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 135991,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12866540,
+      "parentid": 12866403,
+      "timestamp": "2007-11-16T21:10:31Z",
+      "user": "SolveCoagula",
+      "comment": "/* Características de las pseudociencias */ Amplío referencias externas.",
+      "size": 136048,
+      "byte_delta": 57
+    },
+    {
+      "revid": 12880004,
+      "parentid": 12866540,
+      "timestamp": "2007-11-17T15:28:08Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Falsacionismo y Teoría de cuerdas */ ups",
+      "size": 136046,
+      "byte_delta": -2
+    },
+    {
+      "revid": 12883144,
+      "parentid": 12880004,
+      "timestamp": "2007-11-17T17:47:54Z",
+      "user": "Synthebot",
+      "comment": "robot  Añadido: [[ms:Pseudosains]]",
+      "size": 136065,
+      "byte_delta": 19
+    },
+    {
+      "revid": 12889366,
+      "parentid": 12883144,
+      "timestamp": "2007-11-17T22:46:23Z",
+      "user": "Ignacio Icke",
+      "comment": "Esta foto no pega ni con cola: una cosa es una ilusión óptica, otra el holismo confirmacional, y otra el problema de inducción. Confunde más que aclara.",
+      "size": 134393,
+      "byte_delta": -1672
+    },
+    {
+      "revid": 12889424,
+      "parentid": 12889366,
+      "timestamp": "2007-11-17T22:49:24Z",
+      "user": "Ignacio Icke",
+      "comment": "¿qué hace shiva aquí? Si La foto es de shiva y el dios de los multiversos es Vishnu... ¿por qué se habla de multiversos?",
+      "size": 133733,
+      "byte_delta": -660
+    },
+    {
+      "revid": 12889502,
+      "parentid": 12889424,
+      "timestamp": "2007-11-17T22:53:20Z",
+      "user": "Ignacio Icke",
+      "comment": "¿qué nos hace pensar que a nuestra escala, los fractales y la estructura del universo tienen algo que ver con las pseudociencias? Menos digresiones, por favor",
+      "size": 132405,
+      "byte_delta": -1328
+    },
+    {
+      "revid": 12893402,
+      "parentid": 12889502,
+      "timestamp": "2007-11-18T01:32:23Z",
+      "user": "SolveCoagula",
+      "comment": "La fotografía aclara de una forma ampliamente intuitiva para el lector cómo la lógica no es suficiente para determinar lo subjetivo, lo cual es una excelente introducción visual al P. de la Inducción.",
+      "size": 134077,
+      "byte_delta": 1672
+    },
+    {
+      "revid": 12893497,
+      "parentid": 12893402,
+      "timestamp": "2007-11-18T01:37:09Z",
+      "user": "SolveCoagula",
+      "comment": "La estatua representa la TRIMURTI (3 dioses en uno) personificada en Shiva,en el mismísimo CERN. Excelente imagen que condensa Ciencia, Pseudociencia y Religión de una forma visualmente muy atractiva.",
+      "size": 134737,
+      "byte_delta": 660
+    },
+    {
+      "revid": 12893554,
+      "parentid": 12893497,
+      "timestamp": "2007-11-18T01:41:00Z",
+      "user": "SolveCoagula",
+      "comment": "La posible fractalidad y complejidad del Universo pondría de manifiesto la cuestionabilidad de la Navaja de Occam como argumento.Lejos de ser una digresión,es una hipótesis muy plausible y racional",
+      "size": 136065,
+      "byte_delta": 1328
+    },
+    {
+      "revid": 12909144,
+      "parentid": 12893554,
+      "timestamp": "2007-11-18T18:55:50Z",
+      "user": "Ignacio Icke",
+      "comment": "revierto a versión consensuada (ver discusión)",
+      "size": 33598,
+      "byte_delta": -102467
+    },
+    {
+      "revid": 12910943,
+      "parentid": 12909144,
+      "timestamp": "2007-11-18T19:54:36Z",
+      "user": "SolveCoagula",
+      "comment": "Revierto VANDALISMO por parte del usuario Chabacano de *más de 150 ediciones y más de 250 referencias aportadas*. Ver página de Discusión.",
+      "size": 136065,
+      "byte_delta": 102467
+    },
+    {
+      "revid": 12910974,
+      "parentid": 12910943,
+      "timestamp": "2007-11-18T19:55:36Z",
+      "user": "SolveCoagula",
+      "comment": "/* Referencias */",
+      "size": 136054,
+      "byte_delta": -11
+    }
+  ]
+}

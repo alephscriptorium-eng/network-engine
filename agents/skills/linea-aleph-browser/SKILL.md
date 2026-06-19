@@ -3,9 +3,9 @@ name: linea-aleph-browser
 description: >-
   Navega la línea de demarcación (linea-aleph): expande deltas del historial WP
   SolveCoagula, cachea revisiones wikitext y viajes hipervinculados hacia offline.
-  Usar al trabajar con linea-aleph/raw/linea.md, linea-aleph/, criterio de
-  demarcación, caché
-  aleph, ontology-seeds, o viajes Wikipedia desde registros.
+  Usar al trabajar con linea-aleph/raw/linea.md, linea-aleph/raw/linea2.md,
+  INDICE2.md, linea-aleph/, criterio de demarcación, caché aleph, ontology-seeds,
+  o viajes Wikipedia desde registros.
 ---
 
 # linea-aleph — agente navegador-caché
@@ -15,7 +15,7 @@ description: >-
 La **línea de demarcación** no es «una ciencia» única: es una **espina dorsal**
 de revisiones enlazadas. Este skill guía al agente para:
 
-1. Leer `linea-aleph/manifest.json` y `INDICE.md`
+1. Leer `linea-aleph/manifest.json` y `INDICE.md` (o `manifest2.json` + `INDICE2.md` para contexto usuario)
 2. Elegir el siguiente **viaje** (registro milestone o sección en `ontology-seeds.json`)
 3. **Cachear** revisiones (`fetch_snapshot.py`) y artículos enlazados
 4. **Curar** `delta.md` con interpretación ontología/gnoseología
@@ -23,6 +23,18 @@ de revisiones enlazadas. Este skill guía al agente para:
 
 Relación con `logs-aleph`: sesión 02 (diamat, demarcación ABC, Gaia) es el marco
 conversacional; `linea-aleph` es el **cuerpo histórico** (Wikipedia 2007, SolveCoagula).
+
+### linea1 vs linea2 vs linea-pseudo
+
+| Corpus | Fuente | Índice | Pregunta |
+|--------|--------|--------|----------|
+| **linea1** | `raw/linea.md` (export historial artículo) | `INDICE.md` | ¿Qué hizo SolveCoagula en *Problema de la demarcación*? |
+| **linea2** | `raw/linea2.md` (API usercontribs NS0) | `INDICE2.md` | ¿Qué precede/intercala/sigue en toda su carrera enciclopedista? |
+| **linea-pseudo** | `pseudociencia/raw/linea.md` (API historial artículo) | `pseudociencia/INDICE.md` | ¿Qué pasó en *Pseudociencia* (todos los editores, ventana SC)? |
+
+Consultar **INDICE** para deltas y milestones de demarcación; **INDICE2** para contexto
+multi-artículo y clusters; **pseudociencia/INDICE** para la segunda línea gruesa
+(223 registros en ventana, 169 con `in_linea2`).
 
 ## Antes de empezar
 
@@ -35,10 +47,19 @@ python3 segment_linea.py --expand milestones
 Leer:
 
 - `raw/linea.md` — fuente canónica del historial WP (export SolveCoagula)
-- `INDICE.md` — tesis, extremos inicial/final, hitos
+- `raw/linea2.md` — cronología completa usuario (~1006 edits, 24 artículos)
+- `INDICE.md` — tesis, extremos previo/inicial/final, hitos (linea1)
+- `INDICE2.md` — mapa enciclopedista, clusters, marco temporal (linea2)
 - `manifest.json` — 677 registros con oldid, delta bytes, sección
+- `manifest2.json` — contribuciones usuario + cross-ref `in_linea1`
+- `pseudociencia/manifest.json` — 223 registros artículo Pseudociencia + `in_linea2`
+- `pseudociencia/INDICE.md` — segunda línea gruesa (extremos, milestones)
 - `ontology-seeds.json` — pack de secciones para expandir
-- `snapshots/inicial/meta.json` y `snapshots/final/meta.json`
+- `snapshots/previo/meta.json`, `snapshots/inicial/meta.json`, `snapshots/final/meta.json`
+- `snapshots/sc_cierre/meta.json` — última edición SolveCoagula (linea2); en demarcación oldid **12763920**, en pseudo coincide con `final`
+- `snapshots/actual/meta.json` — revisión vigente Wikipedia (`fetch_snapshot.py --latest`)
+- `snapshots/delta-extremo.md` — marco agregado previo→final (metadatos + punteros; curación pendiente)
+- `snapshots/delta-sc-actual.md` — marco SC_cierre→actual (post-2007; curar tras fetch)
 
 ## Formatos (no bulk markdown)
 
@@ -53,25 +74,70 @@ Leer:
 
 **No** materializar los 677 snapshots en markdown. Solo milestones + fetch bajo demanda.
 
+## linea2 — mapa enciclopedista (cuándo usar INDICE vs INDICE2)
+
+| Pregunta | Consultar |
+|----------|-----------|
+| Delta en *Problema de la demarcación*, milestones, snapshots | `INDICE.md` + `manifest.json` + `raw/linea.md` |
+| Qué artículos tocó SolveCoagula, orden cronológico, qué sigue a demarcación | `INDICE2.md` + `manifest2.json` + `raw/linea2.md` |
+| ¿Esta oldid de demarcación está en linea1? | `manifest2.json` → `contribuciones[].in_linea1` |
+
+Regenerar linea2:
+
+```bash
+python3 scripts/fetch_user_contribs.py --user SolveCoagula
+python3 segment_linea2.py
+```
+
+**INDICE2** documenta: precede (nada — primera edit es demarcación), intercalado
+(Pseudociencia, Método científico, etc. en paralelo), sigue (16 edits post-demarcación:
+Pseudociencia + Imposturas intelectuales). Pseudociencia (169 edits usuario) tiene
+**línea gruesa implementada** en `pseudociencia/`.
+
 ## Flujo de un viaje
 
 ### 1. Elegir ancla
 
 Prioridad sugerida:
 
-1. `snapshots/inicial` si `fetched: false`
-2. Milestone con `delta_status: pending` en manifest
-3. Sección alta frecuencia en `ontology-seeds.json`
-4. Enlace saliente del wikitext ya cacheado (`[[...]]`)
+1. `snapshots/previo` si `fetched: false`
+2. `snapshots/final` si `fetched: false`
+3. `snapshots/sc_cierre` si `fetched: false` (demarcación: 12763920; pseudo = final)
+4. `snapshots/actual` si `fetched: false` (`--latest`)
+5. Milestone con `delta_status: pending` en manifest
+6. Sección alta frecuencia en `ontology-seeds.json`
+7. Enlace saliente del wikitext ya cacheado (`[[...]]`)
+
+Consultar `snapshots/delta-extremo.md` para el marco del núcleo de 99 milestones (previo→final).
 
 ### 2. Fetch revisión
 
 ```bash
-python3 scripts/fetch_snapshot.py --oldid 11951034   # inicial
-python3 scripts/fetch_snapshot.py --oldid 12370021   # final
+python3 scripts/fetch_snapshot.py --oldid 11663303   # previo demarcación
+python3 scripts/fetch_snapshot.py --oldid 12763920 --title "Problema de la demarcación"  # sc_cierre demarcación
+python3 scripts/fetch_snapshot.py --latest --title "Problema de la demarcación"  # actual demarcación
+python3 scripts/fetch_snapshot.py --oldid 11597663 --title Pseudociencia  # previo pseudo
+python3 scripts/fetch_snapshot.py --oldid 12910974 --title Pseudociencia  # final/sc_cierre pseudo
+python3 scripts/fetch_snapshot.py --latest --title Pseudociencia  # actual pseudo
 ```
 
 Comprobar `cache/snapshots/{oldid}.meta.json` → `fetched_at`.
+
+### Viaje snapshot actual (2026-06-19)
+
+Registrar en `cache/viajes/2026-06-19-snapshot-actual.json`:
+
+```json
+{
+  "viaje_id": "2026-06-19-snapshot-actual",
+  "anchors": ["demarcacion:12763920→latest", "pseudociencia:12910974→latest"],
+  "fetched": ["<oldids>"],
+  "delta_status": "pending",
+  "offline_ready": true
+}
+```
+
+Tras curar: actualizar `delta_status` y rellenar `snapshots/delta-sc-actual.md` (y espejo en `pseudociencia/`).
 
 ### 3. Diff mental (sin obligar a guardar diff completo)
 
@@ -120,6 +186,10 @@ Crear `cache/viajes/{fecha}-{registro_id}.json`:
 ## Comandos útiles
 
 ```bash
+# Regenerar mapa enciclopedista (linea2)
+python3 scripts/fetch_user_contribs.py --user SolveCoagula
+python3 segment_linea2.py
+
 # Un registro extra
 python3 segment_linea.py --registro r0026
 
@@ -139,6 +209,10 @@ python3 -c "import json; m=json.load(open('manifest.json')); print(len(m['regist
 
 ## Archivos clave
 
-- `linea-aleph/segment_linea.py` — segmentador
+- `linea-aleph/segment_linea.py` — segmentador linea1
+- `linea-aleph/segment_linea2.py` — segmentador linea2 + manifest2
+- `linea-aleph/scripts/fetch_user_contribs.py` — harvest API usercontribs
+- `linea-aleph/scripts/fetch_article_history.py` — harvest API historial artículo
 - `linea-aleph/scripts/fetch_snapshot.py` — fetch API MediaWiki
+- `linea-aleph/pseudociencia/` — sub-corpus segunda línea gruesa
 - `logs-aleph/sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/` — marco Aleph

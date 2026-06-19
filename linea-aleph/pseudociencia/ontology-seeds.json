@@ -1,0 +1,137 @@
+{
+  "description": "Semillas ontológicas extraídas del historial SolveCoagula",
+  "article": "https://es.wikipedia.org/wiki/Pseudociencia",
+  "sections": [
+    {
+      "section": "Características de las pseudociencias",
+      "edit_count": 68,
+      "sample_oldids": [
+        12866540,
+        12864221,
+        12853968,
+        12837941,
+        12837067
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Características_de_las_pseudociencias"
+    },
+    {
+      "section": "Campos considerados como pseudociencias",
+      "edit_count": 30,
+      "sample_oldids": [
+        12864325,
+        12864274,
+        12864262,
+        12864247,
+        12835889
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Campos_considerados_como_pseudociencias"
+    },
+    {
+      "section": "El problema de la demarcación de las ciencias",
+      "edit_count": 30,
+      "sample_oldids": [
+        12838165,
+        12821003,
+        12732577,
+        12732556,
+        12732549
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#El_problema_de_la_demarcación_de_las_ciencias"
+    },
+    {
+      "section": "Pseudoescepticismo",
+      "edit_count": 13,
+      "sample_oldids": [
+        12490370,
+        12489908,
+        12489874,
+        12489868,
+        12470386
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Pseudoescepticismo"
+    },
+    {
+      "section": "Falsacionismo y Teoría de cuerdas",
+      "edit_count": 5,
+      "sample_oldids": [
+        12880004,
+        12729211,
+        12729143,
+        12729129,
+        12539239
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Falsacionismo_y_Teoría_de_cuerdas"
+    },
+    {
+      "section": "Explicaciones psicológicas",
+      "edit_count": 5,
+      "sample_oldids": [
+        12850129,
+        12485929,
+        12460389,
+        12450340,
+        12450324
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Explicaciones_psicológicas"
+    },
+    {
+      "section": "Referencias",
+      "edit_count": 2,
+      "sample_oldids": [
+        12910974,
+        12714073
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Referencias"
+    },
+    {
+      "section": "Véase también",
+      "edit_count": 2,
+      "sample_oldids": [
+        12719795,
+        12453172
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Véase_también"
+    },
+    {
+      "section": "Bibliografía en español",
+      "edit_count": 2,
+      "sample_oldids": [
+        12453419,
+        12453395
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Bibliografía_en_español"
+    },
+    {
+      "section": "Pseudociencia",
+      "edit_count": 1,
+      "sample_oldids": [
+        12483807
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Pseudociencia"
+    },
+    {
+      "section": "Peligros de la medicina pseudocientífica para la salud",
+      "edit_count": 1,
+      "sample_oldids": [
+        12238466
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Peligros_de_la_medicina_pseudocientífica_para_la_salud"
+    },
+    {
+      "section": "Enlaces externos",
+      "edit_count": 1,
+      "sample_oldids": [
+        12019624
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Pseudociencia#Enlaces_externos"
+    }
+  ],
+  "viaje_sugerido": [
+    "snapshots/inicial → registro traducción",
+    "sección ¿Ciencia normal, paranormal o pseudociencias?",
+    "Feyerabend y autonomía",
+    "Kuhn y paradigma",
+    "Véase también → artículos enlazados",
+    "snapshots/final"
+  ]
+}

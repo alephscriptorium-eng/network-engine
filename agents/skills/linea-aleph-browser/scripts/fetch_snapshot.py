@@ -66,7 +66,7 @@ def main() -> None:
     meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     # update snapshot endpoint if exists
-    for role in ("inicial", "final"):
+    for role in ("previo", "inicial", "final"):
         snap_meta = ROOT / "snapshots" / role / "meta.json"
         if snap_meta.exists():
             sm = json.loads(snap_meta.read_text(encoding="utf-8"))

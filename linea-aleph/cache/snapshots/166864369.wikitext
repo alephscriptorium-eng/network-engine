@@ -1,0 +1,239 @@
+[[Archivo:PhrenologyPix.jpg|right|thumb|Diagrama frenológico del {{siglo|XIX||s}}. La [[frenología]] es una pseudociencia que en el pasado fue considerada una verdadera ciencia.]]
+
+En [[filosofía de la ciencia]], el '''problema de la demarcación''' es la cuestión de definir los límites que deben configurar el concepto «[[ciencia]]».<ref>Karl Popper, ''La lógica de la investigación científica'' «Llamo problema de la demarcación al de encontrar un criterio que nos permita distinguir entre las ciencias empíricas, por un lado, y los sistemas metafísicos por otro.»</ref> Las fronteras se suelen establecer entre lo que es conocimiento científico y no científico, entre ciencia y [[metafísica]], entre ciencia y [[pseudociencia]], y entre ciencia y [[religión]]. El planteamiento de este problema, conocido como ''problema generalizado de la demarcación'', abarca estos casos. El problema generalizado, en último término, lo que intenta es encontrar criterios para poder decidir, entre dos [[teoría]]s dadas, cuál de ellas es más «científica».
+
+Tras más de un siglo de diálogo entre [[Filosofía de la ciencia|filósofos de la ciencia]] y [[ciencia|científicos]] en diversos campos, y a pesar de un amplio consenso acerca de las bases generales del [[método científico]],<ref>Gauch, Hugh G., Jr., ''Scientific Method in Practice'' (2003) 3-7.</ref> los límites que demarcan lo que es ciencia, y lo que no lo es, continúan siendo debatidos.<ref>Cover, J.A., Curd, Martin (Eds, 1998) ''Philosophy of Science: The Central Issues'', 1-82.</ref>
+
+El problema de la distinción entre lo científico y lo pseudocientífico tiene serias implicaciones [[Ética|éticas]] y [[Política|políticas]].<ref>{{Cita libro|apellidos=Lakatos|nombre=Imre|enlaceautor=Imre Lakatos|título=La metodología de los programas de investigación científica|url=https://www.worldcat.org/oclc/318332464|fechaacceso=26 de febrero de 2019|fecha=1983|editorial=Alianza|isbn=8420623490|ubicación=Madrid|página=9|oclc=318332464|apellidos2=Gregory|nombre2=Currie|año=|editor=|idioma=|capítulo=|cita=¿Qué distingue al conocimiento de la superstición, la ideología o la pseudo-ciencia? La Iglesia Católica excomulgó a los copernicanos, el Partido Comunista persiguió a los mendelianos por entender que sus doctrinas eran pseudocientíficas. La demarcación entre ciencia y pseudociencia no es un mero problema de filosofía de salón; tiene una importancia social y política vital.}}</ref> El [[Partido Comunista de la Unión Soviética|Partido Comunista de la URSS]] declaró (1949) pseudocientífica a la [[Leyes de Mendel|genética mendeliana]] —por «burguesa y reaccionaria»— y mandó a sus defensores como [[Nikolái Vavílov|Vavílov]] a morir en campos de concentración.<ref>{{Cita libro|apellidos=A. Giusti|nombre=Miguel|título=La filosofía del siglo XX: balance y perspectivas|url=http://books.google.es/books?id=XnUdH1J8UvsC&lpg=PA542&dq=gen%C3%A9tica%20mendeliana%20burguesa%20y%20reaccionaria&hl=es&pg=PA542#v=onepage&q=gen%C3%A9tica%20mendeliana%20burguesa%20y%20reaccionaria&f=false|fechaacceso=15 de enero de 2012|año=2000|editorial=Fondo Editorial de la Pontificia Universidad Católica del Perú|isbn=9972-42-354-9|editor=Miguel Guisti|edición=primera edición|páginas=832 páginas|idioma=español|cita=El Partido Comunista de la URSS declaró (1949) pseudocientífica a la genética mendeliana -por "burguesa y reaccionaria"- y mandó a sus defensores como Vavílov a morir en campos de concentración}}</ref>
+
+== Historia ==
+[[Archivo:Nikolai Vavilov NYWTS.jpg|thumb|[[Nikolái Vavílov]] (foto) en 1940 fue puesto en prisión por ser un defensor de la [[Leyes de Mendel|genética mendeliana]], considerada una «pseudociencia burguesa» que se oponía al [[lysenkoismo]], apoyado por Stalin.]]
+
+=== Antecedentes ===
+
+El primer ejemplo en la historia acerca de la cuestión de la [[categoría|categorización]] y demarcación del [[conocimiento]] humano se encuentra en la [[Grecia antigua]], donde se trata el problema de las diferencias entre el [[verdad]]ero [[conocimiento]] (en [[idioma griego|griego]] ἐπιστήμη, ''[[episteme]]'') y la opinión (δόξα, ''[[doxa]]''). Para [[Platón]], por ejemplo, la ''episteme'' solo puede tener desarrollo en el [[mundo de las ideas]] (conocimiento intelectual puro) pero no el [[mundo sensible]], que según él es engañoso (''cfr.'' «[[Alegoría de la caverna]]»).
+
+En la antigua Roma, [[Cicerón]] escribió ''[[De divinatione]]'', una rica fuente histórica para conocer la concepción de la cientificidad en la antigüedad romana clásica.<ref>{{cite journal |doi=10.1016/j.shpsa.2020.04.002 |pmid= |title=Cicero's Demarcation of Science: A Report of Shared Criteria |journal=Studies in History and Philosophy of Science Part A |volume= |issue= |pages= |year=2020 |last1=Fernandez-Beanato |first1=Damian|last2= |first2=}}</ref>
+
+Más tarde, [[Kant]] trató de delimitar el campo de las ciencias naturales del [[metafísica|metafísico]], y con su trabajo sentó un precedente metodológico para establecer los criterios de demarcación de lo que es y no es [[ciencia natural]].<ref>[https://web.archive.org/web/20111119214246/http://redalyc.uaemex.mx/redalyc/pdf/414/41400306.pdf La lógica de la lógica de la ciencia]. Revista colombiana de filosofía de la ciencia. Vol.1.Nos. 2 y 3. 2000. págs. 67-73</ref> (''Cfr.'' «[[Crítica de la razón pura]]» y «[[Prolegómenos a toda metafísica futura que pueda presentarse como ciencia]]»).
+
+[[David Hume]] (1711-1776), establece los principios teóricos anti-metafísicos (en particular el [[problema de la inducción]]) que tendrían gran influencia en el [[positivismo lógico]]. Será en el [[Círculo de Viena]] con [[Rudolf Carnap]] (1891-1970), [[Alfred Jules Ayer]] (1910-1989), y [[Karl R. Popper]] (1902-1994), en donde se abordará el "Criterio de Demarcación" de la ciencia con respecto a la [[metafísica]].
+
+{{cita|Si tomáramos cualquier volumen de teología o metafísica escolástica, por ejemplo, y nos preguntáramos ¿contiene algún raciocinio abstracto acerca del número o la cantidad? No. ¿Contiene algún razonamiento experiencial acerca de cuestiones de hecho y de existencia? No. Entonces, arrojémoslo a las llamas, sólo puede contener sofismas e ilusión”.|Hume. |''Investigación sobre el entendimiento humano''. Sección XII, 132, página 211.}}
+
+[[Charles Sanders Peirce]] (1839 - 1914) aborda los problemas modernos de la ciencia, la verdad y el conocimiento y es con él que se fragua el concepto de [[falibilismo]], que será un precursor de la idea de [[falsabilidad]].
+
+=== Separación entre ciencia y religión ===
+[[Archivo:Galileo facing the Roman Inquisition.jpg|thumb|''[[Galileo Galilei|Galileo]] ante la [[Inquisición|Inquisición romana]]''  
+ (pintura de [[Cristiano Banti]] de 1857)]]
+El problema de la demarcación es una cuestión relativamente reciente. El problema data más o menos del momento en el cual la ciencia y la religión alcanzaron una independencia sustancial una de la otra. En 1874, el influyente historiador de la ciencia [[John William Draper]] publicó su ''Historia del conflicto entre religión y ciencia''. En él retrata al completo la historia del desarrollo científico como una guerra contra la religión. Esta visión la fomentaron seguidores tan prestigiosos como [[Andrew Dickson White]] en su ensayo ''Una historia de las guerras entre la Ciencia con la Teología en la cristiandad'' ([http://www.cscs.umich.edu/~crshalizi/White/ en línea]).
+
+Ciertos hechos legendarios en la [[Historia de la ciencia]] deben su popularidad a Draper y White. Entre estos hechos se cuentan, por ejemplo, el de que [[Copérnico]] hubo de retractarse de publicar su ''[[De Revolutionibus Orbium Celestium]]'' por miedo a la persecución por la Iglesia, y el hecho de que los cristianos del medievo creían que el sol se movía en torno a la tierra ([[geocentrismo]]).
+
+En términos históricos, la relación entre ciencia y religión ha sido muy complicada. Muchos científicos fueron, desde luego, muy religiosos, y la religión fue a menudo promotor y motivador de investigaciones científicas. Sin embargo, como se observa con Draper y White, hacia el final del {{siglo|XIX||s}}, la ciencia y la religión comenzaron a ser vistas por el público como posiciones enfrentadas, fenómeno gradual que alcanzó su clímax en torno a los debates acerca de la teoría de la [[Evolución biológica|evolución]] de [[Charles Darwin]].
+
+Ya antes de la publicación de Darwin de ''[[El origen de las especies]]'' hubo precursores y precondicionantes, pero fue a raíz de este trabajo cuando el debate se hizo popular gracias a su difusión en la prensa británica, convirtiéndose en el mascarón de proa de las tensiones entre ciencia y religión. Hay que agregar que este conflicto se mantiene, en lo esencial, en nuestros días.
+
+El trabajo de Draper y White debe ser visto como proveniente directamente de este clima social, y su modelo de ciencia y religión como eternos opuestos, si bien no era históricamente exacto, se convirtió socialmente en uno de los debates dominantes. Los sociólogos de la ciencia han estudiado los intentos de erigir fuertes distinciones entre ciencia y no ciencia como una forma de trabajo periférico, enfatizando el alto riesgo que supone tal empresa para todos aquellos involucrados en ella.
+
+=== Positivismo lógico ===
+{{AP|Positivismo lógico|verificacionismo}}
+El '''positivismo''' es una [[corriente filosófica]] caracterizada por adoptar, en general, una actitud [[cientificismo|cientificista]] y [[metafísica|antimetafísica]], confiando plenamente en la [[Ser humano|humanidad]] y en su progreso indefinido. Este punto de vista proclama exclusivamente la legitimidad y validez del conocimiento proporcionado por las ciencias empíricas. Por eso se considera que la filosofía tradicional, entendida principalmente como metafísica o conocimiento especulativo sin necesidad de comprobación empírica, debe sustituirse por otra que tenga como único objetivo entender la naturaleza y los métodos de las ciencias, fundamentalmente las [[ciencias de la naturaleza]] ([[astronomía]], [[física]], [[química]] y [[biología]]). El positivismo se enlaza habitualmente con una [[ontología]] [[materialismo|materialista]].
+[[Archivo:Auguste Comte.jpg|miniatura|150px|izquierda|Auguste Comte.]]
+[[Archivo:Ludwig Wittgenstein 1910.jpg|miniatura|150px|izquierda|Ludwig Wittgenstein.]]
+
+Históricamente la [[filosofía]] [[positivismo|positivista]] surge en el {{siglo|XIX||s}}, siendo sus máximos exponentes [[Auguste Comte]] (1798-1857) y [[Ernst Mach]] (1838-1916). El primero usó la palabra "positivismo", tomada del filósofo francés [[Henri de Saint-Simon|Saint-Simon]] (1760-1825), para designar su  pensamiento. Así mismo, denominó ''estadio positivo'' a la etapa del progreso humano en la que la ciencia se convierte en la principal fuerza social, superando periodos anteriores de carácter [[metafísica|metafísico]] y [[Religión|religioso]] en los que dominaban las supersticiones y las creencias infundadas.
+
+Bajo la influencia de [[Ernst Mach]] y del austríaco [[Ludwig Wittgenstein]] (1889-1951), el positivismo cientificista se transformó en el {{siglo|XX||s}} dando lugar al [[positivismo lógico]], '''neopositivismo''' o '''empirismo lógico'''. 
+
+El manifiesto fundacional de este se publicó en 1929 con el nombre de ''Wissenschaftliche Weltauffassung: Der Wiener Kreis'' (''Concepción científica del mundo: Círculo de Viena''). El neopositivismo se caracteriza por presentar un enfoque de la [[metodología científica]] elaborado de forma precisa por medio de la [[lógica formal]], así como por intentar reducir toda investigación científica al método y lenguaje de la [[física]] (''fisicalismo''). A través de este programa filosófico y científico el neopositivismo contribuyó a impulsar notablemente la [[filosofía de la ciencia]] durante el {{siglo|XX||s}}.
+
+Aunque los empiristas lógicos intentaron ofrecer una visión general de la ciencia que abarcaba principalmente sus aspectos [[gnoseología|gnoseológicos]] y [[metodología|metodológicos]], tal vez su tesis más conocida es la que sostiene que un [[enunciado]] es cognitivamente significativo solo si o posee un método de verificación empírica o si es un enunciado [[análisis|analítico]], tesis conocida como "del significado por verificación". 
+
+Solo los enunciados de la [[ciencia|ciencia empírica]] cumplen con el primer requisito, y solo los enunciados de la [[lógica]] y las [[matemáticas]] cumplen con el segundo. 
+[[Archivo:Univie.jpg|thumb|Entrada de la [[Universidad de Viena]], el lugar de nacimiento del [[Círculo de Viena]] en los años 20.]]
+
+Los enunciados típicamente filosóficos no cumplen con ninguno de los dos requisitos, así que la filosofía, como tal, debe pasar de ser un supuesto cuerpo de proposiciones a un método de [[análisis lógico]] de los enunciados de la ciencia. Las posiciones de los empiristas lógicos respecto de algunos temas claves de la filosofía de la ciencia (el origen del sentido de los enunciados, la puesta a prueba de las teorías, el concepto de [[ciencia|explicación científica]] y la unidad de la ciencia, entre otros) se conocen con el nombre colectivo de "concepción heredada" (''received view'').
+
+Esta nueva concepción de la ciencia como algo que no solamente es independiente de la filosofía y metafísica, sino que incluso llega a oponerse a ellas, provocó la inevitable pregunta, ¿qué es lo que separa a las dos? Entre los primeros en desarrollar una respuesta se encontraban los miembros del [[Círculo de Viena]] ([[Moritz Schlick]], [[Rudolf Carnap]], [[Kurt Gödel]], [[Carl Hempel]] y otros). Su postura filosófica, conocida como [[positivismo lógico]], sostenía una teoría de significado que mantuviera, solo los enunciados acerca de observaciones [[empírica]]s eran significativos, afirmando a la vez que los enunciados que no se derivan de esta manera (incluyendo enunciados religiosos y [[Metafísica|metafísicos]]) carecen por naturaleza de auténtico significado (véase [[Verificacionismo]]).
+
+El positivismo del Círculo de Viena considera que un enunciado es científico cuando puede deducirse de otros que han sido objeto de comprobación. Entre sus principios básicos destaca la [[verificacionismo|verificabilidad]] como criterio de demarcación entre ciencia y no ciencia<ref>{{Cita web |url=http://www.eumed.net/cursecon/libreria/rgl-evol/2.4.htm |título=La filosofía de la ciencia principales concepciones <!--Generado por Muro Bot. Puedes ayudar a rellenar esta plantilla--> |fechaacceso=2009 |fechaarchivo=7 de agosto de 2011 |urlarchivo=https://web.archive.org/web/20110807033943/http://www.eumed.net/cursecon/libreria/rgl-evol/2.4.htm |deadurl=yes }}</ref>
+, contrapuesto a la [[Lógica de la Refutación y Verificación|lógica de la refutación y verificación]].
+
+=== Falsacionismo ===
+
+{{Extracto|Falsacionismo|marcador=sí}}
+
+=== Kuhn y los cambios de paradigma ===
+[[Archivo:Las 3 fases de la ciencia thomas kuhn.png |thumb|Esquema de las fases de la ciencia según [[Thomas Kuhn]].]]
+{{AP|Cambio de paradigma|La estructura de las revoluciones científicas|Thomas Kuhn}}
+[[Thomas Kuhn]], [[Física|físico]] e [[Historia de la ciencia|historiador de la ciencia]], ha demostrado ser muy influyente<ref>«Thomas Samuel Kuhn (1922-1996) became one of the most influential philosophers of science of the twentieth century, perhaps the most influential...»; cf. [http://plato.stanford.edu/entries/thomas-kuhn/ A. Bird, «Thomas Kuhn» (2004)], en el sitio web Stanford Encyclopedia of Philosophy] (enlace consultado el 6 de abril de 2009).</ref> en la [[filosofía de la ciencia]], y a menudo se encuentra conectado con lo que se ha dado en llamar [[postpositivismo]] o [[postempirismo]]. En su libro de 1962, ''[[La estructura de las revoluciones científicas]]'', Kuhn dividía el proceso de hacer ciencia en dos empresas diferentes, a las que llamó '''ciencia normal''' y '''ciencia extraordinaria''' (a la que también en ocasiones llamaba '''ciencia revolucionaria''').  El proceso de la ciencia "normal" es el que la mayoría de los científicos siguen mientras trabajan con lo que él llama el ''[[paradigma]]'' aceptado en la actualidad por la comunidad científica, y que en este contexto de las ideas de [[Karl Popper]] sobre el falsacionismo, así como la idea de un [[método científico]], están vigentes hoy día.<ref name="QuiFis">{{Cita publicación |url=http://www.revistacts.net/files/Volumen_10_Numero_28/FINAL/06QuintanillaFINAL.pdf |título=Algunos retos filosóficos de la política científica |nombre=Miguel Ángel |fecha=Enero de 2015 |publicación=Revista CTS |volumen=10 |número=28 |páginas=89-104 |fechaacceso=16 de febrero de 2015 |apellidos1=Quintanilla Fisac |fechaarchivo=10 de enero de 2017 |urlarchivo=https://web.archive.org/web/20170110152245/http://www.revistacts.net/files/Volumen_10_Numero_28/FINAL/06QuintanillaFINAL.pdf |deadurl=yes }}</ref>
+
+Esta especie de trabajo es lo que [[Thomas Kuhn|Kuhn]] llama "resolución de problemas": trabajar dentro de los límites de la teoría actual y sus implicaciones con respecto a qué tipo de experimentos deberían o no ser fructíferos. Sin embargo, durante el proceso de realizar ciencia "normal", Kuhn argumenta que se generan anomalías, algunas de las cuales conducen a una extensión del "paradigma" dominante con la intención de explicarlas, y otras para las que no se puede encontrar una explicación satisfactoria con el modelo actual. Cuando se han acumulado suficientes [[anomalía]]s así, y los científicos pertenecientes a cada campo las encuentran ''significativas'' (lo cual a menudo es un juicio muy [[Subjetividad|subjetivo]]), comienza un "período de crisis", y Kuhn sostiene que algunos científicos comienzan a participar en una actividad de ciencia "extraordinaria". Durante esta fase, se reconoce al modelo antiguo como fundamentalmente defectuoso y no se le puede adaptar para más uso, de forma que ideas totalmente nuevas (o a menudo ideas viejas y abandonadas) son nuevamente consideradas, la mayoría de las cuales fallarán. Pero, durante esta etapa, se crea un nuevo "paradigma" y después de un tiempo prolongado de ''[[cambio de paradigma]]'', se acepta el nuevo paradigma como norma por la comunidad científica y se integra en el trabajo previo, y el viejo paradigma se relega a los libros de historia. El clásico ejemplo de esto es el cambio de la [[física]] de [[Éter (física)|Maxwell]]/[[Mecánica clásica|Newton]] a la [[Mecánica Cuántica]]/[[Teoría de la Relatividad|Einsteniana]] de la física de principios del {{Siglo|XX||s}}.
+
+Si el descarte de las teorías científicas se basara únicamente en una simple falsación, de acuerdo con Kuhn, entonces ninguna teoría sobreviviría durante el tiempo suficiente como para ser fructífera,<ref>"Si todos y cada uno de los fracasos en el ajuste sirvieran de base para rechazar las teorías, todas las teorías deberían ser rechazadas en todo momento." T.S.Kuhn, "La Estructura de las Revoluciones Científicas'', México, FCE, 1971 (8ª reimp. 2004), pág.228.</ref> puesto que ''todas'' las teorías contienen anomalías.<ref>[http://www.monografias.com/trabajos7/parad/parad.shtml Kuhn reconoce que todos los paradigmas contienen algunas anomalías]</ref><ref>[http://www.altillo.com/examenes/uba/cbc/pensamiento/pensresgianella.asp Para Kuhn todos los paradigmas tienen anomalías]</ref>
+
+El proceso mediante el que Kuhn decía que se acepta un nuevo paradigma por la mayoría de la comunidad científica indicaría una posible demarcación entre ciencia y [[pseudociencia]] mientras que rechazaba por simple el falsacionismo de Popper. En su lugar, Kuhn argumenta que un nuevo paradigma se acepta principalmente porque tiene una ''capacidad superior para resolver problemas'' que surgen durante el proceso de realizar ciencia "normal". Es decir, el valor de un paradigma científico es su [[poder de predicción]] y su capacidad para sugerir soluciones a nuevos problemas mientras continúa satisfaciendo todos los problemas resueltos por el paradigma al que reemplaza. 
+
+La demarcación puede ser problemática en casos en los que las vías científicas estándar (experimentos, lógica, etc.) para evaluar una teoría o una hipótesis no se puedan aplicar por algún tipo de razón. Un ejemplo sería sobre diferenciar el estatus científico de la [[Meteorología]] o la [[Medicina]] por una parte y la [[Astrología]] por la otra; todos estos campos fallan repetidamente en predecir con exactitud aquello que dicen ser capaces de predecir, y todas son capaces de explicar los fallos regulares de sus predicciones.<ref>Thomas Kuhn in Grim, op. cit., pp. 126-7</ref>
+
+=== Imre Lakatos  y su ''programa de investigación científica'' ===
+
+{{AP|Falsacionismo sofisticado|Imre Lakatos}}
+[[Archivo:Professor Imre Lakatos, c1960s.jpg|thumb|Imre Lakatos, ca. 1960.]]
+[[Imre Lakatos|Lakatos]] señala diversos problemas del falsacionismo de Popper en su libro ''La lógica de la investigación científica'' al que pasa a llamar ''falsacionismo ingenuo'', apoyándose constantemente en casos de la [[historia de la ciencia]]. Critica también la idea de ''[[La estructura de las revoluciones científicas|revolución científica]]'' de [[Thomas Kuhn|Kuhn]], y la ''[[Inconmensurabilidad (filosofía)|inconmensurabilidad]]'' entre paradigmas de Kuhn y [[Paul Feyerabend]] pues defiende que si bien los paradigmas no son comparables ni inconsistentes entre sí, con la ayuda de un diccionario se pueden ''hacer'' consistentes y comparables. (Véase también «[[Críticas a la inconmensurabilidad]]»).
+
+Lakatos, en su obra ''[[Pruebas y Refutaciones]]'', considera que la teoría de Karl Popper es incorrecta, ya que toda teoría (como la de Newton, la cual estudió en profundidad), nace con un conjunto de "hechos" que la refutan en el mismo momento que es creada. 
+La propuesta de Lakatos es un falsacionismo sofisticado que a su juicio subsana los problemas antes mencionados. Así, defiende que las teorías no deben observarse individualmente, sino en conjuntos de teorías relacionadas en serie de modificaciones que conforman lo que él denomina un "programa de investigación".
+
+Imre Lakatos propuso que la ciencia avanza mediante programas de investigación no por hipótesis aisladas de ensayos y errores, de conjeturas y refutaciones. Su núcleo es protegido de las refutaciones por un gran cinturón protector de hipótesis auxiliares, también por una [[heurística]] para la solución de problemas que, "con la ayuda de técnicas matemáticas sofisticadas, asimila las anomalías e incluso las convierte en evidencias positivas". La teoría de la gravitación de Newton, la teoría de la relatividad de Einstein, la mecánica cuántica, el marxismo, el freudismo son todos programas de investigación pero no todos son "igualmente buenos", es decir, existe tanto programas científicos o progresivos (la teoría lleva al descubrimiento de hechos nuevos) y pseudocientíficos o regresivos (las teorías son fabricadas sólo para acomodar los hechos ya conocidos).
+
+Como criterio de demarcación entre ciencia y no-ciencia, establece que una teoría es científica si es progresiva empíricamente (lo cual implica ser progresiva teóricamente). Es decir, si predice hechos nuevos y explica parte de estos además de los ya conocidos. Un programa con estas características se dirá que es ''progresivo''.
+
+=== Feyerabend y el problema de la autonomía en la ciencia ===
+[[Archivo:Paul Feyerabend Berkeley.jpg|thumb|Paul Feyerabend en Berkeley.]]
+{{AP|Anarquismo epistemológico|Paul Feyerabend}}
+Después de Kuhn, ha existido una tendencia a atenuar la diferencia entre ciencia y no ciencia, ya que el trabajo de Kuhn llevó a cuestionar ampliamente el ideal popperiano de simple demarcación, y a enfatizar el carácter humano, la calidad de [[subjetividad]] de los cambios científicos. El [[Filosofía de la Ciencia|filósofo de la ciencia]] [[Paul Feyerabend]] llevó estos argumentos a su límite, argumentando que la ciencia no ocupa un lugar especial en términos de su lógica o de su método, de forma que cualquier intento de revestirse de una autoridad especial por parte de los científicos no se sostiene. Esto condujo a un acercamiento particularmente democrático o anarquista a la formación de conocimiento. Argumentó que no se puede encontrar ningún método dentro de la historia de la práctica científica que no haya sido violado en algún momento del avance en el conocimiento científico.
+
+{{cita|Mi intención no es abolir las reglas ni demostrar que no tienen valor alguno. Mi intención es más bien ampliar el inventario de reglas y proponer un uso distinto de las mismas. Es este uso el que caracteriza mi posición y no cualquier contenido determinado de las reglas|Feyerabend, 1975<ref>{{Cita web |url=http://www.eumed.net/cursecon/libreria/rgl-evol/2.4.7.htm |título=El anarquismo metodológico de Feyerabend |fechaacceso=2009 |autor=Roberto Gómez López |idioma=español |fechaarchivo=19 de octubre de 2012 |urlarchivo=https://web.archive.org/web/20121019140933/http://www.eumed.net/cursecon/libreria/rgl-evol/2.4.7.htm |deadurl=yes }}</ref>}}
+
+Tanto [[Imre Lakatos|Lakatos]] como [[Paul Feyerabend|Feyerabend]] sugieren que la ciencia no es una forma autónoma de razonamiento, sino que es inseparable del más amplio ''corpus'' del pensamiento humano y de la búsqueda del conocimiento. Siendo así, las preguntas acerca de la [[verdad]] y la [[falso|falsedad]], y el entendimiento correcto o incorrecto, no son únicamente [[Empirismo|empíricas]]. Muchas preguntas significativas no se pueden concluir empíricamente; no solo en la práctica, sino por [[principio]].
+
+De acuerdo con esta forma de pensar, la dificultad que tienen los [[Teoría de Cuerdas|teóricos de cuerdas]] para aplicar ciencia experimental no cuestionaría su estatus como científicos. Igualmente, en su libro ''Adiós a la Razón'', 1987, Cap. 3-7,<ref>* {{cita libro
+| apellidos = Feyerabend
+| nombre = Paul
+| título = Adiós a la Razón
+| año = 1987
+| editorial = Madrid: Tecnos
+| id = ISBN 978-84-309-1071-7
+}}.</ref> Feyerabend advierte de que tampoco se pueden despreciar como inútiles la [[astrología]] o la [[medicina alternativa]], a los que atribuye un estatus científico.
+
+=== Método Thagard ===
+En los últimos años ha disminuido el interés en el problema de la demarcación. En parte debido a que existe la sospecha de que se trata de un problema inabordable, en tanto que muchos intentos de darle una respuesta definitiva no han llegado a término.
+
+Por ejemplo, muchos ejemplos "obvios" de pseudociencia han mostrado ser falsables, o verificables, o revisables.{{Añadir referencias}} Por tanto muchos de los criterios propuestos para la demarcación no han resultado ser útiles.
+
+[[Paul R. Thagard]] ha propuesto otro conjunto de principios para intentar superar esas dificultades. Según el método de Thagard, una teoría no sería científica si:
+{{cita|
+# Ha evolucionado menos que otras teorías alternativas durante un periodo amplio de tiempo, y se enfrenta a muchos problemas no solucionados; y
+# los promotores de la teoría hacen poco esfuerzo para desarrollar una teoría que supere los problemas a los que se enfrenta, no muestran preocupación para evaluar su teoría enfrentándola a otras alternativas, y son selectivos a la hora de considerar las confirmaciones y la refutaciones.<ref>[http://www.cavehill.uwi.edu/bnccde/PH29A/thagard.html ''Why Astrology Is A Pseudoscience''], [[Paul R. Thagard]], In Philosophy of Science Association 1978 Volume 1, edited by P.D. Asquith and I. Hacking (East Lansing: Philosophy of Science Association, 1978).</ref><ref>[https://web.archive.org/web/20070921045303/http://physics.csufresno.edu/rhall/tamII_intro.html ''Demarcation: Is there a Sharp Line Between Science and Pseudoscience? An Exploration of Sir Karl Popper's Conception of Falsification''], Ray Hall, web version of slides, [http://www.randi.org/joom/content/view/17/29/ The Amaz!ng Meeting II], [[Las Vegas, Nevada|Las Vegas]], January 17, 2004.</ref>
+}}
+
+=== Rechazo del planteamiento del problema de Larry Laudan ===
+[[Larry Laudan]], tras examinar varios intentos históricos de establecer un criterio de demarcación, concluyó que la filosofía había fracasado en su propósito de distinguir ciencia de no-ciencia y ciencia de pseudociencia.
+Ninguno de los planteamientos anteriores sería aceptado como válido por una mayoría de epistemólogos ni, desde su punto de vista, debería ser aceptado por ninguno. 
+Él remarcó que muchas creencias bien fundamentadas eran acientíficas y que por otro lado muchas conjeturas científicas no estaban bien fundamentadas.
+Se encontró además con que los criterios de demarcación fueron históricamente usados como "''machines de guerre''" en polémicas disputas entre "científicos" y "pseudocientíficos".
+Usando ejemplos cotidianos de actividades como el fútbol, la carpintería y de estudios no científicos como la crítica literaria y la filosofía, ilustraba su convicción de que la cuestión de si una creencia está bien fundamentada o no es más un asunto práctico y de si tiene relevancia filosófica que de si es científica o no.
+Abordando así la cuestión, para él el criterio de demarcación entre ciencia y no-ciencia era un pseudoproblema que debería ser reemplazado por un enfoque sobre la distinción entre conocimiento confiable y no confiable, y sin entrar a discutir si el conocimiento es científico o no. 
+Laudan consideraría como palabras huecas "pseudociencia" o "no científico" asociadas a la retórica de políticos y sociólogos.<ref>{{Obra citada |apellido= Laudan |nombre= Larry |enlaceautor= Larry Laudan |apellido-editor1= Cohen |nombre-editor1= R.S. |apellido-editor2= Laudan |nombre-editor2= L. |title= Physics, Philosophy and Psychoanalysis: Essays in Honor of Adolf Grünbaum |serie= Boston Studies in the Philosophy of Science |volumen= 76 |año=1983 | editorial=D. Reidel |lugar=Dordrecht |isbn=90-277-1533-5 |páginas=111–127 |capítulo=[http://books.google.com/books?id=AEvprSJzv2MC&printsec=frontcover&dq=isbn:9027715335&cd=1#v=onepage&q=Demise&f=false The Demise of the Demarcation Problem]}}</ref>
+
+=== Caracterización bungeana ===
+[[Archivo:MarioBungesmall.jpg|thumb|Mario Bunge en 2007.]]
+{{Extracto|Caracterización bungeana de la ciencia|marcador=sí}}
+
+== El problema de la demarcación en la actualidad ==
+{{referencias|t=20100909}}
+=== El criterio ===
+
+Actualmente el criterio de demarcación entre ciencia y no-ciencia varía según el ámbito epistemológico que se considere para el análisis (ciencias naturales, ciencias sociales, matemáticas o lógica).
+
+=== La demarcación en el método científico contemporáneo ===
+
+Los criterios para que un sistema de premisas, métodos y teorías se puedan calificar como ciencia hoy en día varían en sus detalles de aplicación a aplicación y varían significativamente entre las [[Ciencias Naturales]], [[Ciencias Sociales]] y las [[Ciencias formales]]. Los criterios incluyen típicamente (1) la formulación de hipótesis que cumplan el criterio lógico de [[contingencia]], derogación o el [[falsacionismo]] y los criterios íntimamente relacionados de [[Pragmatismo|practicidad]] y [[empirismo]]; (2) unos fundamentos basados en [[prueba científica|evidencias]] [[Empirismo|empíricas]]; y (3) el uso del método científico. Los procedimientos de la ciencia habitualmente incluyen un número de directrices [[heurística]]s, tales como principios de economía conceptual o [[Navaja de Ockham|parsimonia]] bajo la firma de la [[Navaja de Occam]]. Un sistema conceptual que fracase en reunir un número significativo de estos criterios es probable que sea considerado como no científico.
+
+La siguiente es una lista de características adicionales que son altamente deseables en una [[teoría]] científica.
+
+* '''Consistente'''.  No genera contradicciones lógicas obvias y cumple el [[formalismo científico]], siendo consistente con las observaciones.
+* '''Parsimoniosa'''.  Económica en el número de presuposiciones y de entidades hipotéticas.
+* '''Pertinente'''.  Describe y explica fenómenos observados.
+* '''Falsable y testeable'''.  Ver [[Falsacionismo]] y [[Verificacionismo]].
+* '''Reproducible'''.  Hace predicciones que pueden ser comprobadas por cualquier observador, con intentos que se pueden extender indefinidamente en el futuro.
+* '''Corregible y dinámica'''.  Sujeta a modificación a medida que se realizan nuevas observaciones.
+* '''Integradora, robusta, y corregible'''.  Considera las teorías previas como aproximaciones y permite que futuras teorías la integren. ("Robusta", aquí, se refiere a la estabilidad en sentido estadístico, es decir, no muy sensible a ocasionales puntos de datos lejanos.)  Ver [[Principio de correspondencia]].
+* '''Provisional o tentativa'''.  No asevera la absoluta certeza de la teoría.
+
+=== La actual situación de crisis y sus consecuencias ===
+Como se puede notar de la historia del problema de la demarcación, varios filósofos han intentado resolver el problema, llegando a conclusiones extremadamente discordantes.
+La gran dificultad de encontrar un criterio absolutamente inequívoco y aceptado ha abierto la sospecha de que lo que es ciencia asume un valor de contingencia derivado de su dependencia a un determinado marco sociocultural, y de asunciones metafísicas.
+
+== Temas vinculados ==
+En todo estudio y discusión sobre los límites entre el conocimiento científico y no científico, entre ciencia y pseudociencia, y entre ciencia y religión, no pueden pasarse por alto, aparte del debate siempre subyacente (acerca de la [[pseudociencia]]), teorías tan novedosas y sugerentes como el [[holismo]], el [[reduccionismo]] y el [[emergentismo]] (este último, por ejemplo, estudia la relación entre la perspectiva fenomenológica —subjetiva— y la fenoménica —objetiva— de la realidad), e incluso las más exóticas del [[viaje a través del tiempo]] y la [[retrocausalidad]] (la posibilidad de acceder al pasado, modificándolo).
+
+Tampoco debe olvidarse a los muchos filósofos, divulgadores y científicos de renombre que han abordado, desde distintas perspectivas —algunas de estas, al decir de muchos, rayanas en la pseudociencia y la superstición— las grandes cuestiones ontológicas y epistemológicas en debate: [[Carl Gustav Jung]] y [[Wolfgang Ernst Pauli]] (concepto de la [[sincronicidad]]), [[Hugh Everett]] (el [[multiverso]]), [[Frank J. Tipler]] (la idea de un [[Dios]] "informático" contenida en su teoría del [[Punto Omega]]; la [[máquina del tiempo]]), [[Carl Sagan]] (búsqueda de [[vida extraterrestre]]), [[Paul Davies]] ([[astrobiología]], [[máquina del tiempo]]), [[John Cramer]] ([[retrocausalidad]]), [[Kurt Gödel]] ([[Teoremas de la incompletitud de Gödel|teoremas de la incompletitud]], sobre los límites del conocimiento científico; [[viaje en el tiempo]]; demostración lógica de la existencia de [[Dios]]), [[Ludwig Wittgenstein]] ([[filosofía del lenguaje]], límites del conocimiento)... Este último, modelo e inspiración de positivistas en su tiempo, remató su obra capital, ''[[Tractatus logico-philosophicus]]'', con la siguiente frase lapidaria, una y mil veces citada: «De lo que no se puede hablar hay que callar».<ref>''Wovon man nicht sprechen kann, darüber muss man schweigen''. Wittgenstein, L. ''Tractatus Logico-Philosophicus'' Alianza Editorial - Madrid, 1973, 1987, ISBN 84-206-2050-5 p. 183</ref>
+
+== Véase también ==
+{{lista de columnas|3|
+* [[Ciencia y sociedad]]
+* [[Comunidad científica]]
+* [[Cientificismo]]
+* [[Filosofía de la ciencia]]
+* [[Guerras de la ciencia]]
+* [[Historia de la ciencia]]
+* [[Karl Popper]]
+* [[Paul Feyerabend]]
+* [[Sociología de la ciencia]]
+* [[Teoría científica]]
+* [[Thomas Kuhn]]
+* [[Transdisciplinariedad]]
+* [[Escepticismo científico]]
+* [[MC-14|MC-14, método científico en 14 etapas]]
+* [[Anexo:Sesgos cognitivos]]
+}}
+== Notas ==
+<references group="nota"/>
+
+== Referencias ==
+{{listaref|2}}
+
+== Bibliografía ==
+* {{cita libro
+| id = ISBN 978-84-226-5628-9
+| título = [[La lógica de la investigación científica]] 
+| año = 1995
+| autor = [[Karl Popper|Popper, Karl Raimund]]
+| editorial = Círculo de Lectores 
+}}
+
+* {{cita libro
+| id = ISBN 978-84-375-0579-4
+| título = [[La estructura de las revoluciones científicas]] 
+| año = 2005
+| autor = [[Thomas Kuhn|Kuhn, Thomas S.]]
+| editorial = Fondo de Cultura Económica de España
+}}
+
+* {{cita libro
+| id = ISBN 84-309-0887-0
+| título = Tratado contra el método 
+| año = 1975
+| autor = [[Paul Feyerabend|Feyerabend, Paul K.]]
+| editorial = Tecnos
+}}
+
+* {{cita libro
+| id = ISBN 84-309-1071-9
+| título = Adiós a la razón
+| año = 1984
+| autor = [[Paul Feyerabend|Feyerabend, Paul K.]]
+| editorial = Tecnos
+}}
+
+* {{cita libro
+| id = ISBN 84-206-2966-9
+| título = La metodología de los programas de investigación científica
+| año = 2002
+| autor = [[Imre Lakatos|Lakatos, Imre]]
+| editorial = Alianza Editorial
+}}
+
+== Enlaces externos ==
+* [https://www.ucm.es/data/cont/docs/481-2013-10-14-filocien.pdf "La filosofía de la ciencia hoy". Problemas y posiciones]. Andrés Rivadulla]  
+* [https://web.archive.org/web/20080921012912/http://www.pucp.edu.pe/cef/docs/quintanilla.pdf "Conocimiento, demarcación y elección de teorías". Pablo Quintanilla Pérez-Wicht]
+* [https://web.archive.org/web/20160305053455/http://www.eseade.edu.ar/servicios/Libertas/16_7_Zanotti.pdf "La epistemología y sus consecuencias filosófico-políticas". Gabriel J. Zanotti]
+
+{{Control de autoridades}}
+[[Categoría:Problemas filosóficos|Demarcación]]
+[[Categoría:Filosofía de la ciencia]]
+[[Categoría:Sociología]]
+[[Categoría:Dicotomías]]
