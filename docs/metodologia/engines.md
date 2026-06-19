@@ -1,0 +1,99 @@
+# Engines Cohen — boot + forces
+
+Los engines **no son cotas** del tablero (sima/cima). Son **condiciones de forcing** (Cohen):
+extensiones genéricas que inyectan orígenes de mirada y lore sin colapsar el espacio Aleph.
+
+Registry maestro: [`engines/INDICE.md`](../../engines/INDICE.md) · [`engines/manifest.json`](../../engines/manifest.json)
+
+```
+Boot (siempre ON)          Forces (1–2 por sesión)
+main-engine ─────────────► engine-model-A … F
+  estética dummy              viewpoint + lore_hook
+```
+
+## Boot — main-engine (siempre activo)
+
+**Rol:** motor estético dummy. Reconfigura la **percepción** («mirar sin prisa por usar»), no viewpoint político.
+
+| Campo | Valor |
+|-------|-------|
+| ID | `main-engine` |
+| Ancla | `sesion-01-boot-estetico-operativo/01-aspirate-a-esteta` |
+| Archivo | [`engines/main-engine/.../01-aspirate-a-esteta/output.md`](../../engines/main-engine/sesion-01-boot-estetico-operativo/01-aspirate-a-esteta/output.md) |
+
+**Reglas:**
+
+- Leer **1 escena ancla** al boot (~500 tokens). No saltar en Modo Aleph.
+- **No cuenta** contra el límite de 2 forces.
+- DevOps/blockchain en `agent-logs-2` (`03-consenso-hibrido-blockchain`) = **marco ficcional** del engine, no canon técnico del repo.
+
+## Forces — selección (máx. 2 por sesión)
+
+Elegir **1–2** force engines según:
+
+1. **Semilla** del usuario (triggers en `engine.json`)
+2. **Elección explícita** del usuario
+3. **Pairs_with** documentados (p. ej. A+E para diamat vs NRx)
+
+| ID | Cohen type | Ancla | Triggers (muestra) |
+|----|------------|-------|-------------------|
+| `engine-model-A` | dialectic_poles_ab | `sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab` | internacional, lenin, marx, polo A/B |
+| `engine-model-B` | disobedience | `sesion-01-omega-manhattan/04-omega-manhattan` | satyagraha, duran, omega, manhattan |
+| `engine-model-C` | political_economy | `sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana` | piramide, riqueza, espana, protocolo |
+| `engine-model-D` | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | conversion, apostasia, credo |
+| `engine-model-E` | impotent_document | `sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx` | carta, derechos, nrx, dosier |
+| `engine-model-F` | poetic_existential | `sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro` | pizarnik, jaula, poesia, forcing |
+
+Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad). No el corpus entero.
+
+## Presupuesto de contexto
+
+| Componente | Tokens ~ |
+|------------|----------|
+| Skill + engines.md + cotas | 2–3k |
+| main-engine ancla | 0.5k |
+| sima + cima anclas | 3–6k |
+| 2 forces × 1 escena | 3–6k |
+| hot + posicion + engines-active | 0.5k |
+| **Total overhead** | ~10–16k |
+
+## Persistencia de sesión
+
+Declarar en [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) y reflejar en `hot.md`:
+
+```json
+{
+  "main_engine": { "id": "main-engine", "anchor": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta", "status": "on" },
+  "forces": [],
+  "budget_max_forces": 2,
+  "updated_at": "ISO-8601"
+}
+```
+
+## Pipeline integrado (orden)
+
+1. **Boot** main-engine (ancla estética)
+2. ASENTAMIENTO + perfil
+3. Cotas: ancla sima + ancla cima → `posicion-linea.json`
+4. **Seleccionar 1–2 forces** → actualizar `engines-active.json`
+5. Leer **1 escena ancla** por force activo
+6. Puntero `linea-aleph` si demarcación
+7. Tablero (3 Alephs + forces como fichas superpuestas)
+8. AutoRevisor → salida constelación
+
+Calibración: [`aleph-context/eval/prompts-test/03-forces-cohen.md`](../../aleph-context/eval/prompts-test/03-forces-cohen.md).
+
+## aleph-context — dónde escribe cada agente
+
+El skill define **procedimiento**; el estado del agente vive en [`aleph-context/`](../../aleph-context/README.md):
+
+| Qué | Dónde | Cuándo |
+|-----|-------|--------|
+| Perfil (polo, sesgos, eigenstate) | `profiles/{slug}.json` | Primera activación (paso 2) |
+| Psicoanálisis largo opcional | `profiles/{slug}.md` | Solo si hace falta narrativa §1–6 |
+| Slice inyectable | `hot.md` | Tras cada AutoRevisor |
+| Arco sima ↔ cima | `posicion-linea.json` | Tras calibrar cotas |
+| Boot + forces | `engines-active.json` | Boot y selección Cohen |
+| Delta de sesión | `sessions/{id}/` | Cada turno Aleph |
+
+**No escribir** en `reference/composer-psychoanalysis.md` ni en `templates/` — son lectura y diseño. Semilla Composer: [`profiles/composer.json`](../../aleph-context/profiles/composer.json).

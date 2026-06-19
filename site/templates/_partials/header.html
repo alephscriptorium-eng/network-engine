@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="wrap">
+    {% include "provenance-strip.html" %}
+    <div class="masthead">
+      <p class="dateline">Material transmedia {{ brand.arg.siglas }} · Centro de datos · Edición electrónica</p>
+      <a href="{{ prensa_href }}" class="brand">{{ brand.producto.nombre }}</a>
+      <p class="site-tag">{{ brand.serie.etiqueta }} {{ brand.serie.nombre }} · Tablero Aleph y catálogo corpus</p>
+    </div>
+    <div class="header-rule" aria-hidden="true"></div>
+    <div class="header-toolbar">
+      {% include "nav.html" %}
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Modo claro</button>
+    </div>
+  </div>
+</header>

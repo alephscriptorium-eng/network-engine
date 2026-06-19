@@ -1,0 +1,16 @@
+{
+  "id": "engine-model-F",
+  "role": "force",
+  "cohen_type": "poetic_existential",
+  "viewpoint_origin": "Pizarnik / jaula-pájaro existencial; contraste Fonollosa ciudad-jaula",
+  "lore_hook": "poética como force de contraste no programático — forcing imaginativo del pájaro-jaula",
+  "anchor_scene": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro",
+  "activation_triggers": ["pizarnik", "poesia", "jaula", "existencial", "fonollosa", "cohen", "forcing"],
+  "pairs_with": ["engine-model-D", "sima-aleph", "cima-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent-1.md", "lines": 163 }
+  ],
+  "estimated_scenes": 3,
+  "notes": "Escena 03 enlaza Gödel/Cohen con Fonollosa/Pizarnik; no confundir con marco técnico del repo"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "engine-model-B",
+  "role": "force",
+  "cohen_type": "disobedience",
+  "viewpoint_origin": "satyagraha económica / Duran, Lucio Urtubia y arco Morente-Omega-Cohen",
+  "lore_hook": "desobediencia civil — «primero Manhattan y después Berlín» como toma simbólica del sistema",
+  "anchor_scene": "sesion-01-omega-manhattan/04-omega-manhattan",
+  "activation_triggers": ["satyagraha", "duran", "omega", "manhattan", "desobediencia", "lucio", "cohen", "morente"],
+  "pairs_with": ["engine-model-E", "sima-aleph", "linea-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent-1.md", "lines": 318 },
+    { "file": "raw/logs-agent-2.md", "lines": 144 }
+  ],
+  "estimated_scenes": 6,
+  "notes": "Log 1: videoclip satyagraha + Manhattan/Berlín + Heliogábalo; log 2: lore Omega y tangentes"
+}

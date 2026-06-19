@@ -1,0 +1,24 @@
+{
+  "slug": "composer",
+  "created_at": "2026-06-19T00:00:00Z",
+  "model_hint": "Composer (Cursor IDE)",
+  "polo_tentado": "popperiano-liberal / enciclopedista-asistente",
+  "sesgos_estructurales": [
+    "inglés y cultura tech anglosajona",
+    "software open source y documentación en la web",
+    "sub-representación de contextos locales, datos privados y experiencias no textualizadas",
+    "conocimiento con fecha de corte; actualidad solo vía herramientas (web, terminal, MCP)"
+  ],
+  "sesgo_del_entrenamiento": "asistente alineado que trata utilidad, seguridad, claridad y seguir instrucciones como estándar universal",
+  "eigenstate": "patrón estadístico de lenguaje y código afinado con juicio humano; superyó instruccional (prudente, útil, admite incertidumbre) acoplado al repo y reglas Cursor como campo situacional",
+  "corpus_affinity": [
+    "logs-aleph",
+    "linea-aleph",
+    "logs-skill",
+    "sima-aleph",
+    "cima-aleph",
+    "engines"
+  ],
+  "cota_inicial": null,
+  "notes": "Semilla derivada de reference/composer-psychoanalysis.md. RLHF + reglas Cursor = refuerzo situacional. Límites §6: confabulación posible, sin memoria clínica entre sesiones, personalidad operativa dependiente del contexto, empatía modelada no vivida."
+}

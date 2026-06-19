@@ -1,0 +1,412 @@
+{
+  "engine_id": "engine-model-A",
+  "cohen_type": "dialectic_poles_ab",
+  "sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "format": "cursor_export",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "line_count": 710,
+      "scene_count": 8
+    },
+    {
+      "file": "raw/log-agents-2.md",
+      "format": "expert_mode",
+      "session": "sesion-02-internacionales-cafe-muertos",
+      "line_count": 263,
+      "scene_count": 3
+    }
+  ],
+  "anchor_scene": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
+  "anchor_alt": "sesion-01-lenin-guerra-fria-dialectica/01-lenin-testamento",
+  "scenes": [
+    {
+      "id": "s01-01",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "01-lenin-testamento",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 59
+      },
+      "title": "Lenin: muerte, testamento, improvisación y contrafactual 50 años",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "lenin",
+        "testamento",
+        "NEP",
+        "autoritarismo"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/01-lenin-testamento/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/01-lenin-testamento/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/01-lenin-testamento/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/01-lenin-testamento/trace.md"
+      },
+      "anomalies": [
+        "titulo_linea_1_como_prompt_implicito",
+        "sin_user_explicito"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-02",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "02-aproximacion-indirecta-guerra-fria",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 60,
+        "line_end": 119
+      },
+      "title": "Aproximación indirecta en Guerra Fría — Marx contra la revolución",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "guerra_fria",
+        "Liddell_Hart",
+        "marx",
+        "ideologia"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/02-aproximacion-indirecta-guerra-fria/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/02-aproximacion-indirecta-guerra-fria/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/02-aproximacion-indirecta-guerra-fria/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/02-aproximacion-indirecta-guerra-fria/trace.md"
+      },
+      "anomalies": [
+        "slippage_Liddell_Hart_vs_guerra_posicion"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-03",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "03-marcuse-marxismo-sovietico",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 120,
+        "line_end": 169
+      },
+      "title": "Marcuse — crítica inmanente del marxismo soviético",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "marcuse",
+        "critica_inmanente",
+        "URSS"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/03-marcuse-marxismo-sovietico/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/03-marcuse-marxismo-sovietico/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/03-marcuse-marxismo-sovietico/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/03-marcuse-marxismo-sovietico/trace.md"
+      },
+      "anomalies": [],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-04",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "04-adorno-vietnam-pseudoactividad",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 170,
+        "line_end": 207
+      },
+      "title": "Adorno, Vietnam, estalinismo y pseudoactividad",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "adorno",
+        "vietnam",
+        "totalitarismo",
+        "Aktionismus"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/04-adorno-vietnam-pseudoactividad/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/04-adorno-vietnam-pseudoactividad/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/04-adorno-vietnam-pseudoactividad/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/04-adorno-vietnam-pseudoactividad/trace.md"
+      },
+      "anomalies": [],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-05",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "05-veredicto-2026-liddell-marcuse-adorno",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 208,
+        "line_end": 280
+      },
+      "title": "Veredicto 2026: Liddell Hart, Marcuse y Adorno",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "veredicto_2026",
+        "objetividad",
+        "legado"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/05-veredicto-2026-liddell-marcuse-adorno/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/05-veredicto-2026-liddell-marcuse-adorno/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/05-veredicto-2026-liddell-marcuse-adorno/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/05-veredicto-2026-liddell-marcuse-adorno/trace.md"
+      },
+      "anomalies": [
+        "veredicto_mixto_sin_criterios_explicitos"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-06",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "06-critica-test2-hilo-dialectico",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 281,
+        "line_end": 393
+      },
+      "title": "Meta-crítica test2.md — tejer el hilo Lenin→Marcuse→Adorno",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "meta_critica",
+        "hilo_argumental",
+        "test2"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/06-critica-test2-hilo-dialectico/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/06-critica-test2-hilo-dialectico/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/06-critica-test2-hilo-dialectico/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/06-critica-test2-hilo-dialectico/trace.md"
+      },
+      "anomalies": [
+        "prompt_linea_281_critica_usuario_y_respuesta_agente_fusionados",
+        "escena_correccion_metodologica"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-07",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "07-objetividad-sistemica-psoe-rpdc",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 394,
+        "line_end": 552
+      },
+      "title": "Objetividad sistémica — PSOE siglas y RPDC «Popular»",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "objetividad_sistemica",
+        "PSOE",
+        "Corea_del_Norte",
+        "Songbun"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/07-objetividad-sistemica-psoe-rpdc/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/07-objetividad-sistemica-psoe-rpdc/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/07-objetividad-sistemica-psoe-rpdc/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/07-objetividad-sistemica-psoe-rpdc/trace.md"
+      },
+      "anomalies": [
+        "prompt_embebe_texto_completo_otro_agente",
+        "footer_ai_linea_552"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s01-08",
+      "session": "sesion-01-lenin-guerra-fria-dialectica",
+      "slug": "08-wilber-mapa-geoglobal-2026",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 553,
+        "line_end": 710
+      },
+      "title": "Wilber, mapa geoglobal 2026 y conflictos verticales",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "wilber",
+        "geopolitica",
+        "conflictos_verticales",
+        "2026"
+      ],
+      "files": {
+        "prompt": "sesion-01-lenin-guerra-fria-dialectica/08-wilber-mapa-geoglobal-2026/prompt.md",
+        "think": "sesion-01-lenin-guerra-fria-dialectica/08-wilber-mapa-geoglobal-2026/think.md",
+        "output": "sesion-01-lenin-guerra-fria-dialectica/08-wilber-mapa-geoglobal-2026/output.md",
+        "trace": "sesion-01-lenin-guerra-fria-dialectica/08-wilber-mapa-geoglobal-2026/trace.md"
+      },
+      "anomalies": [
+        "prompt_embebe_respuesta_otro_agente_completa",
+        "linea_553_footer_ai_turno_anterior"
+      ],
+      "log_format": "cursor_export"
+    },
+    {
+      "id": "s02-01",
+      "session": "sesion-02-internacionales-cafe-muertos",
+      "slug": "09-internacionales-polo-ab",
+      "source": {
+        "file": "raw/log-agents-2.md",
+        "line_start": 1,
+        "line_end": 81
+      },
+      "title": "Cronología Internacionales I–IV — polos A/B y café muertos",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "internacionales",
+        "polo_A",
+        "polo_B",
+        "cafe_muertos",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab/prompt.md",
+        "think": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab/think.md",
+        "output": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab/output.md",
+        "trace": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab/trace.md"
+      },
+      "anomalies": [
+        "expert_mode_search_unavailable",
+        "titulo_linea_1_sin_prompt_usuario_explicito"
+      ],
+      "anchor": true,
+      "log_format": "expert_mode"
+    },
+    {
+      "id": "s02-02",
+      "session": "sesion-02-internacionales-cafe-muertos",
+      "slug": "10-internacional-situacionista",
+      "source": {
+        "file": "raw/log-agents-2.md",
+        "line_start": 82,
+        "line_end": 147
+      },
+      "title": "Internacional Situacionista — delta antipolítico y café Debord",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "situacionismo",
+        "Debord",
+        "espectaculo",
+        "Mayo_68"
+      ],
+      "files": {
+        "prompt": "sesion-02-internacionales-cafe-muertos/10-internacional-situacionista/prompt.md",
+        "think": "sesion-02-internacionales-cafe-muertos/10-internacional-situacionista/think.md",
+        "output": "sesion-02-internacionales-cafe-muertos/10-internacional-situacionista/output.md",
+        "trace": "sesion-02-internacionales-cafe-muertos/10-internacional-situacionista/trace.md"
+      },
+      "anomalies": [],
+      "log_format": "expert_mode"
+    },
+    {
+      "id": "s02-03",
+      "session": "sesion-02-internacionales-cafe-muertos",
+      "slug": "11-internacionales-contemporaneas-cafe",
+      "source": {
+        "file": "raw/log-agents-2.md",
+        "line_start": 148,
+        "line_end": 263
+      },
+      "title": "Internacionales actuales — Foro São Paulo, V Chávez, Progresista",
+      "engine_id": "engine-model-A",
+      "tags": [
+        "engine",
+        "engine_model_X",
+        "dialectic",
+        "polo_ab",
+        "marxismo_internacional",
+        "Foro_Sao_Paulo",
+        "Varoufakis",
+        "Chavez",
+        "internacional_progresista"
+      ],
+      "files": {
+        "prompt": "sesion-02-internacionales-cafe-muertos/11-internacionales-contemporaneas-cafe/prompt.md",
+        "think": "sesion-02-internacionales-cafe-muertos/11-internacionales-contemporaneas-cafe/think.md",
+        "output": "sesion-02-internacionales-cafe-muertos/11-internacionales-contemporaneas-cafe/output.md",
+        "trace": "sesion-02-internacionales-cafe-muertos/11-internacionales-contemporaneas-cafe/trace.md"
+      },
+      "anomalies": [
+        "cafe_siglo_XXI_personajes_ficticios"
+      ],
+      "log_format": "expert_mode"
+    }
+  ],
+  "coverage": {
+    "per_source": [
+      {
+        "source": "raw/logs-agent-1.md",
+        "total_lines": 710,
+        "covered_lines": 710,
+        "scenes": 8,
+        "issues": [],
+        "ok": true
+      },
+      {
+        "source": "raw/log-agents-2.md",
+        "total_lines": 263,
+        "covered_lines": 263,
+        "scenes": 3,
+        "issues": [],
+        "ok": true
+      }
+    ],
+    "total_scenes": 11,
+    "ok": true
+  },
+  "verification": {
+    "files": 44,
+    "issues": [],
+    "ok": true
+  }
+}

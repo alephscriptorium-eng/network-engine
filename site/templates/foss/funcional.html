@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Funcional — {{ brand }}{% endblock %}
+{% block content %}
+<h1>Descripción funcional</h1>
+<h2>Ciclo operativo</h2>
+<ol>
+  <li><strong>Equipar</strong> — <code>nengine loadout apply default-tablero --semilla "tema"</code></li>
+  <li><strong>ASENTAMIENTO</strong> — polo tentado, sesgos, cotas preliminares</li>
+  <li><strong>Calibrar cotas</strong> — sima ↔ cima → <code>aleph-context/posicion-linea.json</code></li>
+  <li><strong>Activar forces</strong> — leer escenas ancla (1 por force)</li>
+  <li><strong>AutoRevisor</strong> — checklist A–H antes de cerrar</li>
+  <li><strong>Tablero</strong> — constelación; salida ∅</li>
+</ol>
+<h2>Metodología</h2>
+<p>Skill operativa: <a href="{{ github_blob('agents/skills/modo-aleph/SKILL.md') }}" class="ext">modo-aleph/SKILL.md</a>. Copia documentada en <code>docs/metodologia/</code>.</p>
+<h2>Validación</h2>
+<pre>nengine loadout validate default-tablero
+nengine catalog sync</pre>
+{% endblock %}

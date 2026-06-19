@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{# ctx: catalog, engines, corpus, github_blob #}
+{% block title %}Catálogo — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>Catálogo prensa</h1>
+<p class="lead">Índice maestro del tablero Aleph: equipamiento, engines Cohen, corpus indexados y reglas del juego. Contenido largo vía enlaces <code>blob/main</code> al repositorio.</p>
+<ul class="doc-list">
+  <li><a href="equipamiento/index.html"><strong>Equipamiento</strong></a> — traje rude-bot: antes / loadout / después</li>
+  <li><a href="engines/index.html"><strong>Engines</strong></a> — {{ catalog.engines|length }} forces Cohen + main-engine</li>
+  <li><a href="corpus/index.html"><strong>Corpus</strong></a> — {{ catalog.corpus|length }} cuerpos indexados in situ</li>
+  <li><a href="tablero/index.html"><strong>Tablero</strong></a> — reglas del juego y piezas</li>
+</ul>
+{% endblock %}

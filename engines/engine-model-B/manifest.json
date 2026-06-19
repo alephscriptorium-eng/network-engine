@@ -1,0 +1,232 @@
+{
+  "engine": "engine-model-B",
+  "cohen_type": "disobedience",
+  "description": "Force desobediencia — satyagraha Duran, Omega Morente/Cohen, Manhattan-Berlín",
+  "anchor_scene": "sesion-01-omega-manhattan/04-omega-manhattan",
+  "sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "lines": 318
+    },
+    {
+      "file": "raw/logs-agent-2.md",
+      "lines": 144
+    }
+  ],
+  "session": "sesion-01-omega-manhattan",
+  "scenes": [
+    {
+      "id": "b01-01",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "01-pieza-1-desierto-satyagraha",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 70
+      },
+      "title": "Pieza 1 rediseñada — desierto, rueca y flor de azafrán",
+      "engine": "engine-model-B",
+      "rol": "apertura",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "Duran",
+        "videoclip",
+        "politicas"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/01-pieza-1-desierto-satyagraha/prompt.md",
+        "think": "sesion-01-omega-manhattan/01-pieza-1-desierto-satyagraha/think.md",
+        "output": "sesion-01-omega-manhattan/01-pieza-1-desierto-satyagraha/output.md",
+        "trace": "sesion-01-omega-manhattan/01-pieza-1-desierto-satyagraha/trace.md"
+      },
+      "anomalies": [
+        "prompt_embebido_en_think_linea_3"
+      ]
+    },
+    {
+      "id": "b01-02",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "02-manhattan-berlin-satyagraha",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 71,
+        "line_end": 128
+      },
+      "title": "Manhattan y Berlín — eje financiero y contracultura",
+      "engine": "engine-model-B",
+      "rol": "simbolismo",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "Cohen",
+        "Lucio-Urtubia",
+        "Faircoin"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/02-manhattan-berlin-satyagraha/prompt.md",
+        "think": "sesion-01-omega-manhattan/02-manhattan-berlin-satyagraha/think.md",
+        "output": "sesion-01-omega-manhattan/02-manhattan-berlin-satyagraha/output.md",
+        "trace": "sesion-01-omega-manhattan/02-manhattan-berlin-satyagraha/trace.md"
+      },
+      "anomalies": [
+        "expert_mode_search_unavailable"
+      ]
+    },
+    {
+      "id": "b01-03",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "03-heliogabalo-triptico-mujeres",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 129,
+        "line_end": 318
+      },
+      "title": "Heliogábalo-Gandhi — Catalina de Erauso y Baronesa Elsa",
+      "engine": "engine-model-B",
+      "rol": "reescritura",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "Heliogabalo",
+        "genero",
+        "desobediencia-barroca"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/03-heliogabalo-triptico-mujeres/prompt.md",
+        "think": "sesion-01-omega-manhattan/03-heliogabalo-triptico-mujeres/think.md",
+        "output": "sesion-01-omega-manhattan/03-heliogabalo-triptico-mujeres/output.md",
+        "trace": "sesion-01-omega-manhattan/03-heliogabalo-triptico-mujeres/trace.md"
+      },
+      "anomalies": [
+        "think_largo_144_lineas"
+      ]
+    },
+    {
+      "id": "b01-04",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "04-omega-manhattan",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 1,
+        "line_end": 38
+      },
+      "title": "Omega «primero Manhattan y después Berlín» — ancla Morente/Cohen",
+      "engine": "engine-model-B",
+      "rol": "ancla",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "Morente",
+        "Lagartija-Nick",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/04-omega-manhattan/prompt.md",
+        "think": "sesion-01-omega-manhattan/04-omega-manhattan/think.md",
+        "output": "sesion-01-omega-manhattan/04-omega-manhattan/output.md",
+        "trace": "sesion-01-omega-manhattan/04-omega-manhattan/trace.md"
+      },
+      "anomalies": [
+        "titulo_como_prompt_linea_1"
+      ],
+      "anchor": true
+    },
+    {
+      "id": "b01-05",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "05-omega-lore-terrorista-poetico",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 39,
+        "line_end": 97
+      },
+      "title": "Lore real Omega — canción terrorista, Lorca y documental",
+      "engine": "engine-model-B",
+      "rol": "profundizacion",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "Lorca",
+        "terrorismo-poetico",
+        "documental"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/05-omega-lore-terrorista-poetico/prompt.md",
+        "think": "sesion-01-omega-manhattan/05-omega-lore-terrorista-poetico/think.md",
+        "output": "sesion-01-omega-manhattan/05-omega-lore-terrorista-poetico/output.md",
+        "trace": "sesion-01-omega-manhattan/05-omega-lore-terrorista-poetico/trace.md"
+      },
+      "anomalies": [
+        "enumeracion_descafeinada_rechazada"
+      ]
+    },
+    {
+      "id": "b01-06",
+      "session": "sesion-01-omega-manhattan",
+      "slug": "06-tangentes-cypherpunk-sputnik",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 98,
+        "line_end": 144
+      },
+      "title": "Tangentes — cypherpunk vs cyberpunk y Sputnik 1",
+      "engine": "engine-model-B",
+      "rol": "tangente",
+      "tags": [
+        "force:B",
+        "cohen:disobedience",
+        "satyagraha",
+        "omega-manhattan",
+        "cypherpunk",
+        "Sputnik",
+        "tangente"
+      ],
+      "files": {
+        "prompt": "sesion-01-omega-manhattan/06-tangentes-cypherpunk-sputnik/prompt.md",
+        "think": "sesion-01-omega-manhattan/06-tangentes-cypherpunk-sputnik/think.md",
+        "output": "sesion-01-omega-manhattan/06-tangentes-cypherpunk-sputnik/output.md",
+        "trace": "sesion-01-omega-manhattan/06-tangentes-cypherpunk-sputnik/trace.md"
+      },
+      "anomalies": [
+        "dos_turnos_en_una_escena"
+      ]
+    }
+  ],
+  "coverage": {
+    "files": {
+      "raw/logs-agent-1.md": {
+        "total_lines": 318,
+        "covered_lines": 318,
+        "scenes": 3,
+        "issues": [],
+        "ok": true
+      },
+      "raw/logs-agent-2.md": {
+        "total_lines": 144,
+        "covered_lines": 144,
+        "scenes": 3,
+        "issues": [],
+        "ok": true
+      }
+    },
+    "scenes": 6,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 24,
+    "issues": [],
+    "ok": true
+  }
+}

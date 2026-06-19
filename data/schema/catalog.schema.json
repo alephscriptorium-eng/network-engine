@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alephscriptorium-eng.github.io/network-engine/schema/catalog.json",
+  "title": "Catálogo network-engine",
+  "description": "Índice generado por nengine catalog sync. Fuente: data/catalog.json. Patrón análogo a MEDIDOR catalog.schema.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "engines", "corpus", "sessions"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Versión del catálogo (semver o etiqueta de sync)"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de última sincronización"
+    },
+    "github_repo": {
+      "type": "string",
+      "description": "Repositorio GitHub para enlaces blob/main (p. ej. alephscriptorium-eng/network-engine)"
+    },
+    "engines": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/engine_entry" },
+      "description": "8 engines Cohen indexados in situ bajo engines/"
+    },
+    "corpus": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/corpus_entry" },
+      "description": "5 corpus Aleph indexados in situ (manifest + INDICE)"
+    },
+    "sessions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/session_entry" },
+      "description": "Sesiones publicadas bajo data/sessions/"
+    }
+  },
+  "$defs": {
+    "engine_entry": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id", "path", "github"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(main-engine|engine-model-[A-F])$"
+        },
+        "path": {
+          "type": "string",
+          "description": "Ruta relativa desde raíz del repo (p. ej. engines/engine-model-A)"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["boot", "force"]
+        },
+        "cohen_type": { "type": "string" },
+        "anchor_scene": { "type": ["string", "null"] },
+        "scene_count": { "type": "integer", "minimum": 0 },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "indexing", "indexed"]
+        },
+        "github": {
+          "type": "string",
+          "format": "uri",
+          "description": "Enlace blob/main a engine.json o escena ancla"
+        },
+        "url_prensa": {
+          "type": "string",
+          "description": "Ruta relativa en GitHub Pages (p. ej. /prensa/engines/engine-model-A.html)"
+        }
+      }
+    },
+    "corpus_entry": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id", "path", "github"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "logs-aleph",
+            "linea-aleph",
+            "logs-skill",
+            "sima-aleph",
+            "cima-aleph"
+          ]
+        },
+        "path": {
+          "type": "string",
+          "description": "Ruta relativa desde raíz del repo (corpus permanece in situ)"
+        },
+        "scene_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Escenas indexadas (manifest)"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Registros WP en linea-aleph; no renderizar todos en prensa"
+        },
+        "milestone_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Hitos publicables en linea-aleph"
+        },
+        "manifest_path": { "type": "string" },
+        "indice_path": { "type": "string" },
+        "github": {
+          "type": "string",
+          "format": "uri",
+          "description": "Enlace blob/main a manifest.json o INDICE.md"
+        },
+        "url_prensa": {
+          "type": "string",
+          "description": "Ruta relativa en GitHub Pages (p. ej. /prensa/corpus/logs-aleph.html)"
+        }
+      }
+    },
+    "session_entry": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id", "path"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Identificador de sesión (coincide con carpeta en data/sessions/)"
+        },
+        "path": {
+          "type": "string",
+          "description": "Ruta relativa a data/sessions/{id}/"
+        },
+        "title": { "type": "string" },
+        "semilla": { "type": "string" },
+        "posicion_linea": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "committed", "published"]
+        },
+        "github": {
+          "type": "string",
+          "format": "uri"
+        },
+        "url_prensa": {
+          "type": "string",
+          "description": "Ruta relativa en GitHub Pages (p. ej. /prensa/sesiones/{id}.html)"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "version": "1.0.0",
+      "updated": "2026-06-19",
+      "github_repo": "alephscriptorium-eng/network-engine",
+      "engines": [
+        {
+          "id": "engine-model-A",
+          "path": "engines/engine-model-A",
+          "role": "force",
+          "status": "indexed",
+          "scene_count": 12,
+          "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-A/engine.json"
+        }
+      ],
+      "corpus": [
+        {
+          "id": "logs-aleph",
+          "path": "logs-aleph",
+          "scene_count": 12,
+          "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-aleph/manifest.json"
+        }
+      ],
+      "sessions": []
+    }
+  ]
+}

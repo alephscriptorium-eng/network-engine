@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Datos publicados — {{ brand }}{% endblock %}
+{% block content %}
+<h1>Datos publicados</h1>
+<p class="lead">Índices generados y enlaces blob/main al corpus in situ.</p>
+<h2>Catálogo</h2>
+<p><code>data/catalog.json</code> — {{ catalog.engines|length }} engines, {{ catalog.corpus|length }} corpus, {{ catalog.sessions|length }} sesiones.</p>
+<pre>nengine catalog sync</pre>
+<h2>Corpus (in situ)</h2>
+<ul>
+{% for c in catalog.corpus %}
+  <li><strong>{{ c.id }}</strong> — {{ c.scene_count }} escenas
+    <a href="{{ c.github }}" class="ext" rel="noopener">manifest</a>
+  </li>
+{% endfor %}
+</ul>
+<h2>Sesiones prensa</h2>
+<p>Depositar en <code>data/sessions/{id}/</code> y rebuild prensa. Protocolo: <code>docs/prompts/publicar_sesion_prensa.prompt.md</code>.</p>
+{% endblock %}

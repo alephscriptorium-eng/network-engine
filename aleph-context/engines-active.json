@@ -1,0 +1,12 @@
+{
+  "main_engine": {
+    "id": "main-engine",
+    "role": "boot",
+    "anchor": "engines/main-engine/sesion-01-boot-estetico-operativo/01-aspirate-a-esteta",
+    "status": "on"
+  },
+  "forces": [],
+  "budget_max_forces": 2,
+  "selection_rationale": null,
+  "updated_at": null
+}

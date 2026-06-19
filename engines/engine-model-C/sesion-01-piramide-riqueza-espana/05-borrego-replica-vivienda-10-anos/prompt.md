@@ -1,0 +1,11 @@
+---
+scene_id: c01-05
+session: sesion-01-piramide-riqueza-espana
+engine: engine-model-C
+source_file: raw/logs-agent-1.md
+source_lines: [515, 628]
+layer: prompt
+tags: [force:C, cohen:political_economy, Espana, economia_politica, Borrego, vivienda, hipoteca, corralito]
+rol: debate
+---
+Mira su respuesta: [15/6 11:11] Borrego: Muchos temas... que dan para un buen ratito. Mientras, yo aquí intentando producir un poco para pagar todos esos bienes de producción privada y servicios públicos que tanto me gustan 😃. Quizá vuelve a ser la competitividad entre ambos sistemas la respuesta: URSS compitiendo con USA durante décadas de guerra fría y las dos potencias mejorando en ciencia, innovación... cada una con su modelo, pero 'picados' por el compañero que entrena con ellos en el gim. Tu último párrafo te lo compro entero, enterito. Ahora viene una normativa nueva (otra más, a ver si funciona) justo para evitar el Green Washing (que lo vean funcionar estos ojitos). [15/6 11:13] Borrego: Respecto a la recaudación... lo dicho, da para un buen debate. No solo por el crecimiento desbocado, sino porque no puedes recaudar igual si la renta no es igual... y la de un español medio es muy pequeñita, para pagar bienes y servicios cada vez más caros y viviendas imposibles. La de un Suizo es mayor, le queda más pastel tras quitarle un % algo más alto. [15/6 11:16] Borrego: Dicho esto, nuestro mayor problema es claramente la vivienda. Yo hace años que digo que tengo la solución, pero nadie me acompaña: prohibir las hipotecas a más allá de 10 años. A corto plazo, se cala el mercado. A medio plazo se regula. Todo el mundo quiere atacar el problema por el lado de la oferta y yo creo que es más rápido y efectivo hacerlo por la parte de la demanda. No hablo de menos operaciones (las adecuadas, con la formación de familias que hay actualmente y tal). Hablo de que si nadie en España pudiera endeudarse a 30 años el precio de un activo fijo tan inmóvil caería en picado. Alguien dirá: los comprarán los fondos, los que tienen dinero, los especuladores... ¿Seguro? ¿Para vender en un no-mercado? En Argentina ya pasó, tengo amigos que vivieron el corralito (trabajaron en España y su hijo iba a clase con Noa) y allí al desaparecer la financiación bancaria se compravendían los inmuebles con lo que se pudiera pagar en efectivo.

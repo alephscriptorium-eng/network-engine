@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funcional — Network Engine</title>
+  <script>
+    (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">Network Engine</a>
+      <p class="tag">Artefacto · v0.1.0</p>
+      <nav aria-label="Documentación FOSS">
+        <a href="index.html">Índice</a>
+        <a href="tecnico.html">Técnico</a>
+        <a href="funcional.html">Funcional</a>
+        <a href="datos-publicados.html">Datos publicados</a>
+        <a href="devops.html">DevOps</a>
+        <a href="LICENSE.html">Licencia</a>
+        <hr>
+        <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+      </div>
+    </aside>
+    <main>
+      
+<h1>Descripción funcional</h1>
+<h2>Ciclo operativo</h2>
+<ol>
+  <li><strong>Equipar</strong> — <code>nengine loadout apply default-tablero --semilla "tema"</code></li>
+  <li><strong>ASENTAMIENTO</strong> — polo tentado, sesgos, cotas preliminares</li>
+  <li><strong>Calibrar cotas</strong> — sima ↔ cima → <code>aleph-context/posicion-linea.json</code></li>
+  <li><strong>Activar forces</strong> — leer escenas ancla (1 por force)</li>
+  <li><strong>AutoRevisor</strong> — checklist A–H antes de cerrar</li>
+  <li><strong>Tablero</strong> — constelación; salida ∅</li>
+</ol>
+<h2>Metodología</h2>
+<p>Skill operativa: <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/agents/skills/modo-aleph/SKILL.md" class="ext">modo-aleph/SKILL.md</a>. Copia documentada en <code>docs/metodologia/</code>.</p>
+<h2>Validación</h2>
+<pre>nengine loadout validate default-tablero
+nengine catalog sync</pre>
+
+    </main>
+  </div>
+  <script src="assets/theme.js"></script>
+</body>
+</html>

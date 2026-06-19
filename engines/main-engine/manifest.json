@@ -1,0 +1,139 @@
+{
+  "engine_id": "main-engine",
+  "role": "boot",
+  "log_format": "plain_dialog",
+  "sources": [
+    {
+      "file": "raw/agent-logs-1.md",
+      "lines": 60
+    },
+    {
+      "file": "raw/agent-logs-2.md",
+      "lines": 214
+    }
+  ],
+  "session": "sesion-01-boot-estetico-operativo",
+  "scenes": [
+    {
+      "id": "s01-01",
+      "session": "sesion-01-boot-estetico-operativo",
+      "slug": "01-aspirate-a-esteta",
+      "source": {
+        "file": "raw/agent-logs-1.md",
+        "line_start": 1,
+        "line_end": 33
+      },
+      "title": "Aspírate a esteta — mantra hacklab (escena ancla boot)",
+      "engine_id": "main-engine",
+      "tags": [
+        "engine",
+        "main_engine",
+        "boot",
+        "esteta",
+        "cohen_force",
+        "ancla",
+        "hacklab",
+        "percepcion",
+        "mantra"
+      ],
+      "files": {
+        "prompt": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta/prompt.md",
+        "think": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta/think.md",
+        "output": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta/output.md",
+        "trace": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta/trace.md"
+      },
+      "anomalies": [
+        "sin_think_explicito_dialogo_plano"
+      ],
+      "anchor": true
+    },
+    {
+      "id": "s01-02",
+      "session": "sesion-01-boot-estetico-operativo",
+      "slug": "02-aspirate-esencia",
+      "source": {
+        "file": "raw/agent-logs-1.md",
+        "line_start": 34,
+        "line_end": 60
+      },
+      "title": "Aspírate a esteta — esencia sin lore hacklab",
+      "engine_id": "main-engine",
+      "tags": [
+        "engine",
+        "main_engine",
+        "boot",
+        "esteta",
+        "cohen_force",
+        "percepcion",
+        "mirada",
+        "anti-funcional"
+      ],
+      "files": {
+        "prompt": "sesion-01-boot-estetico-operativo/02-aspirate-esencia/prompt.md",
+        "think": "sesion-01-boot-estetico-operativo/02-aspirate-esencia/think.md",
+        "output": "sesion-01-boot-estetico-operativo/02-aspirate-esencia/output.md",
+        "trace": "sesion-01-boot-estetico-operativo/02-aspirate-esencia/trace.md"
+      },
+      "anomalies": [
+        "correccion_usuario_quita_lore_hacklab"
+      ]
+    },
+    {
+      "id": "s02-01",
+      "session": "sesion-01-boot-estetico-operativo",
+      "slug": "03-consenso-hibrido-blockchain",
+      "source": {
+        "file": "raw/agent-logs-2.md",
+        "line_start": 1,
+        "line_end": 214
+      },
+      "title": "Consenso híbrido PoW/PoS/PoT — marco ficcional DevOps",
+      "engine_id": "main-engine",
+      "tags": [
+        "engine",
+        "main_engine",
+        "boot",
+        "esteta",
+        "cohen_force",
+        "blockchain",
+        "devops",
+        "ficcion_operativa",
+        "consenso"
+      ],
+      "files": {
+        "prompt": "sesion-01-boot-estetico-operativo/03-consenso-hibrido-blockchain/prompt.md",
+        "think": "sesion-01-boot-estetico-operativo/03-consenso-hibrido-blockchain/think.md",
+        "output": "sesion-01-boot-estetico-operativo/03-consenso-hibrido-blockchain/output.md",
+        "trace": "sesion-01-boot-estetico-operativo/03-consenso-hibrido-blockchain/trace.md"
+      },
+      "anomalies": [
+        "marco_ficcional_no_canon_tecnico",
+        "titulo_linea_1_incluido_en_prompt"
+      ]
+    }
+  ],
+  "coverage": {
+    "sources": {
+      "raw/agent-logs-1.md": {
+        "total_lines": 60,
+        "covered_lines": 60,
+        "scenes": 2,
+        "ok": true
+      },
+      "raw/agent-logs-2.md": {
+        "total_lines": 214,
+        "covered_lines": 214,
+        "scenes": 1,
+        "ok": true
+      }
+    },
+    "total_lines": 274,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 12,
+    "issues": [],
+    "ok": true
+  }
+}

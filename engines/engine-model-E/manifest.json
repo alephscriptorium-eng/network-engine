@@ -1,0 +1,244 @@
+{
+  "corpus": "engine-model-E",
+  "role": "force",
+  "cohen_type": "impotent_document_anti_nrx",
+  "description": "Documento impotente UDHR/NRx + dosier épica del poder",
+  "session": "sesion-01-documento-impotente-epica-poder",
+  "anchor_scene": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
+  "sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "lines": 160
+    },
+    {
+      "file": "raw/logs-agent-2.md",
+      "lines": 269
+    }
+  ],
+  "scenes": [
+    {
+      "id": "e01-01",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "01-marco-documento-impotente",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 27
+      },
+      "title": "Marco «documento impotente» y principios sin coerción",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "documento-impotente",
+        "principios",
+        "delta"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/01-marco-documento-impotente/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/01-marco-documento-impotente/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/01-marco-documento-impotente/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/01-marco-documento-impotente/trace.md"
+      },
+      "anomalies": [
+        "titulo_linea_1_como_contexto_sin_prompt_explicito"
+      ]
+    },
+    {
+      "id": "e01-02",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "02-carta-derechos-nrx",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 28,
+        "line_end": 146
+      },
+      "title": "Carta de derechos humanos vs Ilustración Oscura (NRx) — delta homólogo",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "carta-derechos",
+        "Dark-Enlightenment",
+        "Land",
+        "Thiel",
+        "delta",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx/trace.md"
+      },
+      "anomalies": [
+        "trace_expert_mode_linea_30",
+        "escena_ancla_primaria"
+      ],
+      "anchor": true
+    },
+    {
+      "id": "e01-03",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "03-share-delta-anuncio",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 147,
+        "line_end": 160
+      },
+      "title": "Anuncio breve para compartir el delta (≤140 caracteres)",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "share",
+        "meta",
+        "delta"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/03-share-delta-anuncio/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/03-share-delta-anuncio/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/03-share-delta-anuncio/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/03-share-delta-anuncio/trace.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "e02-01",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "04-dosier-epica-poder",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 1,
+        "line_end": 90
+      },
+      "title": "Dosier cultural: cracker vs hacker, épica del poder y sombras",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "dosier",
+        "cracker-hacker",
+        "epica-poder",
+        "Unamuno"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/04-dosier-epica-poder/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/04-dosier-epica-poder/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/04-dosier-epica-poder/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/04-dosier-epica-poder/trace.md"
+      },
+      "anomalies": [
+        "footer_ai_linea_89",
+        "sin_think_explicito"
+      ],
+      "anchor_alt": true
+    },
+    {
+      "id": "e02-02",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "05-rectificacion-no-me-pises",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 91,
+        "line_end": 160
+      },
+      "title": "Rectificación: don't tread on me → «no me pises» (no «trampas»)",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "rectificacion",
+        "Gadsden",
+        "delta",
+        "hermeneutica"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/05-rectificacion-no-me-pises/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/05-rectificacion-no-me-pises/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/05-rectificacion-no-me-pises/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/05-rectificacion-no-me-pises/trace.md"
+      },
+      "anomalies": [
+        "footer_ai_linea_159"
+      ]
+    },
+    {
+      "id": "e02-03",
+      "session": "sesion-01-documento-impotente-epica-poder",
+      "slug": "06-rectificacion-cracker-hacker",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 161,
+        "line_end": 269
+      },
+      "title": "Rectificación: cracker/hacker como términos disputados (no binario ético)",
+      "engine": "engine-model-E",
+      "cohen_type": "impotent_document_anti_nrx",
+      "tags": [
+        "engine",
+        "engine_model_e",
+        "force",
+        "impotent_document",
+        "NRx",
+        "rectificacion",
+        "cracker-hacker",
+        "potencia-acto",
+        "delta"
+      ],
+      "files": {
+        "prompt": "sesion-01-documento-impotente-epica-poder/06-rectificacion-cracker-hacker/prompt.md",
+        "think": "sesion-01-documento-impotente-epica-poder/06-rectificacion-cracker-hacker/think.md",
+        "output": "sesion-01-documento-impotente-epica-poder/06-rectificacion-cracker-hacker/output.md",
+        "trace": "sesion-01-documento-impotente-epica-poder/06-rectificacion-cracker-hacker/trace.md"
+      },
+      "anomalies": [
+        "footer_ai_linea_269"
+      ]
+    }
+  ],
+  "coverage": {
+    "sources": {
+      "raw/logs-agent-1.md": {
+        "total_lines": 160,
+        "covered_lines": 160,
+        "scenes": 3,
+        "ok": true
+      },
+      "raw/logs-agent-2.md": {
+        "total_lines": 269,
+        "covered_lines": 269,
+        "scenes": 3,
+        "ok": true
+      }
+    },
+    "total_lines": 429,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 24,
+    "issues": [],
+    "ok": true
+  }
+}

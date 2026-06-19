@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{# ctx: asentamiento, loadout_id, github_blob #}
+{% block title %}Equipamiento — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>Equipamiento — traje rude-bot</h1>
+<p class="lead">Showcase: bot crudo → loadout instantáneo → ASENTAMIENTO. Sin metáfora superhéroe; equipamiento operativo crudo.</p>
+
+<section class="card">
+  <h2>Antes — bot crudo</h2>
+  <p>Referencia: <a href="{{ github_blob('logs-aleph/sesion-01-halley-aleph/02-critica-bot-demo-liberal/output.md') }}" class="ext">logs-aleph s01-02 — crítica bot demo liberal</a></p>
+  <p>Patrón enciclopédico, cierre lineal, sin AutoRevisor.</p>
+</section>
+
+<section class="card">
+  <h2>Equipar — loadout <code>{{ loadout_id }}</code></h2>
+  <div class="loadout-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0">
+    <div class="card"><strong>Skill</strong><br><code>agents/skills/modo-aleph</code></div>
+    <div class="card"><strong>Perfil</strong><br><code>data/profiles/composer.json</code></div>
+    <div class="card"><strong>Forces</strong><br>main-engine + engine-model-A</div>
+  </div>
+  <p><code>nengine loadout apply {{ loadout_id }} --semilla "tema"</code></p>
+  <a href="{{ github_blob('data/loadouts/' + loadout_id + '.json') }}" class="ext">Ver loadout en GitHub</a>
+</section>
+
+<section class="card">
+  <h2>Después — ASENTAMIENTO</h2>
+  <pre class="asentamiento">{{ asentamiento }}</pre>
+  <a href="{{ github_blob('logs-skill/sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md') }}" class="ext">Fuente canon</a>
+</section>
+
+<section class="card">
+  <h2>Features del traje</h2>
+  <ul>
+    <li>Tablero — superposición sin colapsar</li>
+    <li>AutoRevisor — checklist A–H</li>
+    <li>Forces Cohen — ≤2 + main</li>
+    <li>Línea — demarcación histórica (linea-aleph)</li>
+    <li>Cotas sima ↔ cima</li>
+  </ul>
+</section>
+{% endblock %}

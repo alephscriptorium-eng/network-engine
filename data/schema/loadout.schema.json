@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alephscriptorium-eng.github.io/network-engine/schema/loadout.json",
+  "title": "Loadout Modo Aleph",
+  "description": "Equipamiento instantáneo serializado. Una instancia por data/loadouts/{loadout_id}.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "loadout_id",
+    "skill",
+    "profile_ref",
+    "engines_active"
+  ],
+  "properties": {
+    "loadout_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Identificador estable del loadout (coincide con nombre de archivo sin .json)"
+    },
+    "skill": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ruta al skill Modo Aleph (p. ej. agents/skills/modo-aleph)"
+    },
+    "profile_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ruta relativa al perfil operativo (p. ej. data/profiles/composer.json)"
+    },
+    "engines_active": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["main_engine", "forces"],
+      "properties": {
+        "main_engine": {
+          "type": "string",
+          "const": "on",
+          "description": "main-engine siempre activo; no cuenta contra límite de forces"
+        },
+        "forces": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^engine-model-[A-F]$"
+          },
+          "description": "Hasta 2 forces Cohen seleccionables por turno"
+        }
+      }
+    },
+    "posicion_linea": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Posición en arco sima (0) ↔ cima (1); null hasta calibrar"
+    },
+    "anchor_scenes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Rutas relativas a escenas ancla (engines/…, corpus/…)"
+    },
+    "asentamiento_template": {
+      "type": "string",
+      "description": "Plantilla opcional para bloque ASENTAMIENTO_ALEPH"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "loadout_id": "default-tablero",
+      "skill": "agents/skills/modo-aleph",
+      "profile_ref": "data/profiles/composer.json",
+      "engines_active": {
+        "main_engine": "on",
+        "forces": ["engine-model-A"]
+      },
+      "posicion_linea": null,
+      "anchor_scenes": [
+        "engines/main-engine/sesion-01-boot-estetico-operativo/01-aspirate-a-esteta"
+      ]
+    }
+  ]
+}

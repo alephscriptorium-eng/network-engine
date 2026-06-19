@@ -1,0 +1,334 @@
+{
+  "corpus": "sima-aleph",
+  "cota": "sima",
+  "description": "Ruptura, discrepancia, Eigenstate sin colapsar",
+  "source": "raw/log-agent-1.md",
+  "scenes": [
+    {
+      "id": "s01-01",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "01-rallo-vs-capital",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 1,
+        "line_end": 89
+      },
+      "title": "Contraste Rallo / El Capital",
+      "cota": "sima",
+      "rol": "discrepancia",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "Rallo",
+        "Marx",
+        "valor-trabajo",
+        "discrepancia"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/01-rallo-vs-capital/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/01-rallo-vs-capital/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/01-rallo-vs-capital/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/01-rallo-vs-capital/trace.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "s01-02",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "02-tabla-cuatro-columnas",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 90,
+        "line_end": 135
+      },
+      "title": "Tabla Marx / Rallo / Ethereum / LLM",
+      "cota": "sima",
+      "rol": "eigenstate",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "Rallo",
+        "Marx",
+        "Ethereum",
+        "tabla"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/02-tabla-cuatro-columnas/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/02-tabla-cuatro-columnas/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/02-tabla-cuatro-columnas/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/02-tabla-cuatro-columnas/trace.md"
+      },
+      "anomalies": [
+        "ai_generated_footer_en_trace"
+      ]
+    },
+    {
+      "id": "s01-03",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "03-objetividad-llm-columna4",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 136,
+        "line_end": 182
+      },
+      "title": "Diseño posicionamiento LLM (columna 4)",
+      "cota": "sima",
+      "rol": "eigenstate",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "objetividad-sistemica",
+        "LLM",
+        "Ethereum"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/03-objetividad-llm-columna4/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/03-objetividad-llm-columna4/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/03-objetividad-llm-columna4/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "s01-04",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "04-vocabulario-cristiano-parabolas",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 183,
+        "line_end": 280
+      },
+      "title": "Vocabulario cristiano y parábolas cruzadas",
+      "cota": "sima",
+      "rol": "ruptura",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "teologia",
+        "parabolas",
+        "Rallo",
+        "Marx",
+        "Ethereum"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/04-vocabulario-cristiano-parabolas/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/04-vocabulario-cristiano-parabolas/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/04-vocabulario-cristiano-parabolas/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/04-vocabulario-cristiano-parabolas/trace.md"
+      },
+      "anomalies": [
+        "ai_generated_footer_en_trace"
+      ]
+    },
+    {
+      "id": "s01-05",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "05-hiperplaza-ethereum-foos",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 281,
+        "line_end": 494
+      },
+      "title": "Hiperplaza / Ethereum FOSS y espejo eclesial",
+      "cota": "sima",
+      "rol": "ruptura",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "Ethereum",
+        "FOSS",
+        "hiperplaza",
+        "eclesiologia"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/05-hiperplaza-ethereum-foos/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/05-hiperplaza-ethereum-foos/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/05-hiperplaza-ethereum-foos/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/05-hiperplaza-ethereum-foos/trace.md"
+      },
+      "anomalies": [
+        "tres_turnos_fusionados_jacobina_china_hiperplaza",
+        "rechazo_scope_china_linea_388",
+        "ai_generated_footer_en_trace"
+      ]
+    },
+    {
+      "id": "s01-06",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "06-artefacto-hiperipl",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 495,
+        "line_end": 675
+      },
+      "title": "Informe ejecutivo HiperIPL",
+      "cota": "sima",
+      "rol": "discrepancia",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "DAO",
+        "IPL",
+        "hiperplaza"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/06-artefacto-hiperipl/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/06-artefacto-hiperipl/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/06-artefacto-hiperipl/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "s01-07",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "07-addendas-gobernanza",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 676,
+        "line_end": 890
+      },
+      "title": "Ecosistema Web3, addendas y visiones leninistas",
+      "cota": "sima",
+      "rol": "discrepancia",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "gobernanza",
+        "addendas",
+        "Lenin",
+        "Trotsky"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/07-addendas-gobernanza/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/07-addendas-gobernanza/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/07-addendas-gobernanza/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/07-addendas-gobernanza/trace.md"
+      },
+      "anomalies": [
+        "tres_turnos_fusionados_ecosistema_addendas_lenin",
+        "bloque_leninista_sin_escena_dedicada"
+      ]
+    },
+    {
+      "id": "s01-08",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "08-bakunin-proudhon-hiperipl",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 891,
+        "line_end": 997
+      },
+      "title": "Bakunin / Proudhon vs HiperIPL",
+      "cota": "sima",
+      "rol": "ruptura",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "Bakunin",
+        "Proudhon",
+        "anarquismo"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/08-bakunin-proudhon-hiperipl/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/08-bakunin-proudhon-hiperipl/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/08-bakunin-proudhon-hiperipl/output.md",
+        "trace": "sesion-01-ruptura-economia-hiperipl/08-bakunin-proudhon-hiperipl/trace.md"
+      },
+      "anomalies": [
+        "search_unavailable_en_trace"
+      ]
+    },
+    {
+      "id": "s01-09",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "09-gaia-hiperipl",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 998,
+        "line_end": 1069
+      },
+      "title": "Gaia como marco crítico de HiperIPL",
+      "cota": "sima",
+      "rol": "eigenstate",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "Gaia",
+        "objetividad-sistemica",
+        "termo"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/09-gaia-hiperipl/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/09-gaia-hiperipl/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/09-gaia-hiperipl/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "s01-10",
+      "session": "sesion-01-ruptura-economia-hiperipl",
+      "slug": "10-zigurat-centro-vacio",
+      "source": {
+        "file": "raw/log-agent-1.md",
+        "line_start": 1070,
+        "line_end": 1139
+      },
+      "title": "Cuatro arquitecturas de la voz / centro vacío",
+      "cota": "sima",
+      "rol": "eigenstate",
+      "tags": [
+        "cota:sima",
+        "ruptura",
+        "discrepancia",
+        "eigenstate",
+        "HiperIPL",
+        "zigurat",
+        "ekklesia",
+        "eigenstate",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-ruptura-economia-hiperipl/10-zigurat-centro-vacio/prompt.md",
+        "think": "sesion-01-ruptura-economia-hiperipl/10-zigurat-centro-vacio/think.md",
+        "output": "sesion-01-ruptura-economia-hiperipl/10-zigurat-centro-vacio/output.md"
+      },
+      "anomalies": [
+        "escena_ancla_sima"
+      ]
+    }
+  ],
+  "coverage": {
+    "total_lines": 1139,
+    "covered_lines": 1139,
+    "scenes": 10,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 36,
+    "issues": [],
+    "ok": true
+  }
+}

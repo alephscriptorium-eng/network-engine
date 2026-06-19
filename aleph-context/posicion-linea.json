@@ -1,0 +1,10 @@
+{
+  "descripcion": "Posición de la semilla actual en el arco sima (0) ↔ cima (1) sobre la espina linea-aleph",
+  "valor": null,
+  "ancla_sima": null,
+  "ancla_cima": null,
+  "registro_linea": null,
+  "semilla_actual": null,
+  "updated_at": null,
+  "notas": "Rellenar al ejecutar prompt-test 02 o al invocar Modo Aleph con cotas activas"
+}

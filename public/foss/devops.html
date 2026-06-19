@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps — Network Engine</title>
+  <script>
+    (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">Network Engine</a>
+      <p class="tag">Artefacto · v0.1.0</p>
+      <nav aria-label="Documentación FOSS">
+        <a href="index.html">Índice</a>
+        <a href="tecnico.html">Técnico</a>
+        <a href="funcional.html">Funcional</a>
+        <a href="datos-publicados.html">Datos publicados</a>
+        <a href="devops.html">DevOps</a>
+        <a href="LICENSE.html">Licencia</a>
+        <hr>
+        <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+      </div>
+    </aside>
+    <main>
+      
+<h1>DevOps — operar y ampliar el catálogo</h1>
+<p class="lead">Instalación, ciclo operativo con agentes externos y publicación del sitio estático.</p>
+
+<h2>Onboarding para agentes LLM</h2>
+<div class="card">
+  <h3>llms.md</h3>
+  <p>Documento de contexto obligatorio antes de tocar código o datos.</p>
+  <div class="card-actions">
+    <a href="llms.md" class="ext">Copia en este sitio</a>
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/llms.md" class="ext" rel="noopener">Ver en GitHub</a>
+    <a href="https://github.com/alephscriptorium-eng/network-engine/raw/main/llms.md" class="ext" rel="noopener">Raw (agents)</a>
+  </div>
+  <p class="path-hint">llms.md · rama main</p>
+</div>
+
+<h2>Prompts operativos</h2>
+<div class="card-grid">
+  
+  <article class="card">
+    <h3>Equipar loadout</h3>
+    <p>Aplicar un loadout serializado (skill + perfil + engines + anclas).</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/equipar_loadout.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/equipar_loadout.prompt.md</p>
+  </article>
+  
+  <article class="card">
+    <h3>Iniciar turno</h3>
+    <p>ASENTAMIENTO + semilla del turno en el tablero.</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/iniciar_turno.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/iniciar_turno.prompt.md</p>
+  </article>
+  
+  <article class="card">
+    <h3>Activar forces</h3>
+    <p>Seleccionar ≤2 forces Cohen y leer escenas ancla.</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/activar_forces.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/activar_forces.prompt.md</p>
+  </article>
+  
+  <article class="card">
+    <h3>Calibrar cotas</h3>
+    <p>Oscilar sima ↔ cima y escribir posicion-linea.json.</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/calibrar_cotas.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/calibrar_cotas.prompt.md</p>
+  </article>
+  
+</div>
+
+<h2>Prompts ciudadano</h2>
+<div class="card-grid">
+  
+  <article class="card">
+    <h3>Publicar sesión prensa</h3>
+    <p>Depositar sesión calibrada en data/sessions/ para build prensa.</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/publicar_sesion_prensa.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/publicar_sesion_prensa.prompt.md</p>
+  </article>
+  
+  <article class="card">
+    <h3>Lectura pack tablero</h3>
+    <p>Interpretar un loadout + sesión exportada sin colapsar el tablero.</p>
+    <div class="card-actions">
+      <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/docs/prompts/lectura_pack_tablero.prompt.md" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">docs/prompts/lectura_pack_tablero.prompt.md</p>
+  </article>
+  
+</div>
+
+<h2>Instalación</h2>
+<pre>git clone https://github.com/alephscriptorium-eng/network-engine.git
+cd network-engine
+pip install -e ".[dev]"</pre>
+
+<h2>Comandos CLI</h2>
+<pre>nengine loadout validate default-tablero
+nengine loadout apply default-tablero --semilla "tema"
+nengine catalog sync
+nengine build --target all
+nengine session publish  # stub
+nengine pack             # stub</pre>
+
+<h2>Publicar sitio</h2>
+<pre>nengine catalog sync
+nengine build --target all</pre>
+<p>GitHub Actions (<code>.github/workflows/pages.yml</code>) sube <code>public/</code> en push a <code>main</code>.</p>
+
+<h2>Tests</h2>
+<pre>pytest</pre>
+
+    </main>
+  </div>
+  <script src="assets/theme.js"></script>
+</body>
+</html>

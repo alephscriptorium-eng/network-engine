@@ -1,0 +1,141 @@
+[
+  {
+    "id": "s01-01",
+    "session": "sesion-01-ontologia-gnoseologia-confluencia",
+    "slug": "01-ontologia-gnoseologia-juntos",
+    "source": {
+      "file": "raw/log-agent-1.md",
+      "line_start": 1,
+      "line_end": 74
+    },
+    "title": "Ontología + gnoseología juntas (referentes y hoja de ruta)",
+    "cota": "cima",
+    "rol": [
+      "confluencia",
+      "reunion",
+      "objetividad-sistemica"
+    ],
+    "tags": [
+      "cima",
+      "confluencia",
+      "ontologia",
+      "gnoseologia",
+      "objetividad-sistemica"
+    ],
+    "files": {
+      "prompt": "sesion-01-ontologia-gnoseologia-confluencia/01-ontologia-gnoseologia-juntos/prompt.md",
+      "think": "sesion-01-ontologia-gnoseologia-confluencia/01-ontologia-gnoseologia-juntos/think.md",
+      "trace": "sesion-01-ontologia-gnoseologia-confluencia/01-ontologia-gnoseologia-juntos/trace.md",
+      "output": "sesion-01-ontologia-gnoseologia-confluencia/01-ontologia-gnoseologia-juntos/output.md"
+    },
+    "anomalies": [
+      "prompt_duplicado_lineas_1_y_3"
+    ]
+  },
+  {
+    "id": "s01-02",
+    "session": "sesion-01-ontologia-gnoseologia-confluencia",
+    "slug": "02-polarizacion-ontologia-gnoseologia",
+    "source": {
+      "file": "raw/log-agent-1.md",
+      "line_start": 75,
+      "line_end": 145
+    },
+    "title": "Polarización ontología vs gnoseología (¿es normal ignorar uno?)",
+    "cota": "cima",
+    "rol": [
+      "confluencia",
+      "reunion",
+      "objetividad-sistemica"
+    ],
+    "tags": [
+      "cima",
+      "confluencia",
+      "polarizacion",
+      "reduccionismo",
+      "objetividad-sistemica"
+    ],
+    "files": {
+      "prompt": "sesion-01-ontologia-gnoseologia-confluencia/02-polarizacion-ontologia-gnoseologia/prompt.md",
+      "think": "sesion-01-ontologia-gnoseologia-confluencia/02-polarizacion-ontologia-gnoseologia/think.md",
+      "trace": "sesion-01-ontologia-gnoseologia-confluencia/02-polarizacion-ontologia-gnoseologia/trace.md",
+      "output": "sesion-01-ontologia-gnoseologia-confluencia/02-polarizacion-ontologia-gnoseologia/output.md"
+    },
+    "anomalies": []
+  },
+  {
+    "id": "s01-03",
+    "session": "sesion-01-ontologia-gnoseologia-confluencia",
+    "slug": "03-godel-cohen-cantor-diamat",
+    "source": {
+      "file": "raw/log-agent-1.md",
+      "line_start": 147,
+      "line_end": 508
+    },
+    "title": "Diamat + Gödel/Cohen/Cantor — escena ancla cima",
+    "cota": "cima",
+    "rol": [
+      "confluencia",
+      "reunion",
+      "objetividad-sistemica"
+    ],
+    "tags": [
+      "cima",
+      "ancla",
+      "diamat",
+      "Godel",
+      "Cohen",
+      "Cantor",
+      "objetividad-sistemica",
+      "confluencia"
+    ],
+    "files": {
+      "prompt": "sesion-01-ontologia-gnoseologia-confluencia/03-godel-cohen-cantor-diamat/prompt.md",
+      "think": "sesion-01-ontologia-gnoseologia-confluencia/03-godel-cohen-cantor-diamat/think.md",
+      "trace": "sesion-01-ontologia-gnoseologia-confluencia/03-godel-cohen-cantor-diamat/trace.md",
+      "output": "sesion-01-ontologia-gnoseologia-confluencia/03-godel-cohen-cantor-diamat/output.md"
+    },
+    "anomalies": [
+      "escena_compuesta_4_turnos",
+      "user1_user2_fusionados_linea_277",
+      "footer_ai_linea_392_en_turno_mareev"
+    ],
+    "anchor": true
+  },
+  {
+    "id": "s01-04",
+    "session": "sesion-01-ontologia-gnoseologia-confluencia",
+    "slug": "04-clasificacion-ia-ont-gnose",
+    "source": {
+      "file": "raw/log-agent-1.md",
+      "line_start": 510,
+      "line_end": 709
+    },
+    "title": "IA 1956–hoy: clasificación ontológica / gnoseológica / híbrida",
+    "cota": "cima",
+    "rol": [
+      "confluencia",
+      "reunion",
+      "objetividad-sistemica"
+    ],
+    "tags": [
+      "cima",
+      "IA",
+      "cognicion",
+      "hibrido",
+      "Dartmouth",
+      "objetividad-sistemica"
+    ],
+    "files": {
+      "prompt": "sesion-01-ontologia-gnoseologia-confluencia/04-clasificacion-ia-ont-gnose/prompt.md",
+      "think": "sesion-01-ontologia-gnoseologia-confluencia/04-clasificacion-ia-ont-gnose/think.md",
+      "trace": "sesion-01-ontologia-gnoseologia-confluencia/04-clasificacion-ia-ont-gnose/trace.md",
+      "output": "sesion-01-ontologia-gnoseologia-confluencia/04-clasificacion-ia-ont-gnose/output.md"
+    },
+    "anomalies": [
+      "escena_compuesta_3_turnos",
+      "turno_2_think_espanol_sin_bloques_Analyze",
+      "meta_reflexion_ia_mapa_territorio_en_turnos_2_3"
+    ]
+  }
+]

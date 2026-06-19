@@ -1,0 +1,28 @@
+{
+  "id": "engine-model-A",
+  "role": "force",
+  "cohen_type": "dialectic_poles_ab",
+  "viewpoint_origin": "marxismo internacional / café muertos",
+  "lore_hook": "polo A heterodoxo vs polo B sistémico",
+  "anchor_scene": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
+  "activation_triggers": [
+    "internacional",
+    "lenin",
+    "marx",
+    "polo A",
+    "polo B",
+    "café muertos",
+    "situacionista",
+    "guerra fría",
+    "marcuse",
+    "adorno"
+  ],
+  "pairs_with": ["engine-model-E", "linea-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    {"file": "raw/logs-agent-1.md", "lines": 710},
+    {"file": "raw/log-agents-2.md", "lines": 263}
+  ],
+  "estimated_scenes": 11,
+  "notes": "Ancla principal: Internacionales A/B (log-agents-2). Ancla secundaria: sesion-01-lenin-guerra-fria-frankfurt/01-lenin-testamento-muerte. Sesión 01 cubre Frankfurt y objetividad sistémica."
+}

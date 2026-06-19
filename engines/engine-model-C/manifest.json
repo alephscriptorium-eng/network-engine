@@ -1,0 +1,284 @@
+{
+  "engine": "engine-model-C",
+  "cohen_type": "political_economy",
+  "description": "Force economía política ES — pirámide riqueza, debate capitalismo, Ilustración 2.0",
+  "anchor_scene": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana",
+  "sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "lines": 959
+    },
+    {
+      "file": "raw/logs-agent-2.md",
+      "lines": 73
+    }
+  ],
+  "scenes": [
+    {
+      "id": "c01-01",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "01-piramide-riqueza-espana",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 65
+      },
+      "title": "Pirámide patrimonial España — percentiles, Gini y renta 2019-2023",
+      "engine": "engine-model-C",
+      "rol": "ancla",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "piramide",
+        "riqueza",
+        "Gini",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana/trace.md"
+      },
+      "anomalies": [
+        "cursor_export_con_busqueda_web"
+      ],
+      "anchor": true
+    },
+    {
+      "id": "c01-02",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "02-moderador-objetividad-borrego",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 66,
+        "line_end": 253
+      },
+      "title": "Moderador objetividad sistémica — Borrego vs respondiente (decrecimiento)",
+      "engine": "engine-model-C",
+      "rol": "moderacion",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "objetividad",
+        "Borrego",
+        "Taibo",
+        "decrecimiento"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/02-moderador-objetividad-borrego/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/02-moderador-objetividad-borrego/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/02-moderador-objetividad-borrego/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/02-moderador-objetividad-borrego/trace.md"
+      },
+      "anomalies": [
+        "SIGUIENTE_TEMA_como_delimitador"
+      ]
+    },
+    {
+      "id": "c01-03",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "03-ayuda-respondiente-referencias",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 254,
+        "line_end": 414
+      },
+      "title": "Ayuda al respondiente — URSS, Ponzi, fiscalidad, greenwashing",
+      "engine": "engine-model-C",
+      "rol": "asistencia",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "respondiente",
+        "referencias",
+        "Graeber",
+        "Marx"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/03-ayuda-respondiente-referencias/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/03-ayuda-respondiente-referencias/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/03-ayuda-respondiente-referencias/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/03-ayuda-respondiente-referencias/trace.md"
+      },
+      "anomalies": [
+        "expert_mode_search_unavailable"
+      ]
+    },
+    {
+      "id": "c01-04",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "04-greenwashing-ipcc-montreal",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 415,
+        "line_end": 514
+      },
+      "title": "Greenwashing — Volkswagen, IPCC y Protocolo de Montreal",
+      "engine": "engine-model-C",
+      "rol": "asistencia",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "greenwashing",
+        "clima",
+        "IPCC",
+        "Montreal"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/04-greenwashing-ipcc-montreal/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/04-greenwashing-ipcc-montreal/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/04-greenwashing-ipcc-montreal/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/04-greenwashing-ipcc-montreal/trace.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "c01-05",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "05-borrego-replica-vivienda-10-anos",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 515,
+        "line_end": 628
+      },
+      "title": "Réplica Borrego — competitividad, fiscalidad y hipotecas a 10 años",
+      "engine": "engine-model-C",
+      "rol": "debate",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "Borrego",
+        "vivienda",
+        "hipoteca",
+        "corralito"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/05-borrego-replica-vivienda-10-anos/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/05-borrego-replica-vivienda-10-anos/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/05-borrego-replica-vivienda-10-anos/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/05-borrego-replica-vivienda-10-anos/trace.md"
+      },
+      "anomalies": [
+        "prompt_incluye_cita_whatsapp_Borrego"
+      ]
+    },
+    {
+      "id": "c01-06",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "06-conclusion-capital-mea-llueve",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 629,
+        "line_end": 680
+      },
+      "title": "Conclusión «el capital nos mea y dice que llueve» — cuatro frases",
+      "engine": "engine-model-C",
+      "rol": "sintesis",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "conclusion",
+        "mea-llueve",
+        "lobbies",
+        "rescate-2008"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/06-conclusion-capital-mea-llueve/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/06-conclusion-capital-mea-llueve/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/06-conclusion-capital-mea-llueve/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/06-conclusion-capital-mea-llueve/trace.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "c01-07",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "07-vivienda-shock-antagonistas-jesus",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 681,
+        "line_end": 959
+      },
+      "title": "Shock crediticio vivienda — mapa antagonistas y parábola del templo",
+      "engine": "engine-model-C",
+      "rol": "analisis",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "vivienda",
+        "Minsky",
+        "usura",
+        "antagonistas"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/07-vivienda-shock-antagonistas-jesus/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/07-vivienda-shock-antagonistas-jesus/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/07-vivienda-shock-antagonistas-jesus/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/07-vivienda-shock-antagonistas-jesus/trace.md"
+      },
+      "anomalies": [
+        "tres_turnos_en_una_escena",
+        "mezcla_analisis_y_reflexion_moral"
+      ]
+    },
+    {
+      "id": "c01-08",
+      "session": "sesion-01-piramide-riqueza-espana",
+      "slug": "08-ilustracion-2-ciudadano-protocolo",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 1,
+        "line_end": 73
+      },
+      "title": "Ilustración 2.0 — ciudadano-protocolo vs NRx (Robespierre / Ethereum arquetipo)",
+      "engine": "engine-model-C",
+      "rol": "marco",
+      "tags": [
+        "force:C",
+        "cohen:political_economy",
+        "Espana",
+        "economia_politica",
+        "Ilustracion",
+        "derechos",
+        "NRx",
+        "ciudadano-protocolo"
+      ],
+      "files": {
+        "prompt": "sesion-01-piramide-riqueza-espana/08-ilustracion-2-ciudadano-protocolo/prompt.md",
+        "think": "sesion-01-piramide-riqueza-espana/08-ilustracion-2-ciudadano-protocolo/think.md",
+        "output": "sesion-01-piramide-riqueza-espana/08-ilustracion-2-ciudadano-protocolo/output.md",
+        "trace": "sesion-01-piramide-riqueza-espana/08-ilustracion-2-ciudadano-protocolo/trace.md"
+      },
+      "anomalies": []
+    }
+  ],
+  "coverage": {
+    "sources": {
+      "raw/logs-agent-1.md": 959,
+      "raw/logs-agent-2.md": 73
+    },
+    "scenes": 8,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 32,
+    "issues": [],
+    "ok": true
+  }
+}

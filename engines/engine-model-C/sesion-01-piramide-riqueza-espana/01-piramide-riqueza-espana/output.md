@@ -1,0 +1,29 @@
+---
+scene_id: c01-01
+session: sesion-01-piramide-riqueza-espana
+engine: engine-model-C
+source_file: raw/logs-agent-1.md
+source_lines: [1, 65]
+layer: output
+tags: [force:C, cohen:political_economy, Espana, economia_politica, piramide, riqueza, Gini, ancla]
+---
+En los últimos años, la pirámide económica de España muestra una estructura muy desequilibrada: una cúspide muy estrecha concentra una gran parte de la riqueza, mientras que una amplia base acumula una proporción mucho menor.
+### 📊 La Pirámide de la Riqueza (Patrimonio)
+Los datos más recientes, principalmente de 2022, muestran la distribución del patrimonio neto (activos menos deudas):
+-   **El 10% más rico**: Este grupo concentró el **53,8%** de la riqueza total en 2022[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/)[](https://ctxt.es/es/20240101/Firmas/45292/Observatorio-Fundacion-la-Caixa-Oxfam-ricos-riqueza-milmillonarios-Inditex-salario.htm). Para estar en este percentil, se estima que se necesita un patrimonio superior a los **370.000 euros**.
+-   **El 1% más rico (la élite)**: En la cúspide, este pequeño grupo poseía el **22,4%** del patrimonio total en 2022[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/)[](https://ctxt.es/es/20240101/Firmas/45292/Observatorio-Fundacion-la-Caixa-Oxfam-ricos-riqueza-milmillonarios-Inditex-salario.htm). Su peso ha crecido significativamente, pasando de concentrar el 13% en 2002 a más del 21% en la actualidad[](https://fedea.net/evolucion-de-la-riqueza-de-las-familias-en-espana-2002-2022-niveles-composicion-y-fractura-generacional/). Además, este 1% controlaba el **37% de toda la riqueza financiera** (acciones, fondos, etc.) en 2023[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/).
+-   **El 50% más pobre**: En el extremo opuesto, la mitad de la población con menos recursos apenas poseía el **7,8%** de la riqueza nacional en 2022[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/)[](https://ctxt.es/es/20240101/Firmas/45292/Observatorio-Fundacion-la-Caixa-Oxfam-ricos-riqueza-milmillonarios-Inditex-salario.htm).
+> **Nota**: La desigualdad de riqueza es más alta que la de ingresos. El índice de Gini (donde 0 es igualdad perfecta y 1 es desigualdad máxima) para la riqueza de los hogares en 2022 era de **0,69**, un aumento estructural desde el 0,57 de 2002[](https://fedea.net/evolucion-de-la-riqueza-de-las-familias-en-espana-2002-2022-niveles-composicion-y-fractura-generacional/). Esto indica que la concentración del patrimonio es un fenómeno arraigado.
+### 📈 La Pirámide de la Renta (Ingresos)
+La distribución de la renta anual es menos desigual que la del patrimonio, pero también muestra una clara concentración:
+-   **Clase alta (8,1% de hogares)**: En 2023, este grupo percibía los ingresos más elevados[](https://www.caixabankresearch.com/es/economia-y-mercados/mercado-laboral-y-demografia/clase-media-espanola-cifras-mayores-ingresos-menor).
+-   **Clase media (61,5% de hogares)**: Es el grupo más amplio. Sus ingresos se sitúan entre el 75% y el 200% de la mediana de ingresos del país[](https://www.caixabankresearch.com/es/economia-y-mercados/mercado-laboral-y-demografia/clase-media-espanola-cifras-mayores-ingresos-menor).
+-   **Clase baja (30,4% de hogares)**: Este grupo, con los ingresos más bajos, representa casi un tercio de los hogares[](https://www.caixabankresearch.com/es/economia-y-mercados/mercado-laboral-y-demografia/clase-media-espanola-cifras-mayores-ingresos-menor).
+Un indicador clave de esta desigualdad es la **ratio S80/S20**, que compara los ingresos totales del 20% más rico con los del 20% más pobre. En 2023, este ratio era de **5,5**, lo que significa que el quintil más rico ingresaba 5,5 veces más que el más pobre.
+### ⏳ ¿Ha cambiado la tendencia en los últimos 4-5 años?
+En el periodo analizado (aproximadamente 2019-2023), la imagen general es de **alta desigualdad que se mantiene estable o crece lentamente**:
+-   **Estancamiento de la desigualdad**: Desde 2016, la desigualdad de riqueza se ha reducido ligeramente y es menor que antes de la pandemia[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/). Sin embargo, no se vislumbra una tendencia clara hacia una distribución más equitativa.
+-   **Peso creciente de la riqueza financiera**: La riqueza en forma de activos financieros (acciones, fondos de inversión) ha ganado peso y está mucho más concentrada. El **79,2% de estos activos está en manos del 10% más rico**[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/). Esto tiende a perpetuar la desigualdad, ya que estos activos suelen revalorizarse más que otros tipos de patrimonio[](https://www.infobae.com/espana/2024/01/15/el-10-de-la-poblacion-de-espana-concentra-el-54-de-la-riqueza-segun-oxfam/).
+-   **Fractura generacional**: Se ha ampliado la brecha patrimonial entre jóvenes y mayores. La riqueza media entre los menores de 35 años y los mayores de 75 pasó de una diferencia de 50.000 euros en 2002 a más de 360.000 euros en 2022[](https://fedea.net/evolucion-de-la-riqueza-de-las-familias-en-espana-2002-2022-niveles-composicion-y-fractura-generacional/).
+En definitiva, la pirámide económica española se caracteriza por una cúspide muy reducida que concentra más de la mitad de la riqueza y una base extensa que sobrevive con una pequeña fracción de ella. Esta estructura no ha mostrado cambios significativos en el último lustro, consolidando un modelo de alta desigualdad patrimonial.
+Si necesitas algún otro detalle, no dudes en preguntar.

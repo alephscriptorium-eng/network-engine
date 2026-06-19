@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos publicados — Network Engine</title>
+  <script>
+    (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">Network Engine</a>
+      <p class="tag">Artefacto · v0.1.0</p>
+      <nav aria-label="Documentación FOSS">
+        <a href="index.html">Índice</a>
+        <a href="tecnico.html">Técnico</a>
+        <a href="funcional.html">Funcional</a>
+        <a href="datos-publicados.html">Datos publicados</a>
+        <a href="devops.html">DevOps</a>
+        <a href="LICENSE.html">Licencia</a>
+        <hr>
+        <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+      </div>
+    </aside>
+    <main>
+      
+<h1>Datos publicados</h1>
+<p class="lead">Índices generados y enlaces blob/main al corpus in situ.</p>
+<h2>Catálogo</h2>
+<p><code>data/catalog.json</code> — 7 engines, 5 corpus, 0 sesiones.</p>
+<pre>nengine catalog sync</pre>
+<h2>Corpus (in situ)</h2>
+<ul>
+
+  <li><strong>logs-aleph</strong> — 12 escenas
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-aleph/manifest.json" class="ext" rel="noopener">manifest</a>
+  </li>
+
+  <li><strong>sima-aleph</strong> — 10 escenas
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/sima-aleph/manifest.json" class="ext" rel="noopener">manifest</a>
+  </li>
+
+  <li><strong>cima-aleph</strong> — 4 escenas
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/cima-aleph/manifest.json" class="ext" rel="noopener">manifest</a>
+  </li>
+
+  <li><strong>linea-aleph</strong> — 677 escenas
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/linea-aleph/manifest.json" class="ext" rel="noopener">manifest</a>
+  </li>
+
+  <li><strong>logs-skill</strong> — 8 escenas
+    <a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/manifest.json" class="ext" rel="noopener">manifest</a>
+  </li>
+
+</ul>
+<h2>Sesiones prensa</h2>
+<p>Depositar en <code>data/sessions/{id}/</code> y rebuild prensa. Protocolo: <code>docs/prompts/publicar_sesion_prensa.prompt.md</code>.</p>
+
+    </main>
+  </div>
+  <script src="assets/theme.js"></script>
+</body>
+</html>

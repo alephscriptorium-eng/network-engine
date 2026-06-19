@@ -1,0 +1,295 @@
+[
+  {
+    "id": "s01-01",
+    "session": "sesion-01-halley-aleph",
+    "slug": "01-marco-historiografico",
+    "source": {
+      "file": "log-agent-1.md",
+      "line_start": 1,
+      "line_end": 95
+    },
+    "title": "Marco historiográfico y rol Aleph",
+    "tags": [
+      "Aleph",
+      "historiografia",
+      "Halley-218",
+      "Eigenstate"
+    ],
+    "files": {
+      "prompt": "sesion-01-halley-aleph/01-marco-historiografico/prompt.md",
+      "think": "sesion-01-halley-aleph/01-marco-historiografico/think.md",
+      "output": "sesion-01-halley-aleph/01-marco-historiografico/output.md"
+    },
+    "anomalies": []
+  },
+  {
+    "id": "s01-02",
+    "session": "sesion-01-halley-aleph",
+    "slug": "02-critica-bot-demo-liberal",
+    "source": {
+      "file": "log-agent-1.md",
+      "line_start": 96,
+      "line_end": 166
+    },
+    "title": "Crítica al bot demo-liberal",
+    "tags": [
+      "Aleph",
+      "bot-agente",
+      "critica-metodologica",
+      "Eigenstate"
+    ],
+    "files": {
+      "prompt": "sesion-01-halley-aleph/02-critica-bot-demo-liberal/prompt.md",
+      "think": "sesion-01-halley-aleph/02-critica-bot-demo-liberal/think.md",
+      "output": "sesion-01-halley-aleph/02-critica-bot-demo-liberal/output.md"
+    },
+    "anomalies": [
+      "output_includes_ai_generated_footer_in_source"
+    ]
+  },
+  {
+    "id": "s01-03",
+    "session": "sesion-01-halley-aleph",
+    "slug": "03-mandato-semilla-tres-alephs",
+    "source": {
+      "file": "log-agent-1.md",
+      "line_start": 168,
+      "line_end": 225
+    },
+    "title": "Mandato semilla y tres alephs",
+    "tags": [
+      "Aleph",
+      "mandato-semilla",
+      "metodo"
+    ],
+    "files": {
+      "prompt": "sesion-01-halley-aleph/03-mandato-semilla-tres-alephs/prompt.md",
+      "think": "sesion-01-halley-aleph/03-mandato-semilla-tres-alephs/think.md",
+      "output": "sesion-01-halley-aleph/03-mandato-semilla-tres-alephs/output.md"
+    },
+    "anomalies": []
+  },
+  {
+    "id": "s01-04",
+    "session": "sesion-01-halley-aleph",
+    "slug": "04-eigenstate-halley-con-contraejemplo",
+    "source": {
+      "file": "log-agent-1.md",
+      "line_start": 226,
+      "line_end": 299
+    },
+    "title": "Eigenstate Halley con contra-ejemplo",
+    "tags": [
+      "Eigenstate",
+      "Halley-218",
+      "bot-agente"
+    ],
+    "files": {
+      "prompt": "sesion-01-halley-aleph/04-eigenstate-halley-con-contraejemplo/prompt.md",
+      "think": "sesion-01-halley-aleph/04-eigenstate-halley-con-contraejemplo/think.md",
+      "output": "sesion-01-halley-aleph/04-eigenstate-halley-con-contraejemplo/output.md"
+    },
+    "anomalies": []
+  },
+  {
+    "id": "s01-05",
+    "session": "sesion-01-halley-aleph",
+    "slug": "05-eigenstate-halley-puro",
+    "source": {
+      "file": "log-agent-1.md",
+      "line_start": 300,
+      "line_end": 414
+    },
+    "title": "Eigenstate Halley puro",
+    "tags": [
+      "Eigenstate",
+      "Halley-218",
+      "Aleph"
+    ],
+    "files": {
+      "prompt": "sesion-01-halley-aleph/05-eigenstate-halley-puro/prompt.md",
+      "think": "sesion-01-halley-aleph/05-eigenstate-halley-puro/think.md",
+      "output": "sesion-01-halley-aleph/05-eigenstate-halley-puro/output.md"
+    },
+    "anomalies": [
+      "termina_en_sigue_en_continuidad_sesion_2"
+    ]
+  },
+  {
+    "id": "s02-01",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "01-diamat-ciencia-nacional",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 3,
+      "line_end": 91
+    },
+    "title": "¿Diamat es ciencia?",
+    "tags": [
+      "diamat",
+      "criterio-demarcacion",
+      "Popper",
+      "Kuhn",
+      "Aleph"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/01-diamat-ciencia-nacional/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/01-diamat-ciencia-nacional/think.md",
+      "output": "sesion-02-demarcacion-gaia/01-diamat-ciencia-nacional/output.md"
+    },
+    "anomalies": []
+  },
+  {
+    "id": "s02-02",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "02-peticion-demarcacion-respuesta-test2",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 93,
+      "line_end": 93
+    },
+    "title": "Petición demarcación → desvío test2",
+    "tags": [
+      "anomalia",
+      "test2",
+      "criterio-demarcacion",
+      "critica-metodologica"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/02-peticion-demarcacion-respuesta-test2/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/02-peticion-demarcacion-respuesta-test2/think.md",
+      "output": "sesion-02-demarcacion-gaia/02-peticion-demarcacion-respuesta-test2/output.md"
+    },
+    "anomalies": [
+      "prompt_pide_disertacion_demarcacion_output_critica_test2",
+      "prompt_y_think_fusionados_en_linea_93_del_log",
+      "think_en_ingles_sobre_test2_no_sobre_demarcacion"
+    ]
+  },
+  {
+    "id": "s02-03",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "03-objetividad-sistemica-psoe-corea",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 93,
+      "line_end": 93
+    },
+    "title": "Objetividad sistémica I (PSOE / RPDC)",
+    "tags": [
+      "objetividad-sistemica",
+      "PSOE",
+      "Corea-del-Norte",
+      "Songbun"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/03-objetividad-sistemica-psoe-corea/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/03-objetividad-sistemica-psoe-corea/think.md",
+      "output": "sesion-02-demarcacion-gaia/03-objetividad-sistemica-psoe-corea/output.md"
+    },
+    "anomalies": [
+      "contenido_embebido_en_linea_93"
+    ]
+  },
+  {
+    "id": "s02-04",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "04-objetividad-sistemica-mapa-geoglobal",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 93,
+      "line_end": 93
+    },
+    "title": "Objetividad sistémica II (mapa geoglobal + Wilber)",
+    "tags": [
+      "objetividad-sistemica",
+      "mapa-geoglobal",
+      "Wilber",
+      "geopolitica"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/04-objetividad-sistemica-mapa-geoglobal/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/04-objetividad-sistemica-mapa-geoglobal/think.md",
+      "output": "sesion-02-demarcacion-gaia/04-objetividad-sistemica-mapa-geoglobal/output.md"
+    },
+    "anomalies": [
+      "contenido_embebido_en_linea_93"
+    ]
+  },
+  {
+    "id": "s02-05",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "05-perspectiva-gaia-siglo-xxi",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 93,
+      "line_end": 193
+    },
+    "title": "Perspectiva Gaia 2026-2100",
+    "tags": [
+      "Gaia",
+      "termodinamica",
+      "siglo-XXI",
+      "ecosistema"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/05-perspectiva-gaia-siglo-xxi/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/05-perspectiva-gaia-siglo-xxi/think.md",
+      "output": "sesion-02-demarcacion-gaia/05-perspectiva-gaia-siglo-xxi/output.md"
+    },
+    "anomalies": [
+      "think_duplicado_ingles_en_linea_93_y_espanol_lineas_95_121",
+      "output_tambien_embebido_en_linea_93_usamos_lineas_123_193"
+    ]
+  },
+  {
+    "id": "s02-06",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "06-linea-demarcacion-abc-aleph",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 195,
+      "line_end": 271
+    },
+    "title": "Línea demarcación a/b/c (Aleph)",
+    "tags": [
+      "criterio-demarcacion",
+      "Aleph",
+      "Gaia",
+      "Popper",
+      "Kuhn"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/think.md",
+      "output": "sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/output.md"
+    },
+    "anomalies": [
+      "redireccion_usuario_tras_desvio_gaia"
+    ]
+  },
+  {
+    "id": "s02-07",
+    "session": "sesion-02-demarcacion-gaia",
+    "slug": "07-artefacto-aleph-gaia-reprompt-diamat",
+    "source": {
+      "file": "log-agent-2.md",
+      "line_start": 273,
+      "line_end": 398
+    },
+    "title": "Artefacto Aleph+Gaia reprompt diamat",
+    "tags": [
+      "Aleph",
+      "Gaia",
+      "diamat",
+      "criterio-demarcacion",
+      "artefacto"
+    ],
+    "files": {
+      "prompt": "sesion-02-demarcacion-gaia/07-artefacto-aleph-gaia-reprompt-diamat/prompt.md",
+      "think": "sesion-02-demarcacion-gaia/07-artefacto-aleph-gaia-reprompt-diamat/think.md",
+      "output": "sesion-02-demarcacion-gaia/07-artefacto-aleph-gaia-reprompt-diamat/output.md"
+    },
+    "anomalies": []
+  }
+]

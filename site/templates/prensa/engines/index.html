@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{# ctx: catalog, engines, github_blob #}
+{% block title %}Engines — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>Engines Cohen</h1>
+<p class="lead">Registry de {{ catalog.engines|length }} engines. Main-engine siempre activo; máx. 2 forces por sesión.</p>
+<table class="data-table">
+  <thead><tr><th>ID</th><th>Rol</th><th>Tipo</th><th>Escenas</th><th>Ancla</th></tr></thead>
+  <tbody>
+  {% for e in catalog.engines %}
+    <tr>
+      <td><a href="{{ e.id }}.html">{{ e.id }}</a></td>
+      <td>{{ e.role }}</td>
+      <td>{{ e.cohen_type }}</td>
+      <td>{{ e.scene_count }}</td>
+      <td><code>{{ e.anchor_scene or '—' }}</code></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,131 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-06-19T00:23:12Z",
+  "engines": [
+    {
+      "id": "main-engine",
+      "path": "engines/main-engine",
+      "role": "boot",
+      "cohen_type": "aesthetic_boot",
+      "anchor_scene": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta",
+      "scene_count": 3,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/main-engine/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/main-engine/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/main-engine/INDICE.md"
+    },
+    {
+      "id": "engine-model-A",
+      "path": "engines/engine-model-A",
+      "role": "force",
+      "cohen_type": "dialectic_poles_ab",
+      "anchor_scene": "sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab",
+      "scene_count": 11,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-A/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-A/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-A/INDICE.md"
+    },
+    {
+      "id": "engine-model-B",
+      "path": "engines/engine-model-B",
+      "role": "force",
+      "cohen_type": "disobedience",
+      "anchor_scene": "sesion-01-omega-manhattan/04-omega-manhattan",
+      "scene_count": 6,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-B/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-B/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-B/INDICE.md"
+    },
+    {
+      "id": "engine-model-C",
+      "path": "engines/engine-model-C",
+      "role": "force",
+      "cohen_type": "political_economy",
+      "anchor_scene": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana",
+      "scene_count": 8,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-C/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-C/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-C/INDICE.md"
+    },
+    {
+      "id": "engine-model-D",
+      "path": "engines/engine-model-D",
+      "role": "force",
+      "cohen_type": "credos",
+      "anchor_scene": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas",
+      "scene_count": 2,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-D/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-D/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-D/INDICE.md"
+    },
+    {
+      "id": "engine-model-E",
+      "path": "engines/engine-model-E",
+      "role": "force",
+      "cohen_type": "impotent_document",
+      "anchor_scene": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
+      "scene_count": 6,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-E/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-E/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-E/INDICE.md"
+    },
+    {
+      "id": "engine-model-F",
+      "path": "engines/engine-model-F",
+      "role": "force",
+      "cohen_type": "poetic_existential",
+      "anchor_scene": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro",
+      "scene_count": 3,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/INDICE.md"
+    }
+  ],
+  "corpus": [
+    {
+      "id": "logs-aleph",
+      "path": "logs-aleph",
+      "scene_count": 12,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-aleph/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-aleph/INDICE.md"
+    },
+    {
+      "id": "sima-aleph",
+      "path": "sima-aleph",
+      "scene_count": 10,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/sima-aleph/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/sima-aleph/INDICE.md"
+    },
+    {
+      "id": "cima-aleph",
+      "path": "cima-aleph",
+      "scene_count": 4,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/cima-aleph/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/cima-aleph/INDICE.md"
+    },
+    {
+      "id": "linea-aleph",
+      "path": "linea-aleph",
+      "scene_count": 677,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/linea-aleph/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/linea-aleph/INDICE.md",
+      "record_count": 677,
+      "milestone_count": 99,
+      "note": "Índice por milestones; no renderizar todos los registros en prensa"
+    },
+    {
+      "id": "logs-skill",
+      "path": "logs-skill",
+      "scene_count": 8,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/INDICE.md"
+    }
+  ],
+  "sessions": []
+}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{# ctx: catalog, corpus, github_blob #}
+{% block title %}Corpus — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>Corpus indexados</h1>
+<p class="lead">Cinco cuerpos permanecen in situ en el repo; prensa muestra metadata y enlaces blob/main.</p>
+<table class="data-table">
+  <thead><tr><th>ID</th><th>Escenas</th><th>Notas</th></tr></thead>
+  <tbody>
+  {% for c in catalog.corpus %}
+    <tr>
+      <td><a href="{{ c.id }}.html">{{ c.id }}</a></td>
+      <td>{{ c.scene_count }}{% if c.milestone_count %} ({{ c.milestone_count }} milestones){% endif %}</td>
+      <td>{{ c.note or '—' }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alephscriptorium-eng.github.io/network-engine/schema/session.json",
+  "title": "Sesión tablero Modo Aleph",
+  "description": "Estado de un turno publicable en data/sessions/{session_id}/. Artefactos Markdown/JSONL viven junto a session.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "session_id",
+    "semilla",
+    "loadout_id",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9][a-z0-9-]*$",
+      "description": "Slug de carpeta: {fecha}-{tema-corto}"
+    },
+    "title": {
+      "type": "string",
+      "description": "Título legible para prensa"
+    },
+    "semilla": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Coordenada del turno: concepto, fecha o fragmento (input de nengine session init)"
+    },
+    "loadout_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Loadout aplicado al iniciar la sesión"
+    },
+    "profile_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Slug del perfil operativo (sin ruta)"
+    },
+    "profile_ref": {
+      "type": "string",
+      "description": "Perfil operativo usado (p. ej. data/profiles/composer.json)"
+    },
+    "posicion_linea": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Posición en arco sima (0) ↔ cima (1); null hasta commit"
+    },
+    "engines_active": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["main_engine", "forces"],
+      "properties": {
+        "main_engine": {
+          "type": "string",
+          "const": "on"
+        },
+        "forces": {
+          "type": "array",
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^engine-model-[A-F]$"
+          }
+        }
+      },
+      "description": "Forces activos al confirmar sesión (nengine session commit --forces)"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "committed", "published"],
+      "description": "draft = init; committed = turno cerrado; published = visible en prensa"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 de nengine session init"
+    },
+    "committed_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "ISO-8601 de nengine session commit; null mientras draft"
+    },
+    "asentamiento_path": {
+      "type": "string",
+      "description": "Ruta relativa a asentamiento.md"
+    },
+    "respuesta_path": {
+      "type": "string",
+      "description": "Ruta relativa a respuesta.md"
+    },
+    "artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asentamiento": { "type": "string" },
+        "respuesta": { "type": "string" },
+        "autorevisor": { "type": "string" },
+        "delta_sesgo": { "type": "string" }
+      },
+      "description": "Artefactos típicos de aleph-context/sessions/"
+    },
+    "ancla_sima": {
+      "type": ["string", "null"],
+      "description": "Escena o registro ancla en cota sima"
+    },
+    "ancla_cima": {
+      "type": ["string", "null"],
+      "description": "Escena o registro ancla en cota cima"
+    },
+    "registro_linea": {
+      "type": ["string", "null"],
+      "description": "Registro linea-aleph asociado a la semilla"
+    },
+    "url_prensa": {
+      "type": "string",
+      "description": "Ruta relativa en GitHub Pages tras publicar"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "session_id": "2026-06-19-halley-semilla",
+      "title": "Halley y la semilla",
+      "semilla": "diamat en 1924",
+      "loadout_id": "default-tablero",
+      "profile_slug": "composer",
+      "profile_ref": "data/profiles/composer.json",
+      "posicion_linea": 0.42,
+      "engines_active": {
+        "main_engine": "on",
+        "forces": ["engine-model-A", "engine-model-E"]
+      },
+      "status": "committed",
+      "created_at": "2026-06-19T10:00:00Z",
+      "committed_at": "2026-06-19T10:45:00Z",
+      "asentamiento_path": "asentamiento.md",
+      "respuesta_path": "respuesta.md",
+      "artifacts": {
+        "asentamiento": "asentamiento.md",
+        "respuesta": "respuesta.md",
+        "autorevisor": "autorevisor.jsonl"
+      }
+    }
+  ]
+}

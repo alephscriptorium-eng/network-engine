@@ -1,0 +1,17 @@
+{
+  "id": "engine-model-E",
+  "role": "force",
+  "cohen_type": "impotent_document",
+  "viewpoint_origin": "carta de derechos / declaración impotente frente a NRx; dosier épica del poder",
+  "lore_hook": "documento que no puede imponer — principios declarativos vs cancelación NRx y rectificaciones delta",
+  "anchor_scene": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
+  "activation_triggers": ["carta", "derechos", "nrx", "dosier", "poder", "impotente", "delta", "Land"],
+  "pairs_with": ["engine-model-A", "engine-model-C"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent-1.md", "lines": 160 },
+    { "file": "raw/logs-agent-2.md", "lines": 269 }
+  ],
+  "estimated_scenes": 6,
+  "notes": "Log-2 rectifica dosier inicial (Gadsden, hacker/cracker); ancla en escena 02 carta-derechos-nrx"
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "id": "s01-01",
+    "session": "sesion-01-corpus-logs-aleph",
+    "slug": "01-plan-corpus-logs",
+    "title": "Plan corpus logs-aleph",
+    "tags": [
+      "plan",
+      "logs-aleph",
+      "corpus"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 6,
+      "line_end": 42
+    },
+    "files": {
+      "prompt": "sesion-01-corpus-logs-aleph/01-plan-corpus-logs/prompt.md",
+      "trace": "sesion-01-corpus-logs-aleph/01-plan-corpus-logs/trace.md",
+      "output": "sesion-01-corpus-logs-aleph/01-plan-corpus-logs/output.md",
+      "think": "sesion-01-corpus-logs-aleph/01-plan-corpus-logs/think.md"
+    }
+  },
+  {
+    "id": "s01-02",
+    "session": "sesion-01-corpus-logs-aleph",
+    "slug": "02-build-e-implementacion",
+    "title": "Build e implementación logs-aleph",
+    "tags": [
+      "build",
+      "segment_logs",
+      "logs-aleph"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "build_e_implement_fusionados_dos_turnos_export"
+    ],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 43,
+      "line_end": 126
+    },
+    "files": {
+      "prompt": "sesion-01-corpus-logs-aleph/02-build-e-implementacion/prompt.md",
+      "trace": "sesion-01-corpus-logs-aleph/02-build-e-implementacion/trace.md",
+      "output": "sesion-01-corpus-logs-aleph/02-build-e-implementacion/output.md",
+      "think": "sesion-01-corpus-logs-aleph/02-build-e-implementacion/think.md"
+    }
+  },
+  {
+    "id": "s01-03",
+    "session": "sesion-01-corpus-logs-aleph",
+    "slug": "03-notificacion-subagente",
+    "title": "Notificación subagente (meta)",
+    "tags": [
+      "subagent",
+      "meta",
+      "notification"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "turno_es_system_notification_no_usuario_real"
+    ],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 127,
+      "line_end": 232
+    },
+    "files": {
+      "prompt": "sesion-01-corpus-logs-aleph/03-notificacion-subagente/prompt.md",
+      "trace": "sesion-01-corpus-logs-aleph/03-notificacion-subagente/trace.md",
+      "output": "sesion-01-corpus-logs-aleph/03-notificacion-subagente/output.md",
+      "think": "sesion-01-corpus-logs-aleph/03-notificacion-subagente/think.md"
+    }
+  },
+  {
+    "id": "s01-04",
+    "session": "sesion-01-corpus-logs-aleph",
+    "slug": "04-migracion-autocontenida",
+    "title": "Migración autocontenida (incompleta)",
+    "tags": [
+      "migracion",
+      "verify",
+      "logs-aleph"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "export_interrumpido_antes_de_verificar"
+    ],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 233,
+      "line_end": 251
+    },
+    "files": {
+      "prompt": "sesion-01-corpus-logs-aleph/04-migracion-autocontenida/prompt.md",
+      "trace": "sesion-01-corpus-logs-aleph/04-migracion-autocontenida/trace.md",
+      "output": "sesion-01-corpus-logs-aleph/04-migracion-autocontenida/output.md",
+      "think": "sesion-01-corpus-logs-aleph/04-migracion-autocontenida/think.md"
+    }
+  },
+  {
+    "id": "s02-01",
+    "session": "sesion-02-linea-aleph",
+    "slug": "01-infra-navegador-cache",
+    "title": "Infra linea-aleph + navegador-caché",
+    "tags": [
+      "linea-aleph",
+      "skill-browser",
+      "demarcacion"
+    ],
+    "refs_logs_aleph": [
+      "s02-01",
+      "s02-06"
+    ],
+    "anomalies": [],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 252,
+      "line_end": 349
+    },
+    "files": {
+      "prompt": "sesion-02-linea-aleph/01-infra-navegador-cache/prompt.md",
+      "trace": "sesion-02-linea-aleph/01-infra-navegador-cache/trace.md",
+      "output": "sesion-02-linea-aleph/01-infra-navegador-cache/output.md",
+      "think": "sesion-02-linea-aleph/01-infra-navegador-cache/think.md"
+    }
+  },
+  {
+    "id": "s03-01",
+    "session": "sesion-03-lectura-epistemologia",
+    "slug": "01-asimetria-diamat-logs-s02",
+    "title": "Asimetría diamat en logs-aleph s02",
+    "tags": [
+      "diamat",
+      "epistemologia",
+      "asimetria",
+      "logs-aleph"
+    ],
+    "refs_logs_aleph": [
+      "s02-01",
+      "s02-02"
+    ],
+    "anomalies": [],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 350,
+      "line_end": 450
+    },
+    "files": {
+      "prompt": "sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/prompt.md",
+      "trace": "sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/trace.md",
+      "output": "sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/output.md",
+      "think": "sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/think.md"
+    }
+  },
+  {
+    "id": "s03-02",
+    "session": "sesion-03-lectura-epistemologia",
+    "slug": "02-ciclo-vital-ciencias-universales",
+    "title": "Ciclo vital y ciencias universales",
+    "tags": [
+      "diamat",
+      "ciclo-vital",
+      "demarcacion",
+      "linea-aleph"
+    ],
+    "refs_logs_aleph": [
+      "s02-01",
+      "s02-06"
+    ],
+    "anomalies": [],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 451,
+      "line_end": 550
+    },
+    "files": {
+      "prompt": "sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/prompt.md",
+      "trace": "sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/trace.md",
+      "output": "sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/output.md",
+      "think": "sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/think.md"
+    }
+  },
+  {
+    "id": "s04-01",
+    "session": "sesion-04-skill-modo-aleph",
+    "slug": "01-autorevisor-tablero-skill",
+    "title": "AutoRevisor, tablero, refactor skill",
+    "tags": [
+      "modo-aleph",
+      "autorevisor",
+      "skill-design",
+      "fundacional"
+    ],
+    "refs_logs_aleph": [
+      "s01-02",
+      "s02-03"
+    ],
+    "skill_artifacts": [
+      "agents/skills/modo-aleph/"
+    ],
+    "anomalies": [
+      "primer_asentamiento_aleph_canonico"
+    ],
+    "source": {
+      "file": "raw/log-agent1.md",
+      "line_start": 551,
+      "line_end": 655
+    },
+    "files": {
+      "prompt": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/prompt.md",
+      "trace": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/trace.md",
+      "output": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/output.md",
+      "think": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/think.md",
+      "asentamiento": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md"
+    }
+  }
+]

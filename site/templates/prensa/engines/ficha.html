@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{# ctx: engine (detail), github_blob #}
+{% block title %}{{ engine.id }} — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>{{ engine.id }}</h1>
+<p class="lead">{{ engine.engine_json.lore_hook if engine.engine_json else engine.get('lore_hook', '') }}</p>
+<dl class="ficha-dl">
+  <dt>Rol</dt><dd>{{ engine.role }}</dd>
+  <dt>Tipo Cohen</dt><dd>{{ engine.cohen_type }}</dd>
+  <dt>Origen mirada</dt><dd>{{ engine.engine_json.viewpoint_origin if engine.engine_json else '—' }}</dd>
+  <dt>Escena ancla</dt><dd><code>{{ engine.anchor_scene or engine.engine_json.anchor_scene if engine.engine_json else '—' }}</code></dd>
+  <dt>Pairs with</dt><dd>{{ (engine.engine_json.pairs_with | join(', ')) if engine.engine_json else '—' }}</dd>
+</dl>
+{% if engine.engine_json and engine.engine_json.activation_triggers %}
+<h2>Triggers</h2>
+<p>{{ engine.engine_json.activation_triggers | join(' · ') }}</p>
+{% endif %}
+<div class="card-actions">
+  <a href="{{ engine.github }}" class="ext" rel="noopener">engine.json en GitHub</a>
+  {% if engine.anchor_github %}<a href="{{ engine.anchor_github }}" class="ext" rel="noopener">Escena ancla</a>{% endif %}
+  <a href="{{ engine.manifest_github }}" class="ext" rel="noopener">manifest</a>
+  <a href="{{ engine.indice_github }}" class="ext" rel="noopener">INDICE</a>
+</div>
+<p><a href="index.html">← Engines</a></p>
+{% endblock %}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bot-aleph.local/aleph-context/templates/profile.schema.json",
+  "title": "Perfil operativo Modo Aleph",
+  "description": "Estado reutilizable del agente en aleph-context/profiles/{slug}.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "created_at",
+    "model_hint",
+    "polo_tentado",
+    "sesgos_estructurales",
+    "sesgo_del_entrenamiento",
+    "eigenstate",
+    "corpus_affinity"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Identificador estable del agente (ej. composer, claude-sonnet)"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 de creación del perfil"
+    },
+    "model_hint": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Nombre del modelo si se conoce"
+    },
+    "polo_tentado": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Polo ideológico/epistémico al que tiende antes de AutoRevisor"
+    },
+    "sesgos_estructurales": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Sesgos del dataset y del producto (cf. psiconálisis §2)"
+    },
+    "sesgo_del_entrenamiento": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Una frase: qué bloque el dataset trata como universal"
+    },
+    "eigenstate": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Cómo responde cómodo antes de AutoRevisor (cf. §5)"
+    },
+    "corpus_affinity": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "logs-aleph",
+          "linea-aleph",
+          "logs-skill",
+          "sima-aleph",
+          "cima-aleph",
+          "engines"
+        ]
+      }
+    },
+    "cota_inicial": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Posición habitual en arco sima (0) ↔ cima (1); null hasta calibrar"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Libre — límites clínicos, calibración cotas, etc."
+    }
+  }
+}

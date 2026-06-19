@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Técnico — Network Engine</title>
+  <script>
+    (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">Network Engine</a>
+      <p class="tag">Artefacto · v0.1.0</p>
+      <nav aria-label="Documentación FOSS">
+        <a href="index.html">Índice</a>
+        <a href="tecnico.html">Técnico</a>
+        <a href="funcional.html">Funcional</a>
+        <a href="datos-publicados.html">Datos publicados</a>
+        <a href="devops.html">DevOps</a>
+        <a href="LICENSE.html">Licencia</a>
+        <hr>
+        <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+      </div>
+    </aside>
+    <main>
+      
+<h1>Descripción técnica</h1>
+<h2>Módulos Python</h2>
+<table class="data-table">
+  <tr><th>Módulo</th><th>Función</th></tr>
+  <tr><td><code>network_engine.tablero</code></td><td>Loadout, engines, posición línea, AutoRevisor, eigenstate</td></tr>
+  <tr><td><code>network_engine.catalog</code></td><td>Sincronización <code>data/catalog.json</code> desde manifests in situ</td></tr>
+  <tr><td><code>network_engine.cli</code></td><td><code>nengine build|catalog|loadout|session|pack</code></td></tr>
+  <tr><td><code>network_engine.site</code></td><td>Contexto Jinja prensa/FOSS, marca</td></tr>
+</table>
+<h2>Corpus in situ</h2>
+<p>El raw permanece en <code>engines/</code>, <code>logs-aleph/</code>, <code>sima-aleph/</code>, <code>cima-aleph/</code>, <code>linea-aleph/</code>, <code>logs-skill/</code>. No se duplica en <code>data/corpus/</code>.</p>
+<h2>Esquemas JSON</h2>
+<p><code>data/schema/</code>: loadout, profile, engine, session, catalog.</p>
+<h2>Presupuesto engines</h2>
+<p>Main-engine siempre ON; máximo 2 forces Cohen por sesión (ver <code>engines/manifest.json</code>).</p>
+
+    </main>
+  </div>
+  <script src="assets/theme.js"></script>
+</body>
+</html>

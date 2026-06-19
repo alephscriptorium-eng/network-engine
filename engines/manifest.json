@@ -1,0 +1,229 @@
+{
+  "registry": "engines",
+  "description": "Registry agregado Cohen Force — main-engine + engine-model-A..F",
+  "version": "1.0.0-indexed",
+  "updated": "2026-06-19",
+  "cohen_frame": {
+    "godel": "suelo ontológico",
+    "cohen": "motor forcing (engines)",
+    "cantor": "horizonte Aleph"
+  },
+  "session_budget": {
+    "max_force_engines": 2,
+    "main_engine_always_on": true
+  },
+  "engines": [
+    {
+      "id": "main-engine",
+      "path": "main-engine/",
+      "role": "boot",
+      "cohen_type": "aesthetic_boot",
+      "viewpoint_origin": "esteta sin prisa / percepción antes que ideología",
+      "lore_hook": "aspirate a esteta — marco DevOps/blockchain como ficción operativa",
+      "anchor_scene": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta",
+      "activation_triggers": ["boot", "esteta", "asentamiento", "aspirate"],
+      "pairs_with": ["sima-aleph", "cima-aleph"],
+      "raw_sources": [
+        { "file": "raw/agent-logs-1.md", "lines": 60 },
+        { "file": "raw/agent-logs-2.md", "lines": 214 }
+      ],
+      "scene_count": 3,
+      "coverage": {
+        "total_lines": 274,
+        "covered_lines": 274,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "main-engine/manifest.json",
+      "indice_path": "main-engine/INDICE.md",
+      "engine_json_path": "main-engine/engine.json"
+    },
+    {
+      "id": "engine-model-A",
+      "path": "engine-model-A/",
+      "role": "force",
+      "cohen_type": "dialectic_poles_ab",
+      "viewpoint_origin": "marxismo internacional / café muertos",
+      "lore_hook": "polo A heterodoxo vs polo B sistémico",
+      "anchor_scene": "sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab",
+      "activation_triggers": [
+        "internacional",
+        "lenin",
+        "marx",
+        "polo A",
+        "polo B",
+        "café muertos",
+        "situacionista",
+        "guerra fría",
+        "marcuse",
+        "adorno"
+      ],
+      "pairs_with": ["engine-model-E", "linea-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 709 },
+        { "file": "raw/log-agents-2.md", "lines": 262 }
+      ],
+      "scene_count": 11,
+      "coverage": {
+        "total_lines": 973,
+        "covered_lines": 973,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-A/manifest.json",
+      "indice_path": "engine-model-A/INDICE.md",
+      "engine_json_path": "engine-model-A/engine.json"
+    },
+    {
+      "id": "engine-model-B",
+      "path": "engine-model-B/",
+      "role": "force",
+      "cohen_type": "disobedience",
+      "viewpoint_origin": "satyagraha económica / Duran, Lucio Urtubia y arco Morente-Omega-Cohen",
+      "lore_hook": "desobediencia civil — «primero Manhattan y después Berlín» como toma simbólica del sistema",
+      "anchor_scene": "sesion-01-omega-manhattan/04-omega-manhattan",
+      "activation_triggers": ["satyagraha", "duran", "omega", "manhattan", "desobediencia", "lucio", "cohen", "morente"],
+      "pairs_with": ["engine-model-E", "sima-aleph", "linea-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 318 },
+        { "file": "raw/logs-agent-2.md", "lines": 144 }
+      ],
+      "scene_count": 6,
+      "coverage": {
+        "total_lines": 462,
+        "covered_lines": 462,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-B/manifest.json",
+      "indice_path": "engine-model-B/INDICE.md",
+      "engine_json_path": "engine-model-B/engine.json"
+    },
+    {
+      "id": "engine-model-C",
+      "path": "engine-model-C/",
+      "role": "force",
+      "cohen_type": "political_economy",
+      "viewpoint_origin": "pirámide patrimonial España / Ilustración 2.0 — ciudadano-protocolo",
+      "lore_hook": "ciudadano-protocolo vs concentración de riqueza; debate capitalismo y derechos digitales",
+      "anchor_scene": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana",
+      "activation_triggers": ["piramide", "riqueza", "espana", "ilustracion", "protocolo", "vivienda", "greenwashing", "Borrego"],
+      "pairs_with": ["linea-aleph", "engine-model-E"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 959 },
+        { "file": "raw/logs-agent-2.md", "lines": 73 }
+      ],
+      "scene_count": 8,
+      "coverage": {
+        "total_lines": 1032,
+        "covered_lines": 1032,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-C/manifest.json",
+      "indice_path": "engine-model-C/INDICE.md",
+      "engine_json_path": "engine-model-C/engine.json"
+    },
+    {
+      "id": "engine-model-D",
+      "path": "engine-model-D/",
+      "role": "force",
+      "cohen_type": "credos",
+      "viewpoint_origin": "conversión / apostasía comparada en religiones mayoritarias",
+      "lore_hook": "tablas de credo y ruptura confesional — condiciones de entrada y salida por fe",
+      "anchor_scene": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas",
+      "activation_triggers": ["conversion", "apostasia", "credo", "religion", "monoteismo"],
+      "pairs_with": ["engine-model-F", "cima-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 52 }
+      ],
+      "scene_count": 2,
+      "coverage": {
+        "total_lines": 52,
+        "covered_lines": 52,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-D/manifest.json",
+      "indice_path": "engine-model-D/INDICE.md",
+      "engine_json_path": "engine-model-D/engine.json"
+    },
+    {
+      "id": "engine-model-E",
+      "path": "engine-model-E/",
+      "role": "force",
+      "cohen_type": "impotent_document",
+      "viewpoint_origin": "carta de derechos / declaración impotente frente a NRx; dosier épica del poder",
+      "lore_hook": "documento que no puede imponer — principios declarativos vs cancelación NRx y rectificaciones delta",
+      "anchor_scene": "sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
+      "activation_triggers": ["carta", "derechos", "nrx", "dosier", "poder", "impotente", "delta", "Land"],
+      "pairs_with": ["engine-model-A", "engine-model-C"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 160 },
+        { "file": "raw/logs-agent-2.md", "lines": 269 }
+      ],
+      "scene_count": 6,
+      "coverage": {
+        "total_lines": 429,
+        "covered_lines": 429,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-E/manifest.json",
+      "indice_path": "engine-model-E/INDICE.md",
+      "engine_json_path": "engine-model-E/engine.json"
+    },
+    {
+      "id": "engine-model-F",
+      "path": "engine-model-F/",
+      "role": "force",
+      "cohen_type": "poetic_existential",
+      "viewpoint_origin": "Pizarnik / jaula-pájaro existencial; contraste Fonollosa ciudad-jaula",
+      "lore_hook": "poética como force de contraste no programático — forcing imaginativo del pájaro-jaula",
+      "anchor_scene": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro",
+      "activation_triggers": ["pizarnik", "poesia", "jaula", "existencial", "fonollosa", "cohen", "forcing"],
+      "pairs_with": ["engine-model-D", "sima-aleph", "cima-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 163 }
+      ],
+      "scene_count": 3,
+      "coverage": {
+        "total_lines": 163,
+        "covered_lines": 163,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-F/manifest.json",
+      "indice_path": "engine-model-F/INDICE.md",
+      "engine_json_path": "engine-model-F/engine.json"
+    }
+  ],
+  "cross_corpus": {
+    "sima-aleph": {
+      "path": "../sima-aleph/",
+      "indice": "../sima-aleph/INDICE.md",
+      "paired_engines": ["main-engine", "engine-model-B", "engine-model-F"]
+    },
+    "cima-aleph": {
+      "path": "../cima-aleph/",
+      "indice": "../cima-aleph/INDICE.md",
+      "paired_engines": ["main-engine", "engine-model-D", "engine-model-F"]
+    },
+    "linea-aleph": {
+      "path": "../linea-aleph/",
+      "indice": "../linea-aleph/INDICE.md",
+      "paired_engines": ["engine-model-A", "engine-model-B", "engine-model-C"]
+    }
+  },
+  "verification": {
+    "all_indexed": true,
+    "engines_pending": 0,
+    "engines_indexed": 8,
+    "total_scenes": 39,
+    "total_lines": 3385,
+    "segment_scripts_ok": true,
+    "issues": [
+      "engine-model-A: anchor_scene en engine.json usa sesion-02-internacionales-dialectica-ab; manifest y segment usan sesion-02-internacionales-cafe-muertos"
+    ]
+  }
+}

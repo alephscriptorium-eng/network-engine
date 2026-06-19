@@ -1,0 +1,24 @@
+{
+  "equipo": { "nombre": "Escrivivir", "url": "https://escrivivir.co" },
+  "scriptorium": {
+    "nombre": "Scriptorium Skins",
+    "url": "https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/",
+    "logo": "logo_scriptorium.png",
+    "etiqueta": "IDE agéntico de desarrollo"
+  },
+  "serie": {
+    "nombre": "Animus Iocandi",
+    "etiqueta": "Juguete-pasatiempo",
+    "descripcion": "Para pasar el rato calculando y reflexionando sobre cosas de sociedad, cultura y ecología"
+  },
+  "producto": {
+    "nombre": "Network Engine",
+    "logo": "logo.png",
+    "etiqueta": "Motor tablero Aleph — loadout, forces Cohen y catálogo corpus"
+  },
+  "arg": {
+    "siglas": "F.A.R.O.",
+    "nombre": "Frente Aleph de Resistencia Ontológica",
+    "etiqueta": "Material transmedia para agentes del juego ARG"
+  }
+}

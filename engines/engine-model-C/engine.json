@@ -1,0 +1,17 @@
+{
+  "id": "engine-model-C",
+  "role": "force",
+  "cohen_type": "political_economy",
+  "viewpoint_origin": "pirámide patrimonial España / Ilustración 2.0 — ciudadano-protocolo",
+  "lore_hook": "ciudadano-protocolo vs concentración de riqueza; debate capitalismo y derechos digitales",
+  "anchor_scene": "sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana",
+  "activation_triggers": ["piramide", "riqueza", "espana", "ilustracion", "protocolo", "vivienda", "greenwashing", "Borrego"],
+  "pairs_with": ["linea-aleph", "engine-model-E"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent-1.md", "lines": 959 },
+    { "file": "raw/logs-agent-2.md", "lines": 73 }
+  ],
+  "estimated_scenes": 8,
+  "notes": "Log-1: pirámide ES + debate Borrego (decrecimiento, fiscalidad, vivienda). Log-2: Ilustración 2.0 vs NRx"
+}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Técnico — {{ brand }}{% endblock %}
+{% block content %}
+<h1>Descripción técnica</h1>
+<h2>Módulos Python</h2>
+<table class="data-table">
+  <tr><th>Módulo</th><th>Función</th></tr>
+  <tr><td><code>network_engine.tablero</code></td><td>Loadout, engines, posición línea, AutoRevisor, eigenstate</td></tr>
+  <tr><td><code>network_engine.catalog</code></td><td>Sincronización <code>data/catalog.json</code> desde manifests in situ</td></tr>
+  <tr><td><code>network_engine.cli</code></td><td><code>nengine build|catalog|loadout|session|pack</code></td></tr>
+  <tr><td><code>network_engine.site</code></td><td>Contexto Jinja prensa/FOSS, marca</td></tr>
+</table>
+<h2>Corpus in situ</h2>
+<p>El raw permanece en <code>engines/</code>, <code>logs-aleph/</code>, <code>sima-aleph/</code>, <code>cima-aleph/</code>, <code>linea-aleph/</code>, <code>logs-skill/</code>. No se duplica en <code>data/corpus/</code>.</p>
+<h2>Esquemas JSON</h2>
+<p><code>data/schema/</code>: loadout, profile, engine, session, catalog.</p>
+<h2>Presupuesto engines</h2>
+<p>Main-engine siempre ON; máximo 2 forces Cohen por sesión (ver <code>engines/manifest.json</code>).</p>
+{% endblock %}

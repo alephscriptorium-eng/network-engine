@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}DevOps — {{ brand }}{% endblock %}
+{% block content %}
+<h1>DevOps — operar y ampliar el catálogo</h1>
+<p class="lead">Instalación, ciclo operativo con agentes externos y publicación del sitio estático.</p>
+
+<h2>Onboarding para agentes LLM</h2>
+<div class="card">
+  <h3>llms.md</h3>
+  <p>Documento de contexto obligatorio antes de tocar código o datos.</p>
+  <div class="card-actions">
+    <a href="{{ llms_local }}" class="ext">Copia en este sitio</a>
+    <a href="{{ llms_github }}" class="ext" rel="noopener">Ver en GitHub</a>
+    <a href="{{ llms_raw }}" class="ext" rel="noopener">Raw (agents)</a>
+  </div>
+  <p class="path-hint">{{ llms_local }} · rama {{ github_branch }}</p>
+</div>
+
+<h2>Prompts operativos</h2>
+<div class="card-grid">
+  {% for p in prompts_operativos %}
+  <article class="card">
+    <h3>{{ p.titulo }}</h3>
+    <p>{{ p.descripcion }}</p>
+    <div class="card-actions">
+      <a href="{{ p.github }}" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">{{ p.archivo }}</p>
+  </article>
+  {% endfor %}
+</div>
+
+<h2>Prompts ciudadano</h2>
+<div class="card-grid">
+  {% for p in prompts_ciudadano %}
+  <article class="card">
+    <h3>{{ p.titulo }}</h3>
+    <p>{{ p.descripcion }}</p>
+    <div class="card-actions">
+      <a href="{{ p.github }}" class="ext" rel="noopener">Ver en GitHub</a>
+    </div>
+    <p class="path-hint">{{ p.archivo }}</p>
+  </article>
+  {% endfor %}
+</div>
+
+<h2>Instalación</h2>
+<pre>git clone {{ github_repo }}.git
+cd network-engine
+pip install -e ".[dev]"</pre>
+
+<h2>Comandos CLI</h2>
+<pre>nengine loadout validate default-tablero
+nengine loadout apply default-tablero --semilla "tema"
+nengine catalog sync
+nengine build --target all
+nengine session publish  # stub
+nengine pack             # stub</pre>
+
+<h2>Publicar sitio</h2>
+<pre>nengine catalog sync
+nengine build --target all</pre>
+<p>GitHub Actions (<code>.github/workflows/pages.yml</code>) sube <code>public/</code> en push a <code>main</code>.</p>
+
+<h2>Tests</h2>
+<pre>pytest</pre>
+{% endblock %}

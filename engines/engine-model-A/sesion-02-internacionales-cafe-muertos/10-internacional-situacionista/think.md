@@ -1,0 +1,10 @@
+---
+scene_id: s02-02
+session: sesion-02-internacionales-cafe-muertos
+source_file: raw/log-agents-2.md
+source_lines: [82, 147]
+layer: think
+tags: [engine, engine_model_X, dialectic, polo_ab, marxismo_internacional, situacionismo, Debord, espectaculo, Mayo_68]
+engine_id: engine-model-A
+---
+Nos piden añadir la Internacional Situacionista (IS) a la cronología que acabamos de trazar. Debemos usar las mismas herramientas: polos A/B, delta, el café de los filósofos muertos (Marx, Lenin, Trotsky, Mao comentando). La IS es un caso peculiar porque no es una "internacional" de partidos obreros, sino un movimiento artístico-político (1957-1972) que influyó en el Mayo del 68. Su relación con el marxismo es heterodoxa: mezcla de marxismo, surrealismo, crítica a la sociedad del espectáculo, anti-burocracia radical, anti-partido. Debemos situarla en la secuencia de las internacionales y analizar su delta. En nuestra tabla, la IV Internacional (trotskista) quedó como Polo A eterno. La IS aparece después, contemporánea a la IV y a la posguerra. Su delta: rompe con la forma partido y propone la revolución de la vida cotidiana, el consejismo espontáneo, la crítica del urbanismo, etc. Debemos decidir si es un Polo A más radical, una especie de Polo A que se niega a ser B y se sitúa en una exterioridad casi anarquista. Usaremos la conversación: los situacionistas rechazan toda ortodoxia, pero eso mismo los convierte en un polo crítico radical que luego se disuelve sin institucionalizarse. En el café de los muertos, probablemente Marx y Lenin los verían como "pequeñoburgueses artísticos", Trotsky podría simpatizar con su crítica a la burocracia, Mao los vería como "elitistas sin contacto con las masas". El delta sería la desaparición del partido y la centralidad de la creación de situaciones. También podemos mencionar que la IS es la última internacional "clásica" antes de las experiencias más recientes. Debo responder en tono ágil y manteniendo el formato anterior: tabla de delta, luego café, luego síntesis.

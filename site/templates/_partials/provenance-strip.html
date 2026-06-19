@@ -1,0 +1,17 @@
+<div class="provenance" aria-label="Procedencia del material">
+  <div class="provenance-logos">
+    <a href="{{ brand.scriptorium.url }}" class="logo-frame" title="{{ brand.scriptorium.nombre }}">
+      <img src="{{ base_href }}assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo" width="32" height="32">
+    </a>
+    <a href="{{ portal_href }}" class="logo-frame" title="{{ brand.producto.nombre }}">
+      <img src="{{ base_href }}assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo" width="32" height="32">
+    </a>
+  </div>
+  <p class="provenance-chain">
+    <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a>
+    <span class="provenance-sep" aria-hidden="true">›</span>
+    <span>{{ brand.serie.nombre }}</span>
+    <span class="provenance-sep" aria-hidden="true">›</span>
+    <a href="{{ portal_href }}">{{ brand.producto.nombre }}</a>
+  </p>
+</div>

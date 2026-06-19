@@ -1,0 +1,26 @@
+<div class="provenance-footer">
+  <p class="provenance-footer-chain">
+    <a href="{{ brand.equipo.url }}">{{ brand.equipo.nombre }}</a>
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a>
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <span>{{ brand.serie.nombre }}</span>
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <a href="{{ portal_href }}">{{ brand.producto.nombre }}</a>
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <span title="{{ brand.arg.nombre }}">{{ brand.arg.siglas }}</span>
+  </p>
+  <p class="provenance-footer-meta">
+    {{ provenance.arg_label }}
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    v{{ version }}
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    {{ provenance.license }}
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <a href="{{ provenance.repo_url }}">Repositorio</a>
+    {% if show_inicio %}
+    <span class="provenance-sep" aria-hidden="true">·</span>
+    <a href="{{ portal_href }}">Inicio</a>
+    {% endif %}
+  </p>
+</div>

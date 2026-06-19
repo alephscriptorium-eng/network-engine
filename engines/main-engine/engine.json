@@ -1,0 +1,17 @@
+{
+  "id": "main-engine",
+  "role": "boot",
+  "cohen_type": "aesthetic_boot",
+  "viewpoint_origin": "esteta sin prisa / percepción antes que ideología",
+  "lore_hook": "aspirate a esteta — marco DevOps/blockchain como ficción operativa",
+  "anchor_scene": "sesion-01-boot-estetico-operativo/01-aspirate-a-esteta",
+  "activation_triggers": ["boot", "esteta", "asentamiento", "aspirate"],
+  "pairs_with": ["sima-aleph", "cima-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/agent-logs-1.md", "lines": 60 },
+    { "file": "raw/agent-logs-2.md", "lines": 214 }
+  ],
+  "estimated_scenes": 3,
+  "notes": "Siempre ON en Modo Aleph; no cuenta contra límite de 2 forces. DevOps/blockchain en log-2 es marco ficcional."
+}

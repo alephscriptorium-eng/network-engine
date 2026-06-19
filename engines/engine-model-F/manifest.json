@@ -1,0 +1,108 @@
+{
+  "engine": "engine-model-F",
+  "cohen_type": "poetic_existential",
+  "description": "Force poético-existencial — Pizarnik jaula-pájaro, contraste Fonollosa",
+  "anchor_scene": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro",
+  "source": "raw/logs-agent-1.md",
+  "scenes": [
+    {
+      "id": "f01-01",
+      "session": "sesion-01-pizarnik-jaula-pajaro",
+      "slug": "01-pizarnik-jaula-pajaro",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 51
+      },
+      "title": "Pizarnik «El despertar» — jaula que se vuelve pájaro",
+      "engine": "engine-model-F",
+      "rol": "ancla",
+      "tags": [
+        "force:F",
+        "cohen:poetic_existential",
+        "Pizarnik",
+        "Fonollosa",
+        "jaula-pajaro",
+        "El-despertar",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro/prompt.md",
+        "output": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro/output.md",
+        "trace": "sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro/trace.md"
+      },
+      "anomalies": [
+        "dialogo_plano_sin_think_explicito"
+      ]
+    },
+    {
+      "id": "f01-02",
+      "session": "sesion-01-pizarnik-jaula-pajaro",
+      "slug": "02-jaulas-espejo-invertido",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 52,
+        "line_end": 106
+      },
+      "title": "Dos jaulas espejo — Fonollosa afuera vs Pizarnik adentro",
+      "engine": "engine-model-F",
+      "rol": "contraste",
+      "tags": [
+        "force:F",
+        "cohen:poetic_existential",
+        "Pizarnik",
+        "Fonollosa",
+        "jaula",
+        "espejo-invertido",
+        "brujula-sentimental"
+      ],
+      "files": {
+        "prompt": "sesion-01-pizarnik-jaula-pajaro/02-jaulas-espejo-invertido/prompt.md",
+        "output": "sesion-01-pizarnik-jaula-pajaro/02-jaulas-espejo-invertido/output.md"
+      },
+      "anomalies": [
+        "prompt_usuario_en_dos_bloques_lineas_52_54"
+      ]
+    },
+    {
+      "id": "f01-03",
+      "session": "sesion-01-pizarnik-jaula-pajaro",
+      "slug": "03-godel-cohen-forcing",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 107,
+        "line_end": 163
+      },
+      "title": "Alfa/omega — Fonollosa-Gödel sistema vs Pizarnik-Cohen forcing",
+      "engine": "engine-model-F",
+      "rol": "forcing",
+      "tags": [
+        "force:F",
+        "cohen:poetic_existential",
+        "Pizarnik",
+        "Fonollosa",
+        "Godel",
+        "Cohen",
+        "forcing",
+        "hipotesis-continuo"
+      ],
+      "files": {
+        "prompt": "sesion-01-pizarnik-jaula-pajaro/03-godel-cohen-forcing/prompt.md",
+        "output": "sesion-01-pizarnik-jaula-pajaro/03-godel-cohen-forcing/output.md"
+      },
+      "anomalies": []
+    }
+  ],
+  "coverage": {
+    "total_lines": 163,
+    "covered_lines": 163,
+    "scenes": 3,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 7,
+    "issues": [],
+    "ok": true
+  }
+}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{# ctx: corpus (detail), github_blob #}
+{% block title %}{{ corpus.id }} — {{ brand_name }}{% endblock %}
+{% block content %}
+<h1>{{ corpus.id }}</h1>
+<p class="lead">{{ corpus.scene_count }} escenas indexadas{% if corpus.milestone_count %} · {{ corpus.milestone_count }} milestones{% endif %}.</p>
+<div class="card-actions">
+  <a href="{{ corpus.github }}" class="ext" rel="noopener">manifest.json</a>
+  <a href="{{ corpus.indice_github }}" class="ext" rel="noopener">INDICE.md</a>
+</div>
+{% if corpus.id == 'linea-aleph' and corpus.milestones %}
+<h2>Milestones (muestra)</h2>
+<ul>
+{% for m in corpus.milestones %}
+  <li><strong>{{ m.id or m.slug }}</strong> — {{ m.title or m.get('slug', '') }}</li>
+{% endfor %}
+</ul>
+<p><em>No se renderizan los {{ corpus.record_count or corpus.scene_count }} registros completos.</em></p>
+{% elif corpus.scenes %}
+<h2>Escenas (muestra)</h2>
+<ul>
+{% for s in corpus.scenes[:20] %}
+  <li><strong>{{ s.id }}</strong> — {{ s.title or s.slug }}
+    {% if s.files and s.files.output %}
+    <a href="{{ github_blob(corpus.id + '/' + s.files.output) }}" class="ext">output</a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% if corpus.scenes_truncated %}<p><em>Lista truncada; ver manifest completo en GitHub.</em></p>{% endif %}
+{% endif %}
+<p><a href="index.html">← Corpus</a></p>
+{% endblock %}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alephscriptorium-eng.github.io/network-engine/schema/engine.json",
+  "title": "Engine Force descriptor",
+  "description": "Ficha Cohen por carpeta engine. Una instancia por engines/{engine-id}/engine.json (corpus in situ; schema canónico en data/schema/).",
+  "type": "object",
+  "required": [
+    "id",
+    "role",
+    "cohen_type",
+    "viewpoint_origin",
+    "lore_hook",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(main-engine|engine-model-[A-F])$",
+      "description": "Identificador de carpeta bajo engines/"
+    },
+    "role": {
+      "type": "string",
+      "enum": ["boot", "force"],
+      "description": "boot = main-engine (siempre activo); force = nodo Cohen seleccionable"
+    },
+    "cohen_type": {
+      "type": "string",
+      "description": "Tipo de forcing: aesthetic_boot, dialectic_poles_ab, disobedience, etc."
+    },
+    "viewpoint_origin": {
+      "type": "string",
+      "description": "Origen de mirada en lenguaje natural (no ideología del repo)"
+    },
+    "lore_hook": {
+      "type": "string",
+      "description": "Gancho narrativo breve para activación en tablero"
+    },
+    "anchor_scene": {
+      "type": "string",
+      "description": "Ruta relativa sesion-XX/NN-slug (sin capas); null hasta indexado"
+    },
+    "activation_triggers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Keywords que sugieren activar este force"
+    },
+    "pairs_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Engines o corpus (linea-aleph, sima-aleph) que contrastan bien"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "indexing", "indexed"],
+      "description": "Estado del indexado de corpus"
+    },
+    "raw_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["file", "lines"],
+        "properties": {
+          "file": { "type": "string" },
+          "lines": { "type": "integer", "minimum": 0 }
+        }
+      },
+      "description": "Logs fuente en raw/ (opcional hasta indexado)"
+    },
+    "estimated_scenes": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Escenas previstas antes de segmentar"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Anotaciones (p.ej. main-engine: DevOps/blockchain es marco ficcional)"
+    }
+  },
+  "examples": [
+    {
+      "id": "engine-model-A",
+      "role": "force",
+      "cohen_type": "dialectic_poles_ab",
+      "viewpoint_origin": "marxismo internacional / café muertos",
+      "lore_hook": "polo A heterodoxo vs polo B sistémico",
+      "anchor_scene": null,
+      "activation_triggers": ["internacional", "lenin", "marx", "polo A"],
+      "pairs_with": ["engine-model-E", "linea-aleph"],
+      "status": "pending"
+    },
+    {
+      "id": "main-engine",
+      "role": "boot",
+      "cohen_type": "aesthetic_boot",
+      "viewpoint_origin": "esteta sin prisa / percepción antes que ideología",
+      "lore_hook": "aspirate a esteta — marco DevOps/blockchain como ficción operativa",
+      "anchor_scene": null,
+      "activation_triggers": ["boot", "esteta", "asentamiento"],
+      "pairs_with": ["sima-aleph", "cima-aleph"],
+      "status": "pending",
+      "notes": "Siempre ON en Modo Aleph; no cuenta contra límite de 2 forces"
+    }
+  ]
+}
