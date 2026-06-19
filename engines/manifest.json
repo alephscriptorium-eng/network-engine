@@ -129,18 +129,19 @@
       "path": "engine-model-D/",
       "role": "force",
       "cohen_type": "credos",
-      "viewpoint_origin": "conversión / apostasía comparada en religiones mayoritarias",
-      "lore_hook": "tablas de credo y ruptura confesional — condiciones de entrada y salida por fe",
+      "viewpoint_origin": "conversión / apostasía comparada en religiones mayoritarias; paradigmas tecnológicos (API vs P2P/SLM) con lente Teilhard de Chardin",
+      "lore_hook": "tablas de credo y ruptura confesional — condiciones de entrada y salida por fe; contraste 2001/Solaris aplicado a IA y FOSS español",
       "anchor_scene": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas",
-      "activation_triggers": ["conversion", "apostasia", "credo", "religion", "monoteismo"],
+      "activation_triggers": ["conversion", "apostasia", "credo", "religion", "monoteismo", "chardin", "solaris", "2001", "p2p", "petals", "slm", "foss", "freepi", "magnific"],
       "pairs_with": ["engine-model-F", "cima-aleph"],
       "raw_sources": [
-        { "file": "raw/logs-agent-1.md", "lines": 52 }
+        { "file": "raw/logs-agent-1.md", "lines": 52 },
+        { "file": "raw/logs-agent-2.md", "lines": 127 }
       ],
-      "scene_count": 2,
+      "scene_count": 4,
       "coverage": {
-        "total_lines": 52,
-        "covered_lines": 52,
+        "total_lines": 179,
+        "covered_lines": 179,
         "ok": true
       },
       "status": "indexed",
@@ -219,8 +220,8 @@
     "all_indexed": true,
     "engines_pending": 0,
     "engines_indexed": 8,
-    "total_scenes": 39,
-    "total_lines": 3385,
+    "total_scenes": 41,
+    "total_lines": 3512,
     "segment_scripts_ok": true,
     "issues": []
   }

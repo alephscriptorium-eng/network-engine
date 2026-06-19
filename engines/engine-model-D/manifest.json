@@ -1,9 +1,18 @@
 {
   "engine": "engine-model-D",
   "cohen_type": "credos",
-  "description": "Force credos — tablas conversión/apostasía en religiones mayoritarias",
+  "description": "Force credos — conversión/apostasía + paradigmas IA/Chardin",
   "anchor_scene": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas",
-  "source": "raw/logs-agent-1.md",
+  "sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "lines": 52
+    },
+    {
+      "file": "raw/logs-agent-2.md",
+      "lines": 127
+    }
+  ],
   "scenes": [
     {
       "id": "d01-01",
@@ -30,6 +39,7 @@
       ],
       "files": {
         "prompt": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas/prompt.md",
+        "think": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas/think.md",
         "output": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas/output.md",
         "trace": "sesion-01-conversion-apostasia/01-conversion-apostasia-tablas/trace.md"
       },
@@ -60,22 +70,109 @@
         "continuacion"
       ],
       "files": {
-        "output": "sesion-01-conversion-apostasia/02-otras-religiones-mayoritarias/output.md"
+        "think": "sesion-01-conversion-apostasia/02-otras-religiones-mayoritarias/think.md",
+        "output": "sesion-01-conversion-apostasia/02-otras-religiones-mayoritarias/output.md",
+        "trace": "sesion-01-conversion-apostasia/02-otras-religiones-mayoritarias/trace.md"
       },
       "anomalies": [
         "sin_nuevo_prompt_usuario"
       ]
+    },
+    {
+      "id": "d02-01",
+      "session": "sesion-02-paradigmas-ia-chardin",
+      "slug": "01-paradigma-api-p2p-chardin",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 1,
+        "line_end": 54
+      },
+      "title": "Tabla comparativa API centralizada vs P2P/SLM — lente Teilhard de Chardin",
+      "engine": "engine-model-D",
+      "rol": "ancla_sesion",
+      "tags": [
+        "force:D",
+        "credos",
+        "paradigmas",
+        "chardin",
+        "ia",
+        "api",
+        "p2p",
+        "petals",
+        "slm",
+        "2001",
+        "solaris",
+        "ancla_sesion"
+      ],
+      "files": {
+        "prompt": "sesion-02-paradigmas-ia-chardin/01-paradigma-api-p2p-chardin/prompt.md",
+        "think": "sesion-02-paradigmas-ia-chardin/01-paradigma-api-p2p-chardin/think.md",
+        "output": "sesion-02-paradigmas-ia-chardin/01-paradigma-api-p2p-chardin/output.md",
+        "trace": "sesion-02-paradigmas-ia-chardin/01-paradigma-api-p2p-chardin/trace.md"
+      },
+      "anomalies": [
+        "titulo_linea_1_como_contexto",
+        "prompt_usuario_no_explicito"
+      ]
+    },
+    {
+      "id": "d02-02",
+      "session": "sesion-02-paradigmas-ia-chardin",
+      "slug": "02-freepi-magnific-solaris",
+      "source": {
+        "file": "raw/logs-agent-2.md",
+        "line_start": 55,
+        "line_end": 127
+      },
+      "title": "FreePI y Magnific — proyectos FOSS españoles en clave Solaris/P2P",
+      "engine": "engine-model-D",
+      "rol": "continuacion",
+      "tags": [
+        "force:D",
+        "credos",
+        "paradigmas",
+        "chardin",
+        "ia",
+        "freepi",
+        "magnific",
+        "foss",
+        "solaris",
+        "continuacion"
+      ],
+      "files": {
+        "prompt": "sesion-02-paradigmas-ia-chardin/02-freepi-magnific-solaris/prompt.md",
+        "think": "sesion-02-paradigmas-ia-chardin/02-freepi-magnific-solaris/think.md",
+        "output": "sesion-02-paradigmas-ia-chardin/02-freepi-magnific-solaris/output.md",
+        "trace": "sesion-02-paradigmas-ia-chardin/02-freepi-magnific-solaris/trace.md"
+      },
+      "anomalies": [
+        "prompt_embebido_en_think_linea_61",
+        "proyectos_inferidos_sin_repo",
+        "footer_ai_linea_127"
+      ]
     }
   ],
   "coverage": {
-    "total_lines": 52,
-    "covered_lines": 52,
-    "scenes": 2,
+    "sources": {
+      "raw/logs-agent-1.md": {
+        "total_lines": 52,
+        "covered_lines": 52,
+        "scenes": 2,
+        "ok": true
+      },
+      "raw/logs-agent-2.md": {
+        "total_lines": 127,
+        "covered_lines": 127,
+        "scenes": 2,
+        "ok": true
+      }
+    },
+    "total_lines": 179,
     "issues": [],
     "ok": true
   },
   "verification": {
-    "files": 4,
+    "files": 15,
     "issues": [],
     "ok": true
   }

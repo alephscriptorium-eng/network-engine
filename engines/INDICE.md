@@ -28,11 +28,11 @@ flowchart LR
 | [engine-model-A](engine-model-A/) | [INDICE](engine-model-A/INDICE.md) | force | dialectic_poles_ab | `sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab` † | 11 | 973 | 973/973 ✓ | E, linea | **indexed** |
 | [engine-model-B](engine-model-B/) | [INDICE](engine-model-B/INDICE.md) | force | disobedience | `sesion-01-omega-manhattan/04-omega-manhattan` | 6 | 462 | 462/462 ✓ | E, sima, linea | **indexed** |
 | [engine-model-C](engine-model-C/) | [INDICE](engine-model-C/INDICE.md) | force | political_economy | `sesion-01-piramide-riqueza-espana/01-piramide-riqueza-espana` | 8 | 1032 | 1032/1032 ✓ | linea, E | **indexed** |
-| [engine-model-D](engine-model-D/) | [INDICE](engine-model-D/INDICE.md) | force | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | 2 | 52 | 52/52 ✓ | F, cima | **indexed** |
+| [engine-model-D](engine-model-D/) | [INDICE](engine-model-D/INDICE.md) | force | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | 4 | 179 | 179/179 ✓ | F, cima | **indexed** |
 | [engine-model-E](engine-model-E/) | [INDICE](engine-model-E/INDICE.md) | force | impotent_document | `sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx` | 6 | 429 | 429/429 ✓ | A, C | **indexed** |
 | [engine-model-F](engine-model-F/) | [INDICE](engine-model-F/INDICE.md) | force | poetic_existential | `sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro` | 3 | 163 | 163/163 ✓ | D, sima, cima | **indexed** |
 
-**Totales:** 39 escenas · 3385 líneas raw · 8/8 indexed · segment scripts OK
+**Totales:** 41 escenas · 3512 líneas raw · 8/8 indexed · segment scripts OK
 
 † `engine-model-A/engine.json` declara `sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab`; manifest y segment usan `sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab`.
 
