@@ -45,7 +45,7 @@
       "cohen_type": "dialectic_poles_ab",
       "viewpoint_origin": "marxismo internacional / café muertos",
       "lore_hook": "polo A heterodoxo vs polo B sistémico",
-      "anchor_scene": "sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab",
+      "anchor_scene": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
       "activation_triggers": [
         "internacional",
         "lenin",
@@ -222,8 +222,6 @@
     "total_scenes": 39,
     "total_lines": 3385,
     "segment_scripts_ok": true,
-    "issues": [
-      "engine-model-A: anchor_scene en engine.json usa sesion-02-internacionales-dialectica-ab; manifest y segment usan sesion-02-internacionales-cafe-muertos"
-    ]
+    "issues": []
   }
 }

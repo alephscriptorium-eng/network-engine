@@ -1,4 +1,5 @@
 /* Documentación FOSS — bicolor, escala de grises */
+@import url("components.css");
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
@@ -208,24 +209,6 @@ h3 {
   margin: 0.25rem 0;
   font-size: 0.92rem;
   color: var(--muted);
-}
-
-.card-actions {
-  margin-top: 0.65rem;
-  font-size: 0.88rem;
-}
-
-.card-actions a {
-  margin-right: 1rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.card-actions a:hover { text-decoration: underline; }
-.card-actions a.ext::after {
-  content: " ↗";
-  font-size: 0.75em;
-  opacity: 0.75;
 }
 
 .path-hint {

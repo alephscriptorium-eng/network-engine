@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {# ctx: engine (detail), github_blob #}
 {% block title %}{{ engine.id }} — {{ brand_name }}{% endblock %}
+{% block dateline %}Prensa · Engines{% endblock %}
+{% block meta_description %}{{ engine.engine_json.lore_hook if engine.engine_json else engine.get('lore_hook', engine.id) }}{% endblock %}
 {% block content %}
 <h1>{{ engine.id }}</h1>
 <p class="lead">{{ engine.engine_json.lore_hook if engine.engine_json else engine.get('lore_hook', '') }}</p>
@@ -8,7 +10,7 @@
   <dt>Rol</dt><dd>{{ engine.role }}</dd>
   <dt>Tipo Cohen</dt><dd>{{ engine.cohen_type }}</dd>
   <dt>Origen mirada</dt><dd>{{ engine.engine_json.viewpoint_origin if engine.engine_json else '—' }}</dd>
-  <dt>Escena ancla</dt><dd><code>{{ engine.anchor_scene or engine.engine_json.anchor_scene if engine.engine_json else '—' }}</code></dd>
+  <dt>Escena ancla</dt><dd><code>{{ engine.engine_json.anchor_scene if engine.engine_json else (engine.anchor_scene or '—') }}</code></dd>
   <dt>Pairs with</dt><dd>{{ (engine.engine_json.pairs_with | join(', ')) if engine.engine_json else '—' }}</dd>
 </dl>
 {% if engine.engine_json and engine.engine_json.activation_triggers %}

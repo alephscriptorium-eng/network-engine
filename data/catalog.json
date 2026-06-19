@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated": "2026-06-19T00:58:59Z",
+  "updated": "2026-06-19T06:51:53Z",
   "engines": [
     {
       "id": "main-engine",
@@ -19,7 +19,7 @@
       "path": "engines/engine-model-A",
       "role": "force",
       "cohen_type": "dialectic_poles_ab",
-      "anchor_scene": "sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab",
+      "anchor_scene": "sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
       "scene_count": 11,
       "status": "indexed",
       "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-A/engine.json",

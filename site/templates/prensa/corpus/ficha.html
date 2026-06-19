@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {# ctx: corpus (detail), github_blob #}
 {% block title %}{{ corpus.id }} — {{ brand_name }}{% endblock %}
+{% block dateline %}Prensa · Corpus{% endblock %}
+{% block meta_description %}{{ corpus.id }} — {{ corpus.scene_count }} escenas indexadas{% if corpus.milestone_count %} · {{ corpus.milestone_count }} milestones{% endif %}{% endblock %}
 {% block content %}
 <h1>{{ corpus.id }}</h1>
 <p class="lead">{{ corpus.scene_count }} escenas indexadas{% if corpus.milestone_count %} · {{ corpus.milestone_count }} milestones{% endif %}.</p>
@@ -12,7 +14,10 @@
 <h2>Milestones (muestra)</h2>
 <ul>
 {% for m in corpus.milestones %}
-  <li><strong>{{ m.id or m.slug }}</strong> — {{ m.title or m.get('slug', '') }}</li>
+  <li><strong>{{ m.id or m.slug }}</strong> —
+    {% if m.github %}<a href="{{ m.github }}" class="ext" rel="noopener">{{ m.section or m.title or m.slug }}</a>
+    {% else %}{{ m.section or m.title or m.get('slug', '') }}{% endif %}
+  </li>
 {% endfor %}
 </ul>
 <p><em>No se renderizan los {{ corpus.record_count or corpus.scene_count }} registros completos.</em></p>

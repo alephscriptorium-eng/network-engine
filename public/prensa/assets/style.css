@@ -1,4 +1,5 @@
 /* Centro de datos — prensa (tipografía periódico, Courier New) */
+@import url("components.css");
 :root,
 [data-theme="dark"] {
   color-scheme: dark;

@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {# ctx: catalog, engines, github_blob #}
 {% block title %}Engines — {{ brand_name }}{% endblock %}
+{% block dateline %}Prensa · Engines{% endblock %}
+{% block meta_description %}Registry de engines Cohen — main-engine y forces{% endblock %}
 {% block content %}
 <h1>Engines Cohen</h1>
 <p class="lead">Registry de {{ catalog.engines|length }} engines. Main-engine siempre activo; máx. 2 forces por sesión.</p>

@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 {# ctx: asentamiento, loadout_id, github_blob #}
 {% block title %}Equipamiento — {{ brand_name }}{% endblock %}
+{% block dateline %}Prensa · Equipamiento{% endblock %}
+{% block meta_description %}Showcase equipamiento rude-bot — bot crudo, loadout instantáneo y ASENTAMIENTO{% endblock %}
 {% block content %}
 <h1>Equipamiento — traje rude-bot</h1>
 <p class="lead">Showcase: bot crudo → loadout instantáneo → ASENTAMIENTO. Sin metáfora superhéroe; equipamiento operativo crudo.</p>
+
+<div class="diagram-wrap">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" role="img" aria-label="Flujo antes, equipar, después">
+    <rect class="diagram-box" x="10" y="20" width="180" height="80" rx="0"/>
+    <text class="diagram-label" x="100" y="48" text-anchor="middle">Antes</text>
+    <text class="diagram-sublabel" x="100" y="68" text-anchor="middle">bot crudo</text>
+    <line class="diagram-arrow" x1="195" y1="60" x2="235" y2="60" marker-end="url(#arrowhead)"/>
+    <rect class="diagram-box" x="240" y="20" width="240" height="80" rx="0"/>
+    <text class="diagram-label" x="360" y="48" text-anchor="middle">Equipar</text>
+    <text class="diagram-sublabel" x="360" y="68" text-anchor="middle">skill · perfil · forces</text>
+    <line class="diagram-arrow" x1="485" y1="60" x2="525" y2="60" marker-end="url(#arrowhead)"/>
+    <rect class="diagram-box" x="530" y="20" width="180" height="80" rx="0"/>
+    <text class="diagram-label" x="620" y="48" text-anchor="middle">Después</text>
+    <text class="diagram-sublabel" x="620" y="68" text-anchor="middle">ASENTAMIENTO</text>
+    <defs>
+      <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="currentColor"/>
+      </marker>
+    </defs>
+  </svg>
+</div>
 
 <section class="card">
   <h2>Antes — bot crudo</h2>
@@ -13,10 +36,10 @@
 
 <section class="card">
   <h2>Equipar — loadout <code>{{ loadout_id }}</code></h2>
-  <div class="loadout-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0">
-    <div class="card"><strong>Skill</strong><br><code>agents/skills/modo-aleph</code></div>
-    <div class="card"><strong>Perfil</strong><br><code>data/profiles/composer.json</code></div>
-    <div class="card"><strong>Forces</strong><br>main-engine + engine-model-A</div>
+  <div class="loadout-grid">
+    <div class="loadout-cell"><strong>Skill</strong><br><code>agents/skills/modo-aleph</code></div>
+    <div class="loadout-cell"><strong>Perfil</strong><br><code>data/profiles/composer.json</code></div>
+    <div class="loadout-cell"><strong>Forces</strong><br>main-engine + engine-model-A</div>
   </div>
   <p><code>nengine loadout apply {{ loadout_id }} --semilla "tema"</code></p>
   <a href="{{ github_blob('data/loadouts/' + loadout_id + '.json') }}" class="ext">Ver loadout en GitHub</a>

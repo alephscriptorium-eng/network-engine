@@ -44,9 +44,22 @@ def corpus_detail(corpus_id: str) -> dict[str, Any] | None:
                 else:
                     registros = manifest.get("registros") or manifest.get("scenes") or []
                     if corpus_id == "linea-aleph":
-                        detail["milestones"] = [
-                            r for r in registros if r.get("milestone")
-                        ][:20]
+                        milestones: list[dict[str, Any]] = []
+                        for r in registros:
+                            if not r.get("milestone"):
+                                continue
+                            m = dict(r)
+                            reg_path = (r.get("files") or {}).get("registro")
+                            if reg_path:
+                                m["github"] = github_blob(f"linea-aleph/{reg_path}")
+                            elif r.get("slug"):
+                                m["github"] = github_blob(
+                                    f"linea-aleph/registros/{r['slug']}/registro.md"
+                                )
+                            milestones.append(m)
+                            if len(milestones) >= 20:
+                                break
+                        detail["milestones"] = milestones
                     else:
                         detail["scenes"] = registros[:50]
                         detail["scenes_truncated"] = len(registros) > 50

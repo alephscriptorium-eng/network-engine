@@ -1,0 +1,232 @@
+/* Componentes compartidos — prensa + FOSS */
+
+/* —— Tablas de datos —— */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+  margin: 0.75rem 0 1.25rem;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid var(--rule, var(--border));
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table tr:last-child td { border-bottom: none; }
+
+.data-table thead th {
+  background: var(--surface-2);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.data-table tbody tr:nth-child(even) {
+  background: var(--surface-2);
+}
+
+/* —— Ficha dl/dt —— */
+.ficha-dl {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9rem) 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+  padding: 0.75rem 0.85rem;
+  background: var(--surface);
+}
+
+.ficha-dl dt {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.ficha-dl dd {
+  margin: 0;
+}
+
+/* —— Acciones de ficha —— */
+.card-actions {
+  margin: 0.75rem 0 1rem;
+  font-size: 0.88rem;
+}
+
+.card-actions a {
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.card-actions a:hover { text-decoration: underline; }
+
+.card-actions a.ext::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+/* —— Asentamiento —— */
+.asentamiento {
+  font-family: var(--font, ui-monospace, "Cascadia Code", monospace);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  margin: 0.75rem 0 1rem;
+  overflow-x: auto;
+}
+
+/* —— Loadout grid —— */
+.loadout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.loadout-grid .loadout-cell {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 0.65rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.loadout-grid .loadout-cell strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* —— Diagrama equipamiento (3 columnas) —— */
+.equip-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin: 0 0 1.5rem;
+  border: 2px solid var(--border);
+}
+
+.equip-flow-col {
+  padding: 0.75rem 0.65rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.equip-flow-col:last-child { border-right: none; }
+
+.equip-flow-col h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+}
+
+.equip-flow-svg {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  color: var(--text);
+}
+
+.equip-flow-label {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* —— Diagrama tablero —— */
+.diagram-wrap {
+  margin: 0.75rem 0 1rem;
+  color: var(--text);
+}
+
+.diagram-wrap svg {
+  width: 100%;
+  height: auto;
+  font-family: var(--font, system-ui, sans-serif);
+}
+
+.diagram-box {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+}
+
+.diagram-label {
+  fill: currentColor;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.diagram-sublabel {
+  fill: currentColor;
+  font-size: 10px;
+}
+
+.diagram-arrow {
+  stroke: currentColor;
+  stroke-width: 1;
+  fill: none;
+}
+
+.diagram-caption {
+  fill: currentColor;
+  font-size: 10px;
+}
+
+/* —— Fallback logo —— */
+.provenance-logo[src$=".png"] {
+  object-fit: contain;
+}
+
+.provenance-logo.logo-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .loadout-grid,
+  .equip-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .equip-flow-col {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .equip-flow-col:last-child { border-bottom: none; }
+
+  .ficha-dl {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .ficha-dl dt { margin-top: 0.35rem; }
+}

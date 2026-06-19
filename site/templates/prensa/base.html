@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ brand_name }}{% endblock %}</title>
-  <meta name="description" content="{{ brand.serie.nombre }} — {{ brand.producto.nombre }}. {{ brand.arg.etiqueta }}.">
+  <meta name="description" content="{% block meta_description %}{{ brand.producto.nombre }} — {{ brand.arg.siglas }}{% endblock %}">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
@@ -15,9 +15,9 @@
     <div class="wrap">
       {% include "provenance-strip.html" %}
       <div class="masthead">
-        <p class="dateline">Material transmedia {{ brand.arg.siglas }} · Prensa · Edición electrónica</p>
+        <p class="dateline">{% block dateline %}Prensa · {{ brand.arg.siglas }}{% endblock %}</p>
         <a href="{{ prensa_href }}" class="brand">{{ brand.producto.nombre }}</a>
-        <p class="site-tag">{{ brand.serie.etiqueta }} {{ brand.serie.nombre }} · Catálogo corpus y tablero</p>
+        <p class="site-tag">{% block site_tag %}{{ brand.serie.nombre }} · {{ brand.arg.siglas }}{% endblock %}</p>
       </div>
       <div class="header-rule" aria-hidden="true"></div>
       <div class="header-toolbar">

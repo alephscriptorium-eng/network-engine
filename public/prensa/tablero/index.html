@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tablero — Network Engine</title>
-  <meta name="description" content="Animus Iocandi — Network Engine. Material transmedia para agentes del juego ARG.">
+  <meta name="description" content="Tablero Aleph — reglas del juego, flujo del turno y piezas">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
@@ -16,10 +16,10 @@
       <div class="provenance" aria-label="Procedencia del material">
   <div class="provenance-logos">
     <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/" class="logo-frame" title="Scriptorium Skins">
-      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32">
+      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='SS';">
     </a>
     <a href="../../index.html" class="logo-frame" title="Network Engine">
-      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32">
+      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='NE';">
     </a>
   </div>
   <p class="provenance-chain">
@@ -31,9 +31,9 @@
   </p>
 </div>
       <div class="masthead">
-        <p class="dateline">Material transmedia F.A.R.O. · Prensa · Edición electrónica</p>
+        <p class="dateline">Prensa · Tablero</p>
         <a href="../index.html" class="brand">Network Engine</a>
-        <p class="site-tag">Juguete-pasatiempo Animus Iocandi · Catálogo corpus y tablero</p>
+        <p class="site-tag">Animus Iocandi · F.A.R.O.</p>
       </div>
       <div class="header-rule" aria-hidden="true"></div>
       <div class="header-toolbar">
@@ -73,20 +73,22 @@
 
 <section class="card">
   <h2>Diagrama (equipar → turno)</h2>
+  <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="Equipamiento a turno tablero">
-    <rect x="10" y="20" width="200" height="160" fill="none" stroke="currentColor" stroke-width="1"/>
-    <text x="110" y="45" text-anchor="middle" font-size="12">Equipamiento</text>
-    <text x="110" y="70" text-anchor="middle" font-size="10">skill → perfil → boot</text>
-    <rect x="250" y="20" width="460" height="160" fill="none" stroke="currentColor" stroke-width="1"/>
-    <text x="480" y="45" text-anchor="middle" font-size="12">Turno</text>
-    <text x="300" y="75" font-size="10">ASENTAMIENTO</text>
-    <text x="400" y="75" font-size="10">Cotas</text>
-    <text x="480" y="75" font-size="10">Forces</text>
-    <text x="560" y="75" font-size="10">AutoRevisor</text>
-    <text x="640" y="75" font-size="10">Tablero</text>
-    <line x1="210" y1="100" x2="250" y2="100" stroke="currentColor"/>
-    <text x="480" y="130" text-anchor="middle" font-size="10">Persistencia: hot.md · posicion-linea.json · engines-active.json</text>
+    <rect class="diagram-box" x="10" y="20" width="200" height="160"/>
+    <text class="diagram-label" x="110" y="45" text-anchor="middle">Equipamiento</text>
+    <text class="diagram-sublabel" x="110" y="70" text-anchor="middle">skill → perfil → boot</text>
+    <rect class="diagram-box" x="250" y="20" width="460" height="160"/>
+    <text class="diagram-label" x="480" y="45" text-anchor="middle">Turno</text>
+    <text class="diagram-sublabel" x="300" y="75">ASENTAMIENTO</text>
+    <text class="diagram-sublabel" x="400" y="75">Cotas</text>
+    <text class="diagram-sublabel" x="480" y="75">Forces</text>
+    <text class="diagram-sublabel" x="560" y="75">AutoRevisor</text>
+    <text class="diagram-sublabel" x="640" y="75">Tablero</text>
+    <line class="diagram-arrow" x1="210" y1="100" x2="250" y2="100"/>
+    <text class="diagram-caption" x="480" y="130" text-anchor="middle">Persistencia: hot.md · posicion-linea.json · engines-active.json</text>
   </svg>
+  </div>
 </section>
 
 <section class="card">
@@ -127,17 +129,11 @@
     <span title="Frente Aleph de Resistencia Ontológica">F.A.R.O.</span>
   </p>
   <p class="provenance-footer-meta">
-    Material transmedia para agentes del juego ARG
-    <span class="provenance-sep" aria-hidden="true">·</span>
     v0.1.0
     <span class="provenance-sep" aria-hidden="true">·</span>
     GPL-3.0
     <span class="provenance-sep" aria-hidden="true">·</span>
     <a href="https://github.com/alephscriptorium-eng/network-engine">Repositorio</a>
-    
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="../../index.html">Inicio</a>
-    
   </p>
 </div></div>
   </footer>

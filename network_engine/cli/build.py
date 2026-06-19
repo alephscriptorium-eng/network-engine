@@ -65,6 +65,34 @@ def _copiar_assets(subdir: str, dest: Path) -> None:
         shutil.copytree(src, dest / "assets", dirs_exist_ok=True)
 
 
+def _copiar_shared_extras(dest: Path) -> None:
+    """Copia PNG y components.css sin sobrescribir style.css del portal."""
+    shared = SITE_DIR / "assets" / "shared"
+    if not shared.exists():
+        return
+    assets_dest = dest / "assets"
+    assets_dest.mkdir(parents=True, exist_ok=True)
+    components = shared / "components.css"
+    if components.exists():
+        shutil.copy2(components, assets_dest / "components.css")
+    for png in shared.glob("*.png"):
+        shutil.copy2(png, assets_dest / png.name)
+
+
+def _copiar_shared(dest: Path) -> None:
+    """Copia assets compartidos (components.css, theme.js, logos PNG) sin pisar style.css del portal."""
+    shared = SITE_DIR / "assets" / "shared"
+    if not shared.exists():
+        return
+    assets_dir = dest / "assets"
+    assets_dir.mkdir(parents=True, exist_ok=True)
+    for item in shared.iterdir():
+        if item.name == "style.css":
+            continue
+        if item.is_file():
+            shutil.copy2(item, assets_dir / item.name)
+
+
 def _leer_asentamiento() -> str:
     path = (
         PROJECT_ROOT
@@ -85,7 +113,7 @@ def build_prensa() -> None:
     env = _jinja_env("prensa")
     PUBLIC_PRENSA.mkdir(parents=True, exist_ok=True)
     _copiar_assets("prensa", PUBLIC_PRENSA)
-    _copiar_assets("shared", PUBLIC_PRENSA)
+    _copiar_shared(PUBLIC_PRENSA)
 
     ctx_root = {
         "version": __version__,
@@ -162,6 +190,7 @@ def build_foss() -> None:
     env = _jinja_env("foss")
     PUBLIC_FOSS.mkdir(parents=True, exist_ok=True)
     _copiar_assets("foss", PUBLIC_FOSS)
+    _copiar_shared_extras(PUBLIC_FOSS)
 
     ctx_base = {
         "version": __version__,
@@ -194,7 +223,7 @@ def build_root() -> None:
     env = _jinja_env("root")
     PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
     _copiar_assets("root", PUBLIC_DIR)
-    _copiar_assets("shared", PUBLIC_DIR)
+    _copiar_shared(PUBLIC_DIR)
     ctx = {
         "version": __version__,
         **brand_context(),
