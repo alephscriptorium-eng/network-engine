@@ -1,21 +1,20 @@
 {% extends "base.html" %}
-{# ctx: catalog, corpus, github_blob #}
-{% block title %}Corpus — {{ brand_name }}{% endblock %}
-{% block dateline %}Prensa · Corpus{% endblock %}
-{% block meta_description %}Corpus indexados in situ — metadata y enlaces blob/main{% endblock %}
+{# ctx: catalog, corpus_dimension, section_copy #}
+{% set sc = section_copy('corpus') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
 {% block content %}
-<h1>Corpus indexados</h1>
-<p class="lead">Cinco cuerpos permanecen in situ en el repo; prensa muestra metadata y enlaces blob/main.</p>
-<table class="data-table">
-  <thead><tr><th>ID</th><th>Escenas</th><th>Notas</th></tr></thead>
-  <tbody>
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
+<div class="corpus-dimensions">
   {% for c in catalog.corpus %}
-    <tr>
-      <td><a href="{{ c.id }}.html">{{ c.id }}</a></td>
-      <td>{{ c.scene_count }}{% if c.milestone_count %} ({{ c.milestone_count }} milestones){% endif %}</td>
-      <td>{{ c.note or '—' }}</td>
-    </tr>
+  {% set dim = corpus_dimension(c.id) %}
+  <article class="corpus-dim-card">
+    <p class="dim-label">{{ dim.label }}</p>
+    <h2><a href="{{ c.id }}.html">{{ c.id }}</a></h2>
+    <p>{{ dim.summary }}</p>
+  </article>
   {% endfor %}
-  </tbody>
-</table>
+</div>
 {% endblock %}

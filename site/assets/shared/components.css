@@ -1,5 +1,24 @@
 /* Componentes compartidos — prensa + FOSS */
 
+/* —— Accesibilidad —— */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0.5rem;
+  z-index: 1000;
+  padding: 0.5rem 0.85rem;
+  background: var(--emphasis, #fff);
+  color: var(--inverse, #000);
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border: 2px solid var(--border, #333);
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+}
+
 /* —— Tablas de datos —— */
 .data-table {
   width: 100%;
@@ -75,6 +94,147 @@
   content: " ↗";
   font-size: 0.75em;
   opacity: 0.75;
+}
+
+/* —— Enlace telemetría (fichas prensa) —— */
+.telemetry-link-wrap {
+  margin: 1rem 0 0.5rem;
+}
+
+.telemetry-link {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  letter-spacing: 0.02em;
+}
+
+.telemetry-link:hover {
+  background: var(--surface);
+  text-decoration: underline;
+}
+
+.telemetry-link.ext::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+/* —— Panel de fuerzas (engines index) —— */
+.forces-panel {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.force-card {
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+}
+
+.force-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.force-card .force-role {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.force-card .force-lore {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.force-card a.force-name {
+  text-decoration: none;
+  color: inherit;
+}
+
+.force-card a.force-name:hover {
+  text-decoration: underline;
+}
+
+/* —— Dimensiones corpus —— */
+.corpus-dimensions {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.corpus-dim-card {
+  border: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+}
+
+.corpus-dim-card h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.corpus-dim-card .dim-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.corpus-dim-card p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.corpus-dim-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.corpus-dim-card a:hover {
+  text-decoration: underline;
+}
+
+/* —— Acciones catálogo —— */
+.catalog-actions {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  border-top: 2px solid var(--border);
+}
+
+.catalog-actions li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+}
+
+.catalog-actions a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.catalog-actions a:hover {
+  text-decoration: underline;
+}
+
+.catalog-actions .action-detail {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 /* —— Asentamiento —— */

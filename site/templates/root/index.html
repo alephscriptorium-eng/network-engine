@@ -4,28 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ brand.serie.nombre }} — {{ brand.producto.nombre }}</title>
-  <meta name="description" content="{{ brand.serie.nombre }}: {{ brand.producto.etiqueta }}. {{ brand.scriptorium.etiqueta }}. {{ brand.arg.etiqueta }}.">
+  <meta name="description" content="{{ meta_description }}">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  {% include "head-meta.html" %}
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/components.css">
 </head>
 <body>
-  <main class="wrap">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <main id="main" class="wrap">
     <header class="landing-header">
       <div class="landing-logos">
         <a href="{{ brand.scriptorium.url }}" class="logo-frame" title="{{ brand.scriptorium.nombre }}">
-          <img src="assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo landing-logo" width="48" height="48">
+          <img src="assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo landing-logo" width="48" height="48" loading="lazy">
         </a>
         <a href="index.html" class="logo-frame" title="{{ brand.producto.nombre }}">
-          <img src="assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo landing-logo" width="48" height="48">
+          <img src="assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo landing-logo" width="48" height="48" loading="lazy">
         </a>
       </div>
       <p class="serie-name">{{ brand.serie.nombre }}</p>
       <p class="serie-tag">{{ brand.serie.etiqueta }} · <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a></p>
       <h1>{{ brand.producto.nombre }}</h1>
       <p class="version">v{{ version }} · GPL-3.0</p>
-      <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+      <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
     </header>
     <p class="lead">{{ brand.producto.etiqueta }}. Juguete-pasatiempo de la serie {{ brand.serie.nombre }}. Material transmedia para agentes del juego {{ brand.arg.siglas }}.</p>
     <nav class="portals" aria-label="Portales">
@@ -39,7 +42,7 @@
       </a>
     </nav>
     <footer class="site-footer">
-      {% include "provenance-footer.html" %}
+      {% with footer_logos=true %}{% include "provenance-footer.html" %}{% endwith %}
     </footer>
   </main>
   <script src="assets/theme.js"></script>

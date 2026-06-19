@@ -4,14 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ brand_name }}{% endblock %}</title>
-  <meta name="description" content="{% block meta_description %}{{ brand.producto.nombre }} — {{ brand.arg.siglas }}{% endblock %}">
+  <meta name="description" content="{% block meta_description %}{{ meta_description }}{% endblock %}">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  {% include "head-meta.html" %}
   <link rel="stylesheet" href="{{ base_href }}assets/style.css">
   <link rel="stylesheet" href="{{ base_href }}assets/components.css">
 </head>
 <body class="newspaper">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
   <header class="site-header">
     <div class="wrap">
       {% include "provenance-strip.html" %}
@@ -22,28 +24,16 @@
       </div>
       <div class="header-rule" aria-hidden="true"></div>
       <div class="header-toolbar">
-        <nav aria-label="Secciones">
-          <a href="{{ base_href }}index.html">Catálogo</a>
-          <span class="nav-sep">|</span>
-          <a href="{{ base_href }}equipamiento/index.html">Equipamiento</a>
-          <span class="nav-sep">|</span>
-          <a href="{{ base_href }}engines/index.html">Engines</a>
-          <span class="nav-sep">|</span>
-          <a href="{{ base_href }}corpus/index.html">Corpus</a>
-          <span class="nav-sep">|</span>
-          <a href="{{ base_href }}tablero/index.html">Tablero</a>
-          <span class="nav-sep">|</span>
-          <a href="{{ foss_href }}" class="foss-link">FOSS</a>
-        </nav>
-        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+        {% include "nav.html" %}
+        <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
       </div>
     </div>
   </header>
-  <main class="wrap">
+  <main id="main" class="wrap">
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
-    <div class="wrap">{% include "provenance-footer.html" %}</div>
+    <div class="wrap">{% with footer_logos=false %}{% include "provenance-footer.html" %}{% endwith %}</div>
   </footer>
   <script src="{{ base_href }}assets/theme.js"></script>
 </body>

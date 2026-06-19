@@ -67,11 +67,40 @@ def corpus_detail(corpus_id: str) -> dict[str, Any] | None:
     return None
 
 
+def _lore_hook(engine_id: str) -> str | None:
+    engine_json = ENGINES_DIR / engine_id / "engine.json"
+    if not engine_json.exists():
+        return None
+    import json
+
+    with open(engine_json, encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("lore_hook")
+
+
+def engines_index() -> list[dict[str, Any]]:
+    catalog = cargar_catalog()
+    result: list[dict[str, Any]] = []
+    for eng in catalog.get("engines", []):
+        detail = engine_detail(eng["id"])
+        if detail:
+            result.append(detail)
+    return result
+
+
 def prensa_context() -> dict[str, Any]:
     catalog = cargar_catalog()
+    engines = []
+    for eng in catalog.get("engines", []):
+        enriched = dict(eng)
+        if not enriched.get("lore_hook"):
+            hook = _lore_hook(eng["id"])
+            if hook:
+                enriched["lore_hook"] = hook
+        engines.append(enriched)
     return {
         "catalog": catalog,
         "github_blob": github_blob,
-        "engines": catalog.get("engines", []),
+        "engines": engines,
         "corpus": catalog.get("corpus", []),
     }

@@ -3,26 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tablero — Network Engine</title>
-  <meta name="description" content="Tablero Aleph — reglas del juego, flujo del turno y piezas">
+  <title>Tablero Aleph — reglas del juego — Network Engine</title>
+  <meta name="description" content="Superposición de miradas sin colapsar. Un turno: equipar loadout → ASENTAMIENTO → cotas → fuerzas → AutoRevisor → constelación.">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="canonical" href="https://alephscriptorium-eng.github.io/network-engine/prensa/tablero/index.html">
+<meta property="og:title" content="Tablero — Network Engine">
+<meta property="og:description" content="Reglas del tablero Aleph: flujo del turno, cotas y AutoRevisor.">
+<meta property="og:url" content="https://alephscriptorium-eng.github.io/network-engine/prensa/tablero/index.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tablero — Network Engine">
+<meta name="twitter:description" content="Reglas del tablero Aleph: flujo del turno, cotas y AutoRevisor.">
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/components.css">
 </head>
 <body class="newspaper">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
   <header class="site-header">
     <div class="wrap">
       <div class="provenance" aria-label="Procedencia del material">
   <div class="provenance-logos">
     <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/" class="logo-frame" title="Scriptorium Skins">
-      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='SS';">
+      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='SS';">
     </a>
     <a href="../../index.html" class="logo-frame" title="Network Engine">
-      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='NE';">
+      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='NE';">
     </a>
   </div>
+  
   <p class="provenance-chain">
     <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
     <span class="provenance-sep" aria-hidden="true">›</span>
@@ -39,40 +50,40 @@
       <div class="header-rule" aria-hidden="true"></div>
       <div class="header-toolbar">
         <nav aria-label="Secciones">
-          <a href="../index.html">Catálogo</a>
-          <span class="nav-sep">|</span>
-          <a href="../equipamiento/index.html">Equipamiento</a>
-          <span class="nav-sep">|</span>
-          <a href="../engines/index.html">Engines</a>
-          <span class="nav-sep">|</span>
-          <a href="../corpus/index.html">Corpus</a>
-          <span class="nav-sep">|</span>
-          <a href="../tablero/index.html">Tablero</a>
-          <span class="nav-sep">|</span>
-          <a href="../../foss/index.html" class="foss-link">FOSS</a>
-        </nav>
-        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+  <a href="../index.html">Catálogo</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../equipamiento/index.html">Equipamiento</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../engines/index.html">Engines</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../corpus/index.html">Corpus</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../tablero/index.html" aria-current="page">Tablero</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../../foss/index.html" class="foss-link">FOSS</a>
+</nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
       </div>
     </div>
   </header>
-  <main class="wrap">
+  <main id="main" class="wrap">
     
 <h1>Tablero Aleph — reglas del juego</h1>
-<p class="lead">Superposición de miradas sin colapsar. Un turno: equipar loadout → ASENTAMIENTO → cotas → forces → AutoRevisor → constelación.</p>
+<p class="lead">Superposición de miradas sin colapsar. Un turno: equipar loadout → ASENTAMIENTO → cotas → fuerzas → AutoRevisor → constelación.</p>
 
-<section class="card">
+<section class="content-section">
   <h2>Flujo del turno</h2>
   <ol class="doc-list">
     <li><strong>Equipar</strong> — skill + perfil + boot main-engine (<code>nengine loadout apply</code>)</li>
     <li><strong>ASENTAMIENTO</strong> — polo tentado, sesgos, semilla del turno</li>
     <li><strong>Cotas</strong> — ancla sima + ancla cima → <code>posicion-linea.json</code> (0.0–1.0)</li>
-    <li><strong>Forces Cohen</strong> — main siempre ON; ≤2 forces; 1 escena ancla cada una</li>
+    <li><strong>Fuerzas Cohen</strong> — main siempre ON; ≤2 fuerzas; 1 escena ancla cada una</li>
     <li><strong>AutoRevisor</strong> — checklist A–H; fallo → volver a ASENTAMIENTO</li>
     <li><strong>Tablero</strong> — 3 Alephs; constelación de miradas; salida ∅ (no cierre lineal)</li>
   </ol>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Diagrama (equipar → turno)</h2>
   <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="Equipamiento a turno tablero">
@@ -83,7 +94,7 @@
     <text class="diagram-label" x="480" y="45" text-anchor="middle">Turno</text>
     <text class="diagram-sublabel" x="300" y="75">ASENTAMIENTO</text>
     <text class="diagram-sublabel" x="400" y="75">Cotas</text>
-    <text class="diagram-sublabel" x="480" y="75">Forces</text>
+    <text class="diagram-sublabel" x="480" y="75">Fuerzas</text>
     <text class="diagram-sublabel" x="560" y="75">AutoRevisor</text>
     <text class="diagram-sublabel" x="640" y="75">Tablero</text>
     <line class="diagram-arrow" x1="210" y1="100" x2="250" y2="100"/>
@@ -92,7 +103,7 @@
   </div>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Piezas del tablero</h2>
   <table class="data-table">
     <thead><tr><th>Pieza</th><th>Fuente</th><th>Función</th></tr></thead>
@@ -103,13 +114,13 @@
       <tr><td>3 Alephs</td><td>pipeline §5 skill</td><td>Sedimentación · cuerpo · periodicidad</td></tr>
       <tr><td>Cotas</td><td><a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/agents/skills/modo-aleph/cotas.md" class="ext">cotas.md</a></td><td>Eje sima (0) ↔ cima (1)</td></tr>
       <tr><td>Línea</td><td><a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/linea-aleph/INDICE.md" class="ext">linea-aleph</a></td><td>Demarcación histórica</td></tr>
-      <tr><td>Engines</td><td><a href="../engines/index.html">registry</a></td><td>main + ≤2 forces Cohen</td></tr>
+      <tr><td>Fuerzas</td><td><a href="../engines/index.html">panel de fuerzas</a></td><td>main + ≤2 fuerzas Cohen</td></tr>
       <tr><td>AutoRevisor</td><td><a href="https://github.com/alephscriptorium-eng/network-engine/blob/main/agents/skills/modo-aleph/autorevisor.md" class="ext">autorevisor.md</a></td><td>Checklist A–H</td></tr>
     </tbody>
   </table>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Loadout instantáneo</h2>
   <p><code>nengine loadout apply default-tablero --semilla "tema"</code> sustituye el pipeline largo de ACTIVACION.md.</p>
   <a href="../equipamiento/index.html">Ver showcase equipamiento</a>
@@ -117,26 +128,28 @@
 
   </main>
   <footer class="site-footer">
-    <div class="wrap"><div class="provenance-footer">
-  <p class="provenance-footer-chain">
-    <a href="https://escrivivir.co">Escrivivir</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span>Animus Iocandi</span>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="../../index.html">Network Engine</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span title="Frente Aleph de Resistencia Ontológica">F.A.R.O.</span>
-  </p>
-  <p class="provenance-footer-meta">
-    v0.1.0
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    GPL-3.0
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="https://github.com/alephscriptorium-eng/network-engine">Repositorio</a>
-  </p>
-</div></div>
+    <div class="wrap">
+  <div class="provenance-footer">
+    
+    <p class="provenance-footer-chain">
+      <a href="https://escrivivir.co">Escrivivir</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span>Animus Iocandi</span>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="../../index.html">Network Engine</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span title="Frente Aleph de Resistencia Ontológica">F.A.R.O.</span>
+    </p>
+    <p class="provenance-footer-meta">
+      v0.1.0
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      GPL-3.0
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="https://github.com/alephscriptorium-eng/network-engine">Repositorio</a>
+    </p>
+  </div></div>
   </footer>
   <script src="../assets/theme.js"></script>
 </body>

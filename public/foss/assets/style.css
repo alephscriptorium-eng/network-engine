@@ -93,6 +93,10 @@ a:hover { color: var(--link-hover); }
 }
 
 .sidebar nav a:hover { color: var(--link-hover); }
+.sidebar nav a[aria-current="page"] {
+  color: var(--emphasis);
+  font-weight: 700;
+}
 .sidebar nav a.nav-external { color: var(--link); margin-top: 0.15rem; }
 
 .sidebar hr {

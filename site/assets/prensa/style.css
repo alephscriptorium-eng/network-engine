@@ -152,6 +152,13 @@ main.wrap {
   text-underline-offset: 3px;
 }
 
+.site-header nav a[aria-current="page"] {
+  font-weight: 700;
+  color: var(--emphasis);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .nav-sep {
   color: var(--rule);
   margin: 0 0.45rem;

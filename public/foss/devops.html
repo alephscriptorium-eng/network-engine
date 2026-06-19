@@ -4,32 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DevOps — Network Engine</title>
+  <meta name="description" content="Instalación, prompts operativos, llms.md y publicación GitHub Pages.">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="canonical" href="https://alephscriptorium-eng.github.io/network-engine/foss/devops.html">
+<meta property="og:title" content="DevOps — Network Engine">
+<meta property="og:description" content="Instalación, prompts operativos, llms.md y publicación GitHub Pages.">
+<meta property="og:url" content="https://alephscriptorium-eng.github.io/network-engine/foss/devops.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DevOps — Network Engine">
+<meta name="twitter:description" content="Instalación, prompts operativos, llms.md y publicación GitHub Pages.">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/components.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
   <div class="layout">
     <aside class="sidebar">
       <a href="index.html" class="brand">Network Engine</a>
-      <p class="tag">Artefacto · v0.1.0</p>
-      <nav aria-label="Documentación FOSS">
-        <a href="index.html">Índice</a>
-        <a href="tecnico.html">Técnico</a>
-        <a href="funcional.html">Funcional</a>
-        <a href="datos-publicados.html">Datos publicados</a>
-        <a href="devops.html">DevOps</a>
-        <a href="LICENSE.html">Licencia</a>
-        <hr>
-        <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
-      </nav>
-      <div class="sidebar-footer">
-        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
-      </div>
+<p class="tag">Artefacto · v0.1.0</p>
+<nav aria-label="Documentación FOSS">
+  <a href="index.html">Índice</a>
+  <a href="tecnico.html">Técnico</a>
+  <a href="funcional.html">Funcional</a>
+  <a href="datos-publicados.html">Datos publicados</a>
+  <a href="devops.html" aria-current="page">DevOps</a>
+  <a href="LICENSE.html">Licencia</a>
+  <hr>
+  <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+</nav>
+<div class="sidebar-footer">
+  <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
+</div>
     </aside>
-    <main>
+    <main id="main">
       
 <h1>DevOps — operar y ampliar el catálogo</h1>
 <p class="lead">Instalación, ciclo operativo con agentes externos y publicación del sitio estático.</p>
@@ -114,6 +125,10 @@
 <pre>git clone https://github.com/alephscriptorium-eng/network-engine.git
 cd network-engine
 pip install -e ".[dev]"</pre>
+
+<h2>Dependencia de build</h2>
+<p>La optimización de logos y el favicon requieren Pillow. Instálala antes de generar el sitio:</p>
+<pre>pip install -e ".[build]"</pre>
 
 <h2>Comandos CLI</h2>
 <pre>nengine loadout validate default-tablero

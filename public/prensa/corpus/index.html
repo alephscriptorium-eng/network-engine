@@ -3,26 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Corpus — Network Engine</title>
-  <meta name="description" content="Corpus indexados in situ — metadata y enlaces blob/main">
+  <title>Líneas de registro del tablero — Network Engine</title>
+  <meta name="description" content="Dimensiones del tablero en lectura: sima y cima como cotas, línea como demarcación histórica, y registros de sesión y operación del skill.">
   <script>
     (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
   </script>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="canonical" href="https://alephscriptorium-eng.github.io/network-engine/prensa/corpus/index.html">
+<meta property="og:title" content="Corpus — Network Engine">
+<meta property="og:description" content="Corpus in situ: logs-aleph, sima, cima, línea y logs-skill.">
+<meta property="og:url" content="https://alephscriptorium-eng.github.io/network-engine/prensa/corpus/index.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Corpus — Network Engine">
+<meta name="twitter:description" content="Corpus in situ: logs-aleph, sima, cima, línea y logs-skill.">
   <link rel="stylesheet" href="../assets/style.css">
   <link rel="stylesheet" href="../assets/components.css">
 </head>
 <body class="newspaper">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
   <header class="site-header">
     <div class="wrap">
       <div class="provenance" aria-label="Procedencia del material">
   <div class="provenance-logos">
     <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/" class="logo-frame" title="Scriptorium Skins">
-      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='SS';">
+      <img src="../assets/logo_scriptorium.png" alt="Scriptorium Skins" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='SS';">
     </a>
     <a href="../../index.html" class="logo-frame" title="Network Engine">
-      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='NE';">
+      <img src="../assets/logo.png" alt="Network Engine — F.A.R.O." class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='NE';">
     </a>
   </div>
+  
   <p class="provenance-chain">
     <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
     <span class="provenance-sep" aria-hidden="true">›</span>
@@ -32,92 +43,96 @@
   </p>
 </div>
       <div class="masthead">
-        <p class="dateline">Prensa · Corpus</p>
+        <p class="dateline">Prensa · Líneas de registro</p>
         <a href="../index.html" class="brand">Network Engine</a>
         <p class="site-tag">Animus Iocandi · F.A.R.O.</p>
       </div>
       <div class="header-rule" aria-hidden="true"></div>
       <div class="header-toolbar">
         <nav aria-label="Secciones">
-          <a href="../index.html">Catálogo</a>
-          <span class="nav-sep">|</span>
-          <a href="../equipamiento/index.html">Equipamiento</a>
-          <span class="nav-sep">|</span>
-          <a href="../engines/index.html">Engines</a>
-          <span class="nav-sep">|</span>
-          <a href="../corpus/index.html">Corpus</a>
-          <span class="nav-sep">|</span>
-          <a href="../tablero/index.html">Tablero</a>
-          <span class="nav-sep">|</span>
-          <a href="../../foss/index.html" class="foss-link">FOSS</a>
-        </nav>
-        <button type="button" id="theme-toggle" class="theme-toggle">Modo claro</button>
+  <a href="../index.html">Catálogo</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../equipamiento/index.html">Equipamiento</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../engines/index.html">Engines</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../corpus/index.html" aria-current="page">Corpus</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../tablero/index.html">Tablero</a>
+  <span class="nav-sep" aria-hidden="true">|</span>
+  <a href="../../foss/index.html" class="foss-link">FOSS</a>
+</nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
       </div>
     </div>
   </header>
-  <main class="wrap">
+  <main id="main" class="wrap">
     
-<h1>Corpus indexados</h1>
-<p class="lead">Cinco cuerpos permanecen in situ en el repo; prensa muestra metadata y enlaces blob/main.</p>
-<table class="data-table">
-  <thead><tr><th>ID</th><th>Escenas</th><th>Notas</th></tr></thead>
-  <tbody>
+<h1>Líneas de registro del tablero</h1>
+<p class="lead">Dimensiones del tablero en lectura: sima y cima como cotas, línea como demarcación histórica, y registros de sesión y operación del skill.</p>
+<div class="corpus-dimensions">
   
-    <tr>
-      <td><a href="logs-aleph.html">logs-aleph</a></td>
-      <td>12</td>
-      <td>—</td>
-    </tr>
   
-    <tr>
-      <td><a href="sima-aleph.html">sima-aleph</a></td>
-      <td>10</td>
-      <td>—</td>
-    </tr>
+  <article class="corpus-dim-card">
+    <p class="dim-label">Registro de sesiones</p>
+    <h2><a href="logs-aleph.html">logs-aleph</a></h2>
+    <p>Cronología de partidas Aleph — escenas indexadas del juego en curso.</p>
+  </article>
   
-    <tr>
-      <td><a href="cima-aleph.html">cima-aleph</a></td>
-      <td>4</td>
-      <td>—</td>
-    </tr>
   
-    <tr>
-      <td><a href="linea-aleph.html">linea-aleph</a></td>
-      <td>677 (99 milestones)</td>
-      <td>Índice por milestones; no renderizar todos los registros en prensa</td>
-    </tr>
+  <article class="corpus-dim-card">
+    <p class="dim-label">Cota sima</p>
+    <h2><a href="sima-aleph.html">sima-aleph</a></h2>
+    <p>Ancla inferior del eje vertical — sedimentación y peso del tablero.</p>
+  </article>
   
-    <tr>
-      <td><a href="logs-skill.html">logs-skill</a></td>
-      <td>8</td>
-      <td>—</td>
-    </tr>
   
-  </tbody>
-</table>
+  <article class="corpus-dim-card">
+    <p class="dim-label">Cota cima</p>
+    <h2><a href="cima-aleph.html">cima-aleph</a></h2>
+    <p>Ancla superior del eje vertical — altura y tensión del turno.</p>
+  </article>
+  
+  
+  <article class="corpus-dim-card">
+    <p class="dim-label">Línea histórica</p>
+    <h2><a href="linea-aleph.html">linea-aleph</a></h2>
+    <p>Demarcación temporal del tablero; hitos seleccionados, no el archivo completo.</p>
+  </article>
+  
+  
+  <article class="corpus-dim-card">
+    <p class="dim-label">Registro operativo</p>
+    <h2><a href="logs-skill.html">logs-skill</a></h2>
+    <p>Trazas del skill modo-aleph: asentamiento, AutoRevisor y calibración.</p>
+  </article>
+  
+</div>
 
   </main>
   <footer class="site-footer">
-    <div class="wrap"><div class="provenance-footer">
-  <p class="provenance-footer-chain">
-    <a href="https://escrivivir.co">Escrivivir</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span>Animus Iocandi</span>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="../../index.html">Network Engine</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span title="Frente Aleph de Resistencia Ontológica">F.A.R.O.</span>
-  </p>
-  <p class="provenance-footer-meta">
-    v0.1.0
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    GPL-3.0
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="https://github.com/alephscriptorium-eng/network-engine">Repositorio</a>
-  </p>
-</div></div>
+    <div class="wrap">
+  <div class="provenance-footer">
+    
+    <p class="provenance-footer-chain">
+      <a href="https://escrivivir.co">Escrivivir</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="https://escrivivir.co/2026/06/04/t04x06a-ficha-de-producto-scriptorium-skins-arg/">Scriptorium Skins</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span>Animus Iocandi</span>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="../../index.html">Network Engine</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span title="Frente Aleph de Resistencia Ontológica">F.A.R.O.</span>
+    </p>
+    <p class="provenance-footer-meta">
+      v0.1.0
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      GPL-3.0
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="https://github.com/alephscriptorium-eng/network-engine">Repositorio</a>
+    </p>
+  </div></div>
   </footer>
   <script src="../assets/theme.js"></script>
 </body>

@@ -1,20 +1,31 @@
-<div class="provenance-footer">
-  <p class="provenance-footer-chain">
-    <a href="{{ brand.equipo.url }}">{{ brand.equipo.nombre }}</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span>{{ brand.serie.nombre }}</span>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="{{ portal_href }}">{{ brand.producto.nombre }}</a>
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <span title="{{ brand.arg.nombre }}">{{ brand.arg.siglas }}</span>
-  </p>
-  <p class="provenance-footer-meta">
-    v{{ version }}
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    {{ provenance.license }}
-    <span class="provenance-sep" aria-hidden="true">·</span>
-    <a href="{{ provenance.repo_url }}">Repositorio</a>
-  </p>
-</div>
+{# Colofón textual — sin logos (logos solo en provenance-strip del header) #}
+  <div class="provenance-footer">
+    {% if footer_logos | default(false) %}
+    <div class="provenance-logos">
+      <a href="{{ brand.scriptorium.url }}" class="logo-frame" title="{{ brand.scriptorium.nombre }}">
+        <img src="{{ base_href }}assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='SS';">
+      </a>
+      <a href="{{ portal_href }}" class="logo-frame" title="{{ brand.producto.nombre }}">
+        <img src="{{ base_href }}assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='NE';">
+      </a>
+    </div>
+    {% endif %}
+    <p class="provenance-footer-chain">
+      <a href="{{ brand.equipo.url }}">{{ brand.equipo.nombre }}</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span>{{ brand.serie.nombre }}</span>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="{{ portal_href }}">{{ brand.producto.nombre }}</a>
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <span title="{{ brand.arg.nombre }}">{{ brand.arg.siglas }}</span>
+    </p>
+    <p class="provenance-footer-meta">
+      v{{ version }}
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      {{ provenance.license }}
+      <span class="provenance-sep" aria-hidden="true">·</span>
+      <a href="{{ provenance.repo_url }}">Repositorio</a>
+    </p>
+  </div>

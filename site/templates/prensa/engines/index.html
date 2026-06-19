@@ -1,23 +1,19 @@
 {% extends "base.html" %}
-{# ctx: catalog, engines, github_blob #}
-{% block title %}Engines — {{ brand_name }}{% endblock %}
-{% block dateline %}Prensa · Engines{% endblock %}
-{% block meta_description %}Registry de engines Cohen — main-engine y forces{% endblock %}
+{# ctx: engines_index, section_copy, engine_role_label #}
+{% set sc = section_copy('engines') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
 {% block content %}
-<h1>Engines Cohen</h1>
-<p class="lead">Registry de {{ catalog.engines|length }} engines. Main-engine siempre activo; máx. 2 forces por sesión.</p>
-<table class="data-table">
-  <thead><tr><th>ID</th><th>Rol</th><th>Tipo</th><th>Escenas</th><th>Ancla</th></tr></thead>
-  <tbody>
-  {% for e in catalog.engines %}
-    <tr>
-      <td><a href="{{ e.id }}.html">{{ e.id }}</a></td>
-      <td>{{ e.role }}</td>
-      <td>{{ e.cohen_type }}</td>
-      <td>{{ e.scene_count }}</td>
-      <td><code>{{ e.anchor_scene or '—' }}</code></td>
-    </tr>
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
+<div class="forces-panel">
+  {% for e in engines_index %}
+  <article class="force-card">
+    <p class="force-role">{{ engine_role_label(e.role) }}</p>
+    <h2><a href="{{ e.id }}.html" class="force-name">{{ e.id }}</a></h2>
+    <p class="force-lore">{{ e.engine_json.lore_hook if e.engine_json else (e.lore_hook or '—') }}</p>
+  </article>
   {% endfor %}
-  </tbody>
-</table>
+</div>
 {% endblock %}

@@ -1,12 +1,13 @@
 <div class="provenance" aria-label="Procedencia del material">
   <div class="provenance-logos">
     <a href="{{ brand.scriptorium.url }}" class="logo-frame" title="{{ brand.scriptorium.nombre }}">
-      <img src="{{ base_href }}assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='SS';">
+      <img src="{{ base_href }}assets/{{ brand.scriptorium.logo }}" alt="{{ brand.scriptorium.nombre }}" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='SS';">
     </a>
     <a href="{{ portal_href }}" class="logo-frame" title="{{ brand.producto.nombre }}">
-      <img src="{{ base_href }}assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo" width="32" height="32" onerror="this.classList.add('logo-fallback');this.alt='NE';">
+      <img src="{{ base_href }}assets/{{ brand.producto.logo }}" alt="{{ brand.producto.nombre }} — {{ brand.arg.siglas }}" class="provenance-logo" width="32" height="32" loading="lazy" onerror="this.classList.add('logo-fallback');this.alt='NE';">
     </a>
   </div>
+  {# Breadcrumb corto: Scriptorium › serie › producto (sin Escrivivir ni F.A.R.O.) #}
   <p class="provenance-chain">
     <a href="{{ brand.scriptorium.url }}">{{ brand.scriptorium.nombre }}</a>
     <span class="provenance-sep" aria-hidden="true">›</span>

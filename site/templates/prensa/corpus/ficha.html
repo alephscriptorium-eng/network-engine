@@ -1,23 +1,20 @@
 {% extends "base.html" %}
-{# ctx: corpus (detail), github_blob #}
+{# ctx: corpus (detail), corpus_dimension #}
+{% set dim = corpus_dimension(corpus.id) %}
 {% block title %}{{ corpus.id }} — {{ brand_name }}{% endblock %}
-{% block dateline %}Prensa · Corpus{% endblock %}
-{% block meta_description %}{{ corpus.id }} — {{ corpus.scene_count }} escenas indexadas{% if corpus.milestone_count %} · {{ corpus.milestone_count }} milestones{% endif %}{% endblock %}
+{% block dateline %}{{ section_copy('corpus').dateline }}{% endblock %}
+{% block meta_description %}{{ dim.label }} — {{ dim.summary }}{% endblock %}
 {% block content %}
 <h1>{{ corpus.id }}</h1>
-<p class="lead">{{ corpus.scene_count }} escenas indexadas{% if corpus.milestone_count %} · {{ corpus.milestone_count }} milestones{% endif %}.</p>
-<div class="card-actions">
-  <a href="{{ corpus.github }}" class="ext" rel="noopener">manifest.json</a>
-  <a href="{{ corpus.indice_github }}" class="ext" rel="noopener">INDICE.md</a>
-</div>
+<p class="lead">{{ dim.summary }} {{ corpus.scene_count }} escenas en lectura{% if corpus.milestone_count %} · {{ corpus.milestone_count }} hitos{% endif %}.</p>
+{% set href = corpus.github %}
+{% set label = 'Ver telemetría en GitHub' %}
+{% include "telemetry-link.html" %}
 {% if corpus.id == 'linea-aleph' and corpus.milestones %}
-<h2>Milestones (muestra)</h2>
+<h2>Hitos (muestra)</h2>
 <ul>
 {% for m in corpus.milestones %}
-  <li><strong>{{ m.id or m.slug }}</strong> —
-    {% if m.github %}<a href="{{ m.github }}" class="ext" rel="noopener">{{ m.section or m.title or m.slug }}</a>
-    {% else %}{{ m.section or m.title or m.get('slug', '') }}{% endif %}
-  </li>
+  <li><strong>{{ m.id or m.slug }}</strong> — {{ m.section or m.title or m.slug }}</li>
 {% endfor %}
 </ul>
 <p><em>No se renderizan los {{ corpus.record_count or corpus.scene_count }} registros completos.</em></p>
@@ -25,14 +22,10 @@
 <h2>Escenas (muestra)</h2>
 <ul>
 {% for s in corpus.scenes[:20] %}
-  <li><strong>{{ s.id }}</strong> — {{ s.title or s.slug }}
-    {% if s.files and s.files.output %}
-    <a href="{{ github_blob(corpus.id + '/' + s.files.output) }}" class="ext">output</a>
-    {% endif %}
-  </li>
+  <li><strong>{{ s.id }}</strong> — {{ s.title or s.slug }}</li>
 {% endfor %}
 </ul>
-{% if corpus.scenes_truncated %}<p><em>Lista truncada; ver manifest completo en GitHub.</em></p>{% endif %}
+{% if corpus.scenes_truncated %}<p><em>Lista truncada; ver telemetría completa en GitHub.</em></p>{% endif %}
 {% endif %}
-<p><a href="index.html">← Corpus</a></p>
+<p><a href="index.html">← Líneas de registro</a></p>
 {% endblock %}

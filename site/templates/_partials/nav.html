@@ -1,13 +1,13 @@
 <nav aria-label="Secciones">
-  <a href="{{ base_href }}index.html">Catálogo</a>
+  <a href="{{ base_href }}index.html"{% if nav_active == 'catalog' %} aria-current="page"{% endif %}>Catálogo</a>
   <span class="nav-sep" aria-hidden="true">|</span>
-  <a href="{{ base_href }}equipamiento/index.html">Equipamiento</a>
+  <a href="{{ base_href }}equipamiento/index.html"{% if nav_active == 'equipamiento' %} aria-current="page"{% endif %}>Equipamiento</a>
   <span class="nav-sep" aria-hidden="true">|</span>
-  <a href="{{ base_href }}engines/index.html">Engines</a>
+  <a href="{{ base_href }}engines/index.html"{% if nav_active == 'engines' %} aria-current="page"{% endif %}>Engines</a>
   <span class="nav-sep" aria-hidden="true">|</span>
-  <a href="{{ base_href }}corpus/index.html">Corpus</a>
+  <a href="{{ base_href }}corpus/index.html"{% if nav_active == 'corpus' %} aria-current="page"{% endif %}>Corpus</a>
   <span class="nav-sep" aria-hidden="true">|</span>
-  <a href="{{ base_href }}tablero/index.html">Tablero</a>
+  <a href="{{ base_href }}tablero/index.html"{% if nav_active == 'tablero' %} aria-current="page"{% endif %}>Tablero</a>
   <span class="nav-sep" aria-hidden="true">|</span>
-  <a href="{{ base_href }}../foss/index.html" class="foss-link">FOSS</a>
+  <a href="{{ foss_href }}" class="foss-link">FOSS</a>
 </nav>

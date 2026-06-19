@@ -1,11 +1,12 @@
 {% extends "base.html" %}
-{# ctx: asentamiento_filas, loadout_id, github_blob #}
-{% block title %}Equipamiento — {{ brand_name }}{% endblock %}
-{% block dateline %}Prensa · Equipamiento{% endblock %}
-{% block meta_description %}Showcase equipamiento rude-bot — bot crudo, loadout instantáneo y ASENTAMIENTO{% endblock %}
+{# ctx: asentamiento_filas, loadout_id, github_blob, section_copy #}
+{% set sc = section_copy('equipamiento') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
 {% block content %}
-<h1>Equipamiento — traje rude-bot</h1>
-<p class="lead">Showcase: bot crudo → loadout instantáneo → ASENTAMIENTO. Sin metáfora superhéroe; equipamiento operativo crudo.</p>
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
 
 <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" role="img" aria-label="Flujo antes, equipar, después">
@@ -65,7 +66,7 @@
   <ul>
     <li>Tablero — superposición sin colapsar</li>
     <li>AutoRevisor — checklist A–H</li>
-    <li>Forces Cohen — ≤2 + main</li>
+    <li>Fuerzas Cohen — ≤2 + main</li>
     <li>Línea — demarcación histórica (linea-aleph)</li>
     <li>Cotas sima ↔ cima</li>
   </ul>

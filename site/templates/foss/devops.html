@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}DevOps — {{ brand }}{% endblock %}
+{% block title %}DevOps — {{ brand_name }}{% endblock %}
 {% block content %}
 <h1>DevOps — operar y ampliar el catálogo</h1>
 <p class="lead">Instalación, ciclo operativo con agentes externos y publicación del sitio estático.</p>
@@ -48,6 +48,10 @@
 <pre>git clone {{ github_repo }}.git
 cd network-engine
 pip install -e ".[dev]"</pre>
+
+<h2>Dependencia de build</h2>
+<p>La optimización de logos y el favicon requieren Pillow. Instálala antes de generar el sitio:</p>
+<pre>pip install -e ".[build]"</pre>
 
 <h2>Comandos CLI</h2>
 <pre>nengine loadout validate default-tablero

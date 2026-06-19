@@ -1,0 +1,15 @@
+<a href="index.html" class="brand">{{ brand.producto.nombre }}</a>
+<p class="tag">Artefacto · v{{ version }}</p>
+<nav aria-label="Documentación FOSS">
+  <a href="index.html"{% if foss_page == 'index' %} aria-current="page"{% endif %}>Índice</a>
+  <a href="tecnico.html"{% if foss_page == 'tecnico' %} aria-current="page"{% endif %}>Técnico</a>
+  <a href="funcional.html"{% if foss_page == 'funcional' %} aria-current="page"{% endif %}>Funcional</a>
+  <a href="datos-publicados.html"{% if foss_page == 'datos-publicados' %} aria-current="page"{% endif %}>Datos publicados</a>
+  <a href="devops.html"{% if foss_page == 'devops' %} aria-current="page"{% endif %}>DevOps</a>
+  <a href="LICENSE.html"{% if foss_page == 'license' %} aria-current="page"{% endif %}>Licencia</a>
+  <hr>
+  <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
+</nav>
+<div class="sidebar-footer">
+  <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
+</div>

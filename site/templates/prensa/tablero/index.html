@@ -1,25 +1,26 @@
 {% extends "base.html" %}
-{# ctx: catalog, github_blob #}
-{% block title %}Tablero — {{ brand_name }}{% endblock %}
-{% block dateline %}Prensa · Tablero{% endblock %}
-{% block meta_description %}Tablero Aleph — reglas del juego, flujo del turno y piezas{% endblock %}
+{# ctx: catalog, github_blob, section_copy #}
+{% set sc = section_copy('tablero') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
 {% block content %}
-<h1>Tablero Aleph — reglas del juego</h1>
-<p class="lead">Superposición de miradas sin colapsar. Un turno: equipar loadout → ASENTAMIENTO → cotas → forces → AutoRevisor → constelación.</p>
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
 
-<section class="card">
+<section class="content-section">
   <h2>Flujo del turno</h2>
   <ol class="doc-list">
     <li><strong>Equipar</strong> — skill + perfil + boot main-engine (<code>nengine loadout apply</code>)</li>
     <li><strong>ASENTAMIENTO</strong> — polo tentado, sesgos, semilla del turno</li>
     <li><strong>Cotas</strong> — ancla sima + ancla cima → <code>posicion-linea.json</code> (0.0–1.0)</li>
-    <li><strong>Forces Cohen</strong> — main siempre ON; ≤2 forces; 1 escena ancla cada una</li>
+    <li><strong>Fuerzas Cohen</strong> — main siempre ON; ≤2 fuerzas; 1 escena ancla cada una</li>
     <li><strong>AutoRevisor</strong> — checklist A–H; fallo → volver a ASENTAMIENTO</li>
     <li><strong>Tablero</strong> — 3 Alephs; constelación de miradas; salida ∅ (no cierre lineal)</li>
   </ol>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Diagrama (equipar → turno)</h2>
   <div class="diagram-wrap">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" role="img" aria-label="Equipamiento a turno tablero">
@@ -30,7 +31,7 @@
     <text class="diagram-label" x="480" y="45" text-anchor="middle">Turno</text>
     <text class="diagram-sublabel" x="300" y="75">ASENTAMIENTO</text>
     <text class="diagram-sublabel" x="400" y="75">Cotas</text>
-    <text class="diagram-sublabel" x="480" y="75">Forces</text>
+    <text class="diagram-sublabel" x="480" y="75">Fuerzas</text>
     <text class="diagram-sublabel" x="560" y="75">AutoRevisor</text>
     <text class="diagram-sublabel" x="640" y="75">Tablero</text>
     <line class="diagram-arrow" x1="210" y1="100" x2="250" y2="100"/>
@@ -39,7 +40,7 @@
   </div>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Piezas del tablero</h2>
   <table class="data-table">
     <thead><tr><th>Pieza</th><th>Fuente</th><th>Función</th></tr></thead>
@@ -50,13 +51,13 @@
       <tr><td>3 Alephs</td><td>pipeline §5 skill</td><td>Sedimentación · cuerpo · periodicidad</td></tr>
       <tr><td>Cotas</td><td><a href="{{ github_blob('agents/skills/modo-aleph/cotas.md') }}" class="ext">cotas.md</a></td><td>Eje sima (0) ↔ cima (1)</td></tr>
       <tr><td>Línea</td><td><a href="{{ github_blob('linea-aleph/INDICE.md') }}" class="ext">linea-aleph</a></td><td>Demarcación histórica</td></tr>
-      <tr><td>Engines</td><td><a href="../engines/index.html">registry</a></td><td>main + ≤2 forces Cohen</td></tr>
+      <tr><td>Fuerzas</td><td><a href="../engines/index.html">panel de fuerzas</a></td><td>main + ≤2 fuerzas Cohen</td></tr>
       <tr><td>AutoRevisor</td><td><a href="{{ github_blob('agents/skills/modo-aleph/autorevisor.md') }}" class="ext">autorevisor.md</a></td><td>Checklist A–H</td></tr>
     </tbody>
   </table>
 </section>
 
-<section class="card">
+<section class="content-section">
   <h2>Loadout instantáneo</h2>
   <p><code>nengine loadout apply default-tablero --semilla "tema"</code> sustituye el pipeline largo de ACTIVACION.md.</p>
   <a href="../equipamiento/index.html">Ver showcase equipamiento</a>

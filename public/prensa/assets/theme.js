@@ -1,5 +1,5 @@
 (function () {
-  var KEY = "ml-theme";
+  var KEY = "ne-theme";
   var root = document.documentElement;
   var btn = document.getElementById("theme-toggle");
 
@@ -9,8 +9,13 @@
       localStorage.setItem(KEY, theme);
     } catch (e) {}
     if (btn) {
-      btn.textContent = theme === "light" ? "Modo oscuro" : "Modo claro";
-      btn.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
+      var isLight = theme === "light";
+      btn.textContent = isLight ? "Modo oscuro" : "Modo claro";
+      btn.setAttribute("aria-checked", isLight ? "true" : "false");
+      btn.setAttribute(
+        "aria-label",
+        isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro"
+      );
     }
   }
 
@@ -20,6 +25,7 @@
   }
 
   if (btn) {
+    btn.setAttribute("role", "switch");
     btn.addEventListener("click", toggle);
     var saved = "dark";
     try {

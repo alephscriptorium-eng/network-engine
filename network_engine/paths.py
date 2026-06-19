@@ -53,6 +53,7 @@ LLMS_MD = PROJECT_ROOT / "llms.md"
 
 GITHUB_REPO = "https://github.com/alephscriptorium-eng/network-engine"
 GITHUB_BLOB_BASE = f"{GITHUB_REPO}/blob/main"
+SITE_URL = "https://alephscriptorium-eng.github.io/network-engine"
 
 
 def github_blob(path: str | Path) -> str:
