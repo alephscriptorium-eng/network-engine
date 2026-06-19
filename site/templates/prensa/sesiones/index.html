@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% set sc = section_copy('sesiones') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
+{% block content %}
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
+{% if sessions_index %}
+<ul class="session-list">
+{% for s in sessions_index %}
+  <li>
+    <a href="{{ s.id }}.html"><strong>{{ s.title or s.id }}</strong></a>
+    <span class="session-meta">{{ s.status }} · {{ s.semilla[:60] }}{% if s.semilla|length > 60 %}…{% endif %}</span>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p><em>No hay sesiones publicadas aún.</em></p>
+{% endif %}
+<p><a href="../index.html">← Centro de datos</a></p>
+{% endblock %}

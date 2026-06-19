@@ -66,3 +66,17 @@ def test_prensa_footer_no_provenance_logos() -> None:
         footer = html[footer_start:]
         assert "provenance-logos" not in footer, f"{rel} footer must not repeat logos"
         assert "provenance-footer" in footer
+
+
+def test_prensa_sesiones_and_downloads() -> None:
+    run_build(target="prensa")
+    assert (PUBLIC_PRENSA / "sesiones" / "index.html").is_file()
+    assert (PUBLIC_PRENSA / "downloads" / "index.html").is_file()
+    sesiones_idx = (PUBLIC_PRENSA / "sesiones" / "index.html").read_text(encoding="utf-8")
+    assert "Sesiones publicadas" in sesiones_idx or "session-list" in sesiones_idx
+
+
+def test_prensa_sesiones_and_downloads() -> None:
+    run_build(target="prensa")
+    assert (PUBLIC_PRENSA / "sesiones" / "index.html").is_file()
+    assert (PUBLIC_PRENSA / "downloads" / "index.html").is_file()

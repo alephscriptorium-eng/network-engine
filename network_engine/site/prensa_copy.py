@@ -46,6 +46,22 @@ SECTIONS: dict[str, dict[str, str]] = {
         ),
         "dateline": "Prensa · Tablero",
     },
+    "sesiones": {
+        "title": "Sesiones publicadas",
+        "lead": (
+            "Turnos del tablero depositados en data/sessions/: semilla, posición en línea, "
+            "forces Cohen y artefactos enlazados al repo."
+        ),
+        "dateline": "Prensa · Sesiones",
+    },
+    "downloads": {
+        "title": "Descargas — packs tablero",
+        "lead": (
+            "Paquetes ZIP con loadout, ASENTAMIENTO, engines-active y session.json "
+            "para lectura offline del turno."
+        ),
+        "dateline": "Prensa · Descargas",
+    },
 }
 
 ENGINE_ROLE_LABELS: dict[str, str] = {
@@ -96,6 +112,16 @@ CATALOG_ACTIONS: list[dict[str, str]] = [
         "href": "tablero/index.html",
         "label": "Reglas del turno",
         "detail": "Flujo completo y piezas del tablero",
+    },
+    {
+        "href": "sesiones/index.html",
+        "label": "Sesiones",
+        "detail": "Turnos publicados del tablero",
+    },
+    {
+        "href": "downloads/index.html",
+        "label": "Descargas",
+        "detail": "Packs ZIP loadout y sesión",
     },
 ]
 

@@ -3,9 +3,14 @@
 ## Visión
 
 Corpus de la **sesión de diseño**: construcción de `logs-aleph/`,
-`linea-aleph/`, lectura epistemológica del diamat, y refactor del skill
-`modo-aleph` (tablero + AutoRevisor). Fuente: [`raw/log-agent1.md`](raw/log-agent1.md).
-Plan: [`raw/log-agent2.md`](raw/log-agent2.md).
+`linea-aleph/`, lectura epistemológica del diamat, refactor del skill
+`modo-aleph` (tablero + AutoRevisor), y **cierre GENESIS** — auditoría
+triple de `GENESIS_PLAN/` (PLAN archivado, PLAN2 contraplan, PLAN3 canónico)
+frente a `network-engine` implementado en `BOT_ALEPH/`.
+
+Fuentes: [`raw/log-agent1.md`](raw/log-agent1.md) (sesiones 01–04),
+[`raw/log-agent2.md`](raw/log-agent2.md) (plan corpus skill),
+[`raw/log-agent3.md`](raw/log-agent3.md) (auditoría reunificación genesis).
 
 Activación del bucle eval: [`aleph-context/ACTIVACION.md`](../aleph-context/ACTIVACION.md).
 
@@ -21,12 +26,20 @@ Activación del bucle eval: [`aleph-context/ACTIVACION.md`](../aleph-context/ACT
 | [s03-01](sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/) | [01-asimetria-diamat-logs-s02](sesion-03-lectura-epistemologia/01-asimetria-diamat-logs-s02/) | Asimetría diamat en logs-aleph s02 | `diamat`, `epistemologia`, `asimetria`, `logs-aleph` |
 | [s03-02](sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/) | [02-ciclo-vital-ciencias-universales](sesion-03-lectura-epistemologia/02-ciclo-vital-ciencias-universales/) | Ciclo vital y ciencias universales | `diamat`, `ciclo-vital`, `demarcacion`, `linea-aleph` |
 | [s04-01](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/) | [01-autorevisor-tablero-skill](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/) | AutoRevisor, tablero, refactor skill | `modo-aleph`, `autorevisor`, `skill-design`, `fundacional` |
+| [s05-01](sesion-05-genesis-network-engine/01-cierre-plan-md/) | [01-cierre-plan-md](sesion-05-genesis-network-engine/01-cierre-plan-md/) | Archivo GENESIS_PLAN/PLAN.md | `genesis`, `network-engine`, `GENESIS_PLAN`, `archivo`, `auditoria` |
+| [s05-02](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/) | [02-estado-plan2-contraplan](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/) | PLAN2 vs BOT_ALEPH (contraplan) | `genesis`, `network-engine`, `GENESIS_PLAN`, `archivo`, `auditoria` |
+| [s05-03](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/) | [03-auditoria-refactor-plan3](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/) | PLAN3 integrado + refactor | `genesis`, `network-engine`, `GENESIS_PLAN`, `archivo`, `auditoria` |
+| [s05-04](sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/) | [04-cierre-carpeta-genesis-plan](sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/) | Cierre carpeta GENESIS_PLAN | `genesis`, `network-engine`, `archivo`, `auditoria`, `cierre` |
+
+**Total:** 12 escenas · 5 sesiones
 
 ## Anomalías
 
 - **s01-03**: turno `system_notification`, no prompt usuario limpio.
 - **s01-04**: migración verificada fuera del export (interrumpido).
 - **s04-01**: primer `ASENTAMIENTO_ALEPH` canónico → `asentamiento.md`.
+- **s05-01**: `plan_md_supersedido_por_plan2_plan3` — PLAN.md archivado y borrado.
+- **s05-03**: `plan3_snapshot_desactualizado_pre_refactor` — snapshot PLAN3 pre-refactor documentado.
 
 ## Capas por escena
 
@@ -42,14 +55,14 @@ Activación del bucle eval: [`aleph-context/ACTIVACION.md`](../aleph-context/ACT
 
 ```
 logs-skill/
-├── raw/log-agent1.md | log-agent2.md (plan)
+├── raw/log-agent1.md | log-agent2.md | log-agent3.md (genesis)
 ├── segment_skill_log.py
 ├── manifest.json
 ├── INDICE.md
 └── sesion-*/
 ```
 
-Regenerar: `python3 segment_skill_log.py`
+Regenerar sesiones 01–04: `python3 segment_skill_log.py` (sesión 05 manual).
 
 ## Detalle por escena
 
@@ -92,3 +105,18 @@ Regenerar: `python3 segment_skill_log.py`
 **Refs logs-aleph:** s01-02, s02-03
 **Anomalías:** primer_asentamiento_aleph_canonico
 - [prompt](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/prompt.md) · [trace](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/trace.md) · [output](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/output.md) · [asentamiento](sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md)
+
+### [01-cierre-plan-md](sesion-05-genesis-network-engine/01-cierre-plan-md/)
+**Tema:** Archivo GENESIS_PLAN/PLAN.md
+**Anomalías:** plan_md_supersedido_por_plan2_plan3
+- [prompt](sesion-05-genesis-network-engine/01-cierre-plan-md/prompt.md) · [trace](sesion-05-genesis-network-engine/01-cierre-plan-md/trace.md) · [output](sesion-05-genesis-network-engine/01-cierre-plan-md/output.md)
+
+### [02-estado-plan2-contraplan](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/)
+**Tema:** PLAN2 vs BOT_ALEPH (contraplan)
+**Anomalías:** plan_md_supersedido_por_plan2_plan3
+- [prompt](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/prompt.md) · [trace](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/trace.md) · [output](sesion-05-genesis-network-engine/02-estado-plan2-contraplan/output.md)
+
+### [03-auditoria-refactor-plan3](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/)
+**Tema:** PLAN3 integrado + refactor
+**Anomalías:** plan3_snapshot_desactualizado_pre_refactor
+- [prompt](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/prompt.md) · [trace](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/trace.md) · [output](sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/output.md)

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ session.title or session.id }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ section_copy('sesiones').dateline }}{% endblock %}
+{% block meta_description %}{{ session.semilla }}{% endblock %}
+{% block content %}
+<h1>{{ session.title or session.id }}</h1>
+<p class="lead">Semilla: {{ session.semilla }}</p>
+<dl class="session-detail">
+  <dt>Estado</dt><dd>{{ session.status }}</dd>
+  <dt>Loadout</dt><dd><code>{{ session.loadout_id }}</code></dd>
+  {% if session.posicion_linea is not none %}
+  <dt>Posición línea</dt><dd>{{ session.posicion_linea }}</dd>
+  {% endif %}
+  {% if session.forces %}
+  <dt>Forces</dt><dd>{% for f in session.forces %}<code>{{ f }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+  {% endif %}
+</dl>
+<h2>Artefactos</h2>
+<ul>
+  {% if session.asentamiento_github %}
+  <li><a href="{{ session.asentamiento_github }}" rel="noopener">asentamiento.md</a></li>
+  {% endif %}
+  {% if session.respuesta_github %}
+  <li><a href="{{ session.respuesta_github }}" rel="noopener">respuesta.md</a></li>
+  {% endif %}
+  {% if session.pack_href %}
+  <li><a href="{{ session.pack_href }}">pack.zip</a></li>
+  {% endif %}
+</ul>
+{% set href = session.github %}
+{% set label = 'Ver session.json en GitHub' %}
+{% include "telemetry-link.html" %}
+<p><a href="index.html">← Sesiones</a></p>
+{% endblock %}

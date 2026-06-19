@@ -14,6 +14,8 @@ from network_engine.paths import (
     ENGINES_DIR,
     GITHUB_REPO,
     PROJECT_ROOT,
+    PUBLIC_PRENSA_DOWNLOADS,
+    SESSIONS_DIR,
 )
 
 GITHUB_BRANCH = "main"
@@ -97,21 +99,29 @@ def _sync_corpus() -> list[dict[str, Any]]:
 
 
 def _sync_sessions() -> list[dict[str, Any]]:
-    sessions_dir = PROJECT_ROOT / "data" / "sessions"
-    if not sessions_dir.exists():
+    if not SESSIONS_DIR.exists():
         return []
     sessions: list[dict[str, Any]] = []
-    for child in sorted(sessions_dir.iterdir()):
-        if child.is_dir() and (child / "meta.json").exists():
-            meta = _read_json(child / "meta.json")
-            sessions.append(
-                {
-                    "id": child.name,
-                    "path": f"data/sessions/{child.name}",
-                    "title": meta.get("title", child.name),
-                    "github": github_blob(f"data/sessions/{child.name}/meta.json"),
-                }
-            )
+    for child in sorted(SESSIONS_DIR.iterdir()):
+        session_path = child / "session.json"
+        if not child.is_dir() or not session_path.exists():
+            continue
+        meta = _read_json(session_path)
+        entry: dict[str, Any] = {
+            "id": child.name,
+            "path": f"data/sessions/{child.name}",
+            "title": meta.get("title", child.name),
+            "semilla": meta.get("semilla"),
+            "loadout_id": meta.get("loadout_id"),
+            "status": meta.get("status"),
+            "posicion_linea": meta.get("posicion_linea"),
+            "github": github_blob(f"data/sessions/{child.name}/session.json"),
+        }
+        if meta.get("engines_active"):
+            entry["forces"] = meta["engines_active"].get("forces", [])
+        if meta.get("url_prensa"):
+            entry["url_prensa"] = meta["url_prensa"]
+        sessions.append(entry)
     return sessions
 
 

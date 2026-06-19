@@ -32,24 +32,36 @@ Necesito **publicar una sesión** en el Network Engine para prensa:
 
 ```
 data/sessions/{{session_id}}/
-  meta.json
+  session.json
   asentamiento.md
   respuesta.md
 ```
 
-### meta.json (validar con `data/schema/session.schema.json`)
+### session.json (validar con `data/schema/session.schema.json`)
 
 ```json
 {
-  "id": "{{session_id}}",
+  "session_id": "{{session_id}}",
   "title": "{{title}}",
   "profile_slug": "{{profile_slug}}",
+  "profile_ref": "data/profiles/{{profile_slug}}.json",
   "created_at": "2026-06-19T12:00:00Z",
   "semilla": "{{semilla}}",
   "loadout_id": "{{loadout_id}}",
-  "asentamiento_path": "data/sessions/{{session_id}}/asentamiento.md",
-  "respuesta_path": "data/sessions/{{session_id}}/respuesta.md"
+  "status": "draft",
+  "asentamiento_path": "asentamiento.md",
+  "respuesta_path": "respuesta.md"
 }
+```
+
+**Alternativa CLI (preferida):**
+
+```bash
+nengine session init --loadout {{loadout_id}} --semilla "{{semilla}}"
+# editar asentamiento.md y respuesta.md
+nengine session commit --session-id {{session_id}} --posicion 0.42 --forces A,E
+nengine session publish --session-id {{session_id}}
+nengine pack --session {{session_id}}
 ```
 
 ### Contenido

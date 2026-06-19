@@ -2,10 +2,10 @@
 
 _Plantilla. El agente la sobrescribe en el paso 2 de ACTIVACION.md._
 
-**Perfil:** _(ninguno aún — crear en `profiles/`)_  
+**Perfil:** `composer` (`data/profiles/composer.json`)
 **Polo tentado:** _pendiente_  
-**Semilla actual:** _pendiente_  
-**Último AutoRevisor:** _pendiente_  
+**Semilla actual:** diamat, ciclo vital, ¿hay ciencia universal sin envejecer? _(aplicado 2026-06-19T09:59:53Z)_
+**Último AutoRevisor:** loadout aplicado 2026-06-19T09:59:53Z
 
 ## Cotas (arco sima ↔ cima)
 
@@ -16,7 +16,7 @@ _Plantilla. El agente la sobrescribe en el paso 2 de ACTIVACION.md._
 ## Engines (Cohen)
 
 **main_engine:** `on` — ancla `engines/main-engine/.../01-aspirate-a-esteta`  
-**forces_active:** `[]` — máx. 2 — ver [`engines-active.json`](engines-active.json)
+**forces_active:** `engine-model-A` — máx. 2 — ver [`engines-active.json`](engines-active.json)
 
 ## Punteros (no pegar corpus entero)
 

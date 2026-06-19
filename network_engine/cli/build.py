@@ -17,13 +17,22 @@ from network_engine.paths import (
     PUBLIC_DIR,
     PUBLIC_FOSS,
     PUBLIC_PRENSA,
+    SESSIONS_DIR,
     SITE_DIR,
     SITE_URL,
 )
 from network_engine.site.assets_optimize import optimizar_logos
 from network_engine.site.brand import brand_context
 from network_engine.site.foss_context import foss_context
-from network_engine.site.prensa_context import corpus_detail, engine_detail, engines_index, prensa_context
+from network_engine.site.prensa_context import (
+    corpus_detail,
+    downloads_index,
+    engine_detail,
+    engines_index,
+    prensa_context,
+    session_detail,
+    sessions_index,
+)
 from network_engine.site.prensa_copy import prensa_copy
 
 FOSS_PAGES: dict[str, str] = {
@@ -280,6 +289,64 @@ def build_prensa() -> None:
     }
     (tablero_dir / "index.html").write_text(
         env.get_template("tablero/index.html").render(**ctx_tablero),
+        encoding="utf-8",
+    )
+
+    sesiones_dir = PUBLIC_PRENSA / "sesiones"
+    sesiones_dir.mkdir(exist_ok=True)
+    published = sessions_index()
+    ctx_ses_idx = {
+        **ctx_root,
+        **_href_context("../", "prensa"),
+        "nav_active": "sesiones",
+        "sessions_index": published,
+        **_site_meta(
+            "prensa/sesiones/index.html",
+            f"Sesiones — {brand['brand_name']}",
+            "Turnos publicados del tablero Aleph con semilla, posición y forces.",
+        ),
+    }
+    (sesiones_dir / "index.html").write_text(
+        env.get_template("sesiones/index.html").render(**ctx_ses_idx),
+        encoding="utf-8",
+    )
+    for s in published:
+        session = session_detail(s["id"])
+        if not session:
+            continue
+        ctx_ficha = {
+            **ctx_ses_idx,
+            "session": session,
+            **_site_meta(
+                f"prensa/sesiones/{s['id']}.html",
+                f"{s.get('title', s['id'])} — {brand['brand_name']}",
+                session.get("semilla", brand["brand"]["producto"]["etiqueta"]),
+            ),
+        }
+        (sesiones_dir / f"{s['id']}.html").write_text(
+            env.get_template("sesiones/ficha.html").render(**ctx_ficha),
+            encoding="utf-8",
+        )
+
+    downloads_dir = PUBLIC_PRENSA / "downloads"
+    downloads_dir.mkdir(exist_ok=True)
+    for s in published:
+        pack = SESSIONS_DIR / s["id"] / "pack.zip"
+        if pack.exists():
+            shutil.copy2(pack, downloads_dir / f"{s['id']}.zip")
+    ctx_dl = {
+        **ctx_root,
+        **_href_context("../", "prensa"),
+        "nav_active": "downloads",
+        "downloads": downloads_index(),
+        **_site_meta(
+            "prensa/downloads/index.html",
+            f"Descargas — {brand['brand_name']}",
+            "Packs ZIP loadout y sesión para lectura offline del tablero.",
+        ),
+    }
+    (downloads_dir / "index.html").write_text(
+        env.get_template("downloads/index.html").render(**ctx_dl),
         encoding="utf-8",
     )
 

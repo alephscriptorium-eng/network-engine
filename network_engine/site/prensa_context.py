@@ -6,7 +6,7 @@ from __future__ import annotations
 from typing import Any
 
 from network_engine.catalog.sync import cargar_catalog, github_blob
-from network_engine.paths import ENGINES_DIR, PROJECT_ROOT
+from network_engine.paths import ENGINES_DIR, PROJECT_ROOT, SESSIONS_DIR
 
 
 def engine_detail(engine_id: str) -> dict[str, Any] | None:
@@ -88,6 +88,64 @@ def engines_index() -> list[dict[str, Any]]:
     return result
 
 
+def session_detail(session_id: str) -> dict[str, Any] | None:
+    catalog = cargar_catalog()
+    for s in catalog.get("sessions", []):
+        if s["id"] == session_id:
+            detail = dict(s)
+            sdir = SESSIONS_DIR / session_id
+            session_json = sdir / "session.json"
+            if session_json.exists():
+                import json
+
+                with open(session_json, encoding="utf-8") as f:
+                    detail["session_json"] = json.load(f)
+            if (sdir / "asentamiento.md").exists():
+                detail["asentamiento_github"] = github_blob(
+                    f"data/sessions/{session_id}/asentamiento.md"
+                )
+            if (sdir / "respuesta.md").exists():
+                detail["respuesta_github"] = github_blob(
+                    f"data/sessions/{session_id}/respuesta.md"
+                )
+            if (sdir / "pack.zip").exists():
+                detail["pack_href"] = f"../downloads/{session_id}.zip"
+            return detail
+    return None
+
+
+def sessions_index() -> list[dict[str, Any]]:
+    catalog = cargar_catalog()
+    return [s for s in catalog.get("sessions", []) if s.get("status") == "published"]
+
+
+def downloads_index() -> list[dict[str, str]]:
+    downloads_dir = PROJECT_ROOT / "public" / "prensa" / "downloads"
+    items: list[dict[str, str]] = []
+    if downloads_dir.exists():
+        for zf in sorted(downloads_dir.glob("*.zip")):
+            items.append(
+                {
+                    "href": zf.name,
+                    "label": zf.stem,
+                    "detail": "Pack tablero ZIP",
+                }
+            )
+    for s in sessions_index():
+        pack = SESSIONS_DIR / s["id"] / "pack.zip"
+        if pack.exists():
+            name = f"{s['id']}.zip"
+            if not any(d["href"] == name for d in items):
+                items.append(
+                    {
+                        "href": name,
+                        "label": s.get("title", s["id"]),
+                        "detail": "Pack sesión",
+                    }
+                )
+    return items
+
+
 def prensa_context() -> dict[str, Any]:
     catalog = cargar_catalog()
     engines = []
@@ -103,4 +161,5 @@ def prensa_context() -> dict[str, Any]:
         "github_blob": github_blob,
         "engines": engines,
         "corpus": catalog.get("corpus", []),
+        "sessions": catalog.get("sessions", []),
     }

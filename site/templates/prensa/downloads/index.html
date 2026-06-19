@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set sc = section_copy('downloads') %}
+{% block title %}{{ sc.title }} — {{ brand_name }}{% endblock %}
+{% block dateline %}{{ sc.dateline }}{% endblock %}
+{% block meta_description %}{{ sc.lead }}{% endblock %}
+{% block content %}
+<h1>{{ sc.title }}</h1>
+<p class="lead">{{ sc.lead }}</p>
+{% if downloads %}
+<ul>
+{% for d in downloads %}
+  <li><a href="{{ d.href }}">{{ d.label }}</a> <span class="action-detail">{{ d.detail }}</span></li>
+{% endfor %}
+</ul>
+{% else %}
+<p><em>No hay paquetes ZIP generados.</em></p>
+{% endif %}
+<p><a href="../index.html">← Centro de datos</a></p>
+{% endblock %}

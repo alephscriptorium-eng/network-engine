@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 
-from network_engine.tablero.loadout import cargar_loadout, validar_loadout
+from network_engine.tablero.loadout import aplicar_loadout, cargar_loadout, validar_loadout
 
 
 def run_validate(args: argparse.Namespace) -> int:
@@ -20,11 +20,10 @@ def run_validate(args: argparse.Namespace) -> int:
 
 
 def run_apply(args: argparse.Namespace) -> int:
-    loadout = cargar_loadout(args.loadout_id)
-    errors = validar_loadout(loadout)
-    if errors:
-        for err in errors:
-            print(f"ERROR: {err}")
+    try:
+        loadout = aplicar_loadout(args.loadout_id, semilla=args.semilla)
+    except (FileNotFoundError, ValueError) as exc:
+        print(f"ERROR: {exc}")
         return 1
     semilla = args.semilla or "(sin semilla)"
     print(f"Loadout '{args.loadout_id}' aplicado.")

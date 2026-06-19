@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated": "2026-06-19T07:36:10Z",
+  "updated": "2026-06-19T10:02:32Z",
   "engines": [
     {
       "id": "main-engine",
@@ -122,10 +122,26 @@
     {
       "id": "logs-skill",
       "path": "logs-skill",
-      "scene_count": 8,
+      "scene_count": 12,
       "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/manifest.json",
       "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/logs-skill/INDICE.md"
     }
   ],
-  "sessions": []
+  "sessions": [
+    {
+      "id": "2026-06-19-diamat-ciclo-vital",
+      "path": "data/sessions/2026-06-19-diamat-ciclo-vital",
+      "title": "diamat, ciclo vital, ¿hay ciencia universal sin envejecer?",
+      "semilla": "diamat, ciclo vital, ¿hay ciencia universal sin envejecer?",
+      "loadout_id": "default-tablero",
+      "status": "published",
+      "posicion_linea": 0.42,
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/data/sessions/2026-06-19-diamat-ciclo-vital/session.json",
+      "forces": [
+        "engine-model-A",
+        "engine-model-E"
+      ],
+      "url_prensa": "prensa/sesiones/2026-06-19-diamat-ciclo-vital.html"
+    }
+  ]
 }

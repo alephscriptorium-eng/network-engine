@@ -1,0 +1,14 @@
+{
+  "loadout_id": "default-tablero",
+  "skill": "agents/skills/modo-aleph",
+  "profile_ref": "data/profiles/composer.json",
+  "engines_active": {
+    "main_engine": "on",
+    "forces": ["engine-model-A"]
+  },
+  "posicion_linea": null,
+  "anchor_scenes": [
+    "engines/main-engine/sesion-01-boot-estetico-operativo/01-aspirate-a-esteta"
+  ],
+  "asentamiento_template": "agents/skills/modo-aleph/asentamiento-plantilla.md"
+}

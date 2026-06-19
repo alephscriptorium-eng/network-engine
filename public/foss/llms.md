@@ -49,6 +49,11 @@ docs/metodologia/       # puntero a modo-aleph skill
 pip install -e ".[dev]"
 nengine loadout validate default-tablero
 nengine loadout apply default-tablero --semilla "tema"
+nengine session init --loadout default-tablero --semilla "tema"
+nengine session commit --session-id 2026-06-19-tema --posicion 0.42 --forces A,E
+nengine session publish --session-id 2026-06-19-tema
+nengine pack --session 2026-06-19-tema
+nengine pack --loadout default-tablero
 nengine catalog sync
 nengine build --target all
 pytest
@@ -85,5 +90,6 @@ Workflow: `.github/workflows/pages.yml` — push a `main` sube `public/`. Activa
 ## Referencias
 
 - Metodología: `agents/skills/modo-aleph/SKILL.md` (copia en `docs/metodologia/`)
-- Plan maestro: `PLAN3.md` en repo padre Scriptorium
+- Plan maestro archivado: `logs-skill/raw/archive-plan3.md` (ex-PLAN3 GENESIS)
+- Archivos genesis: `logs-skill/raw/archive-plan2.md`, `archive-reunification.md`
 - Patrón build: MEDIDOR-LAWFER (`medidor build`)

@@ -217,5 +217,117 @@
       "think": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/think.md",
       "asentamiento": "sesion-04-skill-modo-aleph/01-autorevisor-tablero-skill/asentamiento.md"
     }
+  },
+  {
+    "id": "s05-01",
+    "session": "sesion-05-genesis-network-engine",
+    "slug": "01-cierre-plan-md",
+    "title": "Archivo GENESIS_PLAN/PLAN.md",
+    "tags": [
+      "genesis",
+      "network-engine",
+      "GENESIS_PLAN",
+      "archivo",
+      "auditoria"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "plan_md_supersedido_por_plan2_plan3"
+    ],
+    "source": {
+      "file": "raw/log-agent3.md",
+      "line_start": 9,
+      "line_end": 23
+    },
+    "files": {
+      "prompt": "sesion-05-genesis-network-engine/01-cierre-plan-md/prompt.md",
+      "trace": "sesion-05-genesis-network-engine/01-cierre-plan-md/trace.md",
+      "output": "sesion-05-genesis-network-engine/01-cierre-plan-md/output.md",
+      "think": "sesion-05-genesis-network-engine/01-cierre-plan-md/think.md"
+    }
+  },
+  {
+    "id": "s05-02",
+    "session": "sesion-05-genesis-network-engine",
+    "slug": "02-estado-plan2-contraplan",
+    "title": "PLAN2 contraplan vs BOT_ALEPH",
+    "tags": [
+      "genesis",
+      "network-engine",
+      "GENESIS_PLAN",
+      "archivo",
+      "auditoria"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "plan_md_supersedido_por_plan2_plan3"
+    ],
+    "source": {
+      "file": "raw/log-agent3.md",
+      "line_start": 24,
+      "line_end": 26
+    },
+    "files": {
+      "prompt": "sesion-05-genesis-network-engine/02-estado-plan2-contraplan/prompt.md",
+      "trace": "sesion-05-genesis-network-engine/02-estado-plan2-contraplan/trace.md",
+      "output": "sesion-05-genesis-network-engine/02-estado-plan2-contraplan/output.md",
+      "think": "sesion-05-genesis-network-engine/02-estado-plan2-contraplan/think.md"
+    }
+  },
+  {
+    "id": "s05-03",
+    "session": "sesion-05-genesis-network-engine",
+    "slug": "03-auditoria-refactor-plan3",
+    "title": "PLAN3 integrado + lista refactor",
+    "tags": [
+      "genesis",
+      "network-engine",
+      "GENESIS_PLAN",
+      "archivo",
+      "auditoria"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "plan3_snapshot_desactualizado_pre_refactor"
+    ],
+    "source": {
+      "file": "raw/log-agent3.md",
+      "line_start": 27,
+      "line_end": 29
+    },
+    "files": {
+      "prompt": "sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/prompt.md",
+      "trace": "sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/trace.md",
+      "output": "sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/output.md",
+      "think": "sesion-05-genesis-network-engine/03-auditoria-refactor-plan3/think.md"
+    }
+  },
+  {
+    "id": "s05-04",
+    "session": "sesion-05-genesis-network-engine",
+    "slug": "04-cierre-carpeta-genesis-plan",
+    "title": "Cierre carpeta GENESIS_PLAN — roadmap liquidado",
+    "tags": [
+      "genesis",
+      "network-engine",
+      "archivo",
+      "auditoria",
+      "cierre"
+    ],
+    "refs_logs_aleph": [],
+    "anomalies": [
+      "genesis_plan_folder_deleted"
+    ],
+    "source": {
+      "file": "raw/log-agent3.md",
+      "line_start": 30,
+      "line_end": 35
+    },
+    "files": {
+      "prompt": "sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/prompt.md",
+      "trace": "sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/trace.md",
+      "output": "sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/output.md",
+      "think": "sesion-05-genesis-network-engine/04-cierre-carpeta-genesis-plan/think.md"
+    }
   }
 ]
