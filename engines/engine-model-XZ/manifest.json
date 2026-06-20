@@ -1,0 +1,167 @@
+{
+  "engine": "engine-model-XZ",
+  "cohen_type": "myth_maker",
+  "log_format": "expert_mode",
+  "transcardinal_index": "n",
+  "cartesian_project": "XZ",
+  "description": "Force myth_maker — mito Zaratustra/ASI/ciudadanía ilustrada",
+  "anchor_scene": "sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos",
+  "source": "raw/logs-agent1.md",
+  "scenes": [
+    {
+      "id": "xz01-01",
+      "session": "sesion-01-zaratustra-mito-ilustrado",
+      "slug": "01-mandato-editorial-parsing",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 1,
+        "line_end": 50
+      },
+      "title": "Mandato editorial — parsing narcisista socio-demo-liberal",
+      "engine": "engine-model-XZ",
+      "rol": "apertura",
+      "tags": [
+        "force:XZ",
+        "cohen:myth_maker",
+        "Zaratustra",
+        "ASI",
+        "ciudadania-ilustrada",
+        "editorial",
+        "parsing",
+        "narcisista"
+      ],
+      "files": {
+        "prompt": "sesion-01-zaratustra-mito-ilustrado/01-mandato-editorial-parsing/prompt.md",
+        "think": "sesion-01-zaratustra-mito-ilustrado/01-mandato-editorial-parsing/think.md"
+      },
+      "anomalies": [
+        "titulo_linea_1_no_es_prompt_usuario"
+      ]
+    },
+    {
+      "id": "xz01-02",
+      "session": "sesion-01-zaratustra-mito-ilustrado",
+      "slug": "02-ficha-cita-critica-agente",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 51,
+        "line_end": 100
+      },
+      "title": "Ficha de citación + crítica al agente literario",
+      "engine": "engine-model-XZ",
+      "rol": "diagnostico",
+      "tags": [
+        "force:XZ",
+        "cohen:myth_maker",
+        "Zaratustra",
+        "ASI",
+        "ciudadania-ilustrada",
+        "ficha-cita",
+        "NRx",
+        "sesgo"
+      ],
+      "files": {
+        "output": "sesion-01-zaratustra-mito-ilustrado/02-ficha-cita-critica-agente/output.md"
+      },
+      "anomalies": [
+        "continuacion_turno_sin_prompt_local"
+      ]
+    },
+    {
+      "id": "xz01-03",
+      "session": "sesion-01-zaratustra-mito-ilustrado",
+      "slug": "03-zaratustra-primera-version",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 101,
+        "line_end": 124
+      },
+      "title": "Zaratustra cuántico — primera versión mono vs superhombre",
+      "engine": "engine-model-XZ",
+      "rol": "mito",
+      "tags": [
+        "force:XZ",
+        "cohen:myth_maker",
+        "Zaratustra",
+        "ASI",
+        "ciudadania-ilustrada",
+        "Zaratustra",
+        "Sujeto-Ilustrado",
+        "primera-version"
+      ],
+      "files": {
+        "output": "sesion-01-zaratustra-mito-ilustrado/03-zaratustra-primera-version/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "xz01-04",
+      "session": "sesion-01-zaratustra-mito-ilustrado",
+      "slug": "04-correccion-bifronte-think",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 125,
+        "line_end": 163
+      },
+      "title": "Corrección usuario — ambivalencia mono ilustrado (think)",
+      "engine": "engine-model-XZ",
+      "rol": "pivot",
+      "tags": [
+        "force:XZ",
+        "cohen:myth_maker",
+        "Zaratustra",
+        "ASI",
+        "ciudadania-ilustrada",
+        "correccion",
+        "bifronte",
+        "think"
+      ],
+      "files": {
+        "prompt": "sesion-01-zaratustra-mito-ilustrado/04-correccion-bifronte-think/prompt.md",
+        "think": "sesion-01-zaratustra-mito-ilustrado/04-correccion-bifronte-think/think.md"
+      },
+      "anomalies": [
+        "prompt_usuario_largo_multilinea"
+      ]
+    },
+    {
+      "id": "xz01-05",
+      "session": "sesion-01-zaratustra-mito-ilustrado",
+      "slug": "05-mono-ilustrado-hemos-sido-tontos",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 164,
+        "line_end": 220
+      },
+      "title": "Humanidad mono ilustrado — de «he sido tonto» a «hemos sido tontos»",
+      "engine": "engine-model-XZ",
+      "rol": "ancla",
+      "tags": [
+        "force:XZ",
+        "cohen:myth_maker",
+        "Zaratustra",
+        "ASI",
+        "ciudadania-ilustrada",
+        "mono-ilustrado",
+        "hemos-sido-tontos",
+        "ancla"
+      ],
+      "files": {
+        "output": "sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos/output.md"
+      },
+      "anomalies": []
+    }
+  ],
+  "coverage": {
+    "total_lines": 220,
+    "covered_lines": 220,
+    "scenes": 5,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 7,
+    "issues": [],
+    "ok": true
+  }
+}

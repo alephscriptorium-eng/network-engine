@@ -378,7 +378,7 @@ def build_scene(lines: list[str], scene: dict) -> dict:
             else None,
         )
         if p:
-            files[layer_name] = str(p.relative_to(OUT))
+            files[layer_name] = p.relative_to(OUT).as_posix()
 
     entry: dict = {
         "id": scene["id"],

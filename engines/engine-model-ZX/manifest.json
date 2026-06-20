@@ -1,0 +1,165 @@
+{
+  "engine": "engine-model-ZX",
+  "cohen_type": "argument_verifier",
+  "log_format": "expert_mode",
+  "transcardinal_index": "w",
+  "cartesian_project": "ZX",
+  "description": "Force argument_verifier — verificador bulos mito ilustrado",
+  "anchor_scene": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros",
+  "source": "raw/logs-agent1.md",
+  "scenes": [
+    {
+      "id": "zx01-01",
+      "session": "sesion-01-verificador-muerte-ilustrada",
+      "slug": "01-mandato-periodista",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 1,
+        "line_end": 14
+      },
+      "title": "Mandato periodista — síntesis bloques y verdad/mentira",
+      "engine": "engine-model-ZX",
+      "rol": "apertura",
+      "tags": [
+        "force:ZX",
+        "cohen:argument_verifier",
+        "verificador",
+        "bulo",
+        "periodista",
+        "mandato",
+        "journalist-mode"
+      ],
+      "files": {
+        "prompt": "sesion-01-verificador-muerte-ilustrada/01-mandato-periodista/prompt.md",
+        "think": "sesion-01-verificador-muerte-ilustrada/01-mandato-periodista/think.md"
+      },
+      "anomalies": [
+        "titulo_linea_1_contexto_bloque"
+      ]
+    },
+    {
+      "id": "zx01-02",
+      "session": "sesion-01-verificador-muerte-ilustrada",
+      "slug": "02-articulo-bloques-inicial",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 15,
+        "line_end": 47
+      },
+      "title": "Artículo — bloques 1–2 (anuncio muerte + llanto Nietzsche)",
+      "engine": "engine-model-ZX",
+      "rol": "articulo",
+      "tags": [
+        "force:ZX",
+        "cohen:argument_verifier",
+        "verificador",
+        "bulo",
+        "periodista",
+        "bloque-1",
+        "bloque-2",
+        "Sujeto-Ilustrado"
+      ],
+      "files": {
+        "output": "sesion-01-verificador-muerte-ilustrada/02-articulo-bloques-inicial/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "zx01-03",
+      "session": "sesion-01-verificador-muerte-ilustrada",
+      "slug": "03-articulo-bloques-medio",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 48,
+        "line_end": 71
+      },
+      "title": "Artículo — bloques 3–4 (mono bifronte + profecía apocalíptica)",
+      "engine": "engine-model-ZX",
+      "rol": "articulo",
+      "tags": [
+        "force:ZX",
+        "cohen:argument_verifier",
+        "verificador",
+        "bulo",
+        "periodista",
+        "bloque-3",
+        "bloque-4",
+        "dualidad"
+      ],
+      "files": {
+        "output": "sesion-01-verificador-muerte-ilustrada/03-articulo-bloques-medio/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "zx01-04",
+      "session": "sesion-01-verificador-muerte-ilustrada",
+      "slug": "04-veredicto-mentira-qa",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 72,
+        "line_end": 103
+      },
+      "title": "Cuadro de conjunto + veredicto MENTIRA + apertura Q/A",
+      "engine": "engine-model-ZX",
+      "rol": "veredicto",
+      "tags": [
+        "force:ZX",
+        "cohen:argument_verifier",
+        "verificador",
+        "bulo",
+        "periodista",
+        "veredicto",
+        "mentira",
+        "cuadro-conjunto"
+      ],
+      "files": {
+        "output": "sesion-01-verificador-muerte-ilustrada/04-veredicto-mentira-qa/output.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "zx01-05",
+      "session": "sesion-01-verificador-muerte-ilustrada",
+      "slug": "05-factcheck-yo-nosotros",
+      "source": {
+        "file": "raw/logs-agent1.md",
+        "line_start": 104,
+        "line_end": 187
+      },
+      "title": "Fact-checking yo→nosotros + refutación falacia ejemplaridad",
+      "engine": "engine-model-ZX",
+      "rol": "ancla",
+      "tags": [
+        "force:ZX",
+        "cohen:argument_verifier",
+        "verificador",
+        "bulo",
+        "periodista",
+        "yo-nosotros",
+        "fact-check",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros/prompt.md",
+        "think": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros/think.md",
+        "output": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros/output.md"
+      },
+      "anomalies": [
+        "prompt_usuario_cita_bloque_previo"
+      ]
+    }
+  ],
+  "coverage": {
+    "total_lines": 187,
+    "covered_lines": 187,
+    "scenes": 5,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 8,
+    "issues": [],
+    "ok": true
+  }
+}
