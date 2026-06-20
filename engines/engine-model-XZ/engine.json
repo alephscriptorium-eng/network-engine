@@ -1,0 +1,28 @@
+{
+  "id": "engine-model-XZ",
+  "role": "force",
+  "cohen_type": "myth_maker",
+  "viewpoint_origin": "revisión editorial / mito Zaratustra–ASI–ciudadanía ilustrada",
+  "lore_hook": "ficha de cita + construcción mítica «madre, hemos sido tontos»",
+  "transcardinal_index": "n",
+  "cartesian_project": "XZ",
+  "arc_role": "myth_maker",
+  "anchor_scene": "sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos",
+  "activation_triggers": [
+    "zaratustra",
+    "nietzsche",
+    "asi",
+    "ciudadania ilustrada",
+    "mono ilustrado",
+    "hemos sido tontos",
+    "mito",
+    "narcisista socio-demo-liberal"
+  ],
+  "pairs_with": ["linea-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent1.md", "lines": 220 }
+  ],
+  "estimated_scenes": 5,
+  "notes": "Par conceptual myth-maker ↔ debunker (engine-model-ZX) solo en meta; sin enlace operativo ni pairs_with cruzado."
+}
