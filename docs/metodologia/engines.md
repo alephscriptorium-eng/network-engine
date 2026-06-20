@@ -7,7 +7,7 @@ Registry maestro: [`engines/INDICE.md`](../../engines/INDICE.md) · [`engines/ma
 
 ```
 Boot (siempre ON)          Forces (1–2 por sesión)
-main-engine ─────────────► engine-model-A … F
+main-engine ─────────────► engine-model-A … F (+ transcardinales XZ/ZX)
   estética dummy              viewpoint + lore_hook
 ```
 
@@ -43,6 +43,8 @@ Elegir **1–2** force engines según:
 | `engine-model-D` | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | conversion, apostasia, credo |
 | `engine-model-E` | impotent_document | `sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx` | carta, derechos, nrx, dosier |
 | `engine-model-F` | poetic_existential | `sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro` | pizarnik, jaula, poesia, forcing |
+| `engine-model-XZ` | myth_maker | `sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos` | zaratustra, mono ilustrado, hemos sido tontos, mito |
+| `engine-model-ZX` | argument_verifier | `sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros` | verificador, bulo, fact-check, mentira, democracia |
 
 Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad). No el corpus entero.
 

@@ -1,10 +1,8 @@
 # Changelog
 
-## 0.1.0 — 2026-06-19
+## 0.1.1 — 2026-06-20
 
-- Paquete `network-engine` con CLI `nengine`
-- Catálogo sincronizado desde manifests in situ (8 engines + 5 corpus)
-- Loadout `default-tablero` con validación JSON Schema
-- Build estático: `public/prensa/`, `public/foss/`, índice raíz
-- Portal FOSS con prompts y llms.md
-- GitHub Actions workflow para Pages
+- Runbook transcardinal: indexación XZ (`n` / myth_maker) y ZX (`w` / debunker).
+- Registry y catálogo: 9 engines (7 legacy + 2 transcardinales: main + A–F + XZ + ZX).
+- Export prensa: fichas `engine-model-XZ.html` y `engine-model-ZX.html`.
+- Calibración operativa: scaffold prompt-tests 03–05 en `aleph-context/eval/`.

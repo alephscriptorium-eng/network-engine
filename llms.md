@@ -2,6 +2,8 @@
 
 Documento de onboarding para cualquier LLM que trabaje en este repositorio. **Leer antes de tocar código o datos.**
 
+**Indexar engine →** [`engines/RUNBOOK-indexar.md`](engines/RUNBOOK-indexar.md)
+
 Repositorio: https://github.com/alephscriptorium-eng/network-engine  
 Web (cuando Pages esté activo): https://alephscriptorium-eng.github.io/network-engine
 
