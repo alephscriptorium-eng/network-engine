@@ -23,7 +23,7 @@
     "engines": {
       "type": "array",
       "items": { "$ref": "#/$defs/engine_entry" },
-      "description": "8 engines Cohen indexados in situ bajo engines/"
+      "description": "Engines Cohen indexados in situ bajo engines/ (legacy A–F + transcardinales)"
     },
     "corpus": {
       "type": "array",
@@ -44,7 +44,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^(main-engine|engine-model-[A-F])$"
+          "pattern": "^(main-engine|engine-model-[A-Za-z0-9-]+)$"
         },
         "path": {
           "type": "string",

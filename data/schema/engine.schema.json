@@ -16,7 +16,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^(main-engine|engine-model-[A-F])$",
+      "pattern": "^(main-engine|engine-model-[A-Za-z0-9-]+)$",
       "description": "Identificador de carpeta bajo engines/"
     },
     "role": {
@@ -75,6 +75,18 @@
     "notes": {
       "type": "string",
       "description": "Anotaciones (p.ej. main-engine: DevOps/blockchain es marco ficcional)"
+    },
+    "transcardinal_index": {
+      "type": "string",
+      "description": "Índice transcardinal Aleph (p. ej. n, w); meta, no operativo"
+    },
+    "cartesian_project": {
+      "type": "string",
+      "description": "Proyecto cartesiano (p. ej. XZ, ZX); meta documental"
+    },
+    "arc_role": {
+      "type": "string",
+      "description": "Rol narrativo transcardinal: myth_maker, debunker, … (meta, no operativo)"
     }
   },
   "examples": [
