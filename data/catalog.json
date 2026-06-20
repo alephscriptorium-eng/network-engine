@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "updated": "2026-06-19T10:56:52Z",
+  "updated": "2026-06-20T14:53:49Z",
   "engines": [
     {
       "id": "main-engine",
@@ -85,6 +85,30 @@
       "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/engine.json",
       "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/manifest.json",
       "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-F/INDICE.md"
+    },
+    {
+      "id": "engine-model-XZ",
+      "path": "engines/engine-model-XZ",
+      "role": "force",
+      "cohen_type": "myth_maker",
+      "anchor_scene": "sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos",
+      "scene_count": 5,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-XZ/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-XZ/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-XZ/INDICE.md"
+    },
+    {
+      "id": "engine-model-ZX",
+      "path": "engines/engine-model-ZX",
+      "role": "force",
+      "cohen_type": "argument_verifier",
+      "anchor_scene": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros",
+      "scene_count": 5,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/INDICE.md"
     }
   ],
   "corpus": [

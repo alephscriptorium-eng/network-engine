@@ -22,7 +22,10 @@ def test_catalog_sync_produces_valid_json(tmp_path, monkeypatch):
     cat = sincronizar_catalog()
     assert "engines" in cat
     assert "corpus" in cat
-    assert len(cat["engines"]) == 7
+    with open(PROJECT_ROOT / "engines" / "manifest.json", encoding="utf-8") as f:
+        registry = json.load(f)
+    assert len(cat["engines"]) == len(registry["engines"])
+    assert len(cat["engines"]) >= 9
     assert len(cat["corpus"]) == 5
     data = json.loads((tmp_path / "catalog.json").read_text(encoding="utf-8"))
     assert data["version"]

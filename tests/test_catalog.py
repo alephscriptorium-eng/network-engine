@@ -20,8 +20,11 @@ def test_catalog_sync_produces_valid_json() -> None:
     assert CATALOG_PATH.exists()
     with open(CATALOG_PATH, encoding="utf-8") as f:
         loaded = json.load(f)
+    with open(ROOT / "engines" / "manifest.json", encoding="utf-8") as f:
+        registry = json.load(f)
     assert loaded["engines"]
-    assert len(loaded["engines"]) == 7
+    assert len(loaded["engines"]) == len(registry["engines"])
+    assert len(loaded["engines"]) >= 9
     assert len(loaded["corpus"]) == 5
 
 
