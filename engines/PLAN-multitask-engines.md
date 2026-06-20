@@ -36,7 +36,7 @@ flowchart TB
   ForceSelect --> forces --> Linea --> Tablero
 ```
 
-## Inventario (8 engines)
+## Inventario (8 legacy + 2 transcardinales XZ/ZX)
 
 | ID | Raw | Líneas | Rol Cohen | Ancla propuesta | Escenas ~ |
 |----|-----|--------|-----------|-----------------|-----------|
@@ -100,11 +100,13 @@ Ver [`engine.schema.json`](engine.schema.json). Campos clave:
 
 ## Criterios de éxito
 
-- [ ] 8 engines con manifest + INDICE + cobertura verificada
-- [ ] `engines/manifest.json` agrega los 8 con anclas y triggers
-- [ ] Skill documenta boot + forces sin añadir polos
-- [ ] `engines-active.json` declara main + ≤2 forces
-- [ ] prompt-test 03 calibra A+E sobre NRx/diamat
+- [x] 9 engines con manifest + INDICE + cobertura verificada (7 legacy + 2 transcardinales XZ/ZX)
+- [x] `engines/manifest.json` agrega los 9 con anclas y triggers
+- [x] Skill documenta boot + forces sin añadir polos ([`agents/skills/modo-aleph/engines.md`](../agents/skills/modo-aleph/engines.md))
+- [x] Runbook transcardinal ([`RUNBOOK-indexar.md`](RUNBOOK-indexar.md))
+- [x] `engines-active.json` declara main + ≤2 forces (scaffold A+E calibración 03, 2026-06-20)
+- [ ] prompt-test 03 calibra A+E sobre NRx/diamat (review scaffold 2026-06-20; turno live pendiente)
+- [ ] prompt-tests 04 (XZ) y 05 (ZX) en sesiones independientes (scaffold 2026-06-20)
 
 ## Relación con corpus
 

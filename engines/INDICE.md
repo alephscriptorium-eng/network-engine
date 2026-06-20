@@ -1,8 +1,8 @@
 # INDICE — registry maestro engines (Cohen Force)
 
-Registry agregado de **8 engines** indexados: `main-engine` (boot) + `engine-model-A` … `engine-model-F` (forces).
+Registry agregado de **9 engines** indexados: `main-engine` (boot) + `engine-model-A` … `F` (7 legacy) + `engine-model-XZ` / `ZX` (2 transcardinales).
 
-Plan: [`PLAN-multitask-engines.md`](PLAN-multitask-engines.md) · Manifest: [`manifest.json`](manifest.json) · Esquema: [`engine.schema.json`](engine.schema.json)
+Plan: [`PLAN-multitask-engines.md`](PLAN-multitask-engines.md) · Runbook: [`RUNBOOK-indexar.md`](RUNBOOK-indexar.md) · Manifest: [`manifest.json`](manifest.json) · Esquema: [`engine.schema.json`](engine.schema.json)
 
 ## Rol en Modo Aleph
 
@@ -10,6 +10,7 @@ Los engines son **condiciones de forcing Cohen** — inyectan orígenes de mirad
 
 - **main-engine**: boot estético dummy, siempre ON; no cuenta contra límite de forces
 - **forces**: máx. **2 activos** por sesión; 1 escena ancla por force activo
+- **transcardinales XZ/ZX**: proyectos cartesianos independientes; **sin** activación conjunta ni `pairs_with` cruzado
 
 ```mermaid
 flowchart LR
@@ -31,27 +32,41 @@ flowchart LR
 | [engine-model-D](engine-model-D/) | [INDICE](engine-model-D/INDICE.md) | force | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | 4 | 179 | 179/179 ✓ | F, cima | **indexed** |
 | [engine-model-E](engine-model-E/) | [INDICE](engine-model-E/INDICE.md) | force | impotent_document | `sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx` | 6 | 429 | 429/429 ✓ | A, C | **indexed** |
 | [engine-model-F](engine-model-F/) | [INDICE](engine-model-F/INDICE.md) | force | poetic_existential | `sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro` | 3 | 163 | 163/163 ✓ | D, sima, cima | **indexed** |
+| [engine-model-XZ](engine-model-XZ/) | [INDICE](engine-model-XZ/INDICE.md) | force | myth_maker | `sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos` | 5 | 220 | 220/220 ✓ | linea | **indexed** |
+| [engine-model-ZX](engine-model-ZX/) | [INDICE](engine-model-ZX/INDICE.md) | force | argument_verifier | `sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros` | 5 | 187 | 187/187 ✓ | linea | **indexed** |
 
-**Totales:** 41 escenas · 3512 líneas raw · 8/8 indexed · segment scripts OK
+**Totales:** 51 escenas · 3919 líneas raw · 9/9 indexed · segment scripts OK
 
 † `engine-model-A/engine.json` declara `sesion-02-internacionales-dialectica-ab/09-internacionales-polo-ab`; manifest y segment usan `sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab`.
+
+## Convención transcardinal
+
+| ID | `transcardinal_index` | `cartesian_project` | `arc_role` |
+|----|----------------------|---------------------|------------|
+| engine-model-XZ | `n` | XZ | myth_maker |
+| engine-model-ZX | `w` | ZX | debunker |
+
+Ver [`RUNBOOK-indexar.md`](RUNBOOK-indexar.md) — sin `pairs_with` XZ↔ZX.
 
 ## Estructura registry
 
 ```
 engines/
 ├── PLAN-multitask-engines.md
+├── RUNBOOK-indexar.md
 ├── INDICE.md                 ← este archivo
-├── manifest.json             ← registry agregado (8 entries)
+├── manifest.json             ← registry agregado (10 entries)
 ├── engine.schema.json
 ├── segment_engine_template.py
-├── main-engine/              manifest.json · INDICE.md · engine.json · segment_main_engine_log.py
-├── engine-model-A/           manifest.json · INDICE.md · engine.json · segment_engine_model_a_log.py
+├── main-engine/              …
+├── engine-model-A/           …
 ├── engine-model-B/           …
 ├── engine-model-C/           …
 ├── engine-model-D/           …
 ├── engine-model-E/           …
-└── engine-model-F/           …
+├── engine-model-F/           …
+├── engine-model-XZ/          manifest.json · INDICE.md · engine.json · segment_engine_model_xz_log.py
+└── engine-model-ZX/          manifest.json · INDICE.md · engine.json · segment_engine_model_zx_log.py
 ```
 
 ## Pares sugeridos (pairs_with en engine.json)
@@ -65,6 +80,8 @@ engines/
 | D | engine-model-F, [cima-aleph](../cima-aleph/INDICE.md) |
 | E | engine-model-A, engine-model-C |
 | F | engine-model-D, [sima-aleph](../sima-aleph/INDICE.md), [cima-aleph](../cima-aleph/INDICE.md) |
+| XZ | [linea-aleph](../linea-aleph/INDICE.md) |
+| ZX | [linea-aleph](../linea-aleph/INDICE.md) |
 
 ## Corpus relacionado (cross_corpus)
 
@@ -72,7 +89,7 @@ engines/
 |--------|------|-------------------|
 | [sima-aleph](../sima-aleph/INDICE.md) | `../sima-aleph/` | main-engine, B, F |
 | [cima-aleph](../cima-aleph/INDICE.md) | `../cima-aleph/` | main-engine, D, F |
-| [linea-aleph](../linea-aleph/INDICE.md) | `../linea-aleph/` | A, B, C |
+| [linea-aleph](../linea-aleph/INDICE.md) | `../linea-aleph/` | A, B, C, XZ, ZX |
 
 ## Guía de consulta
 
@@ -85,6 +102,8 @@ engines/
 | ¿Conversión vs apostasía? | D | `01-conversion-apostasia-tablas` |
 | ¿Carta derechos / NRx? | E | `02-carta-derechos-nrx` |
 | ¿Pizarnik jaula-pájaro? | F | `01-pizarnik-jaula-pajaro` |
+| ¿Mito mono ilustrado / hemos sido tontos? | XZ | `05-mono-ilustrado-hemos-sido-tontos` |
+| ¿Verificador bulos / refutación yo→nosotros? | ZX | `05-factcheck-yo-nosotros` |
 
 ## Verificación
 
@@ -97,6 +116,8 @@ python3 engine-model-C/segment_engine_model_c_log.py
 python3 engine-model-D/segment_engine_model_d_log.py
 python3 engine-model-E/segment_engine_model_e_log.py
 python3 engine-model-F/segment_engine_model_f_log.py
+python3 engine-model-XZ/segment_engine_model_xz_log.py
+python3 engine-model-ZX/segment_engine_model_zx_log.py
 ```
 
-Todos devuelven `"ok": true` y exit 0 (verificado 2026-06-19).
+Todos devuelven `"ok": true` y exit 0 (verificado 2026-06-20).

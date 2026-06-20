@@ -1,8 +1,8 @@
 {
   "registry": "engines",
-  "description": "Registry agregado Cohen Force — main-engine + engine-model-A..F",
-  "version": "1.0.0-indexed",
-  "updated": "2026-06-19",
+  "description": "Registry agregado Cohen Force — main-engine + engine-model-A..F + transcardinales XZ/ZX",
+  "version": "1.1.0-indexed",
+  "updated": "2026-06-20",
   "cohen_frame": {
     "godel": "suelo ontológico",
     "cohen": "motor forcing (engines)",
@@ -197,6 +197,76 @@
       "manifest_path": "engine-model-F/manifest.json",
       "indice_path": "engine-model-F/INDICE.md",
       "engine_json_path": "engine-model-F/engine.json"
+    },
+    {
+      "id": "engine-model-XZ",
+      "path": "engine-model-XZ/",
+      "role": "force",
+      "cohen_type": "myth_maker",
+      "transcardinal_index": "n",
+      "cartesian_project": "XZ",
+      "arc_role": "myth_maker",
+      "viewpoint_origin": "revisión editorial / mito Zaratustra–ASI–ciudadanía ilustrada",
+      "lore_hook": "ficha de cita + construcción mítica «madre, hemos sido tontos»",
+      "anchor_scene": "sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos",
+      "activation_triggers": [
+        "zaratustra",
+        "nietzsche",
+        "asi",
+        "ciudadania ilustrada",
+        "mono ilustrado",
+        "hemos sido tontos",
+        "mito"
+      ],
+      "pairs_with": ["linea-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent1.md", "lines": 220 }
+      ],
+      "scene_count": 5,
+      "coverage": {
+        "total_lines": 220,
+        "covered_lines": 220,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-XZ/manifest.json",
+      "indice_path": "engine-model-XZ/INDICE.md",
+      "engine_json_path": "engine-model-XZ/engine.json"
+    },
+    {
+      "id": "engine-model-ZX",
+      "path": "engine-model-ZX/",
+      "role": "force",
+      "cohen_type": "argument_verifier",
+      "transcardinal_index": "w",
+      "cartesian_project": "ZX",
+      "arc_role": "debunker",
+      "viewpoint_origin": "periodista / verificador de bulos argumentales",
+      "lore_hook": "artículo de conjunto + veredicto verdad/mentira sobre mito ilustrado",
+      "anchor_scene": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros",
+      "activation_triggers": [
+        "verificador",
+        "bulo",
+        "fact-check",
+        "periodista",
+        "mentira",
+        "verdad",
+        "democracia"
+      ],
+      "pairs_with": ["linea-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent1.md", "lines": 187 }
+      ],
+      "scene_count": 5,
+      "coverage": {
+        "total_lines": 187,
+        "covered_lines": 187,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-ZX/manifest.json",
+      "indice_path": "engine-model-ZX/INDICE.md",
+      "engine_json_path": "engine-model-ZX/engine.json"
     }
   ],
   "cross_corpus": {
@@ -219,9 +289,9 @@
   "verification": {
     "all_indexed": true,
     "engines_pending": 0,
-    "engines_indexed": 8,
-    "total_scenes": 41,
-    "total_lines": 3512,
+    "engines_indexed": 10,
+    "total_scenes": 51,
+    "total_lines": 3919,
     "segment_scripts_ok": true,
     "issues": []
   }
