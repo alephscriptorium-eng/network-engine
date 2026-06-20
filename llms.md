@@ -11,7 +11,7 @@ Web (cuando Pages esté activo): https://alephscriptorium-eng.github.io/network-
 
 ## Qué es este proyecto
 
-**Network Engine** (`network-engine` v0.1.0) — **artefacto** FOSS (GPL-3.0) + **centro de datos** prensa para el tablero Aleph.
+**Network Engine** (`network-engine` v0.1.0) — **artefacto** FOSS (GPL-3.0 + Animus Iocandi; AIGPL v4 pendiente — ver `LICENSE-ANIMUS-IOCATI.md` en raíz del workspace) + **centro de datos** prensa para el tablero Aleph.
 
 - El **artefacto** opera loadouts, forces Cohen, cotas sima/cima y AutoRevisor.
 - El **centro de datos** (`public/prensa/`, `data/catalog.json`) indexa engines, corpus y sesiones; el raw permanece **in situ**.
