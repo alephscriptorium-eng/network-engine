@@ -1,0 +1,29 @@
+{
+  "id": "engine-model-ZX",
+  "role": "force",
+  "cohen_type": "argument_verifier",
+  "viewpoint_origin": "periodista / verificador de bulos argumentales",
+  "lore_hook": "artículo de conjunto + veredicto verdad/mentira sobre mito ilustrado",
+  "transcardinal_index": "w",
+  "cartesian_project": "ZX",
+  "arc_role": "debunker",
+  "anchor_scene": "sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros",
+  "activation_triggers": [
+    "verificador",
+    "bulo",
+    "fact-check",
+    "periodista",
+    "mentira",
+    "verdad",
+    "democracia",
+    "yo nosotros",
+    "refutacion"
+  ],
+  "pairs_with": ["linea-aleph"],
+  "status": "indexed",
+  "raw_sources": [
+    { "file": "raw/logs-agent1.md", "lines": 187 }
+  ],
+  "estimated_scenes": 5,
+  "notes": "Par conceptual debunker ↔ myth-maker (engine-model-XZ) solo en meta; sin enlace operativo ni pairs_with cruzado."
+}
