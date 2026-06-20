@@ -1,8 +1,0 @@
-El '''Criterio de demarcación''' o ''concepto de Demarcación'' de [[Popper]] se basa en que si una teoría es incompatible con la existencia de determinados fenómenos y eventos es científica.
-
-==Falsadores==
-Los falsadores potenciales son fenómenos o eventos incompatibles con esa teoría. Hay dos tipos de falsadores, los de enunciados compatibles y enunciados incompatibles que son "Los Falsadores potenciales".
-
-
-[[categoría:Filosofía]]
-{{miniesbozo|filosofía}}

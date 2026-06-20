@@ -6,14 +6,18 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 import urllib.parse
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from mw_client import api_get, fetch_revision_meta
+
 ROOT = Path(__file__).resolve().parents[1]
-API = "https://es.wikipedia.org/w/api.php"
-USER_AGENT = "linea-aleph/1.0 (BOT_ALEPH corpus; educational)"
 
 # SolveCoagula window anchors from raw/linea2.json (Pseudociencia)
 DEFAULT_FIRST_SC = 11951464
@@ -33,37 +37,6 @@ MONTHS_ES = {
     11: "nov",
     12: "dic",
 }
-
-
-def api_get(params: dict) -> dict:
-    url = API + "?" + urllib.parse.urlencode({**params, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=90) as resp:
-        return json.loads(resp.read().decode("utf-8"))
-
-
-def fetch_revision_meta(revid: int) -> dict:
-    data = api_get(
-        {
-            "action": "query",
-            "prop": "revisions",
-            "revids": str(revid),
-            "rvprop": "ids|timestamp|user|comment|size|parentids",
-        }
-    )
-    page = next(iter(data.get("query", {}).get("pages", {}).values()))
-    if "missing" in page:
-        raise ValueError(f"Revision not found: {revid}")
-    rev = page["revisions"][0]
-    return {
-        "revid": rev["revid"],
-        "parentid": rev.get("parentid"),
-        "timestamp": rev["timestamp"],
-        "user": rev.get("user", ""),
-        "comment": rev.get("comment", "") or "",
-        "size": rev.get("size", 0),
-        "title": page.get("title", ""),
-    }
 
 
 def fetch_all_revisions(title: str) -> list[dict]:

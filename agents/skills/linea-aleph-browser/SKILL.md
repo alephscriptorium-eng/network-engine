@@ -200,12 +200,28 @@ python3 segment_linea.py --expand all
 python3 -c "import json; m=json.load(open('manifest.json')); print(len(m['registros']))"
 ```
 
+## ¿Qué endpoint?
+
+Política completa: [`linea-aleph/CACHE_RUNBOOK.md`](../../linea-aleph/CACHE_RUNBOOK.md).
+
+Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext`:
+
+1. ¿`oldid` conocido en manifest? → `fetch_snapshot.py` (API `query` + `revisions` + `content`)
+2. ¿>200 oldids del mismo artículo? → plan **dumps** (`ingest_dump_revisions.py`), **NO** API masiva
+3. ¿Solo bytes / autor / parent? → API meta (`fetch_revision_meta` en `mw_client.py`, sin `rvprop=content`)
+4. ¿Diff entre dos revisiones A↔B? → `fetch_compare.py` (`action=compare`)
+5. **NUNCA** pedir scrape de `/wiki/`, `index.php` como fetch, ni `Special:Export` masivo
+
+`index.php?oldid=` solo en `*.meta.json` → `source_url` (cita humana).
+
 ## Qué no hacer
 
 - No reescribir `raw/linea.md`
 - No volcar 677 artículos completos al repo sin pedido explícito
 - No sustituir wikitext por paráfrasis markdown del artículo entero
 - No saltar `delta.md`: el índice narrativo vive en los deltas curados
+- **No scrapear el frontend** (`es.wikipedia.org/wiki/...`, HTML, browser automation para volcados)
+- No usar `index.php` ni `/wiki/` como URL de ingestión — solo `w/api.php` o dumps
 
 ## Archivos clave
 
@@ -214,5 +230,8 @@ python3 -c "import json; m=json.load(open('manifest.json')); print(len(m['regist
 - `linea-aleph/scripts/fetch_user_contribs.py` — harvest API usercontribs
 - `linea-aleph/scripts/fetch_article_history.py` — harvest API historial artículo
 - `linea-aleph/scripts/fetch_snapshot.py` — fetch API MediaWiki
+- `linea-aleph/scripts/mw_client.py` — cliente API compartido
+- `linea-aleph/scripts/fetch_compare.py` — diff API entre revisiones
+- `linea-aleph/CACHE_RUNBOOK.md` — política caché, rate limits, runbook viajes
 - `linea-aleph/pseudociencia/` — sub-corpus segunda línea gruesa
 - `logs-aleph/sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/` — marco Aleph

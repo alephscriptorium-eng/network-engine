@@ -5,78 +5,30 @@ from __future__ import annotations
 
 import argparse
 import json
-import urllib.parse
-import urllib.request
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from mw_client import fetch_latest_revision_content, fetch_revision_content
+
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / "cache" / "snapshots"
-API = "https://es.wikipedia.org/w/api.php"
-USER_AGENT = "linea-aleph/1.0 (BOT_ALEPH corpus; educational)"
 
 
 def fetch_revision(oldid: int, title: str = "Problema de la demarcación") -> dict:
-    title_underscore = title.replace(" ", "_")
-    params = {
-        "action": "query",
-        "format": "json",
-        "prop": "revisions",
-        "revids": oldid,
-        "rvprop": "content|timestamp|user|ids|comment",
-        "rvslots": "main",
-    }
-    url = API + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    page = next(iter(data.get("query", {}).get("pages", {}).values()))
-    rev = page["revisions"][0]
-    slot = rev["slots"]["main"]
-    t = urllib.parse.quote(title_underscore, safe="/:")
-    return {
-        "oldid": oldid,
-        "title": page.get("title", title),
-        "timestamp": rev.get("timestamp"),
-        "user": rev.get("user"),
-        "comment": rev.get("comment", ""),
-        "wikitext": slot.get("*", ""),
-        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source_url": f"https://es.wikipedia.org/w/index.php?title={t}&oldid={oldid}",
-    }
+    payload = fetch_revision_content(oldid, title)
+    payload["fetched_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return payload
 
 
 def fetch_latest_revision(title: str = "Problema de la demarcación") -> dict:
-    """Resolve the current (latest) revision oldid for an article title."""
-    params = {
-        "action": "query",
-        "format": "json",
-        "prop": "revisions",
-        "titles": title,
-        "rvlimit": 1,
-        "rvprop": "content|timestamp|user|ids|comment",
-        "rvslots": "main",
-    }
-    url = API + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    page = next(iter(data.get("query", {}).get("pages", {}).values()))
-    rev = page["revisions"][0]
-    oldid = rev["revid"]
-    slot = rev["slots"]["main"]
-    title_underscore = page.get("title", title).replace(" ", "_")
-    t = urllib.parse.quote(title_underscore, safe="/:")
-    return {
-        "oldid": oldid,
-        "title": page.get("title", title),
-        "timestamp": rev.get("timestamp"),
-        "user": rev.get("user"),
-        "comment": rev.get("comment", ""),
-        "wikitext": slot.get("*", ""),
-        "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "source_url": f"https://es.wikipedia.org/w/index.php?title={t}&oldid={oldid}",
-    }
+    payload = fetch_latest_revision_content(title)
+    payload["fetched_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return payload
 
 
 def update_snapshot_endpoints(
@@ -133,6 +85,20 @@ def update_snapshot_endpoints(
             )
 
 
+def save_snapshot_payload(payload: dict) -> tuple[Path, Path]:
+    """Write wikitext + meta.json with fetch_method=api."""
+    CACHE.mkdir(parents=True, exist_ok=True)
+    oldid = payload["oldid"]
+    wt_path = CACHE / f"{oldid}.wikitext"
+    meta_path = CACHE / f"{oldid}.meta.json"
+    wt_path.write_text(payload["wikitext"], encoding="utf-8")
+    meta = {k: v for k, v in payload.items() if k != "wikitext"}
+    meta["wikitext_path"] = str(wt_path.relative_to(ROOT))
+    meta["fetch_method"] = "api"
+    meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return wt_path, meta_path
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--oldid", type=int, default=None)
@@ -163,18 +129,11 @@ def main() -> None:
         print(f"wikitext_chars: {len(payload['wikitext'])}")
         return
 
-    CACHE.mkdir(parents=True, exist_ok=True)
-
-    wt_path = CACHE / f"{oldid}.wikitext"
-    meta_path = CACHE / f"{oldid}.meta.json"
-    wt_path.write_text(payload["wikitext"], encoding="utf-8")
-    meta = {k: v for k, v in payload.items() if k != "wikitext"}
-    meta["wikitext_path"] = str(wt_path.relative_to(ROOT))
-    meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    wt_path, meta_path = save_snapshot_payload(payload)
 
     update_snapshot_endpoints(
         oldid,
-        meta["fetched_at"],
+        payload["fetched_at"],
         len(payload["wikitext"]),
         is_latest=args.latest,
         title=payload["title"],

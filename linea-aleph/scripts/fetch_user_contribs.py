@@ -6,24 +6,20 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import urllib.parse
-import urllib.request
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+SCRIPTS = Path(__file__).resolve().parent
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from mw_client import api_get
+
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "raw"
-API = "https://es.wikipedia.org/w/api.php"
-USER_AGENT = "linea-aleph/1.0 (BOT_ALEPH corpus; educational)"
 DEMARCACION = "Problema de la demarcación"
 LINEA1_COUNT = 677
-
-
-def api_get(params: dict) -> dict:
-    url = API + "?" + urllib.parse.urlencode({**params, "format": "json"})
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=90) as resp:
-        return json.loads(resp.read().decode("utf-8"))
 
 
 def fetch_user_meta(username: str) -> dict:

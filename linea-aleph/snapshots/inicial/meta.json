@@ -5,10 +5,11 @@
   "parent_oldid": 11663303,
   "timestamp": "04:53 10 oct 2007",
   "user": "SolveCoagula",
-  "bytes": 16056,
+  "bytes": 16135,
   "summary": "Traducción completa del original en inglés",
   "revision_url": "https://es.wikipedia.org/w/index.php?title=Problema_de_la_demarcación&oldid=11951034",
   "cache_wikitext": "cache/snapshots/11951034.wikitext",
   "cache_meta": "cache/snapshots/11951034.meta.json",
-  "fetched": false
+  "fetched": true,
+  "fetched_at": "2026-06-20T17:26:22Z"
 }
