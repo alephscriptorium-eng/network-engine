@@ -1,10 +1,10 @@
 {
   "descripcion": "Posición de la semilla actual en el arco sima (0) ↔ cima (1) sobre la espina linea-aleph",
-  "valor": 0.42,
-  "ancla_sima": null,
-  "ancla_cima": null,
-  "registro_linea": null,
-  "semilla_actual": "diamat, ciclo vital, ¿hay ciencia universal sin envejecer?",
-  "updated_at": "2026-06-19T09:59:53Z",
-  "notas": "Commit sesión 2026-06-19-diamat-ciclo-vital"
+  "valor": 0.38,
+  "ancla_sima": "sima-aleph/sesion-01-ruptura-economia-hiperipl/10-zigurat-centro-vacio",
+  "ancla_cima": "cima-aleph/sesion-01-ontologia-gnoseologia-confluencia/03-godel-cohen-cantor-diamat",
+  "registro_linea": "tensión NRx (ruptura sima) vs diamat (confluencia cima); semilla pide fricción carta vs polos AB",
+  "semilla_actual": "Ilustración Oscura cancela la carta; marxismo internacional ofrece polos A/B — superponer A+E",
+  "updated_at": "2026-06-20T12:00:00Z",
+  "notas": "Scaffold prompt-test 03 (forces-cohen A+E); refinar tras turno live Aleph"
 }

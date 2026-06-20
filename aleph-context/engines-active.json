@@ -11,9 +11,15 @@
       "role": "force",
       "anchor": "engines/engine-model-A/sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
       "status": "on"
+    },
+    {
+      "id": "engine-model-E",
+      "role": "force",
+      "anchor": "engines/engine-model-E/sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
+      "status": "on"
     }
   ],
   "budget_max_forces": 2,
-  "selection_rationale": null,
-  "updated_at": "2026-06-19T09:59:53Z"
+  "selection_rationale": "prompt-test 03 scaffold (2026-06-20): dialéctica internacional A + documento impotente E; semilla Ilustración Oscura vs polos AB — sin XZ/ZX",
+  "updated_at": "2026-06-20T12:00:00Z"
 }
