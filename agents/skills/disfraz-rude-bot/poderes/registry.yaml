@@ -55,3 +55,14 @@
   shortcut_off: "-alineacion-dual"
   shortcut_alias: "+alineacion"
   compone_con: [linea-aleph-browser]
+
+- id: cicd-loop
+  nombre: Bucle CI/CD ágil
+  skill: poderes/cicd-loop/SKILL.md
+  requiere_traje: true
+  default_on: false
+  shortcut_on: "+cicd-loop"
+  shortcut_off: "-cicd-loop"
+  shortcut_alias: "+cicd"
+  compone_con: [modo-aleph]
+  engine_ref: engines/engine-model-G

@@ -5,21 +5,8 @@
     "anchor": "engines/main-engine/sesion-01-boot-estetico-operativo/01-aspirate-a-esteta",
     "status": "on"
   },
-  "forces": [
-    {
-      "id": "engine-model-A",
-      "role": "force",
-      "anchor": "engines/engine-model-A/sesion-02-internacionales-cafe-muertos/09-internacionales-polo-ab",
-      "status": "on"
-    },
-    {
-      "id": "engine-model-E",
-      "role": "force",
-      "anchor": "engines/engine-model-E/sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx",
-      "status": "on"
-    }
-  ],
+  "forces": [],
   "budget_max_forces": 2,
-  "selection_rationale": "prompt-test 03 scaffold (2026-06-20): dialéctica internacional A + documento impotente E; semilla Ilustración Oscura vs polos AB — sin XZ/ZX",
-  "updated_at": "2026-06-20T12:00:00Z"
+  "selection_rationale": "default index-reader traje",
+  "updated_at": "2026-06-21T00:00:00Z"
 }

@@ -9,7 +9,21 @@
     "selective-query",
     "vacio-explicito"
   ],
-  "poderes_optional": ["alineacion-dual"],
+  "poderes_optional": ["alineacion-dual", "cicd-loop"],
+  "engines_default": { "main_engine": "on", "forces": [] },
+  "engines_optional": [
+    "engine-model-A",
+    "engine-model-B",
+    "engine-model-C",
+    "engine-model-D",
+    "engine-model-E",
+    "engine-model-F",
+    "engine-model-G",
+    "engine-model-XZ",
+    "engine-model-ZX"
+  ],
+  "engines_budget_max_forces": 2,
+  "engines_state_path": "aleph-context/engines-active.json",
   "hot_template": "templates/reader-traje.hot.md",
   "hot_path_game": "scriptorium-network-games/SOLVE_ET_COAGULA/reader-traje.hot.md"
 }
