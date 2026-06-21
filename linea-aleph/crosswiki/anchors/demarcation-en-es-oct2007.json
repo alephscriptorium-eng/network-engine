@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1",
+  "pair_id": "demarcation-en-es-oct2007",
+  "blockchain_anchor": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-6.md",
+  "linea_aleph_anchor": "network-engine/linea-aleph/snapshots/inicial/meta.json",
+  "operation": "SolveCoagula traducción en→es Problema de la demarcación",
+  "source": {
+    "lang": "en",
+    "title": "Demarcation problem",
+    "oldid": 161154035,
+    "timestamp": "2007-09-29T17:59:50Z",
+    "bytes": 13973,
+    "cache_wikitext": "cache/crosswiki/en/snapshots/161154035.wikitext",
+    "cache_meta": "cache/crosswiki/en/snapshots/161154035.meta.json",
+    "selection_rule": "última revisión enwiki anterior a es:11951034 (2007-10-10T04:53:00Z)"
+  },
+  "target": {
+    "lang": "es",
+    "title": "Problema de la demarcación",
+    "oldid": 11951034,
+    "timestamp": "2007-10-10 04:53",
+    "bytes": 16056,
+    "summary": "Traducción completa del original en inglés",
+    "cache_wikitext": "cache/snapshots/11951034.wikitext",
+    "cache_meta": "cache/snapshots/11951034.meta.json"
+  },
+  "context": {
+    "target_previo_oldid": 11663303,
+    "target_revert_oldid": 11951164,
+    "byte_delta_import": 15584
+  }
+}

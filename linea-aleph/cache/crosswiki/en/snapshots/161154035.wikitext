@@ -1,0 +1,70 @@
+The '''demarcation problem''' in the [[philosophy of science]] is about how and where to draw the lines around [[science]].  The boundaries are commonly drawn between science and [[non-science]], between science and [[pseudoscience]], and between [[science and religion]]. A form of this problem, known as ''the generalized problem of demarcation'' subsumes all three cases.  The generalized problem looks for criteria for deciding which of two theories is the more scientific.
+
+After over a century of dialogue among [[philosophy of science|philosophers of science]] and [[scientist]]s in varied [[science|fields]], and despite broad agreement on the basics of [[scientific method]],<ref>Gauch, Hugh G., Jr., ''Scientific Method in Practice'' (2003) 3-7.</ref> the boundaries between science and non-science continue to be debated.<ref>Cover, J.A., Curd, Martin (Eds, 1998) ''Philosophy of Science: The Central Issues'', 1-82.</ref> 
+
+==History==
+===Science and religion part ways===
+
+The demarcation problem is a fairly recent creation.  The problem can be traced back to a time when science and religion had already become independent of one another to a great extent.  In 1874, the influential science historian [[John William Draper]] published his ''History of the Conflict between Religion and Science''. In it he portrayed the entire history of scientific development as a war against religion.  This view was propagated further by such prestigious followers as [[Andrew Dickson White]] in his essay ''A History of the Warfare of Science with Theology in Christendom'' ([http://www.cscs.umich.edu/~crshalizi/White/ online]).
+
+A number of [[scientific mythology|myths surrounding the history of science]] owe their popularity to Draper and White.  Examples include the view that [[Copernicus]] held back publication of his ''[[De revolutionibus orbium coelestium]]'' out of fear of persecution by the church and the idea that medieval Christians believed in a [[Flat Earth|flat earth]].
+
+Historically speaking, the relationship between science and religion has been more complicated. Many scientists were of course very religious, and religion was often a chief motivator and sponsor of scientific investigation. However towards the end of the [[19th century]], science and religion came to be seen by the public as being increasingly at odds, a gradual phenomenon which came to a head around the debates over the work on [[evolution]] produced by [[Charles Darwin]]. Precursors and preconditions for the apparent split did exist before Darwin's publication of ''[[The Origin of Species]]'', but it was this work which brought the debate into the popular [[United Kingdom|British]] press and became a figurehead for the tensions between science and religion (a position it essentially still holds today). 
+
+The work by Draper and White must be seen as directly coming out of this social climate, and their model of science and religion as being eternally opposed, if not historically accurate, became a dominant social [[Trope (philosophy)|trope]]. [[Sociology of science|Sociologists of science]] have studied the attempts to erect hard distinctions between science and non-science as a form of [[boundary-work]], emphasizing the high stakes for all involved in such activities.
+
+===Logical Positivism===
+
+This new conception of science as something not only independent from religion, but actually opposed to it raised the inevitable question of what separates the two.  Among the first to develop an answer were the members of the [[Vienna Circle]]. Their philosophical position, known as [[Logical positivism]], espoused a theory of meaning which held that only statements about [[Empirical knowledge|empirical]] observations are meaningful, effectively asserting that statements which are not derived in this manner (including religious and [[metaphysics|metaphysical]] statements) are by nature meaningless (see [[the verifiability theory of meaning]] also known as [[verificationism]]).
+
+===Falsificationism===
+
+The philosopher [[Karl Popper]] noticed that the philosophers of the Vienna Circle had mixed two different problems and had accordingly given them a single solution: verificationism. In opposition to this view, Popper emphasized that a theory might well be meaningful without being scientific, and that, accordingly, a criterion of meaningfulness may not necessarily coincide with a criterion of demarcation. His own [[falsifiability|falsificationism]], thus, is not only an alternative to verificationism; it is also an acknowledgment of the conceptual distinction that previous theories had ignored.
+
+Popper saw demarcation as a central problem in the philosophy of science.  In place of verificationism he proposed falsification as a way of determining if a theory is scientific or not. If a theory is falsifiable, then it is scientific; if it is not falsifiable, then it is not science. Some have taken this principle to an extreme to cast doubt on the [[scientific]] validity of many disciplines (such as [[macroevolution]] and [[physical cosmology]]).  Falsifiability was one of the criteria used by Judge [[William Overton (judge)|William Overton]] to determine that '[[creation science]]' was not scientific and should not be taught in [[Arkansas]] [[public school]]s.
+
+Falsifiability is a property of statements and theories, and is itself neutral. As a demarcation criterion, it seeks to take this property and make it a base for affirming the superiority of falsifiable theories over non-falsifiable ones as a part of science, in effect setting up a political position that might be called ''falsificationism''.  However, much that would be considered meaningful and useful is not falsifiable. Certainly non-falsifiable statements have a role in scientific theories themselves. What the Popperian criterion allows to be called scientific is open to interpretation. A strict interpretation would concede too little since there are no scientific theories of interest that are completely free of [[anomaly|anomalies]]. Conversely, if we consider only the falsifiability of a theory and not the willingness of an individual or group to obtain or accept falsifying instances, we would then permit almost any theory.
+
+It is nevertheless very useful to know if a statement or theory is falsifiable, if for no other reason than it provides us with an understanding of the ways in which one might assess the theory.
+
+===Kuhn and paradigm shifts===
+
+[[Thomas Kuhn]], an American [[history of science|historian of science]], has proven very influential in the [[philosophy of science]], and is often connected with what has been called [[postpositivism]] or [[postempiricism]]. In his [[1962]] book ''[[The Structure of Scientific Revolutions]]'', Kuhn divided the process of doing science into two different endeavors, which he called '''normal science''' and '''extraordinary science''' (which he sometimes also called '''revolutionary science''').  The process of "normal" science is what most scientists do while working within the what he calls the current accepted ''[[paradigm]]'' of the scientific community, and within this context [[Karl Popper]]'s ideas on falsification as well as the idea of a [[scientific method]] still have some currency. This sort of work is what Kuhn calls "problem solving": working within the bounds of the current theory and its implications for what sorts of experiments should or should not be fruitful. However, during the process of doing "normal" science, Kuhn claimed, anomalies are generated, some of which lead to an extension of the dominant "paradigm" in order to explain them, and others for which no satisfactory explanation can be found within the current model.  When enough of these anomalies have accumulated,  and scientists within the field find them ''significant'' (often a very [[subjectivity|subjective]] judgment), a "crisis period" is begun, Kuhn argues, and some scientists begin to participate in the activity of "extraordinary" science. In this phase, it is recognized that the old model is fundamentally flawed and cannot be adapted to further use, and totally new (or often old and abandoned) ideas are looked at, most of which will be failures. But during this time, a new "paradigm" is created, and after a protracted period of "[[paradigm shift]]," the new paradigm is accepted as the norm by the scientific community and integrated into their previous work, and the old paradigm is banished to the history books. The classic example of this is the shift from [[luminiferous ether|Maxwellian]]/[[Classical mechanics|Newtonian]] [[physics]] to [[Theory of Relativity|Einsteinian]]/[[quantum physics|Quantum]] physics in the early [[20th century]]. If the acceptance or failure of scientific theories relied only on simple falsification,  according to Kuhn, then no theory would ever survive long enough to be fruitful, as ''all'' theories contain anomalies.
+
+The process by which Kuhn said a new paradigm is accepted by the scientific community at large does indicate one possible demarcation between science and pseudoscience, while rejecting Popper's simple model of falsification. Kuhn instead argued that a new paradigm is accepted mainly because it has a ''superior ability to solve problems'' that arise in the process of doing normal science.  That is, the value of a scientific paradigm is its [[predictive power]] and its ability to suggest solutions to new problems while continuing to satisfy all of the problems solved by the paradigm that it replaces.  Pseudoscience can then be defined by a failure to provide explanations within such a paradigm.
+
+Demarcation can be problematic in cases where standard scientific ways (experiments, logic, etc.) of assessing a theory or a hypothesis cannot be applied for some reason. An example would be of differentiating between the scientific status of metereology or medicine, on the one hand, and astrology, on the other; all these fields repeatedly fail to accurately predict what they claim to be able to predict, and all are able to explain the regular failure of their predictions.<ref>Thomas Kuhn in Grim, op. cit., pp. 126-7</ref>
+
+===Feyerabend and the problem of autonomy in science===
+
+There has been a post-Kuhn trend to downplay the difference between science and non-science, as Kuhn's work largely called to question the Popperian ideal of simple demarcation, and emphasized the human, [[subjectivity|subjective]] quality of scientific change. The radical philosopher of science [[Paul Feyerabend]] took these arguments to their limit, arguing that science does not occupy a special place in terms of either its logic or method, so that any claim to special authority made by scientists cannot be upheld. This leads to a particularly democratic and anarchist approach to knowledge formation.  He claimed that there can be found no method within the history of scientific practice which has not been violated at some point in the advancing of scientific knowledge. Both [[Imre Lakatos|Lakatos]] and Feyerabend suggest that science is not an autonomous form of reasoning, but is inseparable from the larger body of human thought and inquiry. If so, then the questions of truth and falsity, and correct or incorrect understanding are not uniquely empirical. Many meaningful questions can not be settled empirically &mdash; not only in practice, but in principle.
+
+According to this way of thinking, the difficulty [[string theory|string theorists]] have had in applying experimental science would not bring in to question their status as scientists, rather than [[Metaphysics|metaphysicians]].
+
+==Demarcation in contemporary scientific method==
+The criteria for a system of assumptions, methods, and theories to qualify as science today vary in their details from application to application, and vary significantly among the [[natural sciences]], [[social sciences]] and [[formal science]].  The criteria typically include (1) the formulation of hypotheses that meet the logical criterion of [[contingency]], defeasibility, or [[falsifiability]] and the closely related [[empirical]] and [[practical]] criterion of [[testability]], (2) a grounding in empirical [[evidence]], and (3) the use of scientific method. The procedures of science typically include a number of [[heuristic]] guidelines, such as the principles of conceptual economy or theoretical [[parsimony]] that fall under the rubric of [[Ockham's razor]].  A conceptual system that fails to meet a significant number of these criteria is likely to be considered non-scientific.  
+The following is a list of additional features that are highly desirable in a scientific theory.
+
+:* Consistent.  Generates no obvious logical contradictions, and [[scientific formalism|'saves the phenomena']], being consistent with observation.
+:* Parsimonious.  Economical in the number of assumptions and hypothetical entities.
+:* Pertinent.  Describes and explains observed phenomena.
+:* Falsifiable and testable.  See [[Falsifiability]] and [[Testability]].
+:* Reproducible.  Makes predictions that can be tested by any observer, with trials extending indefinitely into the future.
+:* Correctable and dynamic.  Subject to modification as new observations are made.
+:* Integrative, robust, and corrigible.  Subsumes previous theories as approximations, and allows possible subsumption by future theories.  ("Robust", here, refers to stability in the statistical sense, i.e., not very sensitive to occasional outlying data points.)  See [[Correspondence principle]]
+:* Provisional or tentative.  Does not assert the absolute certainty of the theory.
+
+==References==
+
+<references />
+
+[[Category:Philosophy of science]]
+
+[[de:Abgrenzungsproblem]]
+[[es:Problema de la demarcación]]
+[[it:Problema della demarcazione]]
+[[nl:Demarcatiecriterium]]
+[[ja:線引き問題 (科学哲学)]]
+[[ru:Границы науки]]
+[[fi:Demarkaatio-ongelma]]
+[[sv:Demarkationsproblemet]]

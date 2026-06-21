@@ -15,18 +15,24 @@ CORPORA = {
 VALID_CORPORA = frozenset(CORPORA)
 
 
-def snapshot_dir(corpus: str = "article") -> Path:
+def crosswiki_snapshot_dir(lang: str) -> Path:
+    return ROOT / "cache" / "crosswiki" / lang / "snapshots"
+
+
+def snapshot_dir(corpus: str = "article", *, lang: str = "es") -> Path:
+    if corpus == "crosswiki":
+        return crosswiki_snapshot_dir(lang)
     if corpus not in CORPORA:
-        raise ValueError(f"Unknown corpus {corpus!r}; expected article|talk")
+        raise ValueError(f"Unknown corpus {corpus!r}; expected article|talk|crosswiki")
     return CORPORA[corpus]
 
 
-def meta_path(corpus: str, oldid: int) -> Path:
-    return snapshot_dir(corpus) / f"{oldid}.meta.json"
+def meta_path(corpus: str, oldid: int, *, lang: str = "es") -> Path:
+    return snapshot_dir(corpus, lang=lang) / f"{oldid}.meta.json"
 
 
-def wikitext_path(corpus: str, oldid: int) -> Path:
-    return snapshot_dir(corpus) / f"{oldid}.wikitext"
+def wikitext_path(corpus: str, oldid: int, *, lang: str = "es") -> Path:
+    return snapshot_dir(corpus, lang=lang) / f"{oldid}.wikitext"
 
 
 def cached(corpus: str, oldid: int) -> bool:

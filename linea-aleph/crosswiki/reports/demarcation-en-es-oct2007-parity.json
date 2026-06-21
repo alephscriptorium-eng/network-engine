@@ -1,0 +1,80 @@
+{
+  "pair_id": "demarcation-en-es-oct2007",
+  "source_oldid": 161154035,
+  "target_oldid": 11951034,
+  "bytes": {
+    "en": 13942,
+    "es": 15709,
+    "en_meta": 13973,
+    "es_meta": 16056
+  },
+  "sections": {
+    "en": [
+      "History",
+      "Science and religion part ways",
+      "Logical Positivism",
+      "Falsificationism",
+      "Kuhn and paradigm shifts",
+      "Feyerabend and the problem of autonomy in science",
+      "Demarcation in contemporary scientific method",
+      "References"
+    ],
+    "es": [
+      "Historia",
+      "Separación entre ciencia y religión",
+      "Positivismo Lógico",
+      "Falsacionismo",
+      "Kuhn y los cambios de paradigma",
+      "Feyerabend y el problema de la autonomía en la ciencia",
+      "La demarcación en el método científico contemporáneo",
+      "Referencias"
+    ],
+    "mapped": [
+      {
+        "en": "History",
+        "es_expected": "Historia",
+        "es_present": true
+      },
+      {
+        "en": "Science and religion part ways",
+        "es_expected": null,
+        "es_present": false
+      },
+      {
+        "en": "Logical Positivism",
+        "es_expected": "Positivismo Lógico",
+        "es_present": true
+      },
+      {
+        "en": "Falsificationism",
+        "es_expected": "Falsacionismo",
+        "es_present": true
+      },
+      {
+        "en": "Kuhn and paradigm shifts",
+        "es_expected": "Kuhn y los cambios de paradigma",
+        "es_present": true
+      },
+      {
+        "en": "Feyerabend and the problem of autonomy in science",
+        "es_expected": "Feyerabend y el problema de la autonomía en la ciencia",
+        "es_present": true
+      },
+      {
+        "en": "Demarcation in contemporary scientific method",
+        "es_expected": "La demarcación en el método científico contemporáneo",
+        "es_present": true
+      },
+      {
+        "en": "References",
+        "es_expected": "Referencias",
+        "es_present": true
+      }
+    ],
+    "en_count": 8,
+    "es_count": 8,
+    "mapped_present": 7,
+    "extra_es": []
+  },
+  "verdict": "PARIDAD_ESTRUCTURAL: traducción es refleja arquitectura de secciones en oct 2007"
+}

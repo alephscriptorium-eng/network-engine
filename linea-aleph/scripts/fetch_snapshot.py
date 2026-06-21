@@ -33,15 +33,19 @@ def infer_linked_article(title: str, corpus: str) -> str | None:
     return None
 
 
-def fetch_revision(oldid: int, title: str = "Problema de la demarcación") -> dict:
-    payload = fetch_revision_content(oldid, title)
+def fetch_revision(
+    oldid: int, title: str = "Problema de la demarcación", *, lang: str = "es"
+) -> dict:
+    payload = fetch_revision_content(oldid, title, lang=lang)
     payload["fetched_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    payload["lang"] = lang
     return payload
 
 
-def fetch_latest_revision(title: str = "Problema de la demarcación") -> dict:
-    payload = fetch_latest_revision_content(title)
+def fetch_latest_revision(title: str = "Problema de la demarcación", *, lang: str = "es") -> dict:
+    payload = fetch_latest_revision_content(title, lang=lang)
     payload["fetched_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    payload["lang"] = lang
     return payload
 
 
@@ -99,14 +103,16 @@ def update_snapshot_endpoints(
             )
 
 
-def save_snapshot_payload(payload: dict, corpus: str = "article") -> tuple[Path, Path]:
+def save_snapshot_payload(
+    payload: dict, corpus: str = "article", *, lang: str = "es"
+) -> tuple[Path, Path]:
     """Write wikitext + meta.json with fetch_method=api."""
-    cache = snapshot_dir(corpus)
+    cache = snapshot_dir(corpus, lang=lang)
     cache.mkdir(parents=True, exist_ok=True)
     oldid = payload["oldid"]
     title = payload.get("title", "")
-    wt_path = wikitext_path(corpus, oldid)
-    meta_out = meta_path(corpus, oldid)
+    wt_path = wikitext_path(corpus, oldid, lang=lang)
+    meta_out = meta_path(corpus, oldid, lang=lang)
     wt_path.write_text(payload["wikitext"], encoding="utf-8")
     meta = {k: v for k, v in payload.items() if k != "wikitext"}
     meta["wikitext_path"] = str(wt_path.relative_to(ROOT))
@@ -136,17 +142,27 @@ def main() -> None:
     )
     parser.add_argument(
         "--corpus",
-        choices=("article", "talk"),
+        choices=("article", "talk", "crosswiki"),
         default="article",
-        help="Cache corpus: article (NS0) or talk (NS1/NS3)",
+        help="Cache corpus: article (NS0), talk (NS1/NS3), or crosswiki (non-es)",
+    )
+    parser.add_argument(
+        "--lang",
+        default="es",
+        choices=("es", "en"),
+        help="Wikipedia language edition for API fetch and crosswiki cache path",
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
+    corpus = args.corpus
+    if args.lang != "es" and corpus == "article":
+        corpus = "crosswiki"
+
     if args.latest:
-        payload = fetch_latest_revision(args.title)
+        payload = fetch_latest_revision(args.title, lang=args.lang)
     elif args.oldid is not None:
-        payload = fetch_revision(args.oldid, args.title)
+        payload = fetch_revision(args.oldid, args.title, lang=args.lang)
     else:
         parser.error("Provide --oldid or --latest")
 
@@ -157,9 +173,9 @@ def main() -> None:
         print(f"wikitext_chars: {len(payload['wikitext'])}")
         return
 
-    wt_path, meta_out = save_snapshot_payload(payload, args.corpus)
+    wt_path, meta_out = save_snapshot_payload(payload, corpus, lang=args.lang)
 
-    if args.corpus == "article":
+    if args.corpus == "article" and args.lang == "es":
         update_snapshot_endpoints(
             oldid,
             payload["fetched_at"],

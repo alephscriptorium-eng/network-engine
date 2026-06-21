@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1",
+  "cluster": "contacto-anglo-es",
+  "operation": "SolveCoagula traducción oct 2007",
+  "blockchain": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-6.md",
+  "parity_report": "network-engine/linea-aleph/crosswiki/reports/demarcation-en-es-oct2007-parity.json",
+  "rows": [
+    {
+      "lang": "en",
+      "topic": "demarcación",
+      "moment": "fuente oct 2007",
+      "oldid": 161154035,
+      "bytes": 13973,
+      "linea": "PLURALIST",
+      "evidence": "🟢 cache/crosswiki/en/snapshots/161154035.wikitext",
+      "parity_with": "es:11951034",
+      "parity_verdict": "PARIDAD_ESTRUCTURAL"
+    },
+    {
+      "lang": "es",
+      "topic": "demarcación",
+      "moment": "previo",
+      "oldid": 11663303,
+      "bytes": 472,
+      "linea": "POPPER-ONLY",
+      "evidence": "🟢 cache/snapshots/11663303.wikitext"
+    },
+    {
+      "lang": "es",
+      "topic": "demarcación",
+      "moment": "traducción",
+      "oldid": 11951034,
+      "bytes": 16056,
+      "linea": "PLURALIST",
+      "evidence": "🟢 cache/snapshots/11951034.wikitext",
+      "summary": "Traducción completa del original en inglés"
+    },
+    {
+      "lang": "es",
+      "topic": "demarcación",
+      "moment": "SC cierre",
+      "oldid": 12763920,
+      "bytes": null,
+      "linea": "PLURALIST+",
+      "evidence": "🟢 cache/snapshots/12763920.wikitext"
+    }
+  ]
+}
