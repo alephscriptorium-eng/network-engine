@@ -45,6 +45,10 @@ Los skills viven en `agents/skills/`; configura el IDE para leer esa ruta si hac
 
 ## FOSS
 
-El portal [`public/foss/`](../../public/foss/index.html) enlaza estos archivos vía `github_blob()`; no se duplican en `public/`.
+- Landing estática: [`public/foss/index.html`](../../public/foss/index.html) (técnico, funcional, devops…)
+- **Canon en repo** (manifest → GitHub): [`public/foss/canon.html`](../../public/foss/canon.html) · [`manifest.json`](../../public/foss/manifest.json)
+- No se duplica corpus en `public/` — enlaces vía `github_blob()` en [`github_blob.js`](../../public/foss/github_blob.js)
 
-URL prevista (GitHub Pages): `https://alephscriptorium-eng.github.io/network-engine/foss/`
+**GitHub Pages:** workflow [`.github/workflows/pages.yml`](../../.github/workflows/pages.yml) despliega `public/` en push a `main`. Configuración única en el repo: Settings → Pages → Source: GitHub Actions.
+
+URLs: `https://alephscriptorium-eng.github.io/network-engine/foss/` · `…/foss/canon.html`

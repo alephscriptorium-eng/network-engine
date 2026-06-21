@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canon en repo — Network Engine FOSS</title>
+  <meta name="description" content="Enlaces a documentacion canonica en GitHub: traje, poderes, engines, cache, Solve et Coagula.">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --text: #e6edf3;
+      --muted: #8b9cb3;
+      --accent: #58a6ff;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 2rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border);
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+    header h1 { margin: 0 0 0.25rem; font-size: 1.5rem; font-weight: 600; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    header a { color: var(--accent); }
+    main {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    section { margin-bottom: 2rem; }
+    section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    li { border-bottom: 1px solid var(--border); }
+    li:last-child { border-bottom: none; }
+    li a {
+      display: block;
+      padding: 0.65rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--surface);
+    }
+    li a:hover { background: #243044; }
+    .path {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: ui-monospace, monospace;
+      margin-top: 0.15rem;
+    }
+    .note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    footer {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    .loading { color: var(--muted); }
+    .error { color: #f85149; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Canon en repo</h1>
+    <p>Enlaces a fuente en GitHub (manifest). <a href="index.html">Volver al indice FOSS</a></p>
+  </header>
+  <main id="content">
+    <p class="loading">Cargando manifest...</p>
+  </main>
+  <footer>
+    <p>Base: <code>https://alephscriptorium-eng.github.io/network-engine/foss/canon.html</code></p>
+    <p>Helper: <code>github_blob(path)</code> en <a href="github_blob.js">github_blob.js</a></p>
+  </footer>
+  <script src="github_blob.js"></script>
+  <script>
+    function resolveUrl(entry) {
+      const opts = {};
+      if (entry.repo) {
+        const parts = entry.repo.split("/");
+        opts.owner = parts[0];
+        opts.repo = parts[1];
+      }
+      return {
+        raw: githubBlob(entry.path, opts),
+        view: githubView(entry.path, opts),
+      };
+    }
+
+    function renderCategory(cat) {
+      const section = document.createElement("section");
+      section.id = cat.id;
+      const heading = document.createElement("h2");
+      heading.textContent = cat.label;
+      section.appendChild(heading);
+
+      const ul = document.createElement("ul");
+      for (const entry of cat.entries) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        const urls = resolveUrl(entry);
+        a.href = urls.view;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML = entry.title + '<span class="path">' + entry.path + "</span>";
+        if (entry.note) {
+          a.innerHTML += '<span class="note">' + entry.note + "</span>";
+        }
+        li.appendChild(a);
+        ul.appendChild(li);
+      }
+      section.appendChild(ul);
+      return section;
+    }
+
+    fetch("manifest.json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("manifest " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        const root = document.getElementById("content");
+        root.textContent = "";
+        for (const cat of data.categories) {
+          root.appendChild(renderCategory(cat));
+        }
+      })
+      .catch(function (err) {
+        document.getElementById("content").innerHTML =
+          '<p class="error">Error cargando manifest: ' + err.message + "</p>";
+      });
+  </script>
+</body>
+</html>
