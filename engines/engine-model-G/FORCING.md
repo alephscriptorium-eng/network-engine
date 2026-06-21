@@ -78,8 +78,9 @@ Ejemplo de puente: `FEEDBACK → PLAN: el aprendizaje del sprint reordena el bac
 
 ## Epistemología bajo force G
 
-- **No usar 🟢** para fases CI/CD, roles ágiles ni ontología DevOps — es conocimiento externo; marcar **🔴** (tejido generativo) o **⚪** (extrapolación explícita).
-- **🟢 solo** con oldid/caché (`cache/snapshots/`, `cache/talk/snapshots/`, `audit-*.json`) o bloques blockchain/agentchain citados con ruta.
+- **No usar 🟢** para ontología ágil, fases CI/CD ni roles DevOps — conocimiento externo → **🔴** (rol del lector) o **⚪** (extrapolación explícita).
+- **🟢 solo** con oldid/caché verificada (`cache/talk/snapshots/`, `blockchain/block-*.md`, `audit-*.json`) o bloques agentchain citados con ruta.
+- Leer `index-reader.md` / `reader-traje.hot.md` calibra protocolo → **🟡**, no ground truth wiki.
 - La mini-tabla fase|rol|gancho va **dentro** del bloque Calibración del traje; no sustituye marcas del cuerpo.
 
 ## Calibración
@@ -87,9 +88,3 @@ Ejemplo de puente: `FEEDBACK → PLAN: el aprendizaje del sprint reordena el bac
 - [`aleph-context/eval/prompts-test/06-force-g-agile-cicd.md`](../../aleph-context/eval/prompts-test/06-force-g-agile-cicd.md)
 - Escena contraste arquetipos: `01-arquetipos-momento/output.md`
 - Escena forcing epistemológica (demo sintética): `03-trazabilidad-index-reader/output.md`
-
-## Epistemología (🟢🟡🔴⚪)
-
-- **No usar 🟢** para ontología ágil ni fases CI/CD: son conocimiento DevOps externo → marcar **🔴** (rol del lector) o **⚪** (extrapolación explícita).
-- **🟢** solo con oldid/caché verificada (`cache/talk/snapshots/`, `blockchain/block-*.md`, etc.).
-- Leer `index-reader.md` / `reader-traje.hot.md` calibra protocolo → **🟡**, no ground truth wiki.

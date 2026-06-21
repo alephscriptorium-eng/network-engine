@@ -7,15 +7,7 @@ source_lines: [84, 147]
 layer: output
 tags: [force:G, cohen:agile_cicd_loop, ci-cd, scrum, trazabilidad, index-reader, forcing]
 synthetic_forcing_demo: true
-rol: forcing
 ---
-
-# User
-
-Desde traje index-reader con force G activo: regenera el bucle CI/CD con trazabilidad epistemológica estricta (sin confundir DevOps externo con dato wiki).
-
-# Agent Reader
-
 Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:engine-model-G · +force engine-model-A · -force engine-model-G · forces? · +poder <id> · -poder <id> · sin disfraz
 
 > **Calibración engines** — main: mirar sin prisa · force G (agile_cicd_loop): el marco ágil se lee como lente de seis fases — roles e ideas fuerza, no sustituyen oldids.
