@@ -250,3 +250,8 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cac
 - `linea-aleph/pseudociencia/` — sub-corpus segunda línea gruesa
 - `linea-aleph/talk/` — sub-corpus discusión (4 vistas NS1/NS3; espejo de `pseudociencia/`)
 - `logs-aleph/sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/` — marco Aleph
+
+## Modos de lectura
+
+- **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto.
+- **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero; quitar traje antes.

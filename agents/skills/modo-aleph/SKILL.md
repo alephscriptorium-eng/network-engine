@@ -169,9 +169,12 @@ Un skill **puede** activar un modo donde el modelo usa sesgos + herramientas par
 
 Falla si se salta el bucle 1–3 y solo cambia el estilo retórico (carambolas).
 
+Para lectura forense index-reader (oldid-first, anti bot-agente), usar **[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero. Modo Aleph es otro equipamiento; no superponer pipelines sin avisar.
+
 ## Archivos de soporte
 
 - [engines.md](engines.md) — boot main-engine + selección forces Cohen
+- [disfraz-rude-bot](../disfraz-rude-bot/SKILL.md) — traje rude bot para index-reader
 - [cotas.md](cotas.md) — protocolo sima ↔ cima ↔ linea
 - [autorevisor.md](autorevisor.md) — checklist simétrico
 - [asentamiento-plantilla.md](asentamiento-plantilla.md) — bloque de sesión

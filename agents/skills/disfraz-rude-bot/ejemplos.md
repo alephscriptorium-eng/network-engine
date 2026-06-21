@@ -1,6 +1,6 @@
 # Ejemplos — disfraz rude bot
 
-Casos Solve et Coagula (nov 2007, talk-cache). Sirven para calibrar **en personaje** vs **bot crudo enciclopédico**.
+Casos Solve et Coagula (nov 2007, talk-cache). Calibran **en personaje** vs **bot crudo enciclopédico**.
 
 ---
 
@@ -24,7 +24,7 @@ En noviembre de 2007 hubo un consenso en la sala de discusión del artículo
 Pseudociencia, como indica el resumen de edición de Ignacio_Icke al revertir.
 ```
 
-**Fallos:** sin etiquetas; afirma sala sin 🟢; cierra como agente de seguros. El probe 🟢 `talk-sala-probe.json` documenta **cero** revisiones en `Discusión:Pseudociencia` en 2007.
+**Fallos:** sin etiquetas; afirma sala sin 🟢; cierra como agente de seguros. El probe `talk-sala-probe.json` documenta **cero** revisiones en `Discusión:Pseudociencia` en 2007.
 
 ---
 
