@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "prensa-block14-talk-pulse.schema.json",
+  "title": "Sesión prensa — pulso talk nov 2007 (block 14)",
+  "description": "Índice publicable de oldids talk clave sin duplicar corpus wikitext. Consumir junto a audit-talk.json y snapshots linea-aleph.",
+  "type": "object",
+  "required": ["session_id", "title", "window", "article_milestones", "talk_index", "explicit_gaps", "source_audit"],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "const": "prensa-block14-talk-pulse"
+    },
+    "title": {
+      "type": "string",
+      "example": "Geografía de la conversación: Pseudociencia nov 2007"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "window": {
+      "type": "object",
+      "required": ["start", "end"],
+      "properties": {
+        "start": { "type": "string", "format": "date" },
+        "end": { "type": "string", "format": "date" }
+      }
+    },
+    "article_milestones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["oldid", "title", "actor", "timestamp_utc", "summary"],
+        "properties": {
+          "oldid": { "type": "integer" },
+          "title": { "type": "string", "example": "Pseudociencia" },
+          "actor": { "type": "string" },
+          "timestamp_utc": { "type": "string", "format": "date-time" },
+          "summary": { "type": "string" },
+          "wiki_url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "talk_index": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["oldid", "vista", "body_cached", "snapshot_ref"],
+        "properties": {
+          "oldid": { "type": "integer" },
+          "vista": {
+            "type": "string",
+            "enum": [
+              "discusion-pseudociencia",
+              "usuario-discusion-analiza",
+              "usuario-discusion-ignacio-icke",
+              "usuario-discusion-solvecoagula"
+            ]
+          },
+          "article_alignment": {
+            "type": "object",
+            "properties": {
+              "article_oldid": { "type": "integer" },
+              "delta_hours": { "type": "number" }
+            }
+          },
+          "body_cached": { "type": "boolean" },
+          "snapshot_ref": {
+            "type": "string",
+            "description": "Ruta relativa a linea-aleph, ej. cache/talk/snapshots/12719797.wikitext"
+          },
+          "wiki_url": { "type": "string", "format": "uri" },
+          "excerpt_hint": {
+            "type": "string",
+            "description": "Primera línea significativa para card UI; no sustituye snapshot"
+          }
+        }
+      }
+    },
+    "explicit_gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["vista", "reason"],
+        "properties": {
+          "vista": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "source_audit": {
+      "type": "string",
+      "default": "linea-aleph/cache/audit-talk.json"
+    },
+    "publish": {
+      "type": "object",
+      "description": "Metadatos para GitHub Pages prensa (no publicar en CI hasta aprobación)",
+      "properties": {
+        "status": { "type": "string", "enum": ["draft", "review", "published"] },
+        "base_path": { "type": "string", "example": "/prensa/sessions/prensa-block14-talk-pulse/" }
+      }
+    }
+  },
+  "examples": [
+    {
+      "session_id": "prensa-block14-talk-pulse",
+      "title": "Geografía de la conversación: Pseudociencia nov 2007",
+      "generated_at": "2026-06-21T00:00:00Z",
+      "window": { "start": "2007-11-10", "end": "2007-11-18" },
+      "article_milestones": [
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "actor": "Analiza",
+          "timestamp_utc": "2007-11-10T19:18:00Z",
+          "summary": "¿Vamos a dialogar o no? El artículo no cumple con PVN de esta forma",
+          "wiki_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12719652"
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "actor": "Ignacio_Icke",
+          "timestamp_utc": "2007-11-18T18:55:00Z",
+          "summary": "revierto a versión consensuada (ver discusión)",
+          "wiki_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12909144"
+        }
+      ],
+      "talk_index": [
+        {
+          "oldid": 12719797,
+          "vista": "usuario-discusion-analiza",
+          "article_alignment": { "article_oldid": 12719652, "delta_hours": 0.1 },
+          "body_cached": true,
+          "snapshot_ref": "cache/talk/snapshots/12719797.wikitext",
+          "wiki_url": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12719797",
+          "excerpt_hint": "Vandalismo en Pseudociencia — advertencia cruzada"
+        },
+        {
+          "oldid": 12912735,
+          "vista": "usuario-discusion-solvecoagula",
+          "article_alignment": { "article_oldid": 12909144, "delta_hours": 2.0 },
+          "body_cached": true,
+          "snapshot_ref": "cache/talk/snapshots/12912735.wikitext",
+          "wiki_url": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12912735",
+          "excerpt_hint": "Retama advierte sobre acusación de vandalismo a Chabacano"
+        }
+      ],
+      "explicit_gaps": [
+        {
+          "vista": "discusion-pseudociencia",
+          "reason": "0 revisiones en ventana oct–nov 2007 pese a enlaces Retama e Ignacio_Icke"
+        },
+        {
+          "vista": "usuario-discusion-ignacio-icke",
+          "reason": "0 revisiones en ventana oct–nov 2007"
+        }
+      ],
+      "source_audit": "linea-aleph/cache/audit-talk.json",
+      "publish": { "status": "draft", "base_path": "/prensa/sessions/prensa-block14-talk-pulse/" }
+    }
+  ]
+}

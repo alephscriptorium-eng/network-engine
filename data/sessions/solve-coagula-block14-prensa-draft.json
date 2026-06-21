@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1",
+  "status": "draft",
+  "game": "solve-et-coagula",
+  "block": 14,
+  "title": "Geografía conversación UT vs sala — pulso nov 2007",
+  "generated_at": "2026-06-21",
+  "publish_target": "network-engine-prensa",
+  "window": {
+    "start": "2007-11-10T00:00:00Z",
+    "end": "2007-11-18T23:59:59Z"
+  },
+  "article_milestones": [
+    {
+      "oldid": 12719652,
+      "title": "Pseudociencia",
+      "role": "revert_analiza",
+      "wikipedia_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12719652"
+    },
+    {
+      "oldid": 12720368,
+      "title": "Pseudociencia",
+      "role": "restore_solvecoagula",
+      "wikipedia_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12720368"
+    },
+    {
+      "oldid": 12909144,
+      "title": "Pseudociencia",
+      "role": "revert_ignacio_icke",
+      "wikipedia_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12909144"
+    },
+    {
+      "oldid": 12910974,
+      "title": "Pseudociencia",
+      "role": "restore_solvecoagula_final",
+      "wikipedia_url": "https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12910974"
+    }
+  ],
+  "talk_index": {
+    "anchors": [12719652, 12909144],
+    "alignment_hits": 15,
+    "key_oldids": [
+      { "oldid": 12719797, "vista": "usuario-discusion-analiza", "article_ref": 12719652, "delta_hours": 0.1 },
+      { "oldid": 12720101, "vista": "usuario-discusion-analiza", "article_ref": 12719652, "delta_hours": 0.3 },
+      { "oldid": 12720477, "vista": "usuario-discusion-analiza", "article_ref": 12719652, "delta_hours": 0.5 },
+      { "oldid": 12719917, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 0.1 },
+      { "oldid": 12720326, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 0.4 },
+      { "oldid": 12720441, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 0.5 },
+      { "oldid": 12721439, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 1.2 },
+      { "oldid": 12911274, "vista": "usuario-discusion-solvecoagula", "article_ref": 12909144, "delta_hours": 1.2 },
+      { "oldid": 12911445, "vista": "usuario-discusion-solvecoagula", "article_ref": 12909144, "delta_hours": 1.2 },
+      { "oldid": 12912735, "vista": "usuario-discusion-solvecoagula", "article_ref": 12909144, "delta_hours": 2.0 }
+    ],
+    "tail_alignment": [
+      { "oldid": 12736728, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 20.0 },
+      { "oldid": 12737478, "vista": "usuario-discusion-solvecoagula", "article_ref": 12719652, "delta_hours": 20.6 },
+      { "oldid": 12741803, "vista": "usuario-discusion-analiza", "article_ref": 12719652, "delta_hours": 23.8 },
+      { "oldid": 12885172, "vista": "usuario-discusion-analiza", "article_ref": 12909144, "delta_hours": 23.5 },
+      { "oldid": 12888441, "vista": "usuario-discusion-analiza", "article_ref": 12909144, "delta_hours": 21.0 }
+    ]
+  },
+  "explicit_gaps": [
+    {
+      "vista": "discusion-pseudociencia",
+      "label": "Sala del artículo sin actividad oct–nov 2007",
+      "wikipedia_url": "https://es.wikipedia.org/wiki/Discusión:Pseudociencia"
+    },
+    {
+      "vista": "usuario-discusion-ignacio-icke",
+      "label": "UT Ignacio_Icke sin edits en ventana",
+      "wikipedia_url": "https://es.wikipedia.org/wiki/Usuario_discusi%C3%B3n:Ignacio_Icke"
+    }
+  ],
+  "uichain_spec": "block-14-timeline-dual",
+  "corpus_policy": "index_only — no wikitext bodies in session payload"
+}
