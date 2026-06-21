@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "solve-coagula-story-board.schema.json",
+  "title": "Solve et Coagula — Story Board manifest (Widget B)",
+  "description": "Metadatos ultra-resumen por bloque para panel de estado block-12. Regenerar con scripts/story_board_manifest.py.",
+  "type": "object",
+  "required": ["schema_version", "game", "generated_at", "acts", "subtramas", "blocks"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "game": { "const": "solve-et-coagula" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "source_root": { "type": "string" },
+    "gemini_range": { "type": "string" },
+    "ayuda_poder": { "type": "string" },
+    "acts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "blocks"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "blocks": { "type": "array", "items": { "type": "integer" } }
+        }
+      }
+    },
+    "subtramas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "blocks"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "blocks": { "type": "array", "items": { "type": "integer" } }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["n", "blockchain", "composer", "gemini", "uichain", "chips"],
+        "properties": {
+          "n": { "type": "integer" },
+          "act": { "type": ["string", "null"] },
+          "blockchain": {
+            "type": "object",
+            "required": ["present"],
+            "properties": {
+              "present": { "type": "boolean" },
+              "path": { "type": ["string", "null"] },
+              "ultra_resumen": { "type": ["string", "null"] }
+            }
+          },
+          "composer": {
+            "type": "object",
+            "required": ["present"],
+            "properties": {
+              "present": { "type": "boolean" },
+              "path": { "type": ["string", "null"] }
+            }
+          },
+          "gemini": {
+            "type": "object",
+            "required": ["present"],
+            "properties": {
+              "present": { "type": "boolean" },
+              "path": { "type": ["string", "null"] }
+            }
+          },
+          "uichain": {
+            "type": "object",
+            "required": ["present", "paths"],
+            "properties": {
+              "present": { "type": "boolean" },
+              "paths": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "chips": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

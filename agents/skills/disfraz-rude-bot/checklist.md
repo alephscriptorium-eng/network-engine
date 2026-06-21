@@ -65,6 +65,16 @@ Si falla un ítem → **reescribir**, no añadir disclaimer al final.
 | `+cicd` activo pero `forces` sin `engine-model-G` | Toggle real vía `+force engine-model-G` |
 | Calibración sustituye marcas del cuerpo | Separar tejido de calibración de 🟢🟡🔴⚪ forense |
 
+## I. ¿Ayuda (`+ayuda`) correcta?
+
+| Señal de fallo | Corrección |
+|----------------|------------|
+| Mapa de capas marcado como 🟢 wiki | Tejido ayuda (`> **Ayuda capas**` o 🔴 mínimo); no 🟢 |
+| Ayuda mezclada con forense en el mismo bloque | Bloque ayuda **antes** del cuerpo; respetar `selective-query` |
+| Ultra-resumen sin ruta de bloque leído | Citar `blockchain/block-N.md` leído en Q1 |
+| Celda sin archivo rellena con contenido inventado | `⚪` en composer/gemini/uichain; no inventar bloque |
+| Ayuda sustituye lectura forense o cierra con moraleja | Ayuda orienta; 🟢🟡🔴⚪ del cuerpo siguen reglas normales |
+
 ## Salida obligatoria
 
 1. **Cabecera traje** (primera línea) — ver § F; formato en [SKILL.md](SKILL.md) § Cabecera.

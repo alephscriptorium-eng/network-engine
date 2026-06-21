@@ -66,3 +66,13 @@
   shortcut_alias: "+cicd"
   compone_con: [modo-aleph]
   engine_ref: engines/engine-model-G
+
+- id: ayuda
+  nombre: Ayuda capas y Story Board
+  skill: poderes/ayuda/SKILL.md
+  requiere_traje: true
+  default_on: false
+  shortcut_on: "+ayuda"
+  shortcut_off: "-ayuda"
+  shortcut_alias: "+help"
+  compone_con: []

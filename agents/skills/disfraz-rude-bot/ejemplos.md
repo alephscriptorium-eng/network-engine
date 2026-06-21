@@ -81,7 +81,7 @@ Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selectiv
 
 🟢 [Dato Wiki] UT SolveCoagula oldid 12719917 — cuerpo en `cache/talk/snapshots/12719917.wikitext`; 34 revisiones oct–nov 2007 en `audit-talk.json`.
 
-🟡 [Inferencia Agentchain] El revert Analiza (12719652) y el hilo UT forman carril dual — ver `block-8.md` (dos pistas, un metrónomo).
+🟡 [Inferencia Agentchain] El revert Analiza (12719652) y el hilo UT forman carril dual — ver [`agentchain/composer/block-14.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-14.md) o poder `+alineacion-dual`.
 
 ⚪ [Blanco Explícito] Sala `Discusión:Pseudociencia` sin pasos en 2007 — el force G traduce el **marco** del pulso, no inventa hilos de sala.
 ```
@@ -112,3 +112,24 @@ Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selectiv
 **Fallos a evitar:** afirmar pipeline verde o artefactos publicados sin 🟢; omitir mini-tabla con `+cicd` activo.
 
 Tono más laxo permitido; **🟢 y ⚪ se mantienen**.
+
+---
+
+## 8. Poder ayuda (`+ayuda`) — mapa capas + Story Board
+
+Usuario: «¿qué es blockchain vs agentchain?» y «ultra-resumen bloques 12–15».
+
+```markdown
+Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,ayuda · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+
+> **Ayuda capas** — 🔴 [Deducción del Lector] Stack: blockchain = preguntas; agentchain = conclusiones 🟡; gemini = relato (1–3 vigentes); uichain = spec visual. `index-reader` orquesta; 🟢 solo en `linea-aleph`.
+
+| N | Acto | Ultra-resumen (blockchain) | composer | gemini | uichain | chips |
+|---|------|----------------------------|----------|--------|---------|-------|
+| 12 | meta_lectura | Panel estado index-reader + uichain | ✓ | ⚪ | block-12-panel-estado | — |
+| 13 | extension | Prensa desde cache/talk | ✓ | ⚪ | ⚪ | talk_cache |
+| 14 | extension | Timeline dual artículo↔talk | ✓ | ✓ | block-14-timeline-dual | dual_reader · talk_cache |
+| 15 | extension | Vacío Ignacio / sala | ✓ | ✓ | ⚪ | talk_cache |
+```
+
+**Fallos a evitar:** mapa de capas como 🟢; inventar bloques no leídos; confundir gemini 1–10 (ahora 1–3 vigentes + poder `ayuda`).

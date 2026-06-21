@@ -1,0 +1,473 @@
+{
+  "schema_version": "0.1",
+  "game": "solve-et-coagula",
+  "generated_at": "2026-06-21T03:57:59Z",
+  "source_root": "scriptorium-network-games/SOLVE_ET_COAGULA",
+  "acts": [
+    {
+      "id": "constitucion",
+      "label": "Constitución",
+      "blocks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "radiografia",
+      "label": "Radiografía",
+      "blocks": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "friccion",
+      "label": "Fricción",
+      "blocks": [
+        8
+      ]
+    },
+    {
+      "id": "profundizacion",
+      "label": "Profundización",
+      "blocks": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "cierre",
+      "label": "Cierre",
+      "blocks": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "subtramas": [
+    {
+      "id": "matrix",
+      "label": "Matrix",
+      "blocks": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "noviembre_analiza",
+      "label": "Noviembre/Analiza",
+      "blocks": [
+        8
+      ]
+    },
+    {
+      "id": "dual_reader",
+      "label": "Dual reader",
+      "blocks": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "talk_cache",
+      "label": "Talk-cache",
+      "blocks": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "epilogo",
+      "label": "Epílogo",
+      "blocks": [
+        15
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "n": 0,
+      "act": "constitucion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-0.md",
+        "ultra_resumen": "¿Qué juego es este si la fuente es un usuario real de 2007?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-0.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 1,
+      "act": "constitucion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-1.md",
+        "ultra_resumen": "¿Cuánto archivo tenemos del pulso SolveCoagula?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-1.md"
+      },
+      "gemini": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-1.md"
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 2,
+      "act": "constitucion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-2.md",
+        "ultra_resumen": "¿Qué otros artículos orbitan al protagonista?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-2.md"
+      },
+      "gemini": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-2.md"
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 3,
+      "act": "constitucion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-3.md",
+        "ultra_resumen": "¿Qué satélites merecen su propia línea?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-3.md"
+      },
+      "gemini": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-3.md"
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 4,
+      "act": "constitucion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-4.md",
+        "ultra_resumen": "¿Cómo radiografiamos a un enciclopedista sin jerga interna?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-4.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 5,
+      "act": "radiografia",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-5.md",
+        "ultra_resumen": "¿Quién es SolveCoagula como enciclopedista? — REIC aplicado al caso."
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-5.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 6,
+      "act": "radiografia",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-6.md",
+        "ultra_resumen": "¿Qué construyó en Demarcación antes del campo de batalla? — delta 472→161K bytes."
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-6.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": true,
+        "paths": [
+          "uichain/ui-block-6-recap.md"
+        ]
+      },
+      "chips": []
+    },
+    {
+      "n": 7,
+      "act": "radiografia",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-7.md",
+        "ultra_resumen": "¿Por qué Pseudociencia es el escenario inevitable? — etiqueta como política enciclopédica."
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-7.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 8,
+      "act": "friccion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-8.md",
+        "ultra_resumen": "¿Qué pasó en Pseudociencia entre el 10 y el 18 de noviembre de 2007?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-8.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": [
+        "noviembre_analiza"
+      ]
+    },
+    {
+      "n": 9,
+      "act": "profundizacion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-9.md",
+        "ultra_resumen": "¿Qué hizo el 16 de octubre con Matrix que prefiguró noviembre? — **flashback explícito** al módulo [12763920](https://es"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-9.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": [
+        "matrix"
+      ]
+    },
+    {
+      "n": 10,
+      "act": "profundizacion",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-10.md",
+        "ultra_resumen": "¿Cómo vibra Matrix entre Demarcación y Pseudociencia?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-10.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": [
+        "matrix"
+      ]
+    },
+    {
+      "n": 11,
+      "act": "cierre",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-11.md",
+        "ultra_resumen": "¿Cómo leemos once capítulos sin confundir archivo con interpretación?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-11.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": []
+    },
+    {
+      "n": 12,
+      "act": "cierre",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-12.md",
+        "ultra_resumen": "¿Dónde hablaron cuando Pseudociencia ardía?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-12.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": true,
+        "paths": [
+          "uichain/block-12-panel-estado.prompt.md"
+        ]
+      },
+      "chips": [
+        "talk_cache"
+      ]
+    },
+    {
+      "n": 13,
+      "act": "cierre",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-13.md",
+        "ultra_resumen": "¿Qué se pierde si solo abres el diff del artículo?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-13.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": [
+        "dual_reader",
+        "talk_cache"
+      ]
+    },
+    {
+      "n": 14,
+      "act": "cierre",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-14.md",
+        "ultra_resumen": "¿Existió la sala que Retama e Ignacio citaron?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-14.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": true,
+        "paths": [
+          "uichain/block-14-timeline-dual.prompt.md"
+        ]
+      },
+      "chips": [
+        "dual_reader",
+        "talk_cache"
+      ]
+    },
+    {
+      "n": 15,
+      "act": "cierre",
+      "blockchain": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/blockchain/block-15.md",
+        "ultra_resumen": "¿Qué quedó de SolveCoagula tras el último commit?"
+      },
+      "composer": {
+        "present": true,
+        "path": "scriptorium-network-games/SOLVE_ET_COAGULA/agentchain/composer/block-15.md"
+      },
+      "gemini": {
+        "present": false,
+        "path": null
+      },
+      "uichain": {
+        "present": false,
+        "paths": []
+      },
+      "chips": [
+        "epilogo"
+      ]
+    }
+  ],
+  "gemini_range": "1-3",
+  "ayuda_poder": "network-engine/agents/skills/disfraz-rude-bot/poderes/ayuda/SKILL.md"
+}

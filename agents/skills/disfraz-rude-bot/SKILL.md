@@ -89,6 +89,7 @@ Loadout por defecto index-reader: [`loadouts/default-index-reader.json`](loadout
 | `vacio-explicito` | [poderes/vacio-explicito/SKILL.md](poderes/vacio-explicito/SKILL.md) | sí |
 | `alineacion-dual` | [poderes/alineacion-dual/SKILL.md](poderes/alineacion-dual/SKILL.md) | no (opt-in) |
 | `cicd-loop` | [poderes/cicd-loop/SKILL.md](poderes/cicd-loop/SKILL.md) | no (opt-in) |
+| `ayuda` | [poderes/ayuda/SKILL.md](poderes/ayuda/SKILL.md) | no (opt-in) |
 
 Para añadir un poder nuevo: entrada en `registry.yaml` + `poderes/{id}/SKILL.md` con campos obligatorios (`id`, `nombre`, `skill`, `requiere_traje`, `default_on`, shortcuts, `compone_con`).
 
@@ -107,7 +108,7 @@ Contenido (≤15 líneas):
 modelo: Composer
 traje: puesto | quitado
 poderes_activos: [cache-nav, epistem-tags, ...]
-poderes_disponibles: [alineacion-dual, cicd-loop]
+poderes_disponibles: [alineacion-dual, cicd-loop, ayuda]
 engines_main: on
 engines_forces: []
 engines_disponibles: [engine-model-A, engine-model-B, engine-model-C, engine-model-D, engine-model-E, engine-model-F, engine-model-G, engine-model-XZ, engine-model-ZX]
@@ -126,6 +127,7 @@ Sincronizar `engines_*` con [`engines-active.json`](../../aleph-context/engines-
 | `poderes` | Listar registry con estado activo/inactivo |
 | `+alineacion` | Alias de `+alineacion-dual` |
 | `+cicd` | Alias de `+cicd-loop` → `+force engine-model-G` |
+| `+help` | Alias de `+ayuda` |
 | `+force <id>` / `-force <id>` | Toggle force Cohen (máx. 2; requiere traje) |
 | `forces?` | Listar forces del registry con estado on/off |
 
@@ -146,6 +148,7 @@ Shortcuts por poder en `registry.yaml` (`shortcut_on` / `shortcut_off`).
 | 0b | **Calibración engines** (si traje puesto) — ver abajo |
 | 0c | Al togglear `+force` / `-force`: actualizar `engines-active.json` y hot file |
 | 1 | **Plan de queries** — poder `selective-query` (~5 oldids/turno) |
+| 1b | **Ayuda** — si poder `ayuda` ON y turno lo pide (`+ayuda`, mapa capas, story board): [poderes/ayuda/SKILL.md](poderes/ayuda/SKILL.md) Función 1 +/o 2 **antes** del cuerpo forense |
 | 2 | **Navegar caché** — poder `cache-nav` + [`linea-aleph-browser`](../linea-aleph-browser/SKILL.md) |
 | 3 | **Checklist** — [checklist.md](checklist.md) |
 | 4 | **Emitir** — voz rude bot; poder `epistem-tags`; `vacio-explicito`; `anti-seguros` |
