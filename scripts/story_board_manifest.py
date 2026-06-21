@@ -126,7 +126,7 @@ def build_manifest() -> dict:
             {"id": s["id"], "label": s["label"], "blocks": s["blocks"]} for s in SUBTRAMAS
         ],
         "blocks": blocks,
-        "gemini_range": "1-3",
+        "gemini_range": "1-4",
         "ayuda_poder": "network-engine/agents/skills/disfraz-rude-bot/poderes/ayuda/SKILL.md",
     }
 

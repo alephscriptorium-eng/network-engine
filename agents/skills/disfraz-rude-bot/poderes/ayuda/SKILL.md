@@ -31,7 +31,7 @@ Emitir plantilla fija (tablas + topología mermaid). Marcar como tejido de ayuda
 **Reglas:**
 - No repetir TOC entero del juego; white-paper abstracto.
 - Si el turno mezcla ayuda + forense (`selective-query`): bloque ayuda **antes** del cuerpo forense.
-- Gemini cadena: bloques **1–3** (+ mapa de capas vía este poder, no gemini-10). *Gemini 4+ pendiente de alineación post-rediseño blockchain 11–15.*
+- Gemini cadena: bloques **1–4** (+ mapa de capas vía este poder, no gemini-10). *Gemini 5+ pendiente de alineación post-rediseño blockchain 11–15.*
 
 #### Contraste de capas
 
@@ -79,7 +79,7 @@ flowchart TB
 |--------|---------|-------|
 | **blockchain** | Bloques 0–15 | Ledger de `# User`; acto cierre 11–15 (contrato, vestuario, dual, fantasma, epílogo) |
 | **agentchain/composer** | Bloques 2–15 | Corpus · REIC · pulso oct–nov · Matrix · prensa · talk-cache · alineación ±24 h |
-| **reader-chain/gemini** | Bloques 1–3 | Intro traje · ayuda / mapa de capas · anglo payload (stub) — ver [`README.md`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/README.md) |
+| **reader-chain/gemini** | Bloques 1–4 | Intro traje · ayuda · anglo · REIC manual de campo — ver [`README.md`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/README.md) |
 
 #### Correspondencia gemini ↔ blockchain (temática)
 
@@ -88,18 +88,19 @@ flowchart TB
 | 1 | Onboarding traje | 0–1 |
 | 2 | Demo `+ayuda` | todos (Story Board Q1–Q5) |
 | 3 | Épica anglo / Bunge | 5–6 (radiografía) |
-| 4+ | pendiente | 4–15 según roadmap README gemini |
+| 4 | Protocolo REIC / manual de campo | 4 |
+| 5+ | pendiente | 5 … 15 según roadmap README gemini |
 | **uichain** | 3 prompts | `ui-block-6-recap` · `block-12-panel-estado` · `block-14-timeline-dual` |
 
 | Tema | blockchain | agentchain | gemini | uichain |
 |------|------------|------------|--------|---------|
-| Contrato lectura | 11 | 11 | ⚪ (4+ pendiente) | — |
-| Vestuario UT | 12 | 12 | ⚪ (4+ pendiente) | `block-12-panel-estado` Widget A |
-| Dual artículo↔talk | 13 | 13 | ⚪ (4+ pendiente) | `block-14-timeline-dual` |
-| Sala fantasma | 14 | 14 | ⚪ (4+ pendiente) | — |
-| Epílogo SC | 15 | 15 | ⚪ (4+ pendiente) | `block-12-panel-estado` Widget B |
+| Contrato lectura | 11 | 11 | ⚪ (5+ pendiente) | — |
+| Vestuario UT | 12 | 12 | ⚪ (5+ pendiente) | `block-12-panel-estado` Widget A |
+| Dual artículo↔talk | 13 | 13 | ⚪ (5+ pendiente) | `block-14-timeline-dual` |
+| Sala fantasma | 14 | 14 | ⚪ (5+ pendiente) | — |
+| Epílogo SC | 15 | 15 | ⚪ (5+ pendiente) | `block-12-panel-estado` Widget B |
 
-*Gemini 4+ pendiente de alineación post-rediseño; temas blockchain 11–15 cubiertos en agentchain/composer.*
+*Gemini 5+ pendiente de alineación post-rediseño; temas blockchain 11–15 cubiertos en agentchain/composer. Gemini 4 = REIC (vigente).*
 
 **Síntesis:** `blockchain` → *qué*; `agentchain` → *conclusión*; `gemini` → *relato*; `uichain` → *vista*. Todo bajo `index-reader`, con 🟢 en caché y 🟡 en inferencias — nunca al revés.
 
@@ -163,7 +164,7 @@ Alternativa: leer [`solve-coagula-story-board.json`](../../../../data/sessions/s
 - ¿La ayuda va en bloque separado (🔴/bloque quote) y no mezcla 🟢 forense?
 - ¿Cada ultra-resumen cita la ruta `blockchain/block-N.md` leída?
 - ¿Celdas sin archivo muestran ⚪, no contenido inventado?
-- ¿Gemini se cuenta 1–3 vigentes, no 1–10?
+- ¿Gemini se cuenta 1–4 vigentes, no 1–10?
 - ¿Tabla sin `file://` ni rutas absolutas?
 - ¿DRY: gemini block-2 ya persistido → no repetir tabla completa sin `+ayuda refresh`?
 

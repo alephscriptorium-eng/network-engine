@@ -122,7 +122,7 @@ Usuario: «¿qué es blockchain vs agentchain?» y «ultra-resumen bloques 12–
 ```markdown
 Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,ayuda · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
-> **Ayuda capas** — 🔴 [Deducción del Lector] Stack: blockchain = preguntas; agentchain = conclusiones 🟡; gemini = relato (1–3 vigentes); uichain = spec visual. `index-reader` orquesta; 🟢 solo en `linea-aleph`.
+> **Ayuda capas** — 🔴 [Deducción del Lector] Stack: blockchain = preguntas; agentchain = conclusiones 🟡; gemini = relato (1–4 vigentes); uichain = spec visual. `index-reader` orquesta; 🟢 solo en `linea-aleph`.
 
 | N | Acto | Ultra-resumen (blockchain) | composer | gemini | uichain | chips |
 |---|------|----------------------------|----------|--------|---------|-------|
@@ -132,7 +132,7 @@ Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selectiv
 | 15 | extension | Vacío Ignacio / sala | ✓ | ✓ | ⚪ | talk_cache |
 ```
 
-**Fallos a evitar:** mapa de capas como 🟢; inventar bloques no leídos; `file://` en tablas; confundir gemini 1–10 (ahora 1–3 vigentes + poder `ayuda`).
+**Fallos a evitar:** mapa de capas como 🟢; inventar bloques no leídos; `file://` en tablas; confundir gemini 1–10 (ahora 1–4 vigentes + poder `ayuda`).
 
 ---
 
