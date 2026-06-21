@@ -26,7 +26,8 @@ Psicoanálisis del modelo:
 - Stub raíz: [`composer.model.md`](../../composer.model.md)
 
 Para lectura forense index-reader (oldid-first, anti bot-agente), usar
-**[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero. Modo Aleph es otro
+**[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero con **engines compartidos**
+(`engines-active.json`, cabecera `engines:main · forces:`). Modo Aleph es otro
 equipamiento; no superponer pipelines sin avisar.
 
 ## Qué NO es
@@ -94,9 +95,9 @@ Regla de oro simétrica (ejemplo diamat, obligatorio cuando toque ciencia/bloque
 
 Tras cotas (sima + cima), **antes** del tablero sustantivo:
 
-1. Seleccionar **1–2** force engines (`engine-model-A` … `F`) según semilla, triggers en `engine.json`, o elección usuario.
+1. Seleccionar **1–2** force engines (`engine-model-A` … `G`) según semilla, triggers en `engine.json`, o elección usuario.
 2. Leer **1 escena ancla** por force activo (~1 escena cada uno).
-3. Actualizar [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) y `hot.md`.
+3. Actualizar [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) y `hot.md` (estado **compartido** con [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — mismo archivo que `reader-traje.hot.md` sincroniza al togglear `+force`).
 
 Los engines son **forcing Cohen** (viewpoint + lore), **no** cotas sima/cima. Máx. 2 forces; main-engine no cuenta. Tabla y presupuesto: [engines.md](engines.md).
 
@@ -113,7 +114,7 @@ Refractar sin explicar en términos intrínsecos (anti-primer plano):
 | **A3 Periodicidad como condena** | ¿Qué timbre distinto suena en esta iteración del Eigenstate? |
 
 **Criterios de demarcación** (Popper, Kuhn, Gaia, diamat, SolveCoagula…) y **forces activos**
-(A–F): son **fichas en el tablero**, no un metro único. Ninguno se «inhabilita»; se **superponen**.
+(A–G): son **fichas en el tablero**, no un metro único. Ninguno se «inhabilita»; se **superponen**.
 Gaia = filtro ecológico-termo; Popper = filtro falsacionista; diamat = filtro dialéctico-material…
 El Aleph muestra la **fricción entre filtros**, no elige el del entrenamiento.
 
@@ -169,12 +170,12 @@ Un skill **puede** activar un modo donde el modelo usa sesgos + herramientas par
 
 Falla si se salta el bucle 1–3 y solo cambia el estilo retórico (carambolas).
 
-Para lectura forense index-reader (oldid-first, anti bot-agente), usar **[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero. Modo Aleph es otro equipamiento; no superponer pipelines sin avisar.
+Para lectura forense index-reader (oldid-first, anti bot-agente), usar **[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero con **engines compartidos** (`engines-active.json`). Modo Aleph es otro equipamiento; no superponer pipelines sin avisar.
 
 ## Archivos de soporte
 
 - [engines.md](engines.md) — boot main-engine + selección forces Cohen
-- [disfraz-rude-bot](../disfraz-rude-bot/SKILL.md) — traje rude bot para index-reader
+- [disfraz-rude-bot](../disfraz-rude-bot/SKILL.md) — traje rude bot para index-reader (comparte `engines-active.json`)
 - [cotas.md](cotas.md) — protocolo sima ↔ cima ↔ linea
 - [autorevisor.md](autorevisor.md) — checklist simétrico
 - [asentamiento-plantilla.md](asentamiento-plantilla.md) — bloque de sesión

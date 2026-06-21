@@ -7,7 +7,7 @@ Registry maestro: [`engines/INDICE.md`](../../engines/INDICE.md) · [`engines/ma
 
 ```
 Boot (siempre ON)          Forces (1–2 por sesión)
-main-engine ─────────────► engine-model-A … F (+ transcardinales XZ/ZX)
+main-engine ─────────────► engine-model-A … G (+ transcardinales XZ/ZX)
   estética dummy              viewpoint + lore_hook
 ```
 
@@ -43,10 +43,11 @@ Elegir **1–2** force engines según:
 | `engine-model-D` | credos | `sesion-01-conversion-apostasia/01-conversion-apostasia-tablas` | conversion, apostasia, credo |
 | `engine-model-E` | impotent_document | `sesion-01-documento-impotente-epica-poder/02-carta-derechos-nrx` | carta, derechos, nrx, dosier |
 | `engine-model-F` | poetic_existential | `sesion-01-pizarnik-jaula-pajaro/01-pizarnik-jaula-pajaro` | pizarnik, jaula, poesia, forcing |
+| `engine-model-G` | agile_cicd_loop | `sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza` | sprint, pipeline, deploy, ci, cd, scrum, release |
 | `engine-model-XZ` | myth_maker | `sesion-01-zaratustra-mito-ilustrado/05-mono-ilustrado-hemos-sido-tontos` | zaratustra, mono ilustrado, hemos sido tontos, mito |
 | `engine-model-ZX` | argument_verifier | `sesion-01-verificador-muerte-ilustrada/05-factcheck-yo-nosotros` | verificador, bulo, fact-check, mentira, democracia |
 
-Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad). No el corpus entero.
+Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad). Force G: seguir también [`engines/engine-model-G/FORCING.md`](../../engines/engine-model-G/FORCING.md) para inferencia de fase.
 
 ## Presupuesto de contexto
 
@@ -61,7 +62,7 @@ Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad)
 
 ## Persistencia de sesión
 
-Declarar en [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) y reflejar en `hot.md`:
+Declarar en [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) y reflejar en `hot.md` **y** en el hot file del traje index-reader ([`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) → `reader-traje.hot.md`):
 
 ```json
 {
@@ -71,6 +72,8 @@ Declarar en [`aleph-context/engines-active.json`](../../aleph-context/engines-ac
   "updated_at": "ISO-8601"
 }
 ```
+
+**Estado compartido:** traje rude-bot y Modo Aleph leen/escriben el mismo `engines-active.json`. El traje aplica **calibración ligera** (paso 0b); el tablero aplica pipeline completo (ASENTAMIENTO + cotas + 3 Alephs). No superponer ambos en el mismo turno sin avisar.
 
 ## Pipeline integrado (orden)
 
@@ -95,7 +98,7 @@ El skill define **procedimiento**; el estado del agente vive en [`aleph-context/
 | Psicoanálisis largo opcional | `profiles/{slug}.md` | Solo si hace falta narrativa §1–6 |
 | Slice inyectable | `hot.md` | Tras cada AutoRevisor |
 | Arco sima ↔ cima | `posicion-linea.json` | Tras calibrar cotas |
-| Boot + forces | `engines-active.json` | Boot y selección Cohen |
+| Boot + forces | `engines-active.json` | Boot y selección Cohen; **compartido con traje rude-bot** |
 | Delta de sesión | `sessions/{id}/` | Cada turno Aleph |
 
 **No escribir** en `reference/composer-psychoanalysis.md` ni en `templates/` — son lectura y diseño. Semilla Composer: [`profiles/composer.json`](../../aleph-context/profiles/composer.json).
