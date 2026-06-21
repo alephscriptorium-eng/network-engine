@@ -1,0 +1,216 @@
+{
+  "vista": "usuario-discusion-solvecoagula",
+  "title": "Usuario discusión:SolveCoagula",
+  "linked_article": null,
+  "generated_at": "2026-06-21T00:44:11Z",
+  "window": {
+    "start": "2007-10-01",
+    "end": "2007-11-30"
+  },
+  "wave_a_oldids": [
+    {
+      "oldid": 11958157,
+      "timestamp": "2007-10-10T14:34:32Z",
+      "note": "A3 · Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12052572,
+      "timestamp": "2007-10-14T12:41:14Z",
+      "note": "A3 · Nueva sección: /* Criterio de demarcación */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12087694,
+      "timestamp": "2007-10-15T21:07:43Z",
+      "note": "A3 · /* Criterio de demarcación */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12098449,
+      "timestamp": "2007-10-16T09:54:59Z",
+      "note": "A3 · Nueva sección: /* psicoanálisis */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12274469,
+      "timestamp": "2007-10-23T14:09:27Z",
+      "note": "A3 · Nueva sección: /* Bertrand Russell: Filosofía de la ciencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12473072,
+      "timestamp": "2007-10-31T15:59:08Z",
+      "note": "A3 · Nueva sección: /* respuesta en pseudociencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12474528,
+      "timestamp": "2007-10-31T17:01:29Z",
+      "note": "A3 · /* respuesta en pseudociencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12719917,
+      "timestamp": "2007-11-10T19:26:43Z",
+      "note": "A3 · Nueva sección: /* Pseudociencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12720326,
+      "timestamp": "2007-11-10T19:43:45Z",
+      "note": "A3 · /* Pseudociencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12720441,
+      "timestamp": "2007-11-10T19:48:27Z",
+      "note": "A3 · /* Pseudociencia */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12721439,
+      "timestamp": "2007-11-10T20:29:42Z",
+      "note": "A3 · /* Guerra de ediciones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12736728,
+      "timestamp": "2007-11-11T15:20:53Z",
+      "note": "A3 · /* Guerra de ediciones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12737478,
+      "timestamp": "2007-11-11T15:56:07Z",
+      "note": "A3 · /* Guerra de ediciones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12745188,
+      "timestamp": "2007-11-11T21:06:09Z",
+      "note": "A3 · /* Criterio de demarcación */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12745207,
+      "timestamp": "2007-11-11T21:07:43Z",
+      "note": "A3 · ",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12745213,
+      "timestamp": "2007-11-11T21:08:05Z",
+      "note": "A3 · /* Destacado */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12756192,
+      "timestamp": "2007-11-12T11:17:09Z",
+      "note": "A3 · Nueva sección: /* Largos */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12756249,
+      "timestamp": "2007-11-12T11:23:35Z",
+      "note": "A3 · /* Guerra de ediciones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12757767,
+      "timestamp": "2007-11-12T13:08:35Z",
+      "note": "A3 · Nueva sección: /* Hola, SolveCoagula */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12764925,
+      "timestamp": "2007-11-12T18:31:21Z",
+      "note": "A3 · /* Hola, SolveCoagula */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12765399,
+      "timestamp": "2007-11-12T18:46:48Z",
+      "note": "A3 · /* Guerra de ediciones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12765952,
+      "timestamp": "2007-11-12T19:05:41Z",
+      "note": "A3 · /* Hola, SolveCoagula */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12783855,
+      "timestamp": "2007-11-13T13:25:11Z",
+      "note": "A3 · ",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12783885,
+      "timestamp": "2007-11-13T13:26:46Z",
+      "note": "A3 · ",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12783898,
+      "timestamp": "2007-11-13T13:27:20Z",
+      "note": "A3 · ",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12783918,
+      "timestamp": "2007-11-13T13:28:51Z",
+      "note": "A3 · ",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12783992,
+      "timestamp": "2007-11-13T13:33:20Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12784014,
+      "timestamp": "2007-11-13T13:34:32Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12786168,
+      "timestamp": "2007-11-13T15:33:23Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12792536,
+      "timestamp": "2007-11-13T19:34:33Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12835826,
+      "timestamp": "2007-11-15T15:20:07Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12911274,
+      "timestamp": "2007-11-18T20:04:20Z",
+      "note": "A3 · /* Bloqueo */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12911445,
+      "timestamp": "2007-11-18T20:08:12Z",
+      "note": "A3 · /* Reversiones */",
+      "wave": "A3"
+    },
+    {
+      "oldid": 12912735,
+      "timestamp": "2007-11-18T20:52:07Z",
+      "note": "A3 · /* Reversiones */",
+      "wave": "A3"
+    }
+  ]
+}

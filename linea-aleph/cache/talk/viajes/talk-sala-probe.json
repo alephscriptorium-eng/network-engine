@@ -1,0 +1,61 @@
+{
+  "viaje_id": "talk-sala-probe",
+  "corpus": "talk",
+  "generated_at": "2026-06-21T01:25:00Z",
+  "probe_windows": {
+    "discusion-pseudociencia": {
+      "start": "2007-01-01",
+      "end": "2007-12-31",
+      "registros": 0,
+      "vacío_explícito": true
+    },
+    "usuario-discusion-ignacio-icke": {
+      "start": "1971-01-01",
+      "end": "2099-12-31",
+      "registros_total": 166,
+      "registros_2007": 0,
+      "primera_edicion": "2010-03-11T20:03:08Z",
+      "primera_oldid": 34955053
+    }
+  },
+  "waves": ["A"],
+  "wave_results": {
+    "A": {
+      "fetched": 0,
+      "skipped": 0,
+      "failed": 0,
+      "note": "conflict_year_only: 0 oldids in 2007 across both vistas"
+    }
+  },
+  "fetched": [],
+  "skipped": [],
+  "failed": [],
+  "conclusion": "sala_vacía_2007_confirmada; ignacio_ut_inexistente_en_pulso_2007",
+  "audit_snapshot": "cache/audit-talk.json",
+  "audit_post": {
+    "usuario-discusion-analiza": {
+      "registros": 46,
+      "registros_cached": 46,
+      "registros_pct": 100.0
+    },
+    "totals": {
+      "registros": 80,
+      "registros_cached": 80,
+      "registros_pct": 100.0
+    },
+    "vacío_explícito": [
+      "discusion-pseudociencia",
+      "usuario-discusion-ignacio-icke"
+    ]
+  },
+  "priority_manifest": "scripts/fetch-priority-talk-sala-probe.json",
+  "artifacts": [
+    "talk/discusion-pseudociencia/probe/raw/linea.md",
+    "talk/discusion-pseudociencia/manifest.probe.json",
+    "talk/usuario-discusion-ignacio-icke/probe/raw/linea.md",
+    "talk/usuario-discusion-ignacio-icke/manifest.probe.json",
+    "cache/talk/anchors/discusion-pseudociencia.probe.json",
+    "cache/talk/anchors/usuario-discusion-ignacio-icke.probe.json"
+  ],
+  "notes": "Build 2 Track 2B: probe confirma block-13 — sala 0 edits en 2007; Ignacio UT creada 2010, sin actividad en pulso nov 2007."
+}

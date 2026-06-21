@@ -1,0 +1,138 @@
+{
+  "vista": "usuario-discusion-analiza",
+  "title": "Usuario discusión:Analiza",
+  "linked_article": null,
+  "generated_at": "2026-06-21T00:44:09Z",
+  "window": {
+    "start": "2007-10-01",
+    "end": "2007-11-30"
+  },
+  "wave_a_oldids": [
+    {
+      "oldid": 12497449,
+      "timestamp": "2007-11-01T17:05:02Z",
+      "note": "A2 · Bot: Cambiando firma, a petición de usuario",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12530236,
+      "timestamp": "2007-11-02T23:01:20Z",
+      "note": "A2 · Nueva sección: /* Plantilla */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12541507,
+      "timestamp": "2007-11-03T15:34:45Z",
+      "note": "A2 · /* Plantilla */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12542056,
+      "timestamp": "2007-11-03T15:59:31Z",
+      "note": "A2 · ",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12542076,
+      "timestamp": "2007-11-03T16:00:36Z",
+      "note": "A2 · /* 60px| Archivo de comentarios */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12542080,
+      "timestamp": "2007-11-03T16:00:51Z",
+      "note": "A2 · /* 60px| Archivo de comentarios */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12542552,
+      "timestamp": "2007-11-03T16:21:28Z",
+      "note": "A2 · Nueva sección: /* Mediación */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12553155,
+      "timestamp": "2007-11-03T22:38:08Z",
+      "note": "A2 · Nueva sección: /* Re: Agua Bella */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12554370,
+      "timestamp": "2007-11-03T23:21:32Z",
+      "note": "A2 · /* Re: Agua Bella */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12562383,
+      "timestamp": "2007-11-04T09:41:14Z",
+      "note": "A2 · Wikiproyecto",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12563197,
+      "timestamp": "2007-11-04T11:17:56Z",
+      "note": "A2 · Nueva sección: /* Plantilla WPTAYAN */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12576078,
+      "timestamp": "2007-11-04T21:22:46Z",
+      "note": "A2 · Nueva sección: /* RE: Bosque tropical del Pacífico */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12576087,
+      "timestamp": "2007-11-04T21:23:03Z",
+      "note": "A2 · /* RE: Bosque tropical del Pacífico */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12618521,
+      "timestamp": "2007-11-06T16:40:38Z",
+      "note": "A2 · /* RE: Bosque tropical del Pacífico */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12719797,
+      "timestamp": "2007-11-10T19:23:11Z",
+      "note": "A2 · Nueva sección: /* Vandalismo en Pseudociencia */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12720101,
+      "timestamp": "2007-11-10T19:33:41Z",
+      "note": "A2 · /* Vandalismo en Pseudociencia */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12720477,
+      "timestamp": "2007-11-10T19:49:42Z",
+      "note": "A2 · /* Vandalismo en Pseudociencia */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12741803,
+      "timestamp": "2007-11-11T19:04:12Z",
+      "note": "A2 · ",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12806744,
+      "timestamp": "2007-11-14T10:04:58Z",
+      "note": "A2 · /* Guerra de ediciones */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12885172,
+      "timestamp": "2007-11-17T19:22:50Z",
+      "note": "A2 · Nueva sección: /* subst: */",
+      "wave": "A2"
+    },
+    {
+      "oldid": 12888441,
+      "timestamp": "2007-11-17T21:56:05Z",
+      "note": "A2 · /* subst: */",
+      "wave": "A2"
+    }
+  ]
+}

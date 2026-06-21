@@ -1,0 +1,1010 @@
+{
+  "vista": "usuario-discusion-ignacio-icke",
+  "title": "Usuario discusión:Ignacio_Icke",
+  "linked_article": null,
+  "generated_at": "2026-06-21T01:18:18Z",
+  "window": {
+    "start": "1971-01-01",
+    "end": "2099-12-31"
+  },
+  "wave_a_oldids": [
+    {
+      "oldid": 34955053,
+      "timestamp": "2010-03-11T20:03:08Z",
+      "note": "probe · Página creada con «.»",
+      "wave": "probe"
+    },
+    {
+      "oldid": 34955059,
+      "timestamp": "2010-03-11T20:03:20Z",
+      "note": "probe · ale",
+      "wave": "probe"
+    },
+    {
+      "oldid": 34955152,
+      "timestamp": "2010-03-11T20:06:45Z",
+      "note": "probe · au",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35213042,
+      "timestamp": "2010-03-17T22:53:14Z",
+      "note": "probe · Página blanqueada",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35215282,
+      "timestamp": "2010-03-18T00:01:04Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35215449,
+      "timestamp": "2010-03-18T00:06:34Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35215742,
+      "timestamp": "2010-03-18T00:16:40Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35252020,
+      "timestamp": "2010-03-18T21:44:51Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35254187,
+      "timestamp": "2010-03-18T22:51:47Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35254200,
+      "timestamp": "2010-03-18T22:52:21Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35271590,
+      "timestamp": "2010-03-19T12:40:26Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35348021,
+      "timestamp": "2010-03-21T17:05:50Z",
+      "note": "probe · Nueva sección: /* 16px -> 15 px */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35348034,
+      "timestamp": "2010-03-21T17:06:04Z",
+      "note": "probe · /* 16px -> 15 px */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35349482,
+      "timestamp": "2010-03-21T17:55:13Z",
+      "note": "probe · /* 16 px -> 15 px */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35443923,
+      "timestamp": "2010-03-24T00:28:48Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35443939,
+      "timestamp": "2010-03-24T00:29:19Z",
+      "note": "probe · Revertidos los cambios de [[Special:Contributions/81.40.12.207|81.40.12.207]] ([",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35551346,
+      "timestamp": "2010-03-26T22:59:15Z",
+      "note": "probe · Aviso",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35551682,
+      "timestamp": "2010-03-26T23:13:17Z",
+      "note": "probe · Aviso",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35554320,
+      "timestamp": "2010-03-27T01:17:51Z",
+      "note": "probe · /* Reversión en Rapero */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35562621,
+      "timestamp": "2010-03-27T12:18:58Z",
+      "note": "probe · /* Ya está hecho... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35562729,
+      "timestamp": "2010-03-27T12:25:13Z",
+      "note": "probe · /* Por supuesto que lo es */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35612599,
+      "timestamp": "2010-03-29T03:56:55Z",
+      "note": "probe · Nueva sección: /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35612612,
+      "timestamp": "2010-03-29T03:57:16Z",
+      "note": "probe · /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35687740,
+      "timestamp": "2010-03-31T03:16:37Z",
+      "note": "probe · /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35725639,
+      "timestamp": "2010-04-01T13:22:45Z",
+      "note": "probe · /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35764646,
+      "timestamp": "2010-04-03T00:54:06Z",
+      "note": "probe · /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35784926,
+      "timestamp": "2010-04-03T21:41:44Z",
+      "note": "probe · Nueva sección: /* Re: Razón de borrado */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35805358,
+      "timestamp": "2010-04-04T18:44:52Z",
+      "note": "probe · /* Re: Razón de borrado */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35830052,
+      "timestamp": "2010-04-05T15:01:08Z",
+      "note": "probe · [[User:Muro Bot/Comandos|Bot]]: Sustituyendo plantilla: {{clear}}",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35838919,
+      "timestamp": "2010-04-05T19:32:45Z",
+      "note": "probe · /* Additional contact list */  traslado desde PU",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35838977,
+      "timestamp": "2010-04-05T19:34:27Z",
+      "note": "probe · Nueva sección: /* Schared, o como se llame, xD! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35840050,
+      "timestamp": "2010-04-05T20:06:31Z",
+      "note": "probe · /* Schared, o como se llame, xD! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35845698,
+      "timestamp": "2010-04-05T22:36:32Z",
+      "note": "probe · /* Iicke */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35845826,
+      "timestamp": "2010-04-05T22:41:02Z",
+      "note": "probe · /* Iicke */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35865419,
+      "timestamp": "2010-04-06T17:09:01Z",
+      "note": "probe · /* Iicke */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35865448,
+      "timestamp": "2010-04-06T17:10:01Z",
+      "note": "probe · /* Iicke */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35897903,
+      "timestamp": "2010-04-07T17:39:28Z",
+      "note": "probe · /* Re: */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35924649,
+      "timestamp": "2010-04-08T14:54:49Z",
+      "note": "probe · Nueva sección: /* Perdón */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35945651,
+      "timestamp": "2010-04-09T03:44:49Z",
+      "note": "probe · Nueva sección: /* Calina y calima */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35945673,
+      "timestamp": "2010-04-09T03:45:25Z",
+      "note": "probe · Nueva sección: /* Calina y calima */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35945686,
+      "timestamp": "2010-04-09T03:46:00Z",
+      "note": "probe · /* Calina y calima */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35953855,
+      "timestamp": "2010-04-09T14:37:46Z",
+      "note": "probe · Nueva sección: /* Casi mejor... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 35954288,
+      "timestamp": "2010-04-09T14:58:12Z",
+      "note": "probe · /* Calina y calima */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36034978,
+      "timestamp": "2010-04-12T01:37:21Z",
+      "note": "probe · Nueva sección: /* Schrader */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36063130,
+      "timestamp": "2010-04-12T22:34:57Z",
+      "note": "probe · Nueva sección: /* Lo prometido es deuda */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36155527,
+      "timestamp": "2010-04-15T20:08:35Z",
+      "note": "probe · Nueva sección: /* Ayuda con los permisos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36182027,
+      "timestamp": "2010-04-16T18:31:33Z",
+      "note": "probe · /* Ayuda con los permisos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36210006,
+      "timestamp": "2010-04-17T17:06:54Z",
+      "note": "probe · Nueva sección: /* Conflicto \"Derecho de cita\" vs \"Envío permiso escrito a Wikipe",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36228327,
+      "timestamp": "2010-04-18T07:15:26Z",
+      "note": "probe · Revertidos los cambios de [[Special:Contributions/Internetsinacoso|Internetsinac",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36234463,
+      "timestamp": "2010-04-18T14:00:27Z",
+      "note": "probe · Nueva sección: /* Traducido ref */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36235289,
+      "timestamp": "2010-04-18T14:40:17Z",
+      "note": "probe · /* Traducido ref */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36236456,
+      "timestamp": "2010-04-18T14:57:02Z",
+      "note": "probe · /* Traducido ref */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36238287,
+      "timestamp": "2010-04-18T15:12:38Z",
+      "note": "probe · /* Traducido ref */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36239614,
+      "timestamp": "2010-04-18T15:40:57Z",
+      "note": "probe · /* Traducido ref */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36475029,
+      "timestamp": "2010-04-26T15:43:18Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36475191,
+      "timestamp": "2010-04-26T15:50:40Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36475310,
+      "timestamp": "2010-04-26T15:55:01Z",
+      "note": "probe · /* Luís Vallejo Rodríguez */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36588629,
+      "timestamp": "2010-04-30T13:06:51Z",
+      "note": "probe · /* Luís Vallejo Rodríguez */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36601150,
+      "timestamp": "2010-04-30T22:48:03Z",
+      "note": "probe · Golfo de Edremit",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36643302,
+      "timestamp": "2010-05-02T12:54:55Z",
+      "note": "probe · /* Golfo de Edremit */+",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36756021,
+      "timestamp": "2010-05-05T20:03:05Z",
+      "note": "probe · /* Golfo de Edremit */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36791462,
+      "timestamp": "2010-05-06T20:29:48Z",
+      "note": "probe · /* Air France */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36842322,
+      "timestamp": "2010-05-08T09:21:11Z",
+      "note": "probe · Nueva sección: /* viejos rockeros.... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36934378,
+      "timestamp": "2010-05-11T10:13:09Z",
+      "note": "probe · /* viejos rockeros.... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36934379,
+      "timestamp": "2010-05-11T10:13:18Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36934381,
+      "timestamp": "2010-05-11T10:13:32Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36934446,
+      "timestamp": "2010-05-11T10:20:10Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 36989551,
+      "timestamp": "2010-05-12T23:13:56Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 37411468,
+      "timestamp": "2010-05-26T12:29:03Z",
+      "note": "probe · [[Tipo de dato abstracto]]",
+      "wave": "probe"
+    },
+    {
+      "oldid": 37467735,
+      "timestamp": "2010-05-28T00:42:25Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 37467742,
+      "timestamp": "2010-05-28T00:42:40Z",
+      "note": "probe · /* Masacre del instituto Columbine */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38169203,
+      "timestamp": "2010-06-19T14:42:57Z",
+      "note": "probe · /* Tipo de dato abstracto */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38176497,
+      "timestamp": "2010-06-19T17:48:20Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38176603,
+      "timestamp": "2010-06-19T17:53:31Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38296583,
+      "timestamp": "2010-06-23T23:25:44Z",
+      "note": "probe · Nueva sección: /* Nueva imagen de firma */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38835075,
+      "timestamp": "2010-07-16T15:49:36Z",
+      "note": "probe · /* Nueva imagen de firma */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38837724,
+      "timestamp": "2010-07-16T18:07:56Z",
+      "note": "probe · /* Aunque no .. */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38858004,
+      "timestamp": "2010-07-17T17:08:36Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38858028,
+      "timestamp": "2010-07-17T17:09:35Z",
+      "note": "probe · /* Duda */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38858043,
+      "timestamp": "2010-07-17T17:10:22Z",
+      "note": "probe · /* Carmen Lomana */ edición trivial. Pongo dos signos igual que faltaban en un c",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38858057,
+      "timestamp": "2010-07-17T17:10:58Z",
+      "note": "probe · /* Jaume Farrerons */ edición trivial. idem",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38858842,
+      "timestamp": "2010-07-17T17:53:37Z",
+      "note": "probe · /* Duda */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38865822,
+      "timestamp": "2010-07-18T00:25:08Z",
+      "note": "probe · /* Duda */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38866515,
+      "timestamp": "2010-07-18T01:15:30Z",
+      "note": "probe · /* Redactor principal */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38875561,
+      "timestamp": "2010-07-18T13:21:26Z",
+      "note": "probe · /* Pueblos y etnias */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 38880036,
+      "timestamp": "2010-07-18T17:59:32Z",
+      "note": "probe · Nueva sección: /* Porque hace tiempo... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 39711154,
+      "timestamp": "2010-08-23T20:33:21Z",
+      "note": "probe · /* Porque hace tiempo... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 39783267,
+      "timestamp": "2010-08-26T18:45:20Z",
+      "note": "probe · /* Porque hace tiempo... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 40456445,
+      "timestamp": "2010-09-22T19:43:53Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 41652231,
+      "timestamp": "2010-11-09T10:22:55Z",
+      "note": "probe · Nueva sección: /* Borrado artículo \"Everis\" */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 41652339,
+      "timestamp": "2010-11-09T10:34:37Z",
+      "note": "probe · /* Borrado artículo \"Everis\" */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 41828381,
+      "timestamp": "2010-11-16T17:24:54Z",
+      "note": "probe · Nueva sección: /* Tío... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 41832498,
+      "timestamp": "2010-11-16T20:18:41Z",
+      "note": "probe · /* Tío... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 42629227,
+      "timestamp": "2010-12-19T18:45:49Z",
+      "note": "probe · Nueva sección: /* Felices fiestas!!! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 42711699,
+      "timestamp": "2010-12-23T00:38:10Z",
+      "note": "probe · /* Felices fiestas!!! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 43771720,
+      "timestamp": "2011-02-03T01:31:09Z",
+      "note": "probe · Nueva sección: /* KU! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 44164062,
+      "timestamp": "2011-02-17T12:19:32Z",
+      "note": "probe · Buen viaje",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45230050,
+      "timestamp": "2011-03-30T18:25:29Z",
+      "note": "probe · Nueva sección: /* Eeehhh */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45230614,
+      "timestamp": "2011-03-30T18:47:19Z",
+      "note": "probe · Nueva sección: /* Me alegro mucho... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45263568,
+      "timestamp": "2011-03-31T23:07:48Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45325348,
+      "timestamp": "2011-04-03T11:47:56Z",
+      "note": "probe · /* Discordianismo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45325353,
+      "timestamp": "2011-04-03T11:48:28Z",
+      "note": "probe · /* Discordianismo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45517329,
+      "timestamp": "2011-04-10T15:17:17Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 45541353,
+      "timestamp": "2011-04-11T11:48:19Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 46076760,
+      "timestamp": "2011-05-02T17:20:54Z",
+      "note": "probe · /* Propuesta de borrado en Salvador Sostres */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 46101127,
+      "timestamp": "2011-05-03T15:44:49Z",
+      "note": "probe · /* Hola, de nuevo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 46101141,
+      "timestamp": "2011-05-03T15:45:12Z",
+      "note": "probe · /* Hola, de nuevo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 47709814,
+      "timestamp": "2011-07-05T14:11:43Z",
+      "note": "probe · /* Hola, de nuevo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 49498444,
+      "timestamp": "2011-09-03T23:03:57Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 50018376,
+      "timestamp": "2011-09-24T19:37:48Z",
+      "note": "probe · /* Revalidación Síndrome de Down */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 50533470,
+      "timestamp": "2011-10-15T04:05:46Z",
+      "note": "probe · pedido de ayuda acerca de la aplicación de un par de políticas de Wikipedia",
+      "wave": "probe"
+    },
+    {
+      "oldid": 50606179,
+      "timestamp": "2011-10-18T02:44:15Z",
+      "note": "probe · me di cuenta de que este usuario está inactivo",
+      "wave": "probe"
+    },
+    {
+      "oldid": 53874082,
+      "timestamp": "2012-02-16T14:42:46Z",
+      "note": "probe · Nueva sección: /* Invitation to events: bot, template, and Gadget makers wanted ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 53895019,
+      "timestamp": "2012-02-17T05:52:58Z",
+      "note": "probe · /* Invitation to events: bot, template, and Gadget makers wanted */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 54309141,
+      "timestamp": "2012-03-04T00:07:04Z",
+      "note": "probe · Nueva sección: /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 54325908,
+      "timestamp": "2012-03-04T18:27:51Z",
+      "note": "probe · /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 54438570,
+      "timestamp": "2012-03-09T01:21:40Z",
+      "note": "probe · /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 54438576,
+      "timestamp": "2012-03-09T01:21:59Z",
+      "note": "probe · /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 60108182,
+      "timestamp": "2012-09-30T06:37:16Z",
+      "note": "probe · /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 62236775,
+      "timestamp": "2012-12-16T01:10:29Z",
+      "note": "probe · Bot: Migración a la extensión Babel",
+      "wave": "probe"
+    },
+    {
+      "oldid": 62332942,
+      "timestamp": "2012-12-19T21:36:01Z",
+      "note": "probe · Nueva sección: /* Feliz Navidad */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 63783033,
+      "timestamp": "2013-02-13T17:05:40Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 64299160,
+      "timestamp": "2013-03-04T04:15:31Z",
+      "note": "probe · Nueva sección: /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 64310511,
+      "timestamp": "2013-03-04T17:37:10Z",
+      "note": "probe · +1",
+      "wave": "probe"
+    },
+    {
+      "oldid": 65542220,
+      "timestamp": "2013-03-23T00:26:27Z",
+      "note": "probe · Nueva sección: /* Retiro de flags… */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 66512697,
+      "timestamp": "2013-04-27T17:28:02Z",
+      "note": "probe · Nueva sección: /* PR:IS */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 66646099,
+      "timestamp": "2013-05-03T20:32:42Z",
+      "note": "probe · [[WP:PRO|spam interno]]",
+      "wave": "probe"
+    },
+    {
+      "oldid": 69160090,
+      "timestamp": "2013-08-22T02:49:35Z",
+      "note": "probe · Cambio de firma",
+      "wave": "probe"
+    },
+    {
+      "oldid": 70424079,
+      "timestamp": "2013-10-26T12:27:36Z",
+      "note": "probe · Nueva sección: /* Saludos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 75520768,
+      "timestamp": "2014-07-11T04:47:58Z",
+      "note": "probe · Sección nueva: /* Invitación */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 76415700,
+      "timestamp": "2014-08-17T15:23:52Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 80380742,
+      "timestamp": "2015-03-04T00:52:24Z",
+      "note": "probe · Sección nueva: /* ¡Feliz wikicumple! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 80877832,
+      "timestamp": "2015-03-19T15:54:48Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 85597853,
+      "timestamp": "2015-10-05T17:19:00Z",
+      "note": "probe · Sección nueva: /* ¿Birmania o Myanmar? */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 87709642,
+      "timestamp": "2015-12-11T00:28:40Z",
+      "note": "probe · Sección nueva: /* Propuesta de Wikiproyecto Coleccionismo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 87977382,
+      "timestamp": "2015-12-23T17:46:27Z",
+      "note": "probe · /* Propuesta de Wikiproyecto Coleccionismo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 88423604,
+      "timestamp": "2016-01-13T19:05:49Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 89596836,
+      "timestamp": "2016-03-04T18:29:57Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 90581784,
+      "timestamp": "2016-04-20T02:20:31Z",
+      "note": "probe · Sección nueva: /* Pregunta */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 96588586,
+      "timestamp": "2017-02-01T02:16:08Z",
+      "note": "probe · Sección nueva: /* Apuesta */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 96863215,
+      "timestamp": "2017-02-12T17:27:14Z",
+      "note": "probe · Frente Islámico para la Jihad Armada",
+      "wave": "probe"
+    },
+    {
+      "oldid": 102241098,
+      "timestamp": "2017-09-30T00:06:01Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 104803973,
+      "timestamp": "2018-01-09T23:23:56Z",
+      "note": "probe · /* Se ha abierto una consulta de borrado para «Sexualidad» */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 104803985,
+      "timestamp": "2018-01-09T23:24:35Z",
+      "note": "probe · Revertidos los cambios de [[Special:Contributions/181.176.79.81|181.176.79.81]] ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 104832104,
+      "timestamp": "2018-01-11T03:08:36Z",
+      "note": "probe · Sección nueva: /* Te necesitamos en el OTRS */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 108126273,
+      "timestamp": "2018-05-25T22:10:41Z",
+      "note": "probe · Bot: [[Especial:Errores_de_sintaxis/tidy-font-bug]]",
+      "wave": "probe"
+    },
+    {
+      "oldid": 108304250,
+      "timestamp": "2018-05-31T15:24:11Z",
+      "note": "probe · FixTidy: Etiquetas desparejadas",
+      "wave": "probe"
+    },
+    {
+      "oldid": 108454637,
+      "timestamp": "2018-06-04T19:23:35Z",
+      "note": "probe · FixTidy: Etiquetas desparejadas",
+      "wave": "probe"
+    },
+    {
+      "oldid": 118820874,
+      "timestamp": "2019-09-01T22:24:06Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 119177358,
+      "timestamp": "2019-09-11T01:20:33Z",
+      "note": "probe · Sección nueva: /* Imagen en citocinesis */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 123918757,
+      "timestamp": "2020-02-29T21:42:26Z",
+      "note": "probe · /* ¡Un gatito para ti! */ nuevo mensaje de WikiAprecio",
+      "wave": "probe"
+    },
+    {
+      "oldid": 133230034,
+      "timestamp": "2021-02-15T01:08:18Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 133702208,
+      "timestamp": "2021-03-04T06:00:31Z",
+      "note": "probe · Sección nueva: /* ¡Feliz wiki cumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 135028814,
+      "timestamp": "2021-04-24T18:36:08Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 149657609,
+      "timestamp": "2023-03-04T00:52:52Z",
+      "note": "probe · Sección nueva: /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 149657616,
+      "timestamp": "2023-03-04T00:53:31Z",
+      "note": "probe · /* ¡Feliz wikicumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 158593451,
+      "timestamp": "2024-03-04T03:15:47Z",
+      "note": "probe · Sección nueva: /* ¡Feliz wiki cumpleaños! */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 160638238,
+      "timestamp": "2024-06-09T05:03:14Z",
+      "note": "probe · Sección nueva: /* Problema de la inducción */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 162225253,
+      "timestamp": "2024-09-02T15:55:59Z",
+      "note": "probe · Sección nueva: /* Referencias en «Dymaxion» */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 163987838,
+      "timestamp": "2024-12-07T11:45:31Z",
+      "note": "probe · Sección nueva: /* Falta de referencias en «Subjetividad de la utilidad esperada»",
+      "wave": "probe"
+    },
+    {
+      "oldid": 168486502,
+      "timestamp": "2025-07-16T02:17:53Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 168486531,
+      "timestamp": "2025-07-16T02:19:50Z",
+      "note": "probe · Revertida una edición de [[Special:Contributions/Guillermo Rodriguez Lara|Guille",
+      "wave": "probe"
+    },
+    {
+      "oldid": 170670806,
+      "timestamp": "2025-11-26T06:16:42Z",
+      "note": "probe · Aviso al usuario del posible borrado de [[Distrito de San Sebastián (Cusco)]] me",
+      "wave": "probe"
+    },
+    {
+      "oldid": 170670834,
+      "timestamp": "2025-11-26T06:20:07Z",
+      "note": "probe · Aviso al usuario del posible borrado de [[Iglesias del Cusco]] mediante [[WP:Twi",
+      "wave": "probe"
+    },
+    {
+      "oldid": 173536182,
+      "timestamp": "2026-05-19T16:21:10Z",
+      "note": "probe · Aviso al usuario del posible borrado de [[Wikipedia:Tablón de anuncios de los bi",
+      "wave": "probe"
+    },
+    {
+      "oldid": 173536202,
+      "timestamp": "2026-05-19T16:23:01Z",
+      "note": "probe · Revertida una edición de [[Special:Contributions/Nicooodev|Nicooodev]] ([[User t",
+      "wave": "probe"
+    }
+  ],
+  "probe": true,
+  "viaje_id": "talk-sala-probe"
+}

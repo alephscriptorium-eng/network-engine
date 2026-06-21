@@ -1,0 +1,94 @@
+{
+  "viaje_id": "talk-block13-waveC",
+  "corpus": "talk",
+  "generated_at": "2026-06-21T01:13:10Z",
+  "wave": "C",
+  "anchors": [
+    "usuario-discusion-analiza:pre-2008-gap"
+  ],
+  "waves": [
+    "C"
+  ],
+  "wave_results": {
+    "C": {
+      "fetched": 7,
+      "skipped": 0,
+      "failed": 0
+    },
+    "A": {
+      "fetched": 0,
+      "skipped": 0,
+      "failed": 0
+    },
+    "B": {
+      "fetched": 0,
+      "skipped": 0,
+      "failed": 0
+    }
+  },
+  "reconciled": 0,
+  "fetched": [
+    11890921,
+    11890912,
+    11855283,
+    11843254,
+    11821588,
+    11739160,
+    11719710
+  ],
+  "fetched_detail": [
+    {
+      "oldid": 11890921,
+      "bytes": 5915,
+      "path": "cache/talk/snapshots/11890921.wikitext"
+    },
+    {
+      "oldid": 11890912,
+      "bytes": 5911,
+      "path": "cache/talk/snapshots/11890912.wikitext"
+    },
+    {
+      "oldid": 11855283,
+      "bytes": 15674,
+      "path": "cache/talk/snapshots/11855283.wikitext"
+    },
+    {
+      "oldid": 11843254,
+      "bytes": 13390,
+      "path": "cache/talk/snapshots/11843254.wikitext"
+    },
+    {
+      "oldid": 11821588,
+      "bytes": 12290,
+      "path": "cache/talk/snapshots/11821588.wikitext"
+    },
+    {
+      "oldid": 11739160,
+      "bytes": 25164,
+      "path": "cache/talk/snapshots/11739160.wikitext"
+    },
+    {
+      "oldid": 11719710,
+      "bytes": 25161,
+      "path": "cache/talk/snapshots/11719710.wikitext"
+    }
+  ],
+  "skipped": [],
+  "failed": [],
+  "offline_ready": true,
+  "audit_snapshot": "cache/audit-talk.json",
+  "audit_post": {
+    "usuario-discusion-analiza": {
+      "registros": 46,
+      "registros_cached": 46,
+      "registros_pct": 100.0
+    },
+    "totals": {
+      "registros": 80,
+      "registros_cached": 80,
+      "registros_pct": 100.0
+    }
+  },
+  "priority_manifest": "scripts/fetch-priority-talk-block13.json",
+  "notes": "Build 1 Track 1A: Wave C batch — 7 pre-2008 Analiza oldids; post-audit Analiza 46/46."
+}

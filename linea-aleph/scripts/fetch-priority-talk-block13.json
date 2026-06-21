@@ -1,0 +1,632 @@
+[
+  {
+    "oldid": 12563197,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Nueva sección: /* Plantilla WPTAYAN */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12562383,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Wikiproyecto",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12554370,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · /* Re: Agua Bella */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12553155,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Nueva sección: /* Re: Agua Bella */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12542552,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Nueva sección: /* Mediación */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12542080,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · /* 60px| Archivo de comentarios */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12542076,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · /* 60px| Archivo de comentarios */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12542056,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12541507,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · /* Plantilla */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12530236,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Nueva sección: /* Plantilla */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12497449,
+    "title": "Usuario discusión:Analiza",
+    "tier": "usuario-discusion-analiza",
+    "wave": "A",
+    "note": "A2: A2 · Bot: Cambiando firma, a petición de usuario",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12912735,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Reversiones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12911445,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Reversiones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12911274,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12835826,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12792536,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12786168,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12784014,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12783992,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Bloqueo */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12783918,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12783898,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12783885,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12783855,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12765952,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Hola, SolveCoagula */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12765399,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Guerra de ediciones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12764925,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Hola, SolveCoagula */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12757767,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* Hola, SolveCoagula */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12756249,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Guerra de ediciones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12756192,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* Largos */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12745213,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Destacado */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12745207,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 ·",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12745188,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Criterio de demarcación */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12737478,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Guerra de ediciones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12736728,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Guerra de ediciones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12721439,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Guerra de ediciones */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12720441,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Pseudociencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12720326,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Pseudociencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12719917,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* Pseudociencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12474528,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* respuesta en pseudociencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12473072,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* respuesta en pseudociencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12274469,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* Bertrand Russell: Filosofía de la ciencia */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12098449,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* psicoanálisis */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12087694,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · /* Criterio de demarcación */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12052572,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Nueva sección: /* Criterio de demarcación */",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11958157,
+    "title": "Usuario discusión:SolveCoagula",
+    "tier": "usuario-discusion-solvecoagula",
+    "wave": "A",
+    "note": "A3: A3 · Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12350330,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0022 Categoría de esbozo",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12294248,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0023 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12273441,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0024 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12232621,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0025 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12184614,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0026 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 12069332,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0027 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11913209,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0028 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11896424,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0029 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11890524,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0032 60px|Comentarios de {{CURRENTMONTHNAME}} de {{CURRENTYEAR}}",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11855262,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0034 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11844465,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0035 Confirmado",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11843319,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0036 Sin título",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11842884,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0038 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11820962,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0040 Colores",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11809305,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0041 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11809277,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0042 Teorias distintas a la verdad oficialen el 911",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11776383,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0043 Colores",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11740268,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "B",
+    "note": "r0044 None",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11890921,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0030",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11890912,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0031",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11855283,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0033",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11843254,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0037",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11821588,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0039",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11739160,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0045",
+    "fetch_method": "api",
+    "corpus": "talk"
+  },
+  {
+    "oldid": 11719710,
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "tier": "usuario-discusion-analiza",
+    "wave": "C",
+    "note": "pre-2008 talk · r0046",
+    "fetch_method": "api",
+    "corpus": "talk"
+  }
+]
