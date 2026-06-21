@@ -230,6 +230,11 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cac
 - **No scrapear el frontend** (`es.wikipedia.org/wiki/...`, HTML, browser automation para volcados)
 - No usar `index.php` ni `/wiki/` como URL de ingestión — solo `w/api.php` o dumps
 
+## Modos de lectura
+
+- **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto.
+- **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero; quitar traje antes.
+
 ## Archivos clave
 
 - `linea-aleph/segment_linea.py` — segmentador linea1

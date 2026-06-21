@@ -25,6 +25,10 @@ Psicoanálisis del modelo:
 - Perfil operativo: [`aleph-context/profiles/{slug}.json`](../../aleph-context/profiles/README.md)
 - Stub raíz: [`composer.model.md`](../../composer.model.md)
 
+Para lectura forense index-reader (oldid-first, anti bot-agente), usar
+**[disfraz-rude-bot](../disfraz-rude-bot/SKILL.md)** — traje ligero. Modo Aleph es otro
+equipamiento; no superponer pipelines sin avisar.
+
 ## Qué NO es
 
 - No es enciclopedia ni «agente de seguros» (s01-02).

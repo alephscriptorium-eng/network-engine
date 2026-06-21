@@ -4,6 +4,7 @@ Documentación operativa del tablero Aleph. **Fuente canónica:**
 
 ```
 agents/skills/modo-aleph/
+agents/skills/disfraz-rude-bot/
 ```
 
 ## Archivos principales
@@ -15,6 +16,14 @@ agents/skills/modo-aleph/
 | `cotas.md` | Eje sima ↔ cima |
 | `autorevisor.md` | Checklist A–H |
 | `asentamiento-plantilla.md` | Plantilla ASENTAMIENTO |
+
+### disfraz-rude-bot
+
+| Archivo | Función |
+|---------|---------|
+| `SKILL.md` | Traje rude bot, pipeline forense, composición |
+| `checklist.md` | Revisión en personaje (A–F) |
+| `ejemplos.md` | En personaje vs bot crudo enciclopédico |
 
 ## Cursor
 
