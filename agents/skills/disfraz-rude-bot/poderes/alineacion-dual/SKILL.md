@@ -42,7 +42,7 @@ Bloques 13–14 y [`block-14-timeline-dual.prompt.md`](../../../../../scriptoriu
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:cache-nav,...,alineacion-dual · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,...,alineacion-dual · +poder <id> · -poder <id> · sin disfraz
 ```
 
 ## Qué NO es

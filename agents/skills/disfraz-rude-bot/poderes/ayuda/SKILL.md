@@ -171,7 +171,7 @@ Alternativa: leer [`solve-coagula-story-board.json`](../../../../data/sessions/s
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:cache-nav,...,ayuda · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,...,ayuda · +poder <id> · -poder <id> · sin disfraz
 ```
 
 ## Qué NO es

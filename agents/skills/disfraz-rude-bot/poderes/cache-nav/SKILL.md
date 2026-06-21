@@ -29,7 +29,7 @@ Obligar a **navegar la caché offline** antes de narrar. Ninguna afirmación �
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,... · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,... · +poder <id> · -poder <id> · sin disfraz
 ```
 
 Con `cache-nav` activo, el cuerpo debe citar rutas de caché en cada 🟢.

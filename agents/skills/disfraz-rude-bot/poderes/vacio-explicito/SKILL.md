@@ -32,7 +32,7 @@ Aplicar [checklist.md](../../checklist.md) § C antes de emitir.
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:...,vacio-explicito · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:...,vacio-explicito · +poder <id> · -poder <id> · sin disfraz
 ```
 
 Cuerpo típico: `⚪ [Blanco Explícito] Discusión:Pseudociencia, ventana 2007 — 0 revisiones en probe.`

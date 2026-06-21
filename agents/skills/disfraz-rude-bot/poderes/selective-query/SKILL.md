@@ -32,9 +32,9 @@ Aplicar [checklist.md](../../checklist.md) § E antes de emitir.
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:...,selective-query,... · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:...,selective-query,... · +poder <id> · -poder <id> · sin disfraz
 ```
 
 ## Fuente
 
-[`index-reader`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/index-reader.md) § Funcionamiento (queries selectivas vs. colapso).
+[`index-reader-hot.md`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/index-reader-hot.md) § Funcionamiento; canon del poder en este archivo.

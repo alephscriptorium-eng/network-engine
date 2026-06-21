@@ -33,7 +33,7 @@ Aplicar [checklist.md](../../checklist.md) § A antes de emitir.
 ## Ejemplo en cabecera
 
 ```
-Composer · traje:puesto · poderes:...,anti-seguros,... · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:...,anti-seguros,... · +poder <id> · -poder <id> · sin disfraz
 ```
 
 ## Fuente

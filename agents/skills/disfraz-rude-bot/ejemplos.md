@@ -7,7 +7,7 @@ Casos Solve et Coagula (nov 2007, talk-cache). Calibran **en personaje** vs **bo
 ## 1. Cabecera obligatoria (default)
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
 Traje: en-personaje-ok
 
@@ -19,7 +19,7 @@ Traje: en-personaje-ok
 ## 2. Con poder alineacion-dual (`+alineacion`)
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,alineacion-dual · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,alineacion-dual · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
 | Carril artículo | Carril talk | Δ h |
 |-----------------|-------------|-----|
@@ -42,7 +42,7 @@ Pseudociencia, como indica el resumen de edición de Ignacio_Icke al revertir.
 ## 4. En personaje, vacío explícito
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
 Traje: vacío-explicito
 
@@ -58,7 +58,7 @@ Traje: vacío-explicito
 Usuario: «sin disfraz».
 
 ```markdown
-Composer · traje:quitado · poderes:— · engines:main · forces:— · +traje · +force <id> · forces? · +poder <id>
+{Modelo} · traje:quitado · poderes:— · engines:main · forces:— · +traje · +force <id> · forces? · +poder <id>
 
 Traje: quitado-a-pedido
 
@@ -72,7 +72,7 @@ Traje: quitado-a-pedido
 Usuario: «¿cómo leer el pulso UT SolveCoagula con el bucle CI/CD?» (`+force engine-model-G`)
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:engine-model-G · +force engine-model-A · -force engine-model-G · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:engine-model-G · +force engine-model-A · -force engine-model-G · forces? · +poder <id> · -poder <id> · sin disfraz
 
 > **Calibración engines** — main: mirar sin prisa · force G (agile_cicd_loop): el pulso UT se lee como turno REVIEW en el bucle sprint–release — seis roles, un bucle.
 
@@ -95,7 +95,7 @@ Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selectiv
 Usuario: «¿qué vigilaría Ops al publicar el bloque 12?»
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,cicd-loop · engines:main · forces:engine-model-G · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,cicd-loop · engines:main · forces:engine-model-G · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
 > **Calibración engines** — main: mirar sin prisa · force G (agile_cicd_loop): el bloque 12 se lee como turno DEPLOY en el bucle sprint–release.
 
@@ -120,7 +120,7 @@ Tono más laxo permitido; **🟢 y ⚪ se mantienen**.
 Usuario: «¿qué es blockchain vs agentchain?» y «ultra-resumen bloques 12–15».
 
 ```markdown
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,ayuda · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,ayuda · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 
 > **Ayuda capas** — 🔴 [Deducción del Lector] Stack: blockchain = preguntas; agentchain = conclusiones 🟡; gemini = relato (1–4 vigentes); uichain = spec visual. `index-reader` orquesta; 🟢 solo en `linea-aleph`.
 

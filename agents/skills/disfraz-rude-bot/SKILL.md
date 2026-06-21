@@ -20,7 +20,7 @@ Canon del personaje: [s01-02 crítica bot demo-liberal](../../logs-aleph/sesion-
 
 | Término | Significado |
 |---------|-------------|
-| **Bot crudo** | LLM + [`index-reader`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/index-reader.md); tendencia a enciclopedia, resumen, cierre |
+| **Bot crudo** | LLM + activador [`index-reader`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/index-reader.md); tendencia a enciclopedia, resumen, cierre |
 | **Traje / disfraz rude bot** | Este skill; rol interpretado |
 | **Ponerse el traje** | `traje:puesto` en cabecera (default) |
 | **Quitarse el traje** | Usuario: «sin disfraz», «modo suave», «lector normal» → `traje:quitado` |
@@ -33,18 +33,18 @@ Equiparse ≠ omnisciencia. **No** es superhéroe ni modo-aleph (tablero ∅). E
 **Toda salida** index-reader empieza por **una primera línea fija** (incluso respuestas cortas), antes del cuerpo:
 
 ```
-Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · engines:main · forces:— · +force <id> · -force <id> · forces? · +poder <id> · -poder <id> · sin disfraz
 ```
 
 Con 1–2 forces activas (ej. G):
 
 ```
-Composer · traje:puesto · poderes:... · engines:main · forces:engine-model-G · +force engine-model-A · -force engine-model-G · forces? · +poder <id> · -poder <id> · sin disfraz
+{Modelo} · traje:puesto · poderes:... · engines:main · forces:engine-model-G · +force engine-model-A · -force engine-model-G · forces? · +poder <id> · -poder <id> · sin disfraz
 ```
 
 | Campo | Contenido |
 |-------|-----------|
-| `modelo` | Nombre del modelo (exigido en index-reader) |
+| `modelo` | Nombre del agente en **runtime** (cabecera + hot files); sin preset en instrucciones |
 | `traje` | `puesto` \| `quitado` |
 | `poderes` | IDs activos separados por coma; `—` si traje quitado |
 | `engines` | Siempre `main` (boot estético ON; no cuenta en límite de forces) |
@@ -54,7 +54,7 @@ Composer · traje:puesto · poderes:... · engines:main · forces:engine-model-G
 Traje quitado (`forces` se apagan; `engines:main` persiste):
 
 ```
-Composer · traje:quitado · poderes:— · engines:main · forces:— · +traje · +force <id> · forces? · +poder <id>
+{Modelo} · traje:quitado · poderes:— · engines:main · forces:— · +traje · +force <id> · forces? · +poder <id>
 ```
 
 Al togglear poder, force o traje: actualizar [hot file](#hot-file) y [`engines-active.json`](../../aleph-context/engines-active.json); reflejar en cabecera del **siguiente** turno (confirmar en el turno actual).
@@ -83,7 +83,7 @@ Loadout por defecto index-reader: [`loadouts/default-index-reader.json`](loadout
 | ID | Módulo | default_on |
 |----|--------|------------|
 | `cache-nav` | [poderes/cache-nav/SKILL.md](poderes/cache-nav/SKILL.md) | sí |
-| `epistem-tags` | [poderes/epistem-tags/SKILL.md](poderes/epistem-tags/SKILL.md) | sí |
+| `epistem-tags` | [poderes/epistem-tags/SKILL.md](poderes/epistem-tags/SKILL.md) — Trazabilidad epistemológica | sí |
 | `anti-seguros` | [poderes/anti-seguros/SKILL.md](poderes/anti-seguros/SKILL.md) | sí |
 | `selective-query` | [poderes/selective-query/SKILL.md](poderes/selective-query/SKILL.md) | sí |
 | `vacio-explicito` | [poderes/vacio-explicito/SKILL.md](poderes/vacio-explicito/SKILL.md) | sí |
@@ -105,7 +105,7 @@ Estado del traje entre turnos — **leer al inicio**, **reescribir** al aplicar 
 Contenido (≤15 líneas):
 
 ```markdown
-modelo: Composer
+modelo: —
 traje: puesto | quitado
 poderes_activos: [cache-nav, epistem-tags, ...]
 poderes_disponibles: [alineacion-dual, cicd-loop, ayuda]
@@ -118,6 +118,8 @@ ultimo_turno: YYYY-MM-DD
 
 Sincronizar `engines_*` con [`engines-active.json`](../../aleph-context/engines-active.json) al inicio de cada turno.
 
+Si `modelo: —`, rellenar en el primer turno con el nombre real del agente (misma cadena en cabecera y en [`index-reader-hot.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/index-reader-hot.md)).
+
 ## Shortcuts
 
 | Comando usuario | Efecto |
@@ -128,6 +130,7 @@ Sincronizar `engines_*` con [`engines-active.json`](../../aleph-context/engines-
 | `+alineacion` | Alias de `+alineacion-dual` |
 | `+cicd` | Alias de `+cicd-loop` → `+force engine-model-G` |
 | `+help` | Alias de `+ayuda` |
+| `+trazabilidad` | Alias de `+epistem-tags` |
 | `+force <id>` / `-force <id>` | Toggle force Cohen (máx. 2; requiere traje) |
 | `forces?` | Listar forces del registry con estado on/off |
 
@@ -151,7 +154,7 @@ Shortcuts por poder en `registry.yaml` (`shortcut_on` / `shortcut_off`).
 | 1b | **Ayuda** — si poder `ayuda` ON y turno lo pide (`+ayuda`, mapa capas, story board): [poderes/ayuda/SKILL.md](poderes/ayuda/SKILL.md) Función 1 +/o 2 **antes** del cuerpo forense |
 | 2 | **Navegar caché** — poder `cache-nav` + [`linea-aleph-browser`](../linea-aleph-browser/SKILL.md) |
 | 3 | **Checklist** — [checklist.md](checklist.md) |
-| 4 | **Emitir** — voz rude bot; poder `epistem-tags`; `vacio-explicito`; `anti-seguros` |
+| 4 | **Emitir** — voz rude bot; poder `epistem-tags` (🟢🟡🔴⚪); `vacio-explicito`; `anti-seguros` |
 
 Si `alineacion-dual` activo: aplicar [poderes/alineacion-dual/SKILL.md](poderes/alineacion-dual/SKILL.md) en respuestas nov 2007.
 
@@ -202,7 +205,7 @@ Recorte de autorevisor §D y s01-02:
 
 | Situación | Equipamiento |
 |-----------|----------------|
-| index-reader, crónica, panel estado | traje + linea-aleph-browser |
+| index-reader (activador), crónica, panel estado | traje + linea-aleph-browser + reader-chain |
 | Semilla Aleph, diamat, tablero ideológico | quitarse traje → modo-aleph |
 | DevOps fetch / UI | fuera de personaje |
 
