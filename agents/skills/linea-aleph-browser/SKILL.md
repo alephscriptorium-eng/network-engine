@@ -31,10 +31,12 @@ conversacional; `linea-aleph` es el **cuerpo histórico** (Wikipedia 2007, Solve
 | **linea1** | `raw/linea.md` (export historial artículo) | `INDICE.md` | ¿Qué hizo SolveCoagula en *Problema de la demarcación*? |
 | **linea2** | `raw/linea2.md` (API usercontribs NS0) | `INDICE2.md` | ¿Qué precede/intercala/sigue en toda su carrera enciclopedista? |
 | **linea-pseudo** | `pseudociencia/raw/linea.md` (API historial artículo) | `pseudociencia/INDICE.md` | ¿Qué pasó en *Pseudociencia* (todos los editores, ventana SC)? |
+| **linea-talk** | `talk/{vista}/raw/linea.md` (API historial NS1/NS3) | `talk/{vista}/INDICE.md` | ¿Hubo conversación en sala/UT o solo commits de artículo? (bloque 13) |
 
 Consultar **INDICE** para deltas y milestones de demarcación; **INDICE2** para contexto
 multi-artículo y clusters; **pseudociencia/INDICE** para la segunda línea gruesa
-(223 registros en ventana, 169 con `in_linea2`).
+(223 registros en ventana, 169 con `in_linea2`); **talk/** para las cuatro vistas
+de discusión (paralelo a `pseudociencia/`, diseño en `agentchain/composer/block-12.md`).
 
 ## Antes de empezar
 
@@ -70,6 +72,10 @@ Leer:
 | Metadatos de registro | `registros/*/registro.md` | Markdown + YAML |
 | **Cuerpo de artículo WP** | `cache/snapshots/{oldid}.wikitext` | Wikitext (verdad) |
 | Metadatos de fetch | `cache/snapshots/{oldid}.meta.json` | JSON |
+| **Cuerpo talk WP** | `cache/talk/snapshots/{oldid}.wikitext` | Wikitext (verdad; `corpus: talk`) |
+| Metadatos talk | `cache/talk/snapshots/{oldid}.meta.json` | JSON (`namespace`, `linked_article`) |
+| Manifest talk por vista | `talk/{vista}/manifest.json` | JSON (`article_refs[]` opcional) |
+| Auditoría talk | `cache/audit-talk.json` | JSON |
 | Viaje (grafo de enlaces) | `cache/viajes/{viaje-id}.json` | JSON |
 
 **No** materializar los 677 snapshots en markdown. Solo milestones + fetch bajo demanda.
@@ -204,13 +210,14 @@ python3 -c "import json; m=json.load(open('manifest.json')); print(len(m['regist
 
 Política completa: [`linea-aleph/CACHE_RUNBOOK.md`](../../linea-aleph/CACHE_RUNBOOK.md).
 
-Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext`:
+Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cache/talk/snapshots/{oldid}.wikitext` (talk):
 
-1. ¿`oldid` conocido en manifest? → `fetch_snapshot.py` (API `query` + `revisions` + `content`)
-2. ¿>200 oldids del mismo artículo? → plan **dumps** (`ingest_dump_revisions.py`), **NO** API masiva
-3. ¿Solo bytes / autor / parent? → API meta (`fetch_revision_meta` en `mw_client.py`, sin `rvprop=content`)
-4. ¿Diff entre dos revisiones A↔B? → `fetch_compare.py` (`action=compare`)
-5. **NUNCA** pedir scrape de `/wiki/`, `index.php` como fetch, ni `Special:Export` masivo
+1. ¿`oldid` conocido en manifest? → `fetch_snapshot.py` (API `query` + `revisions` + `content`); talk: `--corpus talk --title "Discusión:…"` o `"Usuario discusión:…"`
+2. ¿Historial talk sin cuerpos masivos aún? → `fetch_talk_history.py --all-anchors` (meta oct–nov 2007 → `talk/{vista}/raw/linea.md` + `manifest.json`; ver `CACHE_RUNBOOK.md` corpus talk)
+3. ¿>200 oldids del mismo título? → plan **dumps** (`ingest_dump_revisions.py`), **NO** API masiva
+4. ¿Solo bytes / autor / parent? → API meta (`fetch_revision_meta` en `mw_client.py`, sin `rvprop=content`)
+5. ¿Diff entre dos revisiones A↔B? → `fetch_compare.py` (`action=compare`)
+6. **NUNCA** pedir scrape de `/wiki/`, `index.php` como fetch, ni `Special:Export` masivo
 
 `index.php?oldid=` solo en `*.meta.json` → `source_url` (cita humana).
 
@@ -229,9 +236,12 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext`:
 - `linea-aleph/segment_linea2.py` — segmentador linea2 + manifest2
 - `linea-aleph/scripts/fetch_user_contribs.py` — harvest API usercontribs
 - `linea-aleph/scripts/fetch_article_history.py` — harvest API historial artículo
-- `linea-aleph/scripts/fetch_snapshot.py` — fetch API MediaWiki
+- `linea-aleph/scripts/fetch_talk_history.py` — harvest API historial talk (4 vistas NS1/NS3)
+- `linea-aleph/scripts/fetch_snapshot.py` — fetch API MediaWiki (`--corpus article|talk`)
+- `linea-aleph/scripts/cache_paths.py` — rutas `cache/snapshots` vs `cache/talk/snapshots`
 - `linea-aleph/scripts/mw_client.py` — cliente API compartido
 - `linea-aleph/scripts/fetch_compare.py` — diff API entre revisiones
 - `linea-aleph/CACHE_RUNBOOK.md` — política caché, rate limits, runbook viajes
 - `linea-aleph/pseudociencia/` — sub-corpus segunda línea gruesa
+- `linea-aleph/talk/` — sub-corpus discusión (4 vistas NS1/NS3; espejo de `pseudociencia/`)
 - `logs-aleph/sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/` — marco Aleph

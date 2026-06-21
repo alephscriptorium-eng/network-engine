@@ -50,7 +50,9 @@ Requisito de la [Wikimedia Foundation User-Agent Policy](https://foundation.wiki
 | Artefacto | Ruta |
 |-----------|------|
 | Ground truth | `cache/snapshots/{oldid}.wikitext` |
+| Ground truth talk | `cache/talk/snapshots/{oldid}.wikitext` |
 | Meta fetch | `cache/snapshots/{oldid}.meta.json` (`source_api`, `source_url`, `fetch_method`) |
+| Meta fetch talk | `cache/talk/snapshots/{oldid}.meta.json` (`corpus`, `namespace`, `linked_article`) |
 | Diff API | `cache/diffs/{from}-{to}.json` (+ opcional `.diff`) |
 | Manifiesto viaje | `scripts/fetch-priority-{viaje-id}.json` |
 | Log viaje | `cache/viajes/{fecha}-{viaje-id}.json` |
@@ -69,6 +71,80 @@ Campo `fetch_method` en meta: `"api"` | `"dump"` — trazabilidad del origen.
 | **D** (futuro) | Registros no-milestone vía dumps | Solo si meta >30 % registros sin cuerpo |
 
 Wave A puede cargarse desde JSON externo: `build_fetch_manifest.py --wave-a-file anchors.json`.
+
+---
+
+## Corpus talk
+
+Namespace paralelo (`Discusión:`, `Usuario discusión:`). Misma API y contrato `{oldid}.wikitext` + `{oldid}.meta.json`, rutas separadas bajo `cache/talk/`.
+
+| Necesidad | Script |
+|-----------|--------|
+| Historial meta (4 vistas, oct–nov 2007) | `scripts/fetch_talk_history.py --all-anchors` |
+| Cuerpo por oldid | `scripts/fetch_snapshot.py --corpus talk --oldid N --title "Discusión:Pseudociencia"` |
+| Manifiesto oleadas | `scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block13` |
+| Batch oleada | `scripts/fetch_batch.py --corpus talk --priority-file scripts/fetch-priority-talk-block13.json` |
+| Auditoría | `scripts/audit_cache.py --corpus talk` → `cache/audit-talk.json` |
+
+Meta talk incluye: `corpus: "talk"`, `namespace`, `linked_article` (si aplica). Cruce artículo: `article_refs[]` en manifest talk (±24 h vs `pseudociencia/manifest.json`).
+
+```bash
+cd network-engine/linea-aleph
+python scripts/fetch_talk_history.py --all-anchors
+python scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block13 \
+  --anchors-file cache/talk/anchors/discusion-pseudociencia.json
+python scripts/fetch_batch.py --corpus talk \
+  --priority-file scripts/fetch-priority-talk-block13.json --wave A --sleep 1.0
+python scripts/audit_cache.py --corpus talk
+```
+
+Árbol: [`talk/README.md`](talk/README.md), [`cache/talk/README.md`](cache/talk/README.md).
+
+### Viaje `talk-sala-probe` (ventana ampliada, sin pisar oct–nov)
+
+Investigación Fase 2: ¿hay actividad en **sala** (`Discusión:Pseudociencia`) o **Ignacio** fuera de la ventana block-13 (oct–nov 2007)? No invalida el vacío estructural ya documentado en block-13; usa artefactos **aislados** del corpus de producción.
+
+| Artefacto probe | Ruta |
+|-----------------|------|
+| Historial meta ampliado | `talk/{slug}/probe/raw/linea.md` + `linea.json` |
+| Manifiesto probe | `talk/{slug}/manifest.probe.json` (no toca `manifest.json`) |
+| Anclas probe | `cache/talk/anchors/{slug}.probe.json` |
+
+**Regla:** siempre `--probe-output` cuando la ventana ≠ oct–nov 2007, para no sobrescribir manifests del viaje `talk-block13`.
+
+Flags CLI `fetch_talk_history.py`:
+
+| Flag | Uso |
+|------|-----|
+| `--window-start` / `--window-end` | Ventana inclusiva `YYYY-MM-DD` |
+| `--vista` | Alias de `--slug` (una vista) |
+| `--full-history` | Ventana amplia (historial completo) |
+| `--probe-output` | Escribe en `talk/{slug}/probe/` + `manifest.probe.json` |
+
+```bash
+cd network-engine/linea-aleph
+
+# Sala — ventana 2007 completa
+python scripts/fetch_talk_history.py \
+  --vista discusion-pseudociencia \
+  --window-start 2007-01-01 --window-end 2007-12-31 \
+  --probe-output
+
+# Ignacio — historial completo
+python scripts/fetch_talk_history.py \
+  --vista usuario-discusion-ignacio-icke \
+  --full-history --probe-output
+
+# Manifiesto + batch del viaje probe (tras historial)
+python scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-sala-probe \
+  --probe-mode \
+  --probe-slugs discusion-pseudociencia usuario-discusion-ignacio-icke
+python scripts/fetch_batch.py --corpus talk \
+  --priority-file scripts/fetch-priority-talk-sala-probe.json --wave A --sleep 1.0
+python scripts/audit_cache.py --corpus talk
+```
+
+Vistas típicas del probe: `discusion-pseudociencia`, `usuario-discusion-ignacio-icke`. Oleada C manifest (7 Analiza pre-2008) es viaje distinto — ver `fetch-priority-talk-block13.json`, no mezclar con `talk-sala-probe`.
 
 ---
 

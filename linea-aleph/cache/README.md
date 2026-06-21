@@ -13,7 +13,11 @@ python scripts/audit_cache.py
 
 | Carpeta | Contenido |
 |---------|-----------|
-| `snapshots/` | `{oldid}.wikitext` + `{oldid}.meta.json` |
+| `snapshots/` | `{oldid}.wikitext` + `{oldid}.meta.json` (corpus **article**, NS0) |
+| `talk/snapshots/` | mismo contrato para **talk** (NS1/NS3) — ver [`talk/README.md`](talk/README.md) |
+| `talk/anchors/` | prioridad Wave A por vista talk |
+| `talk/viajes/` | log JSON viajes talk |
 | `diffs/` | salida de `fetch_compare.py` |
-| `viajes/` | log JSON del viaje |
+| `viajes/` | log JSON del viaje (artículos) |
 | `dumps/` | XML `.bz2` de Wikimedia (gitignored) |
+| `talk/` | corpus talk: `snapshots/`, `anchors/`, `viajes/` — ver [`talk/README.md`](talk/README.md) |
