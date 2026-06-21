@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "corpus": "talk",
+    "corpus_id": "linea-talk-usuario-ignacio-icke",
+    "title": "Usuario discusión:Ignacio_Icke",
+    "namespace": 3,
+    "linked_article": null,
+    "source": "raw/linea.md",
+    "generated_at": "2026-06-21T00:44:09Z",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    },
+    "registro_count": 0,
+    "ordering": "newest_first_in_linea_md",
+    "vacío_explícito": true
+  },
+  "registros": []
+}

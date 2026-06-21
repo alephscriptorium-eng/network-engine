@@ -1,0 +1,1514 @@
+{
+  "meta": {
+    "title": "Usuario discusión:Ignacio_Icke",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 3,
+    "linked_article": null,
+    "generated_at": "2026-06-21T01:18:17Z",
+    "corpus_dir": "talk/usuario-discusion-ignacio-icke/probe",
+    "window": {
+      "start": "1971-01-01",
+      "end": "2099-12-31"
+    },
+    "revision_count": 166,
+    "ordering": "newest_first_in_linea_md",
+    "probe": true
+  },
+  "revisiones": [
+    {
+      "revid": 34955053,
+      "parentid": 0,
+      "timestamp": "2010-03-11T20:03:08Z",
+      "user": "Ignacio Icke",
+      "comment": "Página creada con «.»",
+      "size": 1,
+      "byte_delta": 1
+    },
+    {
+      "revid": 34955059,
+      "parentid": 34955053,
+      "timestamp": "2010-03-11T20:03:20Z",
+      "user": "Ignacio Icke",
+      "comment": "ale",
+      "size": 0,
+      "byte_delta": -1
+    },
+    {
+      "revid": 34955152,
+      "parentid": 34955059,
+      "timestamp": "2010-03-11T20:06:45Z",
+      "user": "Ignacio Icke",
+      "comment": "au",
+      "size": 77,
+      "byte_delta": 77
+    },
+    {
+      "revid": 35213042,
+      "parentid": 34955152,
+      "timestamp": "2010-03-17T22:53:14Z",
+      "user": "Ignacio Icke",
+      "comment": "Página blanqueada",
+      "size": 0,
+      "byte_delta": -77
+    },
+    {
+      "revid": 35215282,
+      "parentid": 35213042,
+      "timestamp": "2010-03-18T00:01:04Z",
+      "user": "Nerêo",
+      "comment": "",
+      "size": 959,
+      "byte_delta": 959
+    },
+    {
+      "revid": 35215449,
+      "parentid": 35215282,
+      "timestamp": "2010-03-18T00:06:34Z",
+      "user": "Nerêo",
+      "comment": "",
+      "size": 880,
+      "byte_delta": -79
+    },
+    {
+      "revid": 35215742,
+      "parentid": 35215449,
+      "timestamp": "2010-03-18T00:16:40Z",
+      "user": "Nerêo",
+      "comment": "",
+      "size": 1239,
+      "byte_delta": 359
+    },
+    {
+      "revid": 35252020,
+      "parentid": 35215742,
+      "timestamp": "2010-03-18T21:44:51Z",
+      "user": "Poiche",
+      "comment": "",
+      "size": 1755,
+      "byte_delta": 516
+    },
+    {
+      "revid": 35254187,
+      "parentid": 35252020,
+      "timestamp": "2010-03-18T22:51:47Z",
+      "user": "Poiche",
+      "comment": "",
+      "size": 1975,
+      "byte_delta": 220
+    },
+    {
+      "revid": 35254200,
+      "parentid": 35254187,
+      "timestamp": "2010-03-18T22:52:21Z",
+      "user": "Poiche",
+      "comment": "",
+      "size": 2131,
+      "byte_delta": 156
+    },
+    {
+      "revid": 35271590,
+      "parentid": 35254200,
+      "timestamp": "2010-03-19T12:40:26Z",
+      "user": "Poiche",
+      "comment": "",
+      "size": 2276,
+      "byte_delta": 145
+    },
+    {
+      "revid": 35348021,
+      "parentid": 35271590,
+      "timestamp": "2010-03-21T17:05:50Z",
+      "user": "Balderai",
+      "comment": "Nueva sección: /* 16px -> 15 px */",
+      "size": 2578,
+      "byte_delta": 302
+    },
+    {
+      "revid": 35348034,
+      "parentid": 35348021,
+      "timestamp": "2010-03-21T17:06:04Z",
+      "user": "Balderai",
+      "comment": "/* 16px -> 15 px */",
+      "size": 2579,
+      "byte_delta": 1
+    },
+    {
+      "revid": 35349482,
+      "parentid": 35348034,
+      "timestamp": "2010-03-21T17:55:13Z",
+      "user": "Balderai",
+      "comment": "/* 16 px -> 15 px */",
+      "size": 2747,
+      "byte_delta": 168
+    },
+    {
+      "revid": 35443923,
+      "parentid": 35349482,
+      "timestamp": "2010-03-24T00:28:48Z",
+      "user": "81.40.12.207",
+      "comment": "",
+      "size": 2845,
+      "byte_delta": 98
+    },
+    {
+      "revid": 35443939,
+      "parentid": 35443923,
+      "timestamp": "2010-03-24T00:29:19Z",
+      "user": "Nixón",
+      "comment": "Revertidos los cambios de [[Special:Contributions/81.40.12.207|81.40.12.207]] ([[User talk:81.40.12.207|disc.]]) a la última edición de Balderai",
+      "size": 2747,
+      "byte_delta": -98
+    },
+    {
+      "revid": 35551346,
+      "parentid": 35443939,
+      "timestamp": "2010-03-26T22:59:15Z",
+      "user": "Teby 95",
+      "comment": "Aviso",
+      "size": 3614,
+      "byte_delta": 867
+    },
+    {
+      "revid": 35551682,
+      "parentid": 35551346,
+      "timestamp": "2010-03-26T23:13:17Z",
+      "user": "Teby 95",
+      "comment": "Aviso",
+      "size": 3850,
+      "byte_delta": 236
+    },
+    {
+      "revid": 35554320,
+      "parentid": 35551682,
+      "timestamp": "2010-03-27T01:17:51Z",
+      "user": "Link58",
+      "comment": "/* Reversión en Rapero */",
+      "size": 4188,
+      "byte_delta": 338
+    },
+    {
+      "revid": 35562621,
+      "parentid": 35554320,
+      "timestamp": "2010-03-27T12:18:58Z",
+      "user": "95.124.172.64",
+      "comment": "/* Ya está hecho... */",
+      "size": 4660,
+      "byte_delta": 472
+    },
+    {
+      "revid": 35562729,
+      "parentid": 35562621,
+      "timestamp": "2010-03-27T12:25:13Z",
+      "user": "95.124.172.64",
+      "comment": "/* Por supuesto que lo es */",
+      "size": 4999,
+      "byte_delta": 339
+    },
+    {
+      "revid": 35612599,
+      "parentid": 35562729,
+      "timestamp": "2010-03-29T03:56:55Z",
+      "user": "Kved",
+      "comment": "Nueva sección: /* Schrader */",
+      "size": 5799,
+      "byte_delta": 800
+    },
+    {
+      "revid": 35612612,
+      "parentid": 35612599,
+      "timestamp": "2010-03-29T03:57:16Z",
+      "user": "Kved",
+      "comment": "/* Schrader */",
+      "size": 5800,
+      "byte_delta": 1
+    },
+    {
+      "revid": 35687740,
+      "parentid": 35612612,
+      "timestamp": "2010-03-31T03:16:37Z",
+      "user": "Kved",
+      "comment": "/* Schrader */",
+      "size": 5964,
+      "byte_delta": 164
+    },
+    {
+      "revid": 35725639,
+      "parentid": 35687740,
+      "timestamp": "2010-04-01T13:22:45Z",
+      "user": "Retama",
+      "comment": "/* Schrader */",
+      "size": 6263,
+      "byte_delta": 299
+    },
+    {
+      "revid": 35764646,
+      "parentid": 35725639,
+      "timestamp": "2010-04-03T00:54:06Z",
+      "user": "Magister Mathematicae",
+      "comment": "/* Schrader */",
+      "size": 6590,
+      "byte_delta": 327
+    },
+    {
+      "revid": 35784926,
+      "parentid": 35764646,
+      "timestamp": "2010-04-03T21:41:44Z",
+      "user": "Poco a poco",
+      "comment": "Nueva sección: /* Re: Razón de borrado */",
+      "size": 7015,
+      "byte_delta": 425
+    },
+    {
+      "revid": 35805358,
+      "parentid": 35784926,
+      "timestamp": "2010-04-04T18:44:52Z",
+      "user": "WhisperToMe",
+      "comment": "/* Re: Razón de borrado */",
+      "size": 7452,
+      "byte_delta": 437
+    },
+    {
+      "revid": 35830052,
+      "parentid": 35805358,
+      "timestamp": "2010-04-05T15:01:08Z",
+      "user": "Muro Bot",
+      "comment": "[[User:Muro Bot/Comandos|Bot]]: Sustituyendo plantilla: {{clear}}",
+      "size": 7468,
+      "byte_delta": 16
+    },
+    {
+      "revid": 35838919,
+      "parentid": 35830052,
+      "timestamp": "2010-04-05T19:32:45Z",
+      "user": "Rαge",
+      "comment": "/* Additional contact list */  traslado desde PU",
+      "size": 8080,
+      "byte_delta": 612
+    },
+    {
+      "revid": 35838977,
+      "parentid": 35838919,
+      "timestamp": "2010-04-05T19:34:27Z",
+      "user": "Spirit-Black-Wikipedista",
+      "comment": "Nueva sección: /* Schared, o como se llame, xD! */",
+      "size": 8342,
+      "byte_delta": 262
+    },
+    {
+      "revid": 35840050,
+      "parentid": 35838977,
+      "timestamp": "2010-04-05T20:06:31Z",
+      "user": "Rαge",
+      "comment": "/* Schared, o como se llame, xD! */",
+      "size": 8582,
+      "byte_delta": 240
+    },
+    {
+      "revid": 35845698,
+      "parentid": 35840050,
+      "timestamp": "2010-04-05T22:36:32Z",
+      "user": "Hidoy kukyo",
+      "comment": "/* Iicke */",
+      "size": 9083,
+      "byte_delta": 501
+    },
+    {
+      "revid": 35845826,
+      "parentid": 35845698,
+      "timestamp": "2010-04-05T22:41:02Z",
+      "user": "Hidoy kukyo",
+      "comment": "/* Iicke */",
+      "size": 9637,
+      "byte_delta": 554
+    },
+    {
+      "revid": 35865419,
+      "parentid": 35845826,
+      "timestamp": "2010-04-06T17:09:01Z",
+      "user": "Hidoy kukyo",
+      "comment": "/* Iicke */",
+      "size": 10217,
+      "byte_delta": 580
+    },
+    {
+      "revid": 35865448,
+      "parentid": 35865419,
+      "timestamp": "2010-04-06T17:10:01Z",
+      "user": "Hidoy kukyo",
+      "comment": "/* Iicke */",
+      "size": 10218,
+      "byte_delta": 1
+    },
+    {
+      "revid": 35897903,
+      "parentid": 35865448,
+      "timestamp": "2010-04-07T17:39:28Z",
+      "user": "Retama",
+      "comment": "/* Re: */",
+      "size": 10512,
+      "byte_delta": 294
+    },
+    {
+      "revid": 35924649,
+      "parentid": 35897903,
+      "timestamp": "2010-04-08T14:54:49Z",
+      "user": "Spirit-Black-Wikipedista",
+      "comment": "Nueva sección: /* Perdón */",
+      "size": 10866,
+      "byte_delta": 354
+    },
+    {
+      "revid": 35945651,
+      "parentid": 35924649,
+      "timestamp": "2010-04-09T03:44:49Z",
+      "user": "Fev",
+      "comment": "Nueva sección: /* Calina y calima */",
+      "size": 12009,
+      "byte_delta": 1143
+    },
+    {
+      "revid": 35945673,
+      "parentid": 35945651,
+      "timestamp": "2010-04-09T03:45:25Z",
+      "user": "Fev",
+      "comment": "Nueva sección: /* Calina y calima */",
+      "size": 13152,
+      "byte_delta": 1143
+    },
+    {
+      "revid": 35945686,
+      "parentid": 35945673,
+      "timestamp": "2010-04-09T03:46:00Z",
+      "user": "Fev",
+      "comment": "/* Calina y calima */",
+      "size": 12009,
+      "byte_delta": -1143
+    },
+    {
+      "revid": 35953855,
+      "parentid": 35945686,
+      "timestamp": "2010-04-09T14:37:46Z",
+      "user": "Gaeddal",
+      "comment": "Nueva sección: /* Casi mejor... */",
+      "size": 12423,
+      "byte_delta": 414
+    },
+    {
+      "revid": 35954288,
+      "parentid": 35953855,
+      "timestamp": "2010-04-09T14:58:12Z",
+      "user": "Fev",
+      "comment": "/* Calina y calima */",
+      "size": 12529,
+      "byte_delta": 106
+    },
+    {
+      "revid": 36034978,
+      "parentid": 35954288,
+      "timestamp": "2010-04-12T01:37:21Z",
+      "user": "Kved",
+      "comment": "Nueva sección: /* Schrader */",
+      "size": 12966,
+      "byte_delta": 437
+    },
+    {
+      "revid": 36063130,
+      "parentid": 36034978,
+      "timestamp": "2010-04-12T22:34:57Z",
+      "user": "Diegusjaimes",
+      "comment": "Nueva sección: /* Lo prometido es deuda */",
+      "size": 13306,
+      "byte_delta": 340
+    },
+    {
+      "revid": 36155527,
+      "parentid": 36063130,
+      "timestamp": "2010-04-15T20:08:35Z",
+      "user": "Protegeles",
+      "comment": "Nueva sección: /* Ayuda con los permisos */",
+      "size": 14935,
+      "byte_delta": 1629
+    },
+    {
+      "revid": 36182027,
+      "parentid": 36155527,
+      "timestamp": "2010-04-16T18:31:33Z",
+      "user": "Protegeles",
+      "comment": "/* Ayuda con los permisos */",
+      "size": 13306,
+      "byte_delta": -1629
+    },
+    {
+      "revid": 36210006,
+      "parentid": 36182027,
+      "timestamp": "2010-04-17T17:06:54Z",
+      "user": "Internetsinacoso",
+      "comment": "Nueva sección: /* Conflicto \"Derecho de cita\" vs \"Envío permiso escrito a Wikipedia\" */",
+      "size": 13862,
+      "byte_delta": 556
+    },
+    {
+      "revid": 36228327,
+      "parentid": 36210006,
+      "timestamp": "2010-04-18T07:15:26Z",
+      "user": "Aleposta",
+      "comment": "Revertidos los cambios de [[Special:Contributions/Internetsinacoso|Internetsinacoso]] ([[User talk:Internetsinacoso|disc.]]) a la última edición de Protegeles",
+      "size": 13306,
+      "byte_delta": -556
+    },
+    {
+      "revid": 36234463,
+      "parentid": 36228327,
+      "timestamp": "2010-04-18T14:00:27Z",
+      "user": "Poco a poco",
+      "comment": "Nueva sección: /* Traducido ref */",
+      "size": 13839,
+      "byte_delta": 533
+    },
+    {
+      "revid": 36235289,
+      "parentid": 36234463,
+      "timestamp": "2010-04-18T14:40:17Z",
+      "user": "Poco a poco",
+      "comment": "/* Traducido ref */",
+      "size": 13964,
+      "byte_delta": 125
+    },
+    {
+      "revid": 36236456,
+      "parentid": 36235289,
+      "timestamp": "2010-04-18T14:57:02Z",
+      "user": "Poco a poco",
+      "comment": "/* Traducido ref */",
+      "size": 14216,
+      "byte_delta": 252
+    },
+    {
+      "revid": 36238287,
+      "parentid": 36236456,
+      "timestamp": "2010-04-18T15:12:38Z",
+      "user": "Poco a poco",
+      "comment": "/* Traducido ref */",
+      "size": 14370,
+      "byte_delta": 154
+    },
+    {
+      "revid": 36239614,
+      "parentid": 36238287,
+      "timestamp": "2010-04-18T15:40:57Z",
+      "user": "Poco a poco",
+      "comment": "/* Traducido ref */",
+      "size": 14595,
+      "byte_delta": 225
+    },
+    {
+      "revid": 36475029,
+      "parentid": 36239614,
+      "timestamp": "2010-04-26T15:43:18Z",
+      "user": "80.32.83.68",
+      "comment": "",
+      "size": 14895,
+      "byte_delta": 300
+    },
+    {
+      "revid": 36475191,
+      "parentid": 36475029,
+      "timestamp": "2010-04-26T15:50:40Z",
+      "user": "Ignacio Icke",
+      "comment": "",
+      "size": 15610,
+      "byte_delta": 715
+    },
+    {
+      "revid": 36475310,
+      "parentid": 36475191,
+      "timestamp": "2010-04-26T15:55:01Z",
+      "user": "80.32.83.68",
+      "comment": "/* Luís Vallejo Rodríguez */",
+      "size": 15650,
+      "byte_delta": 40
+    },
+    {
+      "revid": 36588629,
+      "parentid": 36475310,
+      "timestamp": "2010-04-30T13:06:51Z",
+      "user": "Isha",
+      "comment": "/* Luís Vallejo Rodríguez */",
+      "size": 15784,
+      "byte_delta": 134
+    },
+    {
+      "revid": 36601150,
+      "parentid": 36588629,
+      "timestamp": "2010-04-30T22:48:03Z",
+      "user": "Dorieo",
+      "comment": "Golfo de Edremit",
+      "size": 16493,
+      "byte_delta": 709
+    },
+    {
+      "revid": 36643302,
+      "parentid": 36601150,
+      "timestamp": "2010-05-02T12:54:55Z",
+      "user": "Dorieo",
+      "comment": "/* Golfo de Edremit */+",
+      "size": 16969,
+      "byte_delta": 476
+    },
+    {
+      "revid": 36756021,
+      "parentid": 36643302,
+      "timestamp": "2010-05-05T20:03:05Z",
+      "user": "WhisperToMe",
+      "comment": "/* Golfo de Edremit */",
+      "size": 17234,
+      "byte_delta": 265
+    },
+    {
+      "revid": 36791462,
+      "parentid": 36756021,
+      "timestamp": "2010-05-06T20:29:48Z",
+      "user": "WhisperToMe",
+      "comment": "/* Air France */",
+      "size": 17380,
+      "byte_delta": 146
+    },
+    {
+      "revid": 36842322,
+      "parentid": 36791462,
+      "timestamp": "2010-05-08T09:21:11Z",
+      "user": "Fujurcitook",
+      "comment": "Nueva sección: /* viejos rockeros.... */",
+      "size": 17938,
+      "byte_delta": 558
+    },
+    {
+      "revid": 36934378,
+      "parentid": 36842322,
+      "timestamp": "2010-05-11T10:13:09Z",
+      "user": "WhisperToMe",
+      "comment": "/* viejos rockeros.... */",
+      "size": 18464,
+      "byte_delta": 526
+    },
+    {
+      "revid": 36934379,
+      "parentid": 36934378,
+      "timestamp": "2010-05-11T10:13:18Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 18466,
+      "byte_delta": 2
+    },
+    {
+      "revid": 36934381,
+      "parentid": 36934379,
+      "timestamp": "2010-05-11T10:13:32Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 18467,
+      "byte_delta": 1
+    },
+    {
+      "revid": 36934446,
+      "parentid": 36934381,
+      "timestamp": "2010-05-11T10:20:10Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 18591,
+      "byte_delta": 124
+    },
+    {
+      "revid": 36989551,
+      "parentid": 36934446,
+      "timestamp": "2010-05-12T23:13:56Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 19146,
+      "byte_delta": 555
+    },
+    {
+      "revid": 37411468,
+      "parentid": 36989551,
+      "timestamp": "2010-05-26T12:29:03Z",
+      "user": "Dorieo",
+      "comment": "[[Tipo de dato abstracto]]",
+      "size": 19494,
+      "byte_delta": 348
+    },
+    {
+      "revid": 37467735,
+      "parentid": 37411468,
+      "timestamp": "2010-05-28T00:42:25Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 19783,
+      "byte_delta": 289
+    },
+    {
+      "revid": 37467742,
+      "parentid": 37467735,
+      "timestamp": "2010-05-28T00:42:40Z",
+      "user": "WhisperToMe",
+      "comment": "/* Masacre del instituto Columbine */",
+      "size": 19782,
+      "byte_delta": -1
+    },
+    {
+      "revid": 38169203,
+      "parentid": 37467742,
+      "timestamp": "2010-06-19T14:42:57Z",
+      "user": "WhisperToMe",
+      "comment": "/* Tipo de dato abstracto */",
+      "size": 20086,
+      "byte_delta": 304
+    },
+    {
+      "revid": 38176497,
+      "parentid": 38169203,
+      "timestamp": "2010-06-19T17:48:20Z",
+      "user": "SheilaXS",
+      "comment": "",
+      "size": 20434,
+      "byte_delta": 348
+    },
+    {
+      "revid": 38176603,
+      "parentid": 38176497,
+      "timestamp": "2010-06-19T17:53:31Z",
+      "user": "SheilaXS",
+      "comment": "",
+      "size": 20849,
+      "byte_delta": 415
+    },
+    {
+      "revid": 38296583,
+      "parentid": 38176603,
+      "timestamp": "2010-06-23T23:25:44Z",
+      "user": "Linfocito B",
+      "comment": "Nueva sección: /* Nueva imagen de firma */",
+      "size": 21655,
+      "byte_delta": 806
+    },
+    {
+      "revid": 38835075,
+      "parentid": 38296583,
+      "timestamp": "2010-07-16T15:49:36Z",
+      "user": "Luis1970",
+      "comment": "/* Nueva imagen de firma */",
+      "size": 21949,
+      "byte_delta": 294
+    },
+    {
+      "revid": 38837724,
+      "parentid": 38835075,
+      "timestamp": "2010-07-16T18:07:56Z",
+      "user": "Luis1970",
+      "comment": "/* Aunque no .. */",
+      "size": 22275,
+      "byte_delta": 326
+    },
+    {
+      "revid": 38858004,
+      "parentid": 38837724,
+      "timestamp": "2010-07-17T17:08:36Z",
+      "user": "3coma14",
+      "comment": "",
+      "size": 22832,
+      "byte_delta": 557
+    },
+    {
+      "revid": 38858028,
+      "parentid": 38858004,
+      "timestamp": "2010-07-17T17:09:35Z",
+      "user": "3coma14",
+      "comment": "/* Duda */",
+      "size": 22974,
+      "byte_delta": 142
+    },
+    {
+      "revid": 38858043,
+      "parentid": 38858028,
+      "timestamp": "2010-07-17T17:10:22Z",
+      "user": "3coma14",
+      "comment": "/* Carmen Lomana */ edición trivial. Pongo dos signos igual que faltaban en un comentario anterior, para mantener formato",
+      "size": 22976,
+      "byte_delta": 2
+    },
+    {
+      "revid": 38858057,
+      "parentid": 38858043,
+      "timestamp": "2010-07-17T17:10:58Z",
+      "user": "3coma14",
+      "comment": "/* Jaume Farrerons */ edición trivial. idem",
+      "size": 22978,
+      "byte_delta": 2
+    },
+    {
+      "revid": 38858842,
+      "parentid": 38858057,
+      "timestamp": "2010-07-17T17:53:37Z",
+      "user": "3coma14",
+      "comment": "/* Duda */",
+      "size": 23634,
+      "byte_delta": 656
+    },
+    {
+      "revid": 38865822,
+      "parentid": 38858842,
+      "timestamp": "2010-07-18T00:25:08Z",
+      "user": "Link58",
+      "comment": "/* Duda */",
+      "size": 25206,
+      "byte_delta": 1572
+    },
+    {
+      "revid": 38866515,
+      "parentid": 38865822,
+      "timestamp": "2010-07-18T01:15:30Z",
+      "user": "80.31.174.114",
+      "comment": "/* Redactor principal */",
+      "size": 26019,
+      "byte_delta": 813
+    },
+    {
+      "revid": 38875561,
+      "parentid": 38866515,
+      "timestamp": "2010-07-18T13:21:26Z",
+      "user": "Purcz",
+      "comment": "/* Pueblos y etnias */",
+      "size": 26412,
+      "byte_delta": 393
+    },
+    {
+      "revid": 38880036,
+      "parentid": 38875561,
+      "timestamp": "2010-07-18T17:59:32Z",
+      "user": "Escarlati",
+      "comment": "Nueva sección: /* Porque hace tiempo... */",
+      "size": 26813,
+      "byte_delta": 401
+    },
+    {
+      "revid": 39711154,
+      "parentid": 38880036,
+      "timestamp": "2010-08-23T20:33:21Z",
+      "user": "Escarlati",
+      "comment": "/* Porque hace tiempo... */",
+      "size": 28170,
+      "byte_delta": 1357
+    },
+    {
+      "revid": 39783267,
+      "parentid": 39711154,
+      "timestamp": "2010-08-26T18:45:20Z",
+      "user": "Ensada",
+      "comment": "/* Porque hace tiempo... */",
+      "size": 28485,
+      "byte_delta": 315
+    },
+    {
+      "revid": 40456445,
+      "parentid": 39783267,
+      "timestamp": "2010-09-22T19:43:53Z",
+      "user": "Tipar",
+      "comment": "",
+      "size": 30481,
+      "byte_delta": 1996
+    },
+    {
+      "revid": 41652231,
+      "parentid": 40456445,
+      "timestamp": "2010-11-09T10:22:55Z",
+      "user": "89.140.20.218",
+      "comment": "Nueva sección: /* Borrado artículo \"Everis\" */",
+      "size": 32024,
+      "byte_delta": 1543
+    },
+    {
+      "revid": 41652339,
+      "parentid": 41652231,
+      "timestamp": "2010-11-09T10:34:37Z",
+      "user": "Walenzack",
+      "comment": "/* Borrado artículo \"Everis\" */",
+      "size": 31998,
+      "byte_delta": -26
+    },
+    {
+      "revid": 41828381,
+      "parentid": 41652339,
+      "timestamp": "2010-11-16T17:24:54Z",
+      "user": "Montgomery",
+      "comment": "Nueva sección: /* Tío... */",
+      "size": 32514,
+      "byte_delta": 516
+    },
+    {
+      "revid": 41832498,
+      "parentid": 41828381,
+      "timestamp": "2010-11-16T20:18:41Z",
+      "user": "Rastrojo",
+      "comment": "/* Tío... */",
+      "size": 32649,
+      "byte_delta": 135
+    },
+    {
+      "revid": 42629227,
+      "parentid": 41832498,
+      "timestamp": "2010-12-19T18:45:49Z",
+      "user": "Diegusjaimes",
+      "comment": "Nueva sección: /* Felices fiestas!!! */",
+      "size": 33043,
+      "byte_delta": 394
+    },
+    {
+      "revid": 42711699,
+      "parentid": 42629227,
+      "timestamp": "2010-12-23T00:38:10Z",
+      "user": "Link58",
+      "comment": "/* Felices fiestas!!! */",
+      "size": 33275,
+      "byte_delta": 232
+    },
+    {
+      "revid": 43771720,
+      "parentid": 42711699,
+      "timestamp": "2011-02-03T01:31:09Z",
+      "user": "Libertad y Saber",
+      "comment": "Nueva sección: /* KU! */",
+      "size": 33503,
+      "byte_delta": 228
+    },
+    {
+      "revid": 44164062,
+      "parentid": 43771720,
+      "timestamp": "2011-02-17T12:19:32Z",
+      "user": "Wilfredor",
+      "comment": "Buen viaje",
+      "size": 34102,
+      "byte_delta": 599
+    },
+    {
+      "revid": 45230050,
+      "parentid": 44164062,
+      "timestamp": "2011-03-30T18:25:29Z",
+      "user": "Kordas",
+      "comment": "Nueva sección: /* Eeehhh */",
+      "size": 34663,
+      "byte_delta": 561
+    },
+    {
+      "revid": 45230614,
+      "parentid": 45230050,
+      "timestamp": "2011-03-30T18:47:19Z",
+      "user": "Escarlati",
+      "comment": "Nueva sección: /* Me alegro mucho... */",
+      "size": 34950,
+      "byte_delta": 287
+    },
+    {
+      "revid": 45263568,
+      "parentid": 45230614,
+      "timestamp": "2011-03-31T23:07:48Z",
+      "user": "Ignacio Icke",
+      "comment": "",
+      "size": 35818,
+      "byte_delta": 868
+    },
+    {
+      "revid": 45325348,
+      "parentid": 45263568,
+      "timestamp": "2011-04-03T11:47:56Z",
+      "user": "Ganímedes",
+      "comment": "/* Discordianismo */",
+      "size": 36552,
+      "byte_delta": 734
+    },
+    {
+      "revid": 45325353,
+      "parentid": 45325348,
+      "timestamp": "2011-04-03T11:48:28Z",
+      "user": "Ganímedes",
+      "comment": "/* Discordianismo */",
+      "size": 36542,
+      "byte_delta": -10
+    },
+    {
+      "revid": 45517329,
+      "parentid": 45325353,
+      "timestamp": "2011-04-10T15:17:17Z",
+      "user": "Africalorente",
+      "comment": "",
+      "size": 36641,
+      "byte_delta": 99
+    },
+    {
+      "revid": 45541353,
+      "parentid": 45517329,
+      "timestamp": "2011-04-11T11:48:19Z",
+      "user": "Jordi Peralta",
+      "comment": "",
+      "size": 38087,
+      "byte_delta": 1446
+    },
+    {
+      "revid": 46076760,
+      "parentid": 45541353,
+      "timestamp": "2011-05-02T17:20:54Z",
+      "user": "Ganímedes",
+      "comment": "/* Propuesta de borrado en Salvador Sostres */",
+      "size": 38576,
+      "byte_delta": 489
+    },
+    {
+      "revid": 46101127,
+      "parentid": 46076760,
+      "timestamp": "2011-05-03T15:44:49Z",
+      "user": "Ganímedes",
+      "comment": "/* Hola, de nuevo */",
+      "size": 38766,
+      "byte_delta": 190
+    },
+    {
+      "revid": 46101141,
+      "parentid": 46101127,
+      "timestamp": "2011-05-03T15:45:12Z",
+      "user": "Ganímedes",
+      "comment": "/* Hola, de nuevo */",
+      "size": 38766,
+      "byte_delta": 0
+    },
+    {
+      "revid": 47709814,
+      "parentid": 46101141,
+      "timestamp": "2011-07-05T14:11:43Z",
+      "user": "Rodelar",
+      "comment": "/* Hola, de nuevo */",
+      "size": 39216,
+      "byte_delta": 450
+    },
+    {
+      "revid": 49498444,
+      "parentid": 47709814,
+      "timestamp": "2011-09-03T23:03:57Z",
+      "user": "Señor Aluminio",
+      "comment": "",
+      "size": 39602,
+      "byte_delta": 386
+    },
+    {
+      "revid": 50018376,
+      "parentid": 49498444,
+      "timestamp": "2011-09-24T19:37:48Z",
+      "user": "Ganímedes",
+      "comment": "/* Revalidación Síndrome de Down */",
+      "size": 40062,
+      "byte_delta": 460
+    },
+    {
+      "revid": 50533470,
+      "parentid": 50018376,
+      "timestamp": "2011-10-15T04:05:46Z",
+      "user": "Rosarino",
+      "comment": "pedido de ayuda acerca de la aplicación de un par de políticas de Wikipedia",
+      "size": 41158,
+      "byte_delta": 1096
+    },
+    {
+      "revid": 50606179,
+      "parentid": 50533470,
+      "timestamp": "2011-10-18T02:44:15Z",
+      "user": "Rosarino",
+      "comment": "me di cuenta de que este usuario está inactivo",
+      "size": 41409,
+      "byte_delta": 251
+    },
+    {
+      "revid": 53874082,
+      "parentid": 50606179,
+      "timestamp": "2012-02-16T14:42:46Z",
+      "user": "Sumanah",
+      "comment": "Nueva sección: /* Invitation to events: bot, template, and Gadget makers wanted */",
+      "size": 42523,
+      "byte_delta": 1114
+    },
+    {
+      "revid": 53895019,
+      "parentid": 53874082,
+      "timestamp": "2012-02-17T05:52:58Z",
+      "user": "WhisperToMe",
+      "comment": "/* Invitation to events: bot, template, and Gadget makers wanted */",
+      "size": 44455,
+      "byte_delta": 1932
+    },
+    {
+      "revid": 54309141,
+      "parentid": 53895019,
+      "timestamp": "2012-03-04T00:07:04Z",
+      "user": "Waka Waka",
+      "comment": "Nueva sección: /* ¡Feliz wikicumpleaños! */",
+      "size": 44637,
+      "byte_delta": 182
+    },
+    {
+      "revid": 54325908,
+      "parentid": 54309141,
+      "timestamp": "2012-03-04T18:27:51Z",
+      "user": "Gilc",
+      "comment": "/* ¡Feliz wikicumpleaños! */",
+      "size": 44838,
+      "byte_delta": 201
+    },
+    {
+      "revid": 54438570,
+      "parentid": 54325908,
+      "timestamp": "2012-03-09T01:21:40Z",
+      "user": "Maleiva",
+      "comment": "/* ¡Feliz wikicumpleaños! */",
+      "size": 44989,
+      "byte_delta": 151
+    },
+    {
+      "revid": 54438576,
+      "parentid": 54438570,
+      "timestamp": "2012-03-09T01:21:59Z",
+      "user": "Maleiva",
+      "comment": "/* ¡Feliz wikicumpleaños! */",
+      "size": 45089,
+      "byte_delta": 100
+    },
+    {
+      "revid": 60108182,
+      "parentid": 54438576,
+      "timestamp": "2012-09-30T06:37:16Z",
+      "user": "WhisperToMe",
+      "comment": "/* ¡Feliz wikicumpleaños! */",
+      "size": 45467,
+      "byte_delta": 378
+    },
+    {
+      "revid": 62236775,
+      "parentid": 60108182,
+      "timestamp": "2012-12-16T01:10:29Z",
+      "user": "KLBot2",
+      "comment": "Bot: Migración a la extensión Babel",
+      "size": 47089,
+      "byte_delta": 1622
+    },
+    {
+      "revid": 62332942,
+      "parentid": 62236775,
+      "timestamp": "2012-12-19T21:36:01Z",
+      "user": "Niplos",
+      "comment": "Nueva sección: /* Feliz Navidad */",
+      "size": 47303,
+      "byte_delta": 214
+    },
+    {
+      "revid": 63783033,
+      "parentid": 62332942,
+      "timestamp": "2013-02-13T17:05:40Z",
+      "user": "Quinto Bruto Flaco",
+      "comment": "",
+      "size": 49171,
+      "byte_delta": 1868
+    },
+    {
+      "revid": 64299160,
+      "parentid": 63783033,
+      "timestamp": "2013-03-04T04:15:31Z",
+      "user": "Maleiva",
+      "comment": "Nueva sección: /* ¡Feliz wikicumpleaños! */",
+      "size": 49457,
+      "byte_delta": 286
+    },
+    {
+      "revid": 64310511,
+      "parentid": 64299160,
+      "timestamp": "2013-03-04T17:37:10Z",
+      "user": "MadonnaFan",
+      "comment": "+1",
+      "size": 49759,
+      "byte_delta": 302
+    },
+    {
+      "revid": 65542220,
+      "parentid": 64310511,
+      "timestamp": "2013-03-23T00:26:27Z",
+      "user": "BetoCG",
+      "comment": "Nueva sección: /* Retiro de flags… */",
+      "size": 50180,
+      "byte_delta": 421
+    },
+    {
+      "revid": 66512697,
+      "parentid": 65542220,
+      "timestamp": "2013-04-27T17:28:02Z",
+      "user": "Geógrafo23",
+      "comment": "Nueva sección: /* PR:IS */",
+      "size": 50627,
+      "byte_delta": 447
+    },
+    {
+      "revid": 66646099,
+      "parentid": 66512697,
+      "timestamp": "2013-05-03T20:32:42Z",
+      "user": "BetoCG",
+      "comment": "[[WP:PRO|spam interno]]",
+      "size": 50180,
+      "byte_delta": -447
+    },
+    {
+      "revid": 69160090,
+      "parentid": 66646099,
+      "timestamp": "2013-08-22T02:49:35Z",
+      "user": "Nerêo",
+      "comment": "Cambio de firma",
+      "size": 50180,
+      "byte_delta": 0
+    },
+    {
+      "revid": 70424079,
+      "parentid": 69160090,
+      "timestamp": "2013-10-26T12:27:36Z",
+      "user": "Paintman",
+      "comment": "Nueva sección: /* Saludos */",
+      "size": 50389,
+      "byte_delta": 209
+    },
+    {
+      "revid": 75520768,
+      "parentid": 70424079,
+      "timestamp": "2014-07-11T04:47:58Z",
+      "user": "Incolam",
+      "comment": "Sección nueva: /* Invitación */",
+      "size": 51168,
+      "byte_delta": 779
+    },
+    {
+      "revid": 76415700,
+      "parentid": 75520768,
+      "timestamp": "2014-08-17T15:23:52Z",
+      "user": "Metrónomo",
+      "comment": "",
+      "size": 51920,
+      "byte_delta": 752
+    },
+    {
+      "revid": 80380742,
+      "parentid": 76415700,
+      "timestamp": "2015-03-04T00:52:24Z",
+      "user": "Waka Waka",
+      "comment": "Sección nueva: /* ¡Feliz wikicumple! */",
+      "size": 52116,
+      "byte_delta": 196
+    },
+    {
+      "revid": 80877832,
+      "parentid": 80380742,
+      "timestamp": "2015-03-19T15:54:48Z",
+      "user": "Lourdes Cardenal",
+      "comment": "",
+      "size": 53950,
+      "byte_delta": 1834
+    },
+    {
+      "revid": 85597853,
+      "parentid": 80877832,
+      "timestamp": "2015-10-05T17:19:00Z",
+      "user": "Yturre",
+      "comment": "Sección nueva: /* ¿Birmania o Myanmar? */",
+      "size": 54451,
+      "byte_delta": 501
+    },
+    {
+      "revid": 87709642,
+      "parentid": 85597853,
+      "timestamp": "2015-12-11T00:28:40Z",
+      "user": "Fadesga",
+      "comment": "Sección nueva: /* Propuesta de Wikiproyecto Coleccionismo */",
+      "size": 54785,
+      "byte_delta": 334
+    },
+    {
+      "revid": 87977382,
+      "parentid": 87709642,
+      "timestamp": "2015-12-23T17:46:27Z",
+      "user": "Jrodriguezvillalobos",
+      "comment": "/* Propuesta de Wikiproyecto Coleccionismo */",
+      "size": 56754,
+      "byte_delta": 1969
+    },
+    {
+      "revid": 88423604,
+      "parentid": 87977382,
+      "timestamp": "2016-01-13T19:05:49Z",
+      "user": "Jarould",
+      "comment": "",
+      "size": 57469,
+      "byte_delta": 715
+    },
+    {
+      "revid": 89596836,
+      "parentid": 88423604,
+      "timestamp": "2016-03-04T18:29:57Z",
+      "user": "Aidalova",
+      "comment": "",
+      "size": 57718,
+      "byte_delta": 249
+    },
+    {
+      "revid": 90581784,
+      "parentid": 89596836,
+      "timestamp": "2016-04-20T02:20:31Z",
+      "user": "HAMM",
+      "comment": "Sección nueva: /* Pregunta */",
+      "size": 58304,
+      "byte_delta": 586
+    },
+    {
+      "revid": 96588586,
+      "parentid": 90581784,
+      "timestamp": "2017-02-01T02:16:08Z",
+      "user": "Juan25",
+      "comment": "Sección nueva: /* Apuesta */",
+      "size": 58716,
+      "byte_delta": 412
+    },
+    {
+      "revid": 96863215,
+      "parentid": 96588586,
+      "timestamp": "2017-02-12T17:27:14Z",
+      "user": "Shalbat",
+      "comment": "Frente Islámico para la Jihad Armada",
+      "size": 59009,
+      "byte_delta": 293
+    },
+    {
+      "revid": 102241098,
+      "parentid": 96863215,
+      "timestamp": "2017-09-30T00:06:01Z",
+      "user": "Genoskill",
+      "comment": "",
+      "size": 59720,
+      "byte_delta": 711
+    },
+    {
+      "revid": 104803973,
+      "parentid": 102241098,
+      "timestamp": "2018-01-09T23:23:56Z",
+      "user": "181.176.79.81",
+      "comment": "/* Se ha abierto una consulta de borrado para «Sexualidad» */",
+      "size": 60377,
+      "byte_delta": 657
+    },
+    {
+      "revid": 104803985,
+      "parentid": 104803973,
+      "timestamp": "2018-01-09T23:24:35Z",
+      "user": "UA31",
+      "comment": "Revertidos los cambios de [[Special:Contributions/181.176.79.81|181.176.79.81]] ([[User talk:181.176.79.81|disc.]]) a la última edición de Genoskill",
+      "size": 59720,
+      "byte_delta": -657
+    },
+    {
+      "revid": 104832104,
+      "parentid": 104803985,
+      "timestamp": "2018-01-11T03:08:36Z",
+      "user": "MediaWiki message delivery",
+      "comment": "Sección nueva: /* Te necesitamos en el OTRS */",
+      "size": 59986,
+      "byte_delta": 266
+    },
+    {
+      "revid": 108126273,
+      "parentid": 104832104,
+      "timestamp": "2018-05-25T22:10:41Z",
+      "user": "Semibot",
+      "comment": "Bot: [[Especial:Errores_de_sintaxis/tidy-font-bug]]",
+      "size": 60063,
+      "byte_delta": 77
+    },
+    {
+      "revid": 108304250,
+      "parentid": 108126273,
+      "timestamp": "2018-05-31T15:24:11Z",
+      "user": "BOT-Superzerocool",
+      "comment": "FixTidy: Etiquetas desparejadas",
+      "size": 60058,
+      "byte_delta": -5
+    },
+    {
+      "revid": 108454637,
+      "parentid": 108304250,
+      "timestamp": "2018-06-04T19:23:35Z",
+      "user": "BOT-Superzerocool",
+      "comment": "FixTidy: Etiquetas desparejadas",
+      "size": 60033,
+      "byte_delta": -25
+    },
+    {
+      "revid": 118820874,
+      "parentid": 108454637,
+      "timestamp": "2019-09-01T22:24:06Z",
+      "user": "Magical Blas",
+      "comment": "",
+      "size": 60899,
+      "byte_delta": 866
+    },
+    {
+      "revid": 119177358,
+      "parentid": 118820874,
+      "timestamp": "2019-09-11T01:20:33Z",
+      "user": "Gaijin",
+      "comment": "Sección nueva: /* Imagen en citocinesis */",
+      "size": 61409,
+      "byte_delta": 510
+    },
+    {
+      "revid": 123918757,
+      "parentid": 119177358,
+      "timestamp": "2020-02-29T21:42:26Z",
+      "user": "StrillerFernce1975",
+      "comment": "/* ¡Un gatito para ti! */ nuevo mensaje de WikiAprecio",
+      "size": 61644,
+      "byte_delta": 235
+    },
+    {
+      "revid": 133230034,
+      "parentid": 123918757,
+      "timestamp": "2021-02-15T01:08:18Z",
+      "user": "Pho3niX",
+      "comment": "",
+      "size": 62529,
+      "byte_delta": 885
+    },
+    {
+      "revid": 133702208,
+      "parentid": 133230034,
+      "timestamp": "2021-03-04T06:00:31Z",
+      "user": "Maleiva",
+      "comment": "Sección nueva: /* ¡Feliz wiki cumpleaños! */",
+      "size": 62806,
+      "byte_delta": 277
+    },
+    {
+      "revid": 135028814,
+      "parentid": 133702208,
+      "timestamp": "2021-04-24T18:36:08Z",
+      "user": "Dodecaedro",
+      "comment": "",
+      "size": 63658,
+      "byte_delta": 852
+    },
+    {
+      "revid": 149657609,
+      "parentid": 135028814,
+      "timestamp": "2023-03-04T00:52:52Z",
+      "user": "Dudb234",
+      "comment": "Sección nueva: /* ¡Feliz wikicumpleaños! */",
+      "size": 63834,
+      "byte_delta": 176
+    },
+    {
+      "revid": 149657616,
+      "parentid": 149657609,
+      "timestamp": "2023-03-04T00:53:31Z",
+      "user": "Dudb234",
+      "comment": "/* ¡Feliz wikicumpleaños! */",
+      "size": 63834,
+      "byte_delta": 0
+    },
+    {
+      "revid": 158593451,
+      "parentid": 149657616,
+      "timestamp": "2024-03-04T03:15:47Z",
+      "user": "Meruleh",
+      "comment": "Sección nueva: /* ¡Feliz wiki cumpleaños! */",
+      "size": 64501,
+      "byte_delta": 667
+    },
+    {
+      "revid": 160638238,
+      "parentid": 158593451,
+      "timestamp": "2024-06-09T05:03:14Z",
+      "user": "InaDinaD",
+      "comment": "Sección nueva: /* Problema de la inducción */",
+      "size": 65801,
+      "byte_delta": 1300
+    },
+    {
+      "revid": 162225253,
+      "parentid": 160638238,
+      "timestamp": "2024-09-02T15:55:59Z",
+      "user": "Mister Jijas",
+      "comment": "Sección nueva: /* Referencias en «Dymaxion» */",
+      "size": 67931,
+      "byte_delta": 2130
+    },
+    {
+      "revid": 163987838,
+      "parentid": 162225253,
+      "timestamp": "2024-12-07T11:45:31Z",
+      "user": "Ivanmarribas",
+      "comment": "Sección nueva: /* Falta de referencias en «Subjetividad de la utilidad esperada» */",
+      "size": 68422,
+      "byte_delta": 491
+    },
+    {
+      "revid": 168486502,
+      "parentid": 163987838,
+      "timestamp": "2025-07-16T02:17:53Z",
+      "user": "",
+      "comment": "",
+      "size": 68603,
+      "byte_delta": 181
+    },
+    {
+      "revid": 168486531,
+      "parentid": 168486502,
+      "timestamp": "2025-07-16T02:19:50Z",
+      "user": "Banfield",
+      "comment": "Revertida una edición de [[Special:Contributions/Guillermo Rodriguez Lara|Guillermo Rodriguez Lara]] ([[User talk:Guillermo Rodriguez Lara|disc.]]) a la última edición de Ivanmarribas",
+      "size": 68422,
+      "byte_delta": -181
+    },
+    {
+      "revid": 170670806,
+      "parentid": 168486531,
+      "timestamp": "2025-11-26T06:16:42Z",
+      "user": "CarlosEduardoPA",
+      "comment": "Aviso al usuario del posible borrado de [[Distrito de San Sebastián (Cusco)]] mediante [[WP:Twinkle Lite|Twinkle Lite]]",
+      "size": 70081,
+      "byte_delta": 1659
+    },
+    {
+      "revid": 170670834,
+      "parentid": 170670806,
+      "timestamp": "2025-11-26T06:20:07Z",
+      "user": "CarlosEduardoPA",
+      "comment": "Aviso al usuario del posible borrado de [[Iglesias del Cusco]] mediante [[WP:Twinkle Lite|Twinkle Lite]]",
+      "size": 71708,
+      "byte_delta": 1627
+    },
+    {
+      "revid": 173536182,
+      "parentid": 170670834,
+      "timestamp": "2026-05-19T16:21:10Z",
+      "user": "Nicooodev",
+      "comment": "Aviso al usuario del posible borrado de [[Wikipedia:Tablón de anuncios de los bibliotecarios/Portal/Archivo/Solicitudes de restauración/Actual]] mediante [[WP:Twinkle Lite|Twinkle Lite]]",
+      "size": 72629,
+      "byte_delta": 921
+    },
+    {
+      "revid": 173536202,
+      "parentid": 173536182,
+      "timestamp": "2026-05-19T16:23:01Z",
+      "user": "Aleposta",
+      "comment": "Revertida una edición de [[Special:Contributions/Nicooodev|Nicooodev]] ([[User talk:Nicooodev|disc.]]) a la última edición de CarlosEduardoPA",
+      "size": 71708,
+      "byte_delta": -921
+    }
+  ]
+}

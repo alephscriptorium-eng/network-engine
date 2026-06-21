@@ -1,0 +1,128 @@
+{
+  "description": "Semillas ontológicas extraídas del historial SolveCoagula",
+  "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza",
+  "sections": [
+    {
+      "section": "60px| Archivo de comentarios",
+      "edit_count": 5,
+      "sample_oldids": [
+        12542080,
+        12542076,
+        11890921,
+        11890912,
+        11739160
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#60px|_Archivo_de_comentarios"
+    },
+    {
+      "section": "Confirmado",
+      "edit_count": 3,
+      "sample_oldids": [
+        11844465,
+        11843254,
+        11821588
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Confirmado"
+    },
+    {
+      "section": "Vandalismo en Pseudociencia",
+      "edit_count": 2,
+      "sample_oldids": [
+        12720477,
+        12720101
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Vandalismo_en_Pseudociencia"
+    },
+    {
+      "section": "RE: Bosque tropical del Pacífico",
+      "edit_count": 2,
+      "sample_oldids": [
+        12618521,
+        12576087
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#RE:_Bosque_tropical_del_Pacífico"
+    },
+    {
+      "section": "Sin título",
+      "edit_count": 2,
+      "sample_oldids": [
+        11855283,
+        11843319
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Sin_título"
+    },
+    {
+      "section": "Colores",
+      "edit_count": 2,
+      "sample_oldids": [
+        11820962,
+        11776383
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Colores"
+    },
+    {
+      "section": "subst:",
+      "edit_count": 1,
+      "sample_oldids": [
+        12888441
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#subst:"
+    },
+    {
+      "section": "Guerra de ediciones",
+      "edit_count": 1,
+      "sample_oldids": [
+        12806744
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Guerra_de_ediciones"
+    },
+    {
+      "section": "Re: Agua Bella",
+      "edit_count": 1,
+      "sample_oldids": [
+        12554370
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Re:_Agua_Bella"
+    },
+    {
+      "section": "Plantilla",
+      "edit_count": 1,
+      "sample_oldids": [
+        12541507
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Plantilla"
+    },
+    {
+      "section": "Categoría de esbozo",
+      "edit_count": 1,
+      "sample_oldids": [
+        12350330
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Categoría_de_esbozo"
+    },
+    {
+      "section": "60px|Comentarios de {{CURRENTMONTHNAME}} de {{CURRENTYEAR}}",
+      "edit_count": 1,
+      "sample_oldids": [
+        11890524
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#60px|Comentarios_de_{{CURRENTMONTHNAME}}_de_{{CURRENTYEAR}}"
+    },
+    {
+      "section": "Teorias distintas a la verdad oficialen el 911",
+      "edit_count": 1,
+      "sample_oldids": [
+        11809277
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza#Teorias_distintas_a_la_verdad_oficialen_el_911"
+    }
+  ],
+  "viaje_sugerido": [
+    "snapshots/inicial → registro traducción",
+    "sección ¿Ciencia normal, paranormal o pseudociencias?",
+    "Feyerabend y autonomía",
+    "Kuhn y paradigma",
+    "Véase también → artículos enlazados",
+    "snapshots/final"
+  ]
+}

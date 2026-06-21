@@ -1,0 +1,90 @@
+{
+  "description": "Semillas ontológicas extraídas del historial SolveCoagula",
+  "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula",
+  "sections": [
+    {
+      "section": "Bloqueo",
+      "edit_count": 6,
+      "sample_oldids": [
+        12911274,
+        12835826,
+        12792536,
+        12786168,
+        12784014
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Bloqueo"
+    },
+    {
+      "section": "Guerra de ediciones",
+      "edit_count": 5,
+      "sample_oldids": [
+        12765399,
+        12756249,
+        12737478,
+        12736728,
+        12721439
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Guerra_de_ediciones"
+    },
+    {
+      "section": "Reversiones",
+      "edit_count": 2,
+      "sample_oldids": [
+        12912735,
+        12911445
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Reversiones"
+    },
+    {
+      "section": "Hola, SolveCoagula",
+      "edit_count": 2,
+      "sample_oldids": [
+        12765952,
+        12764925
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Hola,_SolveCoagula"
+    },
+    {
+      "section": "Criterio de demarcación",
+      "edit_count": 2,
+      "sample_oldids": [
+        12745188,
+        12087694
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Criterio_de_demarcación"
+    },
+    {
+      "section": "Pseudociencia",
+      "edit_count": 2,
+      "sample_oldids": [
+        12720441,
+        12720326
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Pseudociencia"
+    },
+    {
+      "section": "Destacado",
+      "edit_count": 1,
+      "sample_oldids": [
+        12745213
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#Destacado"
+    },
+    {
+      "section": "respuesta en pseudociencia",
+      "edit_count": 1,
+      "sample_oldids": [
+        12474528
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula#respuesta_en_pseudociencia"
+    }
+  ],
+  "viaje_sugerido": [
+    "snapshots/inicial → registro traducción",
+    "sección ¿Ciencia normal, paranormal o pseudociencias?",
+    "Feyerabend y autonomía",
+    "Kuhn y paradigma",
+    "Véase también → artículos enlazados",
+    "snapshots/final"
+  ]
+}

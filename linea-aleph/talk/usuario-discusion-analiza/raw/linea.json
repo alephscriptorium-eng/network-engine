@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "title": "Usuario discusión:Analiza",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 3,
+    "linked_article": null,
+    "generated_at": "2026-06-21T00:44:08Z",
+    "corpus_dir": "talk/usuario-discusion-analiza",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    },
+    "revision_count": 46,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "revisiones": [
+    {
+      "revid": 11719710,
+      "parentid": 11655835,
+      "timestamp": "2007-10-01T01:52:05Z",
+      "user": "Cobalttempest",
+      "comment": "Revertidos los cambios de [[User:Pasandolobomba|Pasandolobomba]] a la última edición de [[User:Fortykillers|Fortykillers]] con [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]] (Spam (ya se le avisó))",
+      "size": 25361,
+      "byte_delta": -247
+    },
+    {
+      "revid": 11739160,
+      "parentid": 11719710,
+      "timestamp": "2007-10-01T20:03:16Z",
+      "user": "Analiza",
+      "comment": "/* 60px| Archivo de comentarios */",
+      "size": 25364,
+      "byte_delta": 3
+    },
+    {
+      "revid": 11740268,
+      "parentid": 11739160,
+      "timestamp": "2007-10-01T20:48:37Z",
+      "user": "Tomatejc",
+      "comment": "Nueva sección: /* Colores */",
+      "size": 25792,
+      "byte_delta": 428
+    },
+    {
+      "revid": 11776383,
+      "parentid": 11740268,
+      "timestamp": "2007-10-03T07:29:49Z",
+      "user": "Tomatejc",
+      "comment": "/* Colores */",
+      "size": 26093,
+      "byte_delta": 301
+    },
+    {
+      "revid": 11809277,
+      "parentid": 11776383,
+      "timestamp": "2007-10-04T14:40:59Z",
+      "user": "Analiza",
+      "comment": "/* Teorias distintas a la verdad oficialen el 911 */",
+      "size": 25907,
+      "byte_delta": -186
+    },
+    {
+      "revid": 11809305,
+      "parentid": 11809277,
+      "timestamp": "2007-10-04T14:42:16Z",
+      "user": "Analiza",
+      "comment": "No quiero trolls",
+      "size": 12278,
+      "byte_delta": -13629
+    },
+    {
+      "revid": 11820962,
+      "parentid": 11809305,
+      "timestamp": "2007-10-04T22:08:16Z",
+      "user": "Cansado",
+      "comment": "/* Colores */",
+      "size": 12466,
+      "byte_delta": 188
+    },
+    {
+      "revid": 11821588,
+      "parentid": 11820962,
+      "timestamp": "2007-10-04T22:28:56Z",
+      "user": "Cansado",
+      "comment": "/* Confirmado */ glup",
+      "size": 12466,
+      "byte_delta": 0
+    },
+    {
+      "revid": 11842884,
+      "parentid": 11821588,
+      "timestamp": "2007-10-05T19:42:52Z",
+      "user": "FViolat",
+      "comment": "",
+      "size": 13568,
+      "byte_delta": 1102
+    },
+    {
+      "revid": 11843254,
+      "parentid": 11842884,
+      "timestamp": "2007-10-05T19:56:16Z",
+      "user": "Analiza",
+      "comment": "/* Confirmado */",
+      "size": 13585,
+      "byte_delta": 17
+    },
+    {
+      "revid": 11843319,
+      "parentid": 11843254,
+      "timestamp": "2007-10-05T19:58:07Z",
+      "user": "Analiza",
+      "comment": "/* Sin título */ ,",
+      "size": 13767,
+      "byte_delta": 182
+    },
+    {
+      "revid": 11844465,
+      "parentid": 11843319,
+      "timestamp": "2007-10-05T20:39:08Z",
+      "user": "Cansado",
+      "comment": "/* Confirmado */",
+      "size": 14171,
+      "byte_delta": 404
+    },
+    {
+      "revid": 11855262,
+      "parentid": 11844465,
+      "timestamp": "2007-10-06T10:05:02Z",
+      "user": "FViolat",
+      "comment": "",
+      "size": 15870,
+      "byte_delta": 1699
+    },
+    {
+      "revid": 11855283,
+      "parentid": 11855262,
+      "timestamp": "2007-10-06T10:06:33Z",
+      "user": "FViolat",
+      "comment": "/* Sin título */",
+      "size": 15900,
+      "byte_delta": 30
+    },
+    {
+      "revid": 11890524,
+      "parentid": 11855283,
+      "timestamp": "2007-10-07T20:19:37Z",
+      "user": "Analiza",
+      "comment": "/* 60px|Comentarios de {{CURRENTMONTHNAME}} de {{CURRENTYEAR}} */",
+      "size": 5899,
+      "byte_delta": -10001
+    },
+    {
+      "revid": 11890912,
+      "parentid": 11890524,
+      "timestamp": "2007-10-07T20:33:28Z",
+      "user": "Analiza",
+      "comment": "/* 60px| Archivo de comentarios */",
+      "size": 5976,
+      "byte_delta": 77
+    },
+    {
+      "revid": 11890921,
+      "parentid": 11890912,
+      "timestamp": "2007-10-07T20:33:43Z",
+      "user": "Analiza",
+      "comment": "/* 60px| Archivo de comentarios */",
+      "size": 5980,
+      "byte_delta": 4
+    },
+    {
+      "revid": 11896424,
+      "parentid": 11890921,
+      "timestamp": "2007-10-08T00:46:39Z",
+      "user": "Loco085",
+      "comment": "Nueva sección: /* Carlos Fuentealba */",
+      "size": 6531,
+      "byte_delta": 551
+    },
+    {
+      "revid": 11913209,
+      "parentid": 11896424,
+      "timestamp": "2007-10-08T18:47:53Z",
+      "user": "FViolat",
+      "comment": "",
+      "size": 7661,
+      "byte_delta": 1130
+    },
+    {
+      "revid": 12069332,
+      "parentid": 11913209,
+      "timestamp": "2007-10-15T02:58:36Z",
+      "user": "Alberto Salguero",
+      "comment": "El Sol arranca la cola de un cometa",
+      "size": 8394,
+      "byte_delta": 733
+    },
+    {
+      "revid": 12184614,
+      "parentid": 12069332,
+      "timestamp": "2007-10-19T18:51:50Z",
+      "user": "Ratchet",
+      "comment": "Nueva sección: /* Encuesta */",
+      "size": 8733,
+      "byte_delta": 339
+    },
+    {
+      "revid": 12232621,
+      "parentid": 12184614,
+      "timestamp": "2007-10-21T20:58:30Z",
+      "user": "Analiza",
+      "comment": "",
+      "size": 9100,
+      "byte_delta": 367
+    },
+    {
+      "revid": 12273441,
+      "parentid": 12232621,
+      "timestamp": "2007-10-23T13:21:23Z",
+      "user": "Walking Mind",
+      "comment": "",
+      "size": 9653,
+      "byte_delta": 553
+    },
+    {
+      "revid": 12294248,
+      "parentid": 12273441,
+      "timestamp": "2007-10-24T04:00:38Z",
+      "user": "333",
+      "comment": "",
+      "size": 10407,
+      "byte_delta": 754
+    },
+    {
+      "revid": 12350330,
+      "parentid": 12294248,
+      "timestamp": "2007-10-26T12:40:19Z",
+      "user": "Diosa",
+      "comment": "/* Categoría de esbozo */",
+      "size": 10642,
+      "byte_delta": 235
+    },
+    {
+      "revid": 12497449,
+      "parentid": 12350330,
+      "timestamp": "2007-11-01T17:05:02Z",
+      "user": "Muro Bot",
+      "comment": "Bot: Cambiando firma, a petición de usuario",
+      "size": 10861,
+      "byte_delta": 219
+    },
+    {
+      "revid": 12530236,
+      "parentid": 12497449,
+      "timestamp": "2007-11-02T23:01:20Z",
+      "user": "Dodo",
+      "comment": "Nueva sección: /* Plantilla */",
+      "size": 11075,
+      "byte_delta": 214
+    },
+    {
+      "revid": 12541507,
+      "parentid": 12530236,
+      "timestamp": "2007-11-03T15:34:45Z",
+      "user": "Dodo",
+      "comment": "/* Plantilla */",
+      "size": 11275,
+      "byte_delta": 200
+    },
+    {
+      "revid": 12542056,
+      "parentid": 12541507,
+      "timestamp": "2007-11-03T15:59:31Z",
+      "user": "Analiza",
+      "comment": "",
+      "size": 2410,
+      "byte_delta": -8865
+    },
+    {
+      "revid": 12542076,
+      "parentid": 12542056,
+      "timestamp": "2007-11-03T16:00:36Z",
+      "user": "Analiza",
+      "comment": "/* 60px| Archivo de comentarios */",
+      "size": 2486,
+      "byte_delta": 76
+    },
+    {
+      "revid": 12542080,
+      "parentid": 12542076,
+      "timestamp": "2007-11-03T16:00:51Z",
+      "user": "Analiza",
+      "comment": "/* 60px| Archivo de comentarios */",
+      "size": 2485,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12542552,
+      "parentid": 12542080,
+      "timestamp": "2007-11-03T16:21:28Z",
+      "user": "Dark",
+      "comment": "Nueva sección: /* Mediación */",
+      "size": 2641,
+      "byte_delta": 156
+    },
+    {
+      "revid": 12553155,
+      "parentid": 12542552,
+      "timestamp": "2007-11-03T22:38:08Z",
+      "user": "Locutus Borg",
+      "comment": "Nueva sección: /* Re: Agua Bella */",
+      "size": 3249,
+      "byte_delta": 608
+    },
+    {
+      "revid": 12554370,
+      "parentid": 12553155,
+      "timestamp": "2007-11-03T23:21:32Z",
+      "user": "Locutus Borg",
+      "comment": "/* Re: Agua Bella */",
+      "size": 3427,
+      "byte_delta": 178
+    },
+    {
+      "revid": 12562383,
+      "parentid": 12554370,
+      "timestamp": "2007-11-04T09:41:14Z",
+      "user": "Gusgus",
+      "comment": "Wikiproyecto",
+      "size": 3764,
+      "byte_delta": 337
+    },
+    {
+      "revid": 12563197,
+      "parentid": 12562383,
+      "timestamp": "2007-11-04T11:17:56Z",
+      "user": "Pabloallo",
+      "comment": "Nueva sección: /* Plantilla WPTAYAN */",
+      "size": 4340,
+      "byte_delta": 576
+    },
+    {
+      "revid": 12576078,
+      "parentid": 12563197,
+      "timestamp": "2007-11-04T21:22:46Z",
+      "user": "Locutus Borg",
+      "comment": "Nueva sección: /* RE: Bosque tropical del Pacífico */",
+      "size": 4809,
+      "byte_delta": 469
+    },
+    {
+      "revid": 12576087,
+      "parentid": 12576078,
+      "timestamp": "2007-11-04T21:23:03Z",
+      "user": "Locutus Borg",
+      "comment": "/* RE: Bosque tropical del Pacífico */",
+      "size": 4812,
+      "byte_delta": 3
+    },
+    {
+      "revid": 12618521,
+      "parentid": 12576087,
+      "timestamp": "2007-11-06T16:40:38Z",
+      "user": "Locutus Borg",
+      "comment": "/* RE: Bosque tropical del Pacífico */",
+      "size": 5136,
+      "byte_delta": 324
+    },
+    {
+      "revid": 12719797,
+      "parentid": 12618521,
+      "timestamp": "2007-11-10T19:23:11Z",
+      "user": "SolveCoagula",
+      "comment": "Nueva sección: /* Vandalismo en Pseudociencia */",
+      "size": 5503,
+      "byte_delta": 367
+    },
+    {
+      "revid": 12720101,
+      "parentid": 12719797,
+      "timestamp": "2007-11-10T19:33:41Z",
+      "user": "SolveCoagula",
+      "comment": "/* Vandalismo en Pseudociencia */",
+      "size": 5623,
+      "byte_delta": 120
+    },
+    {
+      "revid": 12720477,
+      "parentid": 12720101,
+      "timestamp": "2007-11-10T19:49:42Z",
+      "user": "Retama",
+      "comment": "/* Vandalismo en Pseudociencia */",
+      "size": 6003,
+      "byte_delta": 380
+    },
+    {
+      "revid": 12741803,
+      "parentid": 12720477,
+      "timestamp": "2007-11-11T19:04:12Z",
+      "user": "Belgrano",
+      "comment": "",
+      "size": 6375,
+      "byte_delta": 372
+    },
+    {
+      "revid": 12806744,
+      "parentid": 12741803,
+      "timestamp": "2007-11-14T10:04:58Z",
+      "user": "Fernando Estel",
+      "comment": "/* Guerra de ediciones */",
+      "size": 7765,
+      "byte_delta": 1390
+    },
+    {
+      "revid": 12885172,
+      "parentid": 12806744,
+      "timestamp": "2007-11-17T19:22:50Z",
+      "user": "Sanbec",
+      "comment": "Nueva sección: /* subst: */",
+      "size": 8021,
+      "byte_delta": 256
+    },
+    {
+      "revid": 12888441,
+      "parentid": 12885172,
+      "timestamp": "2007-11-17T21:56:05Z",
+      "user": "Sanbec",
+      "comment": "/* subst: */",
+      "size": 8162,
+      "byte_delta": 141
+    }
+  ]
+}

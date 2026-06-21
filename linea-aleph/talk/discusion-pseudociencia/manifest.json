@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "corpus": "talk",
+    "corpus_id": "linea-talk-discusion-pseudociencia",
+    "title": "Discusión:Pseudociencia",
+    "namespace": 1,
+    "linked_article": "Pseudociencia",
+    "source": "raw/linea.md",
+    "generated_at": "2026-06-21T01:20:00Z",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    },
+    "registro_count": 0,
+    "ordering": "newest_first_in_linea_md",
+    "vacío_explícito": true
+  },
+  "registros": []
+}

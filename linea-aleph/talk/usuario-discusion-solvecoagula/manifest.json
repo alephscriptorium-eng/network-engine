@@ -1,0 +1,3539 @@
+{
+  "meta": {
+    "corpus": "talk",
+    "title": "Usuario discusión:SolveCoagula (historial WP es)",
+    "source": "raw/linea.md",
+    "generated_at": "2026-06-21T00:44:11Z",
+    "preamble": {
+      "lines": [
+        1,
+        7
+      ],
+      "text": "# Usuario discusión:SolveCoagula — historial talk (es.wikipedia)\n# generado: 2026-06-21T00:44:10Z · registros en ventana oct–nov 2007: 34\nPágina: [Usuario discusión:SolveCoagula](https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula)\nNamespace: **3** · corpus: **talk**"
+    },
+    "registro_count": 34,
+    "ordering": "newest_first_in_linea_md",
+    "snapshots": {
+      "previo": {
+        "role": "previo",
+        "registro_id": null,
+        "oldid": 0,
+        "timestamp": "28 sep 2007",
+        "user": "Dhidalgo",
+        "path": "snapshots/previo"
+      },
+      "final": {
+        "role": "final",
+        "registro_id": "r0001",
+        "oldid": 12912735,
+        "timestamp": "20:52 18 nov 2007",
+        "path": "snapshots/final"
+      },
+      "inicial": {
+        "role": "inicial",
+        "registro_id": "r0034",
+        "oldid": 11958157,
+        "timestamp": "14:34 10 oct 2007",
+        "summary": "Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada, por cierto, recuerda firmar los mensajes a otros Wikipedistas añadiendo <nowiki>~~~~</nowiki>. Saludos y bienven...",
+        "path": "snapshots/inicial"
+      },
+      "sc_cierre": {
+        "role": "sc_cierre",
+        "oldid": 12912735,
+        "path": "snapshots/sc_cierre"
+      },
+      "actual": {
+        "role": "actual",
+        "oldid": null,
+        "path": "snapshots/actual"
+      }
+    },
+    "ontology_sections": [
+      [
+        "Bloqueo",
+        6
+      ],
+      [
+        "Guerra de ediciones",
+        5
+      ],
+      [
+        "Reversiones",
+        2
+      ],
+      [
+        "Hola, SolveCoagula",
+        2
+      ],
+      [
+        "Criterio de demarcación",
+        2
+      ],
+      [
+        "Pseudociencia",
+        2
+      ],
+      [
+        "Destacado",
+        1
+      ],
+      [
+        "respuesta en pseudociencia",
+        1
+      ]
+    ],
+    "milestones": [
+      "r0003",
+      "r0005",
+      "r0012",
+      "r0013",
+      "r0014",
+      "r0015",
+      "r0017",
+      "r0018",
+      "r0022",
+      "r0023",
+      "r0027",
+      "r0028",
+      "r0029",
+      "r0030",
+      "r0031",
+      "r0033",
+      "r0034"
+    ],
+    "namespace": 3,
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    }
+  },
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-12912735-reversiones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 8
+      },
+      "oldid": 12912735,
+      "parent_oldid": 12911445,
+      "timestamp": "20:52 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25338,
+      "byte_delta": 82,
+      "section": "Reversiones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12912735",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12912735&oldid=12911445",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-18T20:52:07Z",
+      "article_refs": [
+        {
+          "oldid": 12910974,
+          "title": "Pseudociencia",
+          "delta_hours": 1.0
+        },
+        {
+          "oldid": 12910943,
+          "title": "Pseudociencia",
+          "delta_hours": 1.0
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "delta_hours": 2.0
+        },
+        {
+          "oldid": 12893554,
+          "title": "Pseudociencia",
+          "delta_hours": 19.2
+        },
+        {
+          "oldid": 12893497,
+          "title": "Pseudociencia",
+          "delta_hours": 19.3
+        },
+        {
+          "oldid": 12893402,
+          "title": "Pseudociencia",
+          "delta_hours": 19.3
+        },
+        {
+          "oldid": 12889502,
+          "title": "Pseudociencia",
+          "delta_hours": 22.0
+        },
+        {
+          "oldid": 12889424,
+          "title": "Pseudociencia",
+          "delta_hours": 22.1
+        },
+        {
+          "oldid": 12889366,
+          "title": "Pseudociencia",
+          "delta_hours": 22.1
+        }
+      ]
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-12911445-reversiones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 9
+      },
+      "oldid": 12911445,
+      "parent_oldid": 12911274,
+      "timestamp": "20:08 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25256,
+      "byte_delta": 174,
+      "section": "Reversiones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12911445",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12911445&oldid=12911274",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-18T20:08:12Z",
+      "article_refs": [
+        {
+          "oldid": 12910974,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12910943,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "delta_hours": 1.2
+        },
+        {
+          "oldid": 12893554,
+          "title": "Pseudociencia",
+          "delta_hours": 18.5
+        },
+        {
+          "oldid": 12893497,
+          "title": "Pseudociencia",
+          "delta_hours": 18.5
+        },
+        {
+          "oldid": 12893402,
+          "title": "Pseudociencia",
+          "delta_hours": 18.6
+        },
+        {
+          "oldid": 12889502,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        },
+        {
+          "oldid": 12889424,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        },
+        {
+          "oldid": 12889366,
+          "title": "Pseudociencia",
+          "delta_hours": 21.4
+        }
+      ]
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-12911274-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 12911274,
+      "parent_oldid": 12835826,
+      "timestamp": "20:04 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25082,
+      "byte_delta": 798,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12911274",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12911274&oldid=12835826",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_798"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-18T20:04:20Z",
+      "article_refs": [
+        {
+          "oldid": 12910974,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12910943,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "delta_hours": 1.2
+        },
+        {
+          "oldid": 12893554,
+          "title": "Pseudociencia",
+          "delta_hours": 18.4
+        },
+        {
+          "oldid": 12893497,
+          "title": "Pseudociencia",
+          "delta_hours": 18.5
+        },
+        {
+          "oldid": 12893402,
+          "title": "Pseudociencia",
+          "delta_hours": 18.5
+        },
+        {
+          "oldid": 12889502,
+          "title": "Pseudociencia",
+          "delta_hours": 21.2
+        },
+        {
+          "oldid": 12889424,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        },
+        {
+          "oldid": 12889366,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        }
+      ]
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-12835826-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 12835826,
+      "parent_oldid": 12792536,
+      "timestamp": "15:20 15 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 24284,
+      "byte_delta": 125,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12835826",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12835826&oldid=12792536",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-15T15:20:07Z",
+      "article_refs": [
+        {
+          "oldid": 12835889,
+          "title": "Pseudociencia",
+          "delta_hours": 0.0
+        },
+        {
+          "oldid": 12837067,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12837941,
+          "title": "Pseudociencia",
+          "delta_hours": 1.5
+        },
+        {
+          "oldid": 12838165,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12838109,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12829279,
+          "title": "Pseudociencia",
+          "delta_hours": 9.7
+        },
+        {
+          "oldid": 12829261,
+          "title": "Pseudociencia",
+          "delta_hours": 9.8
+        },
+        {
+          "oldid": 12850194,
+          "title": "Pseudociencia",
+          "delta_hours": 10.2
+        },
+        {
+          "oldid": 12850129,
+          "title": "Pseudociencia",
+          "delta_hours": 10.2
+        },
+        {
+          "oldid": 12850390,
+          "title": "Pseudociencia",
+          "delta_hours": 10.4
+        },
+        {
+          "oldid": 12850556,
+          "title": "Pseudociencia",
+          "delta_hours": 10.6
+        },
+        {
+          "oldid": 12850517,
+          "title": "Pseudociencia",
+          "delta_hours": 10.6
+        },
+        {
+          "oldid": 12828682,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12827831,
+          "title": "Pseudociencia",
+          "delta_hours": 12.2
+        },
+        {
+          "oldid": 12827486,
+          "title": "Pseudociencia",
+          "delta_hours": 12.5
+        },
+        {
+          "oldid": 12827393,
+          "title": "Pseudociencia",
+          "delta_hours": 12.6
+        },
+        {
+          "oldid": 12853381,
+          "title": "Pseudociencia",
+          "delta_hours": 16.8
+        },
+        {
+          "oldid": 12821003,
+          "title": "Pseudociencia",
+          "delta_hours": 17.6
+        },
+        {
+          "oldid": 12853863,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12853968,
+          "title": "Pseudociencia",
+          "delta_hours": 17.8
+        },
+        {
+          "oldid": 12854234,
+          "title": "Pseudociencia",
+          "delta_hours": 18.2
+        }
+      ]
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-12792536-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 12792536,
+      "parent_oldid": 12786168,
+      "timestamp": "19:34 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 24159,
+      "byte_delta": 502,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12792536",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12792536&oldid=12786168",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_502"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T19:34:33Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 3.4
+        }
+      ]
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-12786168-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 12786168,
+      "parent_oldid": 12784014,
+      "timestamp": "15:33 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23657,
+      "byte_delta": 14,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12786168",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12786168&oldid=12784014",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T15:33:23Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 7.4
+        }
+      ]
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-12784014-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 12784014,
+      "parent_oldid": 12783992,
+      "timestamp": "13:34 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23643,
+      "byte_delta": 103,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12784014",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12784014&oldid=12783992",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:34:32Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.4
+        }
+      ]
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-12783992-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 12783992,
+      "parent_oldid": 12783918,
+      "timestamp": "13:33 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23540,
+      "byte_delta": 68,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783992",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783992&oldid=12783918",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:33:20Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.4
+        }
+      ]
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-12783918",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 12783918,
+      "parent_oldid": 12783898,
+      "timestamp": "13:28 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23472,
+      "byte_delta": 34,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783918",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783918&oldid=12783898",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:28:51Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.5
+        }
+      ]
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-12783898",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 12783898,
+      "parent_oldid": 12783885,
+      "timestamp": "13:27 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23438,
+      "byte_delta": 14,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783898",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783898&oldid=12783885",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:27:20Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.5
+        }
+      ]
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-12783885",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 12783885,
+      "parent_oldid": 12783855,
+      "timestamp": "13:26 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23424,
+      "byte_delta": 39,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783885",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783885&oldid=12783855",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:26:46Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.5
+        }
+      ]
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-12783855",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 12783855,
+      "parent_oldid": 12765952,
+      "timestamp": "13:25 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23385,
+      "byte_delta": 2496,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783855",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783855&oldid=12765952",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2496"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-13T13:25:11Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 9.5
+        }
+      ]
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-12765952-hola-solvecoagula",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 12765952,
+      "parent_oldid": 12765399,
+      "timestamp": "19:05 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 20889,
+      "byte_delta": 536,
+      "section": "Hola, SolveCoagula",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12765952",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12765952&oldid=12765399",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_536"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T19:05:41Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 21.9
+        }
+      ]
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-12765399-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 12765399,
+      "parent_oldid": 12764925,
+      "timestamp": "18:46 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 20353,
+      "byte_delta": 1791,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12765399",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12765399&oldid=12764925",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1791"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T18:46:48Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 21.6
+        }
+      ]
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-12764925-hola-solvecoagula",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 12764925,
+      "parent_oldid": 12757767,
+      "timestamp": "18:31 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 18562,
+      "byte_delta": 595,
+      "section": "Hola, SolveCoagula",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12764925",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12764925&oldid=12757767",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_595"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T18:31:21Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 21.4
+        }
+      ]
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-12757767",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 12757767,
+      "parent_oldid": 12756249,
+      "timestamp": "13:08 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 17967,
+      "byte_delta": 497,
+      "section": null,
+      "summary": "Nueva sección: /* Hola, SolveCoagula */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12757767",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12757767&oldid=12756249",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T13:08:35Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 16.0
+        }
+      ]
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-12756249-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 12756249,
+      "parent_oldid": 12756192,
+      "timestamp": "11:23 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 17470,
+      "byte_delta": 2511,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12756249",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12756249&oldid=12756192",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2511"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T11:23:35Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        }
+      ]
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-12756192",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 12756192,
+      "parent_oldid": 12745213,
+      "timestamp": "11:17 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 14959,
+      "byte_delta": 1343,
+      "section": null,
+      "summary": "Nueva sección: /* Largos */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12756192",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12756192&oldid=12745213",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1343"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-12T11:17:09Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 14.1
+        }
+      ]
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-12745213-destacado",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 12745213,
+      "parent_oldid": 12745207,
+      "timestamp": "21:08 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13616,
+      "byte_delta": 0,
+      "section": "Destacado",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745213",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745213&oldid=12745207",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T21:08:05Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 0.0
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 10.8
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 11.3
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 17.6
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        }
+      ]
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-12745207",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 12745207,
+      "parent_oldid": 12745188,
+      "timestamp": "21:07 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13616,
+      "byte_delta": 181,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745207",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745207&oldid=12745188",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T21:07:43Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 0.0
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 10.8
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 11.2
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 17.6
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        }
+      ]
+    },
+    {
+      "id": "r0021",
+      "slug": "r0021-oldid-12745188-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 28
+      },
+      "oldid": 12745188,
+      "parent_oldid": 12737478,
+      "timestamp": "21:06 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13435,
+      "byte_delta": 135,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745188",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745188&oldid=12737478",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T21:06:09Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 10.6
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 10.8
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 11.2
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 17.6
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        }
+      ]
+    },
+    {
+      "id": "r0022",
+      "slug": "r0022-oldid-12737478-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 29
+      },
+      "oldid": 12737478,
+      "parent_oldid": 12736728,
+      "timestamp": "15:56 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13300,
+      "byte_delta": 916,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12737478",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12737478&oldid=12736728",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_916"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T15:56:07Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 5.2
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 5.5
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 5.5
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 5.5
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 5.6
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 5.7
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 6.1
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 12.4
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 12.5
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 12.5
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 19.7
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 20.2
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 20.8
+        }
+      ]
+    },
+    {
+      "id": "r0023",
+      "slug": "r0023-oldid-12736728-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 30
+      },
+      "oldid": 12736728,
+      "parent_oldid": 12721439,
+      "timestamp": "15:20 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 12384,
+      "byte_delta": 539,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12736728",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12736728&oldid=12721439",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_539"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T15:20:53Z",
+      "article_refs": [
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 4.9
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 4.9
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 4.9
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 5.0
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 5.1
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 5.5
+        },
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 5.8
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 11.8
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 11.9
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 11.9
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 19.1
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 19.6
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 20.0
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 20.0
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 20.2
+        }
+      ]
+    },
+    {
+      "id": "r0024",
+      "slug": "r0024-oldid-12721439-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 31
+      },
+      "oldid": 12721439,
+      "parent_oldid": 12720441,
+      "timestamp": "20:29 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11845,
+      "byte_delta": 370,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12721439",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12721439&oldid=12720441",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T20:29:42Z",
+      "article_refs": [
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 1.1
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 1.2
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 1.2
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 1.2
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 1.3
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 1.3
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 1.3
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 5.2
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 5.2
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 5.8
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 6.9
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 6.9
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 7.0
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 8.8
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 13.4
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 13.7
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 13.8
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 13.9
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 13.9
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 14.0
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 19.3
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 19.4
+        }
+      ]
+    },
+    {
+      "id": "r0025",
+      "slug": "r0025-oldid-12720441-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 32
+      },
+      "oldid": 12720441,
+      "parent_oldid": 12720326,
+      "timestamp": "19:48 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11475,
+      "byte_delta": 375,
+      "section": "Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12720441",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12720441&oldid=12720326",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:48:27Z",
+      "article_refs": [
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.5
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.6
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 5.1
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 8.1
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.1
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.4
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.5
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.6
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.7
+        }
+      ]
+    },
+    {
+      "id": "r0026",
+      "slug": "r0026-oldid-12720326-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 33
+      },
+      "oldid": 12720326,
+      "parent_oldid": 12719917,
+      "timestamp": "19:43 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11100,
+      "byte_delta": 190,
+      "section": "Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12720326",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12720326&oldid=12719917",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:43:45Z",
+      "article_refs": [
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.0
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.4
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.5
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 5.0
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 7.8
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.5
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.5
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.6
+        }
+      ]
+    },
+    {
+      "id": "r0027",
+      "slug": "r0027-oldid-12719917",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 34
+      },
+      "oldid": 12719917,
+      "parent_oldid": 12474528,
+      "timestamp": "19:26 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 10910,
+      "byte_delta": 611,
+      "section": null,
+      "summary": "Nueva sección: /* Pseudociencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12719917",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12719917&oldid=12474528",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_611"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:26:43Z",
+      "article_refs": [
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.1
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.2
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 4.7
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 8.1
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.4
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.8
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 15.0
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 15.0
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 15.0
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.2
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.3
+        }
+      ]
+    },
+    {
+      "id": "r0028",
+      "slug": "r0028-oldid-12474528-respuesta-en-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 35
+      },
+      "oldid": 12474528,
+      "parent_oldid": 12473072,
+      "timestamp": "17:01 31 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 10299,
+      "byte_delta": 1214,
+      "section": "respuesta en pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12474528",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12474528&oldid=12473072",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1214"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-31T17:01:29Z",
+      "article_refs": [
+        {
+          "oldid": 12472368,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12472324,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12472182,
+          "title": "Pseudociencia",
+          "delta_hours": 1.7
+        },
+        {
+          "oldid": 12472154,
+          "title": "Pseudociencia",
+          "delta_hours": 1.7
+        },
+        {
+          "oldid": 12472128,
+          "title": "Pseudociencia",
+          "delta_hours": 1.7
+        },
+        {
+          "oldid": 12472102,
+          "title": "Pseudociencia",
+          "delta_hours": 1.8
+        },
+        {
+          "oldid": 12472060,
+          "title": "Pseudociencia",
+          "delta_hours": 1.8
+        },
+        {
+          "oldid": 12471998,
+          "title": "Pseudociencia",
+          "delta_hours": 1.9
+        },
+        {
+          "oldid": 12471983,
+          "title": "Pseudociencia",
+          "delta_hours": 1.9
+        },
+        {
+          "oldid": 12471932,
+          "title": "Pseudociencia",
+          "delta_hours": 1.9
+        },
+        {
+          "oldid": 12471886,
+          "title": "Pseudociencia",
+          "delta_hours": 1.9
+        },
+        {
+          "oldid": 12471847,
+          "title": "Pseudociencia",
+          "delta_hours": 2.0
+        },
+        {
+          "oldid": 12471593,
+          "title": "Pseudociencia",
+          "delta_hours": 2.1
+        },
+        {
+          "oldid": 12471158,
+          "title": "Pseudociencia",
+          "delta_hours": 2.5
+        },
+        {
+          "oldid": 12471132,
+          "title": "Pseudociencia",
+          "delta_hours": 2.5
+        },
+        {
+          "oldid": 12471104,
+          "title": "Pseudociencia",
+          "delta_hours": 2.5
+        },
+        {
+          "oldid": 12471046,
+          "title": "Pseudociencia",
+          "delta_hours": 2.6
+        },
+        {
+          "oldid": 12470995,
+          "title": "Pseudociencia",
+          "delta_hours": 2.6
+        },
+        {
+          "oldid": 12470978,
+          "title": "Pseudociencia",
+          "delta_hours": 2.6
+        },
+        {
+          "oldid": 12470386,
+          "title": "Pseudociencia",
+          "delta_hours": 3.3
+        },
+        {
+          "oldid": 12470375,
+          "title": "Pseudociencia",
+          "delta_hours": 3.3
+        },
+        {
+          "oldid": 12470362,
+          "title": "Pseudociencia",
+          "delta_hours": 3.4
+        },
+        {
+          "oldid": 12470350,
+          "title": "Pseudociencia",
+          "delta_hours": 3.4
+        },
+        {
+          "oldid": 12470114,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12469559,
+          "title": "Pseudociencia",
+          "delta_hours": 4.4
+        },
+        {
+          "oldid": 12469284,
+          "title": "Pseudociencia",
+          "delta_hours": 4.7
+        },
+        {
+          "oldid": 12469253,
+          "title": "Pseudociencia",
+          "delta_hours": 4.7
+        },
+        {
+          "oldid": 12469232,
+          "title": "Pseudociencia",
+          "delta_hours": 4.7
+        },
+        {
+          "oldid": 12469188,
+          "title": "Pseudociencia",
+          "delta_hours": 4.8
+        },
+        {
+          "oldid": 12469172,
+          "title": "Pseudociencia",
+          "delta_hours": 4.8
+        },
+        {
+          "oldid": 12469120,
+          "title": "Pseudociencia",
+          "delta_hours": 4.8
+        },
+        {
+          "oldid": 12469084,
+          "title": "Pseudociencia",
+          "delta_hours": 4.9
+        },
+        {
+          "oldid": 12469037,
+          "title": "Pseudociencia",
+          "delta_hours": 4.9
+        },
+        {
+          "oldid": 12468882,
+          "title": "Pseudociencia",
+          "delta_hours": 5.1
+        },
+        {
+          "oldid": 12468859,
+          "title": "Pseudociencia",
+          "delta_hours": 5.1
+        },
+        {
+          "oldid": 12468620,
+          "title": "Pseudociencia",
+          "delta_hours": 5.4
+        },
+        {
+          "oldid": 12483930,
+          "title": "Pseudociencia",
+          "delta_hours": 6.6
+        },
+        {
+          "oldid": 12483869,
+          "title": "Pseudociencia",
+          "delta_hours": 6.6
+        },
+        {
+          "oldid": 12483821,
+          "title": "Pseudociencia",
+          "delta_hours": 6.6
+        },
+        {
+          "oldid": 12483807,
+          "title": "Pseudociencia",
+          "delta_hours": 6.6
+        },
+        {
+          "oldid": 12483968,
+          "title": "Pseudociencia",
+          "delta_hours": 6.7
+        },
+        {
+          "oldid": 12484162,
+          "title": "Pseudociencia",
+          "delta_hours": 6.8
+        },
+        {
+          "oldid": 12484330,
+          "title": "Pseudociencia",
+          "delta_hours": 7.0
+        },
+        {
+          "oldid": 12467056,
+          "title": "Pseudociencia",
+          "delta_hours": 7.9
+        },
+        {
+          "oldid": 12485508,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12485444,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12485534,
+          "title": "Pseudociencia",
+          "delta_hours": 8.1
+        },
+        {
+          "oldid": 12485901,
+          "title": "Pseudociencia",
+          "delta_hours": 8.5
+        },
+        {
+          "oldid": 12485998,
+          "title": "Pseudociencia",
+          "delta_hours": 8.6
+        },
+        {
+          "oldid": 12485981,
+          "title": "Pseudociencia",
+          "delta_hours": 8.6
+        },
+        {
+          "oldid": 12485929,
+          "title": "Pseudociencia",
+          "delta_hours": 8.6
+        },
+        {
+          "oldid": 12486220,
+          "title": "Pseudociencia",
+          "delta_hours": 8.9
+        },
+        {
+          "oldid": 12486240,
+          "title": "Pseudociencia",
+          "delta_hours": 9.0
+        },
+        {
+          "oldid": 12486462,
+          "title": "Pseudociencia",
+          "delta_hours": 9.2
+        },
+        {
+          "oldid": 12486432,
+          "title": "Pseudociencia",
+          "delta_hours": 9.2
+        },
+        {
+          "oldid": 12486403,
+          "title": "Pseudociencia",
+          "delta_hours": 9.2
+        },
+        {
+          "oldid": 12486862,
+          "title": "Pseudociencia",
+          "delta_hours": 9.7
+        },
+        {
+          "oldid": 12486972,
+          "title": "Pseudociencia",
+          "delta_hours": 9.8
+        },
+        {
+          "oldid": 12487012,
+          "title": "Pseudociencia",
+          "delta_hours": 9.9
+        },
+        {
+          "oldid": 12486999,
+          "title": "Pseudociencia",
+          "delta_hours": 9.9
+        },
+        {
+          "oldid": 12487069,
+          "title": "Pseudociencia",
+          "delta_hours": 10.0
+        },
+        {
+          "oldid": 12489868,
+          "title": "Pseudociencia",
+          "delta_hours": 16.4
+        },
+        {
+          "oldid": 12489908,
+          "title": "Pseudociencia",
+          "delta_hours": 16.5
+        },
+        {
+          "oldid": 12489874,
+          "title": "Pseudociencia",
+          "delta_hours": 16.5
+        },
+        {
+          "oldid": 12461628,
+          "title": "Pseudociencia",
+          "delta_hours": 16.5
+        },
+        {
+          "oldid": 12461607,
+          "title": "Pseudociencia",
+          "delta_hours": 16.5
+        },
+        {
+          "oldid": 12489953,
+          "title": "Pseudociencia",
+          "delta_hours": 16.6
+        },
+        {
+          "oldid": 12489983,
+          "title": "Pseudociencia",
+          "delta_hours": 16.7
+        },
+        {
+          "oldid": 12490062,
+          "title": "Pseudociencia",
+          "delta_hours": 16.8
+        },
+        {
+          "oldid": 12490143,
+          "title": "Pseudociencia",
+          "delta_hours": 16.9
+        },
+        {
+          "oldid": 12490123,
+          "title": "Pseudociencia",
+          "delta_hours": 16.9
+        },
+        {
+          "oldid": 12490111,
+          "title": "Pseudociencia",
+          "delta_hours": 16.9
+        },
+        {
+          "oldid": 12490106,
+          "title": "Pseudociencia",
+          "delta_hours": 16.9
+        },
+        {
+          "oldid": 12490094,
+          "title": "Pseudociencia",
+          "delta_hours": 16.9
+        },
+        {
+          "oldid": 12490172,
+          "title": "Pseudociencia",
+          "delta_hours": 17.0
+        },
+        {
+          "oldid": 12490209,
+          "title": "Pseudociencia",
+          "delta_hours": 17.1
+        },
+        {
+          "oldid": 12490201,
+          "title": "Pseudociencia",
+          "delta_hours": 17.1
+        },
+        {
+          "oldid": 12490270,
+          "title": "Pseudociencia",
+          "delta_hours": 17.2
+        },
+        {
+          "oldid": 12490265,
+          "title": "Pseudociencia",
+          "delta_hours": 17.2
+        },
+        {
+          "oldid": 12490370,
+          "title": "Pseudociencia",
+          "delta_hours": 17.3
+        },
+        {
+          "oldid": 12490349,
+          "title": "Pseudociencia",
+          "delta_hours": 17.3
+        },
+        {
+          "oldid": 12460389,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        },
+        {
+          "oldid": 12490852,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490836,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490814,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490963,
+          "title": "Pseudociencia",
+          "delta_hours": 18.1
+        },
+        {
+          "oldid": 12456578,
+          "title": "Pseudociencia",
+          "delta_hours": 20.0
+        },
+        {
+          "oldid": 12456528,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12456492,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12456433,
+          "title": "Pseudociencia",
+          "delta_hours": 20.2
+        },
+        {
+          "oldid": 12456407,
+          "title": "Pseudociencia",
+          "delta_hours": 20.2
+        },
+        {
+          "oldid": 12456292,
+          "title": "Pseudociencia",
+          "delta_hours": 20.3
+        },
+        {
+          "oldid": 12456045,
+          "title": "Pseudociencia",
+          "delta_hours": 20.5
+        },
+        {
+          "oldid": 12456032,
+          "title": "Pseudociencia",
+          "delta_hours": 20.5
+        },
+        {
+          "oldid": 12455820,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12455749,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12455656,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12455485,
+          "title": "Pseudociencia",
+          "delta_hours": 20.8
+        },
+        {
+          "oldid": 12455472,
+          "title": "Pseudociencia",
+          "delta_hours": 20.8
+        },
+        {
+          "oldid": 12455375,
+          "title": "Pseudociencia",
+          "delta_hours": 20.9
+        },
+        {
+          "oldid": 12455274,
+          "title": "Pseudociencia",
+          "delta_hours": 21.0
+        },
+        {
+          "oldid": 12455205,
+          "title": "Pseudociencia",
+          "delta_hours": 21.0
+        },
+        {
+          "oldid": 12455177,
+          "title": "Pseudociencia",
+          "delta_hours": 21.0
+        },
+        {
+          "oldid": 12455090,
+          "title": "Pseudociencia",
+          "delta_hours": 21.1
+        },
+        {
+          "oldid": 12454682,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        },
+        {
+          "oldid": 12454489,
+          "title": "Pseudociencia",
+          "delta_hours": 21.5
+        },
+        {
+          "oldid": 12454315,
+          "title": "Pseudociencia",
+          "delta_hours": 21.6
+        },
+        {
+          "oldid": 12454262,
+          "title": "Pseudociencia",
+          "delta_hours": 21.6
+        },
+        {
+          "oldid": 12454201,
+          "title": "Pseudociencia",
+          "delta_hours": 21.7
+        },
+        {
+          "oldid": 12454183,
+          "title": "Pseudociencia",
+          "delta_hours": 21.7
+        },
+        {
+          "oldid": 12454152,
+          "title": "Pseudociencia",
+          "delta_hours": 21.7
+        },
+        {
+          "oldid": 12454048,
+          "title": "Pseudociencia",
+          "delta_hours": 21.7
+        },
+        {
+          "oldid": 12453883,
+          "title": "Pseudociencia",
+          "delta_hours": 21.8
+        },
+        {
+          "oldid": 12453748,
+          "title": "Pseudociencia",
+          "delta_hours": 21.9
+        },
+        {
+          "oldid": 12453624,
+          "title": "Pseudociencia",
+          "delta_hours": 22.0
+        },
+        {
+          "oldid": 12453419,
+          "title": "Pseudociencia",
+          "delta_hours": 22.1
+        },
+        {
+          "oldid": 12453395,
+          "title": "Pseudociencia",
+          "delta_hours": 22.1
+        },
+        {
+          "oldid": 12453172,
+          "title": "Pseudociencia",
+          "delta_hours": 22.3
+        },
+        {
+          "oldid": 12451477,
+          "title": "Pseudociencia",
+          "delta_hours": 23.2
+        },
+        {
+          "oldid": 12451160,
+          "title": "Pseudociencia",
+          "delta_hours": 23.4
+        },
+        {
+          "oldid": 12451013,
+          "title": "Pseudociencia",
+          "delta_hours": 23.5
+        },
+        {
+          "oldid": 12450905,
+          "title": "Pseudociencia",
+          "delta_hours": 23.6
+        },
+        {
+          "oldid": 12450664,
+          "title": "Pseudociencia",
+          "delta_hours": 23.7
+        },
+        {
+          "oldid": 12450617,
+          "title": "Pseudociencia",
+          "delta_hours": 23.7
+        },
+        {
+          "oldid": 12450525,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12450469,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12450340,
+          "title": "Pseudociencia",
+          "delta_hours": 23.9
+        },
+        {
+          "oldid": 12450324,
+          "title": "Pseudociencia",
+          "delta_hours": 23.9
+        }
+      ]
+    },
+    {
+      "id": "r0029",
+      "slug": "r0029-oldid-12473072",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 36
+      },
+      "oldid": 12473072,
+      "parent_oldid": 12274469,
+      "timestamp": "15:59 31 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 9085,
+      "byte_delta": 1712,
+      "section": null,
+      "summary": "Nueva sección: /* respuesta en pseudociencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12473072",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12473072&oldid=12274469",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1712"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-31T15:59:08Z",
+      "article_refs": [
+        {
+          "oldid": 12472368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12472324,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12472182,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12472154,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12472128,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12472102,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12472060,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12471998,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12471983,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12471932,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12471886,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12471847,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12471593,
+          "title": "Pseudociencia",
+          "delta_hours": 1.1
+        },
+        {
+          "oldid": 12471158,
+          "title": "Pseudociencia",
+          "delta_hours": 1.5
+        },
+        {
+          "oldid": 12471132,
+          "title": "Pseudociencia",
+          "delta_hours": 1.5
+        },
+        {
+          "oldid": 12471104,
+          "title": "Pseudociencia",
+          "delta_hours": 1.5
+        },
+        {
+          "oldid": 12471046,
+          "title": "Pseudociencia",
+          "delta_hours": 1.5
+        },
+        {
+          "oldid": 12470995,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12470978,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12470386,
+          "title": "Pseudociencia",
+          "delta_hours": 2.3
+        },
+        {
+          "oldid": 12470375,
+          "title": "Pseudociencia",
+          "delta_hours": 2.3
+        },
+        {
+          "oldid": 12470362,
+          "title": "Pseudociencia",
+          "delta_hours": 2.3
+        },
+        {
+          "oldid": 12470350,
+          "title": "Pseudociencia",
+          "delta_hours": 2.3
+        },
+        {
+          "oldid": 12470114,
+          "title": "Pseudociencia",
+          "delta_hours": 2.6
+        },
+        {
+          "oldid": 12469559,
+          "title": "Pseudociencia",
+          "delta_hours": 3.3
+        },
+        {
+          "oldid": 12469284,
+          "title": "Pseudociencia",
+          "delta_hours": 3.6
+        },
+        {
+          "oldid": 12469253,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12469232,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12469188,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12469172,
+          "title": "Pseudociencia",
+          "delta_hours": 3.8
+        },
+        {
+          "oldid": 12469120,
+          "title": "Pseudociencia",
+          "delta_hours": 3.8
+        },
+        {
+          "oldid": 12469084,
+          "title": "Pseudociencia",
+          "delta_hours": 3.8
+        },
+        {
+          "oldid": 12469037,
+          "title": "Pseudociencia",
+          "delta_hours": 3.9
+        },
+        {
+          "oldid": 12468882,
+          "title": "Pseudociencia",
+          "delta_hours": 4.1
+        },
+        {
+          "oldid": 12468859,
+          "title": "Pseudociencia",
+          "delta_hours": 4.1
+        },
+        {
+          "oldid": 12468620,
+          "title": "Pseudociencia",
+          "delta_hours": 4.4
+        },
+        {
+          "oldid": 12467056,
+          "title": "Pseudociencia",
+          "delta_hours": 6.8
+        },
+        {
+          "oldid": 12483869,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12483821,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12483807,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12483968,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12483930,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12484162,
+          "title": "Pseudociencia",
+          "delta_hours": 7.9
+        },
+        {
+          "oldid": 12484330,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12485444,
+          "title": "Pseudociencia",
+          "delta_hours": 9.0
+        },
+        {
+          "oldid": 12485534,
+          "title": "Pseudociencia",
+          "delta_hours": 9.1
+        },
+        {
+          "oldid": 12485508,
+          "title": "Pseudociencia",
+          "delta_hours": 9.1
+        },
+        {
+          "oldid": 12485929,
+          "title": "Pseudociencia",
+          "delta_hours": 9.6
+        },
+        {
+          "oldid": 12485901,
+          "title": "Pseudociencia",
+          "delta_hours": 9.6
+        },
+        {
+          "oldid": 12485998,
+          "title": "Pseudociencia",
+          "delta_hours": 9.7
+        },
+        {
+          "oldid": 12485981,
+          "title": "Pseudociencia",
+          "delta_hours": 9.7
+        },
+        {
+          "oldid": 12486240,
+          "title": "Pseudociencia",
+          "delta_hours": 10.0
+        },
+        {
+          "oldid": 12486220,
+          "title": "Pseudociencia",
+          "delta_hours": 10.0
+        },
+        {
+          "oldid": 12486432,
+          "title": "Pseudociencia",
+          "delta_hours": 10.2
+        },
+        {
+          "oldid": 12486403,
+          "title": "Pseudociencia",
+          "delta_hours": 10.2
+        },
+        {
+          "oldid": 12486462,
+          "title": "Pseudociencia",
+          "delta_hours": 10.3
+        },
+        {
+          "oldid": 12486862,
+          "title": "Pseudociencia",
+          "delta_hours": 10.7
+        },
+        {
+          "oldid": 12487012,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12486999,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12486972,
+          "title": "Pseudociencia",
+          "delta_hours": 10.9
+        },
+        {
+          "oldid": 12487069,
+          "title": "Pseudociencia",
+          "delta_hours": 11.0
+        },
+        {
+          "oldid": 12461628,
+          "title": "Pseudociencia",
+          "delta_hours": 15.5
+        },
+        {
+          "oldid": 12461607,
+          "title": "Pseudociencia",
+          "delta_hours": 15.5
+        },
+        {
+          "oldid": 12460389,
+          "title": "Pseudociencia",
+          "delta_hours": 16.5
+        },
+        {
+          "oldid": 12489874,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        },
+        {
+          "oldid": 12489868,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        },
+        {
+          "oldid": 12489908,
+          "title": "Pseudociencia",
+          "delta_hours": 17.6
+        },
+        {
+          "oldid": 12489983,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12489953,
+          "title": "Pseudociencia",
+          "delta_hours": 17.7
+        },
+        {
+          "oldid": 12490062,
+          "title": "Pseudociencia",
+          "delta_hours": 17.8
+        },
+        {
+          "oldid": 12490123,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490111,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490106,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490094,
+          "title": "Pseudociencia",
+          "delta_hours": 17.9
+        },
+        {
+          "oldid": 12490172,
+          "title": "Pseudociencia",
+          "delta_hours": 18.0
+        },
+        {
+          "oldid": 12490143,
+          "title": "Pseudociencia",
+          "delta_hours": 18.0
+        },
+        {
+          "oldid": 12490209,
+          "title": "Pseudociencia",
+          "delta_hours": 18.1
+        },
+        {
+          "oldid": 12490201,
+          "title": "Pseudociencia",
+          "delta_hours": 18.1
+        },
+        {
+          "oldid": 12490270,
+          "title": "Pseudociencia",
+          "delta_hours": 18.2
+        },
+        {
+          "oldid": 12490265,
+          "title": "Pseudociencia",
+          "delta_hours": 18.2
+        },
+        {
+          "oldid": 12490349,
+          "title": "Pseudociencia",
+          "delta_hours": 18.3
+        },
+        {
+          "oldid": 12490370,
+          "title": "Pseudociencia",
+          "delta_hours": 18.4
+        },
+        {
+          "oldid": 12490852,
+          "title": "Pseudociencia",
+          "delta_hours": 18.9
+        },
+        {
+          "oldid": 12490836,
+          "title": "Pseudociencia",
+          "delta_hours": 18.9
+        },
+        {
+          "oldid": 12490814,
+          "title": "Pseudociencia",
+          "delta_hours": 18.9
+        },
+        {
+          "oldid": 12456578,
+          "title": "Pseudociencia",
+          "delta_hours": 19.0
+        },
+        {
+          "oldid": 12456528,
+          "title": "Pseudociencia",
+          "delta_hours": 19.0
+        },
+        {
+          "oldid": 12490963,
+          "title": "Pseudociencia",
+          "delta_hours": 19.1
+        },
+        {
+          "oldid": 12456492,
+          "title": "Pseudociencia",
+          "delta_hours": 19.1
+        },
+        {
+          "oldid": 12456433,
+          "title": "Pseudociencia",
+          "delta_hours": 19.1
+        },
+        {
+          "oldid": 12456407,
+          "title": "Pseudociencia",
+          "delta_hours": 19.1
+        },
+        {
+          "oldid": 12456292,
+          "title": "Pseudociencia",
+          "delta_hours": 19.2
+        },
+        {
+          "oldid": 12456045,
+          "title": "Pseudociencia",
+          "delta_hours": 19.4
+        },
+        {
+          "oldid": 12456032,
+          "title": "Pseudociencia",
+          "delta_hours": 19.4
+        },
+        {
+          "oldid": 12455820,
+          "title": "Pseudociencia",
+          "delta_hours": 19.6
+        },
+        {
+          "oldid": 12455749,
+          "title": "Pseudociencia",
+          "delta_hours": 19.6
+        },
+        {
+          "oldid": 12455656,
+          "title": "Pseudociencia",
+          "delta_hours": 19.7
+        },
+        {
+          "oldid": 12455485,
+          "title": "Pseudociencia",
+          "delta_hours": 19.8
+        },
+        {
+          "oldid": 12455472,
+          "title": "Pseudociencia",
+          "delta_hours": 19.8
+        },
+        {
+          "oldid": 12455375,
+          "title": "Pseudociencia",
+          "delta_hours": 19.9
+        },
+        {
+          "oldid": 12455274,
+          "title": "Pseudociencia",
+          "delta_hours": 19.9
+        },
+        {
+          "oldid": 12455205,
+          "title": "Pseudociencia",
+          "delta_hours": 20.0
+        },
+        {
+          "oldid": 12455177,
+          "title": "Pseudociencia",
+          "delta_hours": 20.0
+        },
+        {
+          "oldid": 12455090,
+          "title": "Pseudociencia",
+          "delta_hours": 20.1
+        },
+        {
+          "oldid": 12454682,
+          "title": "Pseudociencia",
+          "delta_hours": 20.3
+        },
+        {
+          "oldid": 12454489,
+          "title": "Pseudociencia",
+          "delta_hours": 20.4
+        },
+        {
+          "oldid": 12454315,
+          "title": "Pseudociencia",
+          "delta_hours": 20.5
+        },
+        {
+          "oldid": 12454262,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12454201,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12454183,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12454152,
+          "title": "Pseudociencia",
+          "delta_hours": 20.6
+        },
+        {
+          "oldid": 12454048,
+          "title": "Pseudociencia",
+          "delta_hours": 20.7
+        },
+        {
+          "oldid": 12453883,
+          "title": "Pseudociencia",
+          "delta_hours": 20.8
+        },
+        {
+          "oldid": 12453748,
+          "title": "Pseudociencia",
+          "delta_hours": 20.9
+        },
+        {
+          "oldid": 12453624,
+          "title": "Pseudociencia",
+          "delta_hours": 21.0
+        },
+        {
+          "oldid": 12453419,
+          "title": "Pseudociencia",
+          "delta_hours": 21.1
+        },
+        {
+          "oldid": 12453395,
+          "title": "Pseudociencia",
+          "delta_hours": 21.1
+        },
+        {
+          "oldid": 12453172,
+          "title": "Pseudociencia",
+          "delta_hours": 21.3
+        },
+        {
+          "oldid": 12451477,
+          "title": "Pseudociencia",
+          "delta_hours": 22.2
+        },
+        {
+          "oldid": 12451160,
+          "title": "Pseudociencia",
+          "delta_hours": 22.4
+        },
+        {
+          "oldid": 12451013,
+          "title": "Pseudociencia",
+          "delta_hours": 22.5
+        },
+        {
+          "oldid": 12450905,
+          "title": "Pseudociencia",
+          "delta_hours": 22.5
+        },
+        {
+          "oldid": 12450664,
+          "title": "Pseudociencia",
+          "delta_hours": 22.7
+        },
+        {
+          "oldid": 12450617,
+          "title": "Pseudociencia",
+          "delta_hours": 22.7
+        },
+        {
+          "oldid": 12450525,
+          "title": "Pseudociencia",
+          "delta_hours": 22.8
+        },
+        {
+          "oldid": 12450469,
+          "title": "Pseudociencia",
+          "delta_hours": 22.8
+        },
+        {
+          "oldid": 12450340,
+          "title": "Pseudociencia",
+          "delta_hours": 22.9
+        },
+        {
+          "oldid": 12450324,
+          "title": "Pseudociencia",
+          "delta_hours": 22.9
+        },
+        {
+          "oldid": 12450134,
+          "title": "Pseudociencia",
+          "delta_hours": 23.0
+        },
+        {
+          "oldid": 12450010,
+          "title": "Pseudociencia",
+          "delta_hours": 23.1
+        },
+        {
+          "oldid": 12449994,
+          "title": "Pseudociencia",
+          "delta_hours": 23.1
+        }
+      ]
+    },
+    {
+      "id": "r0030",
+      "slug": "r0030-oldid-12274469",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 37
+      },
+      "oldid": 12274469,
+      "parent_oldid": 12098449,
+      "timestamp": "14:09 23 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 7373,
+      "byte_delta": 831,
+      "section": null,
+      "summary": "Nueva sección: /* Bertrand Russell: Filosofía de la ciencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12274469",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12274469&oldid=12098449",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_831"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-23T14:09:27Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0031",
+      "slug": "r0031-oldid-12098449",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 38
+      },
+      "oldid": 12098449,
+      "parent_oldid": 12087694,
+      "timestamp": "09:54 16 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 6542,
+      "byte_delta": 1327,
+      "section": null,
+      "summary": "Nueva sección: /* psicoanálisis */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12098449",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12098449&oldid=12087694",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1327"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T09:54:59Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0032",
+      "slug": "r0032-oldid-12087694-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 39
+      },
+      "oldid": 12087694,
+      "parent_oldid": 12052572,
+      "timestamp": "21:07 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 5215,
+      "byte_delta": 261,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12087694",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12087694&oldid=12052572",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T21:07:43Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0033",
+      "slug": "r0033-oldid-12052572",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 40
+      },
+      "oldid": 12052572,
+      "parent_oldid": 11958157,
+      "timestamp": "12:41 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 4954,
+      "byte_delta": 652,
+      "section": null,
+      "summary": "Nueva sección: /* Criterio de demarcación */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12052572",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12052572&oldid=11958157",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_652"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-14T12:41:14Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0034",
+      "slug": "r0034-oldid-11958157",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 41
+      },
+      "oldid": 11958157,
+      "parent_oldid": 0,
+      "timestamp": "14:34 10 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 4302,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada, por cierto, recuerda firmar los mensajes a otros Wikipedistas añadiendo <nowiki>~~~~</nowiki>. Saludos y bienven...",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=11958157",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=11958157&oldid=0",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_fusión"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-10T14:34:32Z",
+      "article_refs": [
+        {
+          "oldid": 11960140,
+          "title": "Pseudociencia",
+          "delta_hours": 1.8
+        },
+        {
+          "oldid": 11952378,
+          "title": "Pseudociencia",
+          "delta_hours": 7.3
+        },
+        {
+          "oldid": 11951488,
+          "title": "Pseudociencia",
+          "delta_hours": 9.0
+        },
+        {
+          "oldid": 11951464,
+          "title": "Pseudociencia",
+          "delta_hours": 9.0
+        }
+      ]
+    }
+  ]
+}

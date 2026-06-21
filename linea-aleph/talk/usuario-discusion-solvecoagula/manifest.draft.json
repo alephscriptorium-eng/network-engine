@@ -1,0 +1,1023 @@
+{
+  "corpus": "linea-talk-usuario-solvecoagula",
+  "title": "Usuario discusión:SolveCoagula (historial WP es)",
+  "source": "raw/linea.md",
+  "generated_at": "2026-06-21T00:44:11Z",
+  "preamble": {
+    "lines": [
+      1,
+      7
+    ],
+    "text": "# Usuario discusión:SolveCoagula — historial talk (es.wikipedia)\n# generado: 2026-06-21T00:44:10Z · registros en ventana oct–nov 2007: 34\nPágina: [Usuario discusión:SolveCoagula](https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula)\nNamespace: **3** · corpus: **talk**"
+  },
+  "registro_count": 34,
+  "ordering": "newest_first_in_linea_md",
+  "snapshots": {
+    "previo": {
+      "role": "previo",
+      "registro_id": null,
+      "oldid": 0,
+      "timestamp": "28 sep 2007",
+      "user": "Dhidalgo",
+      "path": "snapshots/previo"
+    },
+    "final": {
+      "role": "final",
+      "registro_id": "r0001",
+      "oldid": 12912735,
+      "timestamp": "20:52 18 nov 2007",
+      "path": "snapshots/final"
+    },
+    "inicial": {
+      "role": "inicial",
+      "registro_id": "r0034",
+      "oldid": 11958157,
+      "timestamp": "14:34 10 oct 2007",
+      "summary": "Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada, por cierto, recuerda firmar los mensajes a otros Wikipedistas añadiendo <nowiki>~~~~</nowiki>. Saludos y bienven...",
+      "path": "snapshots/inicial"
+    },
+    "sc_cierre": {
+      "role": "sc_cierre",
+      "oldid": 12912735,
+      "path": "snapshots/sc_cierre"
+    },
+    "actual": {
+      "role": "actual",
+      "oldid": null,
+      "path": "snapshots/actual"
+    }
+  },
+  "ontology_sections": [
+    [
+      "Bloqueo",
+      6
+    ],
+    [
+      "Guerra de ediciones",
+      5
+    ],
+    [
+      "Reversiones",
+      2
+    ],
+    [
+      "Hola, SolveCoagula",
+      2
+    ],
+    [
+      "Criterio de demarcación",
+      2
+    ],
+    [
+      "Pseudociencia",
+      2
+    ],
+    [
+      "Destacado",
+      1
+    ],
+    [
+      "respuesta en pseudociencia",
+      1
+    ]
+  ],
+  "milestones": [
+    "r0003",
+    "r0005",
+    "r0012",
+    "r0013",
+    "r0014",
+    "r0015",
+    "r0017",
+    "r0018",
+    "r0022",
+    "r0023",
+    "r0027",
+    "r0028",
+    "r0029",
+    "r0030",
+    "r0031",
+    "r0033",
+    "r0034"
+  ],
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-12912735-reversiones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 8
+      },
+      "oldid": 12912735,
+      "parent_oldid": 12911445,
+      "timestamp": "20:52 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25338,
+      "byte_delta": 82,
+      "section": "Reversiones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12912735",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12912735&oldid=12911445",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-12911445-reversiones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 9
+      },
+      "oldid": 12911445,
+      "parent_oldid": 12911274,
+      "timestamp": "20:08 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25256,
+      "byte_delta": 174,
+      "section": "Reversiones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12911445",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12911445&oldid=12911274",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-12911274-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 12911274,
+      "parent_oldid": 12835826,
+      "timestamp": "20:04 18 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 25082,
+      "byte_delta": 798,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12911274",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12911274&oldid=12835826",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_798"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-12835826-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 12835826,
+      "parent_oldid": 12792536,
+      "timestamp": "15:20 15 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 24284,
+      "byte_delta": 125,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12835826",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12835826&oldid=12792536",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-12792536-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 12792536,
+      "parent_oldid": 12786168,
+      "timestamp": "19:34 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 24159,
+      "byte_delta": 502,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12792536",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12792536&oldid=12786168",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_502"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-12786168-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 12786168,
+      "parent_oldid": 12784014,
+      "timestamp": "15:33 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23657,
+      "byte_delta": 14,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12786168",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12786168&oldid=12784014",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-12784014-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 12784014,
+      "parent_oldid": 12783992,
+      "timestamp": "13:34 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23643,
+      "byte_delta": 103,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12784014",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12784014&oldid=12783992",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-12783992-bloqueo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 12783992,
+      "parent_oldid": 12783918,
+      "timestamp": "13:33 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23540,
+      "byte_delta": 68,
+      "section": "Bloqueo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783992",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783992&oldid=12783918",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-12783918",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 12783918,
+      "parent_oldid": 12783898,
+      "timestamp": "13:28 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23472,
+      "byte_delta": 34,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783918",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783918&oldid=12783898",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-12783898",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 12783898,
+      "parent_oldid": 12783885,
+      "timestamp": "13:27 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23438,
+      "byte_delta": 14,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783898",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783898&oldid=12783885",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-12783885",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 12783885,
+      "parent_oldid": 12783855,
+      "timestamp": "13:26 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23424,
+      "byte_delta": 39,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783885",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783885&oldid=12783855",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-12783855",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 12783855,
+      "parent_oldid": 12765952,
+      "timestamp": "13:25 13 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 23385,
+      "byte_delta": 2496,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12783855",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12783855&oldid=12765952",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2496"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-12765952-hola-solvecoagula",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 12765952,
+      "parent_oldid": 12765399,
+      "timestamp": "19:05 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 20889,
+      "byte_delta": 536,
+      "section": "Hola, SolveCoagula",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12765952",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12765952&oldid=12765399",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_536"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-12765399-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 12765399,
+      "parent_oldid": 12764925,
+      "timestamp": "18:46 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 20353,
+      "byte_delta": 1791,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12765399",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12765399&oldid=12764925",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1791"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-12764925-hola-solvecoagula",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 12764925,
+      "parent_oldid": 12757767,
+      "timestamp": "18:31 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 18562,
+      "byte_delta": 595,
+      "section": "Hola, SolveCoagula",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12764925",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12764925&oldid=12757767",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_595"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-12757767",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 12757767,
+      "parent_oldid": 12756249,
+      "timestamp": "13:08 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 17967,
+      "byte_delta": 497,
+      "section": null,
+      "summary": "Nueva sección: /* Hola, SolveCoagula */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12757767",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12757767&oldid=12756249",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-12756249-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 12756249,
+      "parent_oldid": 12756192,
+      "timestamp": "11:23 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 17470,
+      "byte_delta": 2511,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12756249",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12756249&oldid=12756192",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2511"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-12756192",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 12756192,
+      "parent_oldid": 12745213,
+      "timestamp": "11:17 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 14959,
+      "byte_delta": 1343,
+      "section": null,
+      "summary": "Nueva sección: /* Largos */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12756192",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12756192&oldid=12745213",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1343"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-12745213-destacado",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 12745213,
+      "parent_oldid": 12745207,
+      "timestamp": "21:08 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13616,
+      "byte_delta": 0,
+      "section": "Destacado",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745213",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745213&oldid=12745207",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-12745207",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 12745207,
+      "parent_oldid": 12745188,
+      "timestamp": "21:07 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13616,
+      "byte_delta": 181,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745207",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745207&oldid=12745188",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0021",
+      "slug": "r0021-oldid-12745188-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 28
+      },
+      "oldid": 12745188,
+      "parent_oldid": 12737478,
+      "timestamp": "21:06 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13435,
+      "byte_delta": 135,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12745188",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12745188&oldid=12737478",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0022",
+      "slug": "r0022-oldid-12737478-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 29
+      },
+      "oldid": 12737478,
+      "parent_oldid": 12736728,
+      "timestamp": "15:56 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 13300,
+      "byte_delta": 916,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12737478",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12737478&oldid=12736728",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_916"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0023",
+      "slug": "r0023-oldid-12736728-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 30
+      },
+      "oldid": 12736728,
+      "parent_oldid": 12721439,
+      "timestamp": "15:20 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 12384,
+      "byte_delta": 539,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12736728",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12736728&oldid=12721439",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_539"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0024",
+      "slug": "r0024-oldid-12721439-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 31
+      },
+      "oldid": 12721439,
+      "parent_oldid": 12720441,
+      "timestamp": "20:29 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11845,
+      "byte_delta": 370,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12721439",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12721439&oldid=12720441",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0025",
+      "slug": "r0025-oldid-12720441-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 32
+      },
+      "oldid": 12720441,
+      "parent_oldid": 12720326,
+      "timestamp": "19:48 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11475,
+      "byte_delta": 375,
+      "section": "Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12720441",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12720441&oldid=12720326",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0026",
+      "slug": "r0026-oldid-12720326-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 33
+      },
+      "oldid": 12720326,
+      "parent_oldid": 12719917,
+      "timestamp": "19:43 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 11100,
+      "byte_delta": 190,
+      "section": "Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12720326",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12720326&oldid=12719917",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0027",
+      "slug": "r0027-oldid-12719917",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 34
+      },
+      "oldid": 12719917,
+      "parent_oldid": 12474528,
+      "timestamp": "19:26 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 10910,
+      "byte_delta": 611,
+      "section": null,
+      "summary": "Nueva sección: /* Pseudociencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12719917",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12719917&oldid=12474528",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_611"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0028",
+      "slug": "r0028-oldid-12474528-respuesta-en-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 35
+      },
+      "oldid": 12474528,
+      "parent_oldid": 12473072,
+      "timestamp": "17:01 31 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 10299,
+      "byte_delta": 1214,
+      "section": "respuesta en pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12474528",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12474528&oldid=12473072",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1214"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0029",
+      "slug": "r0029-oldid-12473072",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 36
+      },
+      "oldid": 12473072,
+      "parent_oldid": 12274469,
+      "timestamp": "15:59 31 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 9085,
+      "byte_delta": 1712,
+      "section": null,
+      "summary": "Nueva sección: /* respuesta en pseudociencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12473072",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12473072&oldid=12274469",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1712"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0030",
+      "slug": "r0030-oldid-12274469",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 37
+      },
+      "oldid": 12274469,
+      "parent_oldid": 12098449,
+      "timestamp": "14:09 23 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 7373,
+      "byte_delta": 831,
+      "section": null,
+      "summary": "Nueva sección: /* Bertrand Russell: Filosofía de la ciencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12274469",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12274469&oldid=12098449",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_831"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0031",
+      "slug": "r0031-oldid-12098449",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 38
+      },
+      "oldid": 12098449,
+      "parent_oldid": 12087694,
+      "timestamp": "09:54 16 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 6542,
+      "byte_delta": 1327,
+      "section": null,
+      "summary": "Nueva sección: /* psicoanálisis */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12098449",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12098449&oldid=12087694",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1327"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0032",
+      "slug": "r0032-oldid-12087694-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 39
+      },
+      "oldid": 12087694,
+      "parent_oldid": 12052572,
+      "timestamp": "21:07 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 5215,
+      "byte_delta": 261,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12087694",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12087694&oldid=12052572",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0033",
+      "slug": "r0033-oldid-12052572",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 40
+      },
+      "oldid": 12052572,
+      "parent_oldid": 11958157,
+      "timestamp": "12:41 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 4954,
+      "byte_delta": 652,
+      "section": null,
+      "summary": "Nueva sección: /* Criterio de demarcación */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12052572",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=12052572&oldid=11958157",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_652"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0034",
+      "slug": "r0034-oldid-11958157",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 41
+      },
+      "oldid": 11958157,
+      "parent_oldid": 0,
+      "timestamp": "14:34 10 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 4302,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada, por cierto, recuerda firmar los mensajes a otros Wikipedistas añadiendo <nowiki>~~~~</nowiki>. Saludos y bienven...",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=11958157",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&diff=11958157&oldid=0",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_fusión"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    }
+  ]
+}

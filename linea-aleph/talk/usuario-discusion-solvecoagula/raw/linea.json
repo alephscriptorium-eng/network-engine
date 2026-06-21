@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "title": "Usuario discusión:SolveCoagula",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 3,
+    "linked_article": null,
+    "generated_at": "2026-06-21T00:44:10Z",
+    "corpus_dir": "talk/usuario-discusion-solvecoagula",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    },
+    "revision_count": 34,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "revisiones": [
+    {
+      "revid": 11958157,
+      "parentid": 0,
+      "timestamp": "2007-10-10T14:34:32Z",
+      "user": "Ctrl Z",
+      "comment": "Página nueva: {{subst:Bienvenido usuario}} ~~~~   == Fusión ==  Fusión realizada, por cierto, recuerda firmar los mensajes a otros Wikipedistas añadiendo <nowiki>~~~~</nowiki>. Saludos y bienven...",
+      "size": 4302,
+      "byte_delta": 4302
+    },
+    {
+      "revid": 12052572,
+      "parentid": 11958157,
+      "timestamp": "2007-10-14T12:41:14Z",
+      "user": "Pabloallo",
+      "comment": "Nueva sección: /* Criterio de demarcación */",
+      "size": 4954,
+      "byte_delta": 652
+    },
+    {
+      "revid": 12087694,
+      "parentid": 12052572,
+      "timestamp": "2007-10-15T21:07:43Z",
+      "user": "Pabloallo",
+      "comment": "/* Criterio de demarcación */",
+      "size": 5215,
+      "byte_delta": 261
+    },
+    {
+      "revid": 12098449,
+      "parentid": 12087694,
+      "timestamp": "2007-10-16T09:54:59Z",
+      "user": "Pabloallo",
+      "comment": "Nueva sección: /* psicoanálisis */",
+      "size": 6542,
+      "byte_delta": 1327
+    },
+    {
+      "revid": 12274469,
+      "parentid": 12098449,
+      "timestamp": "2007-10-23T14:09:27Z",
+      "user": "Pabloallo",
+      "comment": "Nueva sección: /* Bertrand Russell: Filosofía de la ciencia */",
+      "size": 7373,
+      "byte_delta": 831
+    },
+    {
+      "revid": 12473072,
+      "parentid": 12274469,
+      "timestamp": "2007-10-31T15:59:08Z",
+      "user": "Fernando Estel",
+      "comment": "Nueva sección: /* respuesta en pseudociencia */",
+      "size": 9085,
+      "byte_delta": 1712
+    },
+    {
+      "revid": 12474528,
+      "parentid": 12473072,
+      "timestamp": "2007-10-31T17:01:29Z",
+      "user": "Fernando Estel",
+      "comment": "/* respuesta en pseudociencia */",
+      "size": 10299,
+      "byte_delta": 1214
+    },
+    {
+      "revid": 12719917,
+      "parentid": 12474528,
+      "timestamp": "2007-11-10T19:26:43Z",
+      "user": "Analiza",
+      "comment": "Nueva sección: /* Pseudociencia */",
+      "size": 10910,
+      "byte_delta": 611
+    },
+    {
+      "revid": 12720326,
+      "parentid": 12719917,
+      "timestamp": "2007-11-10T19:43:45Z",
+      "user": "Analiza",
+      "comment": "/* Pseudociencia */",
+      "size": 11100,
+      "byte_delta": 190
+    },
+    {
+      "revid": 12720441,
+      "parentid": 12720326,
+      "timestamp": "2007-11-10T19:48:27Z",
+      "user": "Retama",
+      "comment": "/* Pseudociencia */",
+      "size": 11475,
+      "byte_delta": 375
+    },
+    {
+      "revid": 12721439,
+      "parentid": 12720441,
+      "timestamp": "2007-11-10T20:29:42Z",
+      "user": "Retama",
+      "comment": "/* Guerra de ediciones */",
+      "size": 11845,
+      "byte_delta": 370
+    },
+    {
+      "revid": 12736728,
+      "parentid": 12721439,
+      "timestamp": "2007-11-11T15:20:53Z",
+      "user": "Retama",
+      "comment": "/* Guerra de ediciones */",
+      "size": 12384,
+      "byte_delta": 539
+    },
+    {
+      "revid": 12737478,
+      "parentid": 12736728,
+      "timestamp": "2007-11-11T15:56:07Z",
+      "user": "Retama",
+      "comment": "/* Guerra de ediciones */",
+      "size": 13300,
+      "byte_delta": 916
+    },
+    {
+      "revid": 12745188,
+      "parentid": 12737478,
+      "timestamp": "2007-11-11T21:06:09Z",
+      "user": "Los Siete",
+      "comment": "/* Criterio de demarcación */",
+      "size": 13435,
+      "byte_delta": 135
+    },
+    {
+      "revid": 12745207,
+      "parentid": 12745188,
+      "timestamp": "2007-11-11T21:07:43Z",
+      "user": "Los Siete",
+      "comment": "",
+      "size": 13616,
+      "byte_delta": 181
+    },
+    {
+      "revid": 12745213,
+      "parentid": 12745207,
+      "timestamp": "2007-11-11T21:08:05Z",
+      "user": "Los Siete",
+      "comment": "/* Destacado */",
+      "size": 13616,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12756192,
+      "parentid": 12745213,
+      "timestamp": "2007-11-12T11:17:09Z",
+      "user": "Mutari",
+      "comment": "Nueva sección: /* Largos */",
+      "size": 14959,
+      "byte_delta": 1343
+    },
+    {
+      "revid": 12756249,
+      "parentid": 12756192,
+      "timestamp": "2007-11-12T11:23:35Z",
+      "user": "Fernando Estel",
+      "comment": "/* Guerra de ediciones */",
+      "size": 17470,
+      "byte_delta": 2511
+    },
+    {
+      "revid": 12757767,
+      "parentid": 12756249,
+      "timestamp": "2007-11-12T13:08:35Z",
+      "user": "Escarlati",
+      "comment": "Nueva sección: /* Hola, SolveCoagula */",
+      "size": 17967,
+      "byte_delta": 497
+    },
+    {
+      "revid": 12764925,
+      "parentid": 12757767,
+      "timestamp": "2007-11-12T18:31:21Z",
+      "user": "Escarlati",
+      "comment": "/* Hola, SolveCoagula */",
+      "size": 18562,
+      "byte_delta": 595
+    },
+    {
+      "revid": 12765399,
+      "parentid": 12764925,
+      "timestamp": "2007-11-12T18:46:48Z",
+      "user": "Fernando Estel",
+      "comment": "/* Guerra de ediciones */",
+      "size": 20353,
+      "byte_delta": 1791
+    },
+    {
+      "revid": 12765952,
+      "parentid": 12765399,
+      "timestamp": "2007-11-12T19:05:41Z",
+      "user": "Retama",
+      "comment": "/* Hola, SolveCoagula */",
+      "size": 20889,
+      "byte_delta": 536
+    },
+    {
+      "revid": 12783855,
+      "parentid": 12765952,
+      "timestamp": "2007-11-13T13:25:11Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 23385,
+      "byte_delta": 2496
+    },
+    {
+      "revid": 12783885,
+      "parentid": 12783855,
+      "timestamp": "2007-11-13T13:26:46Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 23424,
+      "byte_delta": 39
+    },
+    {
+      "revid": 12783898,
+      "parentid": 12783885,
+      "timestamp": "2007-11-13T13:27:20Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 23438,
+      "byte_delta": 14
+    },
+    {
+      "revid": 12783918,
+      "parentid": 12783898,
+      "timestamp": "2007-11-13T13:28:51Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 23472,
+      "byte_delta": 34
+    },
+    {
+      "revid": 12783992,
+      "parentid": 12783918,
+      "timestamp": "2007-11-13T13:33:20Z",
+      "user": "SolveCoagula",
+      "comment": "/* Bloqueo */",
+      "size": 23540,
+      "byte_delta": 68
+    },
+    {
+      "revid": 12784014,
+      "parentid": 12783992,
+      "timestamp": "2007-11-13T13:34:32Z",
+      "user": "SolveCoagula",
+      "comment": "/* Bloqueo */",
+      "size": 23643,
+      "byte_delta": 103
+    },
+    {
+      "revid": 12786168,
+      "parentid": 12784014,
+      "timestamp": "2007-11-13T15:33:23Z",
+      "user": "SolveCoagula",
+      "comment": "/* Bloqueo */",
+      "size": 23657,
+      "byte_delta": 14
+    },
+    {
+      "revid": 12792536,
+      "parentid": 12786168,
+      "timestamp": "2007-11-13T19:34:33Z",
+      "user": "Retama",
+      "comment": "/* Bloqueo */",
+      "size": 24159,
+      "byte_delta": 502
+    },
+    {
+      "revid": 12835826,
+      "parentid": 12792536,
+      "timestamp": "2007-11-15T15:20:07Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Bloqueo */",
+      "size": 24284,
+      "byte_delta": 125
+    },
+    {
+      "revid": 12911274,
+      "parentid": 12835826,
+      "timestamp": "2007-11-18T20:04:20Z",
+      "user": "Retama",
+      "comment": "/* Bloqueo */",
+      "size": 25082,
+      "byte_delta": 798
+    },
+    {
+      "revid": 12911445,
+      "parentid": 12911274,
+      "timestamp": "2007-11-18T20:08:12Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Reversiones */",
+      "size": 25256,
+      "byte_delta": 174
+    },
+    {
+      "revid": 12912735,
+      "parentid": 12911445,
+      "timestamp": "2007-11-18T20:52:07Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Reversiones */",
+      "size": 25338,
+      "byte_delta": 82
+    }
+  ]
+}

@@ -1,0 +1,2396 @@
+{
+  "meta": {
+    "corpus": "talk",
+    "title": "Usuario discusión:Analiza (historial WP es)",
+    "source": "raw/linea.md",
+    "generated_at": "2026-06-21T00:44:09Z",
+    "preamble": {
+      "lines": [
+        1,
+        7
+      ],
+      "text": "# Usuario discusión:Analiza — historial talk (es.wikipedia)\n# generado: 2026-06-21T00:44:08Z · registros en ventana oct–nov 2007: 46\nPágina: [Usuario discusión:Analiza](https://es.wikipedia.org/wiki/Usuario_discusión:Analiza)\nNamespace: **3** · corpus: **talk**"
+    },
+    "registro_count": 46,
+    "ordering": "newest_first_in_linea_md",
+    "snapshots": {
+      "previo": {
+        "role": "previo",
+        "registro_id": null,
+        "oldid": 11655835,
+        "timestamp": "28 sep 2007",
+        "user": "Dhidalgo",
+        "path": "snapshots/previo"
+      },
+      "final": {
+        "role": "final",
+        "registro_id": "r0001",
+        "oldid": 12888441,
+        "timestamp": "21:56 17 nov 2007",
+        "path": "snapshots/final"
+      },
+      "inicial": {
+        "role": "inicial",
+        "registro_id": "r0046",
+        "oldid": 11719710,
+        "timestamp": "01:52 1 oct 2007",
+        "summary": "Revertidos los cambios de [[User:Pasandolobomba|Pasandolobomba]] a la última edición de [[User:Fortykillers|Fortykillers]] con [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]] (Spam (ya se le avisó",
+        "path": "snapshots/inicial"
+      },
+      "sc_cierre": {
+        "role": "sc_cierre",
+        "oldid": 12888441,
+        "path": "snapshots/sc_cierre"
+      },
+      "actual": {
+        "role": "actual",
+        "oldid": null,
+        "path": "snapshots/actual"
+      }
+    },
+    "ontology_sections": [
+      [
+        "60px| Archivo de comentarios",
+        5
+      ],
+      [
+        "Confirmado",
+        3
+      ],
+      [
+        "Vandalismo en Pseudociencia",
+        2
+      ],
+      [
+        "RE: Bosque tropical del Pacífico",
+        2
+      ],
+      [
+        "Sin título",
+        2
+      ],
+      [
+        "Colores",
+        2
+      ],
+      [
+        "subst:",
+        1
+      ],
+      [
+        "Guerra de ediciones",
+        1
+      ],
+      [
+        "Re: Agua Bella",
+        1
+      ],
+      [
+        "Plantilla",
+        1
+      ],
+      [
+        "Categoría de esbozo",
+        1
+      ],
+      [
+        "60px|Comentarios de {{CURRENTMONTHNAME}} de {{CURRENTYEAR}}",
+        1
+      ],
+      [
+        "Teorias distintas a la verdad oficialen el 911",
+        1
+      ]
+    ],
+    "milestones": [
+      "r0001",
+      "r0002",
+      "r0003",
+      "r0004",
+      "r0005",
+      "r0008",
+      "r0010",
+      "r0011",
+      "r0012",
+      "r0013",
+      "r0014",
+      "r0015",
+      "r0018",
+      "r0019",
+      "r0020",
+      "r0021",
+      "r0022",
+      "r0023",
+      "r0024",
+      "r0025",
+      "r0026",
+      "r0027",
+      "r0028",
+      "r0029",
+      "r0032",
+      "r0034",
+      "r0035",
+      "r0036",
+      "r0038",
+      "r0040",
+      "r0041",
+      "r0042",
+      "r0043",
+      "r0044"
+    ],
+    "namespace": 3,
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-11-30"
+    }
+  },
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-12888441-subst",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 8
+      },
+      "oldid": 12888441,
+      "parent_oldid": 12885172,
+      "timestamp": "21:56 17 nov 2007",
+      "user": "Sanbec",
+      "bytes": 8162,
+      "byte_delta": 141,
+      "section": "subst:",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12888441",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12888441&oldid=12885172",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sanbec"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-17T21:56:05Z",
+      "article_refs": [
+        {
+          "oldid": 12889366,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12889502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12889424,
+          "title": "Pseudociencia",
+          "delta_hours": 0.9
+        },
+        {
+          "oldid": 12893402,
+          "title": "Pseudociencia",
+          "delta_hours": 3.6
+        },
+        {
+          "oldid": 12893554,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12893497,
+          "title": "Pseudociencia",
+          "delta_hours": 3.7
+        },
+        {
+          "oldid": 12883144,
+          "title": "Pseudociencia",
+          "delta_hours": 4.2
+        },
+        {
+          "oldid": 12880004,
+          "title": "Pseudociencia",
+          "delta_hours": 6.5
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "delta_hours": 21.0
+        },
+        {
+          "oldid": 12910974,
+          "title": "Pseudociencia",
+          "delta_hours": 22.0
+        },
+        {
+          "oldid": 12910943,
+          "title": "Pseudociencia",
+          "delta_hours": 22.0
+        }
+      ]
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-12885172",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 9
+      },
+      "oldid": 12885172,
+      "parent_oldid": 12806744,
+      "timestamp": "19:22 17 nov 2007",
+      "user": "Sanbec",
+      "bytes": 8021,
+      "byte_delta": 256,
+      "section": null,
+      "summary": "Nueva sección: /* subst: */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12885172",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12885172&oldid=12806744",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sanbec"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-17T19:22:50Z",
+      "article_refs": [
+        {
+          "oldid": 12883144,
+          "title": "Pseudociencia",
+          "delta_hours": 1.6
+        },
+        {
+          "oldid": 12889424,
+          "title": "Pseudociencia",
+          "delta_hours": 3.4
+        },
+        {
+          "oldid": 12889366,
+          "title": "Pseudociencia",
+          "delta_hours": 3.4
+        },
+        {
+          "oldid": 12889502,
+          "title": "Pseudociencia",
+          "delta_hours": 3.5
+        },
+        {
+          "oldid": 12880004,
+          "title": "Pseudociencia",
+          "delta_hours": 3.9
+        },
+        {
+          "oldid": 12893497,
+          "title": "Pseudociencia",
+          "delta_hours": 6.2
+        },
+        {
+          "oldid": 12893402,
+          "title": "Pseudociencia",
+          "delta_hours": 6.2
+        },
+        {
+          "oldid": 12893554,
+          "title": "Pseudociencia",
+          "delta_hours": 6.3
+        },
+        {
+          "oldid": 12866540,
+          "title": "Pseudociencia",
+          "delta_hours": 22.2
+        },
+        {
+          "oldid": 12866403,
+          "title": "Pseudociencia",
+          "delta_hours": 22.3
+        },
+        {
+          "oldid": 12866386,
+          "title": "Pseudociencia",
+          "delta_hours": 22.3
+        },
+        {
+          "oldid": 12909144,
+          "title": "Pseudociencia",
+          "delta_hours": 23.5
+        },
+        {
+          "oldid": 12864325,
+          "title": "Pseudociencia",
+          "delta_hours": 24.0
+        }
+      ]
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-12806744-guerra-de-ediciones",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 12806744,
+      "parent_oldid": 12741803,
+      "timestamp": "10:04 14 nov 2007",
+      "user": "Fernando_Estel",
+      "bytes": 7765,
+      "byte_delta": 1390,
+      "section": "Guerra de ediciones",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12806744",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12806744&oldid=12741803",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1390",
+        "user_Fernando_Estel"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-14T10:04:58Z",
+      "article_refs": [
+        {
+          "oldid": 12797908,
+          "title": "Pseudociencia",
+          "delta_hours": 11.1
+        },
+        {
+          "oldid": 12821003,
+          "title": "Pseudociencia",
+          "delta_hours": 11.7
+        },
+        {
+          "oldid": 12827393,
+          "title": "Pseudociencia",
+          "delta_hours": 16.6
+        },
+        {
+          "oldid": 12827486,
+          "title": "Pseudociencia",
+          "delta_hours": 16.7
+        },
+        {
+          "oldid": 12827831,
+          "title": "Pseudociencia",
+          "delta_hours": 17.1
+        },
+        {
+          "oldid": 12828682,
+          "title": "Pseudociencia",
+          "delta_hours": 18.4
+        },
+        {
+          "oldid": 12829279,
+          "title": "Pseudociencia",
+          "delta_hours": 19.5
+        },
+        {
+          "oldid": 12829261,
+          "title": "Pseudociencia",
+          "delta_hours": 19.5
+        }
+      ]
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-12741803",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 12741803,
+      "parent_oldid": 12720477,
+      "timestamp": "19:04 11 nov 2007",
+      "user": "Belgrano",
+      "bytes": 6375,
+      "byte_delta": 372,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12741803",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12741803&oldid=12720477",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Belgrano"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-11T19:04:12Z",
+      "article_refs": [
+        {
+          "oldid": 12745255,
+          "title": "Pseudociencia",
+          "delta_hours": 2.1
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 8.6
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 8.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 8.7
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 8.8
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 8.8
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 9.2
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 15.6
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 15.7
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 15.7
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 22.8
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 23.3
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 23.7
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 23.8
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 23.9
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 23.9
+        }
+      ]
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-12720477-vandalismo-en-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 12720477,
+      "parent_oldid": 12720101,
+      "timestamp": "19:49 10 nov 2007",
+      "user": "Retama",
+      "bytes": 6003,
+      "byte_delta": 380,
+      "section": "Vandalismo en Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12720477",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12720477&oldid=12720101",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Retama"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:49:42Z",
+      "article_refs": [
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.5
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.6
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.5
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.6
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 5.1
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 8.1
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.1
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.4
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.5
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 14.6
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.6
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.7
+        }
+      ]
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-12720101-vandalismo-en-pseudociencia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 12720101,
+      "parent_oldid": 12719797,
+      "timestamp": "19:33 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5623,
+      "byte_delta": 120,
+      "section": "Vandalismo en Pseudociencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12720101",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12720101&oldid=12719797",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:33:41Z",
+      "article_refs": [
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.3
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.7
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.3
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.3
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 4.8
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 7.8
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 7.9
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 7.9
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 7.9
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.3
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.7
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 14.8
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.3
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.4
+        }
+      ]
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-12719797",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 12719797,
+      "parent_oldid": 12618521,
+      "timestamp": "19:23 10 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5503,
+      "byte_delta": 367,
+      "section": null,
+      "summary": "Nueva sección: /* Vandalismo en Pseudociencia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12719797",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12719797&oldid=12618521",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-10T19:23:11Z",
+      "article_refs": [
+        {
+          "oldid": 12719795,
+          "title": "Pseudociencia",
+          "delta_hours": 0.0
+        },
+        {
+          "oldid": 12719652,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12719637,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12719613,
+          "title": "Pseudociencia",
+          "delta_hours": 0.1
+        },
+        {
+          "oldid": 12719557,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719502,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12719465,
+          "title": "Pseudociencia",
+          "delta_hours": 0.2
+        },
+        {
+          "oldid": 12720368,
+          "title": "Pseudociencia",
+          "delta_hours": 0.4
+        },
+        {
+          "oldid": 12721075,
+          "title": "Pseudociencia",
+          "delta_hours": 0.8
+        },
+        {
+          "oldid": 12714073,
+          "title": "Pseudociencia",
+          "delta_hours": 4.1
+        },
+        {
+          "oldid": 12714032,
+          "title": "Pseudociencia",
+          "delta_hours": 4.1
+        },
+        {
+          "oldid": 12713475,
+          "title": "Pseudociencia",
+          "delta_hours": 4.7
+        },
+        {
+          "oldid": 12710901,
+          "title": "Pseudociencia",
+          "delta_hours": 7.7
+        },
+        {
+          "oldid": 12729143,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12729129,
+          "title": "Pseudociencia",
+          "delta_hours": 8.0
+        },
+        {
+          "oldid": 12729211,
+          "title": "Pseudociencia",
+          "delta_hours": 8.1
+        },
+        {
+          "oldid": 12732274,
+          "title": "Pseudociencia",
+          "delta_hours": 14.5
+        },
+        {
+          "oldid": 12732458,
+          "title": "Pseudociencia",
+          "delta_hours": 14.8
+        },
+        {
+          "oldid": 12732491,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12732556,
+          "title": "Pseudociencia",
+          "delta_hours": 15.0
+        },
+        {
+          "oldid": 12732549,
+          "title": "Pseudociencia",
+          "delta_hours": 15.0
+        },
+        {
+          "oldid": 12732577,
+          "title": "Pseudociencia",
+          "delta_hours": 15.1
+        },
+        {
+          "oldid": 12705438,
+          "title": "Pseudociencia",
+          "delta_hours": 18.2
+        },
+        {
+          "oldid": 12705323,
+          "title": "Pseudociencia",
+          "delta_hours": 18.3
+        }
+      ]
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-12618521-re-bosque-tropical-del-pacific",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 12618521,
+      "parent_oldid": 12576087,
+      "timestamp": "16:40 6 nov 2007",
+      "user": "Locutus_Borg",
+      "bytes": 5136,
+      "byte_delta": 324,
+      "section": "RE: Bosque tropical del Pacífico",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12618521",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12618521&oldid=12576087",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Locutus_Borg"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-06T16:40:38Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-12576087-re-bosque-tropical-del-pacific",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 12576087,
+      "parent_oldid": 12576078,
+      "timestamp": "21:23 4 nov 2007",
+      "user": "Locutus_Borg",
+      "bytes": 4812,
+      "byte_delta": 3,
+      "section": "RE: Bosque tropical del Pacífico",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12576087",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12576087&oldid=12576078",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-04T21:23:03Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-12576078",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 12576078,
+      "parent_oldid": 12563197,
+      "timestamp": "21:22 4 nov 2007",
+      "user": "Locutus_Borg",
+      "bytes": 4809,
+      "byte_delta": 469,
+      "section": null,
+      "summary": "Nueva sección: /* RE: Bosque tropical del Pacífico */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12576078",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12576078&oldid=12563197",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Locutus_Borg"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-04T21:22:46Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-12563197",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 12563197,
+      "parent_oldid": 12562383,
+      "timestamp": "11:17 4 nov 2007",
+      "user": "Pabloallo",
+      "bytes": 4340,
+      "byte_delta": 576,
+      "section": null,
+      "summary": "Nueva sección: /* Plantilla WPTAYAN */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12563197",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12563197&oldid=12562383",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_576",
+        "user_Pabloallo"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-04T11:17:56Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 22.1
+        }
+      ]
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-12562383",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 12562383,
+      "parent_oldid": 12554370,
+      "timestamp": "09:41 4 nov 2007",
+      "user": "Gusgus",
+      "bytes": 3764,
+      "byte_delta": 337,
+      "section": null,
+      "summary": "Wikiproyecto",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12562383",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12562383&oldid=12554370",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Gusgus"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-04T09:41:14Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 20.5
+        }
+      ]
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-12554370-re-agua-bella",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 12554370,
+      "parent_oldid": 12553155,
+      "timestamp": "23:21 3 nov 2007",
+      "user": "Locutus_Borg",
+      "bytes": 3427,
+      "byte_delta": 178,
+      "section": "Re: Agua Bella",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12554370",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12554370&oldid=12553155",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Locutus_Borg"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T23:21:32Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 10.2
+        }
+      ]
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-12553155",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 12553155,
+      "parent_oldid": 12542552,
+      "timestamp": "22:38 3 nov 2007",
+      "user": "Locutus_Borg",
+      "bytes": 3249,
+      "byte_delta": 608,
+      "section": null,
+      "summary": "Nueva sección: /* Re: Agua Bella */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12553155",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12553155&oldid=12542552",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_608",
+        "user_Locutus_Borg"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T22:38:08Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 9.5
+        }
+      ]
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-12542552",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 12542552,
+      "parent_oldid": 12542080,
+      "timestamp": "16:21 3 nov 2007",
+      "user": "Dark",
+      "bytes": 2641,
+      "byte_delta": 156,
+      "section": null,
+      "summary": "Nueva sección: /* Mediación */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12542552",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12542552&oldid=12542080",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Dark"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T16:21:28Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 3.2
+        }
+      ]
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-12542080-60px-archivo-de-comentarios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 12542080,
+      "parent_oldid": 12542076,
+      "timestamp": "16:00 3 nov 2007",
+      "user": "Analiza",
+      "bytes": 2485,
+      "byte_delta": -1,
+      "section": "60px| Archivo de comentarios",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12542080",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12542080&oldid=12542076",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T16:00:51Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 2.8
+        }
+      ]
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-12542076-60px-archivo-de-comentarios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 12542076,
+      "parent_oldid": 12542056,
+      "timestamp": "16:00 3 nov 2007",
+      "user": "Analiza",
+      "bytes": 2486,
+      "byte_delta": 76,
+      "section": "60px| Archivo de comentarios",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12542076",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12542076&oldid=12542056",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T16:00:36Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 2.8
+        }
+      ]
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-12542056",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 12542056,
+      "parent_oldid": 12541507,
+      "timestamp": "15:59 3 nov 2007",
+      "user": "Analiza",
+      "bytes": 2410,
+      "byte_delta": -8865,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12542056",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12542056&oldid=12541507",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_-8865",
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T15:59:31Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 2.8
+        }
+      ]
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-12541507-plantilla",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 12541507,
+      "parent_oldid": 12530236,
+      "timestamp": "15:34 3 nov 2007",
+      "user": "Dodo",
+      "bytes": 11275,
+      "byte_delta": 200,
+      "section": "Plantilla",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12541507",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12541507&oldid=12530236",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Dodo"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-03T15:34:45Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 2.4
+        }
+      ]
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-12530236",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 12530236,
+      "parent_oldid": 12497449,
+      "timestamp": "23:01 2 nov 2007",
+      "user": "Dodo",
+      "bytes": 11075,
+      "byte_delta": 214,
+      "section": null,
+      "summary": "Nueva sección: /* Plantilla */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12530236",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12530236&oldid=12497449",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Dodo"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-02T23:01:20Z",
+      "article_refs": [
+        {
+          "oldid": 12539239,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        }
+      ]
+    },
+    {
+      "id": "r0021",
+      "slug": "r0021-oldid-12497449",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 28
+      },
+      "oldid": 12497449,
+      "parent_oldid": 12350330,
+      "timestamp": "17:05 1 nov 2007",
+      "user": "Muro_Bot",
+      "bytes": 10861,
+      "byte_delta": 219,
+      "section": null,
+      "summary": "Bot: Cambiando firma, a petición de usuario",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12497449",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12497449&oldid=12350330",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Muro_Bot"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-11-01T17:05:02Z",
+      "article_refs": [
+        {
+          "oldid": 12490963,
+          "title": "Pseudociencia",
+          "delta_hours": 6.0
+        },
+        {
+          "oldid": 12490852,
+          "title": "Pseudociencia",
+          "delta_hours": 6.2
+        },
+        {
+          "oldid": 12490836,
+          "title": "Pseudociencia",
+          "delta_hours": 6.2
+        },
+        {
+          "oldid": 12490814,
+          "title": "Pseudociencia",
+          "delta_hours": 6.2
+        },
+        {
+          "oldid": 12490370,
+          "title": "Pseudociencia",
+          "delta_hours": 6.7
+        },
+        {
+          "oldid": 12490349,
+          "title": "Pseudociencia",
+          "delta_hours": 6.8
+        },
+        {
+          "oldid": 12490270,
+          "title": "Pseudociencia",
+          "delta_hours": 6.9
+        },
+        {
+          "oldid": 12490265,
+          "title": "Pseudociencia",
+          "delta_hours": 6.9
+        },
+        {
+          "oldid": 12490209,
+          "title": "Pseudociencia",
+          "delta_hours": 7.0
+        },
+        {
+          "oldid": 12490201,
+          "title": "Pseudociencia",
+          "delta_hours": 7.0
+        },
+        {
+          "oldid": 12490172,
+          "title": "Pseudociencia",
+          "delta_hours": 7.1
+        },
+        {
+          "oldid": 12490143,
+          "title": "Pseudociencia",
+          "delta_hours": 7.1
+        },
+        {
+          "oldid": 12490123,
+          "title": "Pseudociencia",
+          "delta_hours": 7.2
+        },
+        {
+          "oldid": 12490111,
+          "title": "Pseudociencia",
+          "delta_hours": 7.2
+        },
+        {
+          "oldid": 12490106,
+          "title": "Pseudociencia",
+          "delta_hours": 7.2
+        },
+        {
+          "oldid": 12490094,
+          "title": "Pseudociencia",
+          "delta_hours": 7.2
+        },
+        {
+          "oldid": 12490062,
+          "title": "Pseudociencia",
+          "delta_hours": 7.3
+        },
+        {
+          "oldid": 12489983,
+          "title": "Pseudociencia",
+          "delta_hours": 7.4
+        },
+        {
+          "oldid": 12489953,
+          "title": "Pseudociencia",
+          "delta_hours": 7.4
+        },
+        {
+          "oldid": 12489908,
+          "title": "Pseudociencia",
+          "delta_hours": 7.5
+        },
+        {
+          "oldid": 12489874,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12489868,
+          "title": "Pseudociencia",
+          "delta_hours": 7.6
+        },
+        {
+          "oldid": 12487069,
+          "title": "Pseudociencia",
+          "delta_hours": 14.1
+        },
+        {
+          "oldid": 12487012,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        },
+        {
+          "oldid": 12486999,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        },
+        {
+          "oldid": 12486972,
+          "title": "Pseudociencia",
+          "delta_hours": 14.2
+        },
+        {
+          "oldid": 12486862,
+          "title": "Pseudociencia",
+          "delta_hours": 14.4
+        },
+        {
+          "oldid": 12486462,
+          "title": "Pseudociencia",
+          "delta_hours": 14.8
+        },
+        {
+          "oldid": 12486432,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12486403,
+          "title": "Pseudociencia",
+          "delta_hours": 14.9
+        },
+        {
+          "oldid": 12486240,
+          "title": "Pseudociencia",
+          "delta_hours": 15.1
+        },
+        {
+          "oldid": 12486220,
+          "title": "Pseudociencia",
+          "delta_hours": 15.1
+        },
+        {
+          "oldid": 12485998,
+          "title": "Pseudociencia",
+          "delta_hours": 15.4
+        },
+        {
+          "oldid": 12485981,
+          "title": "Pseudociencia",
+          "delta_hours": 15.4
+        },
+        {
+          "oldid": 12485929,
+          "title": "Pseudociencia",
+          "delta_hours": 15.5
+        },
+        {
+          "oldid": 12485901,
+          "title": "Pseudociencia",
+          "delta_hours": 15.5
+        },
+        {
+          "oldid": 12485534,
+          "title": "Pseudociencia",
+          "delta_hours": 16.0
+        },
+        {
+          "oldid": 12485508,
+          "title": "Pseudociencia",
+          "delta_hours": 16.0
+        },
+        {
+          "oldid": 12485444,
+          "title": "Pseudociencia",
+          "delta_hours": 16.1
+        },
+        {
+          "oldid": 12484330,
+          "title": "Pseudociencia",
+          "delta_hours": 17.1
+        },
+        {
+          "oldid": 12484162,
+          "title": "Pseudociencia",
+          "delta_hours": 17.2
+        },
+        {
+          "oldid": 12483968,
+          "title": "Pseudociencia",
+          "delta_hours": 17.4
+        },
+        {
+          "oldid": 12483930,
+          "title": "Pseudociencia",
+          "delta_hours": 17.4
+        },
+        {
+          "oldid": 12483869,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        },
+        {
+          "oldid": 12483821,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        },
+        {
+          "oldid": 12483807,
+          "title": "Pseudociencia",
+          "delta_hours": 17.5
+        }
+      ]
+    },
+    {
+      "id": "r0022",
+      "slug": "r0022-oldid-12350330-categoria-de-esbozo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 29
+      },
+      "oldid": 12350330,
+      "parent_oldid": 12294248,
+      "timestamp": "12:40 26 oct 2007",
+      "user": "Diosa",
+      "bytes": 10642,
+      "byte_delta": 235,
+      "section": "Categoría de esbozo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12350330",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12350330&oldid=12294248",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Diosa"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-26T12:40:19Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0023",
+      "slug": "r0023-oldid-12294248",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 30
+      },
+      "oldid": 12294248,
+      "parent_oldid": 12273441,
+      "timestamp": "04:00 24 oct 2007",
+      "user": "333",
+      "bytes": 10407,
+      "byte_delta": 754,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12294248",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12294248&oldid=12273441",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_754",
+        "user_333"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-24T04:00:38Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0024",
+      "slug": "r0024-oldid-12273441",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 31
+      },
+      "oldid": 12273441,
+      "parent_oldid": 12232621,
+      "timestamp": "13:21 23 oct 2007",
+      "user": "Walking_Mind",
+      "bytes": 9653,
+      "byte_delta": 553,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12273441",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12273441&oldid=12232621",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_553",
+        "user_Walking_Mind"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-23T13:21:23Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0025",
+      "slug": "r0025-oldid-12232621",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 32
+      },
+      "oldid": 12232621,
+      "parent_oldid": 12184614,
+      "timestamp": "20:58 21 oct 2007",
+      "user": "Analiza",
+      "bytes": 9100,
+      "byte_delta": 367,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12232621",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12232621&oldid=12184614",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-21T20:58:30Z",
+      "article_refs": [
+        {
+          "oldid": 12238466,
+          "title": "Pseudociencia",
+          "delta_hours": 4.0
+        },
+        {
+          "oldid": 12238425,
+          "title": "Pseudociencia",
+          "delta_hours": 4.0
+        }
+      ]
+    },
+    {
+      "id": "r0026",
+      "slug": "r0026-oldid-12184614",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 33
+      },
+      "oldid": 12184614,
+      "parent_oldid": 12069332,
+      "timestamp": "18:51 19 oct 2007",
+      "user": "Ratchet",
+      "bytes": 8733,
+      "byte_delta": 339,
+      "section": null,
+      "summary": "Nueva sección: /* Encuesta */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12184614",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12184614&oldid=12069332",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ratchet"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-19T18:51:50Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0027",
+      "slug": "r0027-oldid-12069332",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 34
+      },
+      "oldid": 12069332,
+      "parent_oldid": 11913209,
+      "timestamp": "02:58 15 oct 2007",
+      "user": "Alberto_Salguero",
+      "bytes": 8394,
+      "byte_delta": 733,
+      "section": null,
+      "summary": "El Sol arranca la cola de un cometa",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=12069332",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=12069332&oldid=11913209",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_733",
+        "user_Alberto_Salguero"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T02:58:36Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0028",
+      "slug": "r0028-oldid-11913209",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 35
+      },
+      "oldid": 11913209,
+      "parent_oldid": 11896424,
+      "timestamp": "18:47 8 oct 2007",
+      "user": "FViolat",
+      "bytes": 7661,
+      "byte_delta": 1130,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11913209",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11913209&oldid=11896424",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1130",
+        "user_FViolat"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-08T18:47:53Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0029",
+      "slug": "r0029-oldid-11896424",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 36
+      },
+      "oldid": 11896424,
+      "parent_oldid": 11890921,
+      "timestamp": "00:46 8 oct 2007",
+      "user": "Loco085",
+      "bytes": 6531,
+      "byte_delta": 551,
+      "section": null,
+      "summary": "Nueva sección: /* Carlos Fuentealba */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11896424",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11896424&oldid=11890921",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_551",
+        "user_Loco085"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-08T00:46:39Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0030",
+      "slug": "r0030-oldid-11890921-60px-archivo-de-comentarios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 37
+      },
+      "oldid": 11890921,
+      "parent_oldid": 11890912,
+      "timestamp": "20:33 7 oct 2007",
+      "user": "Analiza",
+      "bytes": 5980,
+      "byte_delta": 4,
+      "section": "60px| Archivo de comentarios",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11890921",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11890921&oldid=11890912",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-07T20:33:43Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0031",
+      "slug": "r0031-oldid-11890912-60px-archivo-de-comentarios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 38
+      },
+      "oldid": 11890912,
+      "parent_oldid": 11890524,
+      "timestamp": "20:33 7 oct 2007",
+      "user": "Analiza",
+      "bytes": 5976,
+      "byte_delta": 77,
+      "section": "60px| Archivo de comentarios",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11890912",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11890912&oldid=11890524",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-07T20:33:28Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0032",
+      "slug": "r0032-oldid-11890524-60pxcomentarios-de-currentmont",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 39
+      },
+      "oldid": 11890524,
+      "parent_oldid": 11855283,
+      "timestamp": "20:19 7 oct 2007",
+      "user": "Analiza",
+      "bytes": 5899,
+      "byte_delta": -10001,
+      "section": "60px|Comentarios de {{CURRENTMONTHNAME}} de {{CURRENTYEAR}}",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11890524",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11890524&oldid=11855283",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_-10001",
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-07T20:19:37Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0033",
+      "slug": "r0033-oldid-11855283-sin-titulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 40
+      },
+      "oldid": 11855283,
+      "parent_oldid": 11855262,
+      "timestamp": "10:06 6 oct 2007",
+      "user": "FViolat",
+      "bytes": 15900,
+      "byte_delta": 30,
+      "section": "Sin título",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11855283",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11855283&oldid=11855262",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-06T10:06:33Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0034",
+      "slug": "r0034-oldid-11855262",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 41
+      },
+      "oldid": 11855262,
+      "parent_oldid": 11844465,
+      "timestamp": "10:05 6 oct 2007",
+      "user": "FViolat",
+      "bytes": 15870,
+      "byte_delta": 1699,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11855262",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11855262&oldid=11844465",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1699",
+        "user_FViolat"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-06T10:05:02Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0035",
+      "slug": "r0035-oldid-11844465-confirmado",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 42
+      },
+      "oldid": 11844465,
+      "parent_oldid": 11843319,
+      "timestamp": "20:39 5 oct 2007",
+      "user": "Cansado",
+      "bytes": 14171,
+      "byte_delta": 404,
+      "section": "Confirmado",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11844465",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11844465&oldid=11843319",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Cansado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-05T20:39:08Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0036",
+      "slug": "r0036-oldid-11843319-sin-titulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 43
+      },
+      "oldid": 11843319,
+      "parent_oldid": 11843254,
+      "timestamp": "19:58 5 oct 2007",
+      "user": "Analiza",
+      "bytes": 13767,
+      "byte_delta": 182,
+      "section": "Sin título",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11843319",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11843319&oldid=11843254",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-05T19:58:07Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0037",
+      "slug": "r0037-oldid-11843254-confirmado",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 44
+      },
+      "oldid": 11843254,
+      "parent_oldid": 11842884,
+      "timestamp": "19:56 5 oct 2007",
+      "user": "Analiza",
+      "bytes": 13585,
+      "byte_delta": 17,
+      "section": "Confirmado",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11843254",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11843254&oldid=11842884",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-05T19:56:16Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0038",
+      "slug": "r0038-oldid-11842884",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 45
+      },
+      "oldid": 11842884,
+      "parent_oldid": 11821588,
+      "timestamp": "19:42 5 oct 2007",
+      "user": "FViolat",
+      "bytes": 13568,
+      "byte_delta": 1102,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11842884",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11842884&oldid=11821588",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1102",
+        "user_FViolat"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-05T19:42:52Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0039",
+      "slug": "r0039-oldid-11821588-confirmado",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 46
+      },
+      "oldid": 11821588,
+      "parent_oldid": 11820962,
+      "timestamp": "22:28 4 oct 2007",
+      "user": "Cansado",
+      "bytes": 12466,
+      "byte_delta": 0,
+      "section": "Confirmado",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11821588",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11821588&oldid=11820962",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-04T22:28:56Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0040",
+      "slug": "r0040-oldid-11820962-colores",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 47
+      },
+      "oldid": 11820962,
+      "parent_oldid": 11809305,
+      "timestamp": "22:08 4 oct 2007",
+      "user": "Cansado",
+      "bytes": 12466,
+      "byte_delta": 188,
+      "section": "Colores",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11820962",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11820962&oldid=11809305",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Cansado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-04T22:08:16Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0041",
+      "slug": "r0041-oldid-11809305",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 48
+      },
+      "oldid": 11809305,
+      "parent_oldid": 11809277,
+      "timestamp": "14:42 4 oct 2007",
+      "user": "Analiza",
+      "bytes": 12278,
+      "byte_delta": -13629,
+      "section": null,
+      "summary": "No quiero trolls",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11809305",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11809305&oldid=11809277",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_-13629",
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-04T14:42:16Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0042",
+      "slug": "r0042-oldid-11809277-teorias-distintas-a-la-verdad-",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 49
+      },
+      "oldid": 11809277,
+      "parent_oldid": 11776383,
+      "timestamp": "14:40 4 oct 2007",
+      "user": "Analiza",
+      "bytes": 25907,
+      "byte_delta": -186,
+      "section": "Teorias distintas a la verdad oficialen el 911",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11809277",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11809277&oldid=11776383",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Analiza"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-04T14:40:59Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0043",
+      "slug": "r0043-oldid-11776383-colores",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 50
+      },
+      "oldid": 11776383,
+      "parent_oldid": 11740268,
+      "timestamp": "07:29 3 oct 2007",
+      "user": "Tomatejc",
+      "bytes": 26093,
+      "byte_delta": 301,
+      "section": "Colores",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11776383",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11776383&oldid=11740268",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Tomatejc"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-03T07:29:49Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0044",
+      "slug": "r0044-oldid-11740268",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 51
+      },
+      "oldid": 11740268,
+      "parent_oldid": 11739160,
+      "timestamp": "20:48 1 oct 2007",
+      "user": "Tomatejc",
+      "bytes": 25792,
+      "byte_delta": 428,
+      "section": null,
+      "summary": "Nueva sección: /* Colores */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11740268",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11740268&oldid=11739160",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Tomatejc"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-01T20:48:37Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0045",
+      "slug": "r0045-oldid-11739160-60px-archivo-de-comentarios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 52
+      },
+      "oldid": 11739160,
+      "parent_oldid": 11719710,
+      "timestamp": "20:03 1 oct 2007",
+      "user": "Analiza",
+      "bytes": 25364,
+      "byte_delta": 3,
+      "section": "60px| Archivo de comentarios",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11739160",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11739160&oldid=11719710",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-01T20:03:16Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0046",
+      "slug": "r0046-oldid-11719710",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 53
+      },
+      "oldid": 11719710,
+      "parent_oldid": 11655835,
+      "timestamp": "01:52 1 oct 2007",
+      "user": "Cobalttempest",
+      "bytes": 25361,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Revertidos los cambios de [[User:Pasandolobomba|Pasandolobomba]] a la última edición de [[User:Fortykillers|Fortykillers]] con [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]] (Spam (ya se le avisó",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&oldid=11719710",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Analiza&diff=11719710&oldid=11655835",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Analiza"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-01T01:52:05Z",
+      "article_refs": []
+    }
+  ]
+}
