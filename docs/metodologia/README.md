@@ -21,15 +21,23 @@ agents/skills/disfraz-rude-bot/
 
 | Archivo | Función |
 |---------|---------|
-| `SKILL.md` | Traje rude bot, cabecera, shortcuts, hot file |
+| `SKILL.md` | Traje rude bot, cabecera (`engines:main · forces:`), shortcuts, hot file |
 | `poderes/registry.yaml` | Catálogo extensible de poderes |
-| `poderes/{id}/SKILL.md` | Módulos (cache-nav, epistem-tags, alineacion-dual, …) |
+| `poderes/{id}/SKILL.md` | Módulos (cache-nav, epistem-tags, alineacion-dual, cicd-loop, …) |
 | `loadouts/default-index-reader.json` | Poderes ON por defecto |
-| `checklist.md` | Revisión en personaje (A–G) |
-| `ejemplos.md` | Cabecera, +alineacion, opt-out |
+| `checklist.md` | Revisión en personaje (A–H) |
+| `ejemplos.md` | Cabecera, +alineacion, +cicd / force G, Calibración |
 | `templates/reader-traje.hot.md` | Plantilla estado traje entre turnos |
 
-**Extensión:** añadir entrada en `poderes/registry.yaml` + `poderes/{id}/SKILL.md`; opcional en `loadouts/*.json` como `poderes_optional`. Piloto opt-in: `alineacion-dual` (carril artículo | talk).
+**Cabecera obligatoria** incluye `engines:main` (siempre ON) y `forces:` (máx. 2). Shortcuts: `+force`, `-force`, `forces?`, `+cicd` (alias `+force engine-model-G`), `+poder`, `-poder`, `sin disfraz`.
+
+**Estado compartido:** [`aleph-context/engines-active.json`](../../aleph-context/engines-active.json) — mismo archivo que sincroniza `reader-traje.hot.md` (campos `engines_*`).
+
+**Pipeline Calibración (paso 0b):** bloque generativo acotado tras cabecera cuando hay forces activos; mini-tabla force G dentro de Calibración, no sustituye 🟢🟡🔴⚪ del cuerpo.
+
+**Extensión:** añadir entrada en `poderes/registry.yaml` + `poderes/{id}/SKILL.md`; opcional en `loadouts/*.json` como `poderes_optional`. Opt-in: `alineacion-dual` (carril artículo | talk), `cicd-loop` (protocolo `+force engine-model-G`).
+
+**Force G:** [`engines/engine-model-G/INDICE.md`](../../engines/engine-model-G/INDICE.md) · [`FORCING.md`](../../engines/engine-model-G/FORCING.md).
 
 ## Cursor
 
@@ -37,4 +45,6 @@ Los skills viven en `agents/skills/`; configura el IDE para leer esa ruta si hac
 
 ## FOSS
 
-El portal `public/foss/` enlaza estos archivos vía `github_blob()`; no se duplican en `public/`.
+El portal [`public/foss/`](../../public/foss/index.html) enlaza estos archivos vía `github_blob()`; no se duplican en `public/`.
+
+URL prevista (GitHub Pages): `https://alephscriptorium-eng.github.io/network-engine/foss/`

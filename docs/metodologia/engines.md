@@ -49,6 +49,8 @@ Elegir **1–2** force engines según:
 
 Por force activo: leer **1 escena ancla** (`output.md` o capas según necesidad). Force G: [`engines/engine-model-G/FORCING.md`](../../engines/engine-model-G/FORCING.md).
 
+**Traje index-reader vs tablero Aleph:** en disfraz-rude-bot la Calibración (paso 0b) es **ligera** — cabecera + bloque `Calibración engines` + mini-tabla G; no sustituye el pipeline ASENTAMIENTO + cotas + tablero completo de modo-aleph.
+
 ## Presupuesto de contexto
 
 | Componente | Tokens ~ |

@@ -232,8 +232,10 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cac
 
 ## Modos de lectura
 
-- **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto.
-- **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero; quitar traje antes.
+- **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto; cabecera con `engines:main · forces:`.
+- **Force G / `+cicd`:** [`engine-model-G`](../../engines/engine-model-G/INDICE.md) — lectura forense con pipeline sprint–release; ancla [`02-bucle-ideas-fuerza`](../../engines/engine-model-G/sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza/); protocolo [`FORCING.md`](../../engines/engine-model-G/FORCING.md). Alias traje: `+cicd` → `+force engine-model-G`.
+- **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero completo; quitar traje antes de superponer pipelines.
+- **Force G / `+cicd`:** lectura forense con pipeline ágil — `+force engine-model-G` o alias `+cicd`; protocolo [`engine-model-G/FORCING.md`](../../engines/engine-model-G/FORCING.md) · escena ancla [`02-bucle-ideas-fuerza`](../../engines/engine-model-G/sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza/output.md).
 
 ### Poder `cache-nav` (traje rude-bot)
 

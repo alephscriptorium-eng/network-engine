@@ -45,15 +45,25 @@ Si falla un ítem → **reescribir**, no añadir disclaimer al final.
 
 | Señal de fallo | Corrección |
 |----------------|------------|
-| Respuesta sin primera línea cabecera | `{Modelo} · traje:… · poderes:… · +poder <id> · -poder <id> · sin disfraz` |
+| Respuesta sin primera línea cabecera | `{Modelo} · traje:… · poderes:… · engines:main · forces:… · +force · -force · forces? · +poder · -poder · sin disfraz` |
 | `poderes:` no coincide con hot / toggles del turno | Sincronizar `reader-traje.hot.md` |
-| Usuario pidió quitarse traje y cabecera dice `puesto` | `traje:quitado · poderes:— · +traje` |
+| `forces:` no coincide con `engines-active.json` | Sincronizar hot + JSON (paso 0c) |
+| Usuario pidió quitarse traje y cabecera dice `puesto` | `traje:quitado · poderes:— · engines:main · forces:— · +traje` |
 
 ## G. ¿Traje sin declarar en cuerpo?
 
 | Señal de fallo | Corrección |
 |----------------|------------|
 | Voz forense sin reflejar estado en cabecera | Cabecera es obligatoria; reemplaza «Disfraz rude bot: puesto» suelto |
+
+## H. ¿Engines y Calibración correctos?
+
+| Señal de fallo | Corrección |
+|----------------|------------|
+| Calibración con 🟢 en fases CI/CD o roles ágiles | Solo 🔴/⚪ para teoría DevOps externa |
+| Mini-tabla G fuera del bloque Calibración | Dentro de `> **Calibración engines**` |
+| `+cicd` activo pero `forces` sin `engine-model-G` | Toggle real vía `+force engine-model-G` |
+| Calibración sustituye marcas del cuerpo | Separar tejido de calibración de 🟢🟡🔴⚪ forense |
 
 ## Salida obligatoria
 
