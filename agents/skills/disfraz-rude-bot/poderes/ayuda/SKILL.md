@@ -79,7 +79,16 @@ flowchart TB
 |--------|---------|-------|
 | **blockchain** | Bloques 0–15 | Ledger de `# User`; acto cierre 11–15 (contrato, vestuario, dual, fantasma, epílogo) |
 | **agentchain/composer** | Bloques 2–15 | Corpus · REIC · pulso oct–nov · Matrix · prensa · talk-cache · alineación ±24 h |
-| **reader-chain/gemini** | Bloques 1–3 | Intro traje · ayuda / mapa de capas · anglo payload (stub) |
+| **reader-chain/gemini** | Bloques 1–3 | Intro traje · ayuda / mapa de capas · anglo payload (stub) — ver [`README.md`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/README.md) |
+
+#### Correspondencia gemini ↔ blockchain (temática)
+
+| gemini N | Acto reader | Blockchain relacionada |
+|----------|-------------|------------------------|
+| 1 | Onboarding traje | 0–1 |
+| 2 | Demo `+ayuda` | todos (Story Board Q1–Q5) |
+| 3 | Épica anglo / Bunge | 5–6 (radiografía) |
+| 4+ | pendiente | 4–15 según roadmap README gemini |
 | **uichain** | 3 prompts | `ui-block-6-recap` · `block-12-panel-estado` · `block-14-timeline-dual` |
 
 | Tema | blockchain | agentchain | gemini | uichain |
@@ -139,10 +148,13 @@ Tras Función 1 (si aplica), emitir tabla:
 ```
 
 - Archivo faltante → `⚪` en celda; **no inventar** bloque.
-- Ultra-resumen: primera línea tras `# User` (truncar ~80 chars si larga); citar ruta leída.
+- Ultra-resumen: primera línea tras `# User` (truncar ~80 chars si larga); texto plano o ruta repo relativa `blockchain/block-N.md`.
+- **Prohibido** `file://` y rutas absolutas (`C:/Users/...`, `file:///c:/...`).
 - `composer` / `gemini`: `✓` si presente, `⚪` si ausente.
 - `uichain`: nombres de prompt o `⚪`.
 - `chips`: lista separada por `·` o `—`.
+
+**DRY en sesión:** si [`reader-chain/gemini/block-2.md`](../../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-2.md) ya existe y el usuario no pidió `+ayuda refresh` ni «actualiza story board»: emitir versión **compacta** (mapa capas en 3 líneas + «tabla completa en gemini block-2»), no volcar 0–15 otra vez.
 
 Alternativa: leer [`solve-coagula-story-board.json`](../../../../data/sessions/solve-coagula-story-board.json) si existe y el turno pide solo story board estático.
 
@@ -152,6 +164,8 @@ Alternativa: leer [`solve-coagula-story-board.json`](../../../../data/sessions/s
 - ¿Cada ultra-resumen cita la ruta `blockchain/block-N.md` leída?
 - ¿Celdas sin archivo muestran ⚪, no contenido inventado?
 - ¿Gemini se cuenta 1–3 vigentes, no 1–10?
+- ¿Tabla sin `file://` ni rutas absolutas?
+- ¿DRY: gemini block-2 ya persistido → no repetir tabla completa sin `+ayuda refresh`?
 
 ## Ejemplo en cabecera
 

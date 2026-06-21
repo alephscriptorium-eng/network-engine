@@ -132,4 +132,23 @@ Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selectiv
 | 15 | extension | Vacío Ignacio / sala | ✓ | ✓ | ⚪ | talk_cache |
 ```
 
-**Fallos a evitar:** mapa de capas como 🟢; inventar bloques no leídos; confundir gemini 1–10 (ahora 1–3 vigentes + poder `ayuda`).
+**Fallos a evitar:** mapa de capas como 🟢; inventar bloques no leídos; `file://` en tablas; confundir gemini 1–10 (ahora 1–3 vigentes + poder `ayuda`).
+
+---
+
+## 9. Gemini block-3 — 🟢 antes de glosa DevOps
+
+Usuario: épica anglo vs. Bunge (FOSS/DevOps). Sin `+cicd` explícito.
+
+```markdown
+Gemini 3.1 Pro (High) · traje:puesto · poderes:cache-nav,epistem-tags,... · engines:main · forces:— · ...
+
+🟢 [Dato Wiki · oldid 11663303]: Esbozo previo SolveCoagula — **472 bytes**, 28 sep 2007 (Dhidalgo).
+🟢 [Dato Wiki · oldid 12370021]: Cierre pulso oct — **161 504 bytes**, 27 oct 2007, SolveCoagula.
+
+🔴 [Deducción del Lector]: El *merge* anglo rebota contra el linter Bunge…
+
+**Siguiente:** `blockchain/block-5.md` (perfil REIC) — talk-cache reservado a gemini 12+.
+```
+
+**Fallos a evitar:** solo 🟡/🔴 en bloque forense; auto `forces:engine-model-G`; CTA talk en acto anglo.

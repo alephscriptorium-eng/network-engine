@@ -208,6 +208,18 @@ Recorte de autorevisor §D y s01-02:
 
 No superponer pipeline modo-aleph y traje rude bot en el mismo turno sin avisar.
 
+## Cadena gemini (reader-chain)
+
+Artefactos persistentes en `scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-{N}.md`.
+
+| Regla | Detalle |
+|-------|---------|
+| Convención | `# User {N}` donde N = número de archivo |
+| Plantilla | [`templates/reader-gemini-block.hot.md`](templates/reader-gemini-block.hot.md) |
+| README | [`reader-chain/gemini/README.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/README.md) — paridad temática con blockchain, no copia literal |
+| Lint | `python network-engine/scripts/lint_gemini_chain.py` antes de persistir |
+| Forces en actos 1–3 | No auto-activar `engine-model-G` sin `+cicd` / `+force` del usuario |
+
 ## Archivos de soporte
 
 - [checklist.md](checklist.md) — revisión antes de soltar réplica

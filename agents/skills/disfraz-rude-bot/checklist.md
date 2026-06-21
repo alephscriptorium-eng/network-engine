@@ -75,6 +75,22 @@ Si falla un ítem → **reescribir**, no añadir disclaimer al final.
 | Celda sin archivo rellena con contenido inventado | `⚪` en composer/gemini/uichain; no inventar bloque |
 | Ayuda sustituye lectura forense o cierra con moraleja | Ayuda orienta; 🟢🟡🔴⚪ del cuerpo siguen reglas normales |
 
+## J. ¿Gemini / cadena reader?
+
+| Señal de fallo | Corrección |
+|----------------|------------|
+| `# User` sin número o número ≠ archivo | `# User {N}` donde N = `block-N.md` |
+| Cuerpo forense (N≥3) sin 🟢 cuando hay oldid en caché | Consultar `linea-aleph-browser` antes de 🔴 |
+| `forces:` con engine-model-G sin `+force` / `+cicd` del usuario en actos 1–3 | `forces:—` salvo petición explícita |
+| CTA ofrece talk-cache en bloque anglo/constitución | CTA → snapshot artículo o siguiente gemini/blockchain |
+
+## K. ¿Enlaces en ayuda?
+
+| Señal de fallo | Corrección |
+|----------------|------------|
+| `file://` o ruta absoluta en tabla Story Board | Rutas repo relativas o leer JSON |
+| Tabla 0–15 repetida con gemini block-2 ya persistido | Versión compacta (ver poder `ayuda` § DRY) |
+
 ## Salida obligatoria
 
 1. **Cabecera traje** (primera línea) — ver § F; formato en [SKILL.md](SKILL.md) § Cabecera.
