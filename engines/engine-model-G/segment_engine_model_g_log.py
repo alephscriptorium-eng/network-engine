@@ -59,8 +59,17 @@ SCENES = [
         "output_ranges": [(90, 102), (108, 147)],
         "tags": [*FORCE_TAGS, "trazabilidad", "index-reader", "forcing"],
         "rol": "forcing",
-        "anomalies": ["dos_turnos_usuario_planner", "viewed_trace_lineas_86_88"],
+        "synthetic_forcing_demo": True,
+        "anomalies": [
+            "synthetic_forcing_demo",
+            "dos_turnos_usuario_planner",
+            "viewed_trace_lineas_86_88",
+        ],
     },
+]
+
+INDICE_EXTRA_ANOMALIES = [
+    "**block-10 gemini** (reader-chain): descartado — corpus canónico solo en `raw/` + `sesion-01`",
 ]
 
 
@@ -180,13 +189,24 @@ def build_scene(lines: list[str], scene: dict) -> dict:
     tags = scene["tags"]
     files: dict[str, str] = {}
 
+    synthetic = scene.get("synthetic_forcing_demo", False)
+    output_path = folder / "output.md"
+
     for layer_name, body, layer_tag, placeholder in (
         ("prompt", prompt, "prompt", None),
         ("think", think, "think", "_(sin think explícito)_"),
         ("output", output, "output", None),
         ("trace", trace, "trace", None),
     ):
+        if layer_name == "output" and synthetic and output_path.exists():
+            files[layer_name] = str(output_path.relative_to(OUT))
+            continue
         content = body or (placeholder or "")
+        extra = None
+        if layer_tag == "prompt":
+            extra = {"engine": ENGINE_ID, "rol": scene["rol"]}
+        elif layer_name == "output" and synthetic:
+            extra = {"synthetic_forcing_demo": True}
         p = write_layer(
             folder,
             f"{layer_name}.md",
@@ -195,12 +215,12 @@ def build_scene(lines: list[str], scene: dict) -> dict:
             [ls, le],
             layer_tag,
             tags,
-            extra={"engine": ENGINE_ID, "rol": scene["rol"]} if layer_tag == "prompt" else None,
+            extra=extra,
         )
         if p:
             files[layer_name] = str(p.relative_to(OUT))
 
-    return {
+    entry = {
         "id": scene["id"],
         "session": SESSION,
         "slug": scene["slug"],
@@ -212,6 +232,9 @@ def build_scene(lines: list[str], scene: dict) -> dict:
         "files": files,
         "anomalies": scene.get("anomalies", []),
     }
+    if scene.get("synthetic_forcing_demo"):
+        entry["synthetic_forcing_demo"] = True
+    return entry
 
 
 def verify_line_coverage(total_lines: int) -> dict:
@@ -319,6 +342,8 @@ def build_indice(manifest: list[dict], coverage: dict) -> str:
             "",
         ]
     )
+    for extra in INDICE_EXTRA_ANOMALIES:
+        lines.append(f"- {extra}")
     for sc in manifest:
         if sc.get("anomalies"):
             lines.append(f"- **{sc['id']}** ({sc['slug']}): {', '.join(sc['anomalies'])}")

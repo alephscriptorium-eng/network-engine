@@ -39,9 +39,9 @@ flowchart LR
 
 ## Anomalías documentadas
 
-- **block-10 gemini** (scriptorium): descartado — volcado de chat huérfano; corpus canónico solo en `raw/` + `sesion-01`
+- **block-10 gemini** (reader-chain): descartado — corpus canónico solo en `raw/` + `sesion-01`
 - **g01-01** (01-arquetipos-momento): dialogo_plano_sin_think_explicito, cabecera_export_lineas_1_3
-- **g01-03** (03-trazabilidad-index-reader): dos_turnos_usuario_planner, viewed_trace_lineas_86_88
+- **g01-03** (03-trazabilidad-index-reader): synthetic_forcing_demo, dos_turnos_usuario_planner, viewed_trace_lineas_86_88
 
 ## Guía de consulta
 

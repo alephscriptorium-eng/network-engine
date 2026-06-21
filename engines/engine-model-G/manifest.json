@@ -94,9 +94,11 @@
         "trace": "sesion-01-agile-cicd-loop\\03-trazabilidad-index-reader\\trace.md"
       },
       "anomalies": [
+        "synthetic_forcing_demo",
         "dos_turnos_usuario_planner",
         "viewed_trace_lineas_86_88"
-      ]
+      ],
+      "synthetic_forcing_demo": true
     }
   ],
   "coverage": {
