@@ -235,6 +235,10 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cac
 - **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto.
 - **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero; quitar traje antes.
 
+### Poder `cache-nav` (traje rude-bot)
+
+La navegación de manifests, `audit-*.json` y snapshots **no es opcional** cuando el traje está puesto con poder `cache-nav` activo (default en index-reader). Este skill es la **herramienta**; el poder es la **obligación** de consultar caché antes de afirmar. Ver [`poderes/cache-nav/SKILL.md`](../disfraz-rude-bot/poderes/cache-nav/SKILL.md).
+
 ## Archivos clave
 
 - `linea-aleph/segment_linea.py` — segmentador linea1
@@ -250,8 +254,3 @@ Si el dato **NO** está en `cache/snapshots/{oldid}.wikitext` (artículo) o `cac
 - `linea-aleph/pseudociencia/` — sub-corpus segunda línea gruesa
 - `linea-aleph/talk/` — sub-corpus discusión (4 vistas NS1/NS3; espejo de `pseudociencia/`)
 - `logs-aleph/sesion-02-demarcacion-gaia/06-linea-demarcacion-abc-aleph/` — marco Aleph
-
-## Modos de lectura
-
-- **Disfraz rude bot (index-reader):** [`disfraz-rude-bot`](../disfraz-rude-bot/SKILL.md) — rol forense, traje ON por defecto.
-- **Modo Aleph:** [`modo-aleph`](../modo-aleph/SKILL.md) — tablero; quitar traje antes.

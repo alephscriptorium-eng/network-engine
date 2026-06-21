@@ -1,0 +1,57 @@
+# Catálogo machine-readable de poderes del traje rude-bot.
+# Contrato de extensión: id, nombre, skill, requiere_traje, default_on, shortcuts, compone_con.
+
+- id: cache-nav
+  nombre: Navegar caché
+  skill: poderes/cache-nav/SKILL.md
+  requiere_traje: true
+  default_on: true
+  shortcut_on: "+cache-nav"
+  shortcut_off: "-cache-nav"
+  compone_con: [linea-aleph-browser]
+
+- id: epistem-tags
+  nombre: Etiquetas epistemológicas
+  skill: poderes/epistem-tags/SKILL.md
+  requiere_traje: true
+  default_on: true
+  shortcut_on: "+epistem-tags"
+  shortcut_off: "-epistem-tags"
+  compone_con: []
+
+- id: anti-seguros
+  nombre: Anti agente de seguros
+  skill: poderes/anti-seguros/SKILL.md
+  requiere_traje: true
+  default_on: true
+  shortcut_on: "+anti-seguros"
+  shortcut_off: "-anti-seguros"
+  compone_con: [modo-aleph]
+
+- id: selective-query
+  nombre: Queries selectivas
+  skill: poderes/selective-query/SKILL.md
+  requiere_traje: true
+  default_on: true
+  shortcut_on: "+selective-query"
+  shortcut_off: "-selective-query"
+  compone_con: [linea-aleph-browser]
+
+- id: vacio-explicito
+  nombre: Vacío explícito
+  skill: poderes/vacio-explicito/SKILL.md
+  requiere_traje: true
+  default_on: true
+  shortcut_on: "+vacio-explicito"
+  shortcut_off: "-vacio-explicito"
+  compone_con: [linea-aleph-browser]
+
+- id: alineacion-dual
+  nombre: Alineación dual artículo|talk
+  skill: poderes/alineacion-dual/SKILL.md
+  requiere_traje: true
+  default_on: false
+  shortcut_on: "+alineacion-dual"
+  shortcut_off: "-alineacion-dual"
+  shortcut_alias: "+alineacion"
+  compone_con: [linea-aleph-browser]

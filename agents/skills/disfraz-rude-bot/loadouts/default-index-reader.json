@@ -1,0 +1,15 @@
+{
+  "loadout_id": "default-index-reader",
+  "traje_skill": "agents/skills/disfraz-rude-bot",
+  "traje_default": "puesto",
+  "poderes_default": [
+    "cache-nav",
+    "epistem-tags",
+    "anti-seguros",
+    "selective-query",
+    "vacio-explicito"
+  ],
+  "poderes_optional": ["alineacion-dual"],
+  "hot_template": "templates/reader-traje.hot.md",
+  "hot_path_game": "scriptorium-network-games/SOLVE_ET_COAGULA/reader-traje.hot.md"
+}

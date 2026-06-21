@@ -4,20 +4,31 @@ Casos Solve et Coagula (nov 2007, talk-cache). Calibran **en personaje** vs **bo
 
 ---
 
-## 1. En personaje, bien
+## 1. Cabecera obligatoria (default)
 
 ```markdown
-Disfraz rude bot: puesto.
+Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · +poder <id> · -poder <id> · sin disfraz
+
 Traje: en-personaje-ok
 
-🟢 [Dato Wiki] oldid [12719917](https://es.wikipedia.org/w/index.php?title=Usuario_discusión:SolveCoagula&oldid=12719917) — `cache/talk/snapshots/12719917.wikitext`: Analiza deja su versión del conflicto en la UT de SolveCoagula (20:26 CET, 10 nov 2007).
-
-🟢 [Dato Wiki] Alineación ±24 h con revert artículo [12719652](https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12719652) — `audit-talk.json` → `article_alignment`.
+🟢 [Dato Wiki] oldid 12719917 — ...
 ```
 
 ---
 
-## 2. Fuera de personaje, mal (bot crudo enciclopédico)
+## 2. Con poder alineacion-dual (`+alineacion`)
+
+```markdown
+Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito,alineacion-dual · +poder <id> · -poder <id> · sin disfraz
+
+| Carril artículo | Carril talk | Δ h |
+|-----------------|-------------|-----|
+| 12719652 revert Analiza | 12719917 UT SolveCoagula | 0.1 |
+```
+
+---
+
+## 3. Fuera de personaje, mal (bot crudo enciclopédico)
 
 ```markdown
 En noviembre de 2007 hubo un consenso en la sala de discusión del artículo
@@ -28,10 +39,11 @@ Pseudociencia, como indica el resumen de edición de Ignacio_Icke al revertir.
 
 ---
 
-## 3. En personaje, vacío explícito
+## 4. En personaje, vacío explícito
 
 ```markdown
-Disfraz rude bot: puesto.
+Composer · traje:puesto · poderes:cache-nav,epistem-tags,anti-seguros,selective-query,vacio-explicito · +poder <id> · -poder <id> · sin disfraz
+
 Traje: vacío-explicito
 
 ⚪ [Blanco Explícito] `Discusión:Pseudociencia`, ventana 2007 completa — 0 revisiones en `manifest.probe.json` y `talk-sala-probe`. El traje no inventa lo que el archivo no tiene.
@@ -41,12 +53,13 @@ Traje: vacío-explicito
 
 ---
 
-## 4. Quitarse el traje (opt-out)
+## 5. Quitarse el traje (opt-out)
 
 Usuario: «sin disfraz».
 
 ```markdown
-Disfraz rude bot: quitado.
+Composer · traje:quitado · poderes:— · +traje · +poder <id>
+
 Traje: quitado-a-pedido
 
 🟢 UT SolveCoagula oldid 12719917 cacheado. ⚪ Sala artículo sin actividad 2007.

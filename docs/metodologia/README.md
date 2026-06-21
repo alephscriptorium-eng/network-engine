@@ -21,9 +21,15 @@ agents/skills/disfraz-rude-bot/
 
 | Archivo | Función |
 |---------|---------|
-| `SKILL.md` | Traje rude bot, pipeline forense, composición |
-| `checklist.md` | Revisión en personaje (A–F) |
-| `ejemplos.md` | En personaje vs bot crudo enciclopédico |
+| `SKILL.md` | Traje rude bot, cabecera, shortcuts, hot file |
+| `poderes/registry.yaml` | Catálogo extensible de poderes |
+| `poderes/{id}/SKILL.md` | Módulos (cache-nav, epistem-tags, alineacion-dual, …) |
+| `loadouts/default-index-reader.json` | Poderes ON por defecto |
+| `checklist.md` | Revisión en personaje (A–G) |
+| `ejemplos.md` | Cabecera, +alineacion, opt-out |
+| `templates/reader-traje.hot.md` | Plantilla estado traje entre turnos |
+
+**Extensión:** añadir entrada en `poderes/registry.yaml` + `poderes/{id}/SKILL.md`; opcional en `loadouts/*.json` como `poderes_optional`. Piloto opt-in: `alineacion-dual` (carril artículo | talk).
 
 ## Cursor
 
