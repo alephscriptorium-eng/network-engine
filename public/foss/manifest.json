@@ -1,0 +1,139 @@
+{
+  "portal": "network-engine/public/foss",
+  "repo": "alephscriptorium-eng/network-engine",
+  "branch": "main",
+  "categories": [
+    {
+      "id": "traje",
+      "label": "Traje",
+      "entries": [
+        {
+          "title": "disfraz-rude-bot SKILL",
+          "path": "agents/skills/disfraz-rude-bot/SKILL.md"
+        },
+        {
+          "title": "Checklist A–H",
+          "path": "agents/skills/disfraz-rude-bot/checklist.md"
+        },
+        {
+          "title": "Ejemplos (Calibración, +cicd)",
+          "path": "agents/skills/disfraz-rude-bot/ejemplos.md"
+        },
+        {
+          "title": "Plantilla reader-traje.hot",
+          "path": "agents/skills/disfraz-rude-bot/templates/reader-traje.hot.md"
+        }
+      ]
+    },
+    {
+      "id": "poderes",
+      "label": "Poderes",
+      "entries": [
+        {
+          "title": "Registry",
+          "path": "agents/skills/disfraz-rude-bot/poderes/registry.yaml"
+        },
+        {
+          "title": "cache-nav",
+          "path": "agents/skills/disfraz-rude-bot/poderes/cache-nav/SKILL.md"
+        },
+        {
+          "title": "epistem-tags",
+          "path": "agents/skills/disfraz-rude-bot/poderes/epistem-tags/SKILL.md"
+        },
+        {
+          "title": "anti-seguros",
+          "path": "agents/skills/disfraz-rude-bot/poderes/anti-seguros/SKILL.md"
+        },
+        {
+          "title": "selective-query",
+          "path": "agents/skills/disfraz-rude-bot/poderes/selective-query/SKILL.md"
+        },
+        {
+          "title": "vacio-explicito",
+          "path": "agents/skills/disfraz-rude-bot/poderes/vacio-explicito/SKILL.md"
+        },
+        {
+          "title": "alineacion-dual",
+          "path": "agents/skills/disfraz-rude-bot/poderes/alineacion-dual/SKILL.md"
+        },
+        {
+          "title": "cicd-loop",
+          "path": "agents/skills/disfraz-rude-bot/poderes/cicd-loop/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "engines",
+      "label": "Engines",
+      "entries": [
+        {
+          "title": "Engines manifest",
+          "path": "engines/manifest.json"
+        },
+        {
+          "title": "Engines INDICE",
+          "path": "engines/INDICE.md"
+        },
+        {
+          "title": "engine-model-G INDICE",
+          "path": "engines/engine-model-G/INDICE.md"
+        },
+        {
+          "title": "engine-model-G FORCING",
+          "path": "engines/engine-model-G/FORCING.md"
+        },
+        {
+          "title": "modo-aleph engines",
+          "path": "agents/skills/modo-aleph/engines.md"
+        },
+        {
+          "title": "metodologia engines",
+          "path": "docs/metodologia/engines.md"
+        },
+        {
+          "title": "engines-active.json",
+          "path": "aleph-context/engines-active.json"
+        }
+      ]
+    },
+    {
+      "id": "cache",
+      "label": "Cache",
+      "entries": [
+        {
+          "title": "CACHE_RUNBOOK",
+          "path": "linea-aleph/CACHE_RUNBOOK.md"
+        },
+        {
+          "title": "linea-aleph-browser SKILL",
+          "path": "agents/skills/linea-aleph-browser/SKILL.md"
+        },
+        {
+          "title": "cache README",
+          "path": "linea-aleph/cache/README.md"
+        }
+      ]
+    },
+    {
+      "id": "solve",
+      "label": "Solve et Coagula",
+      "entries": [
+        {
+          "title": "index-reader (repo hermano)",
+          "path": "scriptorium-network-games/SOLVE_ET_COAGULA/index-reader.md",
+          "repo": "alephscriptorium-eng/scriptorium-network-games",
+          "note": "Cross-repo — fuente en scriptorium-network-games"
+        },
+        {
+          "title": "Eval force G agile CI/CD",
+          "path": "aleph-context/eval/prompts-test/06-force-g-agile-cicd.md"
+        },
+        {
+          "title": "Metodologia README",
+          "path": "docs/metodologia/README.md"
+        }
+      ]
+    }
+  ]
+}

@@ -3,68 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Network Engine — Artefacto</title>
-  <meta name="description" content="Documentación FOSS (GPL-3.0) del artefacto Network Engine: CLI, schemas y publicación.">
-  <script>
-    (function(){try{var t=localStorage.getItem('ne-theme');document.documentElement.setAttribute('data-theme',t||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
-  </script>
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-<link rel="canonical" href="https://alephscriptorium-eng.github.io/network-engine/foss/index.html">
-<meta property="og:title" content="Network Engine — Artefacto">
-<meta property="og:description" content="Documentación FOSS (GPL-3.0) del artefacto Network Engine: CLI, schemas y publicación.">
-<meta property="og:url" content="https://alephscriptorium-eng.github.io/network-engine/foss/index.html">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Network Engine — Artefacto">
-<meta name="twitter:description" content="Documentación FOSS (GPL-3.0) del artefacto Network Engine: CLI, schemas y publicación.">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/components.css">
+  <title>network-engine — FOSS docs</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --text: #e6edf3;
+      --muted: #8b9cb3;
+      --accent: #58a6ff;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 2rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border);
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+    header h1 { margin: 0 0 0.25rem; font-size: 1.5rem; font-weight: 600; }
+    header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    main {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    li {
+      border-bottom: 1px solid var(--border);
+    }
+    li:last-child { border-bottom: none; }
+    li a {
+      display: block;
+      padding: 0.65rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--surface);
+    }
+    li a:hover { background: #243044; }
+    .path {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: ui-monospace, monospace;
+      margin-top: 0.15rem;
+    }
+    .note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    footer {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    .loading { color: var(--muted); }
+    .error { color: #f85149; }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
-  <div class="layout">
-    <aside class="sidebar">
-      <a href="index.html" class="brand">Network Engine</a>
-<p class="tag">Artefacto · v0.1.0</p>
-<nav aria-label="Documentación FOSS">
-  <a href="index.html" aria-current="page">Índice</a>
-  <a href="tecnico.html">Técnico</a>
-  <a href="funcional.html">Funcional</a>
-  <a href="datos-publicados.html">Datos publicados</a>
-  <a href="devops.html">DevOps</a>
-  <a href="LICENSE.html">Licencia</a>
-  <hr>
-  <a href="../prensa/index.html" class="nav-external">Centro de datos ↗</a>
-</nav>
-<div class="sidebar-footer">
-  <button type="button" id="theme-toggle" class="theme-toggle" role="switch" aria-checked="false">Modo claro</button>
-</div>
-    </aside>
-    <main id="main">
-      
-<h1>Artefacto Network Engine</h1>
-<p class="lead">Software libre (GPL-3.0) para operar el tablero Aleph: loadouts, forces Cohen, catálogo corpus y build estático. Este portal documenta el <strong>artefacto</strong>; el catálogo navegable está en el <a href="../prensa/index.html">centro de datos</a>.</p>
-<ul class="doc-list">
-  <li>
-    <a href="tecnico.html">Descripción técnica</a>
-    <span class="desc">Paquete network_engine, tablero, schemas JSON</span>
-  </li>
-  <li>
-    <a href="funcional.html">Descripción funcional</a>
-    <span class="desc">Flujo loadout → turno → persistencia</span>
-  </li>
-  <li>
-    <a href="datos-publicados.html">Datos publicados</a>
-    <span class="desc">Catálogo, corpus in situ, sesiones prensa</span>
-  </li>
-  <li>
-    <a href="devops.html">DevOps</a>
-    <span class="desc">Instalación, prompts, llms.md y publicación</span>
-  </li>
-</ul>
+  <header>
+    <h1>network-engine — FOSS</h1>
+    <p>Portal de documentacion canonica. Enlaces a fuente en GitHub; sin duplicar corpus en public/.</p>
+  </header>
+  <main id="content">
+    <p class="loading">Cargando manifest...</p>
+  </main>
+  <footer>
+    <p>URL base prevista: <code>https://alephscriptorium-eng.github.io/network-engine/foss/</code></p>
+    <p>Helper: <code>github_blob(path)</code> en <a href="github_blob.js">github_blob.js</a></p>
+  </footer>
+  <script src="github_blob.js"></script>
+  <script>
+    function resolveUrl(entry) {
+      const opts = {};
+      if (entry.repo) {
+        const [owner, repo] = entry.repo.split("/");
+        opts.owner = owner;
+        opts.repo = repo;
+      }
+      return {
+        raw: githubBlob(entry.path, opts),
+        view: githubView(entry.path, opts),
+      };
+    }
 
-    </main>
-  </div>
-  <script src="assets/theme.js"></script>
+    function renderCategory(cat) {
+      const section = document.createElement("section");
+      section.id = cat.id;
+      const heading = document.createElement("h2");
+      heading.textContent = cat.label;
+      section.appendChild(heading);
+
+      const ul = document.createElement("ul");
+      for (const entry of cat.entries) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        const urls = resolveUrl(entry);
+        a.href = urls.view;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML = entry.title + '<span class="path">' + entry.path + "</span>";
+        if (entry.note) {
+          a.innerHTML += '<span class="note">' + entry.note + "</span>";
+        }
+        li.appendChild(a);
+        ul.appendChild(li);
+      }
+      section.appendChild(ul);
+      return section;
+    }
+
+    fetch("manifest.json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("manifest " + r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        const root = document.getElementById("content");
+        root.textContent = "";
+        for (const cat of data.categories) {
+          root.appendChild(renderCategory(cat));
+        }
+      })
+      .catch(function (err) {
+        document.getElementById("content").innerHTML =
+          '<p class="error">Error cargando manifest: ' + err.message + "</p>";
+      });
+  </script>
 </body>
 </html>
