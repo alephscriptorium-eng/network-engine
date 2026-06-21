@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch one Wikipedia revision into linea-aleph/cache/snapshots/."""
+"""Fetch one Wikipedia revision into linea-aleph cache snapshots."""
 
 from __future__ import annotations
 
@@ -13,10 +13,24 @@ SCRIPTS = Path(__file__).resolve().parent
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
 
+from cache_paths import ROOT, meta_path, snapshot_dir, wikitext_path
 from mw_client import fetch_latest_revision_content, fetch_revision_content
 
-ROOT = Path(__file__).resolve().parents[1]
-CACHE = ROOT / "cache" / "snapshots"
+
+def infer_namespace(title: str) -> int:
+    if title.startswith("Usuario discusión:"):
+        return 3
+    if title.startswith("Discusión:"):
+        return 1
+    return 0
+
+
+def infer_linked_article(title: str, corpus: str) -> str | None:
+    if corpus != "talk":
+        return None
+    if title == "Discusión:Pseudociencia":
+        return "Pseudociencia"
+    return None
 
 
 def fetch_revision(oldid: int, title: str = "Problema de la demarcación") -> dict:
@@ -41,7 +55,7 @@ def update_snapshot_endpoints(
     user: str = "",
     timestamp: str = "",
 ) -> None:
-    """Update fetched flag in root and sub-corpus snapshot endpoints."""
+    """Update fetched flag in root and sub-corpus snapshot endpoints (article corpus only)."""
     title_norm = title.replace("_", " ")
     corpus_by_title = {
         "Problema de la demarcación": [ROOT / "snapshots"],
@@ -85,18 +99,26 @@ def update_snapshot_endpoints(
             )
 
 
-def save_snapshot_payload(payload: dict) -> tuple[Path, Path]:
+def save_snapshot_payload(payload: dict, corpus: str = "article") -> tuple[Path, Path]:
     """Write wikitext + meta.json with fetch_method=api."""
-    CACHE.mkdir(parents=True, exist_ok=True)
+    cache = snapshot_dir(corpus)
+    cache.mkdir(parents=True, exist_ok=True)
     oldid = payload["oldid"]
-    wt_path = CACHE / f"{oldid}.wikitext"
-    meta_path = CACHE / f"{oldid}.meta.json"
+    title = payload.get("title", "")
+    wt_path = wikitext_path(corpus, oldid)
+    meta_out = meta_path(corpus, oldid)
     wt_path.write_text(payload["wikitext"], encoding="utf-8")
     meta = {k: v for k, v in payload.items() if k != "wikitext"}
     meta["wikitext_path"] = str(wt_path.relative_to(ROOT))
     meta["fetch_method"] = "api"
-    meta_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    return wt_path, meta_path
+    meta["corpus"] = corpus
+    if corpus == "talk":
+        meta["namespace"] = infer_namespace(title)
+        linked = infer_linked_article(title, corpus)
+        if linked:
+            meta["linked_article"] = linked
+    meta_out.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return wt_path, meta_out
 
 
 def main() -> None:
@@ -110,7 +132,13 @@ def main() -> None:
     parser.add_argument(
         "--title",
         default="Problema de la demarcación",
-        help="Wikipedia article title for source_url",
+        help="Wikipedia page title for source_url",
+    )
+    parser.add_argument(
+        "--corpus",
+        choices=("article", "talk"),
+        default="article",
+        help="Cache corpus: article (NS0) or talk (NS1/NS3)",
     )
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -129,19 +157,20 @@ def main() -> None:
         print(f"wikitext_chars: {len(payload['wikitext'])}")
         return
 
-    wt_path, meta_path = save_snapshot_payload(payload)
+    wt_path, meta_out = save_snapshot_payload(payload, args.corpus)
 
-    update_snapshot_endpoints(
-        oldid,
-        payload["fetched_at"],
-        len(payload["wikitext"]),
-        is_latest=args.latest,
-        title=payload["title"],
-        user=payload.get("user", ""),
-        timestamp=payload.get("timestamp", ""),
-    )
+    if args.corpus == "article":
+        update_snapshot_endpoints(
+            oldid,
+            payload["fetched_at"],
+            len(payload["wikitext"]),
+            is_latest=args.latest,
+            title=payload["title"],
+            user=payload.get("user", ""),
+            timestamp=payload.get("timestamp", ""),
+        )
 
-    print(json.dumps({"ok": True, "wikitext": str(wt_path), "meta": str(meta_path)}, indent=2))
+    print(json.dumps({"ok": True, "wikitext": str(wt_path), "meta": str(meta_out)}, indent=2))
 
 
 if __name__ == "__main__":
