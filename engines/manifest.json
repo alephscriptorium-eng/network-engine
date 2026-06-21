@@ -1,8 +1,8 @@
 {
   "registry": "engines",
-  "description": "Registry agregado Cohen Force — main-engine + engine-model-A..F + transcardinales XZ/ZX",
+  "description": "Registry agregado Cohen Force — main-engine + engine-model-A..G + transcardinales XZ/ZX",
   "version": "1.1.0-indexed",
-  "updated": "2026-06-20",
+  "updated": "2026-06-21",
   "cohen_frame": {
     "godel": "suelo ontológico",
     "cohen": "motor forcing (engines)",
@@ -267,6 +267,31 @@
       "manifest_path": "engine-model-ZX/manifest.json",
       "indice_path": "engine-model-ZX/INDICE.md",
       "engine_json_path": "engine-model-ZX/engine.json"
+    },
+    {
+      "id": "engine-model-G",
+      "path": "engine-model-G/",
+      "role": "force",
+      "cohen_type": "agile_cicd_loop",
+      "viewpoint_origin": "equipo de entrega / ritual sprint–release",
+      "lore_hook": "seis roles, un bucle — cada tema tiene fase",
+      "anchor_scene": "sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza",
+      "activation_triggers": ["sprint", "pipeline", "deploy", "ci", "cd", "scrum", "release", "backlog", "retrospective"],
+      "pairs_with": ["main-engine", "linea-aleph"],
+      "raw_sources": [
+        { "file": "raw/logs-agent-1.md", "lines": 147 }
+      ],
+      "scene_count": 3,
+      "coverage": {
+        "total_lines": 147,
+        "covered_lines": 147,
+        "ok": true
+      },
+      "status": "indexed",
+      "manifest_path": "engine-model-G/manifest.json",
+      "indice_path": "engine-model-G/INDICE.md",
+      "engine_json_path": "engine-model-G/engine.json",
+      "forcing_protocol": "engine-model-G/FORCING.md"
     }
   ],
   "cross_corpus": {
@@ -283,15 +308,15 @@
     "linea-aleph": {
       "path": "../linea-aleph/",
       "indice": "../linea-aleph/INDICE.md",
-      "paired_engines": ["engine-model-A", "engine-model-B", "engine-model-C"]
+      "paired_engines": ["engine-model-A", "engine-model-B", "engine-model-C", "engine-model-G"]
     }
   },
   "verification": {
     "all_indexed": true,
     "engines_pending": 0,
     "engines_indexed": 10,
-    "total_scenes": 51,
-    "total_lines": 3919,
+    "total_scenes": 54,
+    "total_lines": 4066,
     "segment_scripts_ok": true,
     "issues": []
   }

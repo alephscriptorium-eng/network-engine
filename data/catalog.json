@@ -109,6 +109,18 @@
       "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/engine.json",
       "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/manifest.json",
       "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-ZX/INDICE.md"
+    },
+    {
+      "id": "engine-model-G",
+      "path": "engines/engine-model-G",
+      "role": "force",
+      "cohen_type": "agile_cicd_loop",
+      "anchor_scene": "sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza",
+      "scene_count": 3,
+      "status": "indexed",
+      "github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-G/engine.json",
+      "manifest_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-G/manifest.json",
+      "indice_github": "https://github.com/alephscriptorium-eng/network-engine/blob/main/engines/engine-model-G/INDICE.md"
     }
   ],
   "corpus": [

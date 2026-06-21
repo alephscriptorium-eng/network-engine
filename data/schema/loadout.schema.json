@@ -43,7 +43,7 @@
           "uniqueItems": true,
           "items": {
             "type": "string",
-            "pattern": "^engine-model-[A-F]$"
+            "pattern": "^engine-model-[A-Za-z0-9-]+$"
           },
           "description": "Hasta 2 forces Cohen seleccionables por turno"
         }

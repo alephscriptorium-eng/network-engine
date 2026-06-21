@@ -1,0 +1,114 @@
+{
+  "engine": "engine-model-G",
+  "cohen_type": "agile_cicd_loop",
+  "description": "Force bucle CI/CD ágil — seis roles, ideas fuerza, puente index-reader",
+  "anchor_scene": "sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza",
+  "source": "raw/logs-agent-1.md",
+  "scenes": [
+    {
+      "id": "g01-01",
+      "session": "sesion-01-agile-cicd-loop",
+      "slug": "01-arquetipos-momento",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 1,
+        "line_end": 35
+      },
+      "title": "Arquetipos ágiles — minutos antes de la ceremonia",
+      "engine": "engine-model-G",
+      "rol": "contraste",
+      "tags": [
+        "force:G",
+        "cohen:agile_cicd_loop",
+        "ci-cd",
+        "scrum",
+        "arquetipos",
+        "divulgacion",
+        "contraste"
+      ],
+      "files": {
+        "prompt": "sesion-01-agile-cicd-loop\\01-arquetipos-momento\\prompt.md",
+        "think": "sesion-01-agile-cicd-loop\\01-arquetipos-momento\\think.md",
+        "output": "sesion-01-agile-cicd-loop\\01-arquetipos-momento\\output.md",
+        "trace": "sesion-01-agile-cicd-loop\\01-arquetipos-momento\\trace.md"
+      },
+      "anomalies": [
+        "dialogo_plano_sin_think_explicito",
+        "cabecera_export_lineas_1_3"
+      ]
+    },
+    {
+      "id": "g01-02",
+      "session": "sesion-01-agile-cicd-loop",
+      "slug": "02-bucle-ideas-fuerza",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 36,
+        "line_end": 83
+      },
+      "title": "Bucle CI/CD — seis fases PLAN→FEEDBACK con ideas fuerza",
+      "engine": "engine-model-G",
+      "rol": "ancla",
+      "tags": [
+        "force:G",
+        "cohen:agile_cicd_loop",
+        "ci-cd",
+        "scrum",
+        "bucle",
+        "ideas-fuerza",
+        "ancla"
+      ],
+      "files": {
+        "prompt": "sesion-01-agile-cicd-loop\\02-bucle-ideas-fuerza\\prompt.md",
+        "think": "sesion-01-agile-cicd-loop\\02-bucle-ideas-fuerza\\think.md",
+        "output": "sesion-01-agile-cicd-loop\\02-bucle-ideas-fuerza\\output.md",
+        "trace": "sesion-01-agile-cicd-loop\\02-bucle-ideas-fuerza\\trace.md"
+      },
+      "anomalies": []
+    },
+    {
+      "id": "g01-03",
+      "session": "sesion-01-agile-cicd-loop",
+      "slug": "03-trazabilidad-index-reader",
+      "source": {
+        "file": "raw/logs-agent-1.md",
+        "line_start": 84,
+        "line_end": 147
+      },
+      "title": "Misma ontología bajo 🟢🟡🔴 + traje index-reader",
+      "engine": "engine-model-G",
+      "rol": "forcing",
+      "tags": [
+        "force:G",
+        "cohen:agile_cicd_loop",
+        "ci-cd",
+        "scrum",
+        "trazabilidad",
+        "index-reader",
+        "forcing"
+      ],
+      "files": {
+        "prompt": "sesion-01-agile-cicd-loop\\03-trazabilidad-index-reader\\prompt.md",
+        "think": "sesion-01-agile-cicd-loop\\03-trazabilidad-index-reader\\think.md",
+        "output": "sesion-01-agile-cicd-loop\\03-trazabilidad-index-reader\\output.md",
+        "trace": "sesion-01-agile-cicd-loop\\03-trazabilidad-index-reader\\trace.md"
+      },
+      "anomalies": [
+        "dos_turnos_usuario_planner",
+        "viewed_trace_lineas_86_88"
+      ]
+    }
+  ],
+  "coverage": {
+    "total_lines": 147,
+    "covered_lines": 147,
+    "scenes": 3,
+    "issues": [],
+    "ok": true
+  },
+  "verification": {
+    "files": 12,
+    "issues": [],
+    "ok": true
+  }
+}

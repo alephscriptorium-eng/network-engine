@@ -1,0 +1,32 @@
+{
+  "id": "engine-model-G",
+  "role": "force",
+  "cohen_type": "agile_cicd_loop",
+  "viewpoint_origin": "equipo de entrega / ritual sprint–release",
+  "lore_hook": "seis roles, un bucle — cada tema tiene fase",
+  "anchor_scene": "sesion-01-agile-cicd-loop/02-bucle-ideas-fuerza",
+  "activation_triggers": [
+    "sprint",
+    "pipeline",
+    "deploy",
+    "ci",
+    "cd",
+    "scrum",
+    "release",
+    "backlog",
+    "retrospective"
+  ],
+  "pairs_with": [
+    "main-engine",
+    "linea-aleph"
+  ],
+  "status": "indexed",
+  "raw_sources": [
+    {
+      "file": "raw/logs-agent-1.md",
+      "lines": 147
+    }
+  ],
+  "estimated_scenes": 3,
+  "notes": "Sinergia con disfraz-rude-bot vía poder cicd-loop (skill hermano, no corpus Aleph). Protocolo de extensión por fase en FORCING.md. No confundir marco DevOps con canon técnico del repo."
+}
