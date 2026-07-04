@@ -1,8 +1,8 @@
 {
   "meta": {
-    "corpus": "linea-poder",
+    "corpus": "lineas-poder/espana",
     "version": "0.1.0",
-    "generated_at": "2026-07-04T21:21:16Z",
+    "generated_at": "2026-07-04T22:47:48Z",
     "source": "nodos.yaml",
     "autor_tronco": "José Luis Villacañas Berlanga",
     "referencia_wp_cima": "Historia_de_España",
@@ -67,8 +67,8 @@
     ],
     "satelite_wp": "wp/historia/",
     "links": {
-      "medidor": "../../medidor-poder-politico",
-      "arg": "../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md",
+      "medidor": "../../../medidor-poder-politico",
+      "arg": "../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md",
       "wp_cima": "https://es.wikipedia.org/wiki/Historia_de_España"
     }
   },

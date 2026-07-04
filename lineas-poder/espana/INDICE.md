@@ -1,6 +1,6 @@
-# INDICE — linea-poder
+# INDICE — línea espana
 
-Tronco cronológico **P01–P24** (José Luis Villacañas) para el ARG [ALEPH et OMEGA](https://github.com/alephscriptorium-eng/scriptorium-network-games/tree/main/ALEPH_ET_OMEGA).
+Instancia **`espana`** del catálogo [`lineas-poder`](../README.md). Tronco cronológico **P01–P24** (José Luis Villacañas) para el ARG [ALEPH et OMEGA](https://github.com/alephscriptorium-eng/scriptorium-network-games/tree/main/ALEPH_ET_OMEGA).
 
 ## Tesis del corpus
 
@@ -52,15 +52,15 @@ Satélite WP v0: [`wp/historia/`](wp/historia/) — historial del artículo [His
 
 ## Enlaces cruzados
 
-- Medidor: [`medidor-poder-politico`](../../medidor-poder-politico)
-- ARG: [`ALEPH_ET_OMEGA/index.md`](../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md)
+- Medidor: [`medidor-poder-politico`](../../../medidor-poder-politico)
+- ARG: [`ALEPH_ET_OMEGA/index.md`](../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md)
 - Manifest: [`manifest.json`](manifest.json)
 - Fuente humana: [`nodos.yaml`](nodos.yaml)
 
 ## Estructura
 
 ```
-linea-poder/
+lineas-poder/espana/
 ├── nodos.yaml           # fuente de verdad
 ├── segment_poder.py
 ├── manifest.json
@@ -77,4 +77,4 @@ python segment_poder.py
 python scripts/fetch_wp_historia.py   # o ver wp/historia/README.md
 ```
 
-_Generado: 2026-07-04T21:21:16Z_
+_Generado: 2026-07-04T22:47:48Z_

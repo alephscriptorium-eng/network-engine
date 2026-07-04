@@ -1,0 +1,9 @@
+# Contrato mínimo por instancia de línea-poder
+- id: espana
+  path: espana
+  etiqueta: "Poder político en España (Villacañas)"
+  autor_tronco: José Luis Villacañas Berlanga
+  nodo_prefix: P
+  nodo_count: 24
+  referencia_wp_cima: Historia_de_España
+  medidor_linea_ref: linea_id  # clave en caso.json del medidor

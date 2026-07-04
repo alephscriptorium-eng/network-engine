@@ -2,7 +2,7 @@
 
 ## Tesis del corpus
 
-Satélite Wikipedia L0 del tronco [`linea-poder`](../../INDICE.md): historial de ediciones de
+Satélite Wikipedia L0 de la línea [`espana`](../../INDICE.md): historial de ediciones de
 [Historia de España](https://es.wikipedia.org/wiki/Historia_de_España) para anclar
 semillas y buffers MCS en nodos P01–P24 (evidencia L0 / oldid).
 
@@ -14,7 +14,7 @@ Relacionado: tronco Villacañas [`../../nodos.yaml`](../../nodos.yaml) ·
 # Historia de España — historial artículo (es.wikipedia)
 # generado: 2026-07-04T21:16:34Z · registros: 3564
 Artículo: [Historia de España](https://es.wikipedia.org/wiki/Historia_de_España)
-Ventana: historial completo vía API (v0 bootstrap linea-poder).
+Ventana: historial completo vía API (v0 bootstrap lineas-poder/espana).
 
 ## Extremos de la línea
 
@@ -142,7 +142,7 @@ Pack de partida para expandir caché (véase `ontology-seeds.json`):
 ## Estructura
 
 ```
-linea-poder/wp/historia/
+lineas-poder/espana/wp/historia/
 ├── raw/linea.md
 ├── manifest.json
 ├── INDICE.md

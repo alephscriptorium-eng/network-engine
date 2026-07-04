@@ -3,7 +3,7 @@
 # y La formación de los reinos hispánicos (2006).
 
 version: "0.1.0"
-corpus: linea-poder
+corpus: lineas-poder/espana
 autor_tronco: José Luis Villacañas Berlanga
 referencia_wp_cima: Historia_de_España
 

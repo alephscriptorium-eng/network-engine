@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Materialize linea-poder corpus from nodos.yaml.
+"""Materialize lineas-poder/espana corpus from nodos.yaml.
 
 Reads human-edited nodos.yaml (or manifest.json) and writes:
   - manifest.json
@@ -30,8 +30,8 @@ VILLACAÑAS_REF = (
     "José Luis Villacañas, *Historia del poder político en España* (RBA, 2014/2023); "
     "*La formación de los reinos hispánicos* (Espasa, 2006)."
 )
-MEDIDOR_LINK = "../../medidor-poder-politico"
-ARG_LINK = "../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md"
+MEDIDOR_LINK = "../../../medidor-poder-politico"
+ARG_LINK = "../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md"
 
 
 def load_source(path: Path | None) -> dict:
@@ -93,7 +93,7 @@ def build_manifest(data: dict) -> dict:
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     return {
         "meta": {
-            "corpus": data.get("corpus", "linea-poder"),
+            "corpus": data.get("corpus", "lineas-poder/espana"),
             "version": data.get("version", "0.1.0"),
             "generated_at": generated_at,
             "source": "nodos.yaml",
@@ -146,9 +146,10 @@ def build_indice(manifest: dict) -> str:
     partes = meta.get("partes", [])
 
     lines = [
-        "# INDICE — linea-poder",
+        "# INDICE — línea espana",
         "",
-        "Tronco cronológico **P01–P24** (José Luis Villacañas) para el ARG "
+        "Instancia **`espana`** del catálogo [`lineas-poder`](../README.md). Tronco cronológico **P01–P24** "
+        "(José Luis Villacañas) para el ARG "
         "[ALEPH et OMEGA](https://github.com/alephscriptorium-eng/scriptorium-network-games/tree/main/ALEPH_ET_OMEGA).",
         "",
         "## Tesis del corpus",
@@ -207,7 +208,7 @@ def build_indice(manifest: dict) -> str:
             "## Estructura",
             "",
             "```",
-            "linea-poder/",
+            "lineas-poder/espana/",
             "├── nodos.yaml           # fuente de verdad",
             "├── segment_poder.py",
             "├── manifest.json",
@@ -232,7 +233,7 @@ def build_indice(manifest: dict) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Materialize linea-poder from nodos.yaml")
+    parser = argparse.ArgumentParser(description="Materialize lineas-poder/espana from nodos.yaml")
     parser.add_argument(
         "--source",
         type=Path,

@@ -1,0 +1,32 @@
+{
+  "loadout_id": "default-index-reader-aleph",
+  "traje_skill": "agents/skills/disfraz-rude-bot",
+  "traje_default": "puesto",
+  "poderes_default": [
+    "cache-nav",
+    "epistem-tags",
+    "anti-seguros",
+    "selective-query",
+    "vacio-explicito"
+  ],
+  "poderes_optional": ["cicd-loop"],
+  "poderes_not_recommended": ["alineacion-dual", "ayuda"],
+  "browser_skill": "lineas-poder-browser",
+  "linea_id_default": "espana",
+  "engines_default": { "main_engine": "on", "forces": [] },
+  "engines_optional": [
+    "engine-model-A",
+    "engine-model-B",
+    "engine-model-C",
+    "engine-model-D",
+    "engine-model-E",
+    "engine-model-F",
+    "engine-model-G",
+    "engine-model-XZ",
+    "engine-model-ZX"
+  ],
+  "engines_budget_max_forces": 2,
+  "engines_state_path": "aleph-context/engines-active.json",
+  "hot_template": "templates/reader-traje.hot.md",
+  "hot_path_game": "scriptorium-network-games/ALEPH_ET_OMEGA/reader-traje.hot.md"
+}

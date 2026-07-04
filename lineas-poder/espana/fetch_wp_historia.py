@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-LINEA_ALEPH = ROOT.parent / "linea-aleph"
+LINEA_ALEPH = ROOT.parent.parent / "linea-aleph"
 SCRIPTS = LINEA_ALEPH / "scripts"
 if str(SCRIPTS) not in sys.path:
     sys.path.insert(0, str(SCRIPTS))
@@ -37,7 +37,7 @@ def build_linea_md(title: str, revisions: list[dict], generated_at: str) -> str:
         "",
         f"Artículo: [{title}](https://es.wikipedia.org/wiki/{title.replace(' ', '_')})",
         "",
-        "Ventana: historial completo vía API (v0 bootstrap linea-poder).",
+        "Ventana: historial completo vía API (v0 bootstrap lineas-poder/espana).",
         "",
     ]
 

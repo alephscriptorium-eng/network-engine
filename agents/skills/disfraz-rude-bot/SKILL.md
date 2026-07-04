@@ -100,7 +100,8 @@ Estado del traje entre turnos — **leer al inicio**, **reescribir** al aplicar 
 | Qué | Ruta |
 |-----|------|
 | Plantilla | [`templates/reader-traje.hot.md`](templates/reader-traje.hot.md) |
-| Instancia juego | [`reader-traje.hot.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-traje.hot.md) |
+| Instancia juego (Solve) | [`reader-traje.hot.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-traje.hot.md) |
+| Instancia juego (ALEPH) | [`reader-traje.hot.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/reader-traje.hot.md) · loadout [`default-index-reader-aleph.json`](loadouts/default-index-reader-aleph.json) |
 
 Contenido (≤15 líneas):
 
