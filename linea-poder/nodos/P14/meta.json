@@ -1,0 +1,19 @@
+{
+  "id": "P14",
+  "parte": "III",
+  "año_ini": 1808,
+  "año_fin": 1814,
+  "etiqueta": "Guerra de la Independencia",
+  "tesis_villacañas": "Nacimiento de la soberanía nacional en guerra",
+  "articulos_wp": [
+    "Historia_de_España",
+    "Guerra_de_la_Independencia_Española"
+  ],
+  "años_display": "1808–1814",
+  "urls": {
+    "wp": [
+      "https://es.wikipedia.org/wiki/Historia_de_España",
+      "https://es.wikipedia.org/wiki/Guerra_de_la_Independencia_Española"
+    ]
+  }
+}

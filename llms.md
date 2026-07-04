@@ -23,7 +23,7 @@ Web (cuando Pages esté activo): https://alephscriptorium-eng.github.io/network-
 ## Estructura del repositorio
 
 ```
-engines/ logs-aleph/ sima-aleph/ cima-aleph/ linea-aleph/ logs-skill/  # corpus in situ
+engines/ logs-aleph/ sima-aleph/ cima-aleph/ linea-aleph/ linea-poder/ logs-skill/  # corpus in situ
 aleph-context/          # estado operativo del tablero
 agents/skills/modo-aleph/   # skill operativa (agents/skills en repo)
 data/
@@ -92,6 +92,7 @@ Workflow: `.github/workflows/pages.yml` — push a `main` sube `public/`. Activa
 ## Referencias
 
 - Metodología: `agents/skills/modo-aleph/SKILL.md` (copia en `docs/metodologia/`)
+- Tronco poder político: `agents/skills/linea-poder-browser/SKILL.md` · corpus `linea-poder/`
 - Plan maestro archivado: `logs-skill/raw/archive-plan3.md` (ex-PLAN3 GENESIS)
 - Archivos genesis: `logs-skill/raw/archive-plan2.md`, `archive-reunification.md`
 - Patrón build: MEDIDOR-LAWFER (`medidor build`)

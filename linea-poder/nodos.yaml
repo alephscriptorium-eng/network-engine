@@ -1,0 +1,223 @@
+# Fuente de verdad humana — tronco Villacañas P01–P24 (v0 congelado)
+# Basado en: Historia del poder político en España (Villacañas, 2014/2023)
+# y La formación de los reinos hispánicos (2006).
+
+version: "0.1.0"
+corpus: linea-poder
+autor_tronco: José Luis Villacañas Berlanga
+referencia_wp_cima: Historia_de_España
+
+partes:
+  - id: I
+    titulo: Orden de los espacios hispanos
+    año_ini: 450
+    año_fin: 1350
+    nodos: [P01, P02, P03, P04, P05, P06]
+  - id: II
+    titulo: Guerras civiles y príncipes nuevos
+    año_ini: 1350
+    año_fin: 1808
+    nodos: [P07, P08, P09, P10, P11, P12, P13]
+  - id: III
+    titulo: Constituciones
+    año_ini: 1808
+    año_fin: 1978
+    nodos: [P14, P15, P16, P17, P18, P19, P20, P21, P22, P23]
+  - id: IV
+    titulo: Post-constitución
+    año_ini: 1978
+    año_fin: null
+    nodos: [P24]
+
+nodos:
+  - id: P01
+    parte: I
+    año_ini: 450
+    año_fin: 711
+    etiqueta: Hispania visigoda
+    tesis_villacañas: Orden político tardorromano y cristianización del poder
+    articulos_wp: [Historia_de_España, Reino_visigodo]
+
+  - id: P02
+    parte: I
+    año_ini: 711
+    año_fin: 850
+    etiqueta: Conquista y primeros espacios
+    tesis_villacañas: Fragmentación del espacio hispánico tras la conquista árabe
+    articulos_wp: [Historia_de_España, Al-Ándalus]
+
+  - id: P03
+    parte: I
+    año_ini: 850
+    año_fin: 1037
+    etiqueta: Condados y emirato fragmentado
+    tesis_villacañas: Emergencia de poderes locales cristianos y musulmanes
+    articulos_wp: [Historia_de_España, Condado_de_Barcelona, Reino_de_León]
+
+  - id: P04
+    parte: I
+    año_ini: 1037
+    año_fin: 1150
+    etiqueta: Reinados expansionistas
+    tesis_villacañas: Consolidación de reinos peninsulares en competencia
+    articulos_wp: [Historia_de_España, Reino_de_Castilla, Corona_de_Aragón]
+
+  - id: P05
+    parte: I
+    año_ini: 1150
+    año_fin: 1252
+    etiqueta: Constitución de los reinos
+    tesis_villacañas: Institucionalización del poder en la Alta Edad Media hispánica
+    articulos_wp: [Historia_de_España, Fueros]
+
+  - id: P06
+    parte: I
+    año_ini: 1252
+    año_fin: 1350
+    etiqueta: Transfiguración carismática
+    tesis_villacañas: Reyes como mediadores carismáticos del orden político
+    articulos_wp: [Historia_de_España, Alfonso_X_el_Sabio]
+
+  - id: P07
+    parte: II
+    año_ini: 1350
+    año_fin: 1450
+    etiqueta: Guerras civiles castellanas
+    tesis_villacañas: Crisis dinástica y príncipes en disputa por la corona
+    articulos_wp: [Historia_de_España, Guerra_civil_castellana]
+
+  - id: P08
+    parte: II
+    año_ini: 1450
+    año_fin: 1516
+    etiqueta: Reyes Católicos
+    tesis_villacañas: Unificación peninsular y nuevo príncipe soberano
+    articulos_wp: [Historia_de_España, Reyes_Católicos]
+
+  - id: P09
+    parte: II
+    año_ini: 1516
+    año_fin: 1556
+    etiqueta: Imperio de Carlos V
+    tesis_villacañas: España como pieza de un imperio universal
+    articulos_wp: [Historia_de_España, Carlos_I_de_España]
+
+  - id: P10
+    parte: II
+    año_ini: 1556
+    año_fin: 1621
+    etiqueta: Hegemonía de Felipe II
+    tesis_villacañas: Centralización monárquica y defensa del orden católico
+    articulos_wp: [Historia_de_España, Felipe_II_de_España]
+
+  - id: P11
+    parte: II
+    año_ini: 1621
+    año_fin: 1700
+    etiqueta: Decadencia y pluralidad imperial
+    tesis_villacañas: Crisis del siglo XVII y persistencia de espacios de poder
+    articulos_wp: [Historia_de_España, Decadencia_española]
+
+  - id: P12
+    parte: II
+    año_ini: 1700
+    año_fin: 1759
+    etiqueta: Primeros Borbones
+    tesis_villacañas: Recentralización dinástica tras la guerra de sucesión
+    articulos_wp: [Historia_de_España, Guerra_de_sucesión_española]
+
+  - id: P13
+    parte: II
+    año_ini: 1759
+    año_fin: 1808
+    etiqueta: Ilustración y Antiguo Régimen
+    tesis_villacañas: Reformismo ilustrado sin ruptura del orden monárquico
+    articulos_wp: [Historia_de_España, Ilustración_en_España]
+
+  - id: P14
+    parte: III
+    año_ini: 1808
+    año_fin: 1814
+    etiqueta: Guerra de la Independencia
+    tesis_villacañas: Nacimiento de la soberanía nacional en guerra
+    articulos_wp: [Historia_de_España, Guerra_de_la_Independencia_Española]
+
+  - id: P15
+    parte: III
+    año_ini: 1814
+    año_fin: 1833
+    etiqueta: Liberalismo y restauración
+    tesis_villacañas: Oscilación entre constitución y absolutismo
+    articulos_wp: [Historia_de_España, Trienio_Liberal]
+
+  - id: P16
+    parte: III
+    año_ini: 1833
+    año_fin: 1843
+    etiqueta: Regencias y guerras carlistas
+    tesis_villacañas: Disputa por la legitimidad dinástica y territorial
+    articulos_wp: [Historia_de_España, Primera_Guerra_Carlista]
+
+  - id: P17
+    parte: III
+    año_ini: 1843
+    año_fin: 1868
+    etiqueta: Moderados y desamortización
+    tesis_villacañas: Estado liberal centralizado sobre bases conservadoras
+    articulos_wp: [Historia_de_España, Desamortización_de_Mendizábal]
+
+  - id: P18
+    parte: III
+    año_ini: 1868
+    año_fin: 1874
+    etiqueta: Sexenio revolucionario
+    tesis_villacañas: Experimentos democráticos y fracaso de la república
+    articulos_wp: [Historia_de_España, Sexenio_Democrático]
+
+  - id: P19
+    parte: III
+    año_ini: 1874
+    año_fin: 1898
+    etiqueta: Restauración canovista
+    tesis_villacañas: Turnismo y estabilidad frágil del régimen liberal
+    articulos_wp: [Historia_de_España, Restauración_borbónica_en_España]
+
+  - id: P20
+    parte: III
+    año_ini: 1898
+    año_fin: 1931
+    etiqueta: Crisis del 98 y laborismo
+    tesis_villacañas: Regeneracionismo y fractura del consenso restaurador
+    articulos_wp: [Historia_de_España, Crisis_de_1898]
+
+  - id: P21
+    parte: III
+    año_ini: 1931
+    año_fin: 1939
+    etiqueta: Segunda República y Guerra Civil
+    tesis_villacañas: Ruptura constitucional y guerra por el poder
+    articulos_wp: [Historia_de_España, Segunda_República_Española, Guerra_Civil_Española]
+
+  - id: P22
+    parte: III
+    año_ini: 1939
+    año_fin: 1959
+    etiqueta: Franquismo primer período
+    tesis_villacañas: Régimen autoritario de unificación nacional
+    articulos_wp: [Historia_de_España, Franquismo]
+
+  - id: P23
+    parte: III
+    año_ini: 1959
+    año_fin: 1978
+    etiqueta: Franquismo tardío y transición
+    tesis_villacañas: Apertura controlada hacia la constitución democrática
+    articulos_wp: [Historia_de_España, Transición_española]
+
+  - id: P24
+    parte: IV
+    año_ini: 1978
+    año_fin: null
+    etiqueta: Estado autonómico
+    tesis_villacañas: Nueva pluralidad constitucionalizada
+    articulos_wp: [Historia_de_España, Estado_de_las_autonomías_en_España]

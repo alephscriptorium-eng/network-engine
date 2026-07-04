@@ -23,6 +23,11 @@ def _request(params: dict, sleep: float = 0.0) -> dict:
         return json.loads(resp.read().decode("utf-8"))
 
 
+def api_get(params: dict, sleep: float = 0.0) -> dict:
+    """Public MediaWiki API GET (used by history_common, fetch_user_contribs)."""
+    return _request(params, sleep=sleep)
+
+
 def fetch_revision_content(oldid: int, sleep: float = 0.0) -> tuple[str, dict]:
     data = _request(
         {

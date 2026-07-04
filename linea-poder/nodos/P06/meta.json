@@ -1,0 +1,19 @@
+{
+  "id": "P06",
+  "parte": "I",
+  "año_ini": 1252,
+  "año_fin": 1350,
+  "etiqueta": "Transfiguración carismática",
+  "tesis_villacañas": "Reyes como mediadores carismáticos del orden político",
+  "articulos_wp": [
+    "Historia_de_España",
+    "Alfonso_X_el_Sabio"
+  ],
+  "años_display": "1252–1350",
+  "urls": {
+    "wp": [
+      "https://es.wikipedia.org/wiki/Historia_de_España",
+      "https://es.wikipedia.org/wiki/Alfonso_X_el_Sabio"
+    ]
+  }
+}

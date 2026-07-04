@@ -1,0 +1,19 @@
+{
+  "id": "P12",
+  "parte": "II",
+  "año_ini": 1700,
+  "año_fin": 1759,
+  "etiqueta": "Primeros Borbones",
+  "tesis_villacañas": "Recentralización dinástica tras la guerra de sucesión",
+  "articulos_wp": [
+    "Historia_de_España",
+    "Guerra_de_sucesión_española"
+  ],
+  "años_display": "1700–1759",
+  "urls": {
+    "wp": [
+      "https://es.wikipedia.org/wiki/Historia_de_España",
+      "https://es.wikipedia.org/wiki/Guerra_de_sucesión_española"
+    ]
+  }
+}

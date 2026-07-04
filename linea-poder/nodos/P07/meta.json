@@ -1,0 +1,19 @@
+{
+  "id": "P07",
+  "parte": "II",
+  "año_ini": 1350,
+  "año_fin": 1450,
+  "etiqueta": "Guerras civiles castellanas",
+  "tesis_villacañas": "Crisis dinástica y príncipes en disputa por la corona",
+  "articulos_wp": [
+    "Historia_de_España",
+    "Guerra_civil_castellana"
+  ],
+  "años_display": "1350–1450",
+  "urls": {
+    "wp": [
+      "https://es.wikipedia.org/wiki/Historia_de_España",
+      "https://es.wikipedia.org/wiki/Guerra_civil_castellana"
+    ]
+  }
+}
