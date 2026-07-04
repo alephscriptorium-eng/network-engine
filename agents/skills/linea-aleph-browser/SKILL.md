@@ -35,8 +35,8 @@ conversacional; `linea-aleph` es el **cuerpo histórico** (Wikipedia 2007, Solve
 
 Consultar **INDICE** para deltas y milestones de demarcación; **INDICE2** para contexto
 multi-artículo y clusters; **pseudociencia/INDICE** para la segunda línea gruesa
-(223 registros en ventana, 169 con `in_linea2`); **talk/** para las cuatro vistas
-de discusión (paralelo a `pseudociencia/`, diseño en `agentchain/composer/block-12.md`).
+(223 registros en ventana, 169 con `in_linea2`); **talk/** para vistas de discusión.
+Pipelines: [`linea-aleph/CACHE_RUNBOOK.md`](../../linea-aleph/CACHE_RUNBOOK.md) § Corpus talk, § Corpus pseudociencia, § Viaje referencias-demarcacion; [`talk/README.md`](../../linea-aleph/talk/README.md). Story-board transmedia: [`scriptorium-network-games/SOLVE_ET_COAGULA/readerapp/solve-coagula-story-board.json`](../../../scriptorium-network-games/SOLVE_ET_COAGULA/readerapp/solve-coagula-story-board.json) + [`AYUDA.md`](../../../scriptorium-network-games/SOLVE_ET_COAGULA/readerapp/AYUDA.md).
 
 ## Antes de empezar
 

@@ -1,0 +1,2821 @@
+{
+  "corpus": "linea-talk-discusion-problema-demarcacion",
+  "title": "Discusión:Problema de la demarcación (historial WP es)",
+  "source": "raw/linea.md",
+  "generated_at": "2026-06-22T07:46:54Z",
+  "preamble": {
+    "lines": [
+      1,
+      9
+    ],
+    "text": "# Discusión:Problema de la demarcación — historial talk (es.wikipedia)\n# generado: 2026-06-22T07:46:53Z · registros en ventana 1971-01-01 – 2099-12-31: 96\nPágina: [Discusión:Problema de la demarcación](https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación)\nNamespace: **1** · corpus: **talk**\nArtículo enlazado: [Problema de la demarcación](https://es.wikipedia.org/wiki/Problema de la demarcación)\nModo: **probe** · no sustituye manifest oct–nov"
+  },
+  "registro_count": 96,
+  "ordering": "newest_first_in_linea_md",
+  "snapshots": {
+    "previo": {
+      "role": "previo",
+      "registro_id": null,
+      "oldid": 0,
+      "timestamp": "28 sep 2007",
+      "user": "Dhidalgo",
+      "path": "snapshots/previo"
+    },
+    "final": {
+      "role": "final",
+      "registro_id": "r0001",
+      "oldid": 158564525,
+      "timestamp": "19:05 2 mar 2024",
+      "path": "snapshots/final"
+    },
+    "inicial": {
+      "role": "inicial",
+      "registro_id": "r0096",
+      "oldid": 12051164,
+      "timestamp": "11:13 14 oct 2007",
+      "summary": "Página nueva: Un artículo enciclopédico no debería llevar una conclusión. ~~~~",
+      "path": "snapshots/inicial"
+    },
+    "sc_cierre": {
+      "role": "sc_cierre",
+      "oldid": 158564525,
+      "path": "snapshots/sc_cierre"
+    },
+    "actual": {
+      "role": "actual",
+      "oldid": null,
+      "path": "snapshots/actual"
+    }
+  },
+  "ontology_sections": [
+    [
+      "Nombre del artículo",
+      42
+    ],
+    [
+      "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      5
+    ],
+    [
+      "Sigue teniendo numerosos defectos",
+      4
+    ],
+    [
+      "Contenido copiado y repetido en varios artículos",
+      4
+    ],
+    [
+      "Bibliografia",
+      2
+    ],
+    [
+      "Más sobre referencias",
+      2
+    ],
+    [
+      "Hecho de menos a Wittgenstein en el artículo",
+      2
+    ],
+    [
+      "IABot",
+      1
+    ],
+    [
+      "32;Devuelvo",
+      1
+    ],
+    [
+      "32;Simplifica",
+      1
+    ],
+    [
+      "32;Nombre",
+      1
+    ],
+    [
+      "32;Ver",
+      1
+    ],
+    [
+      "Lecturas recomendadas...",
+      1
+    ],
+    [
+      "32;El",
+      1
+    ],
+    [
+      "Artículo tremendamente problemático",
+      1
+    ]
+  ],
+  "milestones": [
+    "r0002",
+    "r0003",
+    "r0004",
+    "r0007",
+    "r0008",
+    "r0011",
+    "r0013",
+    "r0014",
+    "r0021",
+    "r0023",
+    "r0025",
+    "r0026",
+    "r0027",
+    "r0028",
+    "r0030",
+    "r0031",
+    "r0032",
+    "r0033",
+    "r0034",
+    "r0035",
+    "r0037",
+    "r0038",
+    "r0039",
+    "r0040",
+    "r0041",
+    "r0042",
+    "r0043",
+    "r0044",
+    "r0046",
+    "r0047",
+    "r0048",
+    "r0049",
+    "r0050",
+    "r0052",
+    "r0055",
+    "r0056",
+    "r0057",
+    "r0058",
+    "r0059",
+    "r0060",
+    "r0061",
+    "r0063",
+    "r0064",
+    "r0066",
+    "r0067",
+    "r0068",
+    "r0069",
+    "r0070",
+    "r0072",
+    "r0073",
+    "r0074",
+    "r0075",
+    "r0076",
+    "r0077",
+    "r0078",
+    "r0079",
+    "r0081",
+    "r0085",
+    "r0088",
+    "r0091",
+    "r0092"
+  ],
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-158564525",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 158564525,
+      "parent_oldid": 147930993,
+      "timestamp": "19:05 2 mar 2024",
+      "user": "EmBOTellado",
+      "bytes": 46417,
+      "byte_delta": 2,
+      "section": null,
+      "summary": "corrigiendo parametro ISBN",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=158564525",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=158564525&oldid=147930993",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-147930993-bibliografia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 147930993,
+      "parent_oldid": 147874858,
+      "timestamp": "18:58 14 dic 2022",
+      "user": "Petabyte2",
+      "bytes": 46415,
+      "byte_delta": 345,
+      "section": "Bibliografia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=147930993",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=147930993&oldid=147874858",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Petabyte2"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-147874858-bibliografia",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 147874858,
+      "parent_oldid": 147874357,
+      "timestamp": "13:26 12 dic 2022",
+      "user": "PedroAcero76",
+      "bytes": 46070,
+      "byte_delta": 405,
+      "section": "Bibliografia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=147874858",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=147874858&oldid=147874357",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_PedroAcero76"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-147874357",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 147874357,
+      "parent_oldid": 124906867,
+      "timestamp": "12:44 12 dic 2022",
+      "user": "Petabyte2",
+      "bytes": 45665,
+      "byte_delta": 451,
+      "section": null,
+      "summary": "Sección nueva: /* Bibliografia */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=147874357",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=147874357&oldid=124906867",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Petabyte2"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-124906867-mas-sobre-referencias",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 124906867,
+      "parent_oldid": 124885803,
+      "timestamp": "19:17 5 abr 2020",
+      "user": "PePeEfe",
+      "bytes": 45214,
+      "byte_delta": 1,
+      "section": "Más sobre referencias",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=124906867",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=124906867&oldid=124885803",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-124885803-mas-sobre-referencias",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 124885803,
+      "parent_oldid": 124885787,
+      "timestamp": "08:00 5 abr 2020",
+      "user": "PePeEfe",
+      "bytes": 45213,
+      "byte_delta": 0,
+      "section": "Más sobre referencias",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=124885803",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=124885803&oldid=124885787",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-124885787",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 124885787,
+      "parent_oldid": 117055777,
+      "timestamp": "07:59 5 abr 2020",
+      "user": "PePeEfe",
+      "bytes": 45213,
+      "byte_delta": 791,
+      "section": null,
+      "summary": "Sección nueva: /* Más sobre referencias */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=124885787",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=124885787&oldid=117055777",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_791",
+        "user_PePeEfe"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-117055777-iabot",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 117055777,
+      "parent_oldid": 103748327,
+      "timestamp": "12:04 30 jun 2019",
+      "user": "InternetArchiveBot",
+      "bytes": 44422,
+      "byte_delta": 1156,
+      "section": "IABot",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=117055777",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=117055777&oldid=103748327",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1156",
+        "user_InternetArchiveBot"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-103748327",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 103748327,
+      "parent_oldid": 74464391,
+      "timestamp": "19:15 27 nov 2017",
+      "user": "Semibot",
+      "bytes": 43266,
+      "byte_delta": 21,
+      "section": null,
+      "summary": "Bot: [[Especial:Errores_de_sintaxis/tidy-font-bug]]",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=103748327",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=103748327&oldid=74464391",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-74464391",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 74464391,
+      "parent_oldid": 39443357,
+      "timestamp": "20:01 17 may 2014",
+      "user": "Hiperfelix",
+      "bytes": 43245,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Hiperfelix movió la página [[Discusión:Criterio de demarcación]] a [[Discusión:Problema de la demarcación]]",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=74464391",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=74464391&oldid=39443357",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-39443357",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 39443357,
+      "parent_oldid": 31994509,
+      "timestamp": "13:58 12 ago 2010",
+      "user": "Pastranec",
+      "bytes": 43245,
+      "byte_delta": 382,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=39443357",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=39443357&oldid=31994509",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Pastranec"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-31994509-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 31994509,
+      "parent_oldid": 31994481,
+      "timestamp": "18:00 5 dic 2009",
+      "user": "Sophivorus",
+      "bytes": 42863,
+      "byte_delta": 22,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31994509",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31994509&oldid=31994481",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-31994481-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 31994481,
+      "parent_oldid": 31981480,
+      "timestamp": "17:59 5 dic 2009",
+      "user": "Sophivorus",
+      "bytes": 42841,
+      "byte_delta": 316,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31994481",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31994481&oldid=31981480",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sophivorus"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-31981480-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 31981480,
+      "parent_oldid": 31947655,
+      "timestamp": "00:17 5 dic 2009",
+      "user": "IIM_78",
+      "bytes": 42525,
+      "byte_delta": 595,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31981480",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31981480&oldid=31947655",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_595",
+        "user_IIM_78"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-31947655-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 31947655,
+      "parent_oldid": 31796497,
+      "timestamp": "17:29 3 dic 2009",
+      "user": "Sophivorus",
+      "bytes": 41930,
+      "byte_delta": 45,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31947655",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31947655&oldid=31796497",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-31796497-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 31796497,
+      "parent_oldid": 31796465,
+      "timestamp": "18:45 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41885,
+      "byte_delta": 11,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796497",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796497&oldid=31796465",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-31796465-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 31796465,
+      "parent_oldid": 31796446,
+      "timestamp": "18:44 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41874,
+      "byte_delta": 10,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796465",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796465&oldid=31796446",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-31796446-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 31796446,
+      "parent_oldid": 31796395,
+      "timestamp": "18:43 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41864,
+      "byte_delta": 52,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796446",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796446&oldid=31796395",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-31796395-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 28
+      },
+      "oldid": 31796395,
+      "parent_oldid": 31796364,
+      "timestamp": "18:41 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41812,
+      "byte_delta": 28,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796395",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796395&oldid=31796364",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-31796364-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 29
+      },
+      "oldid": 31796364,
+      "parent_oldid": 31796310,
+      "timestamp": "18:41 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41784,
+      "byte_delta": 1,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796364",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796364&oldid=31796310",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0021",
+      "slug": "r0021-oldid-31796310-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 30
+      },
+      "oldid": 31796310,
+      "parent_oldid": 31506398,
+      "timestamp": "18:39 27 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 41783,
+      "byte_delta": 927,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31796310",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31796310&oldid=31506398",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_927",
+        "user_Sophivorus"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0022",
+      "slug": "r0022-oldid-31506398-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 31
+      },
+      "oldid": 31506398,
+      "parent_oldid": 31506305,
+      "timestamp": "18:46 16 nov 2009",
+      "user": "Fernando_H",
+      "bytes": 40856,
+      "byte_delta": 46,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31506398",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31506398&oldid=31506305",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0023",
+      "slug": "r0023-oldid-31506305-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 32
+      },
+      "oldid": 31506305,
+      "parent_oldid": 31181343,
+      "timestamp": "18:43 16 nov 2009",
+      "user": "Fernando_H",
+      "bytes": 40810,
+      "byte_delta": 3136,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31506305",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31506305&oldid=31181343",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_3136",
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0024",
+      "slug": "r0024-oldid-31181343-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 33
+      },
+      "oldid": 31181343,
+      "parent_oldid": 31180517,
+      "timestamp": "00:50 5 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 37674,
+      "byte_delta": 5,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31181343",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31181343&oldid=31180517",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0025",
+      "slug": "r0025-oldid-31180517-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 34
+      },
+      "oldid": 31180517,
+      "parent_oldid": 25329969,
+      "timestamp": "00:23 5 nov 2009",
+      "user": "Sophivorus",
+      "bytes": 37669,
+      "byte_delta": 1834,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=31180517",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=31180517&oldid=25329969",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1834",
+        "user_Sophivorus"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0026",
+      "slug": "r0026-oldid-25329969",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 35
+      },
+      "oldid": 25329969,
+      "parent_oldid": 24476027,
+      "timestamp": "12:39 4 abr 2009",
+      "user": "80.58.205.47",
+      "bytes": 35835,
+      "byte_delta": 384,
+      "section": null,
+      "summary": "Nueva sección: /* cita de Popper */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=25329969",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=25329969&oldid=24476027",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_80.58.205.47"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0027",
+      "slug": "r0027-oldid-24476027-32devuelvo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 36
+      },
+      "oldid": 24476027,
+      "parent_oldid": 24448684,
+      "timestamp": "07:57 1 mar 2009",
+      "user": "Sophivorus",
+      "bytes": 35451,
+      "byte_delta": 0,
+      "section": "32;Devuelvo",
+      "summary": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]]:&#32;Devuelvo al artículo su título original. No me di cuenta de la discusión que se está teniendo al respecto. Perdón.",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=24476027",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=24476027&oldid=24448684",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0028",
+      "slug": "r0028-oldid-24448684-32simplifica",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 37
+      },
+      "oldid": 24448684,
+      "parent_oldid": 24265954,
+      "timestamp": "01:21 28 feb 2009",
+      "user": "Sophivorus",
+      "bytes": 35451,
+      "byte_delta": 0,
+      "section": "32;Simplifica",
+      "summary": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;Simplifica la categorización",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=24448684",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=24448684&oldid=24265954",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0029",
+      "slug": "r0029-oldid-24265954",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 38
+      },
+      "oldid": 24265954,
+      "parent_oldid": 22654080,
+      "timestamp": "10:25 21 feb 2009",
+      "user": "LucienBOT",
+      "bytes": 35451,
+      "byte_delta": 32,
+      "section": null,
+      "summary": "Robot: Sustituyendo la plantilla: Hecho",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=24265954",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=24265954&oldid=22654080",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0030",
+      "slug": "r0030-oldid-22654080-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 39
+      },
+      "oldid": 22654080,
+      "parent_oldid": 22653814,
+      "timestamp": "22:32 16 dic 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 35419,
+      "byte_delta": 196,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22654080",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22654080&oldid=22653814",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0031",
+      "slug": "r0031-oldid-22653814-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 40
+      },
+      "oldid": 22653814,
+      "parent_oldid": 22653752,
+      "timestamp": "22:17 16 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 35223,
+      "byte_delta": 345,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22653814",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22653814&oldid=22653752",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0032",
+      "slug": "r0032-oldid-22653752-32nombre",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 41
+      },
+      "oldid": 22653752,
+      "parent_oldid": 22652568,
+      "timestamp": "22:14 16 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 34878,
+      "byte_delta": 0,
+      "section": "32;Nombre",
+      "summary": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]]:&#32;Nombre más correcto según referencias; ver disc. del artículo",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22653752",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22653752&oldid=22652568",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0033",
+      "slug": "r0033-oldid-22652568-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 42
+      },
+      "oldid": 22652568,
+      "parent_oldid": 22373219,
+      "timestamp": "21:23 16 dic 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 34878,
+      "byte_delta": 344,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22652568",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22652568&oldid=22373219",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0034",
+      "slug": "r0034-oldid-22373219-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 43
+      },
+      "oldid": 22373219,
+      "parent_oldid": 22372527,
+      "timestamp": "13:08 10 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 34534,
+      "byte_delta": 541,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22373219",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22373219&oldid=22372527",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_541",
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0035",
+      "slug": "r0035-oldid-22372527-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 44
+      },
+      "oldid": 22372527,
+      "parent_oldid": 22362328,
+      "timestamp": "12:07 10 dic 2008",
+      "user": "Sürrell",
+      "bytes": 33993,
+      "byte_delta": 525,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22372527",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22372527&oldid=22362328",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_525",
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0036",
+      "slug": "r0036-oldid-22362328-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 45
+      },
+      "oldid": 22362328,
+      "parent_oldid": 22362305,
+      "timestamp": "22:23 9 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 33468,
+      "byte_delta": 1,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22362328",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22362328&oldid=22362305",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0037",
+      "slug": "r0037-oldid-22362305-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 46
+      },
+      "oldid": 22362305,
+      "parent_oldid": 22272681,
+      "timestamp": "22:22 9 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 33467,
+      "byte_delta": 3585,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22362305",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22362305&oldid=22272681",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_3585",
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0038",
+      "slug": "r0038-oldid-22272681-hecho-de-menos-a-wittgenstein-",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 47
+      },
+      "oldid": 22272681,
+      "parent_oldid": 22272629,
+      "timestamp": "22:29 5 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 29882,
+      "byte_delta": 287,
+      "section": "Hecho de menos a Wittgenstein en el artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22272681",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22272681&oldid=22272629",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0039",
+      "slug": "r0039-oldid-22272629-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 48
+      },
+      "oldid": 22272629,
+      "parent_oldid": 22271239,
+      "timestamp": "22:27 5 dic 2008",
+      "user": "Fernando_H",
+      "bytes": 29595,
+      "byte_delta": 291,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22272629",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22272629&oldid=22271239",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0040",
+      "slug": "r0040-oldid-22271239-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 49
+      },
+      "oldid": 22271239,
+      "parent_oldid": 22268866,
+      "timestamp": "21:40 5 dic 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 29304,
+      "byte_delta": 152,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22271239",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22271239&oldid=22268866",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0041",
+      "slug": "r0041-oldid-22268866-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 50
+      },
+      "oldid": 22268866,
+      "parent_oldid": 22268008,
+      "timestamp": "19:32 5 dic 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 29152,
+      "byte_delta": 151,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22268866",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22268866&oldid=22268008",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0042",
+      "slug": "r0042-oldid-22268008",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 51
+      },
+      "oldid": 22268008,
+      "parent_oldid": 22267981,
+      "timestamp": "18:56 5 dic 2008",
+      "user": "85.91.86.5",
+      "bytes": 29001,
+      "byte_delta": 140,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22268008",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22268008&oldid=22267981",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_85.91.86.5"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0043",
+      "slug": "r0043-oldid-22267981-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 52
+      },
+      "oldid": 22267981,
+      "parent_oldid": 22267892,
+      "timestamp": "18:54 5 dic 2008",
+      "user": "85.91.86.5",
+      "bytes": 28861,
+      "byte_delta": 201,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22267981",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22267981&oldid=22267892",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_85.91.86.5"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0044",
+      "slug": "r0044-oldid-22267892-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 53
+      },
+      "oldid": 22267892,
+      "parent_oldid": 22166794,
+      "timestamp": "18:50 5 dic 2008",
+      "user": "85.91.86.5",
+      "bytes": 28660,
+      "byte_delta": 226,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22267892",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22267892&oldid=22166794",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_85.91.86.5"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0045",
+      "slug": "r0045-oldid-22166794-hecho-de-menos-a-wittgenstein-",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 54
+      },
+      "oldid": 22166794,
+      "parent_oldid": 22166766,
+      "timestamp": "12:22 1 dic 2008",
+      "user": "Rateshence",
+      "bytes": 28434,
+      "byte_delta": -1,
+      "section": "Hecho de menos a Wittgenstein en el artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22166794",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22166794&oldid=22166766",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0046",
+      "slug": "r0046-oldid-22166766",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 55
+      },
+      "oldid": 22166766,
+      "parent_oldid": 22040349,
+      "timestamp": "12:20 1 dic 2008",
+      "user": "Rateshence",
+      "bytes": 28435,
+      "byte_delta": 614,
+      "section": null,
+      "summary": "Nueva sección: /* Hecho de menos a Wittgenstein en el artículo */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22166766",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22166766&oldid=22040349",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_614",
+        "user_Rateshence"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0047",
+      "slug": "r0047-oldid-22040349-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 56
+      },
+      "oldid": 22040349,
+      "parent_oldid": 22025630,
+      "timestamp": "20:21 25 nov 2008",
+      "user": "Fernando_H",
+      "bytes": 27821,
+      "byte_delta": 2360,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22040349",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22040349&oldid=22025630",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2360",
+        "user_Fernando_H"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0048",
+      "slug": "r0048-oldid-22025630-32ver",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 57
+      },
+      "oldid": 22025630,
+      "parent_oldid": 21999413,
+      "timestamp": "13:02 25 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 25461,
+      "byte_delta": 0,
+      "section": "32;Ver",
+      "summary": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;Ver discusión",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=22025630",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=22025630&oldid=21999413",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0049",
+      "slug": "r0049-oldid-21999413-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 58
+      },
+      "oldid": 21999413,
+      "parent_oldid": 21887341,
+      "timestamp": "14:10 24 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 25461,
+      "byte_delta": 156,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21999413",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21999413&oldid=21887341",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0050",
+      "slug": "r0050-oldid-21887341",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 59
+      },
+      "oldid": 21887341,
+      "parent_oldid": 21886218,
+      "timestamp": "12:15 19 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 25305,
+      "byte_delta": -801,
+      "section": null,
+      "summary": "Revertidos los cambios de [[Special:Contributions/Kilopondioescaso|Kilopondioescaso]] ([[User Talk:Kilopondioescaso|disc.]]",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21887341",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21887341&oldid=21886218",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_-801",
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0051",
+      "slug": "r0051-oldid-21886218-lecturas-recomendadas",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 60
+      },
+      "oldid": 21886218,
+      "parent_oldid": 21885940,
+      "timestamp": "10:57 19 nov 2008",
+      "user": "Kilopondioescaso",
+      "bytes": 26106,
+      "byte_delta": 11,
+      "section": "Lecturas recomendadas...",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21886218",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21886218&oldid=21885940",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0052",
+      "slug": "r0052-oldid-21885940",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 61
+      },
+      "oldid": 21885940,
+      "parent_oldid": 21865914,
+      "timestamp": "10:40 19 nov 2008",
+      "user": "Kilopondioescaso",
+      "bytes": 26095,
+      "byte_delta": 790,
+      "section": null,
+      "summary": "Nueva sección: /* Lecturas recomendadas... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21885940",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21885940&oldid=21865914",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_790",
+        "user_Kilopondioescaso"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0053",
+      "slug": "r0053-oldid-21865914-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 62
+      },
+      "oldid": 21865914,
+      "parent_oldid": 21864522,
+      "timestamp": "14:17 18 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 25305,
+      "byte_delta": 83,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21865914",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21865914&oldid=21864522",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0054",
+      "slug": "r0054-oldid-21864522-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 63
+      },
+      "oldid": 21864522,
+      "parent_oldid": 21864490,
+      "timestamp": "12:35 18 nov 2008",
+      "user": "Sürrell",
+      "bytes": 25222,
+      "byte_delta": 6,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21864522",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21864522&oldid=21864490",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0055",
+      "slug": "r0055-oldid-21864490-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 64
+      },
+      "oldid": 21864490,
+      "parent_oldid": 21851842,
+      "timestamp": "12:33 18 nov 2008",
+      "user": "Sürrell",
+      "bytes": 25216,
+      "byte_delta": 280,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21864490",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21864490&oldid=21851842",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0056",
+      "slug": "r0056-oldid-21851842-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 65
+      },
+      "oldid": 21851842,
+      "parent_oldid": 21847600,
+      "timestamp": "20:13 17 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 24936,
+      "byte_delta": 1414,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21851842",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21851842&oldid=21847600",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1414",
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0057",
+      "slug": "r0057-oldid-21847600-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 66
+      },
+      "oldid": 21847600,
+      "parent_oldid": 21843358,
+      "timestamp": "17:28 17 nov 2008",
+      "user": "Sürrell",
+      "bytes": 23522,
+      "byte_delta": 856,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21847600",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21847600&oldid=21843358",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_856",
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0058",
+      "slug": "r0058-oldid-21843358-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 67
+      },
+      "oldid": 21843358,
+      "parent_oldid": 21840869,
+      "timestamp": "14:43 17 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 22666,
+      "byte_delta": 889,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21843358",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21843358&oldid=21840869",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_889",
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0059",
+      "slug": "r0059-oldid-21840869-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 68
+      },
+      "oldid": 21840869,
+      "parent_oldid": 21826619,
+      "timestamp": "11:48 17 nov 2008",
+      "user": "Sürrell",
+      "bytes": 21777,
+      "byte_delta": 1087,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21840869",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21840869&oldid=21826619",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1087",
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0060",
+      "slug": "r0060-oldid-21826619-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 69
+      },
+      "oldid": 21826619,
+      "parent_oldid": 21822768,
+      "timestamp": "19:49 16 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 20690,
+      "byte_delta": 3661,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21826619",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21826619&oldid=21822768",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_3661",
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0061",
+      "slug": "r0061-oldid-21822768-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 70
+      },
+      "oldid": 21822768,
+      "parent_oldid": 21802058,
+      "timestamp": "17:21 16 nov 2008",
+      "user": "Sürrell",
+      "bytes": 17029,
+      "byte_delta": 469,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21822768",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21822768&oldid=21802058",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0062",
+      "slug": "r0062-oldid-21802058-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 71
+      },
+      "oldid": 21802058,
+      "parent_oldid": 21802044,
+      "timestamp": "20:22 15 nov 2008",
+      "user": "LP",
+      "bytes": 16560,
+      "byte_delta": 0,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21802058",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21802058&oldid=21802044",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0063",
+      "slug": "r0063-oldid-21802044-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 72
+      },
+      "oldid": 21802044,
+      "parent_oldid": 21800503,
+      "timestamp": "20:21 15 nov 2008",
+      "user": "LP",
+      "bytes": 16560,
+      "byte_delta": 881,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21802044",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21802044&oldid=21800503",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_881",
+        "user_LP"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0064",
+      "slug": "r0064-oldid-21800503",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 73
+      },
+      "oldid": 21800503,
+      "parent_oldid": 21800422,
+      "timestamp": "19:34 15 nov 2008",
+      "user": "Sürrell",
+      "bytes": 15679,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]] sobre una redirección.: expuesto en la discusión del artículo",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21800503",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21800503&oldid=21800422",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0065",
+      "slug": "r0065-oldid-21800422-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 74
+      },
+      "oldid": 21800422,
+      "parent_oldid": 21800397,
+      "timestamp": "19:31 15 nov 2008",
+      "user": "Sürrell",
+      "bytes": 15679,
+      "byte_delta": 18,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21800422",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21800422&oldid=21800397",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0066",
+      "slug": "r0066-oldid-21800397-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 75
+      },
+      "oldid": 21800397,
+      "parent_oldid": 21800245,
+      "timestamp": "19:31 15 nov 2008",
+      "user": "Sürrell",
+      "bytes": 15661,
+      "byte_delta": 640,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21800397",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21800397&oldid=21800245",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_640",
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0067",
+      "slug": "r0067-oldid-21800245-32el",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 76
+      },
+      "oldid": 21800245,
+      "parent_oldid": 21800206,
+      "timestamp": "19:26 15 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 15021,
+      "byte_delta": 0,
+      "section": "32;El",
+      "summary": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;El artículo trata más bien sobre la problemática de encontrar un criterio",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21800245",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21800245&oldid=21800206",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0068",
+      "slug": "r0068-oldid-21800206-nombre-del-articulo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 77
+      },
+      "oldid": 21800206,
+      "parent_oldid": 21795631,
+      "timestamp": "19:24 15 nov 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 15021,
+      "byte_delta": 255,
+      "section": "Nombre del artículo",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21800206",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21800206&oldid=21795631",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0069",
+      "slug": "r0069-oldid-21795631",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 78
+      },
+      "oldid": 21795631,
+      "parent_oldid": 21789523,
+      "timestamp": "16:43 15 nov 2008",
+      "user": "LP",
+      "bytes": 14766,
+      "byte_delta": 535,
+      "section": null,
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21795631",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21795631&oldid=21789523",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_535",
+        "user_LP"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0070",
+      "slug": "r0070-oldid-21789523",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 79
+      },
+      "oldid": 21789523,
+      "parent_oldid": 21143633,
+      "timestamp": "10:25 15 nov 2008",
+      "user": "79.151.20.253",
+      "bytes": 14231,
+      "byte_delta": 266,
+      "section": null,
+      "summary": "Nueva sección: /* Nombre del artículo */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21789523",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21789523&oldid=21143633",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_79.151.20.253"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0071",
+      "slug": "r0071-oldid-21143633",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 80
+      },
+      "oldid": 21143633,
+      "parent_oldid": 17859588,
+      "timestamp": "19:40 21 oct 2008",
+      "user": "89.131.3.47",
+      "bytes": 13965,
+      "byte_delta": 93,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=21143633",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=21143633&oldid=17859588",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0072",
+      "slug": "r0072-oldid-17859588",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 81
+      },
+      "oldid": 17859588,
+      "parent_oldid": 17857396,
+      "timestamp": "11:27 2 jun 2008",
+      "user": "Sürrell",
+      "bytes": 13872,
+      "byte_delta": 453,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17859588",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17859588&oldid=17857396",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Sürrell"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0073",
+      "slug": "r0073-oldid-17857396",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 82
+      },
+      "oldid": 17857396,
+      "parent_oldid": 17513128,
+      "timestamp": "08:22 2 jun 2008",
+      "user": "Gusgus",
+      "bytes": 13419,
+      "byte_delta": 522,
+      "section": null,
+      "summary": "cdb pasada",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17857396",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17857396&oldid=17513128",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_522",
+        "user_Gusgus"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0074",
+      "slug": "r0074-oldid-17513128-sigue-teniendo-numerosos-defec",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 83
+      },
+      "oldid": 17513128,
+      "parent_oldid": 17512189,
+      "timestamp": "01:25 20 may 2008",
+      "user": "Ignacio_Icke",
+      "bytes": 12897,
+      "byte_delta": 240,
+      "section": "Sigue teniendo numerosos defectos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17513128",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17513128&oldid=17512189",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ignacio_Icke"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0075",
+      "slug": "r0075-oldid-17512189-sigue-teniendo-numerosos-defec",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 84
+      },
+      "oldid": 17512189,
+      "parent_oldid": 17493168,
+      "timestamp": "00:31 20 may 2008",
+      "user": "Nihilo",
+      "bytes": 12657,
+      "byte_delta": 181,
+      "section": "Sigue teniendo numerosos defectos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17512189",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17512189&oldid=17493168",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Nihilo"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0076",
+      "slug": "r0076-oldid-17493168-sigue-teniendo-numerosos-defec",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 85
+      },
+      "oldid": 17493168,
+      "parent_oldid": 17487417,
+      "timestamp": "09:47 19 may 2008",
+      "user": "Fernando_Estel",
+      "bytes": 12476,
+      "byte_delta": 698,
+      "section": "Sigue teniendo numerosos defectos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17493168",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17493168&oldid=17487417",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_698",
+        "user_Fernando_Estel"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0077",
+      "slug": "r0077-oldid-17487417",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 86
+      },
+      "oldid": 17487417,
+      "parent_oldid": 17038974,
+      "timestamp": "01:01 19 may 2008",
+      "user": "Nihilo",
+      "bytes": 11778,
+      "byte_delta": 375,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17487417",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17487417&oldid=17038974",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Nihilo"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0078",
+      "slug": "r0078-oldid-17038974-sigue-teniendo-numerosos-defec",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 87
+      },
+      "oldid": 17038974,
+      "parent_oldid": 16397056,
+      "timestamp": "17:51 1 may 2008",
+      "user": "Italianoespañol",
+      "bytes": 11403,
+      "byte_delta": 2571,
+      "section": "Sigue teniendo numerosos defectos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=17038974",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=17038974&oldid=16397056",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2571",
+        "user_Italianoespañol"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0079",
+      "slug": "r0079-oldid-16397056-articulo-tremendamente-problem",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 88
+      },
+      "oldid": 16397056,
+      "parent_oldid": 12919626,
+      "timestamp": "11:28 6 abr 2008",
+      "user": "Fernando_Estel",
+      "bytes": 8832,
+      "byte_delta": 2129,
+      "section": "Artículo tremendamente problemático",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=16397056",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=16397056&oldid=12919626",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2129",
+        "user_Fernando_Estel"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0080",
+      "slug": "r0080-oldid-12919626",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 89
+      },
+      "oldid": 12919626,
+      "parent_oldid": 12913441,
+      "timestamp": "02:19 19 nov 2007",
+      "user": "Netito777",
+      "bytes": 6703,
+      "byte_delta": -7,
+      "section": null,
+      "summary": "{{No seleccionado|{{subst:CURRENTYEAR}}}}",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12919626",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12919626&oldid=12913441",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0081",
+      "slug": "r0081-oldid-12913441",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 90
+      },
+      "oldid": 12913441,
+      "parent_oldid": 12756071,
+      "timestamp": "21:18 18 nov 2007",
+      "user": "Niqueco",
+      "bytes": 6710,
+      "byte_delta": 968,
+      "section": null,
+      "summary": "Nueva sección: /* Artículo tremendamente problemático */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12913441",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12913441&oldid=12756071",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_968",
+        "user_Niqueco"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0082",
+      "slug": "r0082-oldid-12756071-tamano-del-articulo-y-punto-de",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 91
+      },
+      "oldid": 12756071,
+      "parent_oldid": 12755913,
+      "timestamp": "11:05 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5742,
+      "byte_delta": 202,
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12756071",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12756071&oldid=12755913",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0083",
+      "slug": "r0083-oldid-12755913-tamano-del-articulo-y-punto-de",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 92
+      },
+      "oldid": 12755913,
+      "parent_oldid": 12755902,
+      "timestamp": "10:51 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5540,
+      "byte_delta": 158,
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12755913",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12755913&oldid=12755902",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0084",
+      "slug": "r0084-oldid-12755902-tamano-del-articulo-y-punto-de",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 93
+      },
+      "oldid": 12755902,
+      "parent_oldid": 12755895,
+      "timestamp": "10:50 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5382,
+      "byte_delta": 1,
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12755902",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12755902&oldid=12755895",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0085",
+      "slug": "r0085-oldid-12755895-tamano-del-articulo-y-punto-de",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 94
+      },
+      "oldid": 12755895,
+      "parent_oldid": 12749269,
+      "timestamp": "10:49 12 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 5381,
+      "byte_delta": 1187,
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12755895",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12755895&oldid=12749269",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1187"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0086",
+      "slug": "r0086-oldid-12749269-contenido-copiado-y-repetido-e",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 95
+      },
+      "oldid": 12749269,
+      "parent_oldid": 12749163,
+      "timestamp": "23:50 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 4194,
+      "byte_delta": 117,
+      "section": "Contenido copiado y repetido en varios artículos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12749269",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12749269&oldid=12749163",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0087",
+      "slug": "r0087-oldid-12749163-tamano-del-articulo-y-punto-de",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 96
+      },
+      "oldid": 12749163,
+      "parent_oldid": 12749111,
+      "timestamp": "23:45 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 4077,
+      "byte_delta": 20,
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12749163",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12749163&oldid=12749111",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0088",
+      "slug": "r0088-oldid-12749111",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 97
+      },
+      "oldid": 12749111,
+      "parent_oldid": 12749015,
+      "timestamp": "23:42 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 4057,
+      "byte_delta": 2325,
+      "section": null,
+      "summary": "Nueva sección: /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12749111",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12749111&oldid=12749015",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2325"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0089",
+      "slug": "r0089-oldid-12749015-contenido-copiado-y-repetido-e",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 98
+      },
+      "oldid": 12749015,
+      "parent_oldid": 12748988,
+      "timestamp": "23:37 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 1732,
+      "byte_delta": 66,
+      "section": "Contenido copiado y repetido en varios artículos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12749015",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12749015&oldid=12748988",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0090",
+      "slug": "r0090-oldid-12748988-contenido-copiado-y-repetido-e",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 99
+      },
+      "oldid": 12748988,
+      "parent_oldid": 12748839,
+      "timestamp": "23:36 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 1666,
+      "byte_delta": 74,
+      "section": "Contenido copiado y repetido en varios artículos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12748988",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12748988&oldid=12748839",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0091",
+      "slug": "r0091-oldid-12748839-contenido-copiado-y-repetido-e",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 100
+      },
+      "oldid": 12748839,
+      "parent_oldid": 12746317,
+      "timestamp": "23:28 11 nov 2007",
+      "user": "SolveCoagula",
+      "bytes": 1592,
+      "byte_delta": 903,
+      "section": "Contenido copiado y repetido en varios artículos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12748839",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12748839&oldid=12746317",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_903"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0092",
+      "slug": "r0092-oldid-12746317",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 101
+      },
+      "oldid": 12746317,
+      "parent_oldid": 12744674,
+      "timestamp": "21:47 11 nov 2007",
+      "user": "Fernando_Estel",
+      "bytes": 689,
+      "byte_delta": 428,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12746317",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12746317&oldid=12744674",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Fernando_Estel"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0093",
+      "slug": "r0093-oldid-12744674",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 102
+      },
+      "oldid": 12744674,
+      "parent_oldid": 12057983,
+      "timestamp": "20:47 11 nov 2007",
+      "user": "Los_Siete",
+      "bytes": 261,
+      "byte_delta": 33,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12744674",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12744674&oldid=12057983",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0094",
+      "slug": "r0094-oldid-12057983",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 103
+      },
+      "oldid": 12057983,
+      "parent_oldid": 12057670,
+      "timestamp": "17:30 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 228,
+      "byte_delta": 65,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12057983",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12057983&oldid=12057670",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0095",
+      "slug": "r0095-oldid-12057670",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 104
+      },
+      "oldid": 12057670,
+      "parent_oldid": 12051164,
+      "timestamp": "17:18 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 163,
+      "byte_delta": 51,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12057670",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12057670&oldid=12051164",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0096",
+      "slug": "r0096-oldid-12051164",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 105
+      },
+      "oldid": 12051164,
+      "parent_oldid": 0,
+      "timestamp": "11:13 14 oct 2007",
+      "user": "Pinar~eswiki",
+      "bytes": 112,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Página nueva: Un artículo enciclopédico no debería llevar una conclusión. ~~~~",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&oldid=12051164",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Discusión:Problema_de_la_demarcación&diff=12051164&oldid=0",
+        "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    }
+  ]
+}

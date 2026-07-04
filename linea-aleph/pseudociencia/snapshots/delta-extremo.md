@@ -1,43 +1,31 @@
 ---
-layer: delta_extremo
-status: pending
+status: curated
+role: delta-extremo
 from_oldid: 11597663
 to_oldid: 12910974
-from_user: 200.56.160.140
-to_user: SolveCoagula
-bytes_before: 33598
-bytes_after: 136054
-byte_delta_net: 102456
-cache_from: cache/snapshots/11597663.wikitext
-cache_to: cache/snapshots/12910974.wikitext
-registros_intermedios: 223
-milestones: 77
+curated_at: 2026-06-22
 ---
 
-# Delta extremo (previo → final)
+# Delta extremo — Pseudociencia (previo → cierre SC)
 
-Marco agregado del núcleo Pseudociencia en ventana SolveCoagula. Curación narrativa **pendiente**.
+Corpus `pseudociencia/`. Cuerpos en `cache/snapshots/11597663.wikitext`, `cache/snapshots/12910974.wikitext`.
 
 ## Extremos
 
-| Rol | Carpeta | oldid |
-|-----|---------|-------|
-| Previo | [snapshots/previo/](previo/) | 11597663 |
-| Final | [snapshots/final/](final/) | 12910974 |
+| Polo | oldid | Bytes | Notas |
+|------|-------|-------|-------|
+| Previo ventana | 11597663 | — | Estado pre-SC en línea pseudo |
+| Cierre SC | [12910974](https://es.wikipedia.org/w/index.php?title=Pseudociencia&oldid=12910974) | ~137 000 | 18 nov 2007 — restauración marco expandido |
 
-## Caché
+## Lectura
 
-- `cache/snapshots/11597663.wikitext`
-- `cache/snapshots/12910974.wikitext`
+SolveCoagula inyectó marco demarcatorio expandido (Feyerabend, holismo, debate cuerdas) en un artículo que la comunidad había reencuadrado hacia manual escéptico. El cierre SC **prevalece en el diff** del periodo pero el consenso visible (talk, reverts) no acompañó.
 
-## Diff Wikipedia
+## Actual
 
-https://es.wikipedia.org/w/index.php?title=Pseudociencia&diff=12910974&oldid=11597663
+`pseudociencia/snapshots/actual/meta.json` → oldid **173863282**, `fetched: true` (~111 KB, 2026-06-09). Δ SC→actual menor que en demarcación (~−18 % bytes): el puente a demarcación **perdura**.
 
-## Ontología
+## Vacíos
 
-Pack de secciones: [`ontology-seeds.json`](../ontology-seeds.json)
-
-## Núcleo intermedio
-
-223 registros en [`manifest.json`](../manifest.json) (todos los editores en ventana); 77 milestones en `registros/`. Cross-ref linea2: 169 registros con `in_linea2: true`.
+- Delta SC→actual pseudo: [`pseudociencia/snapshots/delta-sc-actual.md`](snapshots/delta-sc-actual.md) ✅ (2026-06-22).
+- Heat map editores post-2007: no cacheado.

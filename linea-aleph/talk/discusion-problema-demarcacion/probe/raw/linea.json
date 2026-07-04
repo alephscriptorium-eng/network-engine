@@ -1,0 +1,884 @@
+{
+  "meta": {
+    "title": "Discusión:Problema de la demarcación",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 1,
+    "linked_article": "Problema de la demarcación",
+    "generated_at": "2026-06-22T07:46:53Z",
+    "corpus_dir": "talk/discusion-problema-demarcacion/probe",
+    "window": {
+      "start": "1971-01-01",
+      "end": "2099-12-31"
+    },
+    "revision_count": 96,
+    "ordering": "newest_first_in_linea_md",
+    "probe": true
+  },
+  "revisiones": [
+    {
+      "revid": 12051164,
+      "parentid": 0,
+      "timestamp": "2007-10-14T11:13:08Z",
+      "user": "Pinar~eswiki",
+      "comment": "Página nueva: Un artículo enciclopédico no debería llevar una conclusión. ~~~~",
+      "size": 112,
+      "byte_delta": 112
+    },
+    {
+      "revid": 12057670,
+      "parentid": 12051164,
+      "timestamp": "2007-10-14T17:18:38Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 163,
+      "byte_delta": 51
+    },
+    {
+      "revid": 12057983,
+      "parentid": 12057670,
+      "timestamp": "2007-10-14T17:30:41Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 228,
+      "byte_delta": 65
+    },
+    {
+      "revid": 12744674,
+      "parentid": 12057983,
+      "timestamp": "2007-11-11T20:47:38Z",
+      "user": "Los Siete",
+      "comment": "",
+      "size": 261,
+      "byte_delta": 33
+    },
+    {
+      "revid": 12746317,
+      "parentid": 12744674,
+      "timestamp": "2007-11-11T21:47:37Z",
+      "user": "Fernando Estel",
+      "comment": "",
+      "size": 689,
+      "byte_delta": 428
+    },
+    {
+      "revid": 12748839,
+      "parentid": 12746317,
+      "timestamp": "2007-11-11T23:28:50Z",
+      "user": "SolveCoagula",
+      "comment": "/* Contenido copiado y repetido en varios artículos */",
+      "size": 1592,
+      "byte_delta": 903
+    },
+    {
+      "revid": 12748988,
+      "parentid": 12748839,
+      "timestamp": "2007-11-11T23:36:08Z",
+      "user": "SolveCoagula",
+      "comment": "/* Contenido copiado y repetido en varios artículos */",
+      "size": 1666,
+      "byte_delta": 74
+    },
+    {
+      "revid": 12749015,
+      "parentid": 12748988,
+      "timestamp": "2007-11-11T23:37:18Z",
+      "user": "SolveCoagula",
+      "comment": "/* Contenido copiado y repetido en varios artículos */",
+      "size": 1732,
+      "byte_delta": 66
+    },
+    {
+      "revid": 12749111,
+      "parentid": 12749015,
+      "timestamp": "2007-11-11T23:42:36Z",
+      "user": "SolveCoagula",
+      "comment": "Nueva sección: /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 4057,
+      "byte_delta": 2325
+    },
+    {
+      "revid": 12749163,
+      "parentid": 12749111,
+      "timestamp": "2007-11-11T23:45:27Z",
+      "user": "SolveCoagula",
+      "comment": "/* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 4077,
+      "byte_delta": 20
+    },
+    {
+      "revid": 12749269,
+      "parentid": 12749163,
+      "timestamp": "2007-11-11T23:50:07Z",
+      "user": "SolveCoagula",
+      "comment": "/* Contenido copiado y repetido en varios artículos */",
+      "size": 4194,
+      "byte_delta": 117
+    },
+    {
+      "revid": 12755895,
+      "parentid": 12749269,
+      "timestamp": "2007-11-12T10:49:48Z",
+      "user": "SolveCoagula",
+      "comment": "/* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 5381,
+      "byte_delta": 1187
+    },
+    {
+      "revid": 12755902,
+      "parentid": 12755895,
+      "timestamp": "2007-11-12T10:50:29Z",
+      "user": "SolveCoagula",
+      "comment": "/* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 5382,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12755913,
+      "parentid": 12755902,
+      "timestamp": "2007-11-12T10:51:42Z",
+      "user": "SolveCoagula",
+      "comment": "/* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 5540,
+      "byte_delta": 158
+    },
+    {
+      "revid": 12756071,
+      "parentid": 12755913,
+      "timestamp": "2007-11-12T11:05:03Z",
+      "user": "SolveCoagula",
+      "comment": "/* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "size": 5742,
+      "byte_delta": 202
+    },
+    {
+      "revid": 12913441,
+      "parentid": 12756071,
+      "timestamp": "2007-11-18T21:18:46Z",
+      "user": "Niqueco",
+      "comment": "Nueva sección: /* Artículo tremendamente problemático */",
+      "size": 6710,
+      "byte_delta": 968
+    },
+    {
+      "revid": 12919626,
+      "parentid": 12913441,
+      "timestamp": "2007-11-19T02:19:50Z",
+      "user": "Netito777",
+      "comment": "{{No seleccionado|{{subst:CURRENTYEAR}}}}",
+      "size": 6703,
+      "byte_delta": -7
+    },
+    {
+      "revid": 16397056,
+      "parentid": 12919626,
+      "timestamp": "2008-04-06T11:28:11Z",
+      "user": "Fernando Estel",
+      "comment": "/* Artículo tremendamente problemático */",
+      "size": 8832,
+      "byte_delta": 2129
+    },
+    {
+      "revid": 17038974,
+      "parentid": 16397056,
+      "timestamp": "2008-05-01T17:51:13Z",
+      "user": "Italianoespañol",
+      "comment": "/* Sigue teniendo numerosos defectos */",
+      "size": 11403,
+      "byte_delta": 2571
+    },
+    {
+      "revid": 17487417,
+      "parentid": 17038974,
+      "timestamp": "2008-05-19T01:01:21Z",
+      "user": "Nihilo",
+      "comment": "",
+      "size": 11778,
+      "byte_delta": 375
+    },
+    {
+      "revid": 17493168,
+      "parentid": 17487417,
+      "timestamp": "2008-05-19T09:47:39Z",
+      "user": "Fernando Estel",
+      "comment": "/* Sigue teniendo numerosos defectos */",
+      "size": 12476,
+      "byte_delta": 698
+    },
+    {
+      "revid": 17512189,
+      "parentid": 17493168,
+      "timestamp": "2008-05-20T00:31:38Z",
+      "user": "Nihilo",
+      "comment": "/* Sigue teniendo numerosos defectos */",
+      "size": 12657,
+      "byte_delta": 181
+    },
+    {
+      "revid": 17513128,
+      "parentid": 17512189,
+      "timestamp": "2008-05-20T01:25:01Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Sigue teniendo numerosos defectos */",
+      "size": 12897,
+      "byte_delta": 240
+    },
+    {
+      "revid": 17857396,
+      "parentid": 17513128,
+      "timestamp": "2008-06-02T08:22:45Z",
+      "user": "Gusgus",
+      "comment": "cdb pasada",
+      "size": 13419,
+      "byte_delta": 522
+    },
+    {
+      "revid": 17859588,
+      "parentid": 17857396,
+      "timestamp": "2008-06-02T11:27:32Z",
+      "user": "Sürrell",
+      "comment": "",
+      "size": 13872,
+      "byte_delta": 453
+    },
+    {
+      "revid": 21143633,
+      "parentid": 17859588,
+      "timestamp": "2008-10-21T19:40:05Z",
+      "user": "89.131.3.47",
+      "comment": "",
+      "size": 13965,
+      "byte_delta": 93
+    },
+    {
+      "revid": 21789523,
+      "parentid": 21143633,
+      "timestamp": "2008-11-15T10:25:26Z",
+      "user": "79.151.20.253",
+      "comment": "Nueva sección: /* Nombre del artículo */",
+      "size": 14231,
+      "byte_delta": 266
+    },
+    {
+      "revid": 21795631,
+      "parentid": 21789523,
+      "timestamp": "2008-11-15T16:43:38Z",
+      "user": "LP",
+      "comment": "",
+      "size": 14766,
+      "byte_delta": 535
+    },
+    {
+      "revid": 21800206,
+      "parentid": 21795631,
+      "timestamp": "2008-11-15T19:24:58Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 15021,
+      "byte_delta": 255
+    },
+    {
+      "revid": 21800245,
+      "parentid": 21800206,
+      "timestamp": "2008-11-15T19:26:07Z",
+      "user": "Ignacio Icke",
+      "comment": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;El artículo trata más bien sobre la problemática de encontrar un criterio",
+      "size": 15021,
+      "byte_delta": 0
+    },
+    {
+      "revid": 21800397,
+      "parentid": 21800245,
+      "timestamp": "2008-11-15T19:31:16Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 15661,
+      "byte_delta": 640
+    },
+    {
+      "revid": 21800422,
+      "parentid": 21800397,
+      "timestamp": "2008-11-15T19:31:51Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 15679,
+      "byte_delta": 18
+    },
+    {
+      "revid": 21800503,
+      "parentid": 21800422,
+      "timestamp": "2008-11-15T19:34:17Z",
+      "user": "Sürrell",
+      "comment": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]] sobre una redirección.: expuesto en la discusión del artículo",
+      "size": 15679,
+      "byte_delta": 0
+    },
+    {
+      "revid": 21802044,
+      "parentid": 21800503,
+      "timestamp": "2008-11-15T20:21:25Z",
+      "user": "LP",
+      "comment": "/* Nombre del artículo */",
+      "size": 16560,
+      "byte_delta": 881
+    },
+    {
+      "revid": 21802058,
+      "parentid": 21802044,
+      "timestamp": "2008-11-15T20:22:03Z",
+      "user": "LP",
+      "comment": "/* Nombre del artículo */",
+      "size": 16560,
+      "byte_delta": 0
+    },
+    {
+      "revid": 21822768,
+      "parentid": 21802058,
+      "timestamp": "2008-11-16T17:21:46Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 17029,
+      "byte_delta": 469
+    },
+    {
+      "revid": 21826619,
+      "parentid": 21822768,
+      "timestamp": "2008-11-16T19:49:57Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 20690,
+      "byte_delta": 3661
+    },
+    {
+      "revid": 21840869,
+      "parentid": 21826619,
+      "timestamp": "2008-11-17T11:48:36Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 21777,
+      "byte_delta": 1087
+    },
+    {
+      "revid": 21843358,
+      "parentid": 21840869,
+      "timestamp": "2008-11-17T14:43:59Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 22666,
+      "byte_delta": 889
+    },
+    {
+      "revid": 21847600,
+      "parentid": 21843358,
+      "timestamp": "2008-11-17T17:28:22Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 23522,
+      "byte_delta": 856
+    },
+    {
+      "revid": 21851842,
+      "parentid": 21847600,
+      "timestamp": "2008-11-17T20:13:48Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 24936,
+      "byte_delta": 1414
+    },
+    {
+      "revid": 21864490,
+      "parentid": 21851842,
+      "timestamp": "2008-11-18T12:33:33Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 25216,
+      "byte_delta": 280
+    },
+    {
+      "revid": 21864522,
+      "parentid": 21864490,
+      "timestamp": "2008-11-18T12:35:38Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */ +genitivo",
+      "size": 25222,
+      "byte_delta": 6
+    },
+    {
+      "revid": 21865914,
+      "parentid": 21864522,
+      "timestamp": "2008-11-18T14:17:23Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 25305,
+      "byte_delta": 83
+    },
+    {
+      "revid": 21885940,
+      "parentid": 21865914,
+      "timestamp": "2008-11-19T10:40:43Z",
+      "user": "Kilopondioescaso",
+      "comment": "Nueva sección: /* Lecturas recomendadas... */",
+      "size": 26095,
+      "byte_delta": 790
+    },
+    {
+      "revid": 21886218,
+      "parentid": 21885940,
+      "timestamp": "2008-11-19T10:57:21Z",
+      "user": "Kilopondioescaso",
+      "comment": "/* Lecturas recomendadas... */",
+      "size": 26106,
+      "byte_delta": 11
+    },
+    {
+      "revid": 21887341,
+      "parentid": 21886218,
+      "timestamp": "2008-11-19T12:15:10Z",
+      "user": "Ignacio Icke",
+      "comment": "Revertidos los cambios de [[Special:Contributions/Kilopondioescaso|Kilopondioescaso]] ([[User Talk:Kilopondioescaso|disc.]]) a la última edición de [[Special:Contributions/Chabacano|Chabacano]]",
+      "size": 25305,
+      "byte_delta": -801
+    },
+    {
+      "revid": 21999413,
+      "parentid": 21887341,
+      "timestamp": "2008-11-24T14:10:39Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 25461,
+      "byte_delta": 156
+    },
+    {
+      "revid": 22025630,
+      "parentid": 21999413,
+      "timestamp": "2008-11-25T13:02:19Z",
+      "user": "Ignacio Icke",
+      "comment": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;Ver discusión",
+      "size": 25461,
+      "byte_delta": 0
+    },
+    {
+      "revid": 22040349,
+      "parentid": 22025630,
+      "timestamp": "2008-11-25T20:21:50Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ traslado cuestionable",
+      "size": 27821,
+      "byte_delta": 2360
+    },
+    {
+      "revid": 22166766,
+      "parentid": 22040349,
+      "timestamp": "2008-12-01T12:20:44Z",
+      "user": "Rateshence",
+      "comment": "Nueva sección: /* Hecho de menos a Wittgenstein en el artículo */",
+      "size": 28435,
+      "byte_delta": 614
+    },
+    {
+      "revid": 22166794,
+      "parentid": 22166766,
+      "timestamp": "2008-12-01T12:22:36Z",
+      "user": "Rateshence",
+      "comment": "/* Hecho de menos a Wittgenstein en el artículo */",
+      "size": 28434,
+      "byte_delta": -1
+    },
+    {
+      "revid": 22267892,
+      "parentid": 22166794,
+      "timestamp": "2008-12-05T18:50:22Z",
+      "user": "85.91.86.5",
+      "comment": "/* Nombre del artículo */",
+      "size": 28660,
+      "byte_delta": 226
+    },
+    {
+      "revid": 22267981,
+      "parentid": 22267892,
+      "timestamp": "2008-12-05T18:54:38Z",
+      "user": "85.91.86.5",
+      "comment": "/* Nombre del artículo */",
+      "size": 28861,
+      "byte_delta": 201
+    },
+    {
+      "revid": 22268008,
+      "parentid": 22267981,
+      "timestamp": "2008-12-05T18:56:04Z",
+      "user": "85.91.86.5",
+      "comment": "",
+      "size": 29001,
+      "byte_delta": 140
+    },
+    {
+      "revid": 22268866,
+      "parentid": 22268008,
+      "timestamp": "2008-12-05T19:32:05Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 29152,
+      "byte_delta": 151
+    },
+    {
+      "revid": 22271239,
+      "parentid": 22268866,
+      "timestamp": "2008-12-05T21:40:43Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 29304,
+      "byte_delta": 152
+    },
+    {
+      "revid": 22272629,
+      "parentid": 22271239,
+      "timestamp": "2008-12-05T22:27:24Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ unos días más",
+      "size": 29595,
+      "byte_delta": 291
+    },
+    {
+      "revid": 22272681,
+      "parentid": 22272629,
+      "timestamp": "2008-12-05T22:29:28Z",
+      "user": "Fernando H",
+      "comment": "/* Hecho de menos a Wittgenstein en el artículo */ resp.",
+      "size": 29882,
+      "byte_delta": 287
+    },
+    {
+      "revid": 22362305,
+      "parentid": 22272681,
+      "timestamp": "2008-12-09T22:22:08Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ Datos para el retraslado; opinen please",
+      "size": 33467,
+      "byte_delta": 3585
+    },
+    {
+      "revid": 22362328,
+      "parentid": 22362305,
+      "timestamp": "2008-12-09T22:23:44Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ ups",
+      "size": 33468,
+      "byte_delta": 1
+    },
+    {
+      "revid": 22372527,
+      "parentid": 22362328,
+      "timestamp": "2008-12-10T12:07:14Z",
+      "user": "Sürrell",
+      "comment": "/* Nombre del artículo */",
+      "size": 33993,
+      "byte_delta": 525
+    },
+    {
+      "revid": 22373219,
+      "parentid": 22372527,
+      "timestamp": "2008-12-10T13:08:05Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ resp.",
+      "size": 34534,
+      "byte_delta": 541
+    },
+    {
+      "revid": 22652568,
+      "parentid": 22373219,
+      "timestamp": "2008-12-16T21:23:06Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 34878,
+      "byte_delta": 344
+    },
+    {
+      "revid": 22653752,
+      "parentid": 22652568,
+      "timestamp": "2008-12-16T22:14:58Z",
+      "user": "Fernando H",
+      "comment": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]]:&#32;Nombre más correcto según referencias; ver disc. del artículo",
+      "size": 34878,
+      "byte_delta": 0
+    },
+    {
+      "revid": 22653814,
+      "parentid": 22653752,
+      "timestamp": "2008-12-16T22:17:43Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ done",
+      "size": 35223,
+      "byte_delta": 345
+    },
+    {
+      "revid": 22654080,
+      "parentid": 22653814,
+      "timestamp": "2008-12-16T22:32:42Z",
+      "user": "Ignacio Icke",
+      "comment": "/* Nombre del artículo */",
+      "size": 35419,
+      "byte_delta": 196
+    },
+    {
+      "revid": 24265954,
+      "parentid": 22654080,
+      "timestamp": "2009-02-21T10:25:18Z",
+      "user": "LucienBOT",
+      "comment": "Robot: Sustituyendo la plantilla: Hecho",
+      "size": 35451,
+      "byte_delta": 32
+    },
+    {
+      "revid": 24448684,
+      "parentid": 24265954,
+      "timestamp": "2009-02-28T01:21:39Z",
+      "user": "Sophivorus",
+      "comment": "[[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema de la demarcación]]:&#32;Simplifica la categorización",
+      "size": 35451,
+      "byte_delta": 0
+    },
+    {
+      "revid": 24476027,
+      "parentid": 24448684,
+      "timestamp": "2009-03-01T07:57:30Z",
+      "user": "Sophivorus",
+      "comment": "[[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criterio de demarcación]]:&#32;Devuelvo al artículo su título original. No me di cuenta de la discusión que se está teniendo al respecto. Perdón.",
+      "size": 35451,
+      "byte_delta": 0
+    },
+    {
+      "revid": 25329969,
+      "parentid": 24476027,
+      "timestamp": "2009-04-04T12:39:40Z",
+      "user": "80.58.205.47",
+      "comment": "Nueva sección: /* cita de Popper */",
+      "size": 35835,
+      "byte_delta": 384
+    },
+    {
+      "revid": 31180517,
+      "parentid": 25329969,
+      "timestamp": "2009-11-05T00:23:02Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 37669,
+      "byte_delta": 1834
+    },
+    {
+      "revid": 31181343,
+      "parentid": 31180517,
+      "timestamp": "2009-11-05T00:50:57Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 37674,
+      "byte_delta": 5
+    },
+    {
+      "revid": 31506305,
+      "parentid": 31181343,
+      "timestamp": "2009-11-16T18:43:01Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ respuestas",
+      "size": 40810,
+      "byte_delta": 3136
+    },
+    {
+      "revid": 31506398,
+      "parentid": 31506305,
+      "timestamp": "2009-11-16T18:46:02Z",
+      "user": "Fernando H",
+      "comment": "/* Nombre del artículo */ ccmm",
+      "size": 40856,
+      "byte_delta": 46
+    },
+    {
+      "revid": 31796310,
+      "parentid": 31506398,
+      "timestamp": "2009-11-27T18:39:46Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41783,
+      "byte_delta": 927
+    },
+    {
+      "revid": 31796364,
+      "parentid": 31796310,
+      "timestamp": "2009-11-27T18:41:07Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41784,
+      "byte_delta": 1
+    },
+    {
+      "revid": 31796395,
+      "parentid": 31796364,
+      "timestamp": "2009-11-27T18:41:58Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41812,
+      "byte_delta": 28
+    },
+    {
+      "revid": 31796446,
+      "parentid": 31796395,
+      "timestamp": "2009-11-27T18:43:29Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41864,
+      "byte_delta": 52
+    },
+    {
+      "revid": 31796465,
+      "parentid": 31796446,
+      "timestamp": "2009-11-27T18:44:06Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41874,
+      "byte_delta": 10
+    },
+    {
+      "revid": 31796497,
+      "parentid": 31796465,
+      "timestamp": "2009-11-27T18:45:00Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41885,
+      "byte_delta": 11
+    },
+    {
+      "revid": 31947655,
+      "parentid": 31796497,
+      "timestamp": "2009-12-03T17:29:45Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 41930,
+      "byte_delta": 45
+    },
+    {
+      "revid": 31981480,
+      "parentid": 31947655,
+      "timestamp": "2009-12-05T00:17:22Z",
+      "user": "IIM 78",
+      "comment": "/* Nombre del artículo */  La bibliografía secundaria decide",
+      "size": 42525,
+      "byte_delta": 595
+    },
+    {
+      "revid": 31994481,
+      "parentid": 31981480,
+      "timestamp": "2009-12-05T17:59:52Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 42841,
+      "byte_delta": 316
+    },
+    {
+      "revid": 31994509,
+      "parentid": 31994481,
+      "timestamp": "2009-12-05T18:00:31Z",
+      "user": "Sophivorus",
+      "comment": "/* Nombre del artículo */",
+      "size": 42863,
+      "byte_delta": 22
+    },
+    {
+      "revid": 39443357,
+      "parentid": 31994509,
+      "timestamp": "2010-08-12T13:58:35Z",
+      "user": "Pastranec",
+      "comment": "",
+      "size": 43245,
+      "byte_delta": 382
+    },
+    {
+      "revid": 74464391,
+      "parentid": 39443357,
+      "timestamp": "2014-05-17T20:01:20Z",
+      "user": "Hiperfelix",
+      "comment": "Hiperfelix movió la página [[Discusión:Criterio de demarcación]] a [[Discusión:Problema de la demarcación]]",
+      "size": 43245,
+      "byte_delta": 0
+    },
+    {
+      "revid": 103748327,
+      "parentid": 74464391,
+      "timestamp": "2017-11-27T19:15:29Z",
+      "user": "Semibot",
+      "comment": "Bot: [[Especial:Errores_de_sintaxis/tidy-font-bug]]",
+      "size": 43266,
+      "byte_delta": 21
+    },
+    {
+      "revid": 117055777,
+      "parentid": 103748327,
+      "timestamp": "2019-06-30T12:04:14Z",
+      "user": "InternetArchiveBot",
+      "comment": "Notificación sobre referencias alteradas que necesitan revisión #IABot (v2.0beta15)",
+      "size": 44422,
+      "byte_delta": 1156
+    },
+    {
+      "revid": 124885787,
+      "parentid": 117055777,
+      "timestamp": "2020-04-05T07:59:25Z",
+      "user": "PePeEfe",
+      "comment": "Sección nueva: /* Más sobre referencias */",
+      "size": 45213,
+      "byte_delta": 791
+    },
+    {
+      "revid": 124885803,
+      "parentid": 124885787,
+      "timestamp": "2020-04-05T08:00:29Z",
+      "user": "PePeEfe",
+      "comment": "/* Más sobre referencias */ cm",
+      "size": 45213,
+      "byte_delta": 0
+    },
+    {
+      "revid": 124906867,
+      "parentid": 124885803,
+      "timestamp": "2020-04-05T19:17:31Z",
+      "user": "PePeEfe",
+      "comment": "/* Más sobre referencias */ cm",
+      "size": 45214,
+      "byte_delta": 1
+    },
+    {
+      "revid": 147874357,
+      "parentid": 124906867,
+      "timestamp": "2022-12-12T12:44:56Z",
+      "user": "Petabyte2",
+      "comment": "Sección nueva: /* Bibliografia */",
+      "size": 45665,
+      "byte_delta": 451
+    },
+    {
+      "revid": 147874858,
+      "parentid": 147874357,
+      "timestamp": "2022-12-12T13:26:26Z",
+      "user": "PedroAcero76",
+      "comment": "/* Bibliografia */ Respuesta",
+      "size": 46070,
+      "byte_delta": 405
+    },
+    {
+      "revid": 147930993,
+      "parentid": 147874858,
+      "timestamp": "2022-12-14T18:58:10Z",
+      "user": "Petabyte2",
+      "comment": "/* Bibliografia */ Respuesta",
+      "size": 46415,
+      "byte_delta": 345
+    },
+    {
+      "revid": 158564525,
+      "parentid": 147930993,
+      "timestamp": "2024-03-02T19:05:38Z",
+      "user": "EmBOTellado",
+      "comment": "corrigiendo parametro ISBN",
+      "size": 46417,
+      "byte_delta": 2
+    }
+  ]
+}

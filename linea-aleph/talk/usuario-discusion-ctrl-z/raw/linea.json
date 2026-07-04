@@ -1,0 +1,748 @@
+{
+  "meta": {
+    "title": "Usuario discusión:Ctrl_Z",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 3,
+    "linked_article": null,
+    "generated_at": "2026-06-22T07:47:39Z",
+    "corpus_dir": "talk/usuario-discusion-ctrl-z",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-10-31"
+    },
+    "revision_count": 81,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "revisiones": [
+    {
+      "revid": 11724224,
+      "parentid": 11683339,
+      "timestamp": "2007-10-01T07:57:45Z",
+      "user": "Yeza",
+      "comment": "Nueva sección: /* la dieta? */",
+      "size": 8010,
+      "byte_delta": 172
+    },
+    {
+      "revid": 11735326,
+      "parentid": 11724224,
+      "timestamp": "2007-10-01T17:56:58Z",
+      "user": "Yeza",
+      "comment": "",
+      "size": 8199,
+      "byte_delta": 189
+    },
+    {
+      "revid": 11749201,
+      "parentid": 11735326,
+      "timestamp": "2007-10-02T04:21:42Z",
+      "user": "Diosa",
+      "comment": "/* la dieta? */",
+      "size": 8342,
+      "byte_delta": 143
+    },
+    {
+      "revid": 11819055,
+      "parentid": 11749201,
+      "timestamp": "2007-10-04T21:09:10Z",
+      "user": "Aries de Ares",
+      "comment": "",
+      "size": 8523,
+      "byte_delta": 181
+    },
+    {
+      "revid": 11834801,
+      "parentid": 11819055,
+      "timestamp": "2007-10-05T14:18:08Z",
+      "user": "Belb",
+      "comment": "Nueva sección: /* Respuesta */",
+      "size": 8658,
+      "byte_delta": 135
+    },
+    {
+      "revid": 11845282,
+      "parentid": 11834801,
+      "timestamp": "2007-10-05T21:13:06Z",
+      "user": "Manwë",
+      "comment": "",
+      "size": 8780,
+      "byte_delta": 122
+    },
+    {
+      "revid": 11869580,
+      "parentid": 11845282,
+      "timestamp": "2007-10-06T23:00:35Z",
+      "user": "CommonsDelinker",
+      "comment": "-\"PBO008.gif\". Borrado en Commons por [[commons:User:Dodo|Dodo]]. (derivative)",
+      "size": 8754,
+      "byte_delta": -26
+    },
+    {
+      "revid": 11891711,
+      "parentid": 11869580,
+      "timestamp": "2007-10-07T21:01:43Z",
+      "user": "Chien",
+      "comment": "Nueva sección: /* Re:Firma */",
+      "size": 8949,
+      "byte_delta": 195
+    },
+    {
+      "revid": 11892082,
+      "parentid": 11891711,
+      "timestamp": "2007-10-07T21:16:37Z",
+      "user": "Cobalttempest",
+      "comment": "Nueva sección: /* Drinitol */",
+      "size": 9375,
+      "byte_delta": 426
+    },
+    {
+      "revid": 11908219,
+      "parentid": 11892082,
+      "timestamp": "2007-10-08T15:30:33Z",
+      "user": "Plalopez",
+      "comment": "Nueva sección: /* Wikificación */",
+      "size": 9749,
+      "byte_delta": 374
+    },
+    {
+      "revid": 11926295,
+      "parentid": 11908219,
+      "timestamp": "2007-10-09T06:02:04Z",
+      "user": "Diosa",
+      "comment": "/* Wikificación */",
+      "size": 9971,
+      "byte_delta": 222
+    },
+    {
+      "revid": 11933746,
+      "parentid": 11926295,
+      "timestamp": "2007-10-09T15:02:06Z",
+      "user": "Siabef",
+      "comment": "Nueva sección: /* Felicidades nuevo Biblio */",
+      "size": 11536,
+      "byte_delta": 1565
+    },
+    {
+      "revid": 11933988,
+      "parentid": 11933746,
+      "timestamp": "2007-10-09T15:09:27Z",
+      "user": "BL",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 11760,
+      "byte_delta": 224
+    },
+    {
+      "revid": 11934652,
+      "parentid": 11933988,
+      "timestamp": "2007-10-09T15:33:27Z",
+      "user": "Manwë",
+      "comment": "",
+      "size": 12051,
+      "byte_delta": 291
+    },
+    {
+      "revid": 11935163,
+      "parentid": 11934652,
+      "timestamp": "2007-10-09T15:51:51Z",
+      "user": "Edmenb",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 12354,
+      "byte_delta": 303
+    },
+    {
+      "revid": 11938822,
+      "parentid": 11935163,
+      "timestamp": "2007-10-09T18:14:30Z",
+      "user": "Kojie",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 12797,
+      "byte_delta": 443
+    },
+    {
+      "revid": 11938913,
+      "parentid": 11938822,
+      "timestamp": "2007-10-09T18:17:14Z",
+      "user": "Kojie",
+      "comment": "/* Felicidades nuevo Biblio */ upss xD",
+      "size": 12797,
+      "byte_delta": 0
+    },
+    {
+      "revid": 11939401,
+      "parentid": 11938913,
+      "timestamp": "2007-10-09T18:33:36Z",
+      "user": "Muro Bot",
+      "comment": "Bot: Arreglando firma",
+      "size": 12836,
+      "byte_delta": 39
+    },
+    {
+      "revid": 11939605,
+      "parentid": 11939401,
+      "timestamp": "2007-10-09T18:40:54Z",
+      "user": "Rastrojo",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 13023,
+      "byte_delta": 187
+    },
+    {
+      "revid": 11939640,
+      "parentid": 11939605,
+      "timestamp": "2007-10-09T18:42:25Z",
+      "user": "Snakeyes",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 13292,
+      "byte_delta": 269
+    },
+    {
+      "revid": 11939849,
+      "parentid": 11939640,
+      "timestamp": "2007-10-09T18:51:34Z",
+      "user": "Varano",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 13370,
+      "byte_delta": 78
+    },
+    {
+      "revid": 11942158,
+      "parentid": 11939849,
+      "timestamp": "2007-10-09T20:34:25Z",
+      "user": "Ctrl Z",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 13679,
+      "byte_delta": 309
+    },
+    {
+      "revid": 11942952,
+      "parentid": 11942158,
+      "timestamp": "2007-10-09T21:11:22Z",
+      "user": "Lahi",
+      "comment": "Nueva sección: /* Destruir */",
+      "size": 13876,
+      "byte_delta": 197
+    },
+    {
+      "revid": 11943731,
+      "parentid": 11942952,
+      "timestamp": "2007-10-09T21:56:40Z",
+      "user": "C'est moi",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 14154,
+      "byte_delta": 278
+    },
+    {
+      "revid": 11952112,
+      "parentid": 11943731,
+      "timestamp": "2007-10-10T06:46:16Z",
+      "user": "SolveCoagula",
+      "comment": "Nueva sección: /* Fusión de artículos */",
+      "size": 14444,
+      "byte_delta": 290
+    },
+    {
+      "revid": 11955692,
+      "parentid": 11952112,
+      "timestamp": "2007-10-10T11:54:27Z",
+      "user": "Kojie",
+      "comment": "/* Fusión de artículos */",
+      "size": 14630,
+      "byte_delta": 186
+    },
+    {
+      "revid": 11958783,
+      "parentid": 11955692,
+      "timestamp": "2007-10-10T15:07:49Z",
+      "user": "Raystorm",
+      "comment": "/* Felicidades nuevo Biblio */ ole!",
+      "size": 14797,
+      "byte_delta": 167
+    },
+    {
+      "revid": 11978618,
+      "parentid": 11958783,
+      "timestamp": "2007-10-11T10:30:19Z",
+      "user": "El bot de las chucherías",
+      "comment": "Nueva sección: /* Bot informa... */",
+      "size": 15597,
+      "byte_delta": 800
+    },
+    {
+      "revid": 12041190,
+      "parentid": 11978618,
+      "timestamp": "2007-10-13T22:27:39Z",
+      "user": "Mafores",
+      "comment": "Nueva sección: /* Drinitol */",
+      "size": 16013,
+      "byte_delta": 416
+    },
+    {
+      "revid": 12041198,
+      "parentid": 12041190,
+      "timestamp": "2007-10-13T22:27:55Z",
+      "user": "Mafores",
+      "comment": "/* Drinitol */",
+      "size": 16013,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12041357,
+      "parentid": 12041198,
+      "timestamp": "2007-10-13T22:35:07Z",
+      "user": "Mafores",
+      "comment": "/* Drinitol */",
+      "size": 16435,
+      "byte_delta": 422
+    },
+    {
+      "revid": 12062645,
+      "parentid": 12041357,
+      "timestamp": "2007-10-14T20:56:31Z",
+      "user": "La Mantis",
+      "comment": "",
+      "size": 16682,
+      "byte_delta": 247
+    },
+    {
+      "revid": 12068932,
+      "parentid": 12062645,
+      "timestamp": "2007-10-15T02:28:19Z",
+      "user": "Alvaro qc",
+      "comment": "/* Felicidades nuevo Biblio */",
+      "size": 16951,
+      "byte_delta": 269
+    },
+    {
+      "revid": 12101147,
+      "parentid": 12068932,
+      "timestamp": "2007-10-16T13:38:14Z",
+      "user": "Manwë",
+      "comment": "Nueva sección: /* Un poco tarde pero...... */",
+      "size": 17278,
+      "byte_delta": 327
+    },
+    {
+      "revid": 12127964,
+      "parentid": 12101147,
+      "timestamp": "2007-10-17T16:17:40Z",
+      "user": "RHGuille",
+      "comment": "",
+      "size": 17555,
+      "byte_delta": 277
+    },
+    {
+      "revid": 12149976,
+      "parentid": 12127964,
+      "timestamp": "2007-10-18T14:08:36Z",
+      "user": "Ctrl Z",
+      "comment": "",
+      "size": 10103,
+      "byte_delta": -7452
+    },
+    {
+      "revid": 12187769,
+      "parentid": 12149976,
+      "timestamp": "2007-10-19T21:16:48Z",
+      "user": "190.137.212.45",
+      "comment": "/* Gracias por tu ayuda */",
+      "size": 10227,
+      "byte_delta": 124
+    },
+    {
+      "revid": 12188244,
+      "parentid": 12187769,
+      "timestamp": "2007-10-19T21:38:32Z",
+      "user": "87.219.221.97",
+      "comment": "",
+      "size": 10239,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12188270,
+      "parentid": 12188244,
+      "timestamp": "2007-10-19T21:39:34Z",
+      "user": "Ctrl Z",
+      "comment": "Revertidos los cambios de [[Especial:Contributions/87.219.221.97|87.219.221.97]] ([[Usuario Discusión:87.219.221.97|disc.]]) a la última edición de [[Especial:Contributions/190.137.212.45|190.137.212.45]] ([[Usuario Discusión:190.137.212.45|disc.]])",
+      "size": 10227,
+      "byte_delta": -12
+    },
+    {
+      "revid": 12196757,
+      "parentid": 12188270,
+      "timestamp": "2007-10-20T09:26:24Z",
+      "user": "Diosa",
+      "comment": "/* QUE TE PASA */",
+      "size": 10689,
+      "byte_delta": 462
+    },
+    {
+      "revid": 12196774,
+      "parentid": 12196757,
+      "timestamp": "2007-10-20T09:27:07Z",
+      "user": "Diosa",
+      "comment": "/* Re:Wolas */",
+      "size": 10689,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12205926,
+      "parentid": 12196774,
+      "timestamp": "2007-10-20T18:42:07Z",
+      "user": "Kved",
+      "comment": "Nueva sección: /* Re:Hola */",
+      "size": 11039,
+      "byte_delta": 350
+    },
+    {
+      "revid": 12205949,
+      "parentid": 12205926,
+      "timestamp": "2007-10-20T18:43:17Z",
+      "user": "Kved",
+      "comment": "/* Re:Hola */  Me olvidé de firmar... qué se le va a hacer, cosas que le pasan a los vivos.",
+      "size": 11169,
+      "byte_delta": 130
+    },
+    {
+      "revid": 12213161,
+      "parentid": 12205949,
+      "timestamp": "2007-10-21T00:42:05Z",
+      "user": "Ctrl Z",
+      "comment": "[[Usuario Discusión:Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctrl Z/Ctrl Z]] sobre una redirección.",
+      "size": 11169,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12213188,
+      "parentid": 12213161,
+      "timestamp": "2007-10-21T00:43:29Z",
+      "user": "Ctrl Z",
+      "comment": "[[Usuario Discusión:Ctrl Z/Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctrl Z]] sobre una redirección.: ups",
+      "size": 11169,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12221992,
+      "parentid": 12213188,
+      "timestamp": "2007-10-21T13:16:29Z",
+      "user": "Manwë",
+      "comment": "Nueva sección: /* ¡Cotilla! */",
+      "size": 11396,
+      "byte_delta": 227
+    },
+    {
+      "revid": 12234358,
+      "parentid": 12221992,
+      "timestamp": "2007-10-21T21:54:08Z",
+      "user": "Diego Mañón",
+      "comment": "Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "size": 11639,
+      "byte_delta": 243
+    },
+    {
+      "revid": 12234359,
+      "parentid": 12234358,
+      "timestamp": "2007-10-21T21:54:10Z",
+      "user": "Diego Mañón",
+      "comment": "Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "size": 11882,
+      "byte_delta": 243
+    },
+    {
+      "revid": 12234392,
+      "parentid": 12234359,
+      "timestamp": "2007-10-21T21:55:24Z",
+      "user": "Diego Mañón",
+      "comment": "",
+      "size": 11639,
+      "byte_delta": -243
+    },
+    {
+      "revid": 12261114,
+      "parentid": 12234392,
+      "timestamp": "2007-10-22T22:37:52Z",
+      "user": "Lizzie Rivera",
+      "comment": "",
+      "size": 11867,
+      "byte_delta": 228
+    },
+    {
+      "revid": 12275732,
+      "parentid": 12261114,
+      "timestamp": "2007-10-23T15:07:53Z",
+      "user": "Manwë",
+      "comment": "Nueva sección: /* Se predica con el ejemplo... */",
+      "size": 12211,
+      "byte_delta": 344
+    },
+    {
+      "revid": 12275744,
+      "parentid": 12275732,
+      "timestamp": "2007-10-23T15:08:19Z",
+      "user": "Manwë",
+      "comment": "/* Se predica con el ejemplo... */",
+      "size": 12211,
+      "byte_delta": 0
+    },
+    {
+      "revid": 12275832,
+      "parentid": 12275744,
+      "timestamp": "2007-10-23T15:11:50Z",
+      "user": "201.211.200.4",
+      "comment": "/* Se predica con el ejemplo... */",
+      "size": 12296,
+      "byte_delta": 85
+    },
+    {
+      "revid": 12275850,
+      "parentid": 12275832,
+      "timestamp": "2007-10-23T15:12:29Z",
+      "user": "Manwë",
+      "comment": "/* hey */",
+      "size": 12419,
+      "byte_delta": 123
+    },
+    {
+      "revid": 12276220,
+      "parentid": 12275850,
+      "timestamp": "2007-10-23T15:24:46Z",
+      "user": "Ninadelapuerta",
+      "comment": "Nueva sección: /* Has borrdao una aportación */",
+      "size": 12596,
+      "byte_delta": 177
+    },
+    {
+      "revid": 12277438,
+      "parentid": 12276220,
+      "timestamp": "2007-10-23T16:08:37Z",
+      "user": "Siabef",
+      "comment": "Nueva sección: /* ¿No entras al IRC? */",
+      "size": 12722,
+      "byte_delta": 126
+    },
+    {
+      "revid": 12280112,
+      "parentid": 12277438,
+      "timestamp": "2007-10-23T17:50:07Z",
+      "user": "Manwë",
+      "comment": "/* Se predica con el ejemplo... */",
+      "size": 13178,
+      "byte_delta": 456
+    },
+    {
+      "revid": 12301859,
+      "parentid": 12280112,
+      "timestamp": "2007-10-24T14:18:30Z",
+      "user": "BL",
+      "comment": "Nueva sección: /* ¿Dónde te has metido? */",
+      "size": 13422,
+      "byte_delta": 244
+    },
+    {
+      "revid": 12328772,
+      "parentid": 12301859,
+      "timestamp": "2007-10-25T15:22:41Z",
+      "user": "Pólux",
+      "comment": "Nueva sección: /* Gracias */",
+      "size": 13782,
+      "byte_delta": 360
+    },
+    {
+      "revid": 12329686,
+      "parentid": 12328772,
+      "timestamp": "2007-10-25T16:01:16Z",
+      "user": "Manwë",
+      "comment": "Nueva sección: /* En cuanto puedas...... */",
+      "size": 14013,
+      "byte_delta": 231
+    },
+    {
+      "revid": 12329845,
+      "parentid": 12329686,
+      "timestamp": "2007-10-25T16:07:10Z",
+      "user": "Manwë",
+      "comment": "/* En cuanto puedas...... */",
+      "size": 14205,
+      "byte_delta": 192
+    },
+    {
+      "revid": 12339472,
+      "parentid": 12329845,
+      "timestamp": "2007-10-25T22:40:44Z",
+      "user": "Xsm34",
+      "comment": "Nueva sección: /* Rebersión */",
+      "size": 14448,
+      "byte_delta": 243
+    },
+    {
+      "revid": 12349074,
+      "parentid": 12339472,
+      "timestamp": "2007-10-26T11:10:37Z",
+      "user": "Oikema",
+      "comment": "Nueva sección: /* Wikipetiqueta */",
+      "size": 20543,
+      "byte_delta": 6095
+    },
+    {
+      "revid": 12349088,
+      "parentid": 12349074,
+      "timestamp": "2007-10-26T11:11:32Z",
+      "user": "Oikema",
+      "comment": "/* Wikipetiqueta */",
+      "size": 20544,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12349211,
+      "parentid": 12349088,
+      "timestamp": "2007-10-26T11:20:08Z",
+      "user": "Oikema",
+      "comment": "/* Wikipetiqueta */ firma",
+      "size": 20641,
+      "byte_delta": 97
+    },
+    {
+      "revid": 12351947,
+      "parentid": 12349211,
+      "timestamp": "2007-10-26T14:07:27Z",
+      "user": "Cansado",
+      "comment": "Nueva sección: /* Derecho a replica */",
+      "size": 20954,
+      "byte_delta": 313
+    },
+    {
+      "revid": 12354709,
+      "parentid": 12351947,
+      "timestamp": "2007-10-26T16:03:26Z",
+      "user": "Cansado",
+      "comment": "/* Derecho a replica */",
+      "size": 25052,
+      "byte_delta": 4098
+    },
+    {
+      "revid": 12355947,
+      "parentid": 12354709,
+      "timestamp": "2007-10-26T17:00:09Z",
+      "user": "Oikema",
+      "comment": "Nueva sección: /* Réplica de la réplica */",
+      "size": 27225,
+      "byte_delta": 2173
+    },
+    {
+      "revid": 12355954,
+      "parentid": 12355947,
+      "timestamp": "2007-10-26T17:00:26Z",
+      "user": "Oikema",
+      "comment": "/* Réplica de la réplica */",
+      "size": 27237,
+      "byte_delta": 12
+    },
+    {
+      "revid": 12355990,
+      "parentid": 12355954,
+      "timestamp": "2007-10-26T17:02:12Z",
+      "user": "Oikema",
+      "comment": "/* Réplica de la réplica */",
+      "size": 27281,
+      "byte_delta": 44
+    },
+    {
+      "revid": 12360114,
+      "parentid": 12355990,
+      "timestamp": "2007-10-26T19:54:36Z",
+      "user": "Cansado",
+      "comment": "Nueva sección: /* Cansado */",
+      "size": 27402,
+      "byte_delta": 121
+    },
+    {
+      "revid": 12367207,
+      "parentid": 12360114,
+      "timestamp": "2007-10-27T02:09:49Z",
+      "user": "El bananero",
+      "comment": "Nueva sección: /* bienvenida */",
+      "size": 27981,
+      "byte_delta": 579
+    },
+    {
+      "revid": 12370670,
+      "parentid": 12367207,
+      "timestamp": "2007-10-27T09:15:18Z",
+      "user": "Oikema",
+      "comment": "Nueva sección: /* Gracias */",
+      "size": 28319,
+      "byte_delta": 338
+    },
+    {
+      "revid": 12378805,
+      "parentid": 12370670,
+      "timestamp": "2007-10-27T17:33:35Z",
+      "user": "Mafores",
+      "comment": "/* bienvenida */ Sustituyo firma del usuario en cuestión por no cumplir con la [[WP:E|etiqueta]].",
+      "size": 27876,
+      "byte_delta": -443
+    },
+    {
+      "revid": 12389079,
+      "parentid": 12378805,
+      "timestamp": "2007-10-28T01:44:51Z",
+      "user": "87.219.191.42",
+      "comment": "",
+      "size": 27884,
+      "byte_delta": 8
+    },
+    {
+      "revid": 12389141,
+      "parentid": 12389079,
+      "timestamp": "2007-10-28T01:48:52Z",
+      "user": "Pólux",
+      "comment": "Revertidos los cambios de [[User:87.219.191.42|87.219.191.42]] a la última edición de [[User:Mafores|Mafores]] con [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]]",
+      "size": 27876,
+      "byte_delta": -8
+    },
+    {
+      "revid": 12400310,
+      "parentid": 12389141,
+      "timestamp": "2007-10-28T16:42:37Z",
+      "user": "Pólux",
+      "comment": "Nueva sección: /* Re: Discusión */",
+      "size": 28147,
+      "byte_delta": 271
+    },
+    {
+      "revid": 12400696,
+      "parentid": 12400310,
+      "timestamp": "2007-10-28T17:00:33Z",
+      "user": "Racso",
+      "comment": "Nueva sección: /* Dios... */",
+      "size": 28388,
+      "byte_delta": 241
+    },
+    {
+      "revid": 12411561,
+      "parentid": 12400696,
+      "timestamp": "2007-10-29T00:06:55Z",
+      "user": "Marrovi",
+      "comment": "Nueva sección: /* Esquí */",
+      "size": 29071,
+      "byte_delta": 683
+    },
+    {
+      "revid": 12411669,
+      "parentid": 12411561,
+      "timestamp": "2007-10-29T00:11:48Z",
+      "user": "Aldoz",
+      "comment": "",
+      "size": 29518,
+      "byte_delta": 447
+    },
+    {
+      "revid": 12466400,
+      "parentid": 12411669,
+      "timestamp": "2007-10-31T08:03:36Z",
+      "user": "Ecemaml",
+      "comment": "Nueva sección: /* {{u|Gracia jmcs}} */",
+      "size": 29941,
+      "byte_delta": 423
+    }
+  ]
+}

@@ -31,6 +31,17 @@ FULL_HISTORY_END = "2099-12-31"
 PROBE_VIAJE_ID = "talk-sala-probe"
 ALIGNMENT_HOURS = 24
 ARTICLE_ALIGNMENT_OLDIDS = {12719652, 12909144}
+DEMARCATION_ALIGNMENT_OLDIDS = {11663303, 11951034, 11951164, 11957942}
+WINDOW_OCT_START = "2007-10-01"
+WINDOW_OCT_END = "2007-10-31"
+
+BLOCK16_VISTA_SLUGS = frozenset({
+    "discusion-problema-demarcacion",
+    "discusion-criterio-demarcacion",
+    "usuario-discusion-pabloallo",
+    "usuario-discusion-fernando-estel",
+    "usuario-discusion-ctrl-z",
+})
 
 TALK_VISTAS = [
     {
@@ -58,6 +69,41 @@ TALK_VISTAS = [
         "slug": "usuario-discusion-solvecoagula",
         "title": "Usuario discusión:SolveCoagula",
         "corpus_id": "linea-talk-usuario-solvecoagula",
+        "namespace": 3,
+        "linked_article": None,
+    },
+    {
+        "slug": "discusion-problema-demarcacion",
+        "title": "Discusión:Problema de la demarcación",
+        "corpus_id": "linea-talk-discusion-problema-demarcacion",
+        "namespace": 1,
+        "linked_article": "Problema de la demarcación",
+    },
+    {
+        "slug": "discusion-criterio-demarcacion",
+        "title": "Discusión:Criterio de demarcación",
+        "corpus_id": "linea-talk-discusion-criterio-demarcacion",
+        "namespace": 1,
+        "linked_article": "Criterio de demarcación",
+    },
+    {
+        "slug": "usuario-discusion-pabloallo",
+        "title": "Usuario discusión:Pabloallo",
+        "corpus_id": "linea-talk-usuario-pabloallo",
+        "namespace": 3,
+        "linked_article": None,
+    },
+    {
+        "slug": "usuario-discusion-fernando-estel",
+        "title": "Usuario discusión:Fernando Estel",
+        "corpus_id": "linea-talk-usuario-fernando-estel",
+        "namespace": 3,
+        "linked_article": None,
+    },
+    {
+        "slug": "usuario-discusion-ctrl-z",
+        "title": "Usuario discusión:Ctrl_Z",
+        "corpus_id": "linea-talk-usuario-ctrl-z",
         "namespace": 3,
         "linked_article": None,
     },
@@ -118,6 +164,46 @@ def load_article_milestones() -> list[dict]:
                 "title": "Pseudociencia",
                 "timestamp": iso,
                 "milestone": reg.get("milestone", False),
+            }
+        )
+    return milestones
+
+
+def load_demarcation_milestones() -> list[dict]:
+    manifest_path = ROOT / "manifest.json"
+    if not manifest_path.exists():
+        return []
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    milestones = []
+    for reg in manifest.get("registros", []):
+        oid = reg.get("oldid")
+        if oid not in DEMARCATION_ALIGNMENT_OLDIDS:
+            continue
+        ts = reg.get("timestamp", "")
+        if not ts:
+            continue
+        if "T" in ts:
+            iso = ts
+        else:
+            parts = ts.split()
+            if len(parts) < 4:
+                continue
+            months = {
+                "ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6,
+                "jul": 7, "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
+            }
+            mon = months.get(parts[2].lower())
+            if not mon:
+                continue
+            iso = f"{parts[3]}-{mon:02d}-{parts[1].zfill(2)}T{parts[0]}:00"
+        milestones.append(
+            {
+                "oldid": oid,
+                "title": "Problema de la demarcación",
+                "timestamp": iso,
+                "milestone": reg.get("milestone", True),
+                "user": reg.get("user", ""),
+                "summary": reg.get("summary", ""),
             }
         )
     return milestones
@@ -306,6 +392,17 @@ def write_anchors(vista: dict, window: list[dict], config: FetchConfig) -> Path:
                     wave = "A2"
             elif vista["slug"] == "usuario-discusion-solvecoagula" and day.startswith("2007"):
                 wave = "A3"
+            elif vista["slug"] in (
+                "discusion-problema-demarcacion",
+                "discusion-criterio-demarcacion",
+            ) and WINDOW_OCT_START <= day <= WINDOW_OCT_END:
+                wave = "B16-A1"
+            elif vista["slug"] in (
+                "usuario-discusion-pabloallo",
+                "usuario-discusion-fernando-estel",
+                "usuario-discusion-ctrl-z",
+            ) and WINDOW_OCT_START <= day <= DEFAULT_WINDOW_END:
+                wave = "B16-A2"
             if not wave:
                 continue
             note = f"{wave} · {rev.get('comment', '')[:80]}"
@@ -341,7 +438,12 @@ def process_vista(vista: dict, milestones: list[dict], config: FetchConfig) -> d
     raw_dir = corpus / "raw"
     raw_dir.mkdir(parents=True, exist_ok=True)
 
-    all_revs = fetch_all_revisions(vista["title"])
+    try:
+        all_revs = fetch_all_revisions(vista["title"])
+    except ValueError as exc:
+        if "Page not found" not in str(exc):
+            raise
+        all_revs = []
     window = filter_talk_window(all_revs, config)
 
     enriched = []
@@ -416,7 +518,11 @@ def resolve_config(args: argparse.Namespace) -> FetchConfig:
     default_window = (
         window_start == DEFAULT_WINDOW_START and window_end == DEFAULT_WINDOW_END
     )
-    probe_output = bool(args.probe_output) or args.full_history or not default_window
+    probe_output = bool(args.probe_output) or (
+        args.full_history and not args.production
+    ) or (
+        not default_window and not args.production and not args.block16_ingest
+    )
     return FetchConfig(
         window_start=window_start,
         window_end=window_end,
@@ -431,7 +537,7 @@ def main() -> None:
         "--vista",
         help="Alias for --slug (discusion-pseudociencia, usuario-discusion-ignacio-icke, …)",
     )
-    parser.add_argument("--all-anchors", action="store_true", help="Process all 4 talk vistas")
+    parser.add_argument("--all-anchors", action="store_true", help="Process all 9 talk vistas")
     parser.add_argument(
         "--window-start",
         type=parse_date_arg,
@@ -454,21 +560,47 @@ def main() -> None:
         action="store_true",
         help="Write to talk/{slug}/probe/ + manifest.probe.json (no overwrite oct–nov)",
     )
+    parser.add_argument(
+        "--probe-full-history",
+        action="store_true",
+        help="Alias: --full-history --probe-output (one vista)",
+    )
+    parser.add_argument(
+        "--production",
+        action="store_true",
+        help="Write to talk/{slug}/ manifest even with custom window",
+    )
+    parser.add_argument(
+        "--block16-ingest",
+        action="store_true",
+        help="Oct ingest for block16 vistas only (production, no overwrite block13)",
+    )
     args = parser.parse_args()
+
+    if args.probe_full_history:
+        args.full_history = True
+        args.probe_output = True
 
     slug = args.vista or args.slug
     vistas = TALK_VISTAS
-    if slug:
+    if args.block16_ingest:
+        vistas = [v for v in TALK_VISTAS if v["slug"] in BLOCK16_VISTA_SLUGS]
+        args.production = True
+        if not args.window_start:
+            args.window_start = WINDOW_OCT_START
+        if not args.window_end:
+            args.window_end = WINDOW_OCT_END
+    elif slug:
         vistas = [v for v in TALK_VISTAS if v["slug"] == slug]
         if not vistas:
             parser.error(f"Unknown slug/vista: {slug}")
 
-    if not args.all_anchors and not slug:
-        parser.error("Provide --all-anchors, --slug, or --vista")
+    if not args.all_anchors and not slug and not args.block16_ingest:
+        parser.error("Provide --all-anchors, --block16-ingest, --slug, or --vista")
 
     config = resolve_config(args)
 
-    milestones = load_article_milestones()
+    milestones = load_article_milestones() + load_demarcation_milestones()
     for oid in ARTICLE_ALIGNMENT_OLDIDS:
         if not any(m["oldid"] == oid for m in milestones):
             from mw_client import fetch_revision_meta
@@ -478,6 +610,19 @@ def main() -> None:
                 {
                     "oldid": oid,
                     "title": "Pseudociencia",
+                    "timestamp": meta["timestamp"],
+                    "milestone": True,
+                }
+            )
+    for oid in DEMARCATION_ALIGNMENT_OLDIDS:
+        if not any(m["oldid"] == oid for m in milestones):
+            from mw_client import fetch_revision_meta
+
+            meta = fetch_revision_meta(oid)
+            milestones.append(
+                {
+                    "oldid": oid,
+                    "title": "Problema de la demarcación",
                     "timestamp": meta["timestamp"],
                     "milestone": True,
                 }

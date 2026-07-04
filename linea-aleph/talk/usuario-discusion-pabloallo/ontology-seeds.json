@@ -1,0 +1,72 @@
+{
+  "description": "Semillas ontológicas extraídas del historial SolveCoagula",
+  "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo",
+  "sections": [
+    {
+      "section": "Criterio de demarcación",
+      "edit_count": 7,
+      "sample_oldids": [
+        12346968,
+        12098728,
+        12069622,
+        12069595,
+        12069583
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#Criterio_de_demarcación"
+    },
+    {
+      "section": "Categoría \"escritores judíos\"",
+      "edit_count": 4,
+      "sample_oldids": [
+        12119884,
+        12101208,
+        12100295,
+        12100160
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#Categoría_\"escritores_judíos\""
+    },
+    {
+      "section": "Clasificando a terceros por la descendencia",
+      "edit_count": 3,
+      "sample_oldids": [
+        12185803,
+        12119915,
+        12119888
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#Clasificando_a_terceros_por_la_descendencia"
+    },
+    {
+      "section": "P.S.",
+      "edit_count": 2,
+      "sample_oldids": [
+        12239634,
+        12227467
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#P.S."
+    },
+    {
+      "section": "Discusion",
+      "edit_count": 1,
+      "sample_oldids": [
+        12185855
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#Discusion"
+    },
+    {
+      "section": "WP:PBF",
+      "edit_count": 1,
+      "sample_oldids": [
+        12060113
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo#WP:PBF"
+    }
+  ],
+  "viaje_sugerido": [
+    "snapshots/inicial → registro traducción",
+    "sección ¿Ciencia normal, paranormal o pseudociencias?",
+    "Feyerabend y autonomía",
+    "Kuhn y paradigma",
+    "Véase también → artículos enlazados",
+    "snapshots/final"
+  ]
+}

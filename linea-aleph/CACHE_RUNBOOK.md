@@ -80,22 +80,35 @@ Namespace paralelo (`Discusión:`, `Usuario discusión:`). Misma API y contrato 
 
 | Necesidad | Script |
 |-----------|--------|
-| Historial meta (4 vistas, oct–nov 2007) | `scripts/fetch_talk_history.py --all-anchors` |
+| Historial meta (9 vistas, oct–nov 2007) | `scripts/fetch_talk_history.py --all-anchors` |
+| Anexo demarcación oct (5 vistas nuevas) | `scripts/fetch_talk_history.py --block16-ingest` |
 | Cuerpo por oldid | `scripts/fetch_snapshot.py --corpus talk --oldid N --title "Discusión:Pseudociencia"` |
-| Manifiesto oleadas | `scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block13` |
-| Batch oleada | `scripts/fetch_batch.py --corpus talk --priority-file scripts/fetch-priority-talk-block13.json` |
-| Auditoría | `scripts/audit_cache.py --corpus talk` → `cache/audit-talk.json` |
+| Manifiesto oleadas block-13 | `scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block13` |
+| Manifiesto oleadas block-16 | `scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block16` |
+| Batch oleada block-13 | `scripts/fetch_batch.py --corpus talk --priority-file scripts/fetch-priority-talk-block13.json` |
+| Batch oleada block-16 | `scripts/fetch_batch.py --corpus talk --priority-file scripts/fetch-priority-talk-block16.json` |
+| Auditoría | `scripts/audit_cache.py --corpus talk` → `cache/audit-talk.json` + `cache/talk/participant-register.json` |
 
-Meta talk incluye: `corpus: "talk"`, `namespace`, `linked_article` (si aplica). Cruce artículo: `article_refs[]` en manifest talk (±24 h vs `pseudociencia/manifest.json`).
+Meta talk incluye: `corpus: "talk"`, `namespace`, `linked_article` (si aplica). Cruce artículo: `article_refs[]` en manifest talk (±24 h vs `pseudociencia/manifest.json` y raíz `manifest.json` demarcación). Auditoría: `ventana_oct_2007`, `article_alignment_demarcacion`, `participant_register`.
 
 ```bash
 cd network-engine/linea-aleph
 python scripts/fetch_talk_history.py --all-anchors
+python scripts/fetch_talk_history.py --block16-ingest
+python scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block16 \
+  --anchors-file cache/talk/anchors/discusion-problema-demarcacion.json
+python scripts/fetch_batch.py --corpus talk \
+  --priority-file scripts/fetch-priority-talk-block16.json --wave A --sleep 1.0
+python scripts/audit_cache.py --corpus talk
+```
+
+Viaje block-13 (sin pisar):
+
+```bash
 python scripts/build_fetch_manifest.py --corpus talk --viaje-id talk-block13 \
   --anchors-file cache/talk/anchors/discusion-pseudociencia.json
 python scripts/fetch_batch.py --corpus talk \
   --priority-file scripts/fetch-priority-talk-block13.json --wave A --sleep 1.0
-python scripts/audit_cache.py --corpus talk
 ```
 
 Árbol: [`talk/README.md`](talk/README.md), [`cache/talk/README.md`](cache/talk/README.md).
@@ -145,6 +158,74 @@ python scripts/audit_cache.py --corpus talk
 ```
 
 Vistas típicas del probe: `discusion-pseudociencia`, `usuario-discusion-ignacio-icke`. Oleada C manifest (7 Analiza pre-2008) es viaje distinto — ver `fetch-priority-talk-block13.json`, no mezclar con `talk-sala-probe`.
+
+**Cobertura verificada (ventana nov 10–18):** 48 revisiones talk con cuerpo; 0 en `Discusión:Pseudociencia`. UT Analiza 46/46, UT SolveCoagula 34/34 — ver `cache/audit-talk.json`. Alineación ±24 h: `article_refs[]` en manifest talk vs `pseudociencia/manifest.json`.
+
+---
+
+## Corpus pseudociencia
+
+Segunda **línea gruesa** (paridad con linea1): historial completo del artículo *Pseudociencia* — todos los editores en ventana SC, no solo contribuciones usuario.
+
+| Necesidad | Script |
+|-----------|--------|
+| Historial artículo (meta) | `scripts/fetch_article_history.py --title Pseudociencia --corpus-dir pseudociencia` |
+| Manifest + milestones | `segment_linea.py --corpus-dir pseudociencia --title Pseudociencia --corpus-id linea-pseudociencia --expand milestones` |
+
+| Artefacto | Ruta |
+|-----------|------|
+| Historial | `pseudociencia/raw/linea.md` |
+| Manifest | `pseudociencia/manifest.json` (223 registros ventana) |
+| Índice | `pseudociencia/INDICE.md` |
+| Delta extremo | `pseudociencia/snapshots/delta-extremo.md` (`status: pending`) |
+
+Ventana anclada: previo **11597663** → cierre SC **12910974**. Cross-ref `in_linea2: true` en `manifest2.json`. Oleadas API siguen convención Wave A/B del runbook estándar.
+
+```bash
+cd network-engine/linea-aleph
+python3 scripts/fetch_article_history.py --title Pseudociencia --corpus-dir pseudociencia
+python3 segment_linea.py --corpus-dir pseudociencia --title Pseudociencia --corpus-id linea-pseudociencia --expand milestones
+```
+
+Árbol: [`pseudociencia/INDICE.md`](pseudociencia/INDICE.md).
+
+---
+
+## Viaje referencias-demarcacion
+
+Inventario y cacheo del grafo de enlaces en el cierre SC de demarcación ([oldid 12763920](https://es.wikipedia.org/w/index.php?title=Problema_de_la_demarcación&oldid=12763920)). Ancla: **143** etiquetas `<ref>` verificadas; 200+ plausible con wikilinks internos y bibliografía inline.
+
+**Prerequisito Fase 1:** `scripts/extract_wikilinks.py` ✅ implementado. Índice humano: [`INDICE-REFERENCIAS.md`](INDICE-REFERENCIAS.md).
+
+| Fase | Acción | Script / artefacto |
+|------|--------|-------------------|
+| **1 — Inventario** | Parser local sin API | `extract_wikilinks.py --oldid 12763920 --output cache/viajes/refs-12763920-index.json` |
+| **2 — Clasificación** | Clusters temáticos | Paranormal/Matrix, filosofía, autoridad, media, satélites internos |
+| **3 — Oleadas** | Cacheo selectivo | Wave A: top 30 NS0; B: refs externas; C: diff grafo 11951034→12763920→actual; D: cruce talk×refs |
+| **4 — Mapa** | Conversación | `INDICE-REFERENCIAS.md` + cruce `participant-register.json` |
+
+```bash
+cd network-engine/linea-aleph
+
+# Fase 1 — inventario local (sin fetch masivo)
+python scripts/extract_wikilinks.py --oldid 12763920 \
+  --output cache/viajes/refs-12763920-index.json
+
+# Fase 3 Wave A — top enlaces internos (tras índice)
+python scripts/fetch_snapshot.py --latest --title "Pseudociencia"  # ejemplo por título destino
+
+# Fase 3 Wave B — refs externas meta + muestra 10%
+python scripts/fetch_refs_wave_b.py --sleep 1.0
+
+# Fase 3 Wave C — diff conjuntos enlace
+python scripts/fetch_compare.py --fromrev 11951034 --torev 12763920
+```
+
+Salida Fase 1: `{target, namespace, sección_origen, tipo: internal|biblio|external}`. Registrar viaje en `cache/viajes/{fecha}-referencias-dem.json` tras Fase 1.
+
+Preguntas del mapa: ¿refs solo en SC y podadas después? ¿enlaces a artículos con `in_linea2`? ¿menciones en talk oct (Pabloallo, Fernando Estel)?
+
+Índice humano: [`INDICE-REFERENCIAS.md`](INDICE-REFERENCIAS.md). Story-board lector: [`../../scriptorium-network-games/SOLVE_ET_COAGULA/readerapp/solve-coagula-story-board.json`](../../scriptorium-network-games/SOLVE_ET_COAGULA/readerapp/solve-coagula-story-board.json).
 
 ---
 

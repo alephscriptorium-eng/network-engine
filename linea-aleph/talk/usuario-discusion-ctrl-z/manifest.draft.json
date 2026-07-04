@@ -1,0 +1,2427 @@
+{
+  "corpus": "linea-talk-usuario-ctrl-z",
+  "title": "Usuario discusión:Ctrl Z (historial WP es)",
+  "source": "raw/linea.md",
+  "generated_at": "2026-06-22T07:48:08Z",
+  "preamble": {
+    "lines": [
+      1,
+      7
+    ],
+    "text": "# Usuario discusión:Ctrl_Z — historial talk (es.wikipedia)\n# generado: 2026-06-22T07:47:39Z · registros en ventana 2007-10-01 – 2007-10-31: 81\nPágina: [Usuario discusión:Ctrl_Z](https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z)\nNamespace: **3** · corpus: **talk**"
+  },
+  "registro_count": 81,
+  "ordering": "newest_first_in_linea_md",
+  "snapshots": {
+    "previo": {
+      "role": "previo",
+      "registro_id": null,
+      "oldid": 11683339,
+      "timestamp": "28 sep 2007",
+      "user": "Dhidalgo",
+      "path": "snapshots/previo"
+    },
+    "final": {
+      "role": "final",
+      "registro_id": "r0001",
+      "oldid": 12466400,
+      "timestamp": "08:03 31 oct 2007",
+      "path": "snapshots/final"
+    },
+    "inicial": {
+      "role": "inicial",
+      "registro_id": "r0081",
+      "oldid": 11724224,
+      "timestamp": "07:57 1 oct 2007",
+      "summary": "Nueva sección: /* la dieta? */",
+      "path": "snapshots/inicial"
+    },
+    "sc_cierre": {
+      "role": "sc_cierre",
+      "oldid": 12466400,
+      "path": "snapshots/sc_cierre"
+    },
+    "actual": {
+      "role": "actual",
+      "oldid": null,
+      "path": "snapshots/actual"
+    }
+  },
+  "ontology_sections": [
+    [
+      "Felicidades nuevo Biblio",
+      11
+    ],
+    [
+      "Se predica con el ejemplo...",
+      3
+    ],
+    [
+      "Réplica de la réplica",
+      2
+    ],
+    [
+      "Wikipetiqueta",
+      2
+    ],
+    [
+      "Drinitol",
+      2
+    ],
+    [
+      "bienvenida",
+      1
+    ],
+    [
+      "Derecho a replica",
+      1
+    ],
+    [
+      "En cuanto puedas......",
+      1
+    ],
+    [
+      "hey",
+      1
+    ],
+    [
+      "Re:Hola",
+      1
+    ],
+    [
+      "Re:Wolas",
+      1
+    ],
+    [
+      "QUE TE PASA",
+      1
+    ],
+    [
+      "Gracias por tu ayuda",
+      1
+    ],
+    [
+      "Fusión de artículos",
+      1
+    ],
+    [
+      "Wikificación",
+      1
+    ],
+    [
+      "la dieta?",
+      1
+    ]
+  ],
+  "milestones": [
+    "r0001",
+    "r0002",
+    "r0003",
+    "r0004",
+    "r0005",
+    "r0008",
+    "r0009",
+    "r0010",
+    "r0011",
+    "r0014",
+    "r0015",
+    "r0016",
+    "r0019",
+    "r0020",
+    "r0021",
+    "r0022",
+    "r0023",
+    "r0024",
+    "r0025",
+    "r0026",
+    "r0027",
+    "r0028",
+    "r0031",
+    "r0032",
+    "r0033",
+    "r0034",
+    "r0035",
+    "r0036",
+    "r0037",
+    "r0038",
+    "r0039",
+    "r0040",
+    "r0042",
+    "r0045",
+    "r0046",
+    "r0047",
+    "r0048",
+    "r0049",
+    "r0050",
+    "r0051",
+    "r0053",
+    "r0054",
+    "r0055",
+    "r0056",
+    "r0057",
+    "r0058",
+    "r0059",
+    "r0060",
+    "r0062",
+    "r0063",
+    "r0066",
+    "r0067",
+    "r0068",
+    "r0069",
+    "r0070",
+    "r0071",
+    "r0072",
+    "r0073",
+    "r0074",
+    "r0076",
+    "r0077",
+    "r0078",
+    "r0079",
+    "r0080"
+  ],
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-12466400",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 8
+      },
+      "oldid": 12466400,
+      "parent_oldid": 12411669,
+      "timestamp": "08:03 31 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 29941,
+      "byte_delta": 423,
+      "section": null,
+      "summary": "Nueva sección: /* {{u|Gracia jmcs}} */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12466400",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12466400&oldid=12411669",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-12411669",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 9
+      },
+      "oldid": 12411669,
+      "parent_oldid": 12411561,
+      "timestamp": "00:11 29 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 29518,
+      "byte_delta": 447,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12411669",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12411669&oldid=12411561",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-12411561",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 12411561,
+      "parent_oldid": 12400696,
+      "timestamp": "00:06 29 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 29071,
+      "byte_delta": 683,
+      "section": null,
+      "summary": "Nueva sección: /* Esquí */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12411561",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12411561&oldid=12400696",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_683",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-12400696",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 12400696,
+      "parent_oldid": 12400310,
+      "timestamp": "17:00 28 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 28388,
+      "byte_delta": 241,
+      "section": null,
+      "summary": "Nueva sección: /* Dios... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12400696",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12400696&oldid=12400310",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-12400310",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 12400310,
+      "parent_oldid": 12389141,
+      "timestamp": "16:42 28 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 28147,
+      "byte_delta": 271,
+      "section": null,
+      "summary": "Nueva sección: /* Re: Discusión */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12400310",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12400310&oldid=12389141",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-12389141",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 12389141,
+      "parent_oldid": 12389079,
+      "timestamp": "01:48 28 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27876,
+      "byte_delta": -8,
+      "section": null,
+      "summary": "Revertidos los cambios de [[User:87.219.191.42|87.219.191.42]] a la última edición de [[User:Mafores|Mafores]] con [[w:es:User:Axxgreazz/Monobook-Suite|monobook-suite]]",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12389141",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12389141&oldid=12389079",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-12389079",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 12389079,
+      "parent_oldid": 12378805,
+      "timestamp": "01:44 28 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27884,
+      "byte_delta": 8,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12389079",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12389079&oldid=12378805",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-12378805-bienvenida",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 12378805,
+      "parent_oldid": 12370670,
+      "timestamp": "17:33 27 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27876,
+      "byte_delta": -443,
+      "section": "bienvenida",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12378805",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12378805&oldid=12370670",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-12370670",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 12370670,
+      "parent_oldid": 12367207,
+      "timestamp": "09:15 27 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 28319,
+      "byte_delta": 338,
+      "section": null,
+      "summary": "Nueva sección: /* Gracias */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12370670",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12370670&oldid=12367207",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-12367207",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 12367207,
+      "parent_oldid": 12360114,
+      "timestamp": "02:09 27 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27981,
+      "byte_delta": 579,
+      "section": null,
+      "summary": "Nueva sección: /* bienvenida */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12367207",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12367207&oldid=12360114",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_579",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-12360114",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 12360114,
+      "parent_oldid": 12355990,
+      "timestamp": "19:54 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27402,
+      "byte_delta": 121,
+      "section": null,
+      "summary": "Nueva sección: /* Cansado */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12360114",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12360114&oldid=12355990",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-12355990-replica-de-la-replica",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 12355990,
+      "parent_oldid": 12355954,
+      "timestamp": "17:02 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27281,
+      "byte_delta": 44,
+      "section": "Réplica de la réplica",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12355990",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12355990&oldid=12355954",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-12355954-replica-de-la-replica",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 12355954,
+      "parent_oldid": 12355947,
+      "timestamp": "17:00 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27237,
+      "byte_delta": 12,
+      "section": "Réplica de la réplica",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12355954",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12355954&oldid=12355947",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-12355947",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 12355947,
+      "parent_oldid": 12354709,
+      "timestamp": "17:00 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 27225,
+      "byte_delta": 2173,
+      "section": null,
+      "summary": "Nueva sección: /* Réplica de la réplica */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12355947",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12355947&oldid=12354709",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2173",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-12354709-derecho-a-replica",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 12354709,
+      "parent_oldid": 12351947,
+      "timestamp": "16:03 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 25052,
+      "byte_delta": 4098,
+      "section": "Derecho a replica",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12354709",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12354709&oldid=12351947",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_4098",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-12351947",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 12351947,
+      "parent_oldid": 12349211,
+      "timestamp": "14:07 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 20954,
+      "byte_delta": 313,
+      "section": null,
+      "summary": "Nueva sección: /* Derecho a replica */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12351947",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12351947&oldid=12349211",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-12349211-wikipetiqueta",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 12349211,
+      "parent_oldid": 12349088,
+      "timestamp": "11:20 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 20641,
+      "byte_delta": 97,
+      "section": "Wikipetiqueta",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12349211",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12349211&oldid=12349088",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-12349088-wikipetiqueta",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 12349088,
+      "parent_oldid": 12349074,
+      "timestamp": "11:11 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 20544,
+      "byte_delta": 1,
+      "section": "Wikipetiqueta",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12349088",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12349088&oldid=12349074",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-12349074",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 12349074,
+      "parent_oldid": 12339472,
+      "timestamp": "11:10 26 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 20543,
+      "byte_delta": 6095,
+      "section": null,
+      "summary": "Nueva sección: /* Wikipetiqueta */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12349074",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12349074&oldid=12339472",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_6095",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-12339472",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 12339472,
+      "parent_oldid": 12329845,
+      "timestamp": "22:40 25 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14448,
+      "byte_delta": 243,
+      "section": null,
+      "summary": "Nueva sección: /* Rebersión */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12339472",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12339472&oldid=12329845",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0021",
+      "slug": "r0021-oldid-12329845-en-cuanto-puedas",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 28
+      },
+      "oldid": 12329845,
+      "parent_oldid": 12329686,
+      "timestamp": "16:07 25 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14205,
+      "byte_delta": 192,
+      "section": "En cuanto puedas......",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12329845",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12329845&oldid=12329686",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0022",
+      "slug": "r0022-oldid-12329686",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 29
+      },
+      "oldid": 12329686,
+      "parent_oldid": 12328772,
+      "timestamp": "16:01 25 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14013,
+      "byte_delta": 231,
+      "section": null,
+      "summary": "Nueva sección: /* En cuanto puedas...... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12329686",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12329686&oldid=12328772",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0023",
+      "slug": "r0023-oldid-12328772",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 30
+      },
+      "oldid": 12328772,
+      "parent_oldid": 12301859,
+      "timestamp": "15:22 25 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13782,
+      "byte_delta": 360,
+      "section": null,
+      "summary": "Nueva sección: /* Gracias */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12328772",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12328772&oldid=12301859",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0024",
+      "slug": "r0024-oldid-12301859",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 31
+      },
+      "oldid": 12301859,
+      "parent_oldid": 12280112,
+      "timestamp": "14:18 24 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13422,
+      "byte_delta": 244,
+      "section": null,
+      "summary": "Nueva sección: /* ¿Dónde te has metido? */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12301859",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12301859&oldid=12280112",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0025",
+      "slug": "r0025-oldid-12280112-se-predica-con-el-ejemplo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 32
+      },
+      "oldid": 12280112,
+      "parent_oldid": 12277438,
+      "timestamp": "17:50 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13178,
+      "byte_delta": 456,
+      "section": "Se predica con el ejemplo...",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12280112",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12280112&oldid=12277438",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0026",
+      "slug": "r0026-oldid-12277438",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 33
+      },
+      "oldid": 12277438,
+      "parent_oldid": 12276220,
+      "timestamp": "16:08 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12722,
+      "byte_delta": 126,
+      "section": null,
+      "summary": "Nueva sección: /* ¿No entras al IRC? */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12277438",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12277438&oldid=12276220",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0027",
+      "slug": "r0027-oldid-12276220",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 34
+      },
+      "oldid": 12276220,
+      "parent_oldid": 12275850,
+      "timestamp": "15:24 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12596,
+      "byte_delta": 177,
+      "section": null,
+      "summary": "Nueva sección: /* Has borrdao una aportación */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12276220",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12276220&oldid=12275850",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0028",
+      "slug": "r0028-oldid-12275850-hey",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 35
+      },
+      "oldid": 12275850,
+      "parent_oldid": 12275832,
+      "timestamp": "15:12 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12419,
+      "byte_delta": 123,
+      "section": "hey",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12275850",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12275850&oldid=12275832",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0029",
+      "slug": "r0029-oldid-12275832-se-predica-con-el-ejemplo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 36
+      },
+      "oldid": 12275832,
+      "parent_oldid": 12275744,
+      "timestamp": "15:11 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12296,
+      "byte_delta": 85,
+      "section": "Se predica con el ejemplo...",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12275832",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12275832&oldid=12275744",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0030",
+      "slug": "r0030-oldid-12275744-se-predica-con-el-ejemplo",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 37
+      },
+      "oldid": 12275744,
+      "parent_oldid": 12275732,
+      "timestamp": "15:08 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12211,
+      "byte_delta": 0,
+      "section": "Se predica con el ejemplo...",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12275744",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12275744&oldid=12275732",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0031",
+      "slug": "r0031-oldid-12275732",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 38
+      },
+      "oldid": 12275732,
+      "parent_oldid": 12261114,
+      "timestamp": "15:07 23 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12211,
+      "byte_delta": 344,
+      "section": null,
+      "summary": "Nueva sección: /* Se predica con el ejemplo... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12275732",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12275732&oldid=12261114",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0032",
+      "slug": "r0032-oldid-12261114",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 39
+      },
+      "oldid": 12261114,
+      "parent_oldid": 12234392,
+      "timestamp": "22:37 22 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11867,
+      "byte_delta": 228,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12261114",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12261114&oldid=12234392",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0033",
+      "slug": "r0033-oldid-12234392",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 40
+      },
+      "oldid": 12234392,
+      "parent_oldid": 12234359,
+      "timestamp": "21:55 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11639,
+      "byte_delta": -243,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12234392",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12234392&oldid=12234359",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0034",
+      "slug": "r0034-oldid-12234359",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 41
+      },
+      "oldid": 12234359,
+      "parent_oldid": 12234358,
+      "timestamp": "21:54 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11882,
+      "byte_delta": 243,
+      "section": null,
+      "summary": "Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12234359",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12234359&oldid=12234358",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0035",
+      "slug": "r0035-oldid-12234358",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 42
+      },
+      "oldid": 12234358,
+      "parent_oldid": 12221992,
+      "timestamp": "21:54 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11639,
+      "byte_delta": 243,
+      "section": null,
+      "summary": "Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12234358",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12234358&oldid=12221992",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0036",
+      "slug": "r0036-oldid-12221992",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 43
+      },
+      "oldid": 12221992,
+      "parent_oldid": 12213188,
+      "timestamp": "13:16 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11396,
+      "byte_delta": 227,
+      "section": null,
+      "summary": "Nueva sección: /* ¡Cotilla! */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12221992",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12221992&oldid=12213188",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0037",
+      "slug": "r0037-oldid-12213188",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 44
+      },
+      "oldid": 12213188,
+      "parent_oldid": 12213161,
+      "timestamp": "00:43 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11169,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "[[Usuario Discusión:Ctrl Z/Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctrl Z]] sobre una redirección.: ups",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12213188",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12213188&oldid=12213161",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0038",
+      "slug": "r0038-oldid-12213161",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 45
+      },
+      "oldid": 12213161,
+      "parent_oldid": 12205949,
+      "timestamp": "00:42 21 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11169,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "[[Usuario Discusión:Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctrl Z/Ctrl Z]] sobre una redirección.",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12213161",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12213161&oldid=12205949",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_trasladado"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0039",
+      "slug": "r0039-oldid-12205949-rehola",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 46
+      },
+      "oldid": 12205949,
+      "parent_oldid": 12205926,
+      "timestamp": "18:43 20 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11169,
+      "byte_delta": 130,
+      "section": "Re:Hola",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12205949",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12205949&oldid=12205926",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0040",
+      "slug": "r0040-oldid-12205926",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 47
+      },
+      "oldid": 12205926,
+      "parent_oldid": 12196774,
+      "timestamp": "18:42 20 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11039,
+      "byte_delta": 350,
+      "section": null,
+      "summary": "Nueva sección: /* Re:Hola */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12205926",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12205926&oldid=12196774",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0041",
+      "slug": "r0041-oldid-12196774-rewolas",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 48
+      },
+      "oldid": 12196774,
+      "parent_oldid": 12196757,
+      "timestamp": "09:27 20 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10689,
+      "byte_delta": 0,
+      "section": "Re:Wolas",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12196774",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12196774&oldid=12196757",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0042",
+      "slug": "r0042-oldid-12196757-que-te-pasa",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 49
+      },
+      "oldid": 12196757,
+      "parent_oldid": 12188270,
+      "timestamp": "09:26 20 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10689,
+      "byte_delta": 462,
+      "section": "QUE TE PASA",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12196757",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12196757&oldid=12188270",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0043",
+      "slug": "r0043-oldid-12188270",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 50
+      },
+      "oldid": 12188270,
+      "parent_oldid": 12188244,
+      "timestamp": "21:39 19 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10227,
+      "byte_delta": -12,
+      "section": null,
+      "summary": "Revertidos los cambios de [[Especial:Contributions/87.219.221.97|87.219.221.97]] ([[Usuario Discusión:87.219.221.97|disc.]]",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12188270",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12188270&oldid=12188244",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0044",
+      "slug": "r0044-oldid-12188244",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 51
+      },
+      "oldid": 12188244,
+      "parent_oldid": 12187769,
+      "timestamp": "21:38 19 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10239,
+      "byte_delta": 12,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12188244",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12188244&oldid=12187769",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0045",
+      "slug": "r0045-oldid-12187769-gracias-por-tu-ayuda",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 52
+      },
+      "oldid": 12187769,
+      "parent_oldid": 12149976,
+      "timestamp": "21:16 19 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10227,
+      "byte_delta": 124,
+      "section": "Gracias por tu ayuda",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12187769",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12187769&oldid=12149976",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0046",
+      "slug": "r0046-oldid-12149976",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 53
+      },
+      "oldid": 12149976,
+      "parent_oldid": 12127964,
+      "timestamp": "14:08 18 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 10103,
+      "byte_delta": -7452,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12149976",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12149976&oldid=12127964",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_-7452",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0047",
+      "slug": "r0047-oldid-12127964",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 54
+      },
+      "oldid": 12127964,
+      "parent_oldid": 12101147,
+      "timestamp": "16:17 17 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 17555,
+      "byte_delta": 277,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12127964",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12127964&oldid=12101147",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0048",
+      "slug": "r0048-oldid-12101147",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 55
+      },
+      "oldid": 12101147,
+      "parent_oldid": 12068932,
+      "timestamp": "13:38 16 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 17278,
+      "byte_delta": 327,
+      "section": null,
+      "summary": "Nueva sección: /* Un poco tarde pero...... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12101147",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12101147&oldid=12068932",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0049",
+      "slug": "r0049-oldid-12068932-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 56
+      },
+      "oldid": 12068932,
+      "parent_oldid": 12062645,
+      "timestamp": "02:28 15 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 16951,
+      "byte_delta": 269,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12068932",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12068932&oldid=12062645",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0050",
+      "slug": "r0050-oldid-12062645",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 57
+      },
+      "oldid": 12062645,
+      "parent_oldid": 12041357,
+      "timestamp": "20:56 14 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 16682,
+      "byte_delta": 247,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12062645",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12062645&oldid=12041357",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0051",
+      "slug": "r0051-oldid-12041357-drinitol",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 58
+      },
+      "oldid": 12041357,
+      "parent_oldid": 12041198,
+      "timestamp": "22:35 13 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 16435,
+      "byte_delta": 422,
+      "section": "Drinitol",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12041357",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12041357&oldid=12041198",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0052",
+      "slug": "r0052-oldid-12041198-drinitol",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 59
+      },
+      "oldid": 12041198,
+      "parent_oldid": 12041190,
+      "timestamp": "22:27 13 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 16013,
+      "byte_delta": 0,
+      "section": "Drinitol",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12041198",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12041198&oldid=12041190",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0053",
+      "slug": "r0053-oldid-12041190",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 60
+      },
+      "oldid": 12041190,
+      "parent_oldid": 11978618,
+      "timestamp": "22:27 13 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 16013,
+      "byte_delta": 416,
+      "section": null,
+      "summary": "Nueva sección: /* Drinitol */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=12041190",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=12041190&oldid=11978618",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0054",
+      "slug": "r0054-oldid-11978618",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 61
+      },
+      "oldid": 11978618,
+      "parent_oldid": 11958783,
+      "timestamp": "10:30 11 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 15597,
+      "byte_delta": 800,
+      "section": null,
+      "summary": "Nueva sección: /* Bot informa... */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11978618",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11978618&oldid=11958783",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_800",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0055",
+      "slug": "r0055-oldid-11958783-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 62
+      },
+      "oldid": 11958783,
+      "parent_oldid": 11955692,
+      "timestamp": "15:07 10 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14797,
+      "byte_delta": 167,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11958783",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11958783&oldid=11955692",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0056",
+      "slug": "r0056-oldid-11955692-fusion-de-articulos",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 63
+      },
+      "oldid": 11955692,
+      "parent_oldid": 11952112,
+      "timestamp": "11:54 10 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14630,
+      "byte_delta": 186,
+      "section": "Fusión de artículos",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11955692",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11955692&oldid=11952112",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_fusión",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0057",
+      "slug": "r0057-oldid-11952112",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 64
+      },
+      "oldid": 11952112,
+      "parent_oldid": 11943731,
+      "timestamp": "06:46 10 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 14444,
+      "byte_delta": 290,
+      "section": null,
+      "summary": "Nueva sección: /* Fusión de artículos */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11952112",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11952112&oldid=11943731",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "keyword_fusión"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0058",
+      "slug": "r0058-oldid-11943731-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 65
+      },
+      "oldid": 11943731,
+      "parent_oldid": 11942952,
+      "timestamp": "21:56 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 14154,
+      "byte_delta": 278,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11943731",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11943731&oldid=11942952",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0059",
+      "slug": "r0059-oldid-11942952",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 66
+      },
+      "oldid": 11942952,
+      "parent_oldid": 11942158,
+      "timestamp": "21:11 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13876,
+      "byte_delta": 197,
+      "section": null,
+      "summary": "Nueva sección: /* Destruir */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11942952",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11942952&oldid=11942158",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0060",
+      "slug": "r0060-oldid-11942158-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 67
+      },
+      "oldid": 11942158,
+      "parent_oldid": 11939849,
+      "timestamp": "20:34 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13679,
+      "byte_delta": 309,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11942158",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11942158&oldid=11939849",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0061",
+      "slug": "r0061-oldid-11939849-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 68
+      },
+      "oldid": 11939849,
+      "parent_oldid": 11939640,
+      "timestamp": "18:51 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13370,
+      "byte_delta": 78,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11939849",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11939849&oldid=11939640",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0062",
+      "slug": "r0062-oldid-11939640-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 69
+      },
+      "oldid": 11939640,
+      "parent_oldid": 11939605,
+      "timestamp": "18:42 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13292,
+      "byte_delta": 269,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11939640",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11939640&oldid=11939605",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0063",
+      "slug": "r0063-oldid-11939605-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 70
+      },
+      "oldid": 11939605,
+      "parent_oldid": 11939401,
+      "timestamp": "18:40 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 13023,
+      "byte_delta": 187,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11939605",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11939605&oldid=11939401",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0064",
+      "slug": "r0064-oldid-11939401",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 71
+      },
+      "oldid": 11939401,
+      "parent_oldid": 11938913,
+      "timestamp": "18:33 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12836,
+      "byte_delta": 39,
+      "section": null,
+      "summary": "Bot: Arreglando firma",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11939401",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11939401&oldid=11938913",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0065",
+      "slug": "r0065-oldid-11938913-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 72
+      },
+      "oldid": 11938913,
+      "parent_oldid": 11938822,
+      "timestamp": "18:17 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12797,
+      "byte_delta": 0,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11938913",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11938913&oldid=11938822",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0066",
+      "slug": "r0066-oldid-11938822-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 73
+      },
+      "oldid": 11938822,
+      "parent_oldid": 11935163,
+      "timestamp": "18:14 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12797,
+      "byte_delta": 443,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11938822",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11938822&oldid=11935163",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0067",
+      "slug": "r0067-oldid-11935163-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 74
+      },
+      "oldid": 11935163,
+      "parent_oldid": 11934652,
+      "timestamp": "15:51 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12354,
+      "byte_delta": 303,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11935163",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11935163&oldid=11934652",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0068",
+      "slug": "r0068-oldid-11934652",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 75
+      },
+      "oldid": 11934652,
+      "parent_oldid": 11933988,
+      "timestamp": "15:33 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 12051,
+      "byte_delta": 291,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11934652",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11934652&oldid=11933988",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0069",
+      "slug": "r0069-oldid-11933988-felicidades-nuevo-biblio",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 76
+      },
+      "oldid": 11933988,
+      "parent_oldid": 11933746,
+      "timestamp": "15:09 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11760,
+      "byte_delta": 224,
+      "section": "Felicidades nuevo Biblio",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11933988",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11933988&oldid=11933746",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0070",
+      "slug": "r0070-oldid-11933746",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 77
+      },
+      "oldid": 11933746,
+      "parent_oldid": 11926295,
+      "timestamp": "15:02 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 11536,
+      "byte_delta": 1565,
+      "section": null,
+      "summary": "Nueva sección: /* Felicidades nuevo Biblio */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11933746",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11933746&oldid=11926295",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1565",
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0071",
+      "slug": "r0071-oldid-11926295-wikificacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 78
+      },
+      "oldid": 11926295,
+      "parent_oldid": 11908219,
+      "timestamp": "06:02 9 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 9971,
+      "byte_delta": 222,
+      "section": "Wikificación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11926295",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11926295&oldid=11908219",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0072",
+      "slug": "r0072-oldid-11908219",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 79
+      },
+      "oldid": 11908219,
+      "parent_oldid": 11892082,
+      "timestamp": "15:30 8 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 9749,
+      "byte_delta": 374,
+      "section": null,
+      "summary": "Nueva sección: /* Wikificación */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11908219",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11908219&oldid=11892082",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0073",
+      "slug": "r0073-oldid-11892082",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 80
+      },
+      "oldid": 11892082,
+      "parent_oldid": 11891711,
+      "timestamp": "21:16 7 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 9375,
+      "byte_delta": 426,
+      "section": null,
+      "summary": "Nueva sección: /* Drinitol */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11892082",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11892082&oldid=11891711",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0074",
+      "slug": "r0074-oldid-11891711",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 81
+      },
+      "oldid": 11891711,
+      "parent_oldid": 11869580,
+      "timestamp": "21:01 7 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8949,
+      "byte_delta": 195,
+      "section": null,
+      "summary": "Nueva sección: /* Re:Firma */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11891711",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11891711&oldid=11869580",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0075",
+      "slug": "r0075-oldid-11869580",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 82
+      },
+      "oldid": 11869580,
+      "parent_oldid": 11845282,
+      "timestamp": "23:00 6 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8754,
+      "byte_delta": -26,
+      "section": null,
+      "summary": "-\"PBO008.gif\". Borrado en Commons por [[commons:User:Dodo|Dodo]]. (derivative",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11869580",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11869580&oldid=11845282",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    },
+    {
+      "id": "r0076",
+      "slug": "r0076-oldid-11845282",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 83
+      },
+      "oldid": 11845282,
+      "parent_oldid": 11834801,
+      "timestamp": "21:13 5 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8780,
+      "byte_delta": 122,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11845282",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11845282&oldid=11834801",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0077",
+      "slug": "r0077-oldid-11834801",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 84
+      },
+      "oldid": 11834801,
+      "parent_oldid": 11819055,
+      "timestamp": "14:18 5 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8658,
+      "byte_delta": 135,
+      "section": null,
+      "summary": "Nueva sección: /* Respuesta */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11834801",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11834801&oldid=11819055",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0078",
+      "slug": "r0078-oldid-11819055",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 85
+      },
+      "oldid": 11819055,
+      "parent_oldid": 11749201,
+      "timestamp": "21:09 4 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8523,
+      "byte_delta": 181,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11819055",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11819055&oldid=11749201",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0079",
+      "slug": "r0079-oldid-11749201-la-dieta",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 86
+      },
+      "oldid": 11749201,
+      "parent_oldid": 11735326,
+      "timestamp": "04:21 2 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8342,
+      "byte_delta": 143,
+      "section": "la dieta?",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11749201",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11749201&oldid=11735326",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0080",
+      "slug": "r0080-oldid-11735326",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 87
+      },
+      "oldid": 11735326,
+      "parent_oldid": 11724224,
+      "timestamp": "17:56 1 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8199,
+      "byte_delta": 189,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11735326",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11735326&oldid=11724224",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ctrl_Z"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "high"
+    },
+    {
+      "id": "r0081",
+      "slug": "r0081-oldid-11724224",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 88
+      },
+      "oldid": 11724224,
+      "parent_oldid": 11683339,
+      "timestamp": "07:57 1 oct 2007",
+      "user": "Ctrl_Z",
+      "bytes": 8010,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "Nueva sección: /* la dieta? */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&oldid=11724224",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Ctrl_Z&diff=11724224&oldid=11683339",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Ctrl_Z"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+{
+  "meta": {
+    "corpus": "talk",
+    "title": "Usuario discusión:Pabloallo (historial WP es)",
+    "source": "raw/linea.md",
+    "generated_at": "2026-06-22T07:47:38Z",
+    "preamble": {
+      "lines": [
+        1,
+        7
+      ],
+      "text": "# Usuario discusión:Pabloallo — historial talk (es.wikipedia)\n# generado: 2026-06-22T07:47:37Z · registros en ventana 2007-10-01 – 2007-10-31: 20\nPágina: [Usuario discusión:Pabloallo](https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo)\nNamespace: **3** · corpus: **talk**"
+    },
+    "registro_count": 20,
+    "ordering": "newest_first_in_linea_md",
+    "snapshots": {
+      "previo": {
+        "role": "previo",
+        "registro_id": null,
+        "oldid": 11420206,
+        "timestamp": "28 sep 2007",
+        "user": "Dhidalgo",
+        "path": "snapshots/previo"
+      },
+      "final": {
+        "role": "final",
+        "registro_id": "r0001",
+        "oldid": 12346968,
+        "timestamp": "08:31 26 oct 2007",
+        "path": "snapshots/final"
+      },
+      "inicial": {
+        "role": "inicial",
+        "registro_id": "r0020",
+        "oldid": 12060099,
+        "timestamp": "18:54 14 oct 2007",
+        "summary": "(sin resumen",
+        "path": "snapshots/inicial"
+      },
+      "sc_cierre": {
+        "role": "sc_cierre",
+        "oldid": 12346968,
+        "path": "snapshots/sc_cierre"
+      },
+      "actual": {
+        "role": "actual",
+        "oldid": null,
+        "path": "snapshots/actual"
+      }
+    },
+    "ontology_sections": [
+      [
+        "Criterio de demarcación",
+        7
+      ],
+      [
+        "Categoría \"escritores judíos\"",
+        4
+      ],
+      [
+        "Clasificando a terceros por la descendencia",
+        3
+      ],
+      [
+        "P.S.",
+        2
+      ],
+      [
+        "Discusion",
+        1
+      ],
+      [
+        "WP:PBF",
+        1
+      ]
+    ],
+    "milestones": [
+      "r0002",
+      "r0003",
+      "r0004",
+      "r0005",
+      "r0006",
+      "r0008",
+      "r0009",
+      "r0010",
+      "r0011",
+      "r0013",
+      "r0018"
+    ],
+    "namespace": 3,
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-10-31"
+    }
+  },
+  "registros": [
+    {
+      "id": "r0001",
+      "slug": "r0001-oldid-12346968-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 8
+      },
+      "oldid": 12346968,
+      "parent_oldid": 12239634,
+      "timestamp": "08:31 26 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 44316,
+      "byte_delta": 172,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12346968",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12346968&oldid=12239634",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-26T08:31:29Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0002",
+      "slug": "r0002-oldid-12239634-ps",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 9
+      },
+      "oldid": 12239634,
+      "parent_oldid": 12227467,
+      "timestamp": "02:19 22 oct 2007",
+      "user": "Veremos",
+      "bytes": 44144,
+      "byte_delta": 185,
+      "section": "P.S.",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12239634",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12239634&oldid=12227467",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-22T02:19:17Z",
+      "article_refs": [
+        {
+          "oldid": 12238466,
+          "title": "Pseudociencia",
+          "delta_hours": 1.3
+        },
+        {
+          "oldid": 12238425,
+          "title": "Pseudociencia",
+          "delta_hours": 1.3
+        }
+      ]
+    },
+    {
+      "id": "r0003",
+      "slug": "r0003-oldid-12227467-ps",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 10
+      },
+      "oldid": 12227467,
+      "parent_oldid": 12185855,
+      "timestamp": "17:36 21 oct 2007",
+      "user": "Veremos",
+      "bytes": 43959,
+      "byte_delta": 118,
+      "section": "P.S.",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12227467",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12227467&oldid=12185855",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-21T17:36:27Z",
+      "article_refs": [
+        {
+          "oldid": 12238466,
+          "title": "Pseudociencia",
+          "delta_hours": 7.4
+        },
+        {
+          "oldid": 12238425,
+          "title": "Pseudociencia",
+          "delta_hours": 7.4
+        }
+      ]
+    },
+    {
+      "id": "r0004",
+      "slug": "r0004-oldid-12185855-discusion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 11
+      },
+      "oldid": 12185855,
+      "parent_oldid": 12185803,
+      "timestamp": "19:41 19 oct 2007",
+      "user": "Veremos",
+      "bytes": 43841,
+      "byte_delta": 328,
+      "section": "Discusion",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12185855",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12185855&oldid=12185803",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-19T19:41:35Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0005",
+      "slug": "r0005-oldid-12185803-clasificando-a-terceros-por-la",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 12
+      },
+      "oldid": 12185803,
+      "parent_oldid": 12119915,
+      "timestamp": "19:39 19 oct 2007",
+      "user": "Veremos",
+      "bytes": 43513,
+      "byte_delta": 242,
+      "section": "Clasificando a terceros por la descendencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12185803",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12185803&oldid=12119915",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-19T19:39:28Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0006",
+      "slug": "r0006-oldid-12119915-clasificando-a-terceros-por-la",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 13
+      },
+      "oldid": 12119915,
+      "parent_oldid": 12119888,
+      "timestamp": "06:03 17 oct 2007",
+      "user": "Veremos",
+      "bytes": 43271,
+      "byte_delta": 209,
+      "section": "Clasificando a terceros por la descendencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12119915",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12119915&oldid=12119888",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-17T06:03:16Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0007",
+      "slug": "r0007-oldid-12119888-clasificando-a-terceros-por-la",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 14
+      },
+      "oldid": 12119888,
+      "parent_oldid": 12119884,
+      "timestamp": "05:59 17 oct 2007",
+      "user": "Veremos",
+      "bytes": 43062,
+      "byte_delta": -1,
+      "section": "Clasificando a terceros por la descendencia",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12119888",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12119888&oldid=12119884",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-17T05:59:37Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0008",
+      "slug": "r0008-oldid-12119884-categoria-escritores-judios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 15
+      },
+      "oldid": 12119884,
+      "parent_oldid": 12101208,
+      "timestamp": "05:59 17 oct 2007",
+      "user": "Veremos",
+      "bytes": 43063,
+      "byte_delta": 2457,
+      "section": "Categoría \"escritores judíos\"",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12119884",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12119884&oldid=12101208",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_2457",
+        "user_Veremos"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-17T05:59:05Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0009",
+      "slug": "r0009-oldid-12101208-categoria-escritores-judios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 16
+      },
+      "oldid": 12101208,
+      "parent_oldid": 12100295,
+      "timestamp": "13:41 16 oct 2007",
+      "user": "Ferbr1",
+      "bytes": 40606,
+      "byte_delta": 1277,
+      "section": "Categoría \"escritores judíos\"",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12101208",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12101208&oldid=12100295",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1277",
+        "user_Ferbr1"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T13:41:34Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0010",
+      "slug": "r0010-oldid-12100295-categoria-escritores-judios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 17
+      },
+      "oldid": 12100295,
+      "parent_oldid": 12100160,
+      "timestamp": "12:30 16 oct 2007",
+      "user": "Ferbr1",
+      "bytes": 39329,
+      "byte_delta": 857,
+      "section": "Categoría \"escritores judíos\"",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12100295",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12100295&oldid=12100160",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_857",
+        "user_Ferbr1"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T12:30:20Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0011",
+      "slug": "r0011-oldid-12100160-categoria-escritores-judios",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 18
+      },
+      "oldid": 12100160,
+      "parent_oldid": 12098728,
+      "timestamp": "12:18 16 oct 2007",
+      "user": "Ferbr1",
+      "bytes": 38472,
+      "byte_delta": 1843,
+      "section": "Categoría \"escritores judíos\"",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12100160",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12100160&oldid=12098728",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_1843",
+        "user_Ferbr1"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T12:18:30Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0012",
+      "slug": "r0012-oldid-12098728-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 19
+      },
+      "oldid": 12098728,
+      "parent_oldid": 12097714,
+      "timestamp": "10:16 16 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 36629,
+      "byte_delta": 484,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12098728",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12098728&oldid=12097714",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T10:16:26Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0013",
+      "slug": "r0013-oldid-12097714",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 20
+      },
+      "oldid": 12097714,
+      "parent_oldid": 12069622,
+      "timestamp": "08:35 16 oct 2007",
+      "user": "Ferbr1",
+      "bytes": 36145,
+      "byte_delta": 449,
+      "section": null,
+      "summary": "Nueva sección: /* Categoría \"escritores judíos\" */",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12097714",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12097714&oldid=12069622",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "user_Ferbr1"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-16T08:35:24Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0014",
+      "slug": "r0014-oldid-12069622-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 21
+      },
+      "oldid": 12069622,
+      "parent_oldid": 12069595,
+      "timestamp": "03:25 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 35696,
+      "byte_delta": 100,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12069622",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12069622&oldid=12069595",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T03:25:14Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0015",
+      "slug": "r0015-oldid-12069595-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 22
+      },
+      "oldid": 12069595,
+      "parent_oldid": 12069583,
+      "timestamp": "03:22 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 35596,
+      "byte_delta": 2,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12069595",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12069595&oldid=12069583",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T03:22:47Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0016",
+      "slug": "r0016-oldid-12069583-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 23
+      },
+      "oldid": 12069583,
+      "parent_oldid": 12069578,
+      "timestamp": "03:22 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 35594,
+      "byte_delta": 1,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12069583",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12069583&oldid=12069578",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T03:22:11Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0017",
+      "slug": "r0017-oldid-12069578-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 24
+      },
+      "oldid": 12069578,
+      "parent_oldid": 12069568,
+      "timestamp": "03:21 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 35593,
+      "byte_delta": -9,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12069578",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12069578&oldid=12069568",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T03:21:44Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0018",
+      "slug": "r0018-oldid-12069568-criterio-de-demarcacion",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 25
+      },
+      "oldid": 12069568,
+      "parent_oldid": 12060113,
+      "timestamp": "03:20 15 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 35602,
+      "byte_delta": 882,
+      "section": "Criterio de demarcación",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12069568",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12069568&oldid=12060113",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": true,
+      "milestone_reasons": [
+        "byte_delta_882"
+      ],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-15T03:20:56Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0019",
+      "slug": "r0019-oldid-12060113-wppbf",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 26
+      },
+      "oldid": 12060113,
+      "parent_oldid": 12060099,
+      "timestamp": "18:55 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 34720,
+      "byte_delta": 31,
+      "section": "WP:PBF",
+      "summary": "",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12060113",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12060113&oldid=12060099",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-14T18:55:21Z",
+      "article_refs": []
+    },
+    {
+      "id": "r0020",
+      "slug": "r0020-oldid-12060099",
+      "source": {
+        "file": "raw/linea.md",
+        "line": 27
+      },
+      "oldid": 12060099,
+      "parent_oldid": 11420206,
+      "timestamp": "18:54 14 oct 2007",
+      "user": "SolveCoagula",
+      "bytes": 34689,
+      "byte_delta": 0,
+      "section": null,
+      "summary": "(sin resumen",
+      "urls": {
+        "revision": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&oldid=12060099",
+        "diff_prev": "https://es.wikipedia.org/w/index.php?title=Usuario_discusión:Pabloallo&diff=12060099&oldid=11420206",
+        "article": "https://es.wikipedia.org/wiki/Usuario_discusión:Pabloallo"
+      },
+      "milestone": false,
+      "milestone_reasons": [],
+      "files": {},
+      "delta_status": "pending",
+      "timestamp_iso": "2007-10-14T18:54:40Z",
+      "article_refs": []
+    }
+  ]
+}

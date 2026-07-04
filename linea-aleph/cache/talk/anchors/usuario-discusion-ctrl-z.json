@@ -1,0 +1,498 @@
+{
+  "vista": "usuario-discusion-ctrl-z",
+  "title": "Usuario discusión:Ctrl_Z",
+  "linked_article": null,
+  "generated_at": "2026-06-22T07:48:08Z",
+  "window": {
+    "start": "2007-10-01",
+    "end": "2007-10-31"
+  },
+  "wave_a_oldids": [
+    {
+      "oldid": 11724224,
+      "timestamp": "2007-10-01T07:57:45Z",
+      "note": "B16-A2 · Nueva sección: /* la dieta? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11735326,
+      "timestamp": "2007-10-01T17:56:58Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11749201,
+      "timestamp": "2007-10-02T04:21:42Z",
+      "note": "B16-A2 · /* la dieta? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11819055,
+      "timestamp": "2007-10-04T21:09:10Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11834801,
+      "timestamp": "2007-10-05T14:18:08Z",
+      "note": "B16-A2 · Nueva sección: /* Respuesta */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11845282,
+      "timestamp": "2007-10-05T21:13:06Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11869580,
+      "timestamp": "2007-10-06T23:00:35Z",
+      "note": "B16-A2 · -\"PBO008.gif\". Borrado en Commons por [[commons:User:Dodo|Dodo]]. (derivative)",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11891711,
+      "timestamp": "2007-10-07T21:01:43Z",
+      "note": "B16-A2 · Nueva sección: /* Re:Firma */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11892082,
+      "timestamp": "2007-10-07T21:16:37Z",
+      "note": "B16-A2 · Nueva sección: /* Drinitol */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11908219,
+      "timestamp": "2007-10-08T15:30:33Z",
+      "note": "B16-A2 · Nueva sección: /* Wikificación */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11926295,
+      "timestamp": "2007-10-09T06:02:04Z",
+      "note": "B16-A2 · /* Wikificación */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11933746,
+      "timestamp": "2007-10-09T15:02:06Z",
+      "note": "B16-A2 · Nueva sección: /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11933988,
+      "timestamp": "2007-10-09T15:09:27Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11934652,
+      "timestamp": "2007-10-09T15:33:27Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11935163,
+      "timestamp": "2007-10-09T15:51:51Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11938822,
+      "timestamp": "2007-10-09T18:14:30Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11938913,
+      "timestamp": "2007-10-09T18:17:14Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */ upss xD",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11939401,
+      "timestamp": "2007-10-09T18:33:36Z",
+      "note": "B16-A2 · Bot: Arreglando firma",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11939605,
+      "timestamp": "2007-10-09T18:40:54Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11939640,
+      "timestamp": "2007-10-09T18:42:25Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11939849,
+      "timestamp": "2007-10-09T18:51:34Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11942158,
+      "timestamp": "2007-10-09T20:34:25Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11942952,
+      "timestamp": "2007-10-09T21:11:22Z",
+      "note": "B16-A2 · Nueva sección: /* Destruir */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11943731,
+      "timestamp": "2007-10-09T21:56:40Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11952112,
+      "timestamp": "2007-10-10T06:46:16Z",
+      "note": "B16-A2 · Nueva sección: /* Fusión de artículos */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11955692,
+      "timestamp": "2007-10-10T11:54:27Z",
+      "note": "B16-A2 · /* Fusión de artículos */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11958783,
+      "timestamp": "2007-10-10T15:07:49Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */ ole!",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 11978618,
+      "timestamp": "2007-10-11T10:30:19Z",
+      "note": "B16-A2 · Nueva sección: /* Bot informa... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12041190,
+      "timestamp": "2007-10-13T22:27:39Z",
+      "note": "B16-A2 · Nueva sección: /* Drinitol */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12041198,
+      "timestamp": "2007-10-13T22:27:55Z",
+      "note": "B16-A2 · /* Drinitol */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12041357,
+      "timestamp": "2007-10-13T22:35:07Z",
+      "note": "B16-A2 · /* Drinitol */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12062645,
+      "timestamp": "2007-10-14T20:56:31Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12068932,
+      "timestamp": "2007-10-15T02:28:19Z",
+      "note": "B16-A2 · /* Felicidades nuevo Biblio */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12101147,
+      "timestamp": "2007-10-16T13:38:14Z",
+      "note": "B16-A2 · Nueva sección: /* Un poco tarde pero...... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12127964,
+      "timestamp": "2007-10-17T16:17:40Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12149976,
+      "timestamp": "2007-10-18T14:08:36Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12187769,
+      "timestamp": "2007-10-19T21:16:48Z",
+      "note": "B16-A2 · /* Gracias por tu ayuda */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12188244,
+      "timestamp": "2007-10-19T21:38:32Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12188270,
+      "timestamp": "2007-10-19T21:39:34Z",
+      "note": "B16-A2 · Revertidos los cambios de [[Especial:Contributions/87.219.221.97|87.219.221.97]]",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12196757,
+      "timestamp": "2007-10-20T09:26:24Z",
+      "note": "B16-A2 · /* QUE TE PASA */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12196774,
+      "timestamp": "2007-10-20T09:27:07Z",
+      "note": "B16-A2 · /* Re:Wolas */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12205926,
+      "timestamp": "2007-10-20T18:42:07Z",
+      "note": "B16-A2 · Nueva sección: /* Re:Hola */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12205949,
+      "timestamp": "2007-10-20T18:43:17Z",
+      "note": "B16-A2 · /* Re:Hola */  Me olvidé de firmar... qué se le va a hacer, cosas que le pasan a",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12213161,
+      "timestamp": "2007-10-21T00:42:05Z",
+      "note": "B16-A2 · [[Usuario Discusión:Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctrl Z/Ctr",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12213188,
+      "timestamp": "2007-10-21T00:43:29Z",
+      "note": "B16-A2 · [[Usuario Discusión:Ctrl Z/Ctrl Z]] ha sido trasladado a [[Usuario Discusión:Ctr",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12221992,
+      "timestamp": "2007-10-21T13:16:29Z",
+      "note": "B16-A2 · Nueva sección: /* ¡Cotilla! */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12234358,
+      "timestamp": "2007-10-21T21:54:08Z",
+      "note": "B16-A2 · Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12234359,
+      "timestamp": "2007-10-21T21:54:10Z",
+      "note": "B16-A2 · Nueva sección: /* vandalizando ¿?¿?¿? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12234392,
+      "timestamp": "2007-10-21T21:55:24Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12261114,
+      "timestamp": "2007-10-22T22:37:52Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12275732,
+      "timestamp": "2007-10-23T15:07:53Z",
+      "note": "B16-A2 · Nueva sección: /* Se predica con el ejemplo... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12275744,
+      "timestamp": "2007-10-23T15:08:19Z",
+      "note": "B16-A2 · /* Se predica con el ejemplo... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12275832,
+      "timestamp": "2007-10-23T15:11:50Z",
+      "note": "B16-A2 · /* Se predica con el ejemplo... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12275850,
+      "timestamp": "2007-10-23T15:12:29Z",
+      "note": "B16-A2 · /* hey */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12276220,
+      "timestamp": "2007-10-23T15:24:46Z",
+      "note": "B16-A2 · Nueva sección: /* Has borrdao una aportación */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12277438,
+      "timestamp": "2007-10-23T16:08:37Z",
+      "note": "B16-A2 · Nueva sección: /* ¿No entras al IRC? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12280112,
+      "timestamp": "2007-10-23T17:50:07Z",
+      "note": "B16-A2 · /* Se predica con el ejemplo... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12301859,
+      "timestamp": "2007-10-24T14:18:30Z",
+      "note": "B16-A2 · Nueva sección: /* ¿Dónde te has metido? */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12328772,
+      "timestamp": "2007-10-25T15:22:41Z",
+      "note": "B16-A2 · Nueva sección: /* Gracias */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12329686,
+      "timestamp": "2007-10-25T16:01:16Z",
+      "note": "B16-A2 · Nueva sección: /* En cuanto puedas...... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12329845,
+      "timestamp": "2007-10-25T16:07:10Z",
+      "note": "B16-A2 · /* En cuanto puedas...... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12339472,
+      "timestamp": "2007-10-25T22:40:44Z",
+      "note": "B16-A2 · Nueva sección: /* Rebersión */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12349074,
+      "timestamp": "2007-10-26T11:10:37Z",
+      "note": "B16-A2 · Nueva sección: /* Wikipetiqueta */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12349088,
+      "timestamp": "2007-10-26T11:11:32Z",
+      "note": "B16-A2 · /* Wikipetiqueta */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12349211,
+      "timestamp": "2007-10-26T11:20:08Z",
+      "note": "B16-A2 · /* Wikipetiqueta */ firma",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12351947,
+      "timestamp": "2007-10-26T14:07:27Z",
+      "note": "B16-A2 · Nueva sección: /* Derecho a replica */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12354709,
+      "timestamp": "2007-10-26T16:03:26Z",
+      "note": "B16-A2 · /* Derecho a replica */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12355947,
+      "timestamp": "2007-10-26T17:00:09Z",
+      "note": "B16-A2 · Nueva sección: /* Réplica de la réplica */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12355954,
+      "timestamp": "2007-10-26T17:00:26Z",
+      "note": "B16-A2 · /* Réplica de la réplica */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12355990,
+      "timestamp": "2007-10-26T17:02:12Z",
+      "note": "B16-A2 · /* Réplica de la réplica */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12360114,
+      "timestamp": "2007-10-26T19:54:36Z",
+      "note": "B16-A2 · Nueva sección: /* Cansado */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12367207,
+      "timestamp": "2007-10-27T02:09:49Z",
+      "note": "B16-A2 · Nueva sección: /* bienvenida */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12370670,
+      "timestamp": "2007-10-27T09:15:18Z",
+      "note": "B16-A2 · Nueva sección: /* Gracias */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12378805,
+      "timestamp": "2007-10-27T17:33:35Z",
+      "note": "B16-A2 · /* bienvenida */ Sustituyo firma del usuario en cuestión por no cumplir con la [",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12389079,
+      "timestamp": "2007-10-28T01:44:51Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12389141,
+      "timestamp": "2007-10-28T01:48:52Z",
+      "note": "B16-A2 · Revertidos los cambios de [[User:87.219.191.42|87.219.191.42]] a la última edici",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12400310,
+      "timestamp": "2007-10-28T16:42:37Z",
+      "note": "B16-A2 · Nueva sección: /* Re: Discusión */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12400696,
+      "timestamp": "2007-10-28T17:00:33Z",
+      "note": "B16-A2 · Nueva sección: /* Dios... */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12411561,
+      "timestamp": "2007-10-29T00:06:55Z",
+      "note": "B16-A2 · Nueva sección: /* Esquí */",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12411669,
+      "timestamp": "2007-10-29T00:11:48Z",
+      "note": "B16-A2 · ",
+      "wave": "B16-A2"
+    },
+    {
+      "oldid": 12466400,
+      "timestamp": "2007-10-31T08:03:36Z",
+      "note": "B16-A2 · Nueva sección: /* {{u|Gracia jmcs}} */",
+      "wave": "B16-A2"
+    }
+  ]
+}

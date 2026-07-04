@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "Usuario discusión:Pabloallo",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 3,
+    "linked_article": null,
+    "generated_at": "2026-06-22T07:47:37Z",
+    "corpus_dir": "talk/usuario-discusion-pabloallo",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-10-31"
+    },
+    "revision_count": 20,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "revisiones": [
+    {
+      "revid": 12060099,
+      "parentid": 11420206,
+      "timestamp": "2007-10-14T18:54:40Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 34689,
+      "byte_delta": 150
+    },
+    {
+      "revid": 12060113,
+      "parentid": 12060099,
+      "timestamp": "2007-10-14T18:55:21Z",
+      "user": "SolveCoagula",
+      "comment": "/* WP:PBF */",
+      "size": 34720,
+      "byte_delta": 31
+    },
+    {
+      "revid": 12069568,
+      "parentid": 12060113,
+      "timestamp": "2007-10-15T03:20:56Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 35602,
+      "byte_delta": 882
+    },
+    {
+      "revid": 12069578,
+      "parentid": 12069568,
+      "timestamp": "2007-10-15T03:21:44Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 35593,
+      "byte_delta": -9
+    },
+    {
+      "revid": 12069583,
+      "parentid": 12069578,
+      "timestamp": "2007-10-15T03:22:11Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 35594,
+      "byte_delta": 1
+    },
+    {
+      "revid": 12069595,
+      "parentid": 12069583,
+      "timestamp": "2007-10-15T03:22:47Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 35596,
+      "byte_delta": 2
+    },
+    {
+      "revid": 12069622,
+      "parentid": 12069595,
+      "timestamp": "2007-10-15T03:25:14Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 35696,
+      "byte_delta": 100
+    },
+    {
+      "revid": 12097714,
+      "parentid": 12069622,
+      "timestamp": "2007-10-16T08:35:24Z",
+      "user": "Ferbr1",
+      "comment": "Nueva sección: /* Categoría \"escritores judíos\" */",
+      "size": 36145,
+      "byte_delta": 449
+    },
+    {
+      "revid": 12098728,
+      "parentid": 12097714,
+      "timestamp": "2007-10-16T10:16:26Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 36629,
+      "byte_delta": 484
+    },
+    {
+      "revid": 12100160,
+      "parentid": 12098728,
+      "timestamp": "2007-10-16T12:18:30Z",
+      "user": "Ferbr1",
+      "comment": "/* Categoría \"escritores judíos\" */",
+      "size": 38472,
+      "byte_delta": 1843
+    },
+    {
+      "revid": 12100295,
+      "parentid": 12100160,
+      "timestamp": "2007-10-16T12:30:20Z",
+      "user": "Ferbr1",
+      "comment": "/* Categoría \"escritores judíos\" */",
+      "size": 39329,
+      "byte_delta": 857
+    },
+    {
+      "revid": 12101208,
+      "parentid": 12100295,
+      "timestamp": "2007-10-16T13:41:34Z",
+      "user": "Ferbr1",
+      "comment": "/* Categoría \"escritores judíos\" */",
+      "size": 40606,
+      "byte_delta": 1277
+    },
+    {
+      "revid": 12119884,
+      "parentid": 12101208,
+      "timestamp": "2007-10-17T05:59:05Z",
+      "user": "Veremos",
+      "comment": "/* Categoría \"escritores judíos\" */",
+      "size": 43063,
+      "byte_delta": 2457
+    },
+    {
+      "revid": 12119888,
+      "parentid": 12119884,
+      "timestamp": "2007-10-17T05:59:37Z",
+      "user": "Veremos",
+      "comment": "/* Clasificando a terceros por la descendencia */",
+      "size": 43062,
+      "byte_delta": -1
+    },
+    {
+      "revid": 12119915,
+      "parentid": 12119888,
+      "timestamp": "2007-10-17T06:03:16Z",
+      "user": "Veremos",
+      "comment": "/* Clasificando a terceros por la descendencia */",
+      "size": 43271,
+      "byte_delta": 209
+    },
+    {
+      "revid": 12185803,
+      "parentid": 12119915,
+      "timestamp": "2007-10-19T19:39:28Z",
+      "user": "Veremos",
+      "comment": "/* Clasificando a terceros por la descendencia */",
+      "size": 43513,
+      "byte_delta": 242
+    },
+    {
+      "revid": 12185855,
+      "parentid": 12185803,
+      "timestamp": "2007-10-19T19:41:35Z",
+      "user": "Veremos",
+      "comment": "/* Discusion */",
+      "size": 43841,
+      "byte_delta": 328
+    },
+    {
+      "revid": 12227467,
+      "parentid": 12185855,
+      "timestamp": "2007-10-21T17:36:27Z",
+      "user": "Veremos",
+      "comment": "/* P.S. */",
+      "size": 43959,
+      "byte_delta": 118
+    },
+    {
+      "revid": 12239634,
+      "parentid": 12227467,
+      "timestamp": "2007-10-22T02:19:17Z",
+      "user": "Veremos",
+      "comment": "/* P.S. */",
+      "size": 44144,
+      "byte_delta": 185
+    },
+    {
+      "revid": 12346968,
+      "parentid": 12239634,
+      "timestamp": "2007-10-26T08:31:29Z",
+      "user": "SolveCoagula",
+      "comment": "/* Criterio de demarcación */",
+      "size": 44316,
+      "byte_delta": 172
+    }
+  ]
+}

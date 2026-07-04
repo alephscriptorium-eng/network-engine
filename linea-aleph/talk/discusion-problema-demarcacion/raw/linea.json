@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Discusión:Problema de la demarcación",
+    "wiki": "es",
+    "corpus": "talk",
+    "namespace": 1,
+    "linked_article": "Problema de la demarcación",
+    "generated_at": "2026-06-22T07:47:37Z",
+    "corpus_dir": "talk/discusion-problema-demarcacion",
+    "window": {
+      "start": "2007-10-01",
+      "end": "2007-10-31"
+    },
+    "revision_count": 3,
+    "ordering": "newest_first_in_linea_md"
+  },
+  "revisiones": [
+    {
+      "revid": 12051164,
+      "parentid": 0,
+      "timestamp": "2007-10-14T11:13:08Z",
+      "user": "Pinar~eswiki",
+      "comment": "Página nueva: Un artículo enciclopédico no debería llevar una conclusión. ~~~~",
+      "size": 112,
+      "byte_delta": 112
+    },
+    {
+      "revid": 12057670,
+      "parentid": 12051164,
+      "timestamp": "2007-10-14T17:18:38Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 163,
+      "byte_delta": 51
+    },
+    {
+      "revid": 12057983,
+      "parentid": 12057670,
+      "timestamp": "2007-10-14T17:30:41Z",
+      "user": "SolveCoagula",
+      "comment": "",
+      "size": 228,
+      "byte_delta": 65
+    }
+  ]
+}

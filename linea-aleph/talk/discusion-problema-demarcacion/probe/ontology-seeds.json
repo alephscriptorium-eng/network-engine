@@ -1,0 +1,151 @@
+{
+  "description": "Semillas ontológicas extraídas del historial SolveCoagula",
+  "article": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación",
+  "sections": [
+    {
+      "section": "Nombre del artículo",
+      "edit_count": 42,
+      "sample_oldids": [
+        31994509,
+        31994481,
+        31981480,
+        31947655,
+        31796497
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Nombre_del_artículo"
+    },
+    {
+      "section": "Tamaño del artículo y Punto de Vista estrictamente Neutral",
+      "edit_count": 5,
+      "sample_oldids": [
+        12756071,
+        12755913,
+        12755902,
+        12755895,
+        12749163
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Tamaño_del_artículo_y_Punto_de_Vista_estrictamente_Neutral"
+    },
+    {
+      "section": "Sigue teniendo numerosos defectos",
+      "edit_count": 4,
+      "sample_oldids": [
+        17513128,
+        17512189,
+        17493168,
+        17038974
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Sigue_teniendo_numerosos_defectos"
+    },
+    {
+      "section": "Contenido copiado y repetido en varios artículos",
+      "edit_count": 4,
+      "sample_oldids": [
+        12749269,
+        12749015,
+        12748988,
+        12748839
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Contenido_copiado_y_repetido_en_varios_artículos"
+    },
+    {
+      "section": "Bibliografia",
+      "edit_count": 2,
+      "sample_oldids": [
+        147930993,
+        147874858
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Bibliografia"
+    },
+    {
+      "section": "Más sobre referencias",
+      "edit_count": 2,
+      "sample_oldids": [
+        124906867,
+        124885803
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Más_sobre_referencias"
+    },
+    {
+      "section": "Hecho de menos a Wittgenstein en el artículo",
+      "edit_count": 2,
+      "sample_oldids": [
+        22272681,
+        22166794
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Hecho_de_menos_a_Wittgenstein_en_el_artículo"
+    },
+    {
+      "section": "IABot",
+      "edit_count": 1,
+      "sample_oldids": [
+        117055777
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#IABot"
+    },
+    {
+      "section": "32;Devuelvo",
+      "edit_count": 1,
+      "sample_oldids": [
+        24476027
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#32;Devuelvo"
+    },
+    {
+      "section": "32;Simplifica",
+      "edit_count": 1,
+      "sample_oldids": [
+        24448684
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#32;Simplifica"
+    },
+    {
+      "section": "32;Nombre",
+      "edit_count": 1,
+      "sample_oldids": [
+        22653752
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#32;Nombre"
+    },
+    {
+      "section": "32;Ver",
+      "edit_count": 1,
+      "sample_oldids": [
+        22025630
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#32;Ver"
+    },
+    {
+      "section": "Lecturas recomendadas...",
+      "edit_count": 1,
+      "sample_oldids": [
+        21886218
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Lecturas_recomendadas..."
+    },
+    {
+      "section": "32;El",
+      "edit_count": 1,
+      "sample_oldids": [
+        21800245
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#32;El"
+    },
+    {
+      "section": "Artículo tremendamente problemático",
+      "edit_count": 1,
+      "sample_oldids": [
+        16397056
+      ],
+      "wiki_anchor": "https://es.wikipedia.org/wiki/Discusión:Problema_de_la_demarcación#Artículo_tremendamente_problemático"
+    }
+  ],
+  "viaje_sugerido": [
+    "snapshots/inicial → registro traducción",
+    "sección ¿Ciencia normal, paranormal o pseudociencias?",
+    "Feyerabend y autonomía",
+    "Kuhn y paradigma",
+    "Véase también → artículos enlazados",
+    "snapshots/final"
+  ]
+}

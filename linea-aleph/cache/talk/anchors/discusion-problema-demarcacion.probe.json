@@ -1,0 +1,590 @@
+{
+  "vista": "discusion-problema-demarcacion",
+  "title": "Discusión:Problema de la demarcación",
+  "linked_article": "Problema de la demarcación",
+  "generated_at": "2026-06-22T07:46:55Z",
+  "window": {
+    "start": "1971-01-01",
+    "end": "2099-12-31"
+  },
+  "wave_a_oldids": [
+    {
+      "oldid": 12051164,
+      "timestamp": "2007-10-14T11:13:08Z",
+      "note": "probe · Página nueva: Un artículo enciclopédico no debería llevar una conclusión. ~~~~",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12057670,
+      "timestamp": "2007-10-14T17:18:38Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12057983,
+      "timestamp": "2007-10-14T17:30:41Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12744674,
+      "timestamp": "2007-11-11T20:47:38Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12746317,
+      "timestamp": "2007-11-11T21:47:37Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12748839,
+      "timestamp": "2007-11-11T23:28:50Z",
+      "note": "probe · /* Contenido copiado y repetido en varios artículos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12748988,
+      "timestamp": "2007-11-11T23:36:08Z",
+      "note": "probe · /* Contenido copiado y repetido en varios artículos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12749015,
+      "timestamp": "2007-11-11T23:37:18Z",
+      "note": "probe · /* Contenido copiado y repetido en varios artículos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12749111,
+      "timestamp": "2007-11-11T23:42:36Z",
+      "note": "probe · Nueva sección: /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12749163,
+      "timestamp": "2007-11-11T23:45:27Z",
+      "note": "probe · /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12749269,
+      "timestamp": "2007-11-11T23:50:07Z",
+      "note": "probe · /* Contenido copiado y repetido en varios artículos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12755895,
+      "timestamp": "2007-11-12T10:49:48Z",
+      "note": "probe · /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12755902,
+      "timestamp": "2007-11-12T10:50:29Z",
+      "note": "probe · /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12755913,
+      "timestamp": "2007-11-12T10:51:42Z",
+      "note": "probe · /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12756071,
+      "timestamp": "2007-11-12T11:05:03Z",
+      "note": "probe · /* Tamaño del artículo y Punto de Vista estrictamente Neutral */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12913441,
+      "timestamp": "2007-11-18T21:18:46Z",
+      "note": "probe · Nueva sección: /* Artículo tremendamente problemático */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 12919626,
+      "timestamp": "2007-11-19T02:19:50Z",
+      "note": "probe · {{No seleccionado|{{subst:CURRENTYEAR}}}}",
+      "wave": "probe"
+    },
+    {
+      "oldid": 16397056,
+      "timestamp": "2008-04-06T11:28:11Z",
+      "note": "probe · /* Artículo tremendamente problemático */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17038974,
+      "timestamp": "2008-05-01T17:51:13Z",
+      "note": "probe · /* Sigue teniendo numerosos defectos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17487417,
+      "timestamp": "2008-05-19T01:01:21Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17493168,
+      "timestamp": "2008-05-19T09:47:39Z",
+      "note": "probe · /* Sigue teniendo numerosos defectos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17512189,
+      "timestamp": "2008-05-20T00:31:38Z",
+      "note": "probe · /* Sigue teniendo numerosos defectos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17513128,
+      "timestamp": "2008-05-20T01:25:01Z",
+      "note": "probe · /* Sigue teniendo numerosos defectos */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17857396,
+      "timestamp": "2008-06-02T08:22:45Z",
+      "note": "probe · cdb pasada",
+      "wave": "probe"
+    },
+    {
+      "oldid": 17859588,
+      "timestamp": "2008-06-02T11:27:32Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21143633,
+      "timestamp": "2008-10-21T19:40:05Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21789523,
+      "timestamp": "2008-11-15T10:25:26Z",
+      "note": "probe · Nueva sección: /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21795631,
+      "timestamp": "2008-11-15T16:43:38Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21800206,
+      "timestamp": "2008-11-15T19:24:58Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21800245,
+      "timestamp": "2008-11-15T19:26:07Z",
+      "note": "probe · [[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21800397,
+      "timestamp": "2008-11-15T19:31:16Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21800422,
+      "timestamp": "2008-11-15T19:31:51Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21800503,
+      "timestamp": "2008-11-15T19:34:17Z",
+      "note": "probe · [[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criter",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21802044,
+      "timestamp": "2008-11-15T20:21:25Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21802058,
+      "timestamp": "2008-11-15T20:22:03Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21822768,
+      "timestamp": "2008-11-16T17:21:46Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21826619,
+      "timestamp": "2008-11-16T19:49:57Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21840869,
+      "timestamp": "2008-11-17T11:48:36Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21843358,
+      "timestamp": "2008-11-17T14:43:59Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21847600,
+      "timestamp": "2008-11-17T17:28:22Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21851842,
+      "timestamp": "2008-11-17T20:13:48Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21864490,
+      "timestamp": "2008-11-18T12:33:33Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21864522,
+      "timestamp": "2008-11-18T12:35:38Z",
+      "note": "probe · /* Nombre del artículo */ +genitivo",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21865914,
+      "timestamp": "2008-11-18T14:17:23Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21885940,
+      "timestamp": "2008-11-19T10:40:43Z",
+      "note": "probe · Nueva sección: /* Lecturas recomendadas... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21886218,
+      "timestamp": "2008-11-19T10:57:21Z",
+      "note": "probe · /* Lecturas recomendadas... */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21887341,
+      "timestamp": "2008-11-19T12:15:10Z",
+      "note": "probe · Revertidos los cambios de [[Special:Contributions/Kilopondioescaso|Kilopondioesc",
+      "wave": "probe"
+    },
+    {
+      "oldid": 21999413,
+      "timestamp": "2008-11-24T14:10:39Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22025630,
+      "timestamp": "2008-11-25T13:02:19Z",
+      "note": "probe · [[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22040349,
+      "timestamp": "2008-11-25T20:21:50Z",
+      "note": "probe · /* Nombre del artículo */ traslado cuestionable",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22166766,
+      "timestamp": "2008-12-01T12:20:44Z",
+      "note": "probe · Nueva sección: /* Hecho de menos a Wittgenstein en el artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22166794,
+      "timestamp": "2008-12-01T12:22:36Z",
+      "note": "probe · /* Hecho de menos a Wittgenstein en el artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22267892,
+      "timestamp": "2008-12-05T18:50:22Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22267981,
+      "timestamp": "2008-12-05T18:54:38Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22268008,
+      "timestamp": "2008-12-05T18:56:04Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22268866,
+      "timestamp": "2008-12-05T19:32:05Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22271239,
+      "timestamp": "2008-12-05T21:40:43Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22272629,
+      "timestamp": "2008-12-05T22:27:24Z",
+      "note": "probe · /* Nombre del artículo */ unos días más",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22272681,
+      "timestamp": "2008-12-05T22:29:28Z",
+      "note": "probe · /* Hecho de menos a Wittgenstein en el artículo */ resp.",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22362305,
+      "timestamp": "2008-12-09T22:22:08Z",
+      "note": "probe · /* Nombre del artículo */ Datos para el retraslado; opinen please",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22362328,
+      "timestamp": "2008-12-09T22:23:44Z",
+      "note": "probe · /* Nombre del artículo */ ups",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22372527,
+      "timestamp": "2008-12-10T12:07:14Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22373219,
+      "timestamp": "2008-12-10T13:08:05Z",
+      "note": "probe · /* Nombre del artículo */ resp.",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22652568,
+      "timestamp": "2008-12-16T21:23:06Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22653752,
+      "timestamp": "2008-12-16T22:14:58Z",
+      "note": "probe · [[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criter",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22653814,
+      "timestamp": "2008-12-16T22:17:43Z",
+      "note": "probe · /* Nombre del artículo */ done",
+      "wave": "probe"
+    },
+    {
+      "oldid": 22654080,
+      "timestamp": "2008-12-16T22:32:42Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 24265954,
+      "timestamp": "2009-02-21T10:25:18Z",
+      "note": "probe · Robot: Sustituyendo la plantilla: Hecho",
+      "wave": "probe"
+    },
+    {
+      "oldid": 24448684,
+      "timestamp": "2009-02-28T01:21:39Z",
+      "note": "probe · [[Discusión:Criterio de demarcación]] ha sido trasladado a [[Discusión:Problema ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 24476027,
+      "timestamp": "2009-03-01T07:57:30Z",
+      "note": "probe · [[Discusión:Problema de la demarcación]] ha sido trasladado a [[Discusión:Criter",
+      "wave": "probe"
+    },
+    {
+      "oldid": 25329969,
+      "timestamp": "2009-04-04T12:39:40Z",
+      "note": "probe · Nueva sección: /* cita de Popper */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31180517,
+      "timestamp": "2009-11-05T00:23:02Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31181343,
+      "timestamp": "2009-11-05T00:50:57Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31506305,
+      "timestamp": "2009-11-16T18:43:01Z",
+      "note": "probe · /* Nombre del artículo */ respuestas",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31506398,
+      "timestamp": "2009-11-16T18:46:02Z",
+      "note": "probe · /* Nombre del artículo */ ccmm",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796310,
+      "timestamp": "2009-11-27T18:39:46Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796364,
+      "timestamp": "2009-11-27T18:41:07Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796395,
+      "timestamp": "2009-11-27T18:41:58Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796446,
+      "timestamp": "2009-11-27T18:43:29Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796465,
+      "timestamp": "2009-11-27T18:44:06Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31796497,
+      "timestamp": "2009-11-27T18:45:00Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31947655,
+      "timestamp": "2009-12-03T17:29:45Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31981480,
+      "timestamp": "2009-12-05T00:17:22Z",
+      "note": "probe · /* Nombre del artículo */  La bibliografía secundaria decide",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31994481,
+      "timestamp": "2009-12-05T17:59:52Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 31994509,
+      "timestamp": "2009-12-05T18:00:31Z",
+      "note": "probe · /* Nombre del artículo */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 39443357,
+      "timestamp": "2010-08-12T13:58:35Z",
+      "note": "probe · ",
+      "wave": "probe"
+    },
+    {
+      "oldid": 74464391,
+      "timestamp": "2014-05-17T20:01:20Z",
+      "note": "probe · Hiperfelix movió la página [[Discusión:Criterio de demarcación]] a [[Discusión:P",
+      "wave": "probe"
+    },
+    {
+      "oldid": 103748327,
+      "timestamp": "2017-11-27T19:15:29Z",
+      "note": "probe · Bot: [[Especial:Errores_de_sintaxis/tidy-font-bug]]",
+      "wave": "probe"
+    },
+    {
+      "oldid": 117055777,
+      "timestamp": "2019-06-30T12:04:14Z",
+      "note": "probe · Notificación sobre referencias alteradas que necesitan revisión #IABot (v2.0beta",
+      "wave": "probe"
+    },
+    {
+      "oldid": 124885787,
+      "timestamp": "2020-04-05T07:59:25Z",
+      "note": "probe · Sección nueva: /* Más sobre referencias */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 124885803,
+      "timestamp": "2020-04-05T08:00:29Z",
+      "note": "probe · /* Más sobre referencias */ cm",
+      "wave": "probe"
+    },
+    {
+      "oldid": 124906867,
+      "timestamp": "2020-04-05T19:17:31Z",
+      "note": "probe · /* Más sobre referencias */ cm",
+      "wave": "probe"
+    },
+    {
+      "oldid": 147874357,
+      "timestamp": "2022-12-12T12:44:56Z",
+      "note": "probe · Sección nueva: /* Bibliografia */",
+      "wave": "probe"
+    },
+    {
+      "oldid": 147874858,
+      "timestamp": "2022-12-12T13:26:26Z",
+      "note": "probe · /* Bibliografia */ Respuesta",
+      "wave": "probe"
+    },
+    {
+      "oldid": 147930993,
+      "timestamp": "2022-12-14T18:58:10Z",
+      "note": "probe · /* Bibliografia */ Respuesta",
+      "wave": "probe"
+    },
+    {
+      "oldid": 158564525,
+      "timestamp": "2024-03-02T19:05:38Z",
+      "note": "probe · corrigiendo parametro ISBN",
+      "wave": "probe"
+    }
+  ],
+  "probe": true,
+  "viaje_id": "talk-sala-probe"
+}

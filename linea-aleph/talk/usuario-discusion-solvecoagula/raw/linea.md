@@ -1,5 +1,5 @@
 # Usuario discusión:SolveCoagula — historial talk (es.wikipedia)
-# generado: 2026-06-21T00:44:10Z · registros en ventana oct–nov 2007: 34
+# generado: 2026-06-22T07:49:46Z · registros en ventana 2007-10-01 – 2007-11-30: 34
 
 Página: [Usuario discusión:SolveCoagula](https://es.wikipedia.org/wiki/Usuario_discusión:SolveCoagula)
 Namespace: **3** · corpus: **talk**
