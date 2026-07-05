@@ -24,8 +24,6 @@ en nodos históricos con tesis y anclas Wikipedia (L0). Este skill guía al agen
 4. **Cachear** revisiones (`linea-aleph/scripts/fetch_snapshot.py`) bajo demanda
 5. Alimentar buffers MCS en [`medidor-poder-politico`](../../../../medidor-poder-politico)
 
-Relación con el ARG: [`ALEPH_ET_OMEGA`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md) — caso inaugural `aleph-et-omega-parlamento-2026`, `linea_id: espana`, semilla P24 (junio 2026).
-
 Fork operativo de [`linea-aleph-browser`](../linea-aleph-browser/SKILL.md); mismas políticas de caché API (`w/api.php`, nunca scrape HTML).
 
 ## Antes de empezar
@@ -118,8 +116,7 @@ Citar tesis del nodo (`meta.json` → `tesis_villacañas`) con ranura medidor ob
 
 ```bash
 cd medidor-poder-politico
-medidor-poder cribar data/buffers/MCS-N-entrada.json --caso aleph-et-omega-parlamento-2026
-medidor-poder commit data/buffers/MCS-N-entrada.json --caso aleph-et-omega-parlamento-2026
+medidor-poder cribar data/buffers/MCS-N-entrada.json --caso caso-slug
 ```
 
 ### 5. Publicar en blockchain ARG
