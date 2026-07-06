@@ -1,0 +1,160 @@
+/* Black & White MCP Theme - Zeus MCP Mesh SDK */
+/* Minimal monochrome interface with Courier New typography */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #000000;
+  --primary-hover: #1a1a1a;
+  --primary-text: #ffffff;
+  --primary-color-alpha: rgba(0, 0, 0, 0.14);
+
+  /* Accent and aliases */
+  --accent-color: #000000;
+  --accent-hover: #1a1a1a;
+  --success-color: #111111;
+  --warning-color: #555555;
+  --danger-color: #000000;
+  --danger-hover: #1a1a1a;
+  --danger-text: #ffffff;
+  --info-color: #333333;
+
+  /* Background Colors */
+  --background-primary: #ffffff;
+  --background-secondary: #f7f7f7;
+  --background-tertiary: #ececec;
+  --background-hover: #e2e2e2;
+
+  /* Compatibility aliases used by some Zeus styles */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f7;
+  --bg-tertiary: #ececec;
+
+  /* Text Colors */
+  --text-primary: #000000;
+  --text-secondary: #3a3a3a;
+  --heading-color: #000000;
+
+  /* Borders and Inputs */
+  --border-color: #000000;
+  --input-background: #ffffff;
+
+  /* Chat and Response */
+  --chat-background: #ffffff;
+  --response-background: #f3f3f3;
+
+  /* Semantic backgrounds for notices */
+  --success-bg: #f3f3f3;
+  --success-text: #111111;
+  --success-border: #111111;
+  --warning-bg: #efefef;
+  --warning-text: #444444;
+  --warning-border: #444444;
+  --error-bg: #f3f3f3;
+  --error-text: #000000;
+  --error-border: #000000;
+  --info-bg: #f0f0f0;
+  --info-text: #222222;
+  --info-border: #222222;
+
+  /* Layout */
+  --sidebar-width: 250px;
+  --header-height: 60px;
+  --content-padding: 1rem;
+  --content-max-width: 1200px;
+  --border-radius: 0.125rem;
+
+  /* Shadows */
+  --shadow-small: 2px 2px 0 rgba(0, 0, 0, 0.12);
+  --shadow-medium: 4px 4px 0 rgba(0, 0, 0, 0.14);
+  --shadow-large: 6px 6px 0 rgba(0, 0, 0, 0.16);
+
+  /* Fonts */
+  --font-primary: 'Courier New', Courier, monospace;
+  --font-monospace: 'Courier New', Courier, monospace;
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.5rem;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text-primary);
+}
+
+.main-navigation {
+  background: #000000;
+  border-bottom: 2px solid #000000;
+  box-shadow: none;
+}
+
+.section-content,
+.feature-card,
+.status-card,
+.toggle-setting,
+.theme-preview,
+.settings-form {
+  background: var(--background-secondary);
+  border-color: var(--border-color);
+}
+
+.section-content,
+.feature-card,
+.status-card {
+  box-shadow: var(--shadow-small);
+}
+
+.main-footer {
+  background: #ffffff;
+  border-top: 2px solid #000000;
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.btn-secondary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+input,
+select,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.status-card {
+  border-left-color: #000000;
+}
+
+.theme-sample-Black-White-MCP {
+  background: linear-gradient(135deg, #000000 0%, #ffffff 100%);
+}

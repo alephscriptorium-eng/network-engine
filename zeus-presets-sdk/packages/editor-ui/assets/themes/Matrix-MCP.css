@@ -1,0 +1,284 @@
+/* Matrix MCP Theme - Zeus MCP Mesh SDK */
+/* Migrated from Asterion following diogenes patterns */
+
+:root {
+  /* Primary Colors - Asterion Matrix MCP Variables */
+  --primary-color: #00CC33;  /* Less bright green for better contrast */
+  --primary-hover: #00E639;
+  --primary-text: #000000;
+  --primary-color-alpha: rgba(0, 204, 51, 0.2);
+
+  /* Background Colors */
+  --background-primary: #000000;
+  --background-secondary: #001a00;  /* Slightly lighter for better form contrast */
+  --background-tertiary: #002a00;
+  --background-hover: #003a00;
+
+  /* Text Colors */
+  --text-primary: #00FF41;
+  --text-secondary: #00CC33;
+  --heading-color: #00FF50;
+
+  /* Border and Input */
+  --border-color: #004400;
+  --input-background: #001100;
+
+  /* Accent Colors */
+  --accent-color: #00FFFF;
+  --success-color: #00FF41;
+  --warning-color: #FFFF00;
+  --danger-color: #FF0040;
+  --danger-hover: #CC0033;
+  --danger-text: #FFFFFF;
+
+  /* Chat and Response */
+  --chat-background: #001100;
+  --response-background: #000A00;
+
+  /* Shadows */
+  --shadow-small: 0 2px 4px rgba(0, 255, 65, 0.2);
+  --shadow-medium: 0 4px 8px rgba(0, 255, 65, 0.3);
+  --shadow-large: 0 8px 16px rgba(0, 255, 65, 0.4);
+  
+  /* Layout - Zeus specific */
+  --sidebar-width: 250px;
+  --header-height: 60px;
+  --content-padding: 1rem;
+  --content-max-width: 1200px;
+  --border-radius: 0.375rem;
+  
+  /* Fonts */
+  --font-primary: 'Courier New', monospace;
+  --font-monospace: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.5rem;
+}
+
+/* Matrix theme specific overrides */
+body {
+  background: radial-gradient(circle at center, #000A00 0%, #000000 100%);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+.main-navigation {
+  background: linear-gradient(135deg, #001100 0%, #003300 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 255, 65, 0.3);
+}
+
+.main-navigation .nav-list a {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+.main-navigation .nav-list a:hover {
+  background-color: rgba(0, 255, 65, 0.1) !important;
+  color: #00FF80 !important;
+}
+
+.main-navigation .nav-list a.current {
+  background-color: rgba(0, 255, 65, 0.2) !important;
+  color: #00FF80 !important;
+  font-weight: 600;
+}
+
+.section-content {
+  background-color: var(--background-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.main-footer {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--text-secondary);
+  color: var(--background-primary);
+}
+
+input, select, textarea {
+  background-color: var(--input-background);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-alpha);
+}
+
+/* Theme-specific component styles */
+.feature-card {
+  background: var(--background-secondary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-small);
+}
+
+/* Settings and Form improvements */
+.settings-section {
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.settings-label {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+.settings-description {
+  color: var(--text-secondary) !important;
+}
+
+select, .form-control {
+  background: var(--input-background) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+select option {
+  background: var(--background-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+.form-group label {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+}
+
+.form-group small {
+  color: var(--text-secondary) !important;
+}
+
+/* Override white backgrounds in settings */
+.form-group, .setting-group, .settings-card {
+  background: var(--background-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+.settings-container .form-group {
+  background: transparent !important;
+}
+
+/* Fix light backgrounds */
+fieldset, .fieldset {
+  background: var(--background-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+fieldset legend {
+  color: var(--heading-color) !important;
+}
+
+/* Form inputs and controls */
+.form-control, .form-input, input[type="text"], input[type="url"], input[type="number"] {
+  background: var(--input-background) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Toggle switches */
+.switch {
+  background: var(--background-hover) !important;
+}
+
+.switch.active {
+  background: var(--primary-color) !important;
+}
+
+/* Additional white background fixes */
+.toggle-setting {
+  background: var(--background-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+.toggle-switch {
+  background: var(--background-hover) !important;
+}
+
+.toggle-switch::after {
+  background: var(--text-primary) !important;
+}
+
+.setting-toggle:checked + .toggle-switch {
+  background: var(--primary-color) !important;
+}
+
+/* Section headers fixes */
+fieldset > legend, .section-header, .settings-section-header {
+  background: var(--background-secondary) !important;
+  color: var(--heading-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Feature toggles specific fixes */
+.feature-toggle, .feature-setting {
+  background: var(--background-secondary) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Group headers */
+.settings-group > h2, .settings-group > h3 {
+  background: transparent !important;
+  color: var(--heading-color) !important;
+}
+
+/* Final white background eliminators */
+fieldset, .fieldset, legend {
+  background: var(--background-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Section corners fix */
+fieldset legend, legend {
+  background: var(--background-secondary) !important;
+  color: var(--heading-color) !important;
+  border: none !important;
+  padding: 0.5rem 1rem !important;
+}
+
+/* Any remaining white backgrounds */
+.settings-container *, .settings-section *, .form-section * {
+  border-color: var(--border-color) !important;
+}
+
+/* Override any hardcoded white */
+[style*="background: white"], [style*="background: #fff"], [style*="background-color: white"], [style*="background-color: #fff"] {
+  background: var(--background-secondary) !important;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.status-card {
+  background: var(--background-secondary);
+  border-left-color: var(--primary-color);
+}
+
+.section-title {
+  color: var(--heading-color);
+}
+
+.theme-sample-Matrix-MCP { 
+  background: linear-gradient(135deg, #000000 0%, #00FF41 100%); 
+}

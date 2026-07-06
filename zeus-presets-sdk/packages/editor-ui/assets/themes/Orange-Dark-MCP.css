@@ -1,0 +1,134 @@
+/* Orange Dark MCP Theme - Zeus MCP Mesh SDK */
+/* Migrated from Asterion following diogenes patterns */
+
+:root {
+  /* Primary Colors - Asterion Orange Dark MCP Variables */
+  --primary-color: #FF6F00;
+  --primary-hover: #FF8F00;
+  --primary-text: #FFFFFF;
+  --primary-color-alpha: rgba(255, 111, 0, 0.2);
+
+  /* Background Colors - Dark theme */
+  --background-primary: #0A0A0A;
+  --background-secondary: #1A1A1A;
+  --background-tertiary: #2A2A2A;
+  --background-hover: #333333;
+
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --heading-color: #FF6F00;
+
+  /* Border and Input */
+  --border-color: #404040;
+  --input-background: #1A1A1A;
+
+  /* Accent Colors */
+  --accent-color: #FFB74D;
+  --success-color: #4CAF50;
+  --warning-color: #FFC107;
+  --danger-color: #F44336;
+  --danger-hover: #D32F2F;
+  --danger-text: #FFFFFF;
+
+  /* Chat and Response */
+  --chat-background: #1A1A1A;
+  --response-background: #0F0F0F;
+
+  /* Shadows */
+  --shadow-small: 0 2px 4px rgba(255, 111, 0, 0.2);
+  --shadow-medium: 0 4px 8px rgba(255, 111, 0, 0.3);
+  --shadow-large: 0 8px 16px rgba(255, 111, 0, 0.4);
+  
+  /* Layout - Zeus specific */
+  --sidebar-width: 250px;
+  --header-height: 60px;
+  --content-padding: 1rem;
+  --content-max-width: 1200px;
+  --border-radius: 0.375rem;
+  
+  /* Fonts */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-monospace: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.5rem;
+}
+
+/* Orange Dark theme specific overrides */
+body {
+  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #2A1A0A 100%);
+  color: var(--text-primary);
+}
+
+.main-navigation {
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(255, 111, 0, 0.2);
+}
+
+.section-content {
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.main-footer {
+  background-color: var(--background-secondary);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--text-secondary);
+  color: var(--background-primary);
+}
+
+input, select, textarea {
+  background-color: var(--input-background);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-alpha);
+}
+
+/* Theme-specific component styles */
+.feature-card {
+  background: linear-gradient(145deg, #2A2A2A, #1A1A1A);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-small);
+}
+
+.feature-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.status-card {
+  background: var(--background-secondary);
+  border-left-color: var(--primary-color);
+}
+
+.section-title {
+  color: var(--heading-color);
+}
+
+.theme-sample-Orange-Dark-MCP { 
+  background: linear-gradient(135deg, #FF6F00 0%, #0A0A0A 100%); 
+}

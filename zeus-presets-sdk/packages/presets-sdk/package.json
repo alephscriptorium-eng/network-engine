@@ -1,0 +1,20 @@
+{
+  "name": "@zeus/presets-sdk",
+  "version": "0.1.0",
+  "description": "MCP catalog & presets SDK: discovery, extraction, preset persistence and HTTP routes",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "license": "AIPLv1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "archiver": "^7.0.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "zeus-presets-editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP catalog & presets manager: presets SDK, solar-system demo servers, and preset editor UI",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start:solar": "npm run start -w @zeus/solar-system",
+    "start:editor": "npm run start -w @zeus/editor-ui",
+    "test:sdk": "npm test -w @zeus/presets-sdk",
+    "test:solar": "npm test -w @zeus/solar-system",
+    "e2e": "node e2e/demo.mjs"
+  },
+  "license": "AIPLv1"
+}

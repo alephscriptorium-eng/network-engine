@@ -1,0 +1,37 @@
+{
+  "server": {
+    "port": 3012,
+    "host": "localhost"
+  },
+  "features": {
+    "presetLibrary": true,
+    "mcpExplorer": true,
+    "themeSystem": true
+  },
+  "theme": {
+    "current": "Black-White-MCP"
+  },
+  "discovery": {
+    "urls": [
+      "http://localhost:4101",
+      "http://localhost:4102",
+      "http://localhost:4103"
+    ],
+    "timeoutMs": 2000
+  },
+  "presets": {
+    "dataDir": "../../data",
+    "library": "default",
+    "autoLoad": true
+  },
+  "mcp": {
+    "servers": [],
+    "timeout": 30000
+  },
+  "ui": {
+    "language": "es",
+    "animations": true,
+    "darkMode": false
+  },
+  "debug": false
+}
