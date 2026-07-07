@@ -44,6 +44,7 @@ export function createPresetRoutes({ registry, store, prefix = '/api/mcp' } = {}
         serversCount: catalog.length,
         totalTools: catalog.reduce((sum, server) => sum + server.tools.length, 0),
         totalResources: catalog.reduce((sum, server) => sum + server.resources.length, 0),
+        totalResourceTemplates: catalog.reduce((sum, server) => sum + (server.resourceTemplates?.length || 0), 0),
         totalPrompts: catalog.reduce((sum, server) => sum + server.prompts.length, 0)
       });
 

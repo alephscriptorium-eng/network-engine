@@ -76,6 +76,7 @@ export function createCatalogService({ registry, cacheTtlMs = 5000 }) {
       type: 'mcp',
       toolsCount: server.tools?.length || 0,
       resourcesCount: server.resources?.length || 0,
+      resourceTemplatesCount: server.resourceTemplates?.length || 0,
       promptsCount: server.prompts?.length || 0,
       url: server.serverInfo?.url
     }));
@@ -120,6 +121,18 @@ export function createCatalogService({ registry, cacheTtlMs = 5000 }) {
     }));
   }
 
+  async function getServerResourceTemplates(serverId) {
+    const entry = await getServerEntry(serverId);
+    if (!entry) return null;
+    return (entry.resourceTemplates || []).map(template => ({
+      name: template.name,
+      description: template.description,
+      uriTemplate: template.uriTemplate,
+      mimeType: template.mimeType,
+      type: template.type || 'resourceTemplate'
+    }));
+  }
+
   return {
     refreshCatalog,
     getCatalog,
@@ -127,6 +140,7 @@ export function createCatalogService({ registry, cacheTtlMs = 5000 }) {
     getAllServers,
     getServerTools,
     getServerResources,
+    getServerResourceTemplates,
     getServerPrompts
   };
 }

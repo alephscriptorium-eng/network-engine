@@ -38,7 +38,7 @@ export function buildReadme(preset) {
     preset.description ? `> ${preset.description}` : '_No description provided._',
     '',
     `- **Category:** ${preset.category || 'General'}`,
-    `- **Items:** ${counts.total} (${counts.tools} tools, ${counts.resources} resources, ${counts.prompts} prompts)`,
+    `- **Items:** ${counts.total} (${counts.tools} tools, ${counts.resources} resources, ${counts.resourceTemplates} templates, ${counts.prompts} prompts)`,
     ''
   ];
 

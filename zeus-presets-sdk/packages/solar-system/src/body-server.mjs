@@ -10,14 +10,14 @@
 import express from 'express';
 import cors from 'cors';
 import { z } from 'zod';
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { McpServer, ResourceTemplate } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import { SERVER_VERSION } from './bodies.mjs';
 
 const MS_PER_DAY = 86400000;
 const TWO_PI = 2 * Math.PI;
 
-const CAPABILITIES = { tools: 4, resources: 2, prompts: 1 };
+const CAPABILITIES = { tools: 5, resources: 2, resourceTemplates: 2, prompts: 1 };
 
 function buildBodyInfo(body) {
   return {
@@ -65,8 +65,70 @@ function getResourceRegistry(body) {
   ];
 }
 
+function getTemplateRegistry(body) {
+  return [
+    {
+      name: 'body-position',
+      uriTemplate: 'body://position/{timestamp}',
+      title: `${body.name} position at timestamp`,
+      mimeType: 'application/json',
+      description: `Heliocentric position of ${body.name} at a specific epoch-ms. Each resolved URI is a stable, cacheable document.`,
+      read: (variables) => {
+        const parsed = parseTimestamp(variables.timestamp);
+        if (parsed.error) return parsed;
+        return computePosition(body, parsed.timestamp);
+      }
+    },
+    {
+      name: 'body-rotation',
+      uriTemplate: 'body://rotation/{timestamp}',
+      title: `${body.name} rotation at timestamp`,
+      mimeType: 'application/json',
+      description: `Rotation angle of ${body.name} at a specific epoch-ms. Each resolved URI is a stable, cacheable document.`,
+      read: (variables) => {
+        const parsed = parseTimestamp(variables.timestamp);
+        if (parsed.error) return parsed;
+        return computeRotation(body, parsed.timestamp);
+      }
+    }
+  ];
+}
+
 function toPublicDescriptor({ name, uri, mimeType, description }) {
   return { name, uri, mimeType, description };
+}
+
+function toPublicTemplateDescriptor({ name, uriTemplate, mimeType, description }) {
+  return { name, uriTemplate, mimeType, description };
+}
+
+function parseTimestamp(value) {
+  const n = Number(value);
+  if (!Number.isFinite(n) || !Number.isInteger(n)) {
+    return { error: `Invalid timestamp "${value}": must be an integer epoch milliseconds` };
+  }
+  return { timestamp: n };
+}
+
+function matchTemplateUri(uri, templates) {
+  for (const entry of templates) {
+    const varNames = [];
+    const parts = entry.uriTemplate.split(/\{([^}]+)\}/);
+    let pattern = '';
+    for (let i = 0; i < parts.length; i++) {
+      if (i % 2 === 0) {
+        pattern += parts[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      } else {
+        varNames.push(parts[i]);
+        pattern += '([^/]+)';
+      }
+    }
+    const match = uri.match(new RegExp(`^${pattern}$`));
+    if (!match) continue;
+    const variables = Object.fromEntries(varNames.map((name, i) => [name, match[i + 1]]));
+    return { entry, variables };
+  }
+  return null;
 }
 
 function orbitalAngle(timestamp, periodDays) {
@@ -118,6 +180,7 @@ function jsonContent(payload) {
 function buildMcpServer(body) {
   const server = new McpServer({ name: body.name, version: SERVER_VERSION });
   const registry = getResourceRegistry(body);
+  const templateRegistry = getTemplateRegistry(body);
 
   for (const entry of registry) {
     server.registerResource(
@@ -133,6 +196,29 @@ function buildMcpServer(body) {
           }
         ]
       })
+    );
+  }
+
+  for (const entry of templateRegistry) {
+    server.registerResource(
+      entry.name,
+      new ResourceTemplate(entry.uriTemplate, { list: undefined }),
+      { title: entry.title, description: entry.description, mimeType: entry.mimeType },
+      async (uri, variables) => {
+        const payload = entry.read(variables);
+        if (payload.error) {
+          throw new Error(payload.error);
+        }
+        return {
+          contents: [
+            {
+              uri: uri.href,
+              mimeType: entry.mimeType,
+              text: JSON.stringify(payload, null, 2)
+            }
+          ]
+        };
+      }
     );
   }
 
@@ -178,29 +264,57 @@ function buildMcpServer(body) {
   );
 
   server.registerTool(
+    'getResourceTemplates',
+    {
+      title: `List ${body.name} resource templates`,
+      description: `Returns the URI templates of MCP resource templates registered by the ${body.name} server. Substitute variables (e.g. timestamp) and use getResourceByUri to read the JSON payload.`,
+      inputSchema: {}
+    },
+    async () => jsonContent({
+      body: body.name,
+      uriTemplates: templateRegistry.map((t) => t.uriTemplate),
+      resourceTemplates: templateRegistry.map(toPublicTemplateDescriptor)
+    })
+  );
+
+  server.registerTool(
     'getResourceByUri',
     {
       title: `Read ${body.name} resource by URI`,
-      description: `Reads a registered MCP resource by URI and returns its JSON payload. URI must be one returned by getResourcesUris.`,
+      description: `Reads a registered MCP resource or template-resolved URI and returns its JSON payload. URI must be a fixed resource URI or a resolved template URI (e.g. body://position/1700000000000).`,
       inputSchema: {
-        uri: z.string().describe('Registered resource URI. Use one returned by getResourcesUris.')
+        uri: z.string().describe('Resource URI or resolved template URI.')
       }
     },
     async ({ uri }) => {
-      const entry = registry.find((r) => r.uri === uri);
-      if (!entry) {
-        const availableUris = registry.map((r) => r.uri);
-        return {
-          isError: true,
-          content: [
-            {
-              type: 'text',
-              text: `Unknown resource URI "${uri}". Available: ${availableUris.join(', ')}`
-            }
-          ]
-        };
+      const fixed = registry.find((r) => r.uri === uri);
+      if (fixed) {
+        return jsonContent(fixed.read());
       }
-      return jsonContent(entry.read());
+
+      const matched = matchTemplateUri(uri, templateRegistry);
+      if (matched) {
+        const payload = matched.entry.read(matched.variables);
+        if (payload.error) {
+          return {
+            isError: true,
+            content: [{ type: 'text', text: payload.error }]
+          };
+        }
+        return jsonContent(payload);
+      }
+
+      const availableUris = registry.map((r) => r.uri);
+      const availableTemplates = templateRegistry.map((t) => t.uriTemplate);
+      return {
+        isError: true,
+        content: [
+          {
+            type: 'text',
+            text: `Unknown resource URI "${uri}". Available fixed: ${availableUris.join(', ')}. Templates: ${availableTemplates.join(', ')}`
+          }
+        ]
+      };
     }
   );
 
@@ -218,6 +332,9 @@ function buildMcpServer(body) {
     },
     ({ timestamp }) => {
       const at = timestamp ? `timestamp ${timestamp} (epoch ms)` : 'the current time (Date.now())';
+      const tsArg = timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)';
+      const resolvedPositionUri = timestamp ? `body://position/${timestamp}` : 'body://position/{timestamp} with the chosen epoch ms';
+      const resolvedRotationUri = timestamp ? `body://rotation/${timestamp}` : 'body://rotation/{timestamp} with the chosen epoch ms';
       return {
         messages: [
           {
@@ -230,8 +347,14 @@ function buildMcpServer(body) {
                 'Steps:',
                 '1. Read the resource body://info to get the physical constants and description of the body.',
                 '   If the client cannot attach MCP resources directly, call getResourceByUri({ uri: "body://info" }).',
-                `2. Call the tool get_position with ${timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)'} to get its heliocentric position.`,
-                `3. Call the tool get_rotation with ${timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)'} to get its rotation angle.`,
+                `2. Obtain the heliocentric position at ${at}:`,
+                `   - Preferred: read the resource template ${resolvedPositionUri}.`,
+                `   - Alternative: call get_position with ${tsArg}.`,
+                `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://position/${timestamp}` : 'body://position/<epoch-ms>'}" }).`,
+                `3. Obtain the rotation state at ${at}:`,
+                `   - Preferred: read the resource template ${resolvedRotationUri}.`,
+                `   - Alternative: call get_rotation with ${tsArg}.`,
+                `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://rotation/${timestamp}` : 'body://rotation/<epoch-ms>'}" }).`,
                 '4. Write a concise status report combining the fact card, the position (angle and x/y in AU) and the rotation state at that instant.'
               ].join('\n')
             }

@@ -175,7 +175,7 @@ const explorerHeader = (server, selectedItems) => {
  * Explorer content tabs
  */
 const explorerTabs = (serverContent) => {
-  const { tools = [], resources = [], prompts = [] } = serverContent;
+  const { tools = [], resources = [], resourceTemplates = [], prompts = [] } = serverContent;
 
   return nav({ class: 'explorer-tabs' },
     button({
@@ -192,6 +192,12 @@ const explorerTabs = (serverContent) => {
 
     button({
       class: 'tab-button',
+      'data-tab': 'resourceTemplates',
+      'data-action': 'switch-tab'
+    }, `Templates (${resourceTemplates.length})`),
+
+    button({
+      class: 'tab-button',
       'data-tab': 'prompts',
       'data-action': 'switch-tab'
     }, `Prompts (${prompts.length})`)
@@ -202,7 +208,7 @@ const explorerTabs = (serverContent) => {
  * Explorer content area with items
  */
 const explorerContent = (serverContent, selectedItems) => {
-  const { tools = [], resources = [], prompts = [] } = serverContent;
+  const { tools = [], resources = [], resourceTemplates = [], prompts = [] } = serverContent;
 
   return div({ class: 'explorer-content' },
     div({ class: 'content-controls' },
@@ -258,6 +264,15 @@ const explorerContent = (serverContent, selectedItems) => {
       resources.length > 0
         ? resourcesGrid(resources, selectedItems)
         : emptyTabState('resources')
+    ),
+
+    div({
+      class: 'tab-content',
+      'data-tab-content': 'resourceTemplates'
+    },
+      resourceTemplates.length > 0
+        ? resourceTemplatesGrid(resourceTemplates, selectedItems)
+        : emptyTabState('resourceTemplates')
     ),
 
     div({
@@ -360,6 +375,44 @@ const resourceItem = (resource, isSelected) => {
 };
 
 /**
+ * Resource templates grid component
+ */
+const resourceTemplatesGrid = (resourceTemplates, selectedItems) => {
+  return div({ class: 'items-grid' },
+    resourceTemplates.map(template => resourceTemplateItem(template, selectedItems.includes(template.id)))
+  );
+};
+
+/**
+ * Individual resource template item
+ */
+const resourceTemplateItem = (template, isSelected) => {
+  return div({
+    class: `item-card resource-template-item ${isSelected ? 'selected' : ''} clickable`,
+    'data-item-id': template.id || template.name,
+    'data-item-type': 'resourceTemplate',
+    'data-action': 'toggle-selection',
+    style: 'cursor: pointer;'
+  },
+    div({ class: 'item-header' },
+      div({ class: 'item-icon resource-template-icon' }, '🔗'),
+      h4({ class: 'item-name' }, template.name),
+      div({ class: 'item-actions' },
+        isSelected && span({ class: 'selected-indicator' }, '✓')
+      )
+    ),
+
+    template.uriTemplate && p({ class: 'item-uri-template' }, template.uriTemplate),
+    template.description && p({ class: 'item-description' }, template.description),
+
+    div({ class: 'item-meta' },
+      template.mimeType && span({ class: 'item-category' }, template.mimeType),
+      span({ class: 'item-type' }, 'Template')
+    )
+  );
+};
+
+/**
  * Prompts grid component
  */
 const promptsGrid = (prompts, selectedItems) => {
@@ -417,6 +470,11 @@ const emptyTabState = (type) => {
       icon: '📦',
       title: 'No resources available',
       description: 'This server doesn\'t provide any resources.'
+    },
+    resourceTemplates: {
+      icon: '🔗',
+      title: 'No templates available',
+      description: 'This server doesn\'t expose any resource templates.'
     },
     prompts: {
       icon: '💭',

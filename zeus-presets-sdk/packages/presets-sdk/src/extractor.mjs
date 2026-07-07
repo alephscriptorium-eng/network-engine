@@ -62,6 +62,17 @@ export class MCPToolsExtractor {
     return response.resources || [];
   }
 
+  async listResourceTemplates() {
+    if (!this.isConnected || !this.client) throw new Error('Client not connected');
+    try {
+      if (typeof this.client.listResourceTemplates !== 'function') return [];
+      const response = await this.client.listResourceTemplates();
+      return response.resourceTemplates || [];
+    } catch {
+      return [];
+    }
+  }
+
   async listPrompts() {
     if (!this.isConnected || !this.client) throw new Error('Client not connected');
     const response = await this.client.listPrompts();
@@ -76,15 +87,17 @@ export class MCPToolsExtractor {
 
   async extractCompleteMetadata() {
     if (!this.isConnected) throw new Error('Client not connected');
-    const [tools, resources, prompts] = await Promise.all([
+    const [tools, resources, resourceTemplates, prompts] = await Promise.all([
       this.listTools(),
       this.listResources(),
+      this.listResourceTemplates(),
       this.listPrompts()
     ]);
     return {
       serverInfo: this.serverInfo,
       tools,
       resources,
+      resourceTemplates,
       prompts,
       extractedAt: new Date().toISOString()
     };

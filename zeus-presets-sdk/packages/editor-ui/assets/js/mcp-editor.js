@@ -210,9 +210,9 @@ class MCPEditor {
       this.clearSelection();
     }
     
-    // Tab navigation (1, 2, 3 for tools, resources, prompts)
-    if (event.key >= '1' && event.key <= '3' && !event.ctrlKey && !event.altKey) {
-      const tabs = ['tools', 'resources', 'prompts'];
+    // Tab navigation (1, 2, 3, 4 for tools, resources, templates, prompts)
+    if (event.key >= '1' && event.key <= '4' && !event.ctrlKey && !event.altKey) {
+      const tabs = ['tools', 'resources', 'resourceTemplates', 'prompts'];
       const tabIndex = parseInt(event.key) - 1;
       if (tabs[tabIndex] && this.selectedServer) {
         event.preventDefault();
@@ -277,7 +277,7 @@ class MCPEditor {
           name: serverDetails?.name || data.server?.name || serverId,
           description: serverDetails?.description || data.server?.description || `MCP Server: ${serverId}`
         };
-        this.serverContent = data.content || { tools: [], resources: [], prompts: [] };
+        this.serverContent = data.content || { tools: [], resources: [], resourceTemplates: [], prompts: [] };
         this.renderServerContent();
         this.updateServerSelection(serverId);
         this.updateURLForSelectedServer(serverId);
@@ -462,11 +462,13 @@ class MCPEditor {
     items.forEach(item => {
       const itemName = item.querySelector('.item-name')?.textContent?.toLowerCase() || '';
       const itemDescription = item.querySelector('.item-description')?.textContent?.toLowerCase() || '';
+      const itemUriTemplate = item.querySelector('.item-uri-template')?.textContent?.toLowerCase() || '';
       const itemCategory = item.querySelector('.item-category')?.textContent?.toLowerCase() || '';
       
       const matchesSearch = !this.searchTerm || 
         itemName.includes(this.searchTerm) || 
-        itemDescription.includes(this.searchTerm);
+        itemDescription.includes(this.searchTerm) ||
+        itemUriTemplate.includes(this.searchTerm);
         
       const matchesCategory = !this.categoryFilter || 
         itemCategory.includes(this.categoryFilter.toLowerCase());
@@ -924,6 +926,7 @@ class MCPEditor {
               const capabilitySummary = [
                 typeof server.toolsCount === 'number' ? `${server.toolsCount} tools` : null,
                 typeof server.resourcesCount === 'number' ? `${server.resourcesCount} resources` : null,
+                typeof server.resourceTemplatesCount === 'number' ? `${server.resourceTemplatesCount} templates` : null,
                 typeof server.promptsCount === 'number' ? `${server.promptsCount} prompts` : null
               ].filter(Boolean).join(', ');
 
@@ -985,6 +988,7 @@ class MCPEditor {
     const selectedCount = this.selectedItems.size;
     const tools = Array.isArray(this.serverContent?.tools) ? this.serverContent.tools : [];
     const resources = Array.isArray(this.serverContent?.resources) ? this.serverContent.resources : [];
+    const resourceTemplates = Array.isArray(this.serverContent?.resourceTemplates) ? this.serverContent.resourceTemplates : [];
     const prompts = Array.isArray(this.serverContent?.prompts) ? this.serverContent.prompts : [];
 
     explorer.innerHTML = `
@@ -1005,6 +1009,7 @@ class MCPEditor {
       <nav class="explorer-tabs">
         <button class="tab-button ${this.currentTab === 'tools' ? 'active' : ''}" data-tab="tools" data-action="switch-tab">Tools (${tools.length})</button>
         <button class="tab-button ${this.currentTab === 'resources' ? 'active' : ''}" data-tab="resources" data-action="switch-tab">Resources (${resources.length})</button>
+        <button class="tab-button ${this.currentTab === 'resourceTemplates' ? 'active' : ''}" data-tab="resourceTemplates" data-action="switch-tab">Templates (${resourceTemplates.length})</button>
         <button class="tab-button ${this.currentTab === 'prompts' ? 'active' : ''}" data-tab="prompts" data-action="switch-tab">Prompts (${prompts.length})</button>
       </nav>
       <div class="explorer-content">
@@ -1029,6 +1034,9 @@ class MCPEditor {
         </div>
         <div class="tab-content ${this.currentTab === 'resources' ? 'active' : ''}" data-tab-content="resources">
           ${resources.length > 0 ? this.renderItemsGrid(resources, 'resource') : this.renderEmptyTabState('resources')}
+        </div>
+        <div class="tab-content ${this.currentTab === 'resourceTemplates' ? 'active' : ''}" data-tab-content="resourceTemplates">
+          ${resourceTemplates.length > 0 ? this.renderItemsGrid(resourceTemplates, 'resourceTemplate') : this.renderEmptyTabState('resourceTemplates')}
         </div>
         <div class="tab-content ${this.currentTab === 'prompts' ? 'active' : ''}" data-tab-content="prompts">
           ${prompts.length > 0 ? this.renderItemsGrid(prompts, 'prompt') : this.renderEmptyTabState('prompts')}
@@ -1072,6 +1080,13 @@ class MCPEditor {
               </div>
             </div>
             <div class="feature-item">
+              <span class="feature-icon">🔗</span>
+              <div>
+                <h4>Templates</h4>
+                <p>Parameterized resource URI patterns</p>
+              </div>
+            </div>
+            <div class="feature-item">
               <span class="feature-icon">💭</span>
               <div>
                 <h4>Prompts</h4>
@@ -1102,14 +1117,18 @@ class MCPEditor {
   renderItemCard(item, itemType) {
     const itemId = item.id || item.name;
     const isSelected = this.selectedItems.has(itemId);
-    const iconMap = { tool: '🛠️', resource: '📦', prompt: '💭' };
+    const iconMap = { tool: '🛠️', resource: '📦', resourceTemplate: '🔗', prompt: '💭' };
     const actionMap = {
       tool: { action: 'test-tool', attribute: 'data-tool-name', icon: '▶️', title: 'Test tool' },
       resource: { action: 'preview-resource', attribute: 'data-resource-name', icon: '👁️', title: 'Preview resource' },
+      resourceTemplate: null,
       prompt: { action: 'use-prompt', attribute: 'data-prompt-name', icon: '🚀', title: 'Use prompt' }
     };
     const actionConfig = actionMap[itemType];
-    const metaLabel = item.type || (itemType.charAt(0).toUpperCase() + itemType.slice(1));
+    const metaLabel = item.uriTemplate || item.type || (itemType.charAt(0).toUpperCase() + itemType.slice(1));
+    const actionButton = actionConfig
+      ? `<button class="btn-icon" ${actionConfig.attribute}="${this.escapeAttribute(item.name || itemId)}" data-action="${actionConfig.action}" title="${actionConfig.title}">${actionConfig.icon}</button>`
+      : '';
 
     return `
       <div class="item-card ${itemType}-item ${isSelected ? 'selected' : ''}" data-item-id="${this.escapeAttribute(itemId)}" data-item-type="${itemType}" data-action="toggle-selection">
@@ -1117,14 +1136,15 @@ class MCPEditor {
           <div class="item-icon ${itemType}-icon">${iconMap[itemType]}</div>
           <h4 class="item-name">${this.escapeHtml(item.name || itemId)}</h4>
           <div class="item-actions">
-            <button class="btn-icon" ${actionConfig.attribute}="${this.escapeAttribute(item.name || itemId)}" data-action="${actionConfig.action}" title="${actionConfig.title}">${actionConfig.icon}</button>
+            ${actionButton}
             ${isSelected ? '<span class="selected-indicator">✓</span>' : ''}
           </div>
         </div>
+        ${item.uriTemplate ? `<p class="item-uri-template">${this.escapeHtml(item.uriTemplate)}</p>` : ''}
         ${item.description ? `<p class="item-description">${this.escapeHtml(item.description)}</p>` : ''}
         <div class="item-meta">
           ${item.category ? `<span class="item-category">${this.escapeHtml(item.category)}</span>` : '<span></span>'}
-          <span class="item-type">${this.escapeHtml(metaLabel)}</span>
+          <span class="item-type">${this.escapeHtml(itemType === 'resourceTemplate' ? 'Template' : metaLabel)}</span>
         </div>
       </div>
     `;
@@ -1137,6 +1157,7 @@ class MCPEditor {
     const config = {
       tools: { icon: '🛠️', title: 'No tools available', description: 'This server doesn\'t expose any tools.' },
       resources: { icon: '📦', title: 'No resources available', description: 'This server doesn\'t provide any resources.' },
+      resourceTemplates: { icon: '🔗', title: 'No templates available', description: 'This server doesn\'t expose any resource templates.' },
       prompts: { icon: '💭', title: 'No prompts available', description: 'This server doesn\'t offer any prompt templates.' }
     };
     const state = config[type] || config.tools;
@@ -1481,6 +1502,7 @@ class MCPEditor {
       this.serverContent &&
       Array.isArray(this.serverContent.tools) &&
       Array.isArray(this.serverContent.resources) &&
+      Array.isArray(this.serverContent.resourceTemplates) &&
       Array.isArray(this.serverContent.prompts);
 
     if (!hasLoadedCurrentServer) {
@@ -1509,19 +1531,21 @@ class MCPEditor {
   async preloadSelectedItems(urlParams) {
     const toolIds = urlParams.get('tools')?.split(',').filter(Boolean) || [];
     const resourceIds = urlParams.get('resources')?.split(',').filter(Boolean) || [];
+    const resourceTemplateIds = urlParams.get('resourceTemplates')?.split(',').filter(Boolean) || [];
     const promptIds = urlParams.get('prompts')?.split(',').filter(Boolean) || [];
     
     // Clear existing selections
     this.selectedItems.clear();
     
     // Add items to selection
-    [...toolIds, ...resourceIds, ...promptIds].forEach(itemId => {
+    [...toolIds, ...resourceIds, ...resourceTemplateIds, ...promptIds].forEach(itemId => {
       this.selectedItems.add(itemId);
     });
     
     console.log('📋 Items preloaded:', {
       tools: toolIds.length,
       resources: resourceIds.length,
+      resourceTemplates: resourceTemplateIds.length,
       prompts: promptIds.length,
       total: this.selectedItems.size
     });

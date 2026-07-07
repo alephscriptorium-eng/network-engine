@@ -91,7 +91,7 @@ export const mcpServerItem = (server, isSelected, compact = false) => {
         span({ class: 'server-type' }, server.type || 'mcp'),
         server.tools && server.resources && server.prompts &&
         span({ class: 'server-capabilities' },
-          `${server.tools.length} tools, ${server.resources.length} resources, ${server.prompts.length} prompts`
+          `${server.toolsCount ?? server.tools?.length ?? 0} tools, ${server.resourcesCount ?? server.resources?.length ?? 0} resources, ${server.resourceTemplatesCount ?? server.resourceTemplates?.length ?? 0} templates, ${server.promptsCount ?? server.prompts?.length ?? 0} prompts`
         )
       )
     ),
@@ -270,9 +270,10 @@ export const presetServerInfo = (server) => {
         span({ class: 'server-status connected' }, '🟢')
       ),
       div({ class: 'server-capabilities' },
-        span(`${server.tools?.length || 0} tools`),
-        span(`${server.resources?.length || 0} resources`),
-        span(`${server.prompts?.length || 0} prompts`)
+        span(`${server.tools?.length || server.toolsCount || 0} tools`),
+        span(`${server.resources?.length || server.resourcesCount || 0} resources`),
+        span(`${server.resourceTemplates?.length || server.resourceTemplatesCount || 0} templates`),
+        span(`${server.prompts?.length || server.promptsCount || 0} prompts`)
       )
     )
   );
@@ -351,6 +352,7 @@ export const itemSelectionCard = (item, isSelected, type) => {
   const iconMap = {
     tools: '🛠️',
     resources: '📦',
+    resourceTemplates: '🔗',
     prompts: '💭'
   };
 

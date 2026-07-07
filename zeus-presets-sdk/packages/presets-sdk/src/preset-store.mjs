@@ -26,8 +26,8 @@ export function validateSelectedItems(selectedItems) {
       errors.push(`Item ${i}: serverName is required`);
     }
 
-    if (!item.type || !['tool', 'resource', 'prompt'].includes(item.type)) {
-      errors.push(`Item ${i}: type must be 'tool', 'resource', or 'prompt'`);
+    if (!item.type || !['tool', 'resource', 'resourceTemplate', 'prompt'].includes(item.type)) {
+      errors.push(`Item ${i}: type must be 'tool', 'resource', 'resourceTemplate', or 'prompt'`);
     }
 
     if (!item.name) {
@@ -45,6 +45,7 @@ export function countPresetItems(items) {
   const counts = {
     tools: 0,
     resources: 0,
+    resourceTemplates: 0,
     prompts: 0,
     total: Array.isArray(items) ? items.length : 0
   };
@@ -53,6 +54,7 @@ export function countPresetItems(items) {
     for (const item of items) {
       if (item.type === 'tool') counts.tools++;
       else if (item.type === 'resource') counts.resources++;
+      else if (item.type === 'resourceTemplate') counts.resourceTemplates++;
       else if (item.type === 'prompt') counts.prompts++;
     }
   }

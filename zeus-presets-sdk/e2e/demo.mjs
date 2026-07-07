@@ -40,9 +40,11 @@ const catalog = await registry.buildCatalog();
 assert(catalog.length === 3, 'catalog servers');
 const totalTools = catalog.reduce((n, s) => n + s.tools.length, 0);
 const totalResources = catalog.reduce((n, s) => n + s.resources.length, 0);
+const totalResourceTemplates = catalog.reduce((n, s) => n + (s.resourceTemplates?.length || 0), 0);
 const totalPrompts = catalog.reduce((n, s) => n + s.prompts.length, 0);
-assert(totalTools === 12, `Expected 12 tools, got ${totalTools}`);
+assert(totalTools === 15, `Expected 15 tools, got ${totalTools}`);
 assert(totalResources === 6, `Expected 6 resources, got ${totalResources}`);
+assert(totalResourceTemplates === 6, `Expected 6 resource templates, got ${totalResourceTemplates}`);
 assert(totalPrompts === 3, `Expected 3 prompts, got ${totalPrompts}`);
 
 console.log('4. Creating solar-system-observer preset...');
@@ -56,6 +58,7 @@ for (const server of catalog) {
     { serverName: server.serverName, type: 'prompt', name: 'report-status' }
   );
 }
+items.push({ serverName: 'earth', type: 'resourceTemplate', name: 'body-position' });
 store.create({
   name: 'solar-system-observer',
   description: 'Cross-server preset for reporting sun, moon, and earth state at a given timestamp',
@@ -67,7 +70,7 @@ store.create({
 console.log('5. Verifying persistence...');
 const store2 = new PresetStore({ dataDir, fileName: 'presets.json' });
 const loaded = store2.getByName('solar-system-observer');
-assert(loaded && loaded.items.length === 12, 'preset persistence failed');
+assert(loaded && loaded.items.length === 13, 'preset persistence failed');
 
 console.log('6. Simulating agent flow...');
 const report = { timestamp: FIXED_TS, bodies: {} };

@@ -1,5 +1,10 @@
 import { MCPToolsExtractor } from './extractor.mjs';
-import { formatTools, formatResources, formatPrompts } from './validation.mjs';
+import {
+  formatTools,
+  formatResources,
+  formatResourceTemplates,
+  formatPrompts
+} from './validation.mjs';
 
 export class ServerRegistry {
   constructor() {
@@ -59,6 +64,7 @@ export class ServerRegistry {
           extractedAt: metadata.extractedAt,
           tools: formatTools(metadata.tools || []),
           resources: formatResources(metadata.resources || []),
+          resourceTemplates: formatResourceTemplates(metadata.resourceTemplates || []),
           prompts: formatPrompts(metadata.prompts || [])
         });
       } catch (error) {
@@ -69,6 +75,7 @@ export class ServerRegistry {
           error: error.message,
           tools: [],
           resources: [],
+          resourceTemplates: [],
           prompts: []
         });
       }
@@ -83,6 +90,7 @@ export class ServerRegistry {
           error: this.failedServers.get(name)?.error || 'not connected',
           tools: [],
           resources: [],
+          resourceTemplates: [],
           prompts: []
         });
       }

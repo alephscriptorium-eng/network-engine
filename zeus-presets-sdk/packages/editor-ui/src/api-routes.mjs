@@ -23,6 +23,7 @@ function resolveItemType(name, content) {
   const has = arr => Array.isArray(arr) && arr.some(x => x && (x.name === name || x.id === name));
   if (has(content.tools)) return 'tool';
   if (has(content.resources)) return 'resource';
+  if (has(content.resourceTemplates)) return 'resourceTemplate';
   if (has(content.prompts)) return 'prompt';
   return null;
 }
@@ -46,7 +47,7 @@ function normalizeItems(items, { serverId = null, serverContent = null, catalogE
     if (!name) continue;
 
     const type =
-      (typeof item === 'object' && ['tool', 'resource', 'prompt'].includes(item?.type) && item.type) ||
+      (typeof item === 'object' && ['tool', 'resource', 'resourceTemplate', 'prompt'].includes(item?.type) && item.type) ||
       resolveItemType(name, serverContent) ||
       resolveItemType(name, catalogEntry) ||
       'tool';
@@ -90,6 +91,7 @@ function enrichPreset(preset, servers) {
       enriched.serverType = server.type;
       enriched.toolsCount = server.toolsCount;
       enriched.resourcesCount = server.resourcesCount;
+      enriched.resourceTemplatesCount = server.resourceTemplatesCount;
       enriched.promptsCount = server.promptsCount;
       enriched.selectedToolsCount = selectedToolsCount;
       return enriched;
@@ -100,6 +102,7 @@ function enrichPreset(preset, servers) {
     enriched.serverType = 'unknown';
     enriched.toolsCount = 0;
     enriched.resourcesCount = 0;
+    enriched.resourceTemplatesCount = 0;
     enriched.promptsCount = 0;
     enriched.selectedToolsCount = selectedToolsCount;
     return enriched;
@@ -110,6 +113,7 @@ function enrichPreset(preset, servers) {
   enriched.serverType = 'none';
   enriched.toolsCount = 0;
   enriched.resourcesCount = 0;
+  enriched.resourceTemplatesCount = 0;
   enriched.promptsCount = 0;
   enriched.selectedToolsCount = 0;
   return enriched;
@@ -574,13 +578,14 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
   router.get('/mcp/servers/:id/content', async (req, res) => {
     try {
       const { id } = req.params;
-      const [tools, resources, prompts] = await Promise.all([
+      const [tools, resources, resourceTemplates, prompts] = await Promise.all([
         catalog.getServerTools(id),
         catalog.getServerResources(id),
+        catalog.getServerResourceTemplates(id),
         catalog.getServerPrompts(id)
       ]);
 
-      if (!tools && !resources && !prompts) {
+      if (!tools && !resources && !resourceTemplates && !prompts) {
         return res.status(404).json({
           success: false,
           error: 'Server not found or no content available'
@@ -590,7 +595,12 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
       res.json({
         success: true,
         server: { id },
-        content: { tools: tools || [], resources: resources || [], prompts: prompts || [] }
+        content: {
+          tools: tools || [],
+          resources: resources || [],
+          resourceTemplates: resourceTemplates || [],
+          prompts: prompts || []
+        }
       });
     } catch (error) {
       console.error('Error fetching MCP server content:', error);
@@ -739,6 +749,49 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
       res.status(500).json({
         success: false,
         error: 'Failed to fetch server prompts',
+        message: error.message
+      });
+    }
+  });
+
+  /**
+   * GET /api/mcp/servers/:id/resource-templates - List server resource templates
+   */
+  router.get('/mcp/servers/:id/resource-templates', async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { search = '' } = req.query;
+
+      const resourceTemplates = await catalog.getServerResourceTemplates(id);
+
+      if (!resourceTemplates) {
+        return res.status(404).json({
+          success: false,
+          error: 'Server not found or no resource templates available'
+        });
+      }
+
+      let filtered = resourceTemplates;
+      if (search) {
+        const needle = String(search).toLowerCase();
+        filtered = filtered.filter(template =>
+          template.name.toLowerCase().includes(needle) ||
+          (template.description && template.description.toLowerCase().includes(needle)) ||
+          (template.uriTemplate && template.uriTemplate.toLowerCase().includes(needle))
+        );
+      }
+
+      res.json({
+        success: true,
+        serverId: id,
+        resourceTemplates: filtered,
+        totalCount: filtered.length
+      });
+    } catch (error) {
+      console.error('Error fetching server resource templates:', error);
+      res.status(500).json({
+        success: false,
+        error: 'Failed to fetch server resource templates',
         message: error.message
       });
     }
