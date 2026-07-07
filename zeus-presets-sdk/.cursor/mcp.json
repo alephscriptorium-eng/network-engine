@@ -8,6 +8,12 @@
     },
     "earth-mcp-server": {
       "url": "http://localhost:4103/mcp"
+    },
+    "linea-espana-mcp-server": {
+      "url": "http://localhost:4111/mcp"
+    },
+    "linea-wp-historia-mcp-server": {
+      "url": "http://localhost:4112/mcp"
     }
   }
 }

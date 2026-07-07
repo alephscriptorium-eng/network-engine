@@ -42,10 +42,10 @@ const totalTools = catalog.reduce((n, s) => n + s.tools.length, 0);
 const totalResources = catalog.reduce((n, s) => n + s.resources.length, 0);
 const totalResourceTemplates = catalog.reduce((n, s) => n + (s.resourceTemplates?.length || 0), 0);
 const totalPrompts = catalog.reduce((n, s) => n + s.prompts.length, 0);
-assert(totalTools === 15, `Expected 15 tools, got ${totalTools}`);
+assert(totalTools === 21, `Expected 21 tools, got ${totalTools}`);
 assert(totalResources === 6, `Expected 6 resources, got ${totalResources}`);
 assert(totalResourceTemplates === 6, `Expected 6 resource templates, got ${totalResourceTemplates}`);
-assert(totalPrompts === 3, `Expected 3 prompts, got ${totalPrompts}`);
+assert(totalPrompts === 12, `Expected 12 prompts, got ${totalPrompts}`);
 
 console.log('4. Creating solar-system-observer preset...');
 const store = new PresetStore({ dataDir, fileName: 'presets.json' });

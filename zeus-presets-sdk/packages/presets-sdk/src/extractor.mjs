@@ -85,6 +85,15 @@ export class MCPToolsExtractor {
     return response.content || [];
   }
 
+  async readResource(uri) {
+    if (!this.isConnected || !this.client) throw new Error('Client not connected');
+    if (!uri) throw new Error('uri is required');
+    if (typeof this.client.readResource !== 'function') {
+      throw new Error('Client does not support readResource');
+    }
+    return this.client.readResource({ uri });
+  }
+
   async extractCompleteMetadata() {
     if (!this.isConnected) throw new Error('Client not connected');
     const [tools, resources, resourceTemplates, prompts] = await Promise.all([

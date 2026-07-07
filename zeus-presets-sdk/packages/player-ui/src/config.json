@@ -1,0 +1,54 @@
+{
+  "server": {
+    "port": 3013,
+    "host": "localhost"
+  },
+  "theme": {
+    "current": "Black-White-MCP"
+  },
+  "discovery": {
+    "urls": [
+      "http://localhost:4101",
+      "http://localhost:4102",
+      "http://localhost:4103",
+      "http://localhost:4111",
+      "http://localhost:4112"
+    ],
+    "timeoutMs": 2000
+  },
+  "presets": {
+    "dataDir": "../../data",
+    "library": "default",
+    "autoLoad": true
+  },
+  "editor": {
+    "host": "localhost",
+    "port": 3012
+  },
+  "deck": {
+    "defaultYear": 1300,
+    "troncoRange": {
+      "min": 450,
+      "max": 2026
+    },
+    "parteCues": [
+      {
+        "id": "I",
+        "year": 450
+      },
+      {
+        "id": "II",
+        "year": 1350
+      },
+      {
+        "id": "III",
+        "year": 1808
+      },
+      {
+        "id": "IV",
+        "year": 1978
+      }
+    ]
+  },
+  "debug": false
+}

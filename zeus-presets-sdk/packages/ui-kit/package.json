@@ -1,0 +1,14 @@
+{
+  "name": "@zeus/ui-kit",
+  "version": "0.1.0",
+  "description": "Shared Zeus UI shell: template, navigation, themes and base assets",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "license": "AIPLv1",
+  "dependencies": {
+    "hyperaxe": "^3.0.2"
+  }
+}

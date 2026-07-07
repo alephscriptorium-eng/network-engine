@@ -10,3 +10,5 @@ export {
 } from './export-preset-bundle.mjs';
 export { createPresetRoutes } from './routes.mjs';
 export { createPresetService } from './service.mjs';
+export { createCatalogService, categorizeByName } from './catalog-service.mjs';
+export { applyPresetFilter } from './preset-filter.mjs';

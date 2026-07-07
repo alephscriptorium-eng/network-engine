@@ -2,7 +2,7 @@
  * Smoke test for the solar-system MCP servers.
  * Starts all three servers in-process, then verifies:
  *   1. GET /mcp/health shape
- *   2. MCP client connection + tool/resource/template/prompt counts (5/2/2/1)
+ *   2. MCP client connection + tool/resource/template/prompt counts (7/2/2/4)
  *   3. get_position determinism, and sun fixed at origin vs earth
  *   4. body://info resource read
  *   5. Resource templates: listResourceTemplates + readResource cross-check
@@ -54,10 +54,10 @@ try {
   assert.equal(health.name, 'sun');
   assert.equal(health.version, '1.0.0');
   assert.deepEqual(health.capabilities, {
-    tools: 5,
+    tools: 7,
     resources: 2,
     resourceTemplates: 2,
-    prompts: 1
+    prompts: 4
   });
   console.log('Health check OK:', JSON.stringify(health));
 
@@ -66,10 +66,12 @@ try {
   clients.push(sun);
 
   const tools = await sun.listTools();
-  assert.equal(tools.tools.length, 5, `expected 5 tools, got ${tools.tools.length}`);
+  assert.equal(tools.tools.length, 7, `expected 7 tools, got ${tools.tools.length}`);
   assert.deepEqual(
     tools.tools.map((t) => t.name).sort(),
     [
+      'getPrompt',
+      'getPrompts',
       'getResourceByUri',
       'getResourceTemplates',
       'getResourcesUris',
@@ -98,9 +100,10 @@ try {
   );
 
   const prompts = await sun.listPrompts();
-  assert.equal(prompts.prompts.length, 1, `expected 1 prompt, got ${prompts.prompts.length}`);
-  assert.equal(prompts.prompts[0].name, 'report-status');
-  console.log('Catalog counts OK: 5 tools, 2 resources, 2 templates, 1 prompt');
+  assert.equal(prompts.prompts.length, 4, `expected 4 prompts, got ${prompts.prompts.length}`);
+  const promptNames = prompts.prompts.map((p) => p.name).sort();
+  assert.deepEqual(promptNames, ['compare-with', 'explore-server', 'position-report', 'report-status']);
+  console.log('Catalog counts OK: 7 tools, 2 resources, 2 templates, 4 prompts');
 
   // 3. Determinism: same timestamp on earth twice must be identical.
   const earth = await connect(14103);
@@ -203,6 +206,78 @@ try {
   assert.match(badResult.content[0].text, /body:\/\/position\/\{timestamp\}/);
   assert.match(badResult.content[0].text, /body:\/\/rotation\/\{timestamp\}/);
   console.log('Error cases OK: invalid timestamp and unknown URI');
+
+  // 9. Verify each prompt renders coherent text with valid URIs.
+  const explorePrompt = await sun.getPrompt({ name: 'explore-server', arguments: {} });
+  assert.equal(explorePrompt.messages.length, 1);
+  assert.equal(explorePrompt.messages[0].role, 'user');
+  const exploreText = explorePrompt.messages[0].content.text;
+  assert.match(exploreText, /body:\/\/info/);
+  assert.match(exploreText, /server:\/\/card/);
+  assert.match(exploreText, /body:\/\/position\/\{timestamp\}/);
+  assert.match(exploreText, /get_position/);
+
+  const statusPrompt = await sun.getPrompt({ name: 'report-status', arguments: { timestamp: '1700000000000' } });
+  assert.equal(statusPrompt.messages.length, 1);
+  const statusText = statusPrompt.messages[0].content.text;
+  assert.match(statusText, /body:\/\/info/);
+  assert.match(statusText, /body:\/\/position\/1700000000000/);
+  assert.match(statusText, /body:\/\/rotation\/1700000000000/);
+  assert.match(statusText, /get_position/);
+
+  const positionPrompt = await earth.getPrompt({ name: 'position-report', arguments: { timestamp: '1700000000000' } });
+  assert.equal(positionPrompt.messages.length, 1);
+  const positionText = positionPrompt.messages[0].content.text;
+  assert.match(positionText, /body:\/\/position\/1700000000000/);
+  assert.match(positionText, /get_position/);
+  assert.match(positionText, /AU/i);
+
+  const comparePrompt = await earth.getPrompt({ name: 'compare-with', arguments: { other: 'sun', timestamp: '1700000000000' } });
+  assert.equal(comparePrompt.messages.length, 1);
+  const compareText = comparePrompt.messages[0].content.text;
+  assert.match(compareText, /sun/);
+  assert.match(compareText, /get_position/);
+  assert.match(compareText, /4101|localhost:4101/);
+  assert.match(compareText, /distance/i);
+  console.log('Prompt rendering OK: all 4 prompts cite valid URIs and tools');
+
+  // 10. Prompt bridge tools: getPrompts + getPrompt cross-check with native getPrompt.
+  const promptList = toolResultJson(await sun.callTool({ name: 'getPrompts', arguments: {} }));
+  assert.equal(promptList.body, 'sun');
+  assert.equal(promptList.prompts.length, 4);
+  assert.deepEqual(
+    promptList.prompts.map((p) => p.name).sort(),
+    promptNames
+  );
+
+  const exploreNative = await sun.getPrompt({ name: 'explore-server', arguments: {} });
+  const exploreBridge = toolResultJson(
+    await sun.callTool({ name: 'getPrompt', arguments: { name: 'explore-server' } })
+  );
+  assert.equal(exploreBridge.name, 'explore-server');
+  assert.equal(exploreBridge.text, exploreNative.messages[0].content.text);
+
+  const statusNative = await sun.getPrompt({
+    name: 'report-status',
+    arguments: { timestamp: '1700000000000' }
+  });
+  const statusBridge = toolResultJson(
+    await sun.callTool({
+      name: 'getPrompt',
+      arguments: { name: 'report-status', arguments: { timestamp: '1700000000000' } }
+    })
+  );
+  assert.equal(statusBridge.name, 'report-status');
+  assert.equal(statusBridge.text, statusNative.messages[0].content.text);
+
+  const badPrompt = await sun.callTool({
+    name: 'getPrompt',
+    arguments: { name: 'no-existe' }
+  });
+  assert.equal(badPrompt.isError, true, 'unknown prompt name must be reported as MCP error');
+  assert.match(badPrompt.content[0].text, /Unknown prompt name/);
+  assert.match(badPrompt.content[0].text, /explore-server/);
+  console.log('Prompt bridge tools OK: getPrompts + getPrompt cross-check with native getPrompt');
 
   console.log('SMOKE TEST PASSED');
 } catch (err) {

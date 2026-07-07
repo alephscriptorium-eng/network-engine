@@ -17,7 +17,7 @@ import { SERVER_VERSION } from './bodies.mjs';
 const MS_PER_DAY = 86400000;
 const TWO_PI = 2 * Math.PI;
 
-const CAPABILITIES = { tools: 5, resources: 2, resourceTemplates: 2, prompts: 1 };
+const CAPABILITIES = { tools: 7, resources: 2, resourceTemplates: 2, prompts: 4 };
 
 function buildBodyInfo(body) {
   return {
@@ -94,12 +94,184 @@ function getTemplateRegistry(body) {
   ];
 }
 
+function getPromptRegistry(body) {
+  const constellationPorts = {
+    sun: 4101,
+    moon: 4102,
+    earth: 4103
+  };
+  
+  return [
+    {
+      name: 'explore-server',
+      title: `Explore ${body.name} server`,
+      description: `Menu of available capabilities for the ${body.name} MCP server.`,
+      argsSchema: {},
+      render: () => ({
+        messages: [
+          {
+            role: 'user',
+            content: {
+              type: 'text',
+              text: [
+                `Explore what the ${body.type} "${body.name}" MCP server offers.`,
+                '',
+                'Steps:',
+                '1. Read the resource body://info to see the physical constants and description.',
+                '   Fallback: call getResourceByUri({ uri: "body://info" }).',
+                '2. Read the resource server://card to see the server metadata, version, and capabilities.',
+                '   Fallback: call getResourceByUri({ uri: "server://card" }).',
+                '3. List the available resource templates (body://position/{timestamp} and body://rotation/{timestamp}).',
+                '   Fallback: call getResourceTemplates() to enumerate them.',
+                '4. List the deterministic tools: get_position(timestamp?) and get_rotation(timestamp?).',
+                '5. Summarize what kinds of queries the user can make to this server.'
+              ].join('\n')
+            }
+          }
+        ]
+      })
+    },
+    {
+      name: 'report-status',
+      title: `${body.name} status report`,
+      description: `Instructions for an agent to produce a status report for ${body.name} at a given timestamp.`,
+      argsSchema: {
+        timestamp: z
+          .string()
+          .optional()
+          .describe('Epoch milliseconds as a string. If omitted, the agent should use the current time.')
+      },
+      render: ({ timestamp }) => {
+        const at = timestamp ? `timestamp ${timestamp} (epoch ms)` : 'the current time (Date.now())';
+        const tsArg = timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)';
+        const resolvedPositionUri = timestamp ? `body://position/${timestamp}` : 'body://position/{timestamp} with the chosen epoch ms';
+        const resolvedRotationUri = timestamp ? `body://rotation/${timestamp}` : 'body://rotation/{timestamp} with the chosen epoch ms';
+        return {
+          messages: [
+            {
+              role: 'user',
+              content: {
+                type: 'text',
+                text: [
+                  `Produce a status report for the ${body.type} "${body.name}" at ${at}.`,
+                  '',
+                  'Steps:',
+                  '1. Read the resource body://info to get the physical constants and description of the body.',
+                  '   If the client cannot attach MCP resources directly, call getResourceByUri({ uri: "body://info" }).',
+                  `2. Obtain the heliocentric position at ${at}:`,
+                  `   - Preferred: read the resource template ${resolvedPositionUri}.`,
+                  `   - Alternative: call get_position with ${tsArg}.`,
+                  `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://position/${timestamp}` : 'body://position/<epoch-ms>'}" }).`,
+                  `3. Obtain the rotation state at ${at}:`,
+                  `   - Preferred: read the resource template ${resolvedRotationUri}.`,
+                  `   - Alternative: call get_rotation with ${tsArg}.`,
+                  `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://rotation/${timestamp}` : 'body://rotation/<epoch-ms>'}" }).`,
+                  '4. Write a concise status report combining the fact card, the position (angle and x/y in AU) and the rotation state at that instant.'
+                ].join('\n')
+              }
+            }
+          ]
+        };
+      }
+    },
+    {
+      name: 'position-report',
+      title: `${body.name} position report`,
+      description: `Direct trigger to read ${body.name} position at a given timestamp and explain it.`,
+      argsSchema: {
+        timestamp: z
+          .string()
+          .optional()
+          .describe('Epoch milliseconds as a string. If omitted, the agent should use the current time.')
+      },
+      render: ({ timestamp }) => {
+        const at = timestamp ? `timestamp ${timestamp} (epoch ms)` : 'the current time (Date.now())';
+        const tsArg = timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)';
+        const resolvedPositionUri = timestamp ? `body://position/${timestamp}` : 'body://position/{timestamp} with the chosen epoch ms';
+        return {
+          messages: [
+            {
+              role: 'user',
+              content: {
+                type: 'text',
+                text: [
+                  `Report the heliocentric position of ${body.name} at ${at}.`,
+                  '',
+                  'Steps:',
+                  `1. Read the resource template ${resolvedPositionUri}.`,
+                  `   Alternative: call get_position with ${tsArg}.`,
+                  `   Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://position/${timestamp}` : 'body://position/<epoch-ms>'}" }).`,
+                  '2. Explain the position in AU coordinates (xAU, yAU) and the orbital angle in radians.'
+                ].join('\n')
+              }
+            }
+          ]
+        };
+      }
+    },
+    {
+      name: 'compare-with',
+      title: `Compare ${body.name} position with another body`,
+      description: `Multi-server guidance: obtain ${body.name} position and compare with another celestial body.`,
+      argsSchema: {
+        other: z
+          .enum(['sun', 'moon', 'earth'])
+          .describe('The other body to compare with (sun, moon, or earth).'),
+        timestamp: z
+          .string()
+          .optional()
+          .describe('Epoch milliseconds as a string. If omitted, the agent should use the current time.')
+      },
+      render: ({ other, timestamp }) => {
+        const at = timestamp ? `timestamp ${timestamp} (epoch ms)` : 'the current time (Date.now())';
+        const tsArg = timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)';
+        const otherPort = constellationPorts[other];
+        const otherUrl = `http://localhost:${otherPort}/mcp`;
+        return {
+          messages: [
+            {
+              role: 'user',
+              content: {
+                type: 'text',
+                text: [
+                  `Compare the position of ${body.name} with ${other} at ${at}.`,
+                  '',
+                  'Steps:',
+                  `1. Obtain the position of ${body.name}:`,
+                  `   - Call get_position with ${tsArg}.`,
+                  `   - Bridge fallback: getResourceByUri({ uri: "body://position/<epoch-ms>" }).`,
+                  `2. Consult the ${other} body-server to get its position:`,
+                  `   - The ${other} server is available at ${otherUrl}.`,
+                  `   - You can find all constellation ports in the server://card resource.`,
+                  `   - Call get_position on the ${other} server with the same timestamp.`,
+                  '3. Calculate the distance between the two bodies using the Euclidean distance in AU.',
+                  '4. Report the distance and relative positions in a concise summary.'
+                ].join('\n')
+              }
+            }
+          ]
+        };
+      }
+    }
+  ];
+}
+
 function toPublicDescriptor({ name, uri, mimeType, description }) {
   return { name, uri, mimeType, description };
 }
 
 function toPublicTemplateDescriptor({ name, uriTemplate, mimeType, description }) {
   return { name, uriTemplate, mimeType, description };
+}
+
+function renderPromptText(entry, args = {}) {
+  const result = entry.render(args);
+  if (typeof result === 'string') return result;
+  return result?.messages?.[0]?.content?.text ?? String(result);
+}
+
+function toPublicPromptDescriptor({ name, title, description, argsSchema }) {
+  return { name, title, description, arguments: Object.keys(argsSchema || {}) };
 }
 
 function parseTimestamp(value) {
@@ -181,6 +353,7 @@ function buildMcpServer(body) {
   const server = new McpServer({ name: body.name, version: SERVER_VERSION });
   const registry = getResourceRegistry(body);
   const templateRegistry = getTemplateRegistry(body);
+  const promptRegistry = getPromptRegistry(body);
 
   for (const entry of registry) {
     server.registerResource(
@@ -318,51 +491,64 @@ function buildMcpServer(body) {
     }
   );
 
-  server.registerPrompt(
-    'report-status',
+  server.registerTool(
+    'getPrompts',
     {
-      title: `${body.name} status report`,
-      description: `Instructions for an agent to produce a status report for ${body.name} at a given timestamp.`,
-      argsSchema: {
-        timestamp: z
-          .string()
+      title: `List ${body.name} MCP prompts`,
+      description: `Returns the names, titles, descriptions and argument keys of MCP prompts registered by the ${body.name} server. Use getPrompt to read the rendered text.`,
+      inputSchema: {}
+    },
+    async () => jsonContent({
+      body: body.name,
+      prompts: promptRegistry.map(toPublicPromptDescriptor)
+    })
+  );
+
+  server.registerTool(
+    'getPrompt',
+    {
+      title: `Read ${body.name} MCP prompt by name`,
+      description: `Renders an MCP prompt by name and returns its text. Fallback for clients that cannot use native getPrompt.`,
+      inputSchema: {
+        name: z.string().describe('Prompt name (MCP identifier).'),
+        arguments: z
+          .record(z.string())
           .optional()
-          .describe('Epoch milliseconds as a string. If omitted, the agent should use the current time.')
+          .describe('Optional prompt arguments, e.g. { "timestamp": "1700000000000" }.')
       }
     },
-    ({ timestamp }) => {
-      const at = timestamp ? `timestamp ${timestamp} (epoch ms)` : 'the current time (Date.now())';
-      const tsArg = timestamp ? `{ "timestamp": ${timestamp} }` : 'no arguments (defaults to now)';
-      const resolvedPositionUri = timestamp ? `body://position/${timestamp}` : 'body://position/{timestamp} with the chosen epoch ms';
-      const resolvedRotationUri = timestamp ? `body://rotation/${timestamp}` : 'body://rotation/{timestamp} with the chosen epoch ms';
-      return {
-        messages: [
-          {
-            role: 'user',
-            content: {
+    async ({ name, arguments: promptArgs }) => {
+      const entry = promptRegistry.find((p) => p.name === name);
+      if (!entry) {
+        const available = promptRegistry.map((p) => p.name);
+        return {
+          isError: true,
+          content: [
+            {
               type: 'text',
-              text: [
-                `Produce a status report for the ${body.type} "${body.name}" at ${at}.`,
-                '',
-                'Steps:',
-                '1. Read the resource body://info to get the physical constants and description of the body.',
-                '   If the client cannot attach MCP resources directly, call getResourceByUri({ uri: "body://info" }).',
-                `2. Obtain the heliocentric position at ${at}:`,
-                `   - Preferred: read the resource template ${resolvedPositionUri}.`,
-                `   - Alternative: call get_position with ${tsArg}.`,
-                `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://position/${timestamp}` : 'body://position/<epoch-ms>'}" }).`,
-                `3. Obtain the rotation state at ${at}:`,
-                `   - Preferred: read the resource template ${resolvedRotationUri}.`,
-                `   - Alternative: call get_rotation with ${tsArg}.`,
-                `   - Bridge fallback: getResourceByUri({ uri: "${timestamp ? `body://rotation/${timestamp}` : 'body://rotation/<epoch-ms>'}" }).`,
-                '4. Write a concise status report combining the fact card, the position (angle and x/y in AU) and the rotation state at that instant.'
-              ].join('\n')
+              text: `Unknown prompt name "${name}". Available: ${available.join(', ')}`
             }
-          }
-        ]
-      };
+          ]
+        };
+      }
+      return jsonContent({
+        name,
+        text: renderPromptText(entry, promptArgs || {})
+      });
     }
   );
+
+  for (const entry of promptRegistry) {
+    server.registerPrompt(
+      entry.name,
+      {
+        title: entry.title,
+        description: entry.description,
+        argsSchema: entry.argsSchema
+      },
+      (args) => entry.render(args || {})
+    );
+  }
 
   return server;
 }

@@ -1,21 +1,27 @@
 # ZEUS Presets Editor
 
-Self-contained monorepo for MCP catalog discovery, preset management, and a web editor UI. Decoupled from MCPGallery and NETWORK-ENGINE (those repos are read-only sources).
+Self-contained monorepo for MCP catalog discovery, preset management, solar/linea demo servers, editor UI, and DJ deck player. Decoupled from MCPGallery and NETWORK-ENGINE (those repos are read-only sources).
 
 ## Architecture
 
 ```text
-packages/presets-sdk   Core: discovery, catalog extraction, preset store, HTTP routes
-packages/solar-system  Demo: 3 MCP servers (sun, moon, earth) with deterministic orbital data
-packages/editor-ui     Web UI: browse catalog, manage presets (no AI inference)
-e2e/demo.mjs           End-to-end validation with solar-system-observer preset
+packages/presets-sdk   Core: discovery, catalog, preset-store, catalog-service, preset-filter, readResource
+packages/ui-kit        Shared shell: template, nav, themes, base.css, base.js
+packages/solar-system  Demo MCP: sun, moon, earth (ports 4101–4103)
+packages/linea-system  Linea MCP: linea-espana, linea-wp-historia (4111–4112)
+packages/editor-ui     Preset editor + MCP explorer (:3012)
+packages/player-ui     DJ deck: 2 platos, playhead, socket.io session (:3013)
+e2e/demo.mjs           Solar-system-observer validation
+e2e/deck-demo.mjs      Linea deck sync + degraded validation
+docs/deck-contract.md  Block-0 interface for deck/linea/player
 ```
 
 Data flow:
 
-1. `solar-system` exposes `POST /mcp` + `GET /mcp/health` on ports 4101-4103
-2. `presets-sdk` discovers servers via health probe, connects with Streamable HTTP, builds catalog
-3. `editor-ui` uses the SDK in-process and serves pages at `:3012`
+1. **Solar** (`4101–4103`) and **lineas** (`4111–4112`) expose `POST /mcp` + `GET /mcp/health`
+2. **presets-sdk** discovers servers, builds catalog, filters presets via `applyPresetFilter`
+3. **editor-ui** and **player-ui** use the SDK in-process; share `data/presets.json`
+4. **player-ui** resolves `linea://nodo/{year}` and `linea://oldid/{year}` on playhead ticks via `readResource`
 
 ## Quickstart
 
@@ -23,147 +29,79 @@ Data flow:
 cd network-engine/zeus-presets-sdk
 npm install
 
-# Terminal 1: demo MCP servers
+# Terminal 1: solar demo
 npm run start:solar
 
-# Terminal 2: editor UI
+# Terminal 2: linea servers (read-only lineas-poder data)
+npm run start:lineas
+
+# Terminal 3: editor
 npm run start:editor
 
-# Run e2e demo (starts solar-system internally)
-npm run e2e
+# Terminal 4: DJ deck player
+npm run start:player
 ```
 
-Open http://localhost:3012 — pages: Home, Preset Library, MCP Editor, Settings.
+Open http://localhost:3012 (editor) and http://localhost:3013 (deck). Nav cross-links Editor ↔ Player.
 
-## API
+## DJ deck (player-ui)
 
-SDK routes (also mounted by editor-ui):
+- Two decks (A/B): pick MCP server + optional preset filter
+- Shared playhead in **historical years** (450–2026 tronco; 2001–2026 WP oldid)
+- Parte I–IV cue marks on the slider
+- Socket.io namespace `/session` — see `docs/deck-contract.md`
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/api/mcp/list` | Full MCP catalog (tools, resources, resourceTemplates, prompts) |
-| GET | `/api/mcp/presets` | Preset summaries |
-| POST | `/api/mcp/set` | Create/update preset |
-| GET | `/api/mcp/preset/:name` | Get preset by name |
-| DELETE | `/api/mcp/preset/:id` | Delete preset |
+```bash
+npm run e2e:deck   # automated sync + degraded test
+```
 
-Editor UI routes:
+## linea-system
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/api/mcp/servers` | Server list with capability counts |
-| GET | `/api/mcp/servers/:id/content` | `{ tools, resources, resourceTemplates, prompts }` |
-| GET | `/api/mcp/servers/:id/resource-templates` | Filterable resource template list |
-| GET | `/api/presets` | Preset library |
-| GET | `/api/presets/:id/download` | ZIP bundle export |
+| Server | Port | Templates |
+|--------|------|-----------|
+| linea-espana | 4111 | `linea://nodo/{year}`, `linea://parte/{id}` |
+| linea-wp-historia | 4112 | + `linea://oldid/{year}` |
+
+Smoke: year 1300 → P06 «Transfiguración carismática»; year 2010 → oldid on satellite.
 
 ## Preset schema
 
 ```json
 {
-  "id": "1700000000000-abc123",
-  "name": "solar-system-observer",
-  "description": "...",
-  "category": "Analysis",
-  "prompt": "Optional agent instructions",
   "items": [
-    { "serverName": "sun", "type": "tool", "name": "get_position" },
-    { "serverName": "earth", "type": "resource", "name": "body-info" },
-    { "serverName": "earth", "type": "resourceTemplate", "name": "body-position" }
-  ],
-  "createdAt": "2026-07-06T...",
-  "updatedAt": "2026-07-06T..."
+    { "serverName": "linea-espana", "type": "tool", "name": "get_nodo" },
+    { "serverName": "linea-wp-historia", "type": "resourceTemplate", "name": "linea-oldid" }
+  ]
 }
 ```
 
-Item `type` must be one of: `tool`, `resource`, `resourceTemplate`, `prompt`.
+Item `type`: `tool`, `resource`, `resourceTemplate`, `prompt`.
 
-Presets persist to `data/presets.json` (configurable via `packages/editor-ui/src/config.json`).
+Presets persist to `data/presets.json` (shared by editor and player).
 
-## Catalog shape
+## SDK additions
 
-Each server entry from `buildCatalog()` / `GET /api/mcp/list`:
+- `extractor.readResource(uri)` — native MCP resource reads
+- `createCatalogService({ registry })` — TTL catalog cache (moved from editor-ui)
+- `applyPresetFilter(serverEntry, preset)` — preset ∩ catalog intersection
 
-```json
-{
-  "serverName": "earth",
-  "tools": [{ "name": "get_position", "type": "tool", "description": "...", "parameters": {} }],
-  "resources": [{ "name": "body-info", "type": "resource", "uri": "body://info", "mimeType": "application/json" }],
-  "resourceTemplates": [
-    {
-      "name": "body-position",
-      "type": "resourceTemplate",
-      "uriTemplate": "body://position/{timestamp}",
-      "mimeType": "application/json",
-      "description": "..."
-    }
-  ],
-  "prompts": [{ "name": "report-status", "type": "prompt", "description": "...", "arguments": [] }]
-}
-```
+## Cursor MCP bridge
 
-## Preset bundle export
-
-Presets can be downloaded as a ZIP bundle from the Preset Library (**Download Preset**) or via:
-
-```http
-GET /api/presets/:id/download
-```
-
-Response: `Content-Type: application/zip` with `Content-Disposition: attachment; filename="{slug}.preset.zip"`.
-
-ZIP layout:
-
-```text
-{slug}/
-├── preset.json      # full Preset schema (no serverName enrichment)
-├── manifest.json    # bundle metadata
-└── README.md        # human-readable summary
-```
-
-`manifest.json` fields:
-
-```json
-{
-  "format": "zeus-preset-bundle",
-  "version": 1,
-  "exportedAt": "2026-07-06T...",
-  "presetName": "solar-system-observer",
-  "presetId": "1700000000000",
-  "itemsCount": { "tools": 9, "resources": 3, "resourceTemplates": 1, "prompts": 3, "total": 13 }
-}
-```
-
-The SDK exposes `exportPresetBundle(preset)` from `@zeus/presets-sdk` for programmatic export.
-
-## solar-system demo
-
-Each body server exposes:
-
-- **Resources** (fixed URIs): `body://info`, `server://card`
-- **Resource templates** (parameterized URIs): `body://position/{timestamp}`, `body://rotation/{timestamp}`
-- **Tools**: `get_position`, `get_rotation`, `getResourcesUris`, `getResourceTemplates`, `getResourceByUri`
-- **Prompt**: `report-status`
-
-With all three servers running, the catalog reports **15 tools**, **6 resources**, **6 resource templates**, and **3 prompts**.
-
-The `solar-system-observer` preset (created by e2e) selects items from all three servers plus `body-position` on earth so an agent can report system state at a given timestamp.
-
-## MCP Editor UI
-
-The MCP Editor has four tabs per server: **Tools**, **Resources**, **Templates**, **Prompts**. Resource templates show their `uriTemplate` and can be added to presets with `type: "resourceTemplate"`.
+See `docs/cursor-mcp-lineas.md` for registering linea servers in Cursor (`http://localhost:4111/mcp`, `http://localhost:4112/mcp`).
 
 ## Tests
 
 ```bash
-npm test -w @zeus/presets-sdk
-npm test -w @zeus/solar-system
+npm run test:sdk
+npm run test:solar
+npm run test:lineas
 npm run e2e
+npm run e2e:deck
 ```
 
-## Manual UI validation
+## Manual validation
 
-1. `npm run start:solar` and `npm run start:editor`
-2. Open http://localhost:3012/editor — verify 3 servers appear with template counts
-3. Select earth → **Templates** tab → 2 cards (`body-position`, `body-rotation`) → add to preset
-4. Open http://localhost:3012/presets — verify preset appears and persists after restart
+1. `npm run start:lineas` + `npm run start:player`
+2. Deck A → linea-espana; Deck B → linea-wp-historia; move playhead to 1300 → P06 on A
+3. `npm run start:editor` — create a preset; confirm it appears in player preset dropdown
+4. Editor nav **Player** link → :3013; Player nav **Editor** → :3012

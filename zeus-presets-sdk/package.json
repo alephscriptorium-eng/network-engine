@@ -12,10 +12,17 @@
   },
   "scripts": {
     "start:solar": "npm run start -w @zeus/solar-system",
+    "start:lineas": "npm run start -w @zeus/linea-system",
     "start:editor": "npm run start -w @zeus/editor-ui",
+    "start:player": "npm run start -w @zeus/player-ui",
     "test:sdk": "npm test -w @zeus/presets-sdk",
     "test:solar": "npm test -w @zeus/solar-system",
-    "e2e": "node e2e/demo.mjs"
+    "test:lineas": "npm test -w @zeus/linea-system",
+    "e2e": "node e2e/demo.mjs",
+    "e2e:deck": "node e2e/deck-demo.mjs"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1"
   },
   "license": "AIPLv1"
 }

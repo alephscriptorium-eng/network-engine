@@ -18,11 +18,12 @@ import {
   ServerRegistry,
   PresetStore,
   discoverServers,
-  createPresetRoutes
+  createPresetRoutes,
+  createCatalogService
 } from '@zeus/presets-sdk';
+import { assetsDir as uiKitAssetsDir } from '@zeus/ui-kit';
 
 import { getConfig, resolveDataDir, getSectionDefaults, packageDir } from './config.mjs';
-import { createCatalogService } from './catalog.mjs';
 import { ThemeHandler } from './theme-handler.mjs';
 import { createApiRoutes, enrichPreset, CATEGORIES } from './api-routes.mjs';
 import { homeView } from './views/home_view.mjs';
@@ -81,7 +82,8 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-// Static file serving
+// Shared ui-kit assets first, then editor-specific assets (override on collision)
+app.use('/assets', express.static(uiKitAssetsDir));
 app.use('/assets', express.static(path.join(packageDir, 'assets')));
 
 // Health check endpoint

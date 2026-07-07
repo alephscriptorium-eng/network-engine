@@ -1,7 +1,3 @@
-/**
- * Theme handler for @zeus/editor-ui — config injected via ui-kit ThemeHandler.
- */
-
 import path from 'node:path';
 import { ThemeHandler as BaseThemeHandler, assetsDir } from '@zeus/ui-kit';
 import { getConfig, setTheme } from './config.mjs';

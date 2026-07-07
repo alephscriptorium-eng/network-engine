@@ -1,0 +1,160 @@
+/* Zeus DJ deck — player-ui */
+
+.deck-intro {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.transport-bar {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.transport-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.transport-controls .btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.transport-controls .btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.playhead-control label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.playhead-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#playhead-slider {
+  flex: 1;
+}
+
+.playhead-value {
+  min-width: 4rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.cue-marks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0 0.25rem;
+}
+
+.cue-mark {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+.cue-mark:hover {
+  background: var(--background-secondary);
+  color: var(--primary-color);
+}
+
+.decks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.deck-panel {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background: var(--background-secondary);
+}
+
+.deck-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.deck-field {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.deck-field select {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.deck-state {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+}
+
+.deck-state[data-state='playing'],
+.deck-panel .deck-state.playing {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.deck-state[data-state='degraded'],
+.deck-panel .deck-state.degraded {
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+
+.deck-resolved {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-family: var(--font-mono, monospace);
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--text-secondary);
+}
+
+.session-log {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+.session-dump {
+  font-size: 0.75rem;
+  max-height: 240px;
+  overflow: auto;
+  background: var(--background-secondary);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}

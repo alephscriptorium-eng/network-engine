@@ -1,7 +1,7 @@
 {
-  "name": "@zeus/editor-ui",
+  "name": "@zeus/player-ui",
   "version": "0.1.0",
-  "description": "Web UI for MCP catalog browsing and preset management (ported from Zeus, no inference)",
+  "description": "Zeus DJ deck player: synchronized playhead across linea MCP servers",
   "type": "module",
   "main": "src/server.mjs",
   "scripts": {
@@ -13,6 +13,8 @@
     "@zeus/ui-kit": "^0.1.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "hyperaxe": "^3.0.2"
+    "hyperaxe": "^3.0.2",
+    "socket.io": "^4.8.1",
+    "xstate": "^5.19.2"
   }
 }

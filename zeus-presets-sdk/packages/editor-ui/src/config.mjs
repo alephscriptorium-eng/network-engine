@@ -50,6 +50,10 @@ const DEFAULT_CONFIG = {
     animations: true,
     darkMode: false
   },
+  player: {
+    host: 'localhost',
+    port: 3013
+  },
   debug: false
 };
 

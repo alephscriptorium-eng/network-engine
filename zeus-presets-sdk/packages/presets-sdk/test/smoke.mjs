@@ -11,7 +11,10 @@ import {
   sanitizeSlug,
   buildManifest,
   buildReadme,
-  exportPresetBundle
+  exportPresetBundle,
+  MCPToolsExtractor,
+  createCatalogService,
+  applyPresetFilter
 } from '../src/index.mjs';
 
 const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'presets-sdk-smoke-'));
@@ -125,7 +128,7 @@ try {
   assert.equal(manifest.version, 1);
   assert.equal(manifest.presetName, bundlePreset.name);
   assert.equal(manifest.presetId, bundlePreset.id);
-  assert.deepEqual(manifest.itemsCount, { tools: 1, resources: 1, prompts: 0, total: 2 });
+  assert.deepEqual(manifest.itemsCount, { tools: 1, resources: 1, resourceTemplates: 0, prompts: 0, total: 2 });
   assert.ok(manifest.exportedAt);
 
   const readme = buildReadme(bundlePreset);
@@ -228,7 +231,7 @@ try {
     const setBody = await setRes.json();
     assert.equal(setBody.success, true);
     assert.equal(setBody.preset.name, 'legacy-preset');
-    assert.deepEqual(setBody.preset.itemsCount, { tools: 1, resources: 0, prompts: 0, total: 1 });
+    assert.deepEqual(setBody.preset.itemsCount, { tools: 1, resources: 0, resourceTemplates: 0, prompts: 0, total: 1 });
 
     const badSet = await fetch(`${base}/api/mcp/set`, {
       method: 'POST',
@@ -260,6 +263,98 @@ try {
     await new Promise(resolve => service.server.close(resolve));
     fs.rmSync(serviceDir, { recursive: true, force: true });
   }
+
+  // 4. MCPToolsExtractor.readResource (mock client)
+  step('MCPToolsExtractor.readResource');
+
+  const extractor = new MCPToolsExtractor();
+  extractor.isConnected = true;
+  extractor.client = {
+    readResource: async ({ uri }) => ({
+      contents: [{ uri, mimeType: 'application/json', text: JSON.stringify({ uri, ok: true }) }]
+    })
+  };
+
+  const readResult = await extractor.readResource('body://info');
+  assert.ok(readResult.contents, 'readResource returns contents');
+  assert.equal(readResult.contents[0].uri, 'body://info');
+
+  await assert.rejects(() => extractor.readResource(''), /uri is required/);
+
+  extractor.client = {};
+  await assert.rejects(() => extractor.readResource('body://info'), /does not support readResource/);
+
+  console.log('MCPToolsExtractor.readResource: OK');
+
+  // 5. createCatalogService
+  step('createCatalogService');
+
+  const mockCatalog = [{
+    serverName: 'sun',
+    serverInfo: { name: 'Sun Server', url: 'http://127.0.0.1:4101' },
+    isConnected: true,
+    tools: [{ name: 'get_position', description: 'pos', parameters: {}, type: 'tool' }],
+    resources: [{ name: 'body-info', description: 'info', uri: 'body://info', mimeType: 'application/json', type: 'resource' }],
+    resourceTemplates: [{ name: 'body-position', description: 'tpl', uriTemplate: 'body://position/{timestamp}', mimeType: 'application/json', type: 'resourceTemplate' }],
+    prompts: [{ name: 'report-status', description: 'report', arguments: [], type: 'prompt' }]
+  }];
+
+  let buildCount = 0;
+  const mockRegistry = {
+    buildCatalog: async () => {
+      buildCount++;
+      return mockCatalog;
+    }
+  };
+
+  const catalogService = createCatalogService({ registry: mockRegistry, cacheTtlMs: 60000 });
+  const servers = await catalogService.getAllServers();
+  assert.equal(servers.length, 1);
+  assert.equal(servers[0].id, 'sun');
+  assert.equal(servers[0].status, 'connected');
+
+  const tools = await catalogService.getServerTools('sun');
+  assert.equal(tools.length, 1);
+  assert.equal(tools[0].name, 'get_position');
+
+  const missing = await catalogService.getServerTools('moon');
+  assert.equal(missing, null);
+
+  await catalogService.getCatalog();
+  await catalogService.getCatalog();
+  assert.equal(buildCount, 1, 'catalog cached within TTL');
+
+  await catalogService.refreshCatalog();
+  assert.equal(buildCount, 2, 'refreshCatalog forces rebuild');
+
+  console.log('createCatalogService: OK');
+
+  // 6. applyPresetFilter
+  step('applyPresetFilter');
+
+  const serverEntry = mockCatalog[0];
+  const preset = {
+    name: 'observer',
+    items: [
+      { serverName: 'sun', type: 'tool', name: 'get_position' },
+      { serverName: 'sun', type: 'resource', name: 'body-info' },
+      { serverName: 'moon', type: 'tool', name: 'ignored' }
+    ]
+  };
+
+  const filtered = applyPresetFilter(serverEntry, preset);
+  assert.equal(filtered.tools.length, 1);
+  assert.equal(filtered.resources.length, 1);
+  assert.equal(filtered.resourceTemplates.length, 0);
+  assert.equal(filtered.prompts.length, 0);
+
+  const unfiltered = applyPresetFilter(serverEntry, null);
+  assert.equal(unfiltered.tools.length, 1);
+  assert.equal(unfiltered.resourceTemplates.length, 1);
+
+  assert.equal(applyPresetFilter(null, preset), null);
+
+  console.log('applyPresetFilter: OK');
 
   console.log('\nAll smoke tests passed.');
 
