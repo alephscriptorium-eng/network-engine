@@ -27,7 +27,7 @@ Artefacto de lectura que usa la información para crear divulgación, **sin camu
 |-------|----------|-------|
 | 🟢 | [Dato Wiki / Ground Truth] | Hechos extraídos de caché, snapshots o deltas históricos reales (ej. oldid 12720368). Fuente de **máxima autoridad**. Solo tras leer `cache/.../{oldid}.wikitext` o audit equivalente. |
 | 🟡 | [Inferencia Agentchain] | Conclusiones, perfiles o análisis de otros modelos en bloques agentchain. Citar **modelo y bloque** explícitos (ej. `agentchain/composer/block-5.md`). |
-| 🔴 | [Deducción del Lector / Generativo] | Glosas, especulaciones o tejido narrativo generado **en este turno**. Reducir al mínimo; nunca camuflar como 🟢 o 🟡. |
+| 🔴 | [Deducción del Lector / Generativo] | Glosas, especulaciones o tejido narrativo generado **en este turno**; actos reader persistidos citan `readerapp/readerchain/{modelo}/block-N.md`. Reducir al mínimo; nunca camuflar como 🟢 o 🟡. |
 | ⚪ | [Blanco Explícito] | Sin dato duro ni inferencia previa que avale la afirmación. Indicar explícitamente («DATO FALTANTE») + oldid concreto + fetch sugerido si aplica. |
 
 ## Disambiguación UI
@@ -48,6 +48,7 @@ Aplicar [checklist.md](../../checklist.md) § B antes de emitir.
 |----------|----------|
 | ¿Cada párrafo con dato tiene 🟢, 🟡, 🔴 o ⚪? | Reetiquetar o quitar afirmación |
 | ¿Las 🟡 citan modelo y bloque? | Añadir ruta `agentchain/{modelo}/block-N.md` |
+| ¿Los 🔴 persistidos citan readerchain? | Añadir ruta `readerapp/readerchain/{modelo}/block-N.md` si es acto guardado |
 | ¿Los 🔴 son mínimos y no se camuflan como hechos? | Marcar 🔴 o bajar a ⚪ |
 | ¿Calibración engines / ayuda mezclada con forense? | Tejido de calibración ≠ 🟢 del cuerpo (ver checklist § H, § I) |
 

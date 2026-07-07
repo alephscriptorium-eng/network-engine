@@ -48,6 +48,16 @@ const DEFAULT_CONFIG = {
       { id: 'IV', year: 1978 }
     ]
   },
+  aleph: {
+    defaultPresets: { A: 'aleph-tronco-puro', B: 'aleph-viaje-wave-a' },
+    defaultCaso: 'aeo-p24-linea',
+    casos: ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
+    theme: 'Scriptorium-Skins',
+    branding: {
+      title: 'Tablero ALEPH',
+      tag: 'Animus Iocandi · Scriptorium Skins'
+    }
+  },
   debug: false
 };
 

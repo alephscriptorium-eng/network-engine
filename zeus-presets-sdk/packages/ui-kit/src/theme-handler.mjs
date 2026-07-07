@@ -11,7 +11,8 @@ const DEFAULT_THEMES = [
   'Dark-MCP',
   'Matrix-MCP',
   'Purple-MCP',
-  'Orange-Dark-MCP'
+  'Orange-Dark-MCP',
+  'Scriptorium-Skins'
 ];
 
 export class ThemeHandler {

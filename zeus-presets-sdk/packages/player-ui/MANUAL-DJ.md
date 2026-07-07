@@ -13,14 +13,19 @@ Desde VS Code (`Ctrl+Shift+P` → *Tasks: Run Task*), usando las tareas del work
 
 | Necesitas | Tarea |
 |-----------|-------|
-| Todo el escenario | `Start ▸ ALL` |
+| **Tablero ALEPH (recomendado)** | `Start ▸ Tablero ALEPH` (seed + lineas + player) |
+| Todo el escenario Zeus | `Start ▸ ALL` |
 | Solo las fuentes del DJ | `Start ▸ lineas` (puertos 4111-4112) |
-| La mesa | `Start ▸ player-ui (DJ)` (puerto 3013) |
+| La mesa / Tablero | `Start ▸ player-ui (DJ)` (puerto 3013) |
+| Presets ALEPH (una vez o tras cambios) | `Seed ▸ aleph presets` |
 | Apagar la mesa | `Stop ■ player-ui (DJ)` |
 | Apagar las fuentes | `Stop ■ lineas` |
 | Pánico / liberar todo | `Stop ■ ALL (kill all ports)` |
+| Validar Tablero (e2e) | `Test ✓ e2e tablero aleph` |
 
-Orden recomendado: primero `Start ▸ lineas` (y/o `Start ▸ solar-system`), luego `Start ▸ player-ui (DJ)`. El player hace *discovery* al arrancar contra los puertos configurados en [`src/config.json`](src/config.json) (`discovery.urls`), así que las fuentes deben estar arriba **antes** para aparecer en los desplegables de cada plato.
+El player hace *discovery* al arrancar contra los puertos configurados en [`src/config.json`](src/config.json) (`discovery.urls`), así que las fuentes deben estar arriba **antes** para aparecer en los desplegables de cada plato.
+
+Orden mínimo Tablero ALEPH: `Seed ▸ aleph presets` → `Start ▸ lineas` → `Start ▸ player-ui (DJ)` — o la tarea compuesta `Start ▸ Tablero ALEPH` (seed y luego lineas + player en paralelo).
 
 > Si arrancas el player con las fuentes caídas, los platos podrán cargarse pero quedarán en estado `degraded` hasta que refresques el discovery (reinicia el player).
 

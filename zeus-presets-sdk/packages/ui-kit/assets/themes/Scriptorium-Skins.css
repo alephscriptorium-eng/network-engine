@@ -1,0 +1,92 @@
+/* Scriptorium Skins — Tablero ALEPH theme (Matrix terminal + prensa Courier) */
+
+:root {
+  --primary-color: #00CC33;
+  --primary-hover: #00E639;
+  --primary-text: #000000;
+  --primary-color-alpha: rgba(0, 204, 51, 0.2);
+
+  --background-primary: #0a0a0a;
+  --background-secondary: #121212;
+  --background-tertiary: #1a1a1a;
+  --background-hover: #242424;
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #9a9a9a;
+  --heading-color: #00FF50;
+
+  --border-color: #333333;
+  --input-background: #1a1a1a;
+
+  --accent-color: #00FFFF;
+  --success-color: #00FF41;
+  --warning-color: #FFAA00;
+  --danger-color: #FF0040;
+  --danger-hover: #CC0033;
+  --danger-text: #FFFFFF;
+
+  --chat-background: #121212;
+  --response-background: #0d0d0d;
+
+  --shadow-small: 0 2px 4px rgba(0, 255, 65, 0.15);
+  --shadow-medium: 0 4px 8px rgba(0, 255, 65, 0.2);
+  --shadow-large: 0 8px 16px rgba(0, 255, 65, 0.25);
+
+  --sidebar-width: 250px;
+  --header-height: 60px;
+  --content-padding: 1rem;
+  --content-max-width: 1280px;
+  --border-radius: 0;
+
+  --font-primary: 'Courier New', Courier, monospace;
+  --font-monospace: 'Courier New', Courier, monospace;
+  --font-size-small: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.5rem;
+
+  --tag-verde: #00FF41;
+  --tag-amarillo: #FFCC00;
+  --tag-rojo: #FF4444;
+  --tag-blanco: #888888;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, .section-title {
+  color: var(--heading-color);
+  font-family: var(--font-primary);
+  letter-spacing: 0.02em;
+}
+
+.main-navigation {
+  border-bottom: 1px solid var(--border-color);
+  background: var(--background-secondary);
+}
+
+.main-footer {
+  border-top: 1px solid var(--border-color);
+  font-size: var(--font-size-small);
+  color: var(--text-secondary);
+}
+
+.tag-verde { color: var(--tag-verde); }
+.tag-amarillo { color: var(--tag-amarillo); }
+.tag-rojo { color: var(--tag-rojo); }
+.tag-blanco { color: var(--tag-blanco); }
+
+.btn {
+  font-family: var(--font-primary);
+}
+
+input[type="range"] {
+  accent-color: var(--primary-color);
+}
+
+select {
+  font-family: var(--font-primary);
+}

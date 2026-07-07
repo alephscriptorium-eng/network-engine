@@ -10,6 +10,7 @@ import {
   contentSection
 } from '@zeus/ui-kit';
 import { getConfig } from '../config.mjs';
+import { getAlephConfig } from '../aleph-bridge.mjs';
 
 export { navLink, pageContainer, contentSection };
 
@@ -21,19 +22,21 @@ function editorUrl(config) {
 
 function buildNavEntries(config) {
   return [
-    { href: '/', emoji: '🎛️', text: 'Deck', pageKey: 'deck' },
+    { href: '/', emoji: '🎛️', text: 'Tablero', pageKey: 'deck' },
     { href: editorUrl(config), emoji: '🔧', text: 'Editor', external: true }
   ];
 }
 
 export const template = (pageTitle, content, options = {}) => {
   const config = getConfig();
+  const aleph = getAlephConfig(config);
+  const theme = options.theme || aleph.theme || config.theme?.current || 'Scriptorium-Skins';
   return uiTemplate(pageTitle, content, {
     ...options,
-    theme: config.theme?.current || 'Black-White-MCP',
+    theme,
     brand: {
-      title: 'Zeus Player',
-      footer: '© 2025 Zeus Team - Zeus DJ Deck'
+      title: `${aleph.branding?.title || 'Tablero ALEPH'} · Zeus Player`,
+      footer: `${aleph.branding?.tag || 'Scriptorium Skins'} · GPL-3.0`
     },
     navEntries: buildNavEntries(config),
     currentPage: options.currentPage || 'deck'

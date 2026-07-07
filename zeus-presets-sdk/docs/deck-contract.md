@@ -84,7 +84,28 @@ Transport: Socket.IO attached to the player-ui HTTP server.
 | Event | Payload | Effect |
 |-------|---------|--------|
 | `session:state` | Snapshot: machine value, playhead, decks | Full session broadcast after every transition |
-| `deck:resolved` | `{ deckId, year, nodo?, oldid? }` | Deterministic resolution for one deck at current playhead |
+| `deck:resolved` | `{ deckId, year, nodo?, oldid?, wikitext? }` | Deterministic resolution for one deck at current playhead |
+
+`wikitext` (optional, Tablero ALEPH): when preset exposes `linea-wikitext` and oldid resolves:
+
+```json
+{ "cached": true, "bytes": 4200, "preview": "..." }
+// or
+{ "cached": false, "error": "not cached", "hint": "..." }
+```
+
+## REST API — Tablero ALEPH extension (Carril B)
+
+Read-only routes on player-ui (no socket contract change):
+
+| Route | Purpose |
+|-------|---------|
+| `GET /api/aleph/config` | Casos, presets default, branding |
+| `GET /api/aleph/anchors` | P01–P24 grid + live cache/stats |
+| `GET /api/aleph/medicion/:casoId` | `estado.json` summary |
+| `GET /api/aleph/topology` | MCP server cards + Composer/Reader lanes |
+
+See `docs/tablero-aleph.md`.
 
 Resolution logic lives in **player-ui server** via in-process SDK (`readResource`, `applyPresetFilter`). Clients render; they do not resolve URIs themselves.
 

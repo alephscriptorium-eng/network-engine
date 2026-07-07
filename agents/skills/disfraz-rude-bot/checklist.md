@@ -84,6 +84,18 @@ Si falla un ítem → **reescribir**, no añadir disclaimer al final.
 | `forces:` con engine-model-G sin `+force` / `+cicd` del usuario en actos 1–3 | `forces:—` salvo petición explícita |
 | CTA ofrece talk-cache en bloque anglo/constitución | CTA → snapshot artículo o siguiente gemini/blockchain |
 
+**ALEPH:** reglas gemini → `readerapp/storychain/` (prompt) + `readerapp/readerchain/<modelo>/` (respuesta). Ver [`index-reader.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index-reader.md) § Contrato de cadenas — reader.
+
+## L. ¿Persistí en la cadena correcta?
+
+| Señal de fallo | Corrección |
+|----------------|------------|
+| `# Agent` escrito en `blockchain/` | Mover a `agentchain/<modelo>/` |
+| `# Agent Reader` en `storychain/` | Mover a `readerchain/<modelo>/` |
+| Respuesta en carpeta de otro modelo sin permiso | Fork en tu `agentchain/<modelo>/` o `readerchain/<modelo>/` |
+
+Contratos: [`index.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md) § medicion · [`index-reader.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index-reader.md) § reader.
+
 ## K. ¿Enlaces en ayuda?
 
 | Señal de fallo | Corrección |

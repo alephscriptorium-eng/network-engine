@@ -24,6 +24,12 @@ import { assetsDir as uiKitAssetsDir } from '@zeus/ui-kit';
 import { getConfig, resolveDataDir, packageDir } from './config.mjs';
 import { sessionMachine, snapshotFromActor } from './session-machine.mjs';
 import { deckView } from './views/deck_view.mjs';
+import {
+  getAlephConfig,
+  loadMedicion,
+  buildAnchorGrid,
+  buildTopology
+} from './aleph-bridge.mjs';
 
 function parseResourceJson(result) {
   const text = result?.contents?.[0]?.text;
@@ -134,9 +140,30 @@ export async function createPlayerServer(options = {}) {
       }
     }
 
+    let wikitext = null;
+    if (templates.includes('linea-wikitext') && oldid?.oldid != null && !oldid.error) {
+      try {
+        const wtRes = await extractor.readResource(`linea://wikitext/${oldid.oldid}`);
+        const parsed = parseResourceJson(wtRes);
+        if (parsed?.error) {
+          wikitext = { cached: false, error: parsed.error, hint: parsed.hint };
+        } else {
+          wikitext = {
+            cached: parsed.cached !== false,
+            bytes: parsed.wikitext_length ?? (parsed.wikitext?.length ?? 0),
+            preview: typeof parsed.wikitext === 'string'
+              ? parsed.wikitext.slice(0, 200)
+              : undefined
+          };
+        }
+      } catch (error) {
+        wikitext = { cached: false, error: error.message };
+      }
+    }
+
     // Reaching this point means the server answered: recover from degraded.
-    actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved: { year, nodo, oldid } });
-    return { deckId, year, nodo, oldid };
+    actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved: { year, nodo, oldid, wikitext } });
+    return { deckId, year, nodo, oldid, wikitext };
   }
 
   async function resolveAllDecks(io) {
@@ -192,6 +219,60 @@ export async function createPlayerServer(options = {}) {
 
   app.get('/api/presets', (req, res) => {
     res.json(store.getAll().map(p => ({ id: p.id, name: p.name, description: p.description })));
+  });
+
+  app.get('/api/aleph/config', (req, res) => {
+    res.json(getAlephConfig(config));
+  });
+
+  app.get('/api/aleph/anchors', async (req, res) => {
+    try {
+      const alephPaths = config.aleph?.paths;
+      let cacheStats = null;
+      const extractor = registry.extractors.get('linea-wp-historia');
+      if (extractor) {
+        try {
+          const statsRes = await extractor.readResource('linea://cache/stats');
+          cacheStats = parseResourceJson(statsRes);
+        } catch {
+          cacheStats = { error: 'linea-wp-historia unavailable' };
+        }
+      }
+      const cachedOldids = cacheStats?.cached_oldids || [];
+      const grid = buildAnchorGrid(cachedOldids, null, alephPaths);
+      res.json({ cacheStats, grid });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  app.get('/api/aleph/medicion/:casoId', (req, res) => {
+    const data = loadMedicion(req.params.casoId, config.aleph?.paths);
+    if (data.error) {
+      res.status(404).json(data);
+      return;
+    }
+    res.json(data);
+  });
+
+  app.get('/api/aleph/topology', async (req, res) => {
+    try {
+      const cards = {};
+      for (const [key, serverName] of [['espana', 'linea-espana'], ['wpHistoria', 'linea-wp-historia']]) {
+        const extractor = registry.extractors.get(serverName);
+        if (extractor) {
+          try {
+            const cardRes = await extractor.readResource('server://card');
+            cards[key] = parseResourceJson(cardRes);
+          } catch {
+            cards[key] = { error: 'unavailable' };
+          }
+        }
+      }
+      res.json(buildTopology(cards));
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   });
 
   app.get('/', async (req, res) => {

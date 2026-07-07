@@ -13,7 +13,9 @@ packages/editor-ui     Preset editor + MCP explorer (:3012)
 packages/player-ui     DJ deck: 2 platos, playhead, socket.io session (:3013)
 e2e/demo.mjs           Solar-system-observer validation
 e2e/deck-demo.mjs      Linea deck sync + degraded validation
+e2e/tablero-aleph-demo.mjs  Tablero ALEPH REST + wikitext validation
 docs/deck-contract.md  Block-0 interface for deck/linea/player
+docs/tablero-aleph.md  Tablero ALEPH operator manual (ALEPH et OMEGA)
 ```
 
 Data flow:
@@ -43,6 +45,24 @@ npm run start:player
 ```
 
 Open http://localhost:3012 (editor) and http://localhost:3013 (deck). Nav cross-links Editor ↔ Player.
+
+### Tablero ALEPH (ALEPH et OMEGA)
+
+```bash
+npm run start:lineas
+npm run seed:aleph
+npm run start:player   # http://localhost:3013 — Scriptorium-Skins theme
+```
+
+- LED strip P01–P24 (wave A cache status)
+- Crossover medidor (graves/medios/agudos) from `estado.json`
+- Drawer: `#viaje` (block-4) · `#mcp` (block-5) · prensa links
+
+See [`docs/tablero-aleph.md`](docs/tablero-aleph.md) and `ALEPH_ET_OMEGA/uichain/tablero-aleph.prompt.md`.
+
+```bash
+npm run e2e:tablero
+```
 
 ## DJ deck (player-ui)
 
@@ -97,6 +117,7 @@ npm run test:solar
 npm run test:lineas
 npm run e2e
 npm run e2e:deck
+npm run e2e:tablero
 ```
 
 ## Manual validation

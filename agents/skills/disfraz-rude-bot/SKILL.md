@@ -155,7 +155,7 @@ Shortcuts por poder en `registry.yaml` (`shortcut_on` / `shortcut_off`).
 | 1b | **Ayuda** — si poder `ayuda` ON y turno lo pide (`+ayuda`, mapa capas, story board): [poderes/ayuda/SKILL.md](poderes/ayuda/SKILL.md) Función 1 +/o 2 **antes** del cuerpo forense |
 | 2 | **Navegar caché** — poder `cache-nav` + [`linea-aleph-browser`](../linea-aleph-browser/SKILL.md) |
 | 3 | **Checklist** — [checklist.md](checklist.md) |
-| 4 | **Emitir** — voz rude bot; poder `epistem-tags` (🟢🟡🔴⚪); `vacio-explicito`; `anti-seguros` |
+| 4 | **Emitir** — voz rude bot; poder `epistem-tags` (🟢🟡🔴⚪); `vacio-explicito`; `anti-seguros`. Si el turno **persiste** acto: destino según itinerario — medición → `agentchain/<modelo>/`; reader (itinerario C) → `readerchain/<modelo>/`; nunca `blockchain/` ni `storychain/` |
 
 Si `alineacion-dual` activo: aplicar [poderes/alineacion-dual/SKILL.md](poderes/alineacion-dual/SKILL.md) en respuestas nov 2007.
 
@@ -212,16 +212,30 @@ Recorte de autorevisor §D y s01-02:
 
 No superponer pipeline modo-aleph y traje rude bot en el mismo turno sin avisar.
 
-## Cadena gemini (reader-chain)
+## Cadenas por juego (loadout aleph vs Solve)
+
+| Dimensión | **Solve** (`SOLVE_ET_COAGULA`) | **ALEPH** (`ALEPH_ET_OMEGA`) |
+|-----------|----------------------------------|------------------------------|
+| Ledger / preguntas | `blockchain/` | `blockchain/` (`# User` only) |
+| Respuesta agente medición | `agentchain/<modelo>/` | `agentchain/<modelo>/` |
+| Narrativa reader compartida | `reader-chain/gemini/` | `readerapp/storychain/` (`# User` only) |
+| Actos reader por modelo | `reader-chain/gemini/` | `readerapp/readerchain/<modelo>/` |
+| Spec UI | `uichain/` | `uichain/` |
+
+**Contratos ALEPH:** medición → [`index.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index.md) § Contrato de cadenas — medicion · reader → [`index-reader.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/index-reader.md) § Contrato de cadenas — reader.
+
+## Cadena gemini (Solve — reader-chain)
 
 Artefactos persistentes en `scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/block-{N}.md`.
+
+En **ALEPH**, las reglas gemini equivalen a **storychain** (prompt) + **readerchain** (respuesta) — ver tabla arriba y [`readerapp/readerchain/README.md`](../../../../scriptorium-network-games/ALEPH_ET_OMEGA/readerapp/readerchain/README.md).
 
 | Regla | Detalle |
 |-------|---------|
 | Convención | `# User {N}` donde N = número de archivo |
 | Plantilla | [`templates/reader-gemini-block.hot.md`](templates/reader-gemini-block.hot.md) |
 | README | [`reader-chain/gemini/README.md`](../../../../scriptorium-network-games/SOLVE_ET_COAGULA/reader-chain/gemini/README.md) — paridad temática con blockchain, no copia literal |
-| Lint | `python network-engine/scripts/lint_gemini_chain.py` antes de persistir |
+| Lint | `python network-engine/scripts/lint_gemini_chain.py` antes de persistir (Solve) |
 | Forces en actos 1–3 | No auto-activar `engine-model-G` sin `+cicd` / `+force` del usuario |
 
 ## Archivos de soporte

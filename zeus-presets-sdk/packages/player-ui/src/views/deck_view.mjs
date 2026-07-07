@@ -1,15 +1,13 @@
 /**
- * DJ deck view — two platters, playhead transport, sync toggle.
- * DOM contract consumed by assets/js/deck.js:
- *   #playhead-slider, #playhead-value, #sync-toggle, #transport-play,
- *   #transport-pause, #session-phase, #session-dump, .cue-mark[data-year],
- *   .deck-server[data-deck], .deck-preset[data-deck], .deck-load[data-deck],
- *   .deck-state[data-deck], .deck-resolved[data-deck]
+ * Tablero ALEPH — DJ deck view with LED strip, crossover, drawer.
  */
 
-import { div, h3, p, label, select, option, input, button, span, section, pre } from 'hyperaxe';
+import {
+  div, h2, h3, h4, p, label, select, option, input, button, span, section, pre, a, ul, li
+} from 'hyperaxe';
 import { template, pageContainer, contentSection } from './main_views.mjs';
 import { getConfig } from '../config.mjs';
+import { getAlephConfig } from '../aleph-bridge.mjs';
 
 /**
  * @param {object} viewData
@@ -18,72 +16,156 @@ import { getConfig } from '../config.mjs';
  */
 export function deckView(viewData = {}) {
   const config = getConfig();
+  const aleph = getAlephConfig(config);
   const { servers = [], presets = [] } = viewData;
   const range = config.deck?.troncoRange || { min: 450, max: 2026 };
   const cues = config.deck?.parteCues || [];
   const defaultYear = config.deck?.defaultYear ?? 2010;
 
+  const presetIdByName = (name) => presets.find(p => p.name === name)?.id || '';
+
+  const defaultPresetA = presetIdByName(aleph.defaultPresets.A);
+  const defaultPresetB = presetIdByName(aleph.defaultPresets.B);
+
   return template(
-    'Deck',
+    'Tablero ALEPH',
     pageContainer(
-      contentSection(
-        'Mesa de DJ',
-        div({ class: 'deck-container' },
-          p({ class: 'deck-intro' },
-            'Dos platos sincronizados sobre servidores MCP linea-poder. Los presets Zeus actúan como filtros de capacidades.'
-          ),
-          div({ class: 'transport-bar' },
-            div({ class: 'transport-controls' },
-              button({ id: 'transport-play', type: 'button', class: 'btn' }, '► Play'),
-              button({ id: 'transport-pause', type: 'button', class: 'btn' }, '❚❚ Pause'),
-              button({ id: 'sync-toggle', type: 'button', class: 'btn' }, '🔗 Sync: ON')
-            ),
-            div({ class: 'playhead-control' },
-              label({ for: 'playhead-slider' }, 'Año histórico'),
-              div({ class: 'playhead-row' },
-                input({
-                  id: 'playhead-slider',
-                  type: 'range',
-                  min: String(range.min),
-                  max: String(range.max),
-                  step: '1',
-                  value: String(defaultYear)
-                }),
-                span({ id: 'playhead-value', class: 'playhead-value' }, String(defaultYear))
+      div({ class: 'tablero-container' },
+        headerAleph(aleph),
+        contentSection(null,
+          div({ class: 'deck-container' },
+            div({ class: 'transport-bar' },
+              div({ class: 'transport-controls' },
+                button({ id: 'transport-play', type: 'button', class: 'btn' }, 'Play'),
+                button({ id: 'transport-pause', type: 'button', class: 'btn' }, 'Pause'),
+                button({ id: 'sync-toggle', type: 'button', class: 'btn' }, 'Sync: ON')
               ),
-              div({ class: 'cue-marks' },
-                cues.map(cue =>
-                  button({
-                    type: 'button',
-                    class: 'cue-mark',
-                    'data-year': String(cue.year),
-                    title: `Ir al año ${cue.year}`
-                  }, `Parte ${cue.id} · ${cue.year}`)
+              div({ class: 'playhead-control' },
+                label({ for: 'playhead-slider' }, 'Año histórico'),
+                div({ class: 'playhead-row' },
+                  input({
+                    id: 'playhead-slider',
+                    type: 'range',
+                    min: String(range.min),
+                    max: String(range.max),
+                    step: '1',
+                    value: String(defaultYear)
+                  }),
+                  span({ id: 'playhead-value', class: 'playhead-value' }, String(defaultYear))
+                ),
+                div({ class: 'cue-marks' },
+                  cues.map(cue =>
+                    button({
+                      type: 'button',
+                      class: 'cue-mark',
+                      'data-year': String(cue.year),
+                      title: `Ir al año ${cue.year}`
+                    }, `Parte ${cue.id} · ${cue.year}`)
+                  )
                 )
               )
+            ),
+            section({ class: 'anchor-strip-section' },
+              h3({ class: 'subsection-title' }, 'Wave A — anclas P01–P24'),
+              div({ id: 'anchor-strip', class: 'anchor-strip' },
+                p({ class: 'anchor-loading' }, 'Cargando anclas…')
+              ),
+              div({ id: 'anchor-summary', class: 'anchor-summary' }, '')
+            ),
+            div({ class: 'decks-grid' },
+              deckPanel('A', servers, presets, 'linea-espana', defaultPresetA),
+              deckPanel('B', servers, presets, 'linea-wp-historia', defaultPresetB)
+            ),
+            section({ class: 'crossover-panel', id: 'crossover' },
+              h3({ class: 'subsection-title' }, 'Crossover medidor'),
+              div({ class: 'crossover-bands' },
+                div({ class: 'band band-graves' },
+                  h4({}, 'Graves — blockchain'),
+                  p({ id: 'crossover-pregunta', class: 'crossover-text' }, '—')
+                ),
+                div({ class: 'band band-medios' },
+                  h4({}, 'Medios — tronco'),
+                  p({ id: 'crossover-tesis', class: 'crossover-text' }, '—')
+                ),
+                div({ class: 'band band-agudos' },
+                  h4({}, 'Agudos — medidor'),
+                  label({ class: 'caso-select-label', for: 'caso-select' }, 'Caso'),
+                  select({ id: 'caso-select', class: 'caso-select' },
+                    aleph.casos.map(c =>
+                      option({
+                        value: c,
+                        ...(c === aleph.defaultCaso ? { selected: 'selected' } : {})
+                      }, c)
+                    )
+                  ),
+                  div({ id: 'vu-meters', class: 'vu-meters' }, '—')
+                )
+              )
+            ),
+            section({ class: 'drawer-panel' },
+              div({ class: 'drawer-tabs', role: 'tablist' },
+                button({ type: 'button', class: 'drawer-tab active', 'data-tab': 'viaje', id: 'tab-viaje' }, 'Viaje caché'),
+                button({ type: 'button', class: 'drawer-tab', 'data-tab': 'mcp', id: 'tab-mcp' }, 'MCP topology'),
+                button({ type: 'button', class: 'drawer-tab', 'data-tab': 'prensa', id: 'tab-prensa' }, 'Prensa')
+              ),
+              div({ id: 'drawer-viaje', class: 'drawer-content active', 'data-panel': 'viaje' },
+                div({ id: 'viaje-stats' }, 'Cargando cobertura…'),
+                p({ class: 'viaje-protocol' },
+                  'Protocolo 6 pasos: declarar cobertura → proponer viaje → usuario aprueba N → fetch_batch.py → audit → blockchain. MCP READ-ONLY.'
+                ),
+                p({},
+                  a({
+                    href: 'https://github.com/escrivivir-co/aleph-scriptorium',
+                    target: '_blank',
+                    rel: 'noopener'
+                  }, 'Ver CACHE_RUNBOOK en repo')
+                )
+              ),
+              div({ id: 'drawer-mcp', class: 'drawer-content', 'data-panel': 'mcp', hidden: 'hidden' },
+                div({ id: 'topology-graph', class: 'topology-graph' }, 'Cargando topología…')
+              ),
+              div({ id: 'drawer-prensa', class: 'drawer-content', 'data-panel': 'prensa', hidden: 'hidden' },
+                ul({ class: 'prensa-links', id: 'prensa-links' },
+                  (aleph.prensa?.publicaciones || []).map(pub =>
+                    li({},
+                      a({
+                        href: `${aleph.prensa?.baseUrl || ''}/${pub.caso}/publicaciones/${pub.slug}.html`,
+                        target: '_blank',
+                        rel: 'noopener'
+                      }, pub.label)
+                    )
+                  )
+                )
+              )
+            ),
+            section({ class: 'session-log collapsible' },
+              button({ type: 'button', class: 'btn session-toggle', id: 'session-toggle' }, 'Sesión debug'),
+              div({ class: 'session-log-body', id: 'session-log-body', hidden: 'hidden' },
+                h3({}, 'Sesión: ', span({ id: 'session-phase' }, 'idle')),
+                pre({ id: 'session-dump', class: 'session-dump' }, '{}')
+              )
             )
-          ),
-          div({ class: 'decks-grid' },
-            deckPanel('A', servers, presets),
-            deckPanel('B', servers, presets)
-          ),
-          section({ class: 'session-log' },
-            h3({}, 'Sesión: ', span({ id: 'session-phase' }, 'idle')),
-            pre({ id: 'session-dump', class: 'session-dump' }, '{}')
           )
         )
       )
     ),
     {
       currentPage: 'deck',
+      theme: aleph.theme || config.theme?.current,
       styles: ['/assets/styles/deck.css'],
       scripts: ['/socket.io/socket.io.js', '/assets/js/deck.js']
     }
   );
 }
 
-function deckPanel(deckId, servers, presets) {
-  const defaultServer = deckId === 'A' ? 'linea-espana' : 'linea-wp-historia';
+function headerAleph(aleph) {
+  return section({ class: 'tablero-header' },
+    h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
+    p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
+  );
+}
+
+function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
   const serverOptions = [
     option({ value: '' }, '(elegir servidor)'),
     ...servers.map(s =>
@@ -92,7 +174,12 @@ function deckPanel(deckId, servers, presets) {
   ];
   const presetOptions = [
     option({ value: '' }, '(sin preset)'),
-    ...presets.map(pr => option({ value: pr.id }, pr.name))
+    ...presets.map(pr =>
+      option({
+        value: pr.id,
+        ...(pr.id === defaultPresetId ? { selected: 'selected' } : {})
+      }, pr.name)
+    )
   ];
 
   return section({ class: 'deck-panel', 'data-deck-id': deckId },
