@@ -155,7 +155,7 @@ try {
 
   // 6. Resource bridge tools: getResourcesUris + getResourceByUri (fixed resources).
   const uriList = toolResultJson(await sun.callTool({ name: 'getResourcesUris', arguments: {} }));
-  assert.equal(uriList.body, 'sun');
+  assert.equal(uriList.server, 'sun');
   assert.deepEqual(uriList.uris.sort(), ['body://info', 'server://card']);
   assert.equal(uriList.resources.length, 2);
 
@@ -169,7 +169,7 @@ try {
   const templateList = toolResultJson(
     await earth.callTool({ name: 'getResourceTemplates', arguments: {} })
   );
-  assert.equal(templateList.body, 'earth');
+  assert.equal(templateList.server, 'earth');
   assert.deepEqual(templateList.uriTemplates.sort(), [
     'body://position/{timestamp}',
     'body://rotation/{timestamp}'
@@ -243,7 +243,7 @@ try {
 
   // 10. Prompt bridge tools: getPrompts + getPrompt cross-check with native getPrompt.
   const promptList = toolResultJson(await sun.callTool({ name: 'getPrompts', arguments: {} }));
-  assert.equal(promptList.body, 'sun');
+  assert.equal(promptList.server, 'sun');
   assert.equal(promptList.prompts.length, 4);
   assert.deepEqual(
     promptList.prompts.map((p) => p.name).sort(),
@@ -278,6 +278,47 @@ try {
   assert.match(badPrompt.content[0].text, /Unknown prompt name/);
   assert.match(badPrompt.content[0].text, /explore-server/);
   console.log('Prompt bridge tools OK: getPrompts + getPrompt cross-check with native getPrompt');
+
+  // Sequential reuse: one client, three consecutive tool calls on persistent McpServer.
+  for (let i = 0; i < 3; i++) {
+    const seqPos = toolResultJson(
+      await sun.callTool({ name: 'get_position', arguments: { timestamp: FIXED_TIMESTAMP + i } })
+    );
+    assert.equal(seqPos.body, 'sun');
+    assert.deepEqual(seqPos.position, { xAU: 0, yAU: 0 });
+  }
+  console.log('Sequential reuse OK: 3 consecutive get_position calls on one client');
+
+  // Concurrent POST: mutex must serialize two parallel initialize requests.
+  const initRequest = (id) => ({
+    jsonrpc: '2.0',
+    id,
+    method: 'initialize',
+    params: {
+      protocolVersion: '2024-11-05',
+      capabilities: {},
+      clientInfo: { name: 'concurrent-smoke', version: '1.0.0' }
+    }
+  });
+  const mcpHeaders = {
+    'Content-Type': 'application/json',
+    Accept: 'application/json, text/event-stream'
+  };
+  const [concRes1, concRes2] = await Promise.all([
+    fetch('http://localhost:14101/mcp', {
+      method: 'POST',
+      headers: mcpHeaders,
+      body: JSON.stringify(initRequest(201))
+    }),
+    fetch('http://localhost:14101/mcp', {
+      method: 'POST',
+      headers: mcpHeaders,
+      body: JSON.stringify(initRequest(202))
+    })
+  ]);
+  assert.equal(concRes1.status, 200, 'first concurrent POST should return 200');
+  assert.equal(concRes2.status, 200, 'second concurrent POST should return 200');
+  console.log('Concurrent POST OK: two parallel initialize requests both succeed');
 
   console.log('SMOKE TEST PASSED');
 } catch (err) {

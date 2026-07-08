@@ -10,6 +10,7 @@
   },
   "license": "AIPLv1",
   "dependencies": {
+    "@zeus/presets-sdk": "0.1.0",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",

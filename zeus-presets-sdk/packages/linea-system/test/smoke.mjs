@@ -227,6 +227,47 @@ try {
   assert.ok(registroViaUri.registro_md, 'registro should have registro_md');
   console.log(`Registro read OK: ${registroId}, oldid ${registroViaUri.oldid}`);
 
+  // Sequential reuse: one client, five consecutive tool calls on persistent McpServer.
+  const sequentialYears = [1300, 1400, 1500, 1600, 1700];
+  for (const year of sequentialYears) {
+    const seqNodo = toolResultJson(
+      await espana.callTool({ name: 'get_nodo', arguments: { year } })
+    );
+    assert.ok(seqNodo.nodo?.id, `get_nodo at ${year} should return a nodo id`);
+  }
+  console.log('Sequential reuse OK: 5 consecutive get_nodo calls on one client');
+
+  // Concurrent POST: mutex must serialize two parallel initialize requests.
+  const initRequest = (id) => ({
+    jsonrpc: '2.0',
+    id,
+    method: 'initialize',
+    params: {
+      protocolVersion: '2024-11-05',
+      capabilities: {},
+      clientInfo: { name: 'concurrent-smoke', version: '1.0.0' }
+    }
+  });
+  const mcpHeaders = {
+    'Content-Type': 'application/json',
+    Accept: 'application/json, text/event-stream'
+  };
+  const [concRes1, concRes2] = await Promise.all([
+    fetch(`http://localhost:${TEST_PORTS.espana}/mcp`, {
+      method: 'POST',
+      headers: mcpHeaders,
+      body: JSON.stringify(initRequest(101))
+    }),
+    fetch(`http://localhost:${TEST_PORTS.espana}/mcp`, {
+      method: 'POST',
+      headers: mcpHeaders,
+      body: JSON.stringify(initRequest(102))
+    })
+  ]);
+  assert.equal(concRes1.status, 200, 'first concurrent POST should return 200');
+  assert.equal(concRes2.status, 200, 'second concurrent POST should return 200');
+  console.log('Concurrent POST OK: two parallel initialize requests both succeed');
+
   console.log('SMOKE TEST PASSED');
 } catch (err) {
   failed = true;

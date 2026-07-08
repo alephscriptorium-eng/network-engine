@@ -12,3 +12,6 @@ export { createPresetRoutes } from './routes.mjs';
 export { createPresetService } from './service.mjs';
 export { createCatalogService, categorizeByName } from './catalog-service.mjs';
 export { applyPresetFilter } from './preset-filter.mjs';
+export { mountMCPRoute, createMcpHttpStart } from './stateless-mcp-route.mjs';
+export { registerCommonMCP, jsonContent, renderPromptText, promptMessages, getMcpCapabilities } from './register-bridge-tools.mjs';
+export { buildServerCard, createServerCardResource, updateServerCard, SERVER_CARD_URI } from './server-card.mjs';

@@ -4,7 +4,7 @@
  */
 
 import { pathToFileURL } from 'node:url';
-import { createLineaServer } from './linea-server.mjs';
+import { createServer } from './linea-server.mjs';
 import { loadLineaData } from './loader.mjs';
 import { lineaServers } from './lineas.mjs';
 
@@ -26,7 +26,7 @@ export async function startAll(basePath) {
 
   for (const config of configs) {
     try {
-      handles.push(await createLineaServer(config, espanaData).start());
+      handles.push(await createServer(config, espanaData).start());
     } catch (err) {
       await Promise.allSettled(handles.map((h) => h.close()));
       throw err;

@@ -2,24 +2,18 @@
  * Shared factory for a linea-poder MCP server over Streamable HTTP.
  *
  * Transport contract (mirrors solar-system body-server): POST {base}/mcp for MCP
- * traffic, GET {base}/mcp/health for discovery. Stateless mode: a fresh McpServer
- * + transport is created for every POST request.
+ * traffic, GET {base}/mcp/health for discovery. Stateless HTTP: one persistent
+ * McpServer per process; each POST gets an ephemeral transport.
  */
 
 import express from 'express';
 import cors from 'cors';
 import { z } from 'zod';
-import { McpServer, ResourceTemplate } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
+import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { mountMCPRoute, registerCommonMCP, promptMessages, getMcpCapabilities, createServerCardResource, updateServerCard, createMcpHttpStart } from '@zeus/presets-sdk';
 import { resolveNodo, resolveOldid, resolveParte, readWikitext, readRegistro } from './loader.mjs';
 import { SERVER_VERSION } from './lineas.mjs';
-
-const TRONCO_CAPABILITIES = { tools: 6, resources: 2, resourceTemplates: 2, prompts: 4 };
-const SATELITE_CAPABILITIES = { tools: 7, resources: 3, resourceTemplates: 5, prompts: 7 };
-
-function getCapabilities(config) {
-  return config.kind === 'satelite' ? SATELITE_CAPABILITIES : TRONCO_CAPABILITIES;
-}
+import * as logic from './logic.mjs';
 
 function buildLineaInfo(config, lineData) {
   const coverage = config.kind === 'satelite' ? lineData.satellite.coverage : lineData.coverage;
@@ -40,66 +34,12 @@ function buildLineaInfo(config, lineData) {
   };
 }
 
-function buildServerCard(config, lineData) {
-  return {
-    name: config.name,
-    version: SERVER_VERSION,
-    port: config.port,
-    transport: 'streamable-http',
-    endpoint: `http://localhost:${config.port}/mcp`,
-    capabilities: getCapabilities(config)
-  };
-}
-
 function parseYear(value) {
   const y = Number(value);
   if (!Number.isFinite(y)) {
     return { error: `Invalid year "${value}": must be a number` };
   }
   return { year: y };
-}
-
-function matchTemplateUri(uri, templates) {
-  for (const entry of templates) {
-    const varNames = [];
-    const parts = entry.uriTemplate.split(/\{([^}]+)\}/);
-    let pattern = '';
-    for (let i = 0; i < parts.length; i++) {
-      if (i % 2 === 0) {
-        pattern += parts[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      } else {
-        varNames.push(parts[i]);
-        pattern += '([^/]+)';
-      }
-    }
-    const match = uri.match(new RegExp(`^${pattern}$`));
-    if (!match) continue;
-    const variables = Object.fromEntries(varNames.map((name, i) => [name, match[i + 1]]));
-    return { entry, variables };
-  }
-  return null;
-}
-
-function toPublicDescriptor({ name, uri, mimeType, description }) {
-  return { name, uri, mimeType, description };
-}
-
-function toPublicTemplateDescriptor({ name, uriTemplate, mimeType, description }) {
-  return { name, uriTemplate, mimeType, description };
-}
-
-function jsonContent(payload) {
-  return { content: [{ type: 'text', text: JSON.stringify(payload, null, 2) }] };
-}
-
-function renderPromptText(entry, args = {}) {
-  const result = entry.render(args);
-  if (typeof result === 'string') return result;
-  return result?.messages?.[0]?.content?.text ?? String(result);
-}
-
-function toPublicPromptDescriptor({ name, title, description, argsSchema }) {
-  return { name, title, description, arguments: Object.keys(argsSchema || {}) };
 }
 
 function getResourceRegistry(config, lineData) {
@@ -112,14 +52,7 @@ function getResourceRegistry(config, lineData) {
       description: `Static fact card for the "${config.name}" linea-poder server: coverage, nodos and metadata.`,
       read: () => buildLineaInfo(config, lineData)
     },
-    {
-      name: 'server-card',
-      uri: 'server://card',
-      title: `${config.name} server card`,
-      mimeType: 'application/json',
-      description: `Card describing the "${config.name}" MCP server itself: name, version, port and capabilities summary.`,
-      read: () => buildServerCard(config, lineData)
-    }
+    createServerCardResource(config.name)
   ];
 
   if (config.kind === 'satelite' && lineData.satellite) {
@@ -153,7 +86,7 @@ function getTemplateRegistry(config, lineData) {
     {
       name: 'linea-parte',
       uriTemplate: 'linea://parte/{id}',
-      title: `Parte I–IV`,
+      title: `Parte I a IV`,
       mimeType: 'application/json',
       description: `Returns metadata for a parte (I, II, III or IV): title, year range and nodos.`,
       read: (variables) => resolveParte(lineData, variables.id)
@@ -167,7 +100,7 @@ function getTemplateRegistry(config, lineData) {
         uriTemplate: 'linea://oldid/{year}',
         title: `WP oldid at year`,
         mimeType: 'application/json',
-        description: `Closest Wikipedia revision (oldid + timestamp) at or before the end of the given year. Coverage 2001–2026 only.`,
+        description: `Closest Wikipedia revision (oldid + timestamp) at or before the end of the given year. Coverage 2001-2026 only.`,
         read: (variables) => {
           const parsed = parseYear(variables.year);
           if (parsed.error) return parsed;
@@ -216,7 +149,7 @@ function getPromptRegistry(config, lineData) {
           '3. List resource templates with getResourceTemplates (or listResourceTemplates MCP call).',
           '4. Write a concise summary: what this server provides, how to request data, key URIs and tools.'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     },
     {
@@ -262,7 +195,7 @@ function getPromptRegistry(config, lineData) {
         } else {
           steps.push('3. Write a concise report with nodo id, etiqueta, parte and tesis_villacañas.');
         }
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     },
     {
@@ -283,7 +216,7 @@ function getPromptRegistry(config, lineData) {
           '2. For each nodo in the parte, read linea://nodo/{year} (using año_ini or a representative year).',
           '3. Synthesize a report with parte metadata (title, year range) and a summary of its nodos.'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     },
     {
@@ -307,7 +240,7 @@ function getPromptRegistry(config, lineData) {
           '3. For each nodo, read linea://nodo/{year} for a representative year.',
           '4. Produce a chronology: year → nodo (id, etiqueta, tesis).'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     }
   ];
@@ -318,7 +251,7 @@ function getPromptRegistry(config, lineData) {
       title: `${config.name} oldid report`,
       description: `Instructions to produce an oldid report for a given year, including wikitext if cached.`,
       argsSchema: {
-        year: z.string().describe('Historical year (2001–2026).')
+        year: z.string().describe('Historical year (2001-2026).')
       },
       kinds: ['satelite'],
       render: ({ year }) => {
@@ -332,7 +265,7 @@ function getPromptRegistry(config, lineData) {
           `   If not cached, the error will explain the viaje protocol (read linea://cache/stats).`,
           '3. Write a report with oldid, timestamp, and wikitext_length (or error if not cached).'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     },
     {
@@ -352,7 +285,7 @@ function getPromptRegistry(config, lineData) {
           '3. Explain the viaje protocol: propose waves (A: nodo anchors, B: milestones, C: parte sampling).',
           '4. Suggest a budget N (queries to Wikipedia) and ask user for approval before fetching.'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     },
     {
@@ -378,7 +311,7 @@ function getPromptRegistry(config, lineData) {
           '4. Draft proposal: goal, wave, estimated queries, expected coverage gain.',
           '5. DO NOT fetch anything. Present the proposal to the user and await approval.'
         ];
-        return steps.join('\n');
+        return promptMessages(steps.join('\n'));
       }
     }
   ];
@@ -393,216 +326,22 @@ function buildMcpServer(config, lineData) {
   const templateRegistry = getTemplateRegistry(config, lineData);
   const promptRegistry = getPromptRegistry(config, lineData);
 
-  for (const entry of registry) {
-    server.registerResource(
-      entry.name,
-      entry.uri,
-      { title: entry.title, description: entry.description, mimeType: entry.mimeType },
-      async (uri) => ({
-        contents: [
-          {
-            uri: uri.href,
-            mimeType: entry.mimeType,
-            text: JSON.stringify(entry.read(), null, 2)
-          }
-        ]
-      })
-    );
-  }
+  logic.buildMcp(server, { config, lineData });
 
-  for (const entry of templateRegistry) {
-    server.registerResource(
-      entry.name,
-      new ResourceTemplate(entry.uriTemplate, { list: undefined }),
-      { title: entry.title, description: entry.description, mimeType: entry.mimeType },
-      async (uri, variables) => {
-        const payload = await entry.read(variables);
-        if (payload.error) {
-          throw new Error(JSON.stringify(payload));
-        }
-        return {
-          contents: [
-            {
-              uri: uri.href,
-              mimeType: entry.mimeType,
-              text: JSON.stringify(payload, null, 2)
-            }
-          ]
-        };
-      }
-    );
-  }
+  registerCommonMCP(server, {
+    serverName: config.name,
+    registry,
+    templateRegistry,
+    promptRegistry
+  });
 
-  const yearInput = {
-    year: z
-      .number()
-      .describe('Historical year (fraction allowed). Results are deterministic for a given year.')
-  };
+  updateServerCard(registry, server, {
+    name: config.name,
+    version: SERVER_VERSION,
+    port: config.port
+  });
 
-  server.registerTool(
-    'get_nodo',
-    {
-      title: `Get nodo at year`,
-      description: `Deterministic Villacañas nodo resolution for a historical year: id, parte, etiqueta, tesis and articulos_wp.`,
-      inputSchema: yearInput
-    },
-    async ({ year }) => jsonContent(resolveNodo(lineData, year, config.coverage))
-  );
-
-  if (config.kind === 'satelite' && lineData.satellite) {
-    server.registerTool(
-      'get_oldid',
-      {
-        title: `Get WP oldid at year`,
-        description: `Closest Wikipedia revision oldid at or before the end of the given year (2001–2026). Returns empty error outside coverage.`,
-        inputSchema: yearInput
-      },
-      async ({ year }) => jsonContent(resolveOldid(lineData.satellite, year))
-    );
-  }
-
-  server.registerTool(
-    'getResourcesUris',
-    {
-      title: `List ${config.name} resource URIs`,
-      description: `Returns the URIs of MCP resources registered by the ${config.name} server. Use getResourceByUri to read the JSON payload.`,
-      inputSchema: {}
-    },
-    async () =>
-      jsonContent({
-        linea: config.name,
-        uris: registry.map((r) => r.uri),
-        resources: registry.map(toPublicDescriptor)
-      })
-  );
-
-  server.registerTool(
-    'getResourceTemplates',
-    {
-      title: `List ${config.name} resource templates`,
-      description: `Returns the URI templates of MCP resource templates registered by the ${config.name} server. Substitute variables and use getResourceByUri to read the JSON payload.`,
-      inputSchema: {}
-    },
-    async () =>
-      jsonContent({
-        linea: config.name,
-        uriTemplates: templateRegistry.map((t) => t.uriTemplate),
-        resourceTemplates: templateRegistry.map(toPublicTemplateDescriptor)
-      })
-  );
-
-  server.registerTool(
-    'getResourceByUri',
-    {
-      title: `Read ${config.name} resource by URI`,
-      description: `Reads a registered MCP resource or template-resolved URI and returns its JSON payload.`,
-      inputSchema: {
-        uri: z.string().describe('Resource URI or resolved template URI.')
-      }
-    },
-    async ({ uri }) => {
-      const fixed = registry.find((r) => r.uri === uri);
-      if (fixed) {
-        return jsonContent(fixed.read());
-      }
-
-      const matched = matchTemplateUri(uri, templateRegistry);
-      if (matched) {
-        const payload = await matched.entry.read(matched.variables);
-        if (payload.error) {
-          return {
-            isError: true,
-            content: [{ type: 'text', text: JSON.stringify(payload, null, 2) }]
-          };
-        }
-        return jsonContent(payload);
-      }
-
-      const availableUris = registry.map((r) => r.uri);
-      const availableTemplates = templateRegistry.map((t) => t.uriTemplate);
-      return {
-        isError: true,
-        content: [
-          {
-            type: 'text',
-            text: `Unknown resource URI "${uri}". Available fixed: ${availableUris.join(', ')}. Templates: ${availableTemplates.join(', ')}`
-          }
-        ]
-      };
-    }
-  );
-
-  server.registerTool(
-    'getPrompts',
-    {
-      title: `List ${config.name} prompts`,
-      description: `Returns the prompts registered by the ${config.name} server (name, title, description, argument keys). Use getPrompt to render prompt text.`,
-      inputSchema: {}
-    },
-    async () =>
-      jsonContent({
-        server: config.name,
-        prompts: promptRegistry.map(toPublicPromptDescriptor)
-      })
-  );
-
-  server.registerTool(
-    'getPrompt',
-    {
-      title: `Read ${config.name} prompt text`,
-      description: `Renders a registered MCP prompt by name and optional arguments. Fallback for clients without native getPrompt.`,
-      inputSchema: {
-        name: z.string().describe('Prompt name (MCP identifier).'),
-        arguments: z
-          .record(z.string())
-          .optional()
-          .describe('Prompt argument values, e.g. { "year": "1300" }.')
-      }
-    },
-    async ({ name, arguments: args = {} }) => {
-      const entry = promptRegistry.find((p) => p.name === name);
-      if (!entry) {
-        const availableNames = promptRegistry.map((p) => p.name);
-        return {
-          isError: true,
-          content: [
-            {
-              type: 'text',
-              text: `Unknown prompt name "${name}". Available: ${availableNames.join(', ')}`
-            }
-          ]
-        };
-      }
-      return jsonContent({
-        name,
-        text: renderPromptText(entry, args)
-      });
-    }
-  );
-
-  for (const prompt of promptRegistry) {
-    server.registerPrompt(
-      prompt.name,
-      {
-        title: prompt.title,
-        description: prompt.description,
-        argsSchema: prompt.argsSchema
-      },
-      (args) => ({
-        messages: [
-          {
-            role: 'user',
-            content: {
-              type: 'text',
-              text: prompt.render(args)
-            }
-          }
-        ]
-      })
-    );
-  }
-
-  return server;
+  return { server };
 }
 
 /**
@@ -610,8 +349,8 @@ function buildMcpServer(config, lineData) {
  * Returns { name, port, app, start() } where start() resolves to
  * { name, port, url, close() }.
  */
-export function createLineaServer(config, lineData) {
-  const capabilities = getCapabilities(config);
+export function createServer(config, lineData) {
+  const { server: mcpServer } = buildMcpServer(config, lineData);
   const app = express();
   app.use(cors());
   app.use(express.json());
@@ -622,61 +361,13 @@ export function createLineaServer(config, lineData) {
       server: config.name,
       name: config.name,
       version: SERVER_VERSION,
-      capabilities
+      capabilities: getMcpCapabilities(mcpServer)
     });
   });
 
-  app.post('/mcp', async (req, res) => {
-    const mcpServer = buildMcpServer(config, lineData);
-    const transport = new StreamableHTTPServerTransport({
-      sessionIdGenerator: undefined,
-      enableJsonResponse: true
-    });
-    res.on('close', () => {
-      transport.close();
-      mcpServer.close();
-    });
-    try {
-      await mcpServer.connect(transport);
-      await transport.handleRequest(req, res, req.body);
-    } catch (err) {
-      console.error(`[${config.name}] Error handling MCP request:`, err);
-      if (!res.headersSent) {
-        res.status(500).json({
-          jsonrpc: '2.0',
-          error: { code: -32603, message: 'Internal server error' },
-          id: null
-        });
-      }
-    }
-  });
+  mountMCPRoute(app, { mcpServer, logLabel: config.name });
 
-  const methodNotAllowed = (req, res) => {
-    res.status(405).json({
-      jsonrpc: '2.0',
-      error: { code: -32000, message: 'Method not allowed in stateless mode' },
-      id: null
-    });
-  };
-  app.get('/mcp', methodNotAllowed);
-  app.delete('/mcp', methodNotAllowed);
-
-  function start() {
-    return new Promise((resolve, reject) => {
-      const httpServer = app.listen(config.port, () => {
-        resolve({
-          name: config.name,
-          port: config.port,
-          url: `http://localhost:${config.port}/mcp`,
-          close: () =>
-            new Promise((res2, rej2) => {
-              httpServer.close((err) => (err ? rej2(err) : res2()));
-            })
-        });
-      });
-      httpServer.on('error', reject);
-    });
-  }
+  const start = createMcpHttpStart(app, { name: config.name, port: config.port, mcpServer });
 
   return { name: config.name, port: config.port, app, start };
 }
