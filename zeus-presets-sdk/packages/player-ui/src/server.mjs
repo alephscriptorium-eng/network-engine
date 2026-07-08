@@ -43,6 +43,52 @@ function parseResourceJson(result) {
   }
 }
 
+function parseToolJson(content) {
+  const text = content?.[0]?.text;
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch {
+    return { raw: text };
+  }
+}
+
+function parseEmbeddedJson(text) {
+  if (!text || typeof text !== 'string') return null;
+  const start = text.indexOf('{');
+  if (start === -1) return null;
+  try {
+    return JSON.parse(text.slice(start));
+  } catch {
+    return null;
+  }
+}
+
+function buildWikitextResult(parsed, oldid) {
+  const oid = parsed?.oldid ?? oldid;
+  if (!parsed) {
+    return { cached: false, oldid: oid, error: 'empty response' };
+  }
+  if (parsed.error) {
+    return {
+      cached: false,
+      oldid: oid,
+      error: parsed.error,
+      hint: parsed.hint,
+      stats: parsed.stats,
+      action: parsed.action
+    };
+  }
+  return {
+    cached: parsed.cached !== false,
+    oldid: oid,
+    bytes: parsed.wikitext_length ?? (parsed.wikitext?.length ?? 0),
+    preview: typeof parsed.wikitext === 'string'
+      ? parsed.wikitext.slice(0, 200)
+      : undefined
+  };
+}
+
 /**
  * Programmatic bootstrap for e2e and CLI.
  * @param {object} [options]
@@ -100,24 +146,41 @@ export async function createPlayerServer(options = {}) {
     return found;
   }
 
+  async function listServers() {
+    await runDiscovery();
+    return catalog.getAllServers();
+  }
+
   async function fetchWikitext(extractor, oldid) {
     if (oldid == null) return null;
+    const oid = Number(oldid);
     try {
-      const wtRes = await extractor.readResource(`linea://wikitext/${oldid}`);
-      const parsed = parseResourceJson(wtRes);
-      if (parsed?.error) {
-        return { cached: false, error: parsed.error, hint: parsed.hint };
-      }
-      return {
-        cached: parsed.cached !== false,
-        bytes: parsed.wikitext_length ?? (parsed.wikitext?.length ?? 0),
-        preview: typeof parsed.wikitext === 'string'
-          ? parsed.wikitext.slice(0, 200)
-          : undefined
-      };
+      const wtRes = await extractor.readResource(`linea://wikitext/${oid}`);
+      return buildWikitextResult(parseResourceJson(wtRes), oid);
     } catch (error) {
-      return { cached: false, error: error.message };
+      const embedded = parseEmbeddedJson(error.message);
+      if (embedded?.error) {
+        return buildWikitextResult(embedded, oid);
+      }
+      return { cached: false, oldid: oid, error: error.message };
     }
+  }
+
+  function deckAllowsTool(deck, entry, toolName) {
+    const tools = deck.filtered?.tools || entry?.tools || [];
+    return tools.some((t) => t.name === toolName);
+  }
+
+  async function getDeckExtractor(deckId) {
+    const deck = actor.getSnapshot().context.decks[deckId];
+    if (!deck?.serverName) return { error: 'deck not loaded' };
+    const entry = await catalog.getServerEntry(deck.serverName);
+    if (!entry || entry.isConnected === false) {
+      return { error: 'disconnected', deck };
+    }
+    const extractor = registry.extractors.get(deck.serverName);
+    if (!extractor) return { error: 'no extractor', deck };
+    return { deck, entry, extractor };
   }
 
   async function resolveDeck(deckId, year, selectedOldid = null) {
@@ -211,6 +274,54 @@ export async function createPlayerServer(options = {}) {
     if (resolved) {
       io.of('/session').emit('deck:resolved', resolved);
       broadcastState(io);
+    }
+    return resolved;
+  }
+
+  async function handleWikitextCache(socket, { deckId = 'B', oldid }) {
+    const ctx = await getDeckExtractor(deckId);
+    if (ctx.error) {
+      socket.emit('wikitext:cache-result', { ok: false, error: ctx.error });
+      return;
+    }
+    const { deck, entry, extractor } = ctx;
+    if (!deckAllowsTool(deck, entry, 'cache_wikitext')) {
+      socket.emit('wikitext:cache-result', {
+        ok: false,
+        error: 'preset does not include cache_wikitext tool'
+      });
+      return;
+    }
+    try {
+      const content = await extractor.callTool('cache_wikitext', { oldid: Number(oldid) });
+      const parsed = parseToolJson(content);
+      socket.emit('wikitext:cache-result', {
+        ok: !parsed?.error,
+        oldid: Number(oldid),
+        ...parsed
+      });
+    } catch (error) {
+      socket.emit('wikitext:cache-result', { ok: false, oldid: Number(oldid), error: error.message });
+    }
+  }
+
+  async function handleWikitextPoll(io, socket, { deckId = 'B', oldid }) {
+    const ctx = await getDeckExtractor(deckId);
+    if (ctx.error) {
+      socket.emit('wikitext:poll-result', { cached: false, error: ctx.error });
+      return;
+    }
+    const wikitext = await fetchWikitext(ctx.extractor, oldid);
+    if (wikitext?.cached) {
+      await handleRegistroSelect(io, { deckId, oldid: Number(oldid) });
+      socket.emit('wikitext:poll-result', { cached: true, oldid: Number(oldid) });
+    } else {
+      socket.emit('wikitext:poll-result', {
+        cached: false,
+        oldid: Number(oldid),
+        error: wikitext?.error,
+        action: wikitext?.action
+      });
     }
   }
 
@@ -340,9 +451,18 @@ export async function createPlayerServer(options = {}) {
     }
   });
 
+  app.get('/api/servers', async (req, res) => {
+    try {
+      const servers = await listServers();
+      res.json(servers);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   app.get('/', async (req, res) => {
     try {
-      const servers = await catalog.getAllServers();
+      const servers = await listServers();
       const presets = store.getAll();
       const html = deckView({
         servers,
@@ -361,7 +481,14 @@ export async function createPlayerServer(options = {}) {
   const httpServer = http.createServer(app);
   const io = new SocketIOServer(httpServer, { cors: { origin: true } });
 
-  io.of('/session').on('connection', (socket) => {
+  io.of('/session').on('connection', async (socket) => {
+    try {
+      const servers = await listServers();
+      socket.emit('catalog:servers', servers);
+    } catch (error) {
+      console.error('Discovery on connect failed:', error.message);
+      socket.emit('catalog:servers', []);
+    }
     socket.emit('session:state', snapshotFromActor(actor));
 
     socket.on('deck:load', (payload) => {
@@ -376,6 +503,14 @@ export async function createPlayerServer(options = {}) {
 
     socket.on('registro:select', (payload) => {
       handleRegistroSelect(io, payload).catch(err => console.error('registro:select error:', err));
+    });
+
+    socket.on('wikitext:cache', (payload) => {
+      handleWikitextCache(socket, payload).catch(err => console.error('wikitext:cache error:', err));
+    });
+
+    socket.on('wikitext:poll', (payload) => {
+      handleWikitextPoll(io, socket, payload).catch(err => console.error('wikitext:poll error:', err));
     });
 
     socket.on('sync:toggle', () => {

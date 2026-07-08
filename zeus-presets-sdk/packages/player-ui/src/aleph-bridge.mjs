@@ -142,7 +142,7 @@ export function getAlephConfig(config = {}) {
   const aleph = config.aleph || {};
   const paths = resolveAlephPaths(aleph.paths);
   return {
-    defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-bridge' },
+    defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
     defaultCaso: aleph.defaultCaso || 'aeo-p24-linea',
     casos: aleph.casos || ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: aleph.theme || 'Scriptorium-Skins',

@@ -327,6 +327,44 @@ export function resolveOldid(satellite, year) {
   };
 }
 
+/**
+ * Re-scan cache/snapshots and update satellite.cacheStats in place.
+ * @param {object} satellite
+ */
+export async function rescanSatelliteCache(satellite) {
+  const cacheDir = path.join(satellite.satDir, 'cache/snapshots');
+  let cachedOldids = [];
+  let cachedWikitexts = 0;
+
+  try {
+    const files = await fs.readdir(cacheDir);
+    const wikitextFiles = files.filter((f) => f.endsWith('.wikitext'));
+    cachedWikitexts = wikitextFiles.length;
+    cachedOldids = wikitextFiles
+      .map((f) => parseInt(f.replace('.wikitext', ''), 10))
+      .filter(Number.isFinite)
+      .sort((a, b) => a - b);
+  } catch (err) {
+    console.warn(`[rescanSatelliteCache] Could not scan cache/snapshots: ${err.message}`);
+  }
+
+  const milestoneOldids = (satellite.registroIndex ?? [])
+    .filter((r) => r.milestone)
+    .map((r) => r.oldid);
+  const milestonesWithoutBody = milestoneOldids.filter((oid) => !cachedOldids.includes(oid)).length;
+  const registroCount = satellite.cacheStats?.registro_count ?? 0;
+  const coverage_pct = registroCount ? (cachedWikitexts / registroCount) * 100 : 0;
+
+  Object.assign(satellite.cacheStats, {
+    cached_wikitexts: cachedWikitexts,
+    cached_oldids: cachedOldids,
+    milestones_sin_cuerpo: Math.max(0, milestonesWithoutBody),
+    coverage_pct: parseFloat(coverage_pct.toFixed(2))
+  });
+
+  return satellite.cacheStats;
+}
+
 export async function readWikitext(satellite, oldid) {
   const oid = Number(oldid);
   if (!Number.isFinite(oid) || oid <= 0) {
@@ -339,7 +377,13 @@ export async function readWikitext(satellite, oldid) {
       cached: false,
       oldid: oid,
       stats: satellite.cacheStats,
-      hint: 'Propose un viaje de caché al usuario: lee linea://cache/stats y negocia un presupuesto N de queries'
+      hint: 'Invoca cache_wikitext o usa el botón Cachear en Tablero.',
+      action: {
+        tool: 'cache_wikitext',
+        server: 'linea-wp-historia',
+        arguments: { oldid: oid },
+        poll: `linea://wikitext/${oid}`
+      }
     };
   }
 

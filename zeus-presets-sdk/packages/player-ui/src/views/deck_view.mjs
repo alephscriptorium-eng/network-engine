@@ -212,7 +212,11 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
   return section({ class: 'deck-panel', 'data-deck-id': deckId },
     h3({ class: 'deck-title' }, `Plato ${deckId}`),
     label({ class: 'deck-field' }, 'Servidor',
-      select({ class: 'deck-server', 'data-deck': deckId }, serverOptions)
+      select({
+        class: 'deck-server',
+        'data-deck': deckId,
+        'data-default-server': defaultServer
+      }, serverOptions)
     ),
     label({ class: 'deck-field' }, 'Preset (filtro)',
       select({ class: 'deck-preset', 'data-deck': deckId }, presetOptions)
@@ -231,7 +235,16 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
                 p({ class: 'registros-empty' }, 'Cargar plato para ver registros')
               )
             ),
-            div({ class: 'wikitext-preview', 'data-deck': deckId }, '')
+            div({ class: 'wikitext-bar', 'data-deck': deckId },
+              span({ class: 'wikitext-status', 'data-deck': deckId }, ''),
+              button({
+                type: 'button',
+                class: 'btn btn-cache-wikitext',
+                'data-deck': deckId,
+                hidden: 'hidden'
+              }, 'Cachear'),
+              pre({ class: 'wikitext-preview', 'data-deck': deckId }, '')
+            )
           )
         : '—'
     )

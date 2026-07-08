@@ -49,7 +49,7 @@ const DEFAULT_CONFIG = {
     ]
   },
   aleph: {
-    defaultPresets: { A: 'aleph-tronco-puro', B: 'aleph-viaje-wave-a' },
+    defaultPresets: { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
     defaultCaso: 'aeo-p24-linea',
     casos: ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: 'Scriptorium-Skins',

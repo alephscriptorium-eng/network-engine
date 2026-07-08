@@ -28,6 +28,111 @@
   let anchorCells = [];
   let currentMedicion = null;
   let selectedRegistroOldid = null;
+  let wikitextPollTimer = null;
+  let wikitextPollOldid = null;
+  const WIKITEXT_POLL_MS = 2000;
+  const WIKITEXT_POLL_TIMEOUT_MS = 60000;
+
+  function resolveWikitextOldid(resolved) {
+    if (resolved?.wikitext?.oldid != null) return Number(resolved.wikitext.oldid);
+    if (resolved?.selected?.oldid != null) return Number(resolved.selected.oldid);
+    if (selectedRegistroOldid != null) return selectedRegistroOldid;
+    if (resolved?.registros?.anchor?.oldid != null) return Number(resolved.registros.anchor.oldid);
+    return null;
+  }
+
+  function isRegistroCached(resolved, oldid) {
+    if (oldid == null) return false;
+    const oid = Number(oldid);
+    const selected = resolved?.selected;
+    if (selected?.oldid === oid && selected.cached) return true;
+    const item = resolved?.registros?.items?.find((r) => r.oldid === oid);
+    return Boolean(item?.cached);
+  }
+
+  function isWikitextCached(resolved) {
+    if (resolved?.wikitext?.cached === true) return true;
+    return isRegistroCached(resolved, resolveWikitextOldid(resolved));
+  }
+
+  function shouldShowCacheButton(resolved) {
+    if (isWikitextCached(resolved)) return false;
+    const wt = resolved?.wikitext;
+    if (!wt || wt.cached) return false;
+    const oid = resolveWikitextOldid(resolved);
+    if (oid == null || isRegistroCached(resolved, oid)) return false;
+    return wt.action?.tool === 'cache_wikitext';
+  }
+
+  function setCacheButtonVisible(deckId, visible, oldid = null) {
+    const cacheBtn = document.querySelector(`.btn-cache-wikitext[data-deck="${deckId}"]`);
+    if (!cacheBtn) return;
+    cacheBtn.hidden = !visible;
+    cacheBtn.disabled = false;
+    cacheBtn.textContent = 'Cachear';
+    cacheBtn.dataset.oldid = visible && oldid != null ? String(oldid) : '';
+  }
+
+  function stopWikitextPoll() {
+    if (wikitextPollTimer) {
+      clearInterval(wikitextPollTimer);
+      wikitextPollTimer = null;
+    }
+    wikitextPollOldid = null;
+  }
+
+  function startWikitextPoll(deckId, oldid) {
+    stopWikitextPoll();
+    wikitextPollOldid = oldid;
+    const startedAt = Date.now();
+    wikitextPollTimer = setInterval(() => {
+      if (Date.now() - startedAt > WIKITEXT_POLL_TIMEOUT_MS) {
+        stopWikitextPoll();
+        const statusEl = document.querySelector(`.wikitext-status[data-deck="${deckId}"]`);
+        if (statusEl) statusEl.textContent = 'Timeout esperando caché';
+        return;
+      }
+      socket.emit('wikitext:poll', { deckId, oldid });
+    }, WIKITEXT_POLL_MS);
+    socket.emit('wikitext:poll', { deckId, oldid });
+  }
+
+  function updateWikitextBar(deckId, resolved) {
+    const statusEl = document.querySelector(`.wikitext-status[data-deck="${deckId}"]`);
+    const previewEl = document.querySelector(`.wikitext-preview[data-deck="${deckId}"]`);
+    const wt = resolved?.wikitext;
+
+    if (!statusEl && !previewEl) return;
+
+    if (isWikitextCached(resolved)) {
+      if (statusEl) statusEl.textContent = `wikitext: ${wt?.bytes ?? 0} bytes`;
+      setCacheButtonVisible(deckId, false);
+      if (previewEl) {
+        previewEl.textContent = wt?.preview || '';
+      }
+      if (wikitextPollOldid === resolveWikitextOldid(resolved)) {
+        stopWikitextPoll();
+        loadAlephData();
+      }
+      return;
+    }
+
+    if (wt && !wt.cached) {
+      const oid = resolveWikitextOldid(resolved);
+      if (statusEl) {
+        statusEl.textContent = oid
+          ? `${wt.error || 'not cached'} · oldid ${oid}`
+          : (wt.error || 'not cached');
+      }
+      if (previewEl) previewEl.textContent = '';
+      setCacheButtonVisible(deckId, shouldShowCacheButton(resolved), oid);
+      return;
+    }
+
+    if (statusEl) statusEl.textContent = '';
+    setCacheButtonVisible(deckId, false);
+    if (previewEl) previewEl.textContent = '';
+  }
 
   function formatDeckASummary(resolved) {
     if (!resolved) return '—';
@@ -93,6 +198,7 @@
       const selected = selectedRegistroOldid === item.oldid ? ' selected' : '';
       return `<button type="button" class="registro-item${selected}${item.is_anchor ? ' is-anchor' : ''}"
         data-oldid="${item.oldid}" data-registro-id="${item.registro_id || ''}"
+        data-cached="${item.cached ? 'true' : 'false'}"
         title="${item.section || ''}">
         <span class="registro-id">${item.registro_id}</span>
         <span class="registro-meta">${item.timestamp || ''} · ${item.section || '—'}</span>
@@ -104,8 +210,12 @@
       btn.addEventListener('click', () => {
         const oldid = Number(btn.dataset.oldid);
         selectedRegistroOldid = oldid;
+        stopWikitextPoll();
         listEl.querySelectorAll('.registro-item').forEach(b => b.classList.remove('selected'));
         btn.classList.add('selected');
+        if (btn.dataset.cached === 'true') {
+          setCacheButtonVisible(deckId, false);
+        }
         socket.emit('registro:select', {
           deckId,
           oldid,
@@ -114,13 +224,7 @@
       });
     });
 
-    if (previewEl && resolved.wikitext?.preview) {
-      previewEl.textContent = resolved.wikitext.preview;
-    } else if (previewEl && resolved.wikitext?.error) {
-      previewEl.textContent = `wikitext: ${resolved.wikitext.error}`;
-    } else if (previewEl) {
-      previewEl.textContent = '';
-    }
+    updateWikitextBar(deckId, resolved);
   }
 
   function formatResolved(resolved, deckId) {
@@ -336,14 +440,60 @@
     updateCrossoverTesis(state);
   }
 
-  function autoLoadDecks() {
-    document.querySelectorAll('.deck-load').forEach(btn => btn.click());
+  const DEFAULT_SERVER_BY_DECK = { A: 'linea-espana', B: 'linea-wp-historia' };
+
+  function populateServerSelects(servers) {
+    if (!Array.isArray(servers)) return;
+    document.querySelectorAll('.deck-server').forEach((select) => {
+      const defaultServer = select.dataset.defaultServer
+        || DEFAULT_SERVER_BY_DECK[select.dataset.deck];
+      const previous = select.value;
+
+      select.replaceChildren();
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = '(elegir servidor)';
+      select.appendChild(placeholder);
+
+      for (const server of servers) {
+        const option = document.createElement('option');
+        option.value = server.id;
+        option.textContent = server.name || server.id;
+        select.appendChild(option);
+      }
+
+      const pick = [previous, defaultServer].find(
+        (id) => id && servers.some((s) => s.id === id)
+      );
+      if (pick) select.value = pick;
+    });
   }
 
+  function ensureDeckServerSelected(deckId) {
+    const select = document.querySelector(`.deck-server[data-deck="${deckId}"]`);
+    if (!select || select.value) return select?.value || '';
+    const fallback = select.dataset.defaultServer || DEFAULT_SERVER_BY_DECK[deckId];
+    if (fallback && [...select.options].some((opt) => opt.value === fallback)) {
+      select.value = fallback;
+    }
+    return select.value;
+  }
+
+  function autoLoadDecks() {
+    document.querySelectorAll('.deck-load').forEach((btn) => {
+      ensureDeckServerSelected(btn.dataset.deck);
+      btn.click();
+    });
+  }
+
+  socket.on('catalog:servers', populateServerSelects);
   socket.on('session:state', renderState);
 
   socket.on('deck:resolved', (payload) => {
     updateDeckResolved(payload.deckId, payload);
+    if (payload.deckId === 'B' && payload.wikitext?.cached) {
+      stopWikitextPoll();
+    }
     if (payload.deckId === 'A' && crossoverTesis) {
       const nodo = payload.nodo?.nodo ?? payload.nodo;
       const tesis = nodo?.tesis_villacañas || nodo?.tesis;
@@ -351,9 +501,56 @@
     }
   });
 
-  socket.on('connect', () => {
+  socket.on('wikitext:cache-result', (payload) => {
+    const deckId = 'B';
+    const statusEl = document.querySelector(`.wikitext-status[data-deck="${deckId}"]`);
+    if (!payload?.ok) {
+      if (statusEl) statusEl.textContent = payload?.error || 'Error al cachear';
+      return;
+    }
+    if (payload.status === 'cached' && payload.skipped) {
+      setCacheButtonVisible(deckId, false);
+      if (statusEl) statusEl.textContent = `wikitext: ya cacheado (oldid ${payload.oldid})`;
+      socket.emit('wikitext:poll', { deckId, oldid: payload.oldid });
+      return;
+    }
+    if (statusEl) statusEl.textContent = `Cacheando oldid ${payload.oldid}…`;
+    const cacheBtn = document.querySelector(`.btn-cache-wikitext[data-deck="${deckId}"]`);
+    if (cacheBtn) {
+      cacheBtn.hidden = false;
+      cacheBtn.disabled = true;
+      cacheBtn.textContent = 'Cacheando…';
+    }
+    startWikitextPoll(deckId, payload.oldid);
+  });
+
+  socket.on('wikitext:poll-result', (payload) => {
+    if (!payload?.cached) return;
+    stopWikitextPoll();
+    setCacheButtonVisible('B', false);
+  });
+
+  document.querySelectorAll('.btn-cache-wikitext').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const deckId = btn.dataset.deck || 'B';
+      const oldid = Number(btn.dataset.oldid);
+      if (!oldid) return;
+      btn.disabled = true;
+      btn.textContent = 'Cacheando…';
+      socket.emit('wikitext:cache', { deckId, oldid });
+    });
+  });
+
+  socket.on('connect', async () => {
     console.log('Session socket connected');
-    loadAlephData().then(autoLoadDecks);
+    try {
+      const res = await fetch('/api/servers');
+      if (res.ok) populateServerSelects(await res.json());
+    } catch (error) {
+      console.warn('Failed to refresh server list:', error);
+    }
+    await loadAlephData();
+    autoLoadDecks();
   });
   socket.on('disconnect', () => console.log('Session socket disconnected'));
 
@@ -365,6 +562,7 @@
     slider.addEventListener('change', () => {
       sliderDragging = false;
       selectedRegistroOldid = null;
+      stopWikitextPoll();
       socket.emit('playhead:set', { year: Number(slider.value) });
     });
   }

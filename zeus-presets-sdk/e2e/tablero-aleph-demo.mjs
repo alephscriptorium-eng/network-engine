@@ -47,9 +47,13 @@ try {
 
   const mainStore = new PresetStore({ dataDir: path.join(repoRoot, 'data') });
   const presetA = mainStore.getByName('aleph-tronco-puro');
-  const presetB = mainStore.getByName('aleph-wp-bridge');
+  const presetB = mainStore.getByName('aleph-wp-cache');
   assert(presetA, 'aleph-tronco-puro missing — run seed:aleph');
-  assert(presetB, 'aleph-wp-bridge missing — run seed:aleph');
+  assert(presetB, 'aleph-wp-cache missing — run seed:aleph');
+  assert(
+    presetB.items.some(i => i.name === 'cache_wikitext'),
+    'aleph-wp-cache should include cache_wikitext tool'
+  );
 
   console.log('2. Starting linea-system...');
   lineaHandles = await startAll();
@@ -70,7 +74,7 @@ try {
   console.log('4. REST /api/aleph/config...');
   const config = await fetchJson(`${base}/api/aleph/config`);
   assert(config.defaultCaso === 'aeo-p24-linea', 'defaultCaso mismatch');
-  assert(config.defaultPresets?.B === 'aleph-wp-bridge', 'default Deck B should be aleph-wp-bridge');
+  assert(config.defaultPresets?.B === 'aleph-wp-cache', 'default Deck B should be aleph-wp-cache');
   assert(config.casos?.length >= 3, 'casos list missing');
 
   console.log('5. REST /api/aleph/anchors...');
@@ -161,7 +165,7 @@ try {
 
   client.emit('registro:select', { deckId: 'B', oldid: resolvedB2026.registros?.anchor?.oldid });
   const selectedB = await waitResolved('B', p => p.selected?.oldid != null || p.wikitext);
-  assert(selectedB.wikitext?.cached === true || selectedB.wikitext?.error, 'wikitext on select');
+  assert(selectedB.wikitext?.cached === true || selectedB.wikitext?.action?.tool === 'cache_wikitext', 'wikitext on select');
 
   console.log('\nTablero ALEPH e2e: OK');
   client.disconnect();

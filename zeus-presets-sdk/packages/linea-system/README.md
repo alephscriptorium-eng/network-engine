@@ -21,6 +21,9 @@ npm run start:lineas
 | `linea://registro/{id}` | Curación `registro.md` + `delta.md` |
 | `get_registros_for_year` | Tool equivalente a `registros/year` |
 | `get_registros_for_nodo` | Tool equivalente a `registros/nodo` |
+| `cache_wikitext` | Fetch async de un oldid vía `fetch_snapshot.py` + rescan índice |
+
+Respuesta `not cached` en `linea://wikitext/{oldid}` incluye `action.tool = cache_wikitext` para Tablero.
 
 Datos del puente: `lineas-poder/espana/wp/historia/nodo-sections.json`.
 

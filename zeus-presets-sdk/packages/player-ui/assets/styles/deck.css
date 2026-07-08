@@ -374,8 +374,30 @@
 .badge-milestone { border-color: var(--accent-color); color: var(--accent-color); }
 .badge-curated { border-color: var(--warning-color); color: var(--warning-color); }
 
+.wikitext-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.wikitext-status {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex: 1 1 auto;
+  min-width: 12rem;
+}
+
+.btn-cache-wikitext {
+  flex: 0 0 auto;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.6rem;
+}
+
 .wikitext-preview {
-  margin-top: 0.5rem;
+  flex: 1 1 100%;
+  margin-top: 0;
   font-size: 0.75rem;
   font-family: var(--font-mono);
   max-height: 80px;

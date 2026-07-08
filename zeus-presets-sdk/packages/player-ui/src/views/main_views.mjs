@@ -23,7 +23,6 @@ function editorUrl(config) {
 function buildNavEntries(config) {
   return [
     { href: '/', emoji: '🎛️', text: 'Tablero', pageKey: 'deck' },
-    { href: `${editorUrl(config)}/settings`, emoji: '⚙️', text: 'Settings', external: true },
     { href: editorUrl(config), emoji: '🔧', text: 'Editor', external: true }
   ];
 }

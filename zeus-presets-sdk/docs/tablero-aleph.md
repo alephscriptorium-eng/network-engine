@@ -19,7 +19,7 @@ Orden: **lineas primero**, luego player.
 | Zona | Metáfora sound-system | Datos |
 |------|----------------------|-------|
 | Plato A | Medios — tronco Villacañas | `linea-espana`, preset `aleph-tronco-puro` |
-| Plato B | Agudos — revisiones WP temáticas | `linea-wp-historia`, preset `aleph-wp-bridge` |
+| Plato B | Agudos — revisiones WP temáticas | `linea-wp-historia`, preset `aleph-wp-cache` |
 | LED strip | Wave A anclas P01–P24 | `/api/aleph/anchors` |
 | Crossover | Graves (blockchain) + VU medidor | `/api/aleph/medicion/:casoId` |
 | Drawer Viaje | Block-4 — sin fetch | `#viaje` |
@@ -43,7 +43,8 @@ Click en LED Wave A: playhead al `año_ini` del nodo + selección del **oldid an
 | Preset | Uso |
 |--------|-----|
 | `aleph-tronco-puro` | Plato A — solo tesis P01–P24 |
-| `aleph-wp-bridge` | Plato B — puente temático nodo→registros + wikitext on select (**default B**) |
+| `aleph-wp-bridge` | Plato B — puente temático nodo→registros + wikitext on select |
+| `aleph-wp-cache` | Plato B — bridge + tool `cache_wikitext` + botón Cachear (**default B**) |
 | `aleph-wp-snapshots` | Plato B — oldid + wikitext por año calendario (MCS) |
 | `aleph-viaje-wave-a` | Plato B — stats + wikitext anclas (drawer `#viaje`) |
 | `aleph-reader-divulgacion` | Reader — sin fetch ni wikitext |
@@ -71,6 +72,27 @@ Click en LED Wave A: playhead al `año_ini` del nodo + selección del **oldid an
 ```
 
 Evento `registro:select` → `{ deckId, oldid, registro_id? }` carga wikitext del oldid elegido.
+
+### Cache on-demand (Plato B)
+
+Si `wikitext` no está cacheado, `deck:resolved` incluye:
+
+```js
+wikitext: {
+  cached: false,
+  oldid: 155320296,
+  error: 'not cached',
+  action: { tool: 'cache_wikitext', server: 'linea-wp-historia', arguments: { oldid }, poll: 'linea://wikitext/...' }
+}
+```
+
+| Evento socket | Payload | Efecto |
+|---------------|---------|--------|
+| `wikitext:cache` | `{ deckId, oldid }` | `callTool cache_wikitext` en linea-wp-historia (spawn `fetch_snapshot.py`) |
+| `wikitext:poll` | `{ deckId, oldid }` | Re-lee `linea://wikitext/{oldid}`; si cached → `deck:resolved` |
+| `wikitext:cache-result` | `{ ok, status, oldid, poll }` | Respuesta al cliente tras disparar cache |
+
+El browser arranca un timer (~2s) de `wikitext:poll` hasta cached o timeout 60s.
 
 ## Enlaces ALEPH
 

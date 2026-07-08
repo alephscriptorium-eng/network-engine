@@ -101,7 +101,7 @@ try {
   const wpHealth = await fetch(`http://localhost:${TEST_PORTS.wpHistoria}/mcp/health`);
   const wpHealthJson = await wpHealth.json();
   assert.deepEqual(wpHealthJson.capabilities, {
-    tools: 9,
+    tools: 10,
     resources: 3,
     resourceTemplates: 7,
     prompts: 8
@@ -264,7 +264,16 @@ try {
   assert.equal(uncachedPayload.cached, false);
   assert.ok(uncachedPayload.stats, 'uncached error should include stats');
   assert.ok(uncachedPayload.hint, 'uncached error should include hint');
-  console.log('Uncached wikitext OK: structured error with stats and hint');
+  assert.equal(uncachedPayload.action?.tool, 'cache_wikitext', 'uncached should include cache action');
+  assert.equal(uncachedPayload.action?.arguments?.oldid, uncachedOldid);
+  console.log('Uncached wikitext OK: structured error with stats, hint and action');
+
+  const cachedSkip = toolResultJson(
+    await wp.callTool({ name: 'cache_wikitext', arguments: { oldid: cachedOldid } })
+  );
+  assert.equal(cachedSkip.status, 'cached');
+  assert.equal(cachedSkip.skipped, true);
+  console.log(`cache_wikitext skip OK: oldid ${cachedOldid} already cached`);
 
   const registroId = 'r0001';
   const registroViaUri = toolResultJson(

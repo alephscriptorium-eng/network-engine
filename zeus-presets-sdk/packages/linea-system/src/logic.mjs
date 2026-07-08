@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { jsonContent } from '@zeus/presets-sdk';
 import { resolveNodo, resolveOldid, resolveRegistrosForNodo, resolveRegistrosForYear } from './loader.mjs';
+import { runCacheWikitext } from './cache-wikitext.mjs';
 
 /**
  * Registers linea-poder domain tools on an McpServer.
@@ -63,6 +64,20 @@ export function buildMcp(server, { config, lineData }) {
         }
       },
       async ({ year, limit }) => jsonContent(resolveRegistrosForYear(lineData, year, { limit }))
+    );
+
+    server.registerTool(
+      'cache_wikitext',
+      {
+        title: 'Cache WP wikitext snapshot',
+        description:
+          'Fetch a single Wikipedia oldid into cache/snapshots via fetch_snapshot.py. Returns immediately (async fetch); poll linea://wikitext/{oldid} until cached.',
+        inputSchema: {
+          oldid: z.number().describe('Wikipedia revision oldid to fetch and cache.'),
+          force: z.boolean().optional().describe('Re-fetch even if already cached.')
+        }
+      },
+      async ({ oldid, force }) => jsonContent(await runCacheWikitext(lineData, { oldid, force }))
     );
   }
 }

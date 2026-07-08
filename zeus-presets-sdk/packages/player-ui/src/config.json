@@ -4,7 +4,7 @@
     "host": "localhost"
   },
   "theme": {
-    "current": "Scriptorium-Skins"
+    "current": "Matrix-MCP"
   },
   "discovery": {
     "urls": [
@@ -53,7 +53,7 @@
   "aleph": {
     "defaultPresets": {
       "A": "aleph-tronco-puro",
-      "B": "aleph-wp-bridge"
+      "B": "aleph-wp-cache"
     },
     "defaultCaso": "aeo-p24-linea",
     "casos": [
@@ -61,7 +61,7 @@
       "aeo-tronco-caso1",
       "aeo-caso2-2026"
     ],
-    "theme": "Scriptorium-Skins",
+    "theme": "Matrix-MCP",
     "branding": {
       "title": "Tablero ALEPH",
       "tag": "Animus Iocandi · Scriptorium Skins"
