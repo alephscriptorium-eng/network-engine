@@ -195,3 +195,7 @@ if (document.readyState === 'loading') {
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = Zeus;
 }
+
+if (typeof window !== 'undefined') {
+  window.Zeus = Zeus;
+}

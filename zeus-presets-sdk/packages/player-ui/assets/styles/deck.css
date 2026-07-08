@@ -6,6 +6,48 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.tablero-header-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tablero-header-titles {
+  flex: 1 1 16rem;
+}
+
+.theme-nav-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.theme-nav-label-text {
+  font-weight: 600;
+}
+
+.nav-theme-select {
+  min-width: 11rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-theme-select:hover,
+.nav-theme-select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
 .tablero-title {
   margin: 0 0 0.25rem;
   font-size: 1.75rem;

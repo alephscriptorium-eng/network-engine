@@ -74,6 +74,9 @@ export function getConfig() {
 export function setTheme(themeName) {
   const config = getConfig();
   config.theme.current = themeName;
+  if (config.aleph) {
+    config.aleph.theme = themeName;
+  }
   fs.writeFileSync(configFilePath, JSON.stringify(config, null, 2));
   return config;
 }

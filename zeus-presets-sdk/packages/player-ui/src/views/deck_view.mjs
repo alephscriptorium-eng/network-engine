@@ -9,15 +9,27 @@ import { template, pageContainer, contentSection } from './main_views.mjs';
 import { getConfig } from '../config.mjs';
 import { getAlephConfig } from '../aleph-bridge.mjs';
 
+const THEME_LABELS = {
+  'Black-White-MCP': 'Black & White MCP',
+  'Clear-MCP': 'Clear MCP',
+  'Dark-MCP': 'Dark MCP',
+  'Matrix-MCP': 'Matrix MCP',
+  'Purple-MCP': 'Purple MCP',
+  'Orange-Dark-MCP': 'Orange Dark MCP',
+  'Scriptorium-Skins': 'Scriptorium Skins'
+};
+
 /**
  * @param {object} viewData
  * @param {Array} viewData.servers
  * @param {Array} viewData.presets
+ * @param {string[]} [viewData.themes]
+ * @param {string} [viewData.currentTheme]
  */
 export function deckView(viewData = {}) {
   const config = getConfig();
   const aleph = getAlephConfig(config);
-  const { servers = [], presets = [] } = viewData;
+  const { servers = [], presets = [], themes = [], currentTheme = config.theme?.current } = viewData;
   const range = config.deck?.troncoRange || { min: 450, max: 2026 };
   const cues = config.deck?.parteCues || [];
   const defaultYear = config.deck?.defaultYear ?? 2010;
@@ -31,7 +43,7 @@ export function deckView(viewData = {}) {
     'Tablero ALEPH',
     pageContainer(
       div({ class: 'tablero-container' },
-        headerAleph(aleph),
+        headerAleph(aleph, themes, currentTheme),
         contentSection(null,
           div({ class: 'deck-container' },
             div({ class: 'transport-bar' },
@@ -151,17 +163,32 @@ export function deckView(viewData = {}) {
     ),
     {
       currentPage: 'deck',
-      theme: aleph.theme || config.theme?.current,
+      theme: config.theme?.current || aleph.theme || 'Scriptorium-Skins',
       styles: ['/assets/styles/deck.css'],
       scripts: ['/socket.io/socket.io.js', '/assets/js/deck.js']
     }
   );
 }
 
-function headerAleph(aleph) {
+function headerAleph(aleph, themes = [], currentTheme = 'Scriptorium-Skins') {
   return section({ class: 'tablero-header' },
-    h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
-    p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
+    div({ class: 'tablero-header-row' },
+      div({ class: 'tablero-header-titles' },
+        h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
+        p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
+      ),
+      label({ class: 'theme-nav-label', for: 'nav-theme-select' },
+        span({ class: 'theme-nav-label-text' }, 'Tema'),
+        select({ id: 'nav-theme-select', class: 'nav-theme-select', name: 'theme' },
+          themes.map(themeName =>
+            option({
+              value: themeName,
+              ...(themeName === currentTheme ? { selected: 'selected' } : {})
+            }, THEME_LABELS[themeName] || themeName)
+          )
+        )
+      )
+    )
   );
 }
 

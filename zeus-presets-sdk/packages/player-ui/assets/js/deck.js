@@ -428,4 +428,14 @@
   if (hash && ['viaje', 'mcp', 'prensa'].includes(hash)) {
     document.querySelector(`.drawer-tab[data-tab="${hash}"]`)?.click();
   }
+
+  const themeSelect = document.getElementById('nav-theme-select');
+  if (themeSelect) {
+    themeSelect.addEventListener('change', async (e) => {
+      const themeName = e.target.value;
+      if (window.Zeus && typeof window.Zeus.switchTheme === 'function') {
+        await window.Zeus.switchTheme(themeName);
+      }
+    });
+  }
 })();

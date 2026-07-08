@@ -22,6 +22,8 @@ import {
 import { assetsDir as uiKitAssetsDir } from '@zeus/ui-kit';
 
 import { getConfig, resolveDataDir, packageDir } from './config.mjs';
+import { ThemeHandler } from './theme-handler.mjs';
+import { createThemeRoutes } from './theme-routes.mjs';
 import { sessionMachine, snapshotFromActor } from './session-machine.mjs';
 import { deckView } from './views/deck_view.mjs';
 import {
@@ -55,6 +57,7 @@ export async function createPlayerServer(options = {}) {
   const host = options.host ?? config.server?.host ?? 'localhost';
   const dataDir = options.dataDir ?? resolveDataDir(config);
   const discoveryUrls = options.discoveryUrls ?? config.discovery?.urls ?? [];
+  const themeHandler = new ThemeHandler();
 
   const store = new PresetStore({ dataDir });
   const registry = new ServerRegistry();
@@ -262,6 +265,8 @@ export async function createPlayerServer(options = {}) {
     res.json({ status: 'ok', service: 'player-ui', timestamp: new Date().toISOString() });
   });
 
+  app.use('/api', createThemeRoutes(themeHandler));
+
   app.get('/api/presets', (req, res) => {
     res.json(store.getAll().map(p => ({ id: p.id, name: p.name, description: p.description })));
   });
@@ -339,7 +344,12 @@ export async function createPlayerServer(options = {}) {
     try {
       const servers = await catalog.getAllServers();
       const presets = store.getAll();
-      const html = deckView({ servers, presets });
+      const html = deckView({
+        servers,
+        presets,
+        themes: themeHandler.getAvailableThemes(),
+        currentTheme: themeHandler.getCurrentTheme()
+      });
       res.setHeader('Content-Type', 'text/html');
       res.send(html.outerHTML);
     } catch (error) {

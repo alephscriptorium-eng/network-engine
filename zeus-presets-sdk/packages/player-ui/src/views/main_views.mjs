@@ -23,6 +23,7 @@ function editorUrl(config) {
 function buildNavEntries(config) {
   return [
     { href: '/', emoji: '🎛️', text: 'Tablero', pageKey: 'deck' },
+    { href: `${editorUrl(config)}/settings`, emoji: '⚙️', text: 'Settings', external: true },
     { href: editorUrl(config), emoji: '🔧', text: 'Editor', external: true }
   ];
 }
@@ -30,7 +31,7 @@ function buildNavEntries(config) {
 export const template = (pageTitle, content, options = {}) => {
   const config = getConfig();
   const aleph = getAlephConfig(config);
-  const theme = options.theme || aleph.theme || config.theme?.current || 'Scriptorium-Skins';
+  const theme = options.theme || config.theme?.current || aleph.theme || 'Scriptorium-Skins';
   return uiTemplate(pageTitle, content, {
     ...options,
     theme,
