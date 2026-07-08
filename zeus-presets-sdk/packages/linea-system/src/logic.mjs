@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { jsonContent } from '@zeus/presets-sdk';
-import { resolveNodo, resolveOldid } from './loader.mjs';
+import { resolveNodo, resolveOldid, resolveRegistrosForNodo, resolveRegistrosForYear } from './loader.mjs';
 
 /**
  * Registers linea-poder domain tools on an McpServer.
@@ -29,10 +29,40 @@ export function buildMcp(server, { config, lineData }) {
       'get_oldid',
       {
         title: `Get WP oldid at year`,
-        description: `Closest Wikipedia revision oldid at or before the end of the given year (2001–2026). Returns empty error outside coverage.`,
+        description: `Closest Wikipedia revision oldid by **calendar edit year** at or before the end of the given year (2001–2026). Returns error outside coverage. Distinct from get_registros_for_year.`,
         inputSchema: yearInput
       },
       async ({ year }) => jsonContent(resolveOldid(lineData.satellite, year))
+    );
+
+    const limitInput = {
+      limit: z.number().optional().describe('Max registros to return (default: all).')
+    };
+
+    server.registerTool(
+      'get_registros_for_nodo',
+      {
+        title: `Get thematic registros for nodo`,
+        description: `Lists WP revision registros for sections mapped to a Villacañas nodo (P01–P24).`,
+        inputSchema: {
+          nodo_id: z.string().describe('Nodo id, e.g. P03.'),
+          ...limitInput
+        }
+      },
+      async ({ nodo_id, limit }) => jsonContent(resolveRegistrosForNodo(lineData, nodo_id, { limit }))
+    );
+
+    server.registerTool(
+      'get_registros_for_year',
+      {
+        title: `Get thematic registros for historical year`,
+        description: `Resolves nodo at historical year, then lists thematic WP registros for that nodo. Works outside WP calendar coverage.`,
+        inputSchema: {
+          ...yearInput,
+          ...limitInput
+        }
+      },
+      async ({ year, limit }) => jsonContent(resolveRegistrosForYear(lineData, year, { limit }))
     );
   }
 }

@@ -1,0 +1,235 @@
+{
+  "version": "0.1.0",
+  "linea_id": "espana",
+  "description": "Mapa curado nodo Villacañas P01–P24 → secciones WP del artículo Historia de España",
+  "nodos": {
+    "P01": {
+      "sections": [
+        "Hispania romana",
+        "Las invasiones germánicas y el reino visigodo (siglo V-711)",
+        "Reino visigodo",
+        "Religión en el reino visigodo",
+        "La caída del Imperio romano"
+      ],
+      "notes": "450–711 Hispania visigoda"
+    },
+    "P02": {
+      "sections": [
+        "La conquista islámica",
+        "La conquista musulmana",
+        "La conquista árabe",
+        "Conquista cartaginesa",
+        "Era musulmana"
+      ],
+      "notes": "711–850 conquista y primeros espacios"
+    },
+    "P03": {
+      "sections": [
+        "La Reconquista",
+        "Era musulmana",
+        "De Hispania a España",
+        "Llegada de distintos pueblos",
+        "La conquista cristiana"
+      ],
+      "notes": "850–1037 condados y emirato fragmentado"
+    },
+    "P04": {
+      "sections": [
+        "La Reconquista (siglos VIII a XV)",
+        "Reino de Castilla y León",
+        "Corona de León y Castilla",
+        "La Reconquista",
+        "Unión de León y Castilla"
+      ],
+      "notes": "1037–1150 reinados expansionistas"
+    },
+    "P05": {
+      "sections": [
+        "De «las Españas» a España",
+        "El auge del castellano",
+        "Unión de León y Castilla",
+        "De Castilla a España",
+        "De Hispania a España"
+      ],
+      "notes": "1150–1252 constitución de los reinos"
+    },
+    "P06": {
+      "sections": [
+        "Crisis bajomedieval",
+        "Edad Media",
+        "El auge del castellano",
+        "De «las Españas» a España"
+      ],
+      "notes": "1252–1350 transfiguración carismática"
+    },
+    "P07": {
+      "sections": [
+        "Crisis bajomedieval",
+        "Edad Media",
+        "La Reconquista (siglos VIII a XV)",
+        "El auge del castellano"
+      ],
+      "notes": "1350–1450 guerras civiles castellanas"
+    },
+    "P08": {
+      "sections": [
+        "Siglo de Oro",
+        "Historia moderna de España",
+        "De «las Españas» a España",
+        "Imperio español"
+      ],
+      "notes": "1450–1516 Reyes Católicos"
+    },
+    "P09": {
+      "sections": [
+        "Casa de Austria",
+        "Imperio español",
+        "España imperial",
+        "Historia moderna de España"
+      ],
+      "notes": "1516–1556 imperio de Carlos V"
+    },
+    "P10": {
+      "sections": [
+        "Siglo de Oro",
+        "Imperio español",
+        "Casa de Austria",
+        "Absolutismo y centralización de España"
+      ],
+      "notes": "1556–1621 hegemonía de Felipe II"
+    },
+    "P11": {
+      "sections": [
+        "Casa de Austria",
+        "Siglo de Oro",
+        "Imperio español",
+        "Historia moderna de España"
+      ],
+      "notes": "1621–1700 decadencia y pluralidad imperial"
+    },
+    "P12": {
+      "sections": [
+        "Casa de Borbón",
+        "Absolutismo y centralización de España",
+        "La Casa de Borbón en España y la Ilustración",
+        "Historia moderna de España"
+      ],
+      "notes": "1700–1759 primeros Borbones"
+    },
+    "P13": {
+      "sections": [
+        "La Ilustración en España y la aparición de la Casa de Borbón",
+        "La Casa de Borbón y la Ilustración",
+        "Absolutismo y centralización de España",
+        "Casa de Borbón"
+      ],
+      "notes": "1759–1808 Ilustración y Antiguo Régimen"
+    },
+    "P14": {
+      "sections": [
+        "Guerra de la Independencia (1808-1813)",
+        "Historia contemporánea de España",
+        "El trienio liberal (1820-1823)"
+      ],
+      "notes": "1808–1814 Guerra de la Independencia"
+    },
+    "P15": {
+      "sections": [
+        "El trienio liberal (1820-1823)",
+        "Reinado de Fernando VII (1814-1833)",
+        "Historia contemporánea de España",
+        "Restauración borbónica"
+      ],
+      "notes": "1814–1833 liberalismo y restauración"
+    },
+    "P16": {
+      "sections": [
+        "Configuración del Estado liberal en España (1833-1868)",
+        "Reinado de Isabel II (1833-1868)",
+        "Reinado de Fernando VII (1814-1833)",
+        "Historia contemporánea de España"
+      ],
+      "notes": "1833–1843 regencias y guerras carlistas"
+    },
+    "P17": {
+      "sections": [
+        "Reinado de Isabel II (1833-1868)",
+        "Reinado de Isabel II (1843-1868)",
+        "Configuración del Estado liberal en España (1833-1868)",
+        "Restauración borbónica"
+      ],
+      "notes": "1843–1868 moderados y desamortización"
+    },
+    "P18": {
+      "sections": [
+        "Sexenio Democrático (1868-1874)",
+        "Sexenio Democrático (1868 - 1874)",
+        "Primera República Española",
+        "Primera República Española (1873-1874)",
+        "Casa de Saboya"
+      ],
+      "notes": "1868–1874 sexenio revolucionario"
+    },
+    "P19": {
+      "sections": [
+        "Restauración borbónica",
+        "Restauración borbónica (1875-1931)",
+        "Reinado de Alfonso XII (1875-1885)",
+        "Historia contemporánea de España"
+      ],
+      "notes": "1874–1898 Restauración canovista"
+    },
+    "P20": {
+      "sections": [
+        "Guerra hispano-estadounidense",
+        "Crisis de la Restauración",
+        "Reinado de Alfonso XIII (1902-1931)",
+        "Dictadura de Primo de Rivera",
+        "Historia contemporánea de España"
+      ],
+      "notes": "1898–1931 crisis del 98 y laborismo"
+    },
+    "P21": {
+      "sections": [
+        "Segunda República Española",
+        "Segunda República Española (1931-1936)",
+        "Guerra Civil Española (1936-1939)",
+        "Guerra civil española",
+        "Dictadura de Primo de Rivera (1923-1930)"
+      ],
+      "notes": "1931–1939 Segunda República y Guerra Civil"
+    },
+    "P22": {
+      "sections": [
+        "Dictadura del general Franco",
+        "Dictadura de Francisco Franco (1939-1975)",
+        "Dictadura del general Franco (1939-1975)",
+        "Bibliografía sobre franquismo"
+      ],
+      "notes": "1939–1959 franquismo primer período"
+    },
+    "P23": {
+      "sections": [
+        "Transición a la democracia",
+        "Transición a la democracia (1975-1982)",
+        "Transición a la democracia (1975–1982)",
+        "Dictadura del general Franco (1939-1975)"
+      ],
+      "notes": "1959–1978 franquismo tardío y transición"
+    },
+    "P24": {
+      "sections": [
+        "Historia reciente (1982-presente)",
+        "Historia reciente (1982–presente)",
+        "Historia actual",
+        "Historia actual (1982-presente)",
+        "Historia actual (1982–presente)",
+        "Historia actual (1982-Presente)",
+        "Reinados de Juan Carlos I y de Felipe VI",
+        "Consolidación democrática (1979 - 1982)",
+        "Transición a la democracia (1975-1982)"
+      ],
+      "notes": "1978– presente Estado autonómico"
+    }
+  }
+}

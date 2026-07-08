@@ -11,7 +11,7 @@ import cors from 'cors';
 import { z } from 'zod';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { mountMCPRoute, registerCommonMCP, promptMessages, getMcpCapabilities, createServerCardResource, updateServerCard, createMcpHttpStart } from '@zeus/presets-sdk';
-import { resolveNodo, resolveOldid, resolveParte, readWikitext, readRegistro } from './loader.mjs';
+import { resolveNodo, resolveOldid, resolveParte, readWikitext, readRegistro, resolveRegistrosForNodo, resolveRegistrosForYear } from './loader.mjs';
 import { SERVER_VERSION } from './lineas.mjs';
 import * as logic from './logic.mjs';
 
@@ -100,7 +100,7 @@ function getTemplateRegistry(config, lineData) {
         uriTemplate: 'linea://oldid/{year}',
         title: `WP oldid at year`,
         mimeType: 'application/json',
-        description: `Closest Wikipedia revision (oldid + timestamp) at or before the end of the given year. Coverage 2001-2026 only.`,
+        description: `Wikipedia revision (oldid + timestamp) whose **calendar edit year** is at or before the end of the given year. Coverage 2001–2026 only. Distinct from linea://registros/year/{year}, which lists thematic edits for the Villacañas nodo at that historical year.`,
         read: (variables) => {
           const parsed = parseYear(variables.year);
           if (parsed.error) return parsed;
@@ -122,6 +122,26 @@ function getTemplateRegistry(config, lineData) {
         mimeType: 'application/json',
         description: `Curated annotations (registro.md and delta.md) for a specific registro_id. Returns error if not curated. Use linea://cache/stats to see curated_registros count.`,
         read: async (variables) => readRegistro(lineData.satellite, variables.id)
+      },
+      {
+        name: 'linea-registros-nodo',
+        uriTemplate: 'linea://registros/nodo/{nodo_id}',
+        title: `Thematic WP registros for nodo`,
+        mimeType: 'application/json',
+        description: `Lists Wikipedia revision registros that edited sections mapped to a Villacañas nodo (P01–P24). Includes wave-A anchor when available.`,
+        read: (variables) => resolveRegistrosForNodo(lineData, variables.nodo_id)
+      },
+      {
+        name: 'linea-registros-year',
+        uriTemplate: 'linea://registros/year/{year}',
+        title: `Thematic WP registros for historical year`,
+        mimeType: 'application/json',
+        description: `Resolves the Villacañas nodo at a historical year, then lists thematic WP registros for that nodo's mapped sections. Works outside WP calendar coverage (e.g. year 1000 → P03).`,
+        read: (variables) => {
+          const parsed = parseYear(variables.year);
+          if (parsed.error) return parsed;
+          return resolveRegistrosForYear(lineData, parsed.year);
+        }
       }
     );
   }
@@ -185,12 +205,15 @@ function getPromptRegistry(config, lineData) {
         ];
         if (oldidUri) {
           steps.push(
-            `3. Resolve the WP oldid at ${at}:`,
-            `   - Preferred: read ${oldidUri}.`,
+            `3. List thematic WP registros for the nodo at ${at}:`,
+            `   - Preferred: read linea://registros/year/${year ?? '{year}'}.`,
+            `   - Alternative: call get_registros_for_year with { "year": ${year ?? '<year>'} }.`,
+            `4. (Optional) For calendar WP snapshot at edit year, read ${oldidUri}.`,
             `   - Alternative: call get_oldid with { "year": ${year ?? '<year>'} }.`,
-            '4. (Optional) If you want the wikitext body, read linea://wikitext/{oldid}.',
+            '   Note: oldid by calendar year only works 2001–2026; use registros/year for thematic bridge.',
+            '5. (Optional) If you want the wikitext body, read linea://wikitext/{oldid}.',
             '   If not cached, propose a viaje: read linea://cache/stats and negotiate budget.',
-            '5. Write a concise report combining nodo (id, etiqueta, tesis) and oldid (revision id + timestamp).'
+            '6. Write a concise report combining nodo (id, etiqueta, tesis), registros list and optional oldid/wikitext.'
           );
         } else {
           steps.push('3. Write a concise report with nodo id, etiqueta, parte and tesis_villacañas.');
@@ -310,6 +333,40 @@ function getPromptRegistry(config, lineData) {
           '3. Estimate queries N needed (count of oldids to fetch).',
           '4. Draft proposal: goal, wave, estimated queries, expected coverage gain.',
           '5. DO NOT fetch anything. Present the proposal to the user and await approval.'
+        ];
+        return promptMessages(steps.join('\n'));
+      }
+    },
+    {
+      name: 'report-registros-nodo',
+      title: `${config.name} registros nodo report`,
+      description: `Instructions to list thematic WP registros for a Villacañas nodo or historical year.`,
+      argsSchema: {
+        year: z.string().optional().describe('Historical year (any tronco coverage year).'),
+        nodo_id: z.string().optional().describe('Nodo id P01–P24. If omitted, derive from year.')
+      },
+      kinds: ['satelite'],
+      render: ({ year, nodo_id }) => {
+        const target = nodo_id
+          ? `nodo ${nodo_id}`
+          : year
+            ? `year ${year}`
+            : 'a year or nodo within coverage';
+        const uri = nodo_id
+          ? `linea://registros/nodo/${nodo_id}`
+          : year
+            ? `linea://registros/year/${year}`
+            : 'linea://registros/year/{year}';
+        const steps = [
+          `Produce a thematic registros report for ${config.name} at ${target}.`,
+          '',
+          'Steps:',
+          `1. Read ${uri} to get nodo, sections, anchor and registros list.`,
+          `   Bridge fallback: getResourceByUri({ uri: "${uri}" }).`,
+          '2. Highlight the wave-A anchor (is_anchor) if present.',
+          '3. Note cached vs curated counts; propose viaje for missing anchor wikitext.',
+          '4. (Optional) Read linea://wikitext/{oldid} for selected registros.',
+          '5. Write a concise report: nodo, sections, top registros, anchor status.'
         ];
         return promptMessages(steps.join('\n'));
       }

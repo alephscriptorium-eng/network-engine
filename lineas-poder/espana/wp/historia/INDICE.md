@@ -7,7 +7,16 @@ Satélite Wikipedia L0 de la línea [`espana`](../../INDICE.md): historial de ed
 semillas y buffers MCS en nodos P01–P24 (evidencia L0 / oldid).
 
 Relacionado: tronco Villacañas [`../../nodos.yaml`](../../nodos.yaml) ·
-[`../../manifest.json`](../../manifest.json) · [`README.md`](README.md).
+[`../../manifest.json`](../../manifest.json) · [`nodo-sections.json`](nodo-sections.json) ·
+[`README.md`](README.md).
+
+## Puente nodo ↔ registros
+
+Para cada nodo P01–P24, [`nodo-sections.json`](nodo-sections.json) lista secciones WP cuyas
+ediciones alimentan el Plato B del Tablero (`linea://registros/year/{año}`). Distinto de
+`linea://oldid/{year}`, que resuelve por **año calendario de edición** (2001–2026).
+
+Validación: `python3 scripts/build_nodo_registros_index.py` desde `lineas-poder/`.
 
 ## Preamble (linea.md)
 
@@ -145,6 +154,7 @@ Pack de partida para expandir caché (véase `ontology-seeds.json`):
 lineas-poder/espana/wp/historia/
 ├── raw/linea.md
 ├── manifest.json
+├── nodo-sections.json   # puente P01–P24 → secciones WP
 ├── INDICE.md
 ├── README.md
 ├── ontology-seeds.json

@@ -91,6 +91,12 @@ export function loadMedicion(casoId, paths = {}) {
   };
 }
 
+function parseAnchorYear(note) {
+  if (!note || typeof note !== 'string') return null;
+  const match = note.match(/WP\s+(\d{4})/);
+  return match ? Number(match[1]) : null;
+}
+
 /**
  * @param {number[]} cachedOldids
  * @param {Map<number, number>} [wikitextLengths] - oldid -> byte length (optional)
@@ -116,6 +122,7 @@ export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, paths
       nodo_id: anchor.nodo_id,
       oldid: oid,
       year: nodo.año_ini ?? null,
+      wp_year: parseAnchorYear(anchor.note),
       note: anchor.note,
       status
     };
@@ -135,7 +142,7 @@ export function getAlephConfig(config = {}) {
   const aleph = config.aleph || {};
   const paths = resolveAlephPaths(aleph.paths);
   return {
-    defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-viaje-wave-a' },
+    defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-bridge' },
     defaultCaso: aleph.defaultCaso || 'aeo-p24-linea',
     casos: aleph.casos || ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: aleph.theme || 'Scriptorium-Skins',

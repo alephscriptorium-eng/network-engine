@@ -194,6 +194,19 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
     div({ class: 'deck-status-row' },
       span({ class: 'deck-state', 'data-deck': deckId, 'data-state': 'empty' }, 'empty')
     ),
-    div({ class: 'deck-resolved', 'data-deck': deckId }, '—')
+    div({ class: 'deck-resolved', 'data-deck': deckId },
+      deckId === 'B'
+        ? div({ class: 'deck-b-content' },
+            div({ class: 'deck-b-summary', 'data-deck': deckId }, '—'),
+            div({ class: 'registros-list-wrap' },
+              h4({ class: 'registros-title' }, 'Revisiones WP temáticas'),
+              div({ class: 'registros-list', 'data-deck': deckId },
+                p({ class: 'registros-empty' }, 'Cargar plato para ver registros')
+              )
+            ),
+            div({ class: 'wikitext-preview', 'data-deck': deckId }, '')
+          )
+        : '—'
+    )
   );
 }

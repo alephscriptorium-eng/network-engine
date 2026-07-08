@@ -97,7 +97,27 @@ export async function createPlayerServer(options = {}) {
     return found;
   }
 
-  async function resolveDeck(deckId, year) {
+  async function fetchWikitext(extractor, oldid) {
+    if (oldid == null) return null;
+    try {
+      const wtRes = await extractor.readResource(`linea://wikitext/${oldid}`);
+      const parsed = parseResourceJson(wtRes);
+      if (parsed?.error) {
+        return { cached: false, error: parsed.error, hint: parsed.hint };
+      }
+      return {
+        cached: parsed.cached !== false,
+        bytes: parsed.wikitext_length ?? (parsed.wikitext?.length ?? 0),
+        preview: typeof parsed.wikitext === 'string'
+          ? parsed.wikitext.slice(0, 200)
+          : undefined
+      };
+    } catch (error) {
+      return { cached: false, error: error.message };
+    }
+  }
+
+  async function resolveDeck(deckId, year, selectedOldid = null) {
     const deck = actor.getSnapshot().context.decks[deckId];
     if (!deck || !deck.serverName || deck.phase === 'empty' || deck.phase === 'loading') {
       return null;
@@ -115,12 +135,14 @@ export async function createPlayerServer(options = {}) {
       return { deckId, year, error: 'no extractor' };
     }
 
-    // Capability gating: only resolve what the (preset-filtered) deck exposes.
     const templates = (deck.filtered?.resourceTemplates || entry.resourceTemplates || [])
       .map(t => t.name);
 
     let nodo = null;
     let oldid = null;
+    let registrosPayload = null;
+    let selected = null;
+    let wikitext = null;
 
     if (templates.includes('linea-nodo')) {
       try {
@@ -128,6 +150,29 @@ export async function createPlayerServer(options = {}) {
         nodo = parseResourceJson(nodoRes);
       } catch (error) {
         nodo = { error: error.message };
+      }
+    }
+
+    if (templates.includes('linea-registros-year')) {
+      try {
+        const regRes = await extractor.readResource(`linea://registros/year/${year}`);
+        const parsed = parseResourceJson(regRes);
+        if (parsed?.error) {
+          registrosPayload = { error: parsed.error };
+        } else {
+          registrosPayload = {
+            anchor: parsed.anchor ?? null,
+            sections: parsed.sections ?? [],
+            items: parsed.registros ?? [],
+            total: parsed.total ?? 0,
+            cached_count: parsed.cached_count ?? 0
+          };
+          if (!nodo?.nodo && parsed.nodo) {
+            nodo = { nodo: parsed.nodo };
+          }
+        }
+      } catch (error) {
+        registrosPayload = { error: error.message };
       }
     }
 
@@ -140,30 +185,30 @@ export async function createPlayerServer(options = {}) {
       }
     }
 
-    let wikitext = null;
-    if (templates.includes('linea-wikitext') && oldid?.oldid != null && !oldid.error) {
-      try {
-        const wtRes = await extractor.readResource(`linea://wikitext/${oldid.oldid}`);
-        const parsed = parseResourceJson(wtRes);
-        if (parsed?.error) {
-          wikitext = { cached: false, error: parsed.error, hint: parsed.hint };
-        } else {
-          wikitext = {
-            cached: parsed.cached !== false,
-            bytes: parsed.wikitext_length ?? (parsed.wikitext?.length ?? 0),
-            preview: typeof parsed.wikitext === 'string'
-              ? parsed.wikitext.slice(0, 200)
-              : undefined
-          };
-        }
-      } catch (error) {
-        wikitext = { cached: false, error: error.message };
+    const pickOldid = selectedOldid ?? oldid?.oldid ?? registrosPayload?.anchor?.oldid ?? null;
+
+    if (templates.includes('linea-wikitext') && pickOldid != null) {
+      wikitext = await fetchWikitext(extractor, pickOldid);
+      if (selectedOldid != null) {
+        const match = registrosPayload?.items?.find(r => r.oldid === Number(selectedOldid));
+        selected = match ?? { oldid: Number(selectedOldid) };
       }
+    } else if (templates.includes('linea-wikitext') && oldid?.oldid != null && !oldid.error) {
+      wikitext = await fetchWikitext(extractor, oldid.oldid);
     }
 
-    // Reaching this point means the server answered: recover from degraded.
-    actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved: { year, nodo, oldid, wikitext } });
-    return { deckId, year, nodo, oldid, wikitext };
+    const resolved = { year, nodo, oldid, registros: registrosPayload, selected, wikitext };
+    actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved });
+    return { deckId, ...resolved };
+  }
+
+  async function handleRegistroSelect(io, { deckId = 'B', oldid, registro_id }) {
+    const year = actor.getSnapshot().context.playhead.year;
+    const resolved = await resolveDeck(deckId, year, oldid);
+    if (resolved) {
+      io.of('/session').emit('deck:resolved', resolved);
+      broadcastState(io);
+    }
   }
 
   async function resolveAllDecks(io) {
@@ -255,6 +300,21 @@ export async function createPlayerServer(options = {}) {
     res.json(data);
   });
 
+  app.get('/api/aleph/registros/:year', async (req, res) => {
+    try {
+      const year = Number(req.params.year);
+      const extractor = registry.extractors.get('linea-wp-historia');
+      if (!extractor) {
+        res.status(503).json({ error: 'linea-wp-historia unavailable' });
+        return;
+      }
+      const regRes = await extractor.readResource(`linea://registros/year/${year}`);
+      res.json(parseResourceJson(regRes));
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
   app.get('/api/aleph/topology', async (req, res) => {
     try {
       const cards = {};
@@ -302,6 +362,10 @@ export async function createPlayerServer(options = {}) {
       actor.send({ type: 'PLAYHEAD_SET', year: Number(year) });
       broadcastState(io);
       await resolveAllDecks(io);
+    });
+
+    socket.on('registro:select', (payload) => {
+      handleRegistroSelect(io, payload).catch(err => console.error('registro:select error:', err));
     });
 
     socket.on('sync:toggle', () => {

@@ -53,7 +53,7 @@
   "aleph": {
     "defaultPresets": {
       "A": "aleph-tronco-puro",
-      "B": "aleph-viaje-wave-a"
+      "B": "aleph-wp-bridge"
     },
     "defaultCaso": "aeo-p24-linea",
     "casos": [

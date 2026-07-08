@@ -232,6 +232,116 @@
   color: var(--text-secondary);
 }
 
+.deck-b-summary {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.registros-title {
+  font-size: 0.8rem;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.registros-list-wrap {
+  margin-top: 0.5rem;
+}
+
+.registros-list {
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+}
+
+.registros-empty {
+  padding: 0.75rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.registro-item {
+  display: grid;
+  grid-template-columns: 4rem 1fr auto;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: 0.78rem;
+}
+
+.registro-item:last-child {
+  border-bottom: none;
+}
+
+.registro-item:hover {
+  background: var(--background-tertiary);
+}
+
+.registro-item.selected {
+  background: rgba(0, 200, 120, 0.12);
+  outline: 1px solid var(--success-color);
+}
+
+.registro-item.is-anchor {
+  border-left: 3px solid var(--primary-color);
+}
+
+.registro-id {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.registro-meta {
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.registro-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  justify-content: flex-end;
+}
+
+.registro-badge {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  text-transform: uppercase;
+}
+
+.badge-anchor { border-color: var(--primary-color); color: var(--primary-color); }
+.badge-cached { border-color: var(--success-color); color: var(--success-color); }
+.badge-milestone { border-color: var(--accent-color); color: var(--accent-color); }
+.badge-curated { border-color: var(--warning-color); color: var(--warning-color); }
+
+.wikitext-preview {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  max-height: 80px;
+  overflow: auto;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
 /* Crossover medidor */
 .crossover-panel {
   border: 1px solid var(--border-color);

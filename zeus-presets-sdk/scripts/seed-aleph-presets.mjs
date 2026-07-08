@@ -40,6 +40,23 @@ const ALEPH_PRESETS = [
     ]
   },
   {
+    name: 'aleph-wp-bridge',
+    description: 'Plato B — puente temático nodo→registros WP + wikitext on select',
+    category: 'ALEPH et OMEGA',
+    prompt: 'Composer: lista registros temáticos del nodo activo; wikitext al seleccionar oldid.',
+    items: [
+      { serverName: 'linea-wp-historia', type: 'resourceTemplate', name: 'linea-nodo' },
+      { serverName: 'linea-wp-historia', type: 'resourceTemplate', name: 'linea-registros-year' },
+      { serverName: 'linea-wp-historia', type: 'resourceTemplate', name: 'linea-registros-nodo' },
+      { serverName: 'linea-wp-historia', type: 'resourceTemplate', name: 'linea-wikitext' },
+      { serverName: 'linea-wp-historia', type: 'resourceTemplate', name: 'linea-registro' },
+      { serverName: 'linea-wp-historia', type: 'tool', name: 'get_nodo' },
+      { serverName: 'linea-wp-historia', type: 'tool', name: 'get_registros_for_year' },
+      { serverName: 'linea-wp-historia', type: 'tool', name: 'get_registros_for_nodo' },
+      { serverName: 'linea-wp-historia', type: 'prompt', name: 'report-registros-nodo' }
+    ]
+  },
+  {
     name: 'aleph-viaje-wave-a',
     description: 'Plato B — viaje caché wave A (stats + wikitext anclas P01–P24)',
     category: 'ALEPH et OMEGA',

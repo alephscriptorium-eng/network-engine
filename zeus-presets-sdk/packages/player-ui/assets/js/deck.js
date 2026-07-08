@@ -27,39 +27,115 @@
   let alephConfig = null;
   let anchorCells = [];
   let currentMedicion = null;
+  let selectedRegistroOldid = null;
 
-  function formatResolved(resolved) {
+  function formatDeckASummary(resolved) {
     if (!resolved) return '—';
-    const parts = [];
     const nodo = resolved.nodo?.nodo ?? resolved.nodo;
     if (nodo?.id) {
-      parts.push(`nodo: ${nodo.id} — ${nodo.etiqueta || ''}`);
-      if (nodo.tesis) parts.push(`tesis: ${nodo.tesis.slice(0, 120)}…`);
-    } else if (resolved.nodo?.error) {
-      parts.push(`nodo: ${resolved.nodo.error}`);
+      return `Periodo Villacañas: ${nodo.id} — ${nodo.etiqueta || ''}\n${nodo.tesis_villacañas || nodo.tesis || ''}`;
     }
-    if (resolved.oldid?.oldid != null) {
-      parts.push(`oldid: ${resolved.oldid.oldid} @ ${resolved.oldid.timestamp || ''}`);
-    } else if (resolved.oldid?.error) {
-      parts.push(`oldid: ${resolved.oldid.error}`);
+    if (resolved.nodo?.error) return `nodo: ${resolved.nodo.error}`;
+    return '—';
+  }
+
+  function formatDeckBSummary(resolved) {
+    if (!resolved) return '—';
+    const nodo = resolved.nodo?.nodo ?? resolved.nodo;
+    const reg = resolved.registros;
+    const lines = [];
+    if (nodo?.id) {
+      lines.push(`Revisiones WP sobre ${nodo.id} (${nodo.etiqueta || ''})`);
+    }
+    if (reg?.total != null) {
+      lines.push(`${reg.total} registros · ${reg.cached_count ?? 0} cacheados`);
+    } else if (reg?.error) {
+      lines.push(reg.error);
     }
     if (resolved.wikitext) {
       if (resolved.wikitext.cached) {
-        parts.push(`wikitext: ${resolved.wikitext.bytes} bytes`);
+        lines.push(`wikitext: ${resolved.wikitext.bytes} bytes`);
       } else {
-        parts.push(`wikitext: ${resolved.wikitext.error || 'not cached'}`);
+        lines.push(`wikitext: ${resolved.wikitext.error || 'not cached'}`);
       }
     }
-    if (resolved.error) parts.push(resolved.error);
-    return parts.length ? parts.join('\n') : JSON.stringify(resolved, null, 2);
+    return lines.length ? lines.join('\n') : '—';
+  }
+
+  function badgeHtml(label, cls) {
+    return `<span class="registro-badge badge-${cls}">${label}</span>`;
+  }
+
+  function renderRegistrosList(deckId, resolved) {
+    const listEl = document.querySelector(`.registros-list[data-deck="${deckId}"]`);
+    const previewEl = document.querySelector(`.wikitext-preview[data-deck="${deckId}"]`);
+    if (!listEl) return;
+
+    const reg = resolved?.registros;
+    if (!reg || reg.error) {
+      listEl.innerHTML = `<p class="registros-empty">${reg?.error || 'Sin datos de registros'}</p>`;
+      if (previewEl) previewEl.textContent = '';
+      return;
+    }
+    if (reg.total === 0) {
+      listEl.innerHTML = '<p class="registros-empty">No hay registros para las secciones mapeadas</p>';
+      if (previewEl) previewEl.textContent = '';
+      return;
+    }
+
+    const items = reg.items || [];
+    listEl.innerHTML = items.map(item => {
+      const badges = [];
+      if (item.is_anchor) badges.push(badgeHtml('ancla', 'anchor'));
+      if (item.cached) badges.push(badgeHtml('cached', 'cached'));
+      if (item.milestone) badges.push(badgeHtml('milestone', 'milestone'));
+      if (item.curated) badges.push(badgeHtml('curated', 'curated'));
+      const selected = selectedRegistroOldid === item.oldid ? ' selected' : '';
+      return `<button type="button" class="registro-item${selected}${item.is_anchor ? ' is-anchor' : ''}"
+        data-oldid="${item.oldid}" data-registro-id="${item.registro_id || ''}"
+        title="${item.section || ''}">
+        <span class="registro-id">${item.registro_id}</span>
+        <span class="registro-meta">${item.timestamp || ''} · ${item.section || '—'}</span>
+        <span class="registro-badges">${badges.join('')}</span>
+      </button>`;
+    }).join('');
+
+    listEl.querySelectorAll('.registro-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const oldid = Number(btn.dataset.oldid);
+        selectedRegistroOldid = oldid;
+        listEl.querySelectorAll('.registro-item').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        socket.emit('registro:select', {
+          deckId,
+          oldid,
+          registro_id: btn.dataset.registroId || undefined
+        });
+      });
+    });
+
+    if (previewEl && resolved.wikitext?.preview) {
+      previewEl.textContent = resolved.wikitext.preview;
+    } else if (previewEl && resolved.wikitext?.error) {
+      previewEl.textContent = `wikitext: ${resolved.wikitext.error}`;
+    } else if (previewEl) {
+      previewEl.textContent = '';
+    }
+  }
+
+  function formatResolved(resolved, deckId) {
+    if (deckId === 'A') return formatDeckASummary(resolved);
+    if (deckId === 'B') return formatDeckBSummary(resolved);
+    if (!resolved) return '—';
+    return JSON.stringify(resolved, null, 2);
   }
 
   function updateCrossoverTesis(state) {
     const deckA = state?.decks?.A;
     const resolved = deckA?.resolved;
     const nodo = resolved?.nodo?.nodo ?? resolved?.nodo;
-    if (nodo?.tesis) {
-      crossoverTesis.textContent = `${nodo.id}: ${nodo.tesis}`;
+    if (nodo?.tesis_villacañas || nodo?.tesis) {
+      crossoverTesis.textContent = `${nodo.id}: ${nodo.tesis_villacañas || nodo.tesis}`;
     } else if (nodo?.etiqueta) {
       crossoverTesis.textContent = `${nodo.id} — ${nodo.etiqueta}`;
     }
@@ -101,19 +177,27 @@
   function renderAnchorStrip(grid) {
     if (!anchorStrip || !grid?.cells) return;
     anchorCells = grid.cells;
-    anchorStrip.innerHTML = grid.cells.map(cell =>
-      `<button type="button" class="anchor-led status-${cell.status}"
-        data-px="${cell.nodo_id}" data-year="${cell.year || ''}"
-        title="${cell.note || cell.nodo_id}">${cell.nodo_id.replace('P', '')}</button>`
-    ).join('');
+    anchorStrip.innerHTML = grid.cells.map(cell => {
+      const title = cell.note
+        ? `${cell.note} · hist ${cell.year}${cell.wp_year ? ` · WP ${cell.wp_year}` : ''}`
+        : cell.nodo_id;
+      return `<button type="button" class="anchor-led status-${cell.status}"
+        data-px="${cell.nodo_id}" data-year="${cell.year || ''}" data-oldid="${cell.oldid}"
+        title="${title}">${cell.nodo_id.replace('P', '')}</button>`;
+    }).join('');
 
     anchorStrip.querySelectorAll('.anchor-led').forEach(btn => {
       btn.addEventListener('click', () => {
         const year = Number(btn.dataset.year);
+        const oldid = Number(btn.dataset.oldid);
         if (!year) return;
         if (slider) slider.value = String(year);
         if (playheadValue) playheadValue.textContent = String(year);
+        selectedRegistroOldid = oldid;
         socket.emit('playhead:set', { year });
+        if (oldid) {
+          socket.emit('registro:select', { deckId: 'B', oldid });
+        }
       });
     });
 
@@ -203,6 +287,17 @@
     }
   }
 
+  function updateDeckResolved(deckId, resolved) {
+    const summaryEl = document.querySelector(`.deck-b-summary[data-deck="${deckId}"]`);
+    const resolvedEl = document.querySelector(`.deck-resolved[data-deck="${deckId}"]`);
+    if (deckId === 'B') {
+      if (summaryEl) summaryEl.textContent = formatDeckBSummary(resolved);
+      renderRegistrosList(deckId, resolved);
+    } else if (resolvedEl) {
+      resolvedEl.textContent = formatResolved(resolved, deckId);
+    }
+  }
+
   function renderState(state) {
     if (sessionDump) {
       sessionDump.textContent = JSON.stringify(state, null, 2);
@@ -225,7 +320,6 @@
     for (const deckId of Object.keys(state.decks || {})) {
       const deck = state.decks[deckId];
       const stateEl = document.querySelector(`.deck-state[data-deck="${deckId}"]`);
-      const resolvedEl = document.querySelector(`.deck-resolved[data-deck="${deckId}"]`);
       const panel = document.querySelector(`.deck-panel[data-deck-id="${deckId}"]`);
       if (stateEl && deck) {
         stateEl.textContent = deck.phase || 'empty';
@@ -234,8 +328,8 @@
       if (panel) {
         panel.classList.toggle('deck-degraded', deck.phase === 'degraded');
       }
-      if (resolvedEl && deck) {
-        resolvedEl.textContent = formatResolved(deck.resolved);
+      if (deck.resolved) {
+        updateDeckResolved(deckId, deck.resolved);
       }
     }
 
@@ -249,13 +343,11 @@
   socket.on('session:state', renderState);
 
   socket.on('deck:resolved', (payload) => {
-    const resolvedEl = document.querySelector(`.deck-resolved[data-deck="${payload.deckId}"]`);
-    if (resolvedEl) {
-      resolvedEl.textContent = formatResolved(payload);
-    }
+    updateDeckResolved(payload.deckId, payload);
     if (payload.deckId === 'A' && crossoverTesis) {
       const nodo = payload.nodo?.nodo ?? payload.nodo;
-      if (nodo?.tesis) crossoverTesis.textContent = `${nodo.id}: ${nodo.tesis}`;
+      const tesis = nodo?.tesis_villacañas || nodo?.tesis;
+      if (tesis) crossoverTesis.textContent = `${nodo.id}: ${tesis}`;
     }
   });
 
@@ -272,6 +364,7 @@
     });
     slider.addEventListener('change', () => {
       sliderDragging = false;
+      selectedRegistroOldid = null;
       socket.emit('playhead:set', { year: Number(slider.value) });
     });
   }
@@ -281,6 +374,7 @@
       const year = Number(mark.dataset.year);
       if (slider) slider.value = String(year);
       if (playheadValue) playheadValue.textContent = String(year);
+      selectedRegistroOldid = null;
       socket.emit('playhead:set', { year });
     });
   });

@@ -10,7 +10,7 @@
 import assert from 'node:assert/strict';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { resolveNodo, resolveOldid, loadLineaData } from '../src/loader.mjs';
+import { resolveNodo, resolveOldid, resolveRegistrosForYear, validateNodoSectionMappings, loadLineaData } from '../src/loader.mjs';
 import { lineaServers } from '../src/lineas.mjs';
 import { startAll } from '../src/start-all.mjs';
 
@@ -51,6 +51,23 @@ try {
   assert.deepEqual(outsideWp.coverage, { min: 2001, max: 2026 });
   console.log('Loader OK: year 1300 outside WP coverage returns explicit error');
 
+  const registros1000 = resolveRegistrosForYear(espanaData, 1000);
+  assert.equal(registros1000.nodo.id, 'P03');
+  assert.ok(registros1000.registros.length > 0, 'year 1000 should have thematic registros');
+  assert.ok(!registros1000.error, 'year 1000 registros should not error');
+  console.log(`Loader OK: year 1000 → P03 with ${registros1000.total} registros`);
+
+  const registros2026 = resolveRegistrosForYear(espanaData, 2026);
+  assert.equal(registros2026.nodo.id, 'P24');
+  assert.ok(registros2026.registros.length > 0, 'year 2026 should have registros');
+  assert.ok(registros2026.anchor?.oldid, 'year 2026 should include wave-A anchor');
+  console.log(`Loader OK: year 2026 → P24 with anchor oldid ${registros2026.anchor.oldid}`);
+
+  const mappingCheck = validateNodoSectionMappings(espanaData);
+  assert.equal(mappingCheck.ok, true, `nodo-sections validation failed: ${JSON.stringify(mappingCheck.issues)}`);
+  assert.equal(mappingCheck.nodo_count, 24);
+  console.log(`Loader OK: nodo-sections mappings valid for ${mappingCheck.nodo_count} nodos`);
+
   handles = await startAll();
   assert.equal(handles.length, 2);
   console.log('Started servers:', handles.map((h) => `${h.name}:${h.port}`).join(', '));
@@ -84,10 +101,10 @@ try {
   const wpHealth = await fetch(`http://localhost:${TEST_PORTS.wpHistoria}/mcp/health`);
   const wpHealthJson = await wpHealth.json();
   assert.deepEqual(wpHealthJson.capabilities, {
-    tools: 7,
+    tools: 9,
     resources: 3,
-    resourceTemplates: 5,
-    prompts: 7
+    resourceTemplates: 7,
+    prompts: 8
   });
   console.log('Health check OK (satelite):', JSON.stringify(wpHealthJson));
 
@@ -119,6 +136,36 @@ try {
   assert.match(outsidePayload.error, /outside WP historia coverage/);
   console.log('Outside coverage OK: year 1300 returns explicit empty error on satellite');
 
+  const registros1000Tool = toolResultJson(
+    await wp.callTool({ name: 'get_registros_for_year', arguments: { year: 1000 } })
+  );
+  assert.equal(registros1000Tool.nodo.id, 'P03');
+  assert.ok(registros1000Tool.registros.length > 0);
+  console.log('get_registros_for_year OK: year 1000 → P03');
+
+  const registros1000Uri = toolResultJson(
+    await wp.callTool({ name: 'getResourceByUri', arguments: { uri: 'linea://registros/year/1000' } })
+  );
+  assert.deepEqual(registros1000Uri.nodo.id, registros1000Tool.nodo.id);
+  assert.equal(registros1000Uri.total, registros1000Tool.total);
+  console.log('Template bridge OK: linea://registros/year/1000');
+
+  const oldid1000Uri = await wp.callTool({
+    name: 'getResourceByUri',
+    arguments: { uri: 'linea://oldid/1000' }
+  });
+  assert.equal(oldid1000Uri.isError, true);
+  const oldid1000Payload = JSON.parse(oldid1000Uri.content[0].text);
+  assert.match(oldid1000Payload.error, /outside WP historia coverage/);
+  console.log('Regression OK: linea://oldid/1000 still outside WP coverage');
+
+  const registros2026Uri = toolResultJson(
+    await wp.callTool({ name: 'getResourceByUri', arguments: { uri: 'linea://registros/year/2026' } })
+  );
+  assert.equal(registros2026Uri.nodo.id, 'P24');
+  assert.ok(registros2026Uri.registros.some((r) => r.is_anchor));
+  console.log('Template OK: linea://registros/year/2026 → P24 with anchor');
+
   const prompts = await espana.listPrompts();
   assert.equal(prompts.prompts.length, 4, `expected 4 prompts on tronco, got ${prompts.prompts.length}`);
   const promptNames = prompts.prompts.map((p) => p.name).sort();
@@ -128,8 +175,8 @@ try {
   const wpPrompts = await wp.listPrompts();
   assert.equal(
     wpPrompts.prompts.length,
-    7,
-    `expected 7 prompts on satelite, got ${wpPrompts.prompts.length}`
+    8,
+    `expected 8 prompts on satelite, got ${wpPrompts.prompts.length}`
   );
   const wpPromptNames = wpPrompts.prompts.map((p) => p.name).sort();
   assert.deepEqual(wpPromptNames, [
@@ -139,9 +186,10 @@ try {
     'report-nodo',
     'report-oldid',
     'report-parte',
+    'report-registros-nodo',
     'timeline-nodos'
   ]);
-  console.log('Prompt catalog OK (satelite): 7 prompts');
+  console.log('Prompt catalog OK (satelite): 8 prompts');
 
   const bridgePrompts = toolResultJson(await espana.callTool({ name: 'getPrompts', arguments: {} }));
   assert.equal(bridgePrompts.server, 'linea-espana');
@@ -226,6 +274,14 @@ try {
   assert.ok(registroViaUri.oldid > 0, 'registro should have valid oldid');
   assert.ok(registroViaUri.registro_md, 'registro should have registro_md');
   console.log(`Registro read OK: ${registroId}, oldid ${registroViaUri.oldid}`);
+
+  const registroSlugId = 'r0010';
+  const registroSlugViaUri = toolResultJson(
+    await wp.callTool({ name: 'getResourceByUri', arguments: { uri: `linea://registro/${registroSlugId}` } })
+  );
+  assert.equal(registroSlugViaUri.registro_id, registroSlugId);
+  assert.ok(registroSlugViaUri.registro_md.includes('r0010'), 'slug folder registro should load registro.md');
+  console.log(`Registro slug folder OK: ${registroSlugId}, oldid ${registroSlugViaUri.oldid}`);
 
   // Sequential reuse: one client, five consecutive tool calls on persistent McpServer.
   const sequentialYears = [1300, 1400, 1500, 1600, 1700];

@@ -1,5 +1,5 @@
 /**
- * E2E Tablero ALEPH: presets + REST API + deck resolution with wikitext.
+ * E2E Tablero ALEPH: presets + REST API + deck resolution with registros bridge.
  */
 
 import fs from 'node:fs';
@@ -18,6 +18,7 @@ const dataDir = path.join(repoRoot, 'data', 'e2e-tablero-run');
 const LINEA_PORTS = { espana: 14111, wpHistoria: 14112 };
 const PLAYER_PORT = 13014;
 const TEST_YEAR = 2026;
+const TEST_YEAR_HIST = 1000;
 
 function assert(cond, msg) {
   if (!cond) throw new Error(msg);
@@ -46,9 +47,9 @@ try {
 
   const mainStore = new PresetStore({ dataDir: path.join(repoRoot, 'data') });
   const presetA = mainStore.getByName('aleph-tronco-puro');
-  const presetB = mainStore.getByName('aleph-viaje-wave-a');
+  const presetB = mainStore.getByName('aleph-wp-bridge');
   assert(presetA, 'aleph-tronco-puro missing — run seed:aleph');
-  assert(presetB, 'aleph-viaje-wave-a missing — run seed:aleph');
+  assert(presetB, 'aleph-wp-bridge missing — run seed:aleph');
 
   console.log('2. Starting linea-system...');
   lineaHandles = await startAll();
@@ -69,23 +70,32 @@ try {
   console.log('4. REST /api/aleph/config...');
   const config = await fetchJson(`${base}/api/aleph/config`);
   assert(config.defaultCaso === 'aeo-p24-linea', 'defaultCaso mismatch');
+  assert(config.defaultPresets?.B === 'aleph-wp-bridge', 'default Deck B should be aleph-wp-bridge');
   assert(config.casos?.length >= 3, 'casos list missing');
 
   console.log('5. REST /api/aleph/anchors...');
   const anchors = await fetchJson(`${base}/api/aleph/anchors`);
   assert(anchors.grid?.cells?.length === 24, `expected 24 anchor cells, got ${anchors.grid?.cells?.length}`);
   assert(anchors.cacheStats?.registro_count > 0, 'cacheStats missing');
+  const p03Cell = anchors.grid.cells.find(c => c.nodo_id === 'P03');
+  assert(p03Cell?.wp_year === 2006, 'P03 anchor should expose wp_year 2006');
+  assert(p03Cell?.year === 850, 'P03 playhead year should be año_ini 850');
 
-  console.log('6. REST /api/aleph/medicion/aeo-p24-linea...');
+  console.log('6. REST /api/aleph/registros/1000...');
+  const registros1000 = await fetchJson(`${base}/api/aleph/registros/${TEST_YEAR_HIST}`);
+  assert(registros1000.nodo?.id === 'P03', 'REST registros 1000 → P03');
+  assert(registros1000.total > 0, 'REST registros 1000 should be non-empty');
+
+  console.log('7. REST /api/aleph/medicion/aeo-p24-linea...');
   const medicion = await fetchJson(`${base}/api/aleph/medicion/aeo-p24-linea`);
   assert(medicion.latest?.id === 'M8' || medicion.latest?.intensidad, 'M8 or latest intensidad expected');
 
-  console.log('7. REST /api/aleph/topology...');
+  console.log('8. REST /api/aleph/topology...');
   const topo = await fetchJson(`${base}/api/aleph/topology`);
   assert(topo.nodes?.length >= 2, 'topology nodes missing');
   assert(topo.lanes?.composer?.length > 0, 'composer lane missing');
 
-  console.log('8. Socket deck load + playhead 2026...');
+  console.log('9. Socket deck load + playhead 1000 + 2026...');
   const client = ioClient(`${base}/session`);
   await new Promise((res, rej) => {
     client.on('connect', res);
@@ -93,7 +103,7 @@ try {
   });
 
   const waitResolved = (deckId, predicate) => new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error(`timeout deck ${deckId}`)), 10000);
+    const timer = setTimeout(() => reject(new Error(`timeout deck ${deckId}`)), 12000);
     const handler = (p) => {
       if (p.deckId !== deckId) return;
       if (predicate && !predicate(p)) return;
@@ -110,7 +120,27 @@ try {
 
   client.emit('deck:load', { deckId: 'B', serverName: 'linea-wp-historia', presetId: presetB.id });
 
-  const resolvedB = await new Promise((resolve, reject) => {
+  const resolvedB1000 = await new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error('timeout deck B at 1000')), 12000);
+    const handler = (p) => {
+      if (p.deckId !== 'B' || p.year !== TEST_YEAR_HIST) return;
+      clearTimeout(timer);
+      client.off('deck:resolved', handler);
+      resolve(p);
+    };
+    client.on('deck:resolved', handler);
+    client.emit('playhead:set', { year: TEST_YEAR_HIST });
+  });
+
+  assert(resolvedB1000.registros?.total > 0, 'deck B registros at 1000 should be non-empty');
+  assert(
+    resolvedB1000.nodo?.nodo?.id === 'P03' || resolvedB1000.nodo?.id === 'P03',
+    'deck B nodo at 1000 should be P03'
+  );
+  assert(!resolvedB1000.registros?.error, 'deck B should not show coverage error at 1000');
+  assert(!resolvedB1000.oldid?.error, 'deck B bridge preset should not call linea-oldid');
+
+  const resolvedB2026 = await new Promise((resolve, reject) => {
     const timer = setTimeout(() => reject(new Error('timeout deck B at 2026')), 12000);
     const handler = (p) => {
       if (p.deckId !== 'B' || p.year !== TEST_YEAR) return;
@@ -122,12 +152,16 @@ try {
     client.emit('playhead:set', { year: TEST_YEAR });
   });
 
-  assert(resolvedB.deckId === 'B', 'deck B mismatch');
-  assert(resolvedB.nodo, 'deck B nodo at 2026');
+  assert(resolvedB2026.deckId === 'B', 'deck B mismatch');
+  assert(resolvedB2026.registros?.total > 0, 'deck B registros at 2026');
   assert(
-    resolvedB.wikitext?.cached === true || resolvedB.wikitext?.error,
-    'wikitext should be cached or explicit error'
+    resolvedB2026.nodo?.nodo?.id === 'P24' || resolvedB2026.nodo?.id === 'P24',
+    'deck B nodo at 2026 should be P24'
   );
+
+  client.emit('registro:select', { deckId: 'B', oldid: resolvedB2026.registros?.anchor?.oldid });
+  const selectedB = await waitResolved('B', p => p.selected?.oldid != null || p.wikitext);
+  assert(selectedB.wikitext?.cached === true || selectedB.wikitext?.error, 'wikitext on select');
 
   console.log('\nTablero ALEPH e2e: OK');
   client.disconnect();

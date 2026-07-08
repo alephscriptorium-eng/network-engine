@@ -53,8 +53,75 @@ function slimRegistro(registro) {
     id: registro.id,
     oldid: registro.oldid,
     timestamp: registro.timestamp,
+    section: registro.section ?? null,
     milestone: registro.milestone ?? false
   };
+}
+
+function parseAnchorYear(note) {
+  if (!note || typeof note !== 'string') return null;
+  const match = note.match(/WP\s+(\d{4})/);
+  return match ? Number(match[1]) : null;
+}
+
+async function loadWaveAAnchors(basePath) {
+  const anchorsPath = path.join(basePath, 'scripts/fetch-priority-viaje1.json');
+  try {
+    const raw = JSON.parse(await fs.readFile(anchorsPath, 'utf8'));
+    const anchors = Array.isArray(raw)
+      ? raw.filter((entry) => entry.tier === 'nodo-anchor' && entry.nodo_id)
+      : [];
+    const byNodoId = {};
+    for (const anchor of anchors) {
+      if (byNodoId[anchor.nodo_id]) continue;
+      byNodoId[anchor.nodo_id] = {
+        nodo_id: anchor.nodo_id,
+        oldid: anchor.oldid,
+        note: anchor.note,
+        anchor_year: parseAnchorYear(anchor.note)
+      };
+    }
+    return { anchors, byNodoId };
+  } catch (err) {
+    console.warn(`[loadWaveAAnchors] Could not load anchors: ${err.message}`);
+    return { anchors: [], byNodoId: {} };
+  }
+}
+
+async function loadNodoSections(satDir) {
+  const sectionsPath = path.join(satDir, 'nodo-sections.json');
+  try {
+    const raw = JSON.parse(await fs.readFile(sectionsPath, 'utf8'));
+    return raw.nodos ?? {};
+  } catch (err) {
+    console.warn(`[loadNodoSections] Could not load nodo-sections.json: ${err.message}`);
+    return {};
+  }
+}
+
+function buildSectionIndex(registroIndex) {
+  const bySection = {};
+  for (const registro of registroIndex) {
+    if (!registro.section) continue;
+    if (!bySection[registro.section]) bySection[registro.section] = [];
+    bySection[registro.section].push(registro);
+  }
+  return bySection;
+}
+
+async function loadCuratedRegistroIds(registrosDir) {
+  const curated = new Set();
+  try {
+    const entries = await fs.readdir(registrosDir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const idMatch = entry.name.match(/^(r\d+)/);
+      if (idMatch) curated.add(idMatch[1]);
+    }
+  } catch {
+    // registros dir may be absent
+  }
+  return curated;
 }
 
 async function loadWpHistoriaIndex(satDir) {
@@ -85,12 +152,19 @@ async function loadWpHistoriaIndex(satDir) {
   }
 
   let curatedRegistros = 0;
+  let curatedRegistroIds = new Set();
   try {
     const entries = await fs.readdir(registrosDir, { withFileTypes: true });
     curatedRegistros = entries.filter((e) => e.isDirectory()).length;
+    curatedRegistroIds = await loadCuratedRegistroIds(registrosDir);
   } catch (err) {
     console.warn(`[loadWpHistoriaIndex] Could not scan registros: ${err.message}`);
   }
+
+  const nodoSections = await loadNodoSections(satDir);
+  const sectionIndex = buildSectionIndex(registroIndex);
+  const lineasRoot = path.resolve(satDir, '../../..');
+  const waveA = await loadWaveAAnchors(lineasRoot);
 
   const milestoneCount = registroIndex.filter((r) => r.milestone).length;
   const milestoneOldids = registroIndex.filter((r) => r.milestone).map((r) => r.oldid);
@@ -109,6 +183,10 @@ async function loadWpHistoriaIndex(satDir) {
     extremes,
     registroIndex,
     byDate,
+    nodoSections,
+    sectionIndex,
+    waveA,
+    curatedRegistroIds,
     coverage: SATELITE_COVERAGE,
     cacheStats: {
       registro_count: raw.meta?.registro_count ?? 0,
@@ -288,28 +366,74 @@ export async function readWikitext(satellite, oldid) {
   }
 }
 
+async function resolveRegistroDir(satellite, registroId, registro) {
+  const registrosRoot = path.join(satellite.satDir, 'registros');
+  const canonical = path.join(registrosRoot, `${registro.id}-oldid-${registro.oldid}`);
+
+  try {
+    const stat = await fs.stat(canonical);
+    if (stat.isDirectory()) return canonical;
+  } catch {
+    // try slug-suffixed folder names below
+  }
+
+  try {
+    const entries = await fs.readdir(registrosRoot, { withFileTypes: true });
+    const matchDir = entries.find(
+      (e) => e.isDirectory() && (e.name === registroId || e.name.startsWith(`${registroId}-oldid-`))
+    );
+    if (matchDir) return path.join(registrosRoot, matchDir.name);
+  } catch {
+    // registros dir may be absent
+  }
+
+  return null;
+}
+
+export function validateNodoSectionMappings(lineData) {
+  const satellite = lineData.satellite;
+  if (!satellite) {
+    return { error: 'No satellite data loaded for this line' };
+  }
+
+  const issues = [];
+  const nodoIds = Object.keys(lineData.nodos).sort();
+
+  for (const nodoId of nodoIds) {
+    const mapping = satellite.nodoSections[nodoId];
+    if (!mapping?.sections?.length) {
+      issues.push({ nodo_id: nodoId, kind: 'missing_mapping' });
+      continue;
+    }
+
+    const unknownSections = mapping.sections.filter((section) => !satellite.sectionIndex[section]?.length);
+    if (unknownSections.length) {
+      issues.push({ nodo_id: nodoId, kind: 'unknown_sections', sections: unknownSections });
+    }
+
+    const result = resolveRegistrosForNodo(lineData, nodoId);
+    if (result.error) {
+      issues.push({ nodo_id: nodoId, kind: 'resolve_error', error: result.error });
+    } else if (result.total === 0) {
+      issues.push({ nodo_id: nodoId, kind: 'empty_registros', sections: mapping.sections });
+    }
+  }
+
+  return {
+    ok: issues.length === 0,
+    nodo_count: nodoIds.length,
+    issues
+  };
+}
+
 export async function readRegistro(satellite, registroId) {
   const registro = satellite.registroIndex.find((r) => r.id === registroId);
   if (!registro) {
     return { error: `Unknown registro_id "${registroId}"` };
   }
 
-  const registroDir = path.join(satellite.satDir, `registros/${registro.id}-oldid-${registro.oldid}`);
-  let found = false;
-  try {
-    const stat = await fs.stat(registroDir);
-    found = stat.isDirectory();
-  } catch {
-    const entries = await fs.readdir(path.join(satellite.satDir, 'registros'), { withFileTypes: true });
-    const matchDir = entries.find(
-      (e) => e.isDirectory() && (e.name === registroId || e.name.startsWith(`${registroId}-oldid-`))
-    );
-    if (matchDir) {
-      found = true;
-    }
-  }
-
-  if (!found) {
+  const registroDir = await resolveRegistroDir(satellite, registroId, registro);
+  if (!registroDir) {
     return {
       error: `Registro directory not found for "${registroId}"`,
       stats: satellite.cacheStats,
@@ -340,4 +464,118 @@ export async function readRegistro(satellite, registroId) {
   } catch (err) {
     return { error: `Failed to read registro "${registroId}": ${err.message}` };
   }
+}
+
+function formatRegistroItem(registro, satellite, anchorOldid = null) {
+  const cached = satellite.cacheStats.cached_oldids.includes(registro.oldid);
+  return {
+    registro_id: registro.id,
+    oldid: registro.oldid,
+    timestamp: registro.timestamp,
+    section: registro.section,
+    milestone: registro.milestone ?? false,
+    cached,
+    curated: satellite.curatedRegistroIds.has(registro.id),
+    is_anchor: anchorOldid != null && registro.oldid === anchorOldid
+  };
+}
+
+export function resolveRegistrosForNodo(lineData, nodoId, options = {}) {
+  const { limit, milestonesOnly = false } = options;
+  const satellite = lineData.satellite;
+  if (!satellite) {
+    return { error: 'No satellite data loaded for this line' };
+  }
+
+  const nodoEntry = lineData.nodos[nodoId];
+  if (!nodoEntry) {
+    return { error: `Unknown nodo_id "${nodoId}"` };
+  }
+
+  const nodoMapEntry = satellite.nodoSections[nodoId];
+  if (!nodoMapEntry?.sections?.length) {
+    return { error: `No section mapping for nodo "${nodoId}"` };
+  }
+
+  const sections = nodoMapEntry.sections;
+  const anchor = satellite.waveA.byNodoId[nodoId] ?? null;
+  const seenOldids = new Set();
+  let registros = [];
+
+  for (const section of sections) {
+    const sectionRegs = satellite.sectionIndex[section] ?? [];
+    for (const reg of sectionRegs) {
+      if (milestonesOnly && !reg.milestone) continue;
+      if (seenOldids.has(reg.oldid)) continue;
+      seenOldids.add(reg.oldid);
+      registros.push(formatRegistroItem(reg, satellite, anchor?.oldid ?? null));
+    }
+  }
+
+  registros.sort((a, b) => {
+    if (a.is_anchor !== b.is_anchor) return a.is_anchor ? -1 : 1;
+    const aMs = parseWpTimestamp(a.timestamp) ?? 0;
+    const bMs = parseWpTimestamp(b.timestamp) ?? 0;
+    return bMs - aMs;
+  });
+
+  if (anchor?.oldid != null && !registros.some((r) => r.oldid === anchor.oldid)) {
+    const anchorReg = satellite.registroIndex.find((r) => r.oldid === anchor.oldid);
+    if (anchorReg) {
+      registros.unshift(formatRegistroItem(anchorReg, satellite, anchor.oldid));
+    } else {
+      registros.unshift({
+        registro_id: null,
+        oldid: anchor.oldid,
+        timestamp: null,
+        section: null,
+        milestone: false,
+        cached: satellite.cacheStats.cached_oldids.includes(anchor.oldid),
+        curated: false,
+        is_anchor: true
+      });
+    }
+  }
+
+  const total = registros.length;
+  if (limit != null && Number.isFinite(Number(limit))) {
+    registros = registros.slice(0, Number(limit));
+  }
+
+  return {
+    nodo_id: nodoId,
+    nodo: {
+      id: nodoEntry.id,
+      etiqueta: nodoEntry.etiqueta,
+      año_ini: nodoEntry.año_ini,
+      año_fin: nodoEntry.año_fin
+    },
+    anchor,
+    sections,
+    registros,
+    total,
+    cached_count: registros.filter((r) => r.cached).length
+  };
+}
+
+export function resolveRegistrosForYear(lineData, year, options = {}) {
+  const nodoResult = resolveNodo(lineData, year);
+  if (nodoResult.error) {
+    return nodoResult;
+  }
+
+  const registrosResult = resolveRegistrosForNodo(lineData, nodoResult.nodo.id, options);
+  if (registrosResult.error) {
+    return { ...registrosResult, year: nodoResult.year, nodo: nodoResult.nodo };
+  }
+
+  return {
+    year: nodoResult.year,
+    nodo: nodoResult.nodo,
+    anchor: registrosResult.anchor,
+    sections: registrosResult.sections,
+    registros: registrosResult.registros,
+    total: registrosResult.total,
+    cached_count: registrosResult.cached_count
+  };
 }
