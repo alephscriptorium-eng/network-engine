@@ -26,6 +26,8 @@
   let selectedRegistroOldid = null;
   /** @type {Record<string, object>} */
   const viewLinksCache = {};
+  /** @type {Record<string, number>} */
+  const viewLinksReqSeq = { A: 0, B: 0 };
 
   const BADGE_VARIANT = { anchor: 'primary', cached: 'success', milestone: 'accent', curated: 'warning' };
   let wikitextPollTimer = null;
@@ -82,8 +84,18 @@
     cacheBtn.dataset.oldid = visible && oldid != null ? String(oldid) : '';
   }
 
+  function pickWikitextItem(payload, deckId) {
+    const items = payload?.items || [];
+    return payload?.wikitext
+      || items.find((item) => item.id?.startsWith('wikitext-active-'))
+      || items.find((item) => item.id?.startsWith('anchor-wikitext-'))
+      || items.find((item) => item.kind === 'wikitext')
+      || viewLinksCache[deckId]?.wikitext
+      || null;
+  }
+
   function mountDeckViewLinks(deckId, payload) {
-    const launcher = global.Zeus?.ViewerLauncher;
+    const launcher = globalThis.Zeus?.ViewerLauncher;
     if (!launcher || !payload) return;
 
     if (deckId === 'B') {
@@ -91,10 +103,13 @@
         label: 'Referencias',
         items: payload.items || []
       });
-      launcher.renderButton(`.wikitext-viewer-launcher[data-deck="${deckId}"]`, {
-        label: 'Abrir en Cache',
-        item: payload.wikitext || null
-      });
+      const wikitextItem = pickWikitextItem(payload, deckId);
+      if (wikitextItem?.href) {
+        launcher.renderButton(`.wikitext-viewer-launcher[data-deck="${deckId}"]`, {
+          label: 'Abrir en Cache',
+          item: wikitextItem
+        });
+      }
       return;
     }
 
@@ -112,12 +127,21 @@
       mountDeckViewLinks(deckId, { items: [], wikitext: null, byOldid: {} });
       return;
     }
+    const reqId = ++viewLinksReqSeq[deckId];
     try {
       const res = await fetch(`/api/aleph/view-links?deckId=${encodeURIComponent(deckId)}`);
-      if (!res.ok) return;
+      if (!res.ok || reqId !== viewLinksReqSeq[deckId]) return;
       const payload = await res.json();
-      viewLinksCache[deckId] = payload;
-      mountDeckViewLinks(deckId, payload);
+      if ((payload.items?.length || 0) === 0 && !payload.wikitext) {
+        return;
+      }
+      if (reqId !== viewLinksReqSeq[deckId]) return;
+      viewLinksCache[deckId] = {
+        ...(viewLinksCache[deckId] || {}),
+        ...payload,
+        wikitext: pickWikitextItem(payload, deckId)
+      };
+      mountDeckViewLinks(deckId, viewLinksCache[deckId]);
       if (deckId === 'B') {
         renderRegistroViewerLinks();
       }
@@ -127,7 +151,7 @@
   }
 
   function renderRegistroViewerLinks() {
-    const launcher = global.Zeus?.ViewerLauncher;
+    const launcher = globalThis.Zeus?.ViewerLauncher;
     const byOldid = viewLinksCache.B?.byOldid || {};
     if (!launcher) return;
     document.querySelectorAll('.registro-item').forEach((btn) => {

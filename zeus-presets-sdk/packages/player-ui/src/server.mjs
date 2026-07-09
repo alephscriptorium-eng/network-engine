@@ -13,6 +13,12 @@ import cors from 'cors';
 import { Server as SocketIOServer } from 'socket.io';
 import { createActor } from 'xstate';
 import {
+  ServerRegistry,
+  PresetStore,
+  syncDiscoveredServers,
+  resolveDiscoverySources,
+  createCatalogService,
+  applyPresetFilter,
   buildViewLinksResponse,
   normalizeSatRel
 } from '@zeus/presets-sdk';
@@ -442,13 +448,14 @@ export async function createPlayerServer(options = {}) {
         return;
       }
 
-      res.json(buildViewLinksResponse({
+      const payload = buildViewLinksResponse({
         lineaId,
         satRel,
         viewEntry,
         deckId,
         resolved
-      }));
+      });
+      res.json(payload);
     } catch (error) {
       res.status(500).json({ error: error.message });
     }

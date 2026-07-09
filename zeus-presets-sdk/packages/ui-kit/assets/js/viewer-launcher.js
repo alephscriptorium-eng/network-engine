@@ -4,7 +4,8 @@
 (function () {
   'use strict';
 
-  const Z = global.Zeus = global.Zeus || {};
+  const root = typeof globalThis !== 'undefined' ? globalThis : window;
+  const Z = root.Zeus = root.Zeus || {};
 
   function resolveEl(el) {
     if (typeof el === 'string') return document.querySelector(el);
