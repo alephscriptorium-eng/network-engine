@@ -4,6 +4,13 @@
 
 import { a, button, details, summary, div, span, ul, li } from 'hyperaxe';
 
+const MENU_SECTION_LABELS = {
+  selection: 'Selección',
+  home: 'Explorador',
+  corpus: 'Corpora',
+  batch: 'Batches recientes'
+};
+
 /**
  * @typedef {object} ViewerLinkProps
  * @property {string} [href]
@@ -71,7 +78,67 @@ export function openViewerButton({
 }
 
 /**
- * @param {{ id?: string, label?: string, items?: Array<{ href?: string, label: string, title?: string, disabled?: boolean }> }} props
+ * Short visible meta; long titles stay in tooltip only.
+ * @param {{ label?: string, title?: string, kind?: string }} item
+ */
+function menuItemMeta(item) {
+  const title = item.title || '';
+  if (item.kind === 'corpus' && /\d+\s*archivos?/i.test(title)) return title;
+  if (title && title.length <= 14 && title !== item.label) return title;
+  return '↗';
+}
+
+/**
+ * @param {{ href?: string, label: string, title?: string, disabled?: boolean, kind?: string }} item
+ */
+function menuItemLink(item) {
+  const meta = menuItemMeta(item);
+  if (item.disabled || !item.href) {
+    return div({ class: 'viewer-launcher-menu-link--disabled', title: item.title || item.label },
+      span({ class: 'viewer-launcher-menu-link-label' }, item.label),
+      item.kind
+        ? span({ class: 'viewer-launcher-menu-link-kind', 'data-kind': item.kind }, item.kind)
+        : span({ class: 'viewer-launcher-menu-link-meta' }, meta)
+    );
+  }
+
+  return a({
+    href: item.href,
+    class: 'viewer-launcher-menu-link',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    title: item.title || item.label,
+    role: 'menuitem'
+  },
+    span({ class: 'viewer-launcher-menu-link-label' }, item.label),
+    span({ class: 'viewer-launcher-menu-link-meta' }, meta)
+  );
+}
+
+/**
+ * @param {Array<{ href?: string, label: string, title?: string, disabled?: boolean, kind?: string }>} items
+ */
+function menuListItems(items) {
+  const nodes = [];
+  let lastKind = null;
+
+  for (const item of items) {
+    const kind = item.kind || null;
+    if (kind && kind !== lastKind && MENU_SECTION_LABELS[kind]) {
+      nodes.push(li({ class: 'viewer-launcher-menu-section' }, MENU_SECTION_LABELS[kind]));
+      lastKind = kind;
+    } else if (!kind && lastKind !== '__plain') {
+      lastKind = '__plain';
+    }
+
+    nodes.push(li({ class: 'viewer-launcher-menu-item' }, menuItemLink(item)));
+  }
+
+  return nodes;
+}
+
+/**
+ * @param {{ id?: string, label?: string, items?: Array<{ href?: string, label: string, title?: string, disabled?: boolean, kind?: string }> }} props
  */
 export function viewerLauncherMenu({ id, label = 'Referencias', items = [] }) {
   const enabled = items.filter((item) => item.href && !item.disabled);
@@ -89,19 +156,12 @@ export function viewerLauncherMenu({ id, label = 'Referencias', items = [] }) {
     ...(id ? { id } : {})
   },
     summary({ class: 'viewer-launcher-menu-trigger btn btn-outline btn-sm' },
-      label,
-      ` (${enabled.length})`
+      span({ class: 'viewer-launcher-menu-trigger-label' }, label),
+      span({ class: 'viewer-launcher-menu-trigger-badge' }, String(enabled.length)),
+      span({ class: 'viewer-launcher-menu-chevron', 'aria-hidden': 'true' })
     ),
-    ul({ class: 'viewer-launcher-menu-list' },
-      enabled.map((item) =>
-        li({ class: 'viewer-launcher-menu-item' },
-          openViewerLink({
-            href: item.href,
-            label: item.label,
-            title: item.title
-          })
-        )
-      )
+    div({ class: 'viewer-launcher-menu-panel', role: 'menu' },
+      ul({ class: 'viewer-launcher-menu-list' }, ...menuListItems(enabled))
     )
   );
 }

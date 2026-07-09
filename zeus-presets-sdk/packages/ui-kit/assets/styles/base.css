@@ -169,7 +169,9 @@ nav ul li a.current {
   border-color: var(--primary-color);
 }
 
-.btn-outline.btn-small {
+.btn-outline.btn-small,
+.btn-outline.btn-sm,
+.btn-sm {
   padding: 0.35rem 0.75rem;
   font-size: var(--font-size-small);
 }

@@ -27,6 +27,7 @@
     "test:firehose-mcp": "npm test -w @zeus/linea-firehose",
     "test:player-debug": "npm test -w @zeus/player-ui-debug",
     "seed:aleph": "node scripts/seed-aleph-presets.mjs",
+    "stop:ports": "bash scripts/stop-ports.sh",
     "e2e": "node e2e/demo.mjs",
     "e2e:deck": "node e2e/deck-demo.mjs",
     "e2e:tablero": "node e2e/tablero-aleph-demo.mjs",

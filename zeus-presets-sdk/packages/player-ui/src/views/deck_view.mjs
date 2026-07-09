@@ -171,8 +171,7 @@ function headerAleph(aleph) {
       div({ class: 'tablero-header-titles' },
         h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
         p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
-      ),
-      div({ class: 'firehose-viewer-launcher viewer-launcher-slot' })
+      )
     )
   );
 }

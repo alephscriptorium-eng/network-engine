@@ -117,15 +117,6 @@
     const launcher = globalThis.Zeus?.ViewerLauncher;
     if (!launcher || !payload?.items?.length) return;
     launcher.mountMenu('.deck-c-viewer-launcher[data-deck="C"]', {
-      label: 'Explorer',
-      items: payload.items
-    });
-  }
-
-  function mountFirehoseLinks(payload) {
-    const launcher = globalThis.Zeus?.ViewerLauncher;
-    if (!launcher || !payload?.items?.length) return;
-    launcher.mountMenu('.firehose-viewer-launcher', {
       label: 'Firehose',
       items: payload.items
     });
@@ -139,10 +130,7 @@
       const payload = await res.json();
       if (!payload.items?.length) return;
       firehoseLinksCache = payload;
-      mountFirehoseLinks(payload);
-      if (deckContext) {
-        mountDeckCFirehoseLinks(payload);
-      }
+      mountDeckCFirehoseLinks(payload);
     } catch (err) {
       console.error('firehose-links fetch failed:', err);
     }
