@@ -47,10 +47,12 @@ export function deckView(viewData = {}) {
         contentSection(null,
           div({ class: 'deck-container' },
             div({ class: 'transport-bar' },
-              div({ class: 'transport-controls' },
+              div({ class: 'transport-controls action-row' },
                 button({ id: 'transport-play', type: 'button', class: 'btn btn-outline' }, 'Play'),
                 button({ id: 'transport-pause', type: 'button', class: 'btn btn-outline' }, 'Pause'),
-                button({ id: 'sync-toggle', type: 'button', class: 'btn btn-outline' }, 'Sync: ON')
+                button({ id: 'sync-toggle', type: 'button', class: 'btn btn-outline' }, 'Sync: ON'),
+                a({ href: '/session', class: 'btn btn-outline session-link' }, 'Sesión'),
+                span({ class: 'state-badge session-phase-badge', id: 'session-phase-badge', 'data-state': 'idle' }, 'idle')
               ),
               div({ class: 'playhead-control' },
                 label({ for: 'playhead-slider' }, 'Año histórico'),
@@ -148,13 +150,6 @@ export function deckView(viewData = {}) {
                     )
                   )
                 )
-              )
-            ),
-            section({ class: 'session-log collapsible' },
-              button({ type: 'button', class: 'btn session-toggle', id: 'session-toggle' }, 'Sesión debug'),
-              div({ class: 'session-log-body', id: 'session-log-body', hidden: 'hidden' },
-                h3({}, 'Sesión: ', span({ id: 'session-phase' }, 'idle')),
-                pre({ id: 'session-dump', class: 'session-dump' }, '{}')
               )
             )
           )

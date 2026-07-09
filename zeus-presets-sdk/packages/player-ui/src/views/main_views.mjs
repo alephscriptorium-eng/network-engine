@@ -23,6 +23,7 @@ function editorUrl(config) {
 function buildNavEntries(config) {
   return [
     { href: '/', emoji: '🎛️', text: 'Tablero', pageKey: 'deck' },
+    { href: '/session', emoji: '🔍', text: 'Sesión', pageKey: 'session' },
     { href: editorUrl(config), emoji: '🔧', text: 'Editor', external: true }
   ];
 }

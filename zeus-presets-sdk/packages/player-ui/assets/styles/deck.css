@@ -78,6 +78,15 @@
   gap: 0.75rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.session-link {
+  text-decoration: none;
+}
+
+.session-phase-badge {
+  margin-left: auto;
 }
 
 .playhead-control label {
@@ -355,17 +364,6 @@
   display: block;
 }
 
-.stats-dl {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.25rem 1rem;
-  font-size: 0.9rem;
-}
-
-.stats-dl dt {
-  color: var(--text-secondary);
-}
-
 .viaje-protocol {
   font-size: 0.85rem;
   color: var(--text-secondary);
@@ -420,26 +418,6 @@
 
 .prensa-links a {
   color: var(--primary-color);
-}
-
-/* Session log */
-.session-log.collapsible {
-  border-top: 1px solid var(--border-color);
-  padding-top: 0.75rem;
-}
-
-.session-toggle {
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
-}
-
-.session-dump {
-  font-size: 0.75rem;
-  max-height: 200px;
-  overflow: auto;
-  background: var(--background-secondary);
-  padding: 0.75rem;
-  border: 1px solid var(--border-color);
 }
 
 @media (max-width: 640px) {

@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { jsonContent } from '@zeus/presets-sdk';
+import { inspectSnapshotAt } from './snapshot-inspect.mjs';
 
 /**
  * Registers player-ui-debug domain tools (socket proxy + snapshot refresh).
@@ -142,5 +143,18 @@ export function buildMcp(server, { client, poller, stateStore }) {
       await poller.pollOnce();
       return jsonContent(stateStore.getSnapshot());
     }
+  );
+
+  server.registerTool(
+    'session_inspect',
+    {
+      title: 'Inspect snapshot path',
+      description:
+        'Navigate player://snapshot by path — returns value, children, parent, and sibling paths.',
+      inputSchema: {
+        path: z.string().optional().describe('Dot path, e.g. decks.B.resolved or session.decks.A.')
+      }
+    },
+    async ({ path }) => jsonContent(inspectSnapshotAt(stateStore, path || 'session'))
   );
 }

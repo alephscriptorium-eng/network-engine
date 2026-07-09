@@ -15,6 +15,7 @@ import {
   updateServerCard,
   createMcpHttpStart
 } from '@zeus/presets-sdk';
+import { inspectSnapshotAt } from './snapshot-inspect.mjs';
 import { getDebugConfig } from './config.mjs';
 import * as logic from './logic.mjs';
 import * as logicSession from './logic-session.mjs';
@@ -149,6 +150,15 @@ function getTemplateRegistry(stateStore, config, poller) {
         const events = stateStore.getEvents(limit);
         return { limit: Number.isFinite(limit) ? limit : config.maxEvents, events, count: events.length };
       }
+    },
+    {
+      name: 'player-snapshot-at',
+      uriTemplate: 'player://snapshot/at/{path}',
+      title: 'Snapshot subtree',
+      mimeType: 'application/json',
+      description:
+        'Focus navigation into player://snapshot — returns value, children, parent, and sibling paths.',
+      read: (variables) => inspectSnapshotAt(stateStore, variables.path || 'session')
     }
   ];
 }
@@ -322,6 +332,15 @@ export function createServer(stateStore, config, substrate) {
       playerUiUrl: config.baseUrl,
       capabilities: getMcpCapabilities(mcpServer)
     });
+  });
+
+  app.get('/snapshot', (req, res) => {
+    res.json(stateStore.getSnapshot());
+  });
+
+  app.get('/snapshot/at', (req, res) => {
+    const path = req.query.path || 'session';
+    res.json(inspectSnapshotAt(stateStore, String(path)));
   });
 
   mountMCPRoute(app, { mcpServer, logLabel: SERVER_NAME });

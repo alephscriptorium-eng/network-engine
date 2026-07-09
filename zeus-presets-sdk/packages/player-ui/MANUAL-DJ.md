@@ -2,7 +2,8 @@
 
 Mesa de DJ para "pinchar" líneas de poder históricas. En vez de dos platos de vinilo, tienes **dos platos (A y B)** conectados a **servidores MCP** (`linea-*`), y en vez de mover la aguja por un surco, mueves un **playhead sobre una línea temporal** (años). Los **presets Zeus** funcionan como filtros de capacidades: recortan lo que cada plato puede "sonar".
 
-- URL: http://localhost:3013
+- URL Tablero: http://localhost:3013
+- URL Sesión debug: http://localhost:3013/session
 - Servidor: `@zeus/player-ui` (Express + socket.io namespace `/session` + máquina de estados XState)
 
 ---
@@ -55,6 +56,19 @@ Consola estilo **TOP** + **servidor MCP** (`:3014`) en un solo proceso. Conecta 
 | **Agente** | MCP `:3014` | `session_report`, `goto_parte`, `goto_anchor`, `select_caso` |
 
 Ambos comparten el mismo `session:state` por socket. Tras cada movimiento del agente, el operador ve el cambio en el Tablero sin recargar. El agente confirma con `session_report` — nunca Playwright.
+
+### Página Sesión (`/session`)
+
+Explorador en vivo del estado de sesión (sin volcado JSON en el Tablero):
+
+| Acción | Dónde |
+|--------|-------|
+| Abrir explorador | Nav **Sesión** o botón **Sesión** en transport bar |
+| Navegar | Breadcrumb + Subir / Anterior / Siguiente |
+| Deep link | `#path=decks.B.resolved` |
+| Panel monitor | Visible si `player-ui-debug` está activo (`debugMonitor.baseUrl` en config) |
+
+Funciona **sin** el monitor MCP; el panel lateral muestra "Monitor offline" y el socket sigue en vivo.
 
 > El monitor mata su propio proceso con Ctrl+C / `q`; no apaga player-ui ni las fuentes lineas.
 

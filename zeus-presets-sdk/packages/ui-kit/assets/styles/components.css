@@ -197,6 +197,25 @@
   color: var(--text-secondary);
 }
 
+/* --- Definition list stats (monitor, drawer) --- */
+.stats-dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.stats-dl dt {
+  color: var(--text-secondary);
+}
+
+.stats-dl dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 640px) {
   .status-led-grid--24 {
     grid-template-columns: repeat(12, minmax(36px, 1fr));

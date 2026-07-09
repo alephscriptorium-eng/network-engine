@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-/** Absolute path to shared static assets (themes, base.css, components.css, base.js). */
+/** Absolute path to shared static assets (themes, base.css, components.css, object-explorer, mcp-monitor, base.js). */
 export const assetsDir = path.resolve(__dirname, '..', 'assets');
 
 export {

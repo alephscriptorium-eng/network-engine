@@ -55,7 +55,7 @@ try {
   const health = await healthRes.json();
   assert.equal(health.status, 'ok');
   assert.equal(health.server, 'player-ui-debug');
-  assert.deepEqual(health.capabilities, { tools: 22, resources: 9, resourceTemplates: 3, prompts: 5 });
+  assert.deepEqual(health.capabilities, { tools: 23, resources: 9, resourceTemplates: 4, prompts: 5 });
   console.log('Health check OK:', JSON.stringify(health.capabilities));
 
   const mcp = await connect(TEST_MCP_PORT);
@@ -102,6 +102,34 @@ try {
   assert.equal(deckA.deckId, 'A');
   assert.ok('phase' in deckA);
   console.log('Template OK: player://deck/A');
+
+  const snapshotAt = toolResultJson(
+    await mcp.callTool({
+      name: 'getResourceByUri',
+      arguments: { uri: 'player://snapshot/at/session' }
+    })
+  );
+  assert.equal(snapshotAt.path, 'session');
+  assert.ok(Array.isArray(snapshotAt.children));
+  console.log('Template OK: player://snapshot/at/session');
+
+  const restSnap = await fetch(`http://localhost:${TEST_MCP_PORT}/snapshot`);
+  assert.equal(restSnap.status, 200);
+  const restSnapJson = await restSnap.json();
+  assert.equal(restSnapJson.schemaVersion, '1.0');
+  console.log('REST OK: GET /snapshot');
+
+  const restAt = await fetch(`http://localhost:${TEST_MCP_PORT}/snapshot/at?path=session`);
+  assert.equal(restAt.status, 200);
+  const restAtJson = await restAt.json();
+  assert.ok(Array.isArray(restAtJson.children));
+  console.log('REST OK: GET /snapshot/at');
+
+  const inspectTool = toolResultJson(
+    await mcp.callTool({ name: 'session_inspect', arguments: { path: 'session' } })
+  );
+  assert.equal(inspectTool.path, 'session');
+  console.log('Tool OK: session_inspect');
 
   const prompts = await mcp.listPrompts();
   assert.equal(prompts.prompts.length, 5);

@@ -53,7 +53,11 @@ const DEFAULT_CONFIG = {
       tag: 'Animus Iocandi · Scriptorium Skins'
     }
   },
-  debug: false
+  debug: false,
+  debugMonitor: {
+    enabled: true,
+    baseUrl: 'http://localhost:3014'
+  }
 };
 
 if (!fs.existsSync(configFilePath)) {

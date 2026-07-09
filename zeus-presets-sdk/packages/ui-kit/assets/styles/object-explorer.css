@@ -1,0 +1,329 @@
+/* Object explorer — focus-based JSON navigation */
+
+.object-explorer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  outline: none;
+}
+
+.object-explorer:focus-visible {
+  box-shadow: 0 0 0 2px var(--primary-color-alpha, rgba(0, 128, 204, 0.25));
+  border-radius: var(--border-radius);
+}
+
+.oe-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.oe-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.35rem;
+  flex: 1 1 12rem;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+.oe-crumb {
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 0.15rem 0.25rem;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 3px;
+}
+
+.oe-crumb:hover {
+  background: var(--background-tertiary);
+}
+
+.oe-crumb-sep {
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+.oe-crumb-current {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.oe-nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.oe-export-hint {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  flex: 1 1 100%;
+  margin: 0;
+}
+
+.oe-children-wrap {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+  overflow: hidden;
+}
+
+.oe-children-header {
+  display: grid;
+  grid-template-columns: 8rem 5rem 1fr;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.oe-children {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.oe-child {
+  display: grid;
+  grid-template-columns: 8rem 5rem 1fr;
+  gap: 0.5rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+}
+
+.oe-child-meta {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.oe-child:last-child {
+  border-bottom: none;
+}
+
+.oe-child:hover {
+  background: var(--background-tertiary);
+}
+
+.oe-child.selected {
+  background: color-mix(in srgb, var(--primary-color) 12%, transparent);
+  outline: 1px solid var(--primary-color);
+}
+
+.oe-child-key {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.oe-child-type {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.oe-child-preview {
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.oe-child-type-array { color: var(--accent-color); }
+.oe-child-type-object { color: var(--primary-color); }
+.oe-child-type-string { color: var(--success-color); }
+.oe-child-type-number { color: var(--warning-color); }
+.oe-child-type-boolean { color: var(--accent-color); }
+.oe-child-type-null,
+.oe-child-type-undefined { color: var(--text-secondary); }
+
+/* Detail panel */
+.oe-detail {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-secondary);
+  padding: 0.75rem;
+}
+
+.oe-detail-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.oe-detail-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.oe-detail-type {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.oe-detail-body {
+  margin: 0;
+  min-height: 2.5rem;
+}
+
+.oe-detail-fallback {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Scalar renders */
+.oe-scalar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.oe-scalar-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.oe-scalar-meta {
+  gap: 0.35rem 0.5rem;
+}
+
+.oe-scalar-string .oe-string-quote {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0.65rem 0.75rem;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--success-color);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 12rem;
+  overflow: auto;
+}
+
+.oe-string-full {
+  margin: 0;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 16rem;
+  overflow: auto;
+  padding: 0.5rem;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.oe-scalar-number .oe-scalar-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-mono);
+  color: var(--warning-color);
+  line-height: 1.2;
+}
+
+.oe-scalar-null .oe-scalar-label {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.oe-bool-badge {
+  font-size: 0.95rem;
+  padding: 0.35rem 0.75rem;
+}
+
+/* Container summary (object / array focus) */
+.oe-container-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.oe-summary-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.oe-summary-sub {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.oe-summary-keys,
+.oe-summary-chips {
+  gap: 0.25rem 0.35rem;
+}
+
+.oe-type-chip {
+  font-size: 0.6rem;
+}
+
+.oe-empty {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.oe-root-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.oe-root-tab {
+  font-size: 0.8rem;
+}
+
+.oe-root-tab.active {
+  background: var(--primary-color);
+  color: var(--primary-text);
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  .oe-children-header,
+  .oe-child {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}

@@ -27,12 +27,35 @@ import { ThemeHandler } from './theme-handler.mjs';
 import { createThemeRoutes } from './theme-routes.mjs';
 import { sessionMachine, snapshotFromActor } from './session-machine.mjs';
 import { deckView } from './views/deck_view.mjs';
+import { sessionView } from './views/session_view.mjs';
 import {
   getAlephConfig,
   loadMedicion,
   buildAnchorGrid,
   buildTopology
 } from './aleph-bridge.mjs';
+
+const DEBUG_FETCH_MS = 800;
+
+function getDebugMonitorBase(config) {
+  if (config.debugMonitor?.enabled === false) return null;
+  return config.debugMonitor?.baseUrl || 'http://localhost:3014';
+}
+
+async function fetchDebugMonitor(baseUrl, pathname) {
+  const url = `${baseUrl.replace(/\/$/, '')}${pathname}`;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), DEBUG_FETCH_MS);
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+    if (!res.ok) return { available: false, status: res.status };
+    return await res.json();
+  } catch {
+    return { available: false };
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 function parseResourceJson(result) {
   const text = result?.contents?.[0]?.text;
@@ -467,6 +490,58 @@ export async function createPlayerServer(options = {}) {
       res.json(servers);
     } catch (error) {
       res.status(500).json({ error: error.message });
+    }
+  });
+
+  const debugMonitorBase = getDebugMonitorBase(config);
+
+  app.get('/api/debug/health', async (req, res) => {
+    if (!debugMonitorBase) {
+      return res.json({ available: false, reason: 'debugMonitor disabled' });
+    }
+    const data = await fetchDebugMonitor(debugMonitorBase, '/mcp/health');
+    if (data.available === false) {
+      return res.status(503).json(data);
+    }
+    res.json({ available: true, ...data });
+  });
+
+  app.get('/api/debug/snapshot', async (req, res) => {
+    if (!debugMonitorBase) {
+      return res.json({ available: false, reason: 'debugMonitor disabled' });
+    }
+    const data = await fetchDebugMonitor(debugMonitorBase, '/snapshot');
+    if (data.available === false) {
+      return res.json(data);
+    }
+    res.json(data);
+  });
+
+  app.get('/api/debug/at', async (req, res) => {
+    const pathParam = req.query.path || 'session';
+    if (!debugMonitorBase) {
+      return res.json({ available: false, reason: 'debugMonitor disabled' });
+    }
+    const encoded = encodeURIComponent(String(pathParam));
+    const data = await fetchDebugMonitor(debugMonitorBase, `/snapshot/at?path=${encoded}`);
+    if (data.available === false) {
+      return res.json(data);
+    }
+    res.json(data);
+  });
+
+  app.get('/session', async (req, res) => {
+    try {
+      const html = sessionView({
+        themes: themeHandler.getAvailableThemes(),
+        currentTheme: themeHandler.getCurrentTheme(),
+        debugEnabled: config.debug === true
+      });
+      res.setHeader('Content-Type', 'text/html');
+      res.send(html.outerHTML);
+    } catch (error) {
+      console.error('Session render error:', error);
+      res.status(500).send(`<h1>Error</h1><p>${error.message}</p>`);
     }
   });
 

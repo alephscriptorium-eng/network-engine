@@ -4,7 +4,7 @@
     "host": "localhost"
   },
   "theme": {
-    "current": "Matrix-MCP"
+    "current": "Black-White-MCP"
   },
   "discovery": {
     "urls": [
@@ -61,7 +61,7 @@
       "aeo-tronco-caso1",
       "aeo-caso2-2026"
     ],
-    "theme": "Matrix-MCP",
+    "theme": "Black-White-MCP",
     "branding": {
       "title": "Tablero ALEPH",
       "tag": "Animus Iocandi · Scriptorium Skins"
@@ -72,5 +72,9 @@
       "aeo-caso2-2026": "¿Qué pinta tiene el presente 2026?"
     }
   },
-  "debug": false
+  "debug": false,
+  "debugMonitor": {
+    "enabled": true,
+    "baseUrl": "http://localhost:3014"
+  }
 }

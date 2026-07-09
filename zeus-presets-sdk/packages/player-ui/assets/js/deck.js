@@ -7,8 +7,7 @@
 
   const slider = document.getElementById('playhead-slider');
   const playheadValue = document.getElementById('playhead-value');
-  const sessionDump = document.getElementById('session-dump');
-  const sessionPhase = document.getElementById('session-phase');
+  const sessionPhaseBadge = document.getElementById('session-phase-badge');
   const syncBtn = document.getElementById('sync-toggle');
   const playBtn = document.getElementById('transport-play');
   const pauseBtn = document.getElementById('transport-pause');
@@ -20,8 +19,6 @@
   const anchorSummary = document.getElementById('anchor-summary');
   const viajeStats = document.getElementById('viaje-stats');
   const topologyGraph = document.getElementById('topology-graph');
-  const sessionToggle = document.getElementById('session-toggle');
-  const sessionLogBody = document.getElementById('session-log-body');
 
   let sliderDragging = false;
   let alephConfig = null;
@@ -408,13 +405,10 @@
   }
 
   function renderState(state) {
-    if (sessionDump) {
-      sessionDump.textContent = JSON.stringify(state, null, 2);
-    }
-    if (sessionPhase) {
-      sessionPhase.textContent = typeof state.phase === 'string'
-        ? state.phase
-        : JSON.stringify(state.phase);
+    if (sessionPhaseBadge) {
+      const phase = typeof state.phase === 'string' ? state.phase : JSON.stringify(state.phase);
+      sessionPhaseBadge.textContent = phase;
+      sessionPhaseBadge.dataset.state = phase;
     }
     if (playheadValue && state.playhead) {
       playheadValue.textContent = String(state.playhead.year);
@@ -627,13 +621,6 @@
       if (panelId) window.location.hash = panelId;
     });
   });
-
-  if (sessionToggle && sessionLogBody) {
-    sessionToggle.addEventListener('click', () => {
-      const hidden = sessionLogBody.hidden;
-      sessionLogBody.hidden = !hidden;
-    });
-  }
 
   const hash = window.location.hash.replace('#', '');
   if (hash && ['viaje', 'mcp', 'prensa'].includes(hash)) {
