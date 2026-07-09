@@ -28,6 +28,7 @@ export function deckView(viewData = {}) {
 
   const defaultPresetA = presetIdByName(aleph.defaultPresets.A);
   const defaultPresetB = presetIdByName(aleph.defaultPresets.B);
+  const defaultPresetC = presetIdByName(aleph.defaultPresets.C || config.deck?.defaultFirehosePreset);
 
   return template(
     'Tablero ALEPH',
@@ -102,6 +103,9 @@ export function deckView(viewData = {}) {
                 )
               )
             ),
+            section({ class: 'deck-c-section' },
+              deckPanelFirehose('C', servers, presets, 'firehose-mcp-server', defaultPresetC)
+            ),
             section({ class: 'drawer-panel' },
               div({ class: 'drawer-tabs', role: 'tablist' },
                 button({ type: 'button', class: 'drawer-tab active', 'data-tab': 'viaje', id: 'tab-viaje' }, 'Viaje caché'),
@@ -146,9 +150,14 @@ export function deckView(viewData = {}) {
       currentPage: 'deck',
       theme: currentTheme || config.theme?.current || aleph.theme || 'Scriptorium-Skins',
       themes,
-      styles: ['/assets/styles/anchors-explorer.css', '/assets/styles/deck.css'],
+      styles: [
+        '/assets/styles/anchors-explorer.css',
+        '/assets/styles/micropost-list.css',
+        '/assets/styles/deck.css'
+      ],
       scripts: [
         '/assets/js/anchors-explorer.js',
+        '/assets/js/micropost-list.js',
         '/socket.io/socket.io.js',
         '/assets/js/deck.js'
       ]
@@ -162,7 +171,8 @@ function headerAleph(aleph) {
       div({ class: 'tablero-header-titles' },
         h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
         p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
-      )
+      ),
+      div({ class: 'firehose-viewer-launcher viewer-launcher-slot' })
     )
   );
 }
@@ -229,6 +239,70 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
             pre({ class: 'deck-a-summary', 'data-deck': deckId }, '—'),
             div({ class: 'deck-a-viewer-launcher viewer-launcher-slot', 'data-deck': deckId })
           )
+    )
+  );
+}
+
+function deckPanelFirehose(deckId, servers, presets, defaultServer, defaultPresetId) {
+  const corpora = [
+    { id: 'candidate', label: 'Candidatos' },
+    { id: 'raw', label: 'Raw' },
+    { id: 'discarded', label: 'Descartados' },
+    { id: 'labeled', label: 'Etiquetados' }
+  ];
+  const serverOptions = [
+    option({ value: '' }, '(elegir servidor)'),
+    ...servers.map(s =>
+      option({ value: s.id, ...(s.id === defaultServer ? { selected: 'selected' } : {}) }, s.name)
+    )
+  ];
+  const presetOptions = [
+    option({ value: '' }, '(sin preset)'),
+    ...presets.map(pr =>
+      option({
+        value: pr.id,
+        ...(pr.id === defaultPresetId ? { selected: 'selected' } : {})
+      }, pr.name)
+    )
+  ];
+
+  return section({ class: 'deck-panel deck-panel-firehose', 'data-deck-id': deckId },
+    h3({ class: 'deck-title' }, `Plato ${deckId} — Firehose`),
+    label({ class: 'deck-field' }, 'Servidor',
+      select({
+        class: 'deck-server',
+        'data-deck': deckId,
+        'data-default-server': defaultServer
+      }, serverOptions)
+    ),
+    label({ class: 'deck-field' }, 'Preset (filtro)',
+      select({ class: 'deck-preset', 'data-deck': deckId }, presetOptions)
+    ),
+    div({ class: 'action-row deck-actions' },
+      button({ type: 'button', class: 'btn btn-outline deck-load', 'data-deck': deckId }, 'Cargar plato'),
+      span({ class: 'state-badge deck-state', 'data-deck': deckId, 'data-state': 'empty' }, 'empty')
+    ),
+    div({ class: 'deck-resolved deck-c-content', 'data-deck': deckId },
+      div({ class: 'deck-c-header action-row' },
+        pre({ class: 'deck-c-summary', 'data-deck': deckId }, '—'),
+        div({ class: 'deck-c-viewer-launcher viewer-launcher-slot', 'data-deck': deckId })
+      ),
+      div({ class: 'deck-c-corpus-tabs', role: 'tablist', 'aria-label': 'Corpus firehose' },
+        corpora.map((c, i) =>
+          button({
+            type: 'button',
+            class: `deck-c-corpus-tab${i === 0 ? ' active' : ''}`,
+            'data-corpus': c.id,
+            'data-deck': deckId,
+            role: 'tab',
+            'aria-selected': i === 0 ? 'true' : 'false'
+          }, c.label)
+        )
+      ),
+      div({ class: 'deck-c-micropost-host', 'data-deck': deckId },
+        p({ class: 'list-empty' }, 'Cargar plato para ver microposts')
+      ),
+      pre({ class: 'deck-c-selected-preview', 'data-deck': deckId }, '')
     )
   );
 }

@@ -87,6 +87,11 @@ export {
 } from './firehose-paths.mjs';
 
 export {
+  buildFirehoseLinkItems,
+  buildFirehoseLinksResponse
+} from './firehose-link-recipes.mjs';
+
+export {
   LINEAS_VOLUME_ID,
   isLineasCachePath,
   resolveLineasBasePath,

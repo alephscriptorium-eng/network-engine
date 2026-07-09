@@ -9,6 +9,7 @@
   },
   "license": "AIPLv1",
   "dependencies": {
+    "@zeus/linea-firehose": "^0.1.0",
     "@zeus/presets-sdk": "^0.1.0",
     "@zeus/ui-kit": "^0.1.0",
     "cors": "^2.8.6",

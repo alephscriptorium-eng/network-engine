@@ -28,8 +28,16 @@
   const viewLinksCache = {};
   /** @type {Record<string, number>} */
   const viewLinksReqSeq = { A: 0, B: 0 };
+  /** @type {object|null} */
+  let firehoseLinksCache = null;
+  /** @type {object|null} */
+  let micropostListHandle = null;
+  /** @type {{ mode: string|null }} */
+  let micropostListMeta = { mode: null };
+  /** @type {object|null} */
+  let lastDeckCResolved = null;
 
-  const BADGE_VARIANT = { anchor: 'primary', cached: 'success', milestone: 'accent', curated: 'warning' };
+  const FIREHOSE_CORPORA = ['candidate', 'raw', 'discarded', 'labeled'];
   let wikitextPollTimer = null;
   let wikitextPollOldid = null;
   const WIKITEXT_POLL_MS = 2000;
@@ -92,6 +100,137 @@
       || items.find((item) => item.kind === 'wikitext')
       || viewLinksCache[deckId]?.wikitext
       || null;
+  }
+
+  const BADGE_VARIANT = { anchor: 'primary', cached: 'success', milestone: 'accent', curated: 'warning' };
+
+  function buildFirehoseLinksUrl(deckContext = {}) {
+    const params = new URLSearchParams();
+    if (deckContext.corpus) params.set('corpus', deckContext.corpus);
+    if (deckContext.path) params.set('path', deckContext.path);
+    if (deckContext.selectedFilePath) params.set('file', deckContext.selectedFilePath);
+    const qs = params.toString();
+    return qs ? `/api/aleph/firehose-links?${qs}` : '/api/aleph/firehose-links';
+  }
+
+  function mountDeckCFirehoseLinks(payload) {
+    const launcher = globalThis.Zeus?.ViewerLauncher;
+    if (!launcher || !payload?.items?.length) return;
+    launcher.mountMenu('.deck-c-viewer-launcher[data-deck="C"]', {
+      label: 'Explorer',
+      items: payload.items
+    });
+  }
+
+  function mountFirehoseLinks(payload) {
+    const launcher = globalThis.Zeus?.ViewerLauncher;
+    if (!launcher || !payload?.items?.length) return;
+    launcher.mountMenu('.firehose-viewer-launcher', {
+      label: 'Firehose',
+      items: payload.items
+    });
+  }
+
+  async function refreshFirehoseLinks(deckContext = null) {
+    try {
+      const url = deckContext ? buildFirehoseLinksUrl(deckContext) : '/api/aleph/firehose-links';
+      const res = await fetch(url);
+      if (!res.ok) return;
+      const payload = await res.json();
+      if (!payload.items?.length) return;
+      firehoseLinksCache = payload;
+      mountFirehoseLinks(payload);
+      if (deckContext) {
+        mountDeckCFirehoseLinks(payload);
+      }
+    } catch (err) {
+      console.error('firehose-links fetch failed:', err);
+    }
+  }
+
+  function updateCorpusTabs(corpus) {
+    if (!corpus) return;
+    document.querySelectorAll('.deck-c-corpus-tab[data-deck="C"]').forEach((tab) => {
+      const active = tab.dataset.corpus === corpus;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+  }
+
+  function formatDeckCSummary(resolved) {
+    if (!resolved || resolved.kind !== 'firehose') return '—';
+    const total = resolved.stats?.totals?.[resolved.corpus] ?? 0;
+    const lines = [`Corpus ${resolved.corpus}: ${total} archivos`];
+    if (resolved.path) lines.push(`Batch: ${resolved.path}`);
+    if (resolved.selected?.handle) {
+      const handle = resolved.selected.handle.startsWith('@')
+        ? resolved.selected.handle
+        : `@${resolved.selected.handle}`;
+      lines.push(`Selección: ${handle}`);
+    }
+    return lines.join('\n');
+  }
+
+  function renderDeckC(resolved) {
+    lastDeckCResolved = resolved;
+    const summaryEl = document.querySelector('.deck-c-summary[data-deck="C"]');
+    const previewEl = document.querySelector('.deck-c-selected-preview[data-deck="C"]');
+    const host = document.querySelector('.deck-c-micropost-host[data-deck="C"]');
+
+    if (summaryEl) summaryEl.textContent = formatDeckCSummary(resolved);
+    updateCorpusTabs(resolved?.corpus);
+
+    if (previewEl) {
+      previewEl.textContent = resolved?.selected?.text
+        ? String(resolved.selected.text).slice(0, 400)
+        : '';
+    }
+
+    if (!host || !globalThis.Zeus?.MicropostList) return;
+
+    if (!resolved || resolved.kind !== 'firehose') {
+      host.innerHTML = '<p class="list-empty">Cargar plato para ver microposts</p>';
+      micropostListHandle = null;
+      micropostListMeta.mode = null;
+      return;
+    }
+
+    const mode = resolved.corpus === 'labeled' ? 'labeled' : 'candidate';
+    const items = (resolved.posts?.items || []).map((p) => ({
+      ...p,
+      id: p.filePath || p.uri || p.handle
+    }));
+    const selectedId = resolved.selected?.filePath || null;
+
+    if (!micropostListHandle || micropostListMeta.mode !== mode) {
+      host.innerHTML = '';
+      micropostListHandle = globalThis.Zeus.MicropostList.mount(host, {
+        items,
+        mode,
+        selectedId,
+        emptyMessage: resolved.posts?.empty
+          ? `Corpus ${resolved.corpus} vacío.`
+          : undefined,
+        onSelect: (item) => {
+          socket.emit('micropost:select', {
+            deckId: 'C',
+            filePath: item.filePath || item.id,
+            corpus: resolved.corpus,
+            path: resolved.path
+          });
+        }
+      });
+      micropostListMeta.mode = mode;
+    } else {
+      micropostListHandle.setItems(items);
+      micropostListHandle.setSelectedId(selectedId);
+    }
+
+    refreshFirehoseLinks({
+      corpus: resolved.corpus,
+      path: resolved.path,
+      selectedFilePath: resolved.selected?.filePath
+    });
   }
 
   function mountDeckViewLinks(deckId, payload) {
@@ -327,6 +466,7 @@
   function formatResolved(resolved, deckId) {
     if (deckId === 'A') return formatDeckASummary(resolved);
     if (deckId === 'B') return formatDeckBSummary(resolved);
+    if (deckId === 'C') return formatDeckCSummary(resolved);
     if (!resolved) return '—';
     return JSON.stringify(resolved, null, 2);
   }
@@ -515,6 +655,8 @@
         resolvedEl.textContent = formatResolved(resolved, deckId);
       }
       refreshViewLinks(deckId, resolved);
+    } else if (deckId === 'C') {
+      renderDeckC(resolved);
     } else if (resolvedEl) {
       resolvedEl.textContent = formatResolved(resolved, deckId);
     }
@@ -562,7 +704,11 @@
     updateCrossoverTesis(state);
   }
 
-  const DEFAULT_SERVER_BY_DECK = { A: 'linea-espana', B: 'linea-wp-historia' };
+  const DEFAULT_SERVER_BY_DECK = {
+    A: 'linea-espana',
+    B: 'linea-wp-historia',
+    C: 'firehose-mcp-server'
+  };
 
   function populateServerSelects(servers) {
     if (!Array.isArray(servers)) return;
@@ -620,6 +766,9 @@
       const nodo = payload.nodo?.nodo ?? payload.nodo;
       const tesis = nodo?.tesis_villacañas || nodo?.tesis;
       if (tesis) crossoverTesis.textContent = `${nodo.id}: ${tesis}`;
+    }
+    if (payload.deckId === 'C' && payload.kind === 'firehose') {
+      lastDeckCResolved = payload;
     }
   });
 
@@ -695,6 +844,7 @@
       console.warn('Failed to refresh server list:', error);
     }
     await loadAlephData();
+    await refreshFirehoseLinks();
     autoLoadDecks();
   });
   socket.on('disconnect', () => console.log('Session socket disconnected'));
@@ -745,6 +895,15 @@
       socket.emit('caso:set', { casoId });
     });
   }
+
+  document.querySelectorAll('.deck-c-corpus-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const corpus = tab.dataset.corpus;
+      if (!corpus || !FIREHOSE_CORPORA.includes(corpus)) return;
+      updateCorpusTabs(corpus);
+      socket.emit('firehose:corpus', { deckId: 'C', corpus, path: '' });
+    });
+  });
 
   document.querySelectorAll('.drawer-tab').forEach(tab => {
     tab.addEventListener('click', () => {

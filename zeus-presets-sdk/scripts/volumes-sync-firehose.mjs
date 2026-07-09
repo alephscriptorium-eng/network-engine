@@ -7,10 +7,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveVolume } from '@zeus/presets-sdk';
+import { resolveVolume, resetVolumesCache } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
+const VOLUMES_JSON_PATH = path.join(REPO_ROOT, 'VOLUMES', 'volumes.json');
 
 const args = new Set(process.argv.slice(2));
 const verifyOnly = args.has('--verify');
@@ -40,13 +41,74 @@ async function countTree(root) {
   return { files, dirs, bytes };
 }
 
+async function countJsonFiles(root) {
+  let files = 0;
+
+  async function walk(dir) {
+    let entries;
+    try {
+      entries = await fs.readdir(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        await walk(full);
+      } else if (entry.isFile() && entry.name.endsWith('.json')) {
+        files += 1;
+      }
+    }
+  }
+
+  await walk(root);
+  return files;
+}
+
+async function countCorpora(destRoot) {
+  const corporaIds = ['candidate', 'raw', 'discarded', 'labeled'];
+  /** @type {Record<string, number>} */
+  const counts = {};
+  for (const id of corporaIds) {
+    counts[id] = await countJsonFiles(path.join(destRoot, id));
+  }
+  return counts;
+}
+
+async function refreshVolumesJson(destRoot, syncedAt) {
+  const counts = await countCorpora(destRoot);
+  const raw = JSON.parse(await fs.readFile(VOLUMES_JSON_PATH, 'utf8'));
+  const firehose = raw.volumes?.firehose;
+  if (!firehose?.corpora) {
+    throw new Error('volumes.json missing firehose.corpora');
+  }
+  for (const corpus of firehose.corpora) {
+    if (counts[corpus.id] != null) {
+      corpus.files = counts[corpus.id];
+    }
+  }
+  firehose.source = { ...(firehose.source || {}), syncedAt };
+  await fs.writeFile(VOLUMES_JSON_PATH, `${JSON.stringify(raw, null, 2)}\n`, 'utf8');
+  resetVolumesCache();
+  return counts;
+}
+
+function formatCorpusTable(counts) {
+  return `| Corpus | JSON files |
+|--------|------------|
+| candidate | ${counts.candidate?.toLocaleString('en') ?? '0'} |
+| raw | ${counts.raw?.toLocaleString('en') ?? '0'} |
+| discarded | ${counts.discarded?.toLocaleString('en') ?? '0'} |
+| labeled | ${counts.labeled?.toLocaleString('en') ?? '0'} |`;
+}
+
 function formatBytes(n) {
   if (n < 1024) return `${n} B`;
   if (n < 1024 * 1024) return `${Math.round(n / 1024)} KB`;
   return `${(n / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-function buildReport({ source, dest, sourceStats, destStats, syncedAt }) {
+function buildReport({ source, dest, sourceStats, destStats, syncedAt, corpusCounts }) {
   const match =
     sourceStats.files === destStats.files &&
     sourceStats.dirs === destStats.dirs;
@@ -82,6 +144,10 @@ ${source.replace(/\\/g, '/')}
 | Files | ${sourceStats.files.toLocaleString('en')} | ${destStats.files.toLocaleString('en')} | ${match ? 'yes' : 'no'} |
 | Directories | ${sourceStats.dirs.toLocaleString('en')} | ${destStats.dirs.toLocaleString('en')} | ${match ? 'yes' : 'no'} |
 | Total size | ${formatBytes(sourceStats.bytes)} | ${formatBytes(destStats.bytes)} | — |
+
+## Corpus counts (JSON files)
+
+${formatCorpusTable(corpusCounts || {})}
 
 ## Top-level layout
 
@@ -121,13 +187,21 @@ async function main() {
 
   if (verifyOnly) {
     let destStats = { files: 0, dirs: 0, bytes: 0 };
+    let corpusCounts = null;
     try {
       await fs.access(dest);
       destStats = await countTree(dest);
+      corpusCounts = await refreshVolumesJson(dest, new Date().toISOString());
+      console.log('Corpus counts refreshed in volumes.json');
     } catch {
       console.log('Destination missing or empty');
     }
     console.log(`Dest:   ${destStats.files} files, ${destStats.dirs} dirs, ${formatBytes(destStats.bytes)}`);
+    if (corpusCounts) {
+      console.log(
+        `Counts: candidate=${corpusCounts.candidate} raw=${corpusCounts.raw} discarded=${corpusCounts.discarded} labeled=${corpusCounts.labeled}`
+      );
+    }
     const ok =
       sourceStats.files === destStats.files &&
       sourceStats.dirs === destStats.dirs;
@@ -145,12 +219,16 @@ async function main() {
 
   const destStats = await countTree(dest);
   const syncedAt = new Date().toISOString();
+  const corpusCounts = dryRun ? await countCorpora(dest) : await refreshVolumesJson(dest, syncedAt);
   const reportPath = path.join(path.dirname(dest), 'FIREHOSE_SYNC_REPORT.md');
-  const report = buildReport({ source, dest, sourceStats, destStats, syncedAt });
+  const report = buildReport({ source, dest, sourceStats, destStats, syncedAt, corpusCounts });
 
   if (!dryRun) {
     await fs.writeFile(reportPath, report, 'utf8');
     console.log(`Report written: ${reportPath}`);
+    console.log(
+      `Counts: candidate=${corpusCounts.candidate} raw=${corpusCounts.raw} discarded=${corpusCounts.discarded} labeled=${corpusCounts.labeled}`
+    );
   }
 
   const ok =

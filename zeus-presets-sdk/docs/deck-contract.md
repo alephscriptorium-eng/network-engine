@@ -67,6 +67,7 @@ Native reads SHOULD use `extractor.readResource(uri)` from `@zeus/presets-sdk`. 
 | `@zeus/player-ui-debug` MCP | **3014** |
 | `@zeus/view-ui` | **3015** |
 | `@zeus/firehose-view-ui` | **3016** |
+| `@zeus/linea-firehose` MCP | **3008** |
 
 ## MCP server discovery
 
@@ -221,6 +222,8 @@ Transport: Socket.IO attached to the player-ui HTTP server.
 | `transport:play` | _(none)_ | Start playhead transport |
 | `transport:pause` | _(none)_ | Pause playhead transport |
 | `registro:select` | `{ deckId?, oldid, registro_id? }` | Select a registro revision on a deck; re-resolves wikitext |
+| `micropost:select` | `{ deckId?: 'C', filePath, corpus?, path? }` | Select a firehose micropost on Plato C; re-resolves preview + links |
+| `firehose:corpus` | `{ deckId?: 'C', corpus, path? }` | Switch firehose corpus (clears selection); re-resolves Plato C |
 | `wikitext:cache` | `{ deckId?, oldid }` | Call `cache_wikitext` on deck server (when preset allows) |
 | `wikitext:poll` | `{ deckId?, oldid }` | Poll wikitext cache; auto-selects when cached |
 | `caso:set` | `{ casoId }` | Set active ALEPH caso (syncs crossover VU meters across clients) |
@@ -230,7 +233,7 @@ Transport: Socket.IO attached to the player-ui HTTP server.
 | Event | Payload | Effect |
 |-------|---------|--------|
 | `session:state` | Snapshot: machine value, playhead, decks, parteCues | Full session broadcast after every transition |
-| `deck:resolved` | `{ deckId, year, nodo?, oldid?, registros?, selected?, wikitext? }` | Deterministic resolution for one deck at current playhead |
+| `deck:resolved` | `{ deckId, year?, nodo?, oldid?, registros?, selected?, wikitext?, kind?, corpus?, path?, stats?, posts?, triage? }` | Deterministic resolution for one deck at current playhead (or firehose corpus for C) |
 | `catalog:servers` | Server catalog array | Sent on connect; same shape as `GET /api/servers` |
 | `wikitext:cache-result` | `{ ok, oldid, error?, … }` | Result of `wikitext:cache` |
 | `wikitext:poll-result` | `{ cached, oldid, error?, action? }` | Result of `wikitext:poll` |
@@ -253,6 +256,7 @@ Read-only routes on player-ui (no socket contract change):
 |-------|---------|
 | `GET /api/aleph/config` | Casos, presets default, branding, `defaultLinea`, `satelite_wp`, `view` mesh |
 | `GET /api/aleph/view-links?deckId=A\|B` | Deep links a `@zeus/view-ui` derivados del `deck.resolved` en sesión |
+| `GET /api/aleph/firehose-links` | Deep links a `@zeus/firehose-view-ui` (corpora, batches recientes, triage). Query opcional: `?corpus=&path=&file=` para contexto Plato C |
 | `GET /api/aleph/lineas` | Registry of line instances (`id`, `etiqueta`, `nodo_count`, …) |
 | `GET /api/aleph/anchors?linea=espana` | Wave A anchor grid + live cache/stats for a línea (default `espana`) |
 | `GET /api/aleph/medicion/:casoId` | `estado.json` summary |
@@ -289,6 +293,65 @@ Controles genéricos en `@zeus/ui-kit` (`openViewerLink`, `openViewerButton`, `v
 | B | `.registro-viewer-links` | Iconos ↗ por fila de registro |
 
 Recetas de path en `@zeus/presets-sdk` (`buildViewLinksResponse`, `wikitextPath`, `nodoMetaPath`). Ver `docs/view-contract.md`.
+
+### Firehose launcher (Tablero → Firehose Explorer)
+
+Slot `.firehose-viewer-launcher` en el header del Tablero. Consume `GET /api/aleph/firehose-links` al conectar el socket.
+
+**Respuesta** `GET /api/aleph/firehose-links`:
+
+```json
+{
+  "volumeId": "firehose",
+  "corpora": [
+    { "id": "candidate", "label": "Candidatos", "files": 605, "empty": false }
+  ],
+  "items": [
+    { "id": "firehose-explorer", "label": "Firehose Explorer", "href": "http://localhost:3016/", "kind": "home" },
+    { "id": "corpus-candidate", "label": "Candidatos", "href": "http://localhost:3016/?corpus=candidate&mode=preview", "kind": "corpus", "corpus": "candidate" },
+    { "id": "candidate-batch-1772318551288", "label": "Candidatos · batch 1772318551288", "href": "http://localhost:3016/?corpus=candidate&path=1772318551288&mode=preview", "kind": "batch" }
+  ],
+  "triage": { "timestamp": "2026-03-01T00:33:27.681Z", "source": "candidate/", "results": { } }
+}
+```
+
+Recetas en `@zeus/presets-sdk` (`buildFirehoseLinksResponse`, `buildFirehoseDeepLink`). Ver `docs/firehose-contract.md`.
+
+### Plato C — Firehose micropost deck
+
+| Campo | Valor |
+|-------|-------|
+| Deck id | `C` |
+| Servidor | `firehose-mcp-server` (:3008 MCP disco) |
+| Preset default | `aleph-firehose-browse` |
+| Preset alternativo | `aleph-firehose-labeled` (corpus labeled) |
+| Resolución | In-process `@zeus/linea-firehose` (no depende del playhead) |
+
+**Shape `deck.resolved` cuando `kind === 'firehose'`:**
+
+```json
+{
+  "kind": "firehose",
+  "corpus": "candidate",
+  "path": "1772318551288",
+  "stats": { "totals": { "candidate": 605 } },
+  "posts": { "items": [], "pagination": {} },
+  "selected": { "handle": "...", "text": "...", "filePath": "..." },
+  "triage": { "timestamp": "..." }
+}
+```
+
+**UI (fila bajo crossover):**
+
+| Slot | Control |
+|------|---------|
+| `.deck-c-summary` | Stats corpus + batch + selección |
+| `.deck-c-corpus-tab` | Tabs candidate / raw / discarded / labeled |
+| `.deck-c-micropost-host` | `Zeus.MicropostList` |
+| `.deck-c-viewer-launcher` | Menú Explorer contextual (corpus/batch/post) |
+| `.deck-c-selected-preview` | Texto del post seleccionado |
+
+**Operador:** cargar Plato C → elegir corpus → click post → preview + link `:3016` con `path` del JSON.
 
 Resolution logic lives in **player-ui server** via in-process SDK (`readResource`, `applyPresetFilter`). Clients render; they do not resolve URIs themselves.
 

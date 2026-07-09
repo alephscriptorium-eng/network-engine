@@ -20,14 +20,15 @@
   "tasks": [
     {
       "label": "Start ▸ ALL",
-      "detail": "Arranca solar + lineas + editor + player + view-ui en paralelo (paneles dedicados).",
+      "detail": "Arranca lineas + editor + player + view-ui + firehose-mcp + firehose-view-ui en paralelo (paneles dedicados).",
       "dependsOrder": "parallel",
       "dependsOn": [
-        "Start ▸ solar-system",
         "Start ▸ lineas",
         "Start ▸ editor-ui",
         "Start ▸ player-ui (DJ)",
-        "Start ▸ view-ui"
+        "Start ▸ view-ui",
+        "Start ▸ firehose-mcp",
+        "Start ▸ firehose-view-ui"
       ],
       "group": "build",
       "problemMatcher": []
@@ -39,6 +40,17 @@
       "dependsOn": [
         "Start ▸ lineas",
         "Start ▸ view-ui"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ Firehose Explorer",
+      "detail": "firehose-mcp :3008 + firehose-view-ui :3016 — MCP disco + navegador DISK_01/FIREHOSE.",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Start ▸ firehose-mcp",
+        "Start ▸ firehose-view-ui"
       ],
       "group": "build",
       "problemMatcher": []
@@ -120,6 +132,24 @@
       "problemMatcher": []
     },
     {
+      "label": "Start ▸ firehose-mcp",
+      "detail": "MCP firehose disco · browse corpus DISK_01 · http://localhost:3008/mcp.",
+      "type": "shell",
+      "command": "npm run start:firehose-mcp",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ firehose-view-ui",
+      "detail": "Firehose Explorer · navegador DISK_01/FIREHOSE · http://localhost:3016.",
+      "type": "shell",
+      "command": "npm run start:firehose",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
       "label": "Seed ▸ aleph presets",
       "detail": "Carga presets ALEPH en el store local (una vez o tras cambios).",
       "type": "shell",
@@ -130,9 +160,9 @@
 
     {
       "label": "Stop ■ ALL (kill all ports)",
-      "detail": "Mata cualquier proceso escuchando en 4101-4103, 4111-4112, 3012-3015.",
+      "detail": "Mata cualquier proceso escuchando en 4101-4103, 4111-4112, 3008, 3012-3016.",
       "type": "shell",
-      "command": "for p in 4101 4102 4103 4111 4112 3012 3013 3014 3015; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'Zeus: all ports stopped'",
+      "command": "for p in 4101 4102 4103 4111 4112 3008 3012 3013 3014 3015 3016; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'Zeus: all ports stopped'",
       "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
       "problemMatcher": []
     },
@@ -181,6 +211,22 @@
       "detail": "Libera el puerto 3015 (Cache Explorer).",
       "type": "shell",
       "command": "for pid in $(netstat -ano | grep -E \":3015 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3015 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'view-ui stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ firehose-mcp",
+      "detail": "Libera el puerto 3008 (firehose MCP disco).",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3008 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3008 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'firehose-mcp stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ firehose-view-ui",
+      "detail": "Libera el puerto 3016 (Firehose Explorer).",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3016 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3016 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'firehose-view-ui stopped'",
       "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
       "problemMatcher": []
     },
@@ -235,6 +281,33 @@
       "detail": "node e2e/view-demo.mjs (browse API + manifest + wikitext + anchors + focus).",
       "type": "shell",
       "command": "npm run e2e:view",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ smoke firehose-mcp",
+      "detail": "node test/smoke.mjs en @zeus/linea-firehose.",
+      "type": "shell",
+      "command": "npm run test:firehose-mcp",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e firehose-links",
+      "detail": "node e2e/firehose-links-demo.mjs (player firehose-links API).",
+      "type": "shell",
+      "command": "npm run e2e:firehose-links",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e firehose",
+      "detail": "node e2e/firehose-demo.mjs (browse DISK_01 + micropost normalize).",
+      "type": "shell",
+      "command": "npm run e2e:firehose",
       "group": "test",
       "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
       "problemMatcher": []

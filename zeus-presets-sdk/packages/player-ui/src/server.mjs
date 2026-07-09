@@ -20,7 +20,11 @@ import {
   createCatalogService,
   applyPresetFilter,
   buildViewLinksResponse,
-  normalizeSatRel
+  buildFirehoseLinksResponse,
+  normalizeSatRel,
+  resolveUiMesh,
+  readVolumeFile,
+  TRIAGE_MANIFEST_PATH
 } from '@zeus/presets-sdk';
 import { assetsDir as uiKitAssetsDir } from '@zeus/ui-kit';
 
@@ -39,6 +43,11 @@ import {
   buildTopology,
   resolveLineaServers
 } from './aleph-bridge.mjs';
+import {
+  isFirehoseDeck,
+  resolveFirehoseDeck,
+  FIREHOSE_SERVER_NAME
+} from './firehose-bridge.mjs';
 
 const DEBUG_FETCH_MS = 800;
 
@@ -215,13 +224,47 @@ export async function createPlayerServer(options = {}) {
     return { deck, entry, extractor };
   }
 
-  async function resolveDeck(deckId, year, selectedOldid = null, io = null) {
+  async function resolveDeck(deckId, year, selectedOldid = null, io = null, firehoseOpts = {}) {
     const deck = actor.getSnapshot().context.decks[deckId];
     if (!deck || !deck.serverName || deck.phase === 'empty' || deck.phase === 'loading') {
       return null;
     }
 
     const resolveStarted = debugEnabled ? performance.now() : 0;
+
+    if (isFirehoseDeck(deck)) {
+      const prev = deck.resolved;
+      const corpus =
+        firehoseOpts.corpus ??
+        prev?.corpus ??
+        config.deck?.firehoseDefaultCorpus ??
+        'candidate';
+      const path =
+        firehoseOpts.path !== undefined
+          ? firehoseOpts.path
+          : (prev?.path ?? '');
+      const selectedFilePath =
+        firehoseOpts.selectedFilePath !== undefined
+          ? firehoseOpts.selectedFilePath
+          : (prev?.selected?.filePath ?? null);
+
+      const resolved = await resolveFirehoseDeck({
+        corpus,
+        path,
+        selectedFilePath
+      });
+      actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved });
+
+      const payload = { deckId, ...resolved };
+      if (debugEnabled && io) {
+        const ms = performance.now() - resolveStarted;
+        debugStats.lastResolveMs[deckId] = ms;
+        debugStats.resolveCount[deckId] = (debugStats.resolveCount[deckId] || 0) + 1;
+        bumpDebugEvent('deck:resolved');
+        io.of('/session').emit('debug:resolve-timing', { deckId, corpus, ms });
+      }
+      return payload;
+    }
 
     const entry = await catalog.getServerEntry(deck.serverName);
     if (!entry || entry.isConnected === false) {
@@ -311,6 +354,34 @@ export async function createPlayerServer(options = {}) {
     return { deckId, ...resolved };
   }
 
+  async function handleFirehoseCorpus(io, { deckId = 'C', corpus, path = '' }) {
+    const resolved = await resolveDeck(deckId, null, null, io, {
+      corpus: corpus || config.deck?.firehoseDefaultCorpus || 'candidate',
+      path,
+      selectedFilePath: null
+    });
+    if (resolved) {
+      io.of('/session').emit('deck:resolved', resolved);
+      broadcastState(io);
+    }
+    return resolved;
+  }
+
+  async function handleMicropostSelect(io, { deckId = 'C', filePath, corpus, path }) {
+    const deck = actor.getSnapshot().context.decks[deckId];
+    const prev = deck?.resolved;
+    const resolved = await resolveDeck(deckId, null, null, io, {
+      corpus: corpus ?? prev?.corpus,
+      path: path !== undefined ? path : prev?.path,
+      selectedFilePath: filePath ?? null
+    });
+    if (resolved) {
+      io.of('/session').emit('deck:resolved', resolved);
+      broadcastState(io);
+    }
+    return resolved;
+  }
+
   async function handleRegistroSelect(io, { deckId = 'B', oldid, registro_id }) {
     const year = actor.getSnapshot().context.playhead.year;
     const resolved = await resolveDeck(deckId, year, oldid, io);
@@ -378,6 +449,14 @@ export async function createPlayerServer(options = {}) {
 
       const entry = await catalog.getServerEntry(deck.serverName);
       if (!entry || entry.isConnected === false) {
+        if (isFirehoseDeck(deck)) {
+          const resolved = await resolveDeck(deckId, year, null, io);
+          if (resolved) {
+            results.push(resolved);
+            io.of('/session').emit('deck:resolved', resolved);
+          }
+          continue;
+        }
         actor.send({ type: 'DECK_DEGRADED', deckId });
         results.push({ deckId, year, error: 'disconnected' });
         continue;
@@ -400,7 +479,9 @@ export async function createPlayerServer(options = {}) {
     const entry = await catalog.getServerEntry(serverName);
     const preset = presetId ? store.getById(presetId) : null;
     const filtered = applyPresetFilter(entry, preset);
-    const phase = !entry || entry.isConnected === false ? 'degraded' : 'cued';
+    const phase = !entry || entry.isConnected === false
+      ? (serverName === FIREHOSE_SERVER_NAME ? 'cued' : 'degraded')
+      : 'cued';
 
     actor.send({ type: 'DECK_LOADED', deckId, phase, filtered });
     broadcastState(io);
@@ -459,6 +540,41 @@ export async function createPlayerServer(options = {}) {
         viewEntry,
         deckId,
         resolved
+      });
+      res.json(payload);
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+
+  app.get('/api/aleph/firehose-links', async (req, res) => {
+    try {
+      const dataDir = resolveDataDir(config);
+      const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'player' });
+      const firehoseEntry = mesh.uis?.firehose;
+      if (!firehoseEntry) {
+        res.status(503).json({ error: 'firehose UI mesh entry not configured' });
+        return;
+      }
+
+      let triage = null;
+      try {
+        const file = await readVolumeFile('firehose', TRIAGE_MANIFEST_PATH);
+        triage = JSON.parse(file.content);
+      } catch {
+        triage = null;
+      }
+
+      const deckContext = {
+        corpus: req.query.corpus ? String(req.query.corpus) : undefined,
+        path: req.query.path != null ? String(req.query.path) : undefined,
+        selectedFilePath: req.query.file ? String(req.query.file) : undefined
+      };
+
+      const payload = await buildFirehoseLinksResponse({
+        firehoseEntry,
+        triage,
+        deckContext
       });
       res.json(payload);
     } catch (error) {
@@ -531,7 +647,11 @@ export async function createPlayerServer(options = {}) {
   app.get('/api/aleph/topology', async (req, res) => {
     try {
       const cards = {};
-      for (const [key, serverName] of [['espana', 'linea-espana'], ['wpHistoria', 'linea-wp-historia']]) {
+      for (const [key, serverName] of [
+        ['espana', 'linea-espana'],
+        ['wpHistoria', 'linea-wp-historia'],
+        ['firehose', 'firehose-mcp-server']
+      ]) {
         const extractor = registry.extractors.get(serverName);
         if (extractor) {
           try {
@@ -660,6 +780,16 @@ export async function createPlayerServer(options = {}) {
     socket.on('registro:select', (payload) => {
       bumpDebugEvent('registro:select');
       handleRegistroSelect(io, payload).catch(err => console.error('registro:select error:', err));
+    });
+
+    socket.on('micropost:select', (payload) => {
+      bumpDebugEvent('micropost:select');
+      handleMicropostSelect(io, payload).catch(err => console.error('micropost:select error:', err));
+    });
+
+    socket.on('firehose:corpus', (payload) => {
+      bumpDebugEvent('firehose:corpus');
+      handleFirehoseCorpus(io, payload).catch(err => console.error('firehose:corpus error:', err));
     });
 
     socket.on('wikitext:cache', (payload) => {

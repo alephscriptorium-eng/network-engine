@@ -45,10 +45,12 @@ const DEFAULT_CONFIG = {
       { id: 'II', year: 1350 },
       { id: 'III', year: 1808 },
       { id: 'IV', year: 1978 }
-    ]
+    ],
+    defaultFirehosePreset: 'aleph-firehose-browse',
+    firehoseDefaultCorpus: 'candidate'
   },
   aleph: {
-    defaultPresets: { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
+    defaultPresets: { A: 'aleph-tronco-puro', B: 'aleph-wp-cache', C: 'aleph-firehose-browse' },
     defaultCaso: 'aeo-p24-linea',
     casos: ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: 'Scriptorium-Skins',

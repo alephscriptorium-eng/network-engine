@@ -17,6 +17,9 @@
     },
     "player-ui-debug-mcp-server": {
       "url": "http://localhost:3014/mcp"
+    },
+    "firehose-mcp-server": {
+      "url": "http://localhost:3008/mcp"
     }
   }
 }

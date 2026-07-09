@@ -274,7 +274,12 @@ export function getAlephConfig(config = {}) {
   const paths = resolveAlephPaths(aleph.paths);
   const defaultLinea = aleph.defaultLinea || 'espana';
   return {
-    defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
+    defaultPresets: {
+      A: 'aleph-tronco-puro',
+      B: 'aleph-wp-cache',
+      C: 'aleph-firehose-browse',
+      ...(aleph.defaultPresets || {})
+    },
     defaultCaso: aleph.defaultCaso || 'aeo-p24-linea',
     defaultLinea,
     satelite_wp: getSateliteWp(defaultLinea, paths),
@@ -334,6 +339,20 @@ export function buildTopology(cards = {}) {
         id: 'fetch_batch',
         role: 'python-only',
         path: 'network-engine/zeus-presets-sdk/VOLUMES/DISK_02/LINEAS/scripts/fetch_batch.py'
+      },
+      {
+        id: 'firehose-mcp-server',
+        port: 3008,
+        role: 'disco',
+        coverage: 'DISK_01/FIREHOSE',
+        card: cards.firehose || null
+      },
+      {
+        id: 'firehose-view-ui',
+        port: 3016,
+        role: 'reader',
+        coverage: 'Explorer microposts',
+        card: cards.firehoseUi || null
       }
     ],
     lanes: {
@@ -341,6 +360,7 @@ export function buildTopology(cards = {}) {
         'cache-status',
         'get_nodo(año)',
         'linea://wikitext/{oldid}',
+        'firehose_browse → firehose_list_posts',
         'medidor cribar/commit',
         'blockchain/block-N.md'
       ],
@@ -348,6 +368,7 @@ export function buildTopology(cards = {}) {
         'timeline-nodos',
         'report-nodo',
         'linea://cache/stats (lectura)',
+        'firehose-view-ui :3016',
         'readerchain'
       ]
     }

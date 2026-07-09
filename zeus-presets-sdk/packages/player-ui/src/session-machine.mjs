@@ -109,7 +109,7 @@ export const sessionMachine = setup({
     playhead: { year: 2010, playing: false },
     sync: true,
     activeCaso: 'aeo-p24-linea',
-    decks: { A: emptyDeck(), B: emptyDeck() }
+    decks: { A: emptyDeck(), B: emptyDeck(), C: emptyDeck() }
   },
   states: {
     idle: {

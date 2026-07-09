@@ -12,7 +12,8 @@ export const DEFAULT_ZEUS_DISCOVERY = {
     'http://localhost:4102',
     'http://localhost:4103',
     'http://localhost:4111',
-    'http://localhost:4112'
+    'http://localhost:4112',
+    'http://localhost:3008'
   ],
   timeoutMs: 2000
 };

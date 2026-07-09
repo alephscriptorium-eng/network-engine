@@ -105,6 +105,37 @@ const ALEPH_PRESETS = [
       { serverName: 'linea-wp-historia', type: 'prompt', name: 'report-nodo' },
       { serverName: 'linea-wp-historia', type: 'resource', name: 'linea-cache-stats' }
     ]
+  },
+  {
+    name: 'aleph-firehose-browse',
+    description: 'Plato C — browse DISK_01/FIREHOSE (corpus, batch, micropost preview)',
+    category: 'ALEPH et OMEGA',
+    prompt: 'Composer: stats → batch → micropost preview en DISK_01; UI Explorer en :3016.',
+    items: [
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_browse' },
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_list_posts' },
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_get_post' },
+      { serverName: 'firehose-mcp-server', type: 'resource', name: 'firehose-stats' },
+      { serverName: 'firehose-mcp-server', type: 'resource', name: 'firehose-triage' },
+      { serverName: 'firehose-mcp-server', type: 'resource', name: 'server-card' },
+      { serverName: 'firehose-mcp-server', type: 'resourceTemplate', name: 'firehose-corpus' },
+      { serverName: 'firehose-mcp-server', type: 'resourceTemplate', name: 'firehose-post' },
+      { serverName: 'firehose-mcp-server', type: 'prompt', name: 'explore-firehose' }
+    ]
+  },
+  {
+    name: 'aleph-firehose-labeled',
+    description: 'Plato C — corpus labeled (CDR) cuando DISK_01/labeled tenga archivos',
+    category: 'ALEPH et OMEGA',
+    prompt: 'Composer: lista posts etiquetados ONFALO; empty state si labeled vacío.',
+    items: [
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_browse' },
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_list_posts' },
+      { serverName: 'firehose-mcp-server', type: 'tool', name: 'firehose_get_post' },
+      { serverName: 'firehose-mcp-server', type: 'resource', name: 'firehose-stats' },
+      { serverName: 'firehose-mcp-server', type: 'resource', name: 'firehose-triage' },
+      { serverName: 'firehose-mcp-server', type: 'prompt', name: 'explore-firehose' }
+    ]
   }
 ];
 

@@ -18,18 +18,22 @@
     "start:player-debug": "npm run start -w @zeus/player-ui-debug",
     "start:view": "npm run start -w @zeus/view-ui",
     "start:firehose": "npm run start -w @zeus/firehose-view-ui",
+    "start:firehose-mcp": "npm run start -w @zeus/linea-firehose",
     "volumes:sync:firehose": "node scripts/volumes-sync-firehose.mjs",
     "volumes:init:lineas": "node scripts/volumes-init-lineas.mjs",
     "test:sdk": "npm test -w @zeus/presets-sdk",
     "test:solar": "npm test -w @zeus/solar-system",
     "test:lineas": "npm test -w @zeus/linea-system",
+    "test:firehose-mcp": "npm test -w @zeus/linea-firehose",
     "test:player-debug": "npm test -w @zeus/player-ui-debug",
     "seed:aleph": "node scripts/seed-aleph-presets.mjs",
     "e2e": "node e2e/demo.mjs",
     "e2e:deck": "node e2e/deck-demo.mjs",
     "e2e:tablero": "node e2e/tablero-aleph-demo.mjs",
     "e2e:view": "node e2e/view-demo.mjs",
-    "e2e:firehose": "node e2e/firehose-demo.mjs"
+    "e2e:firehose": "node e2e/firehose-demo.mjs",
+    "e2e:firehose-links": "node e2e/firehose-links-demo.mjs",
+    "e2e:firehose-deck": "node e2e/firehose-deck-demo.mjs"
   },
   "devDependencies": {
     "chalk": "^5.4.1",

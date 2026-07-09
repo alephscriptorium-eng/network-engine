@@ -7,6 +7,37 @@ Block-0 interface for `@zeus/firehose-view-ui` and `@zeus/linea-firehose`.
 | Service | Port |
 |---------|------|
 | `@zeus/firehose-view-ui` | **3016** |
+| `@zeus/linea-firehose` MCP (disk) | **3008** |
+
+## MCP disk server (`:3008`)
+
+Read-only MCP over `VOLUMES/DISK_01/FIREHOSE`. **Not** the legacy MCPGallery Jetstream live server.
+
+| Route | Content |
+|-------|---------|
+| `GET /mcp/health` | Server status + capability counts |
+| `POST /mcp` | Streamable HTTP MCP |
+
+Start: `npm run start:firehose-mcp`. Cursor: see `docs/cursor-mcp-firehose.md`.
+
+### Tools
+
+| Tool | Purpose |
+|------|---------|
+| `firehose_browse` | Corpus directory listing |
+| `firehose_list_posts` | Normalized micropost preview list |
+| `firehose_get_post` | Single post by volume-relative path |
+
+### Resources
+
+| URI | Content |
+|-----|---------|
+| `firehose://stats` | Corpus counts |
+| `firehose://triage` | `triage-manifest.json` |
+| `firehose://corpus/{corpusId}` | Corpus metadata |
+| `firehose://post/{corpusId}/{batch}/{filename}` | Normalized post |
+
+Env: `FIREHOSE_MCP_PORT` (default 3008).
 
 ## Volume
 
@@ -71,7 +102,7 @@ Jetstream fields: `handle`, `commit.record.text`, `commit.record.reply`, `uri`.
 | Package | Role |
 |---------|------|
 | `@zeus/presets-sdk` | `resolveVolume`, `browseVolume`, `firehose-paths` |
-| `@zeus/linea-firehose` | Schema, corpus browse, `listPosts` |
+| `@zeus/linea-firehose` | Schema, corpus browse, MCP disk server |
 | `@zeus/firehose-view-ui` | HTTP server + browser UI |
 | `@zeus/ui-kit` | `micropost-list.js`, `dual-viewer.css` |
 
@@ -79,6 +110,20 @@ Jetstream fields: `handle`, `commit.record.text`, `commit.record.reply`, `uri`.
 
 ```bash
 npm run e2e:firehose
+npm run e2e:firehose-links
+npm run test:firehose-mcp
 ```
 
-Validates real DISK_01 data: stats 605/4076/3706/0, batch browse, handle+text normalization.
+Validates real DISK_01 data: stats 605/4076/3706/0, batch browse, handle+text normalization, player firehose-links, MCP smoke.
+
+## Tablero Plato C
+
+Plato **C** en `@zeus/player-ui` carga preset `aleph-firehose-browse` sobre `firehose-mcp-server` y resuelve microposts in-process (corpus → batch → lista → selección).
+
+| Evento socket | Uso |
+|---------------|-----|
+| `deck:load` `{ deckId: 'C', serverName: 'firehose-mcp-server', presetId }` | Carga preset firehose |
+| `firehose:corpus` `{ corpus, path? }` | Cambia corpus activo |
+| `micropost:select` `{ filePath, corpus?, path? }` | Selecciona post para preview + deep link |
+
+E2E Tablero: `npm run e2e:firehose-deck` (deck C + posts + links contextuales). A/B sin cambio: `npm run e2e:tablero`.
