@@ -89,7 +89,6 @@ export {
 export {
   LINEAS_VOLUME_ID,
   isLineasCachePath,
-  resolveLineasSourceRoot,
   resolveLineasBasePath,
   resolveLineasVolumeRoot,
   resolveLineasSourcePath,

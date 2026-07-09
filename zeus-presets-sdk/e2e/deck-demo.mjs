@@ -15,31 +15,25 @@ import {
   PresetStore,
   discoverServers
 } from '../packages/presets-sdk/src/index.mjs';
+import {
+  assert,
+  waitForEvent,
+  safeClose,
+  shutdownE2E,
+  lineasBasePath
+} from './helpers.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const dataDir = path.join(repoRoot, 'data', 'e2e-deck-run');
 
 const LINEA_PORTS = { espana: 14111, wpHistoria: 14112 };
+const LINEA_URLS = [
+  `http://localhost:${LINEA_PORTS.espana}`,
+  `http://localhost:${LINEA_PORTS.wpHistoria}`
+];
 const PLAYER_PORT = 13013;
 const TEST_YEAR = 2010;
-
-function assert(cond, msg) {
-  if (!cond) throw new Error(msg);
-}
-
-function waitForEvent(socket, event, predicate = null, timeoutMs = 8000) {
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error(`Timeout waiting for ${event}`)), timeoutMs);
-    const handler = (payload) => {
-      if (predicate && !predicate(payload)) return;
-      clearTimeout(timer);
-      socket.off(event, handler);
-      resolve(payload);
-    };
-    socket.on(event, handler);
-  });
-}
 
 fs.rmSync(dataDir, { recursive: true, force: true });
 fs.mkdirSync(dataDir, { recursive: true });
@@ -54,16 +48,10 @@ const sockets = [];
 
 try {
   console.log('1. Starting linea-system servers...');
-  lineaHandles = await startAll();
+  lineaHandles = await startAll(lineasBasePath);
 
   console.log('2. Building catalog and linea-sync-observer preset...');
-  const found = await discoverServers({
-    urls: [
-      `http://localhost:${LINEA_PORTS.espana}`,
-      `http://localhost:${LINEA_PORTS.wpHistoria}`
-    ],
-    timeoutMs: 5000
-  });
+  const found = await discoverServers({ urls: LINEA_URLS, timeoutMs: 5000 });
   assert(found.length === 2, `Expected 2 linea servers, got ${found.length}`);
 
   const registry = new ServerRegistry();
@@ -105,10 +93,7 @@ try {
     port: PLAYER_PORT,
     host: 'localhost',
     dataDir,
-    discoveryUrls: [
-      `http://localhost:${LINEA_PORTS.espana}`,
-      `http://localhost:${LINEA_PORTS.wpHistoria}`
-    ]
+    discoveryUrls: LINEA_URLS
   });
 
   console.log('4. Connecting two socket clients...');
@@ -181,7 +166,8 @@ try {
 
   console.log('7. Degraded case: stop linea-wp-historia...');
   const wpHandle = lineaHandles.find(h => h.name === 'linea-wp-historia');
-  await wpHandle.close();
+  assert(wpHandle, 'linea-wp-historia handle missing');
+  await safeClose(wpHandle);
   lineaHandles = lineaHandles.filter(h => h.name !== 'linea-wp-historia');
   await new Promise(r => setTimeout(r, 300));
 
@@ -203,8 +189,6 @@ try {
 } finally {
   lineaServers.espana.port = origPorts.espana;
   lineaServers.wpHistoria.port = origPorts.wpHistoria;
-  for (const s of sockets) s.disconnect();
-  if (player) await player.close();
-  await Promise.allSettled(lineaHandles.map(h => h.close()));
+  await shutdownE2E({ lineaHandles, player, sockets });
   if (process.exitCode) process.exit(process.exitCode);
 }

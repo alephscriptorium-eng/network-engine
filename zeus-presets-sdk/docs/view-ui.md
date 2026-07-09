@@ -10,7 +10,7 @@ npm install
 npm run start:view      # http://localhost:3015
 ```
 
-**Prerequisito:** `network-engine/lineas-poder/` con `registry.yaml` y datos de línea.
+**Prerequisito:** `VOLUMES/DISK_02/LINEAS/` con `registry.yaml` y datos de línea (vía `resolveVolume('lineas')`).
 
 Opcional (stats live):
 

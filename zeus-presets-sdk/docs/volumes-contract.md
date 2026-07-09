@@ -20,30 +20,30 @@ Canonical on-disk storage for Zeus preset datasets under `VOLUMES/`.
 | `browseVolume(id, path, opts)` | Lazy paginated directory browse |
 | `readVolumeFile(id, path)` | Read file within volume |
 | `sanitizeRelativePath(path)` | Reject `..` and absolute paths |
-| `resolveLineasSourceRoot()` | Registry/manifest root (lineas-poder) |
-| `resolveLineasBasePath()` | Alias for source root (loaders, view-ui) |
-| `resolveLineasVolumeRoot()` | DISK_02/LINEAS absolute path |
-| `resolveLineasLineFilePath(linePath, rel)` | Hybrid cache overlay |
+| `resolveLineasBasePath()` | DISK_02/LINEAS absolute path (loaders, view-ui) |
+| `resolveLineasVolumeRoot()` | Alias for `resolveLineasBasePath()` |
+| `resolveLineasVolumePath(rel)` | Path relative to volume root |
+| `resolveLineasLineFilePath(linePath, rel)` | File within a line instance |
+| `resolveLineasSatCacheDir(satDir)` | Satellite `cache/` directory |
 
 ## DISK slots
 
 | Slot | Volume | Status |
 |------|--------|--------|
 | `DISK_01` | `firehose` | **active** — 8 388 JSON |
-| `DISK_02` | `lineas` | **active** — cache on volume, manifests at source |
+| `DISK_02` | `lineas` | **active** — full tree on volume |
 
-## Hybrid lineas policy (DISK_02)
+## Lineas policy (DISK_02)
 
-- **`DISK_02/LINEAS`** holds `*/cache/**` trees (wikitext snapshots, viajes, audits).
-- **`lineas-poder`** remains canonical for `registry.yaml`, manifests, nodos, and fetch scripts.
-- `resolveVolume('lineas')` → `DISK_02/LINEAS` (browse API, volume disk).
-- `resolveLineasSourceRoot()` → `lineas-poder` (registry, manifests, player-ui, view-ui base).
+- **`DISK_02/LINEAS`** is the sole canonical read root: `registry.yaml`, manifests, nodos, cache, registros, scripts.
+- `resolveVolume('lineas')` and `resolveLineasBasePath()` both resolve to `DISK_02/LINEAS`.
+- Legacy `lineas-poder` removed after migration (2026-07-09). Optional re-import via `LINEAS_LEGACY_SOURCE` + `--import`.
 
 ## Read-only policy
 
 - Remote pipeline sources are synced verbatim (`npm run volumes:sync:firehose`).
 - Local `DISK_01` is operator-editable on disk; browse API enforces `readonly: true` from config.
-- `DISK_02` cache is synced from lineas-poder via init script; manifests stay at source.
+- `DISK_02` is operator data; verify with `npm run volumes:init:lineas -- --verify`.
 
 ## Sync / init
 
@@ -51,9 +51,10 @@ Canonical on-disk storage for Zeus preset datasets under `VOLUMES/`.
 npm run volumes:sync:firehose
 npm run volumes:sync:firehose -- --verify
 
-npm run volumes:init:lineas
 npm run volumes:init:lineas -- --verify
-npm run volumes:init:lineas -- --dry-run
+npm run volumes:init:lineas -- --stats
+npm run volumes:init:lineas -- --import   # requires LINEAS_LEGACY_SOURCE env
+npm run volumes:init:lineas -- --import --dry-run
 ```
 
 Reports:

@@ -1,5 +1,5 @@
 /**
- * Read-only loader for network-engine/lineas-poder manifests and nodo metadata.
+ * Read-only loader for DISK_02/LINEAS manifests and nodo metadata.
  */
 
 import fs from 'node:fs/promises';

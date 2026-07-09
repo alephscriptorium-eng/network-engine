@@ -34,7 +34,7 @@
     },
     {
       "label": "Start ▸ Cache Explorer",
-      "detail": "lineas :4111-4112 + view-ui :3015 — navegador de cache lineas-poder (stats MCP opcionales).",
+      "detail": "lineas :4111-4112 + view-ui :3015 — navegador DISK_02/LINEAS (stats MCP opcionales).",
       "dependsOrder": "parallel",
       "dependsOn": [
         "Start ▸ lineas",
@@ -112,7 +112,7 @@
     },
     {
       "label": "Start ▸ view-ui",
-      "detail": "Cache Explorer · navegador lineas-poder · http://localhost:3015.",
+      "detail": "Cache Explorer · navegador DISK_02/LINEAS · http://localhost:3015.",
       "type": "shell",
       "command": "npm run start:view",
       "isBackground": true,

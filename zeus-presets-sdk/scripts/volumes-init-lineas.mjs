@@ -1,24 +1,29 @@
 #!/usr/bin/env node
 /**
- * Initialize LINEAS volume on DISK_02 — copy cache trees from lineas-poder source.
- * Usage: node scripts/volumes-init-lineas.mjs [--verify] [--dry-run]
+ * LINEAS volume on DISK_02 — verify / optional import from external source.
+ *
+ * Default (no legacy): dest-only verify and stats on VOLUMES/DISK_02/LINEAS.
+ *
+ * Usage:
+ *   node scripts/volumes-init-lineas.mjs [--verify]     # validate canonical tree (default action)
+ *   node scripts/volumes-init-lineas.mjs --stats        # print dest metrics only
+ *   node scripts/volumes-init-lineas.mjs --import       # copy from LINEAS_LEGACY_SOURCE env
+ *   node scripts/volumes-init-lineas.mjs --dry-run      # with --import: preview only
  */
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import {
-  resolveVolume,
-  resolveLineasSourceRoot,
-  resetVolumesCache
-} from '@zeus/presets-sdk';
+import { resolveVolume, resetVolumesCache } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
 
 const args = new Set(process.argv.slice(2));
-const verifyOnly = args.has('--verify');
+const verifyOnly = args.has('--verify') || (!args.has('--import') && !args.has('--stats'));
 const dryRun = args.has('--dry-run');
+const doImport = args.has('--import');
+const statsOnly = args.has('--stats');
 
 async function countTree(root) {
   let files = 0;
@@ -55,51 +60,50 @@ function formatBytes(n) {
   return `${(n / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-/**
- * Discover cache directories under source (directories named "cache").
- */
-async function discoverCacheDirs(sourceRoot) {
-  const cacheDirs = [];
+async function validateDest(dest) {
+  const checks = [];
+  const registry = path.join(dest, 'registry.yaml');
+  const espanaManifest = path.join(dest, 'espana/manifest.json');
 
-  async function walk(dir, rel = '') {
-    let entries;
-    try {
-      entries = await fs.readdir(dir, { withFileTypes: true });
-    } catch {
-      return;
-    }
-    for (const entry of entries) {
-      if (!entry.isDirectory()) continue;
-      const childRel = rel ? `${rel}/${entry.name}` : entry.name;
-      const childAbs = path.join(dir, entry.name);
-      if (entry.name === 'cache') {
-        cacheDirs.push({ rel: childRel, abs: childAbs });
-      } else {
-        await walk(childAbs, childRel);
-      }
-    }
+  try {
+    await fs.access(registry);
+    checks.push({ path: 'registry.yaml', ok: true });
+  } catch {
+    checks.push({ path: 'registry.yaml', ok: false });
   }
 
-  await walk(sourceRoot);
-  return cacheDirs;
+  try {
+    await fs.access(espanaManifest);
+    checks.push({ path: 'espana/manifest.json', ok: true });
+  } catch {
+    checks.push({ path: 'espana/manifest.json', ok: false });
+  }
+
+  const stats = await countTree(dest);
+  const ok = checks.every((c) => c.ok) && stats.files > 0;
+
+  return { ok, checks, stats };
 }
 
-function buildReport({ source, dest, cacheDirs, sourceStats, destStats, syncedAt }) {
-  const match =
-    sourceStats.files === destStats.files &&
-    sourceStats.dirs === destStats.dirs;
+async function copyTreeContents(source, dest) {
+  await fs.mkdir(dest, { recursive: true });
+  const entries = await fs.readdir(source, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = path.join(source, entry.name);
+    const destPath = path.join(dest, entry.name);
+    await fs.cp(srcPath, destPath, { recursive: true, force: true });
+    console.log(`Copied ${entry.name}/ → ${path.relative(REPO_ROOT, destPath)}`);
+  }
+}
 
-  const cacheList = cacheDirs.length
-    ? cacheDirs.map((d) => `- \`${d.rel}/\``).join('\n')
-    : '- _(none found)_';
+function buildReport({ dest, destStats, syncedAt, mode }) {
+  return `# LINEAS volume report
 
-  return `# LINEAS volume init report
-
-**Sync date:** ${syncedAt}
+**Updated:** ${syncedAt}
 **Operator:** zeus-presets-sdk volumes:init:lineas
-**Mode:** cache-only copy (hybrid — manifests remain at source)
+**Mode:** ${mode}
 
-## Destination (Zeus volume root)
+## Destination (canonical)
 
 \`\`\`
 ${path.relative(REPO_ROOT, dest).replace(/\\/g, '/')}
@@ -111,135 +115,82 @@ ${path.relative(REPO_ROOT, dest).replace(/\\/g, '/')}
 | Volume name | \`LINEAS\` |
 | Absolute path | \`${dest.replace(/\\/g, '/')}\` |
 
-## Source (registry + manifests)
+## Tree metrics
 
-\`\`\`
-${source.replace(/\\/g, '/')}
-\`\`\`
+| Metric | Value |
+|--------|-------|
+| Files | ${destStats.files.toLocaleString('en')} |
+| Directories | ${destStats.dirs.toLocaleString('en')} |
+| Total size | ${formatBytes(destStats.bytes)} |
 
-## Cache directories migrated
+## Policy
 
-${cacheList}
+- **DISK_02/LINEAS** is the sole canonical read root for all lineas data.
+- \`resolveVolume('lineas')\` and \`resolveLineasBasePath()\` → DISK_02/LINEAS.
+- Legacy \`lineas-poder\` removed **2026-07-09**; no duplicate backup on disk.
+- Optional re-import: set \`LINEAS_LEGACY_SOURCE\` and run \`npm run volumes:init:lineas -- --import\`.
 
-## Verification
-
-| Metric | Source cache | Destination | Match |
-|--------|--------------|-------------|-------|
-| Files | ${sourceStats.files.toLocaleString('en')} | ${destStats.files.toLocaleString('en')} | ${match ? 'yes' : 'no'} |
-| Directories | ${sourceStats.dirs.toLocaleString('en')} | ${destStats.dirs.toLocaleString('en')} | ${match ? 'yes' : 'no'} |
-| Total size | ${formatBytes(sourceStats.bytes)} | ${formatBytes(destStats.bytes)} | — |
-
-## Hybrid policy
-
-- **DISK_02/LINEAS** holds \`*/cache/**\` trees (wikitext snapshots, viajes, audits).
-- **lineas-poder** remains canonical for \`registry.yaml\`, manifests, nodos, and fetch scripts.
-- \`resolveVolume('lineas')\` → DISK_02; \`resolveLineasSourceRoot()\` → lineas-poder.
-
-Re-init: \`npm run volumes:init:lineas\`
+Verify: \`npm run volumes:init:lineas -- --verify\`
 `;
-}
-
-async function aggregateCacheStats(cacheDirs) {
-  let files = 0;
-  let dirs = 0;
-  let bytes = 0;
-  for (const dir of cacheDirs) {
-    const stats = await countTree(dir.abs);
-    files += stats.files;
-    dirs += stats.dirs;
-    bytes += stats.bytes;
-  }
-  return { files, dirs, bytes };
-}
-
-async function aggregateDestCacheStats(destRoot, cacheDirs) {
-  let files = 0;
-  let dirs = 0;
-  let bytes = 0;
-  for (const dir of cacheDirs) {
-    const destPath = path.join(destRoot, dir.rel);
-    try {
-      await fs.access(destPath);
-    } catch {
-      continue;
-    }
-    const stats = await countTree(destPath);
-    files += stats.files;
-    dirs += stats.dirs;
-    bytes += stats.bytes;
-  }
-  return { files, dirs, bytes };
 }
 
 async function main() {
   resetVolumesCache();
   const volume = resolveVolume('lineas');
-  const source = resolveLineasSourceRoot();
   const dest = volume.absPath;
 
-  try {
-    await fs.access(source);
-  } catch {
-    throw new Error(`Source not found: ${source}`);
+  console.log(`Dest: ${dest}`);
+
+  if (doImport) {
+    const source = process.env.LINEAS_LEGACY_SOURCE;
+    if (!source) {
+      throw new Error(
+        'LINEAS_LEGACY_SOURCE env required for --import (absolute path to external lineas tree)'
+      );
+    }
+    try {
+      await fs.access(source);
+    } catch {
+      throw new Error(`Import source not found: ${source}`);
+    }
+
+    console.log(`Source: ${source}`);
+    if (!dryRun) {
+      await copyTreeContents(source, dest);
+      console.log('Import complete.');
+    } else {
+      console.log('Dry run — no copy performed.');
+    }
   }
 
-  console.log(`Source: ${source}`);
-  console.log(`Dest:   ${dest}`);
+  const { ok, checks, stats } = await validateDest(dest);
 
-  const cacheDirs = await discoverCacheDirs(source);
-  if (cacheDirs.length === 0) {
-    console.log('No cache directories found under source.');
-  } else {
-    console.log(`Cache dirs: ${cacheDirs.map((d) => d.rel).join(', ')}`);
-  }
-
-  const sourceStats = await aggregateCacheStats(cacheDirs);
   console.log(
-    `Source cache: ${sourceStats.files} files, ${sourceStats.dirs} dirs, ${formatBytes(sourceStats.bytes)}`
+    `Dest tree: ${stats.files} files, ${stats.dirs} dirs, ${formatBytes(stats.bytes)}`
   );
+  for (const c of checks) {
+    console.log(`  ${c.ok ? 'OK' : 'MISSING'} ${c.path}`);
+  }
 
-  if (verifyOnly) {
-    const destStats = await aggregateDestCacheStats(dest, cacheDirs);
-    console.log(
-      `Dest cache:   ${destStats.files} files, ${destStats.dirs} dirs, ${formatBytes(destStats.bytes)}`
-    );
-    const ok =
-      sourceStats.files === destStats.files &&
-      sourceStats.dirs === destStats.dirs;
-    console.log(ok ? 'VERIFY OK' : 'VERIFY MISMATCH');
+  if (statsOnly) {
     process.exit(ok ? 0 : 1);
   }
 
-  if (!dryRun) {
-    for (const dir of cacheDirs) {
-      const target = path.join(dest, dir.rel);
-      await fs.mkdir(path.dirname(target), { recursive: true });
-      await fs.cp(dir.abs, target, { recursive: true, force: true });
-      console.log(`Copied ${dir.rel}/ → ${path.relative(REPO_ROOT, target)}`);
+  if (verifyOnly || doImport) {
+    console.log(ok ? 'VERIFY OK' : 'VERIFY FAILED');
+    if (!dryRun && doImport) {
+      const reportPath = path.join(path.dirname(dest), 'LINEAS_SYNC_REPORT.md');
+      const report = buildReport({
+        dest,
+        destStats: stats,
+        syncedAt: new Date().toISOString(),
+        mode: doImport ? 'import from LINEAS_LEGACY_SOURCE' : 'dest-only verify'
+      });
+      await fs.writeFile(reportPath, report, 'utf8');
+      console.log(`Report written: ${reportPath}`);
     }
-    if (cacheDirs.length === 0) {
-      await fs.mkdir(dest, { recursive: true });
-    }
-    console.log('Copy complete.');
-  } else {
-    console.log('Dry run — no copy performed.');
+    process.exit(ok ? 0 : 1);
   }
-
-  const destStats = await aggregateDestCacheStats(dest, cacheDirs);
-  const syncedAt = new Date().toISOString();
-  const reportPath = path.join(path.dirname(dest), 'LINEAS_SYNC_REPORT.md');
-  const report = buildReport({ source, dest, cacheDirs, sourceStats, destStats, syncedAt });
-
-  if (!dryRun) {
-    await fs.writeFile(reportPath, report, 'utf8');
-    console.log(`Report written: ${reportPath}`);
-  }
-
-  const ok =
-    sourceStats.files === destStats.files &&
-    sourceStats.dirs === destStats.dirs;
-  console.log(ok ? 'INIT OK' : 'INIT MISMATCH');
-  process.exit(ok ? 0 : 1);
 }
 
 main().catch((err) => {

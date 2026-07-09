@@ -6,7 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'yaml';
-import { resolveLineasSourceRoot } from '@zeus/presets-sdk';
+import { resolveLineasBasePath } from '@zeus/presets-sdk';
 import { packageDir } from './config.mjs';
 
 const ZEUS_ROOT = path.resolve(packageDir, '../..');
@@ -14,7 +14,7 @@ const NETWORK_ENGINE = path.resolve(ZEUS_ROOT, '..');
 const SCRIPTORIUM_ROOT = path.resolve(NETWORK_ENGINE, '..');
 
 function lineasSourceRoot() {
-  return resolveLineasSourceRoot();
+  return resolveLineasBasePath();
 }
 
 const DEFAULT_PATHS = {
@@ -326,14 +326,14 @@ export function buildTopology(cards = {}) {
         card: cards.wpHistoria || null
       },
       {
-        id: 'lineas-poder',
+        id: 'lineas-volume',
         role: 'disco',
-        path: 'network-engine/lineas-poder/espana/'
+        path: 'network-engine/zeus-presets-sdk/VOLUMES/DISK_02/LINEAS/espana/'
       },
       {
         id: 'fetch_batch',
         role: 'python-only',
-        path: 'network-engine/lineas-poder/scripts/fetch_batch.py'
+        path: 'network-engine/zeus-presets-sdk/VOLUMES/DISK_02/LINEAS/scripts/fetch_batch.py'
       }
     ],
     lanes: {

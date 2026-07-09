@@ -169,14 +169,19 @@ export function resolveUiMesh({ dataDir, localConfig = {}, selfUiId = null } = {
  * @returns {{ urls: string[], timeoutMs: number }}
  */
 export function resolveDiscoverySources({ dataDir, localDiscovery = {} } = {}) {
+  const timeoutMs =
+    localDiscovery.timeoutMs ??
+    loadSharedDiscoveryFile(dataDir).timeoutMs ??
+    DEFAULT_ZEUS_DISCOVERY.timeoutMs;
+
+  if (localDiscovery.exclusiveUrls && localDiscovery.urls?.length) {
+    return { urls: [...localDiscovery.urls], timeoutMs };
+  }
+
   const shared = loadSharedDiscoveryFile(dataDir);
   const urls = mergeUrls(
     mergeUrls(DEFAULT_ZEUS_DISCOVERY.urls, shared.urls || []),
     localDiscovery.urls || []
   );
-  const timeoutMs =
-    localDiscovery.timeoutMs ??
-    shared.timeoutMs ??
-    DEFAULT_ZEUS_DISCOVERY.timeoutMs;
   return { urls, timeoutMs };
 }

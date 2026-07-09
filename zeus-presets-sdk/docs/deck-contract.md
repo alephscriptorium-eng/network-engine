@@ -341,5 +341,5 @@ Both UIs are **siblings on shared substrate**, not copies of each other.
 - `@zeus/ui-kit`: layout shell, themes, base client JS
 - `@zeus/linea-system`: MCP servers only (Carril A)
 - `@zeus/player-ui`: session machine + deck view (Carril B)
-- `lineas-poder/`: read-only data source
+- `VOLUMES/DISK_02/LINEAS/`: read-only data source (canonical)
 - No AOS / ALEPH invocation; player adds only `xstate` + `socket.io` beyond existing deps

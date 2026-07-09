@@ -39,22 +39,18 @@ export function mountMCPRoute(app, { mcpServer, path = '/mcp', logLabel = 'mcp' 
         sessionIdGenerator: undefined,
         enableJsonResponse: true
       });
-      let closed = false;
+      let cleaned = false;
       const cleanup = async () => {
-        if (closed) return;
-        closed = true;
+        if (cleaned) return;
+        cleaned = true;
         await transport.close().catch(() => {});
         await mcpServer.close().catch(() => {});
       };
-      res.on('close', () => {
-        cleanup().catch(() => {});
-      });
       try {
         await mcpServer.connect(transport);
         await transport.handleRequest(req, res, req.body);
       } catch (err) {
         console.error(`[${logLabel}] Error handling MCP request:`, err);
-        await cleanup();
         if (!res.headersSent) {
           res.status(500).json({
             jsonrpc: '2.0',
@@ -62,6 +58,8 @@ export function mountMCPRoute(app, { mcpServer, path = '/mcp', logLabel = 'mcp' 
             id: null
           });
         }
+      } finally {
+        await cleanup();
       }
     });
   });
@@ -84,9 +82,19 @@ export function createMcpHttpStart(app, { name, port, mcpServer, path = '/mcp' }
           port,
           url: `http://localhost:${port}${path}`,
           close: () =>
-            new Promise((res2, rej2) => {
+            new Promise((res2) => {
               mcpServer.close().catch(() => {});
-              httpServer.close((err) => (err ? rej2(err) : res2()));
+              if (!httpServer.listening) {
+                res2();
+                return;
+              }
+              httpServer.close((err) => {
+                if (err?.code === 'ERR_SERVER_NOT_RUNNING') {
+                  res2();
+                  return;
+                }
+                res2();
+              });
             })
         });
       });

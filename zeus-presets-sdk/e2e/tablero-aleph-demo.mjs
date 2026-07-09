@@ -10,19 +10,25 @@ import { startAll } from '../packages/linea-system/src/start-all.mjs';
 import { lineaServers } from '../packages/linea-system/src/lineas.mjs';
 import { createPlayerServer } from '../packages/player-ui/src/server.mjs';
 import { PresetStore } from '../packages/presets-sdk/src/preset-store.mjs';
+import {
+  assert,
+  waitForEvent,
+  shutdownE2E,
+  lineasBasePath
+} from './helpers.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const dataDir = path.join(repoRoot, 'data', 'e2e-tablero-run');
 
 const LINEA_PORTS = { espana: 14111, wpHistoria: 14112 };
+const LINEA_URLS = [
+  `http://localhost:${LINEA_PORTS.espana}`,
+  `http://localhost:${LINEA_PORTS.wpHistoria}`
+];
 const PLAYER_PORT = 13014;
 const TEST_YEAR = 2026;
 const TEST_YEAR_HIST = 1000;
-
-function assert(cond, msg) {
-  if (!cond) throw new Error(msg);
-}
 
 async function fetchJson(url) {
   const res = await fetch(url);
@@ -39,6 +45,7 @@ lineaServers.wpHistoria.port = LINEA_PORTS.wpHistoria;
 
 let lineaHandles = [];
 let player = null;
+let client = null;
 
 try {
   console.log('1. Seed ALEPH presets...');
@@ -56,17 +63,14 @@ try {
   );
 
   console.log('2. Starting linea-system...');
-  lineaHandles = await startAll();
+  lineaHandles = await startAll(lineasBasePath);
 
   console.log('3. Starting player-ui...');
   player = await createPlayerServer({
     port: PLAYER_PORT,
     host: 'localhost',
     dataDir: path.join(repoRoot, 'data'),
-    discoveryUrls: [
-      `http://localhost:${LINEA_PORTS.espana}`,
-      `http://localhost:${LINEA_PORTS.wpHistoria}`
-    ]
+    discoveryUrls: LINEA_URLS
   });
 
   const base = `http://localhost:${PLAYER_PORT}`;
@@ -100,41 +104,36 @@ try {
   assert(topo.lanes?.composer?.length > 0, 'composer lane missing');
 
   console.log('9. Socket deck load + playhead 1000 + 2026...');
-  const client = ioClient(`${base}/session`);
+  client = ioClient(`${base}/session`);
+  const initialState = waitForEvent(client, 'session:state');
   await new Promise((res, rej) => {
     client.on('connect', res);
     client.on('connect_error', rej);
   });
+  await initialState;
 
-  const waitResolved = (deckId, predicate) => new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error(`timeout deck ${deckId}`)), 12000);
-    const handler = (p) => {
-      if (p.deckId !== deckId) return;
-      if (predicate && !predicate(p)) return;
-      clearTimeout(timer);
-      client.off('deck:resolved', handler);
-      resolve(p);
-    };
-    client.on('deck:resolved', handler);
-  });
+  const waitResolved = (deckId, predicate, timeoutMs = 12000) =>
+    waitForEvent(client, 'deck:resolved', (p) => {
+      if (p.deckId !== deckId) return false;
+      return predicate ? predicate(p) : true;
+    }, timeoutMs);
 
+  const loadedA = waitResolved('A', p => p.nodo?.nodo?.id || p.nodo?.id);
   client.emit('deck:load', { deckId: 'A', serverName: 'linea-espana', presetId: presetA.id });
-  const resolvedA = await waitResolved('A', p => p.nodo?.nodo?.id || p.nodo?.id);
+  const resolvedA = await loadedA;
   assert(resolvedA.nodo?.nodo?.id || resolvedA.nodo?.id, 'deck A nodo missing at initial load');
 
+  const loadedB = waitResolved('B', p => p.nodo?.nodo?.id || p.nodo?.id);
   client.emit('deck:load', { deckId: 'B', serverName: 'linea-wp-historia', presetId: presetB.id });
+  await loadedB;
 
-  const resolvedB1000 = await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('timeout deck B at 1000')), 12000);
-    const handler = (p) => {
-      if (p.deckId !== 'B' || p.year !== TEST_YEAR_HIST) return;
-      clearTimeout(timer);
-      client.off('deck:resolved', handler);
-      resolve(p);
-    };
-    client.on('deck:resolved', handler);
-    client.emit('playhead:set', { year: TEST_YEAR_HIST });
-  });
+  const resolvedB1000Promise = waitResolved(
+    'B',
+    p => p.year === TEST_YEAR_HIST && p.registros?.total > 0,
+    12000
+  );
+  client.emit('playhead:set', { year: TEST_YEAR_HIST });
+  const resolvedB1000 = await resolvedB1000Promise;
 
   assert(resolvedB1000.registros?.total > 0, 'deck B registros at 1000 should be non-empty');
   assert(
@@ -144,17 +143,13 @@ try {
   assert(!resolvedB1000.registros?.error, 'deck B should not show coverage error at 1000');
   assert(!resolvedB1000.oldid?.error, 'deck B bridge preset should not call linea-oldid');
 
-  const resolvedB2026 = await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('timeout deck B at 2026')), 12000);
-    const handler = (p) => {
-      if (p.deckId !== 'B' || p.year !== TEST_YEAR) return;
-      clearTimeout(timer);
-      client.off('deck:resolved', handler);
-      resolve(p);
-    };
-    client.on('deck:resolved', handler);
-    client.emit('playhead:set', { year: TEST_YEAR });
-  });
+  const resolvedB2026Promise = waitResolved(
+    'B',
+    p => p.year === TEST_YEAR && (p.nodo?.nodo?.id === 'P24' || p.nodo?.id === 'P24'),
+    12000
+  );
+  client.emit('playhead:set', { year: TEST_YEAR });
+  const resolvedB2026 = await resolvedB2026Promise;
 
   assert(resolvedB2026.deckId === 'B', 'deck B mismatch');
   assert(resolvedB2026.registros?.total > 0, 'deck B registros at 2026');
@@ -163,18 +158,20 @@ try {
     'deck B nodo at 2026 should be P24'
   );
 
+  const selectedBPromise = waitResolved('B', p => p.selected?.oldid != null || p.wikitext);
   client.emit('registro:select', { deckId: 'B', oldid: resolvedB2026.registros?.anchor?.oldid });
-  const selectedB = await waitResolved('B', p => p.selected?.oldid != null || p.wikitext);
+  const selectedB = await selectedBPromise;
   assert(selectedB.wikitext?.cached === true || selectedB.wikitext?.action?.tool === 'cache_wikitext', 'wikitext on select');
 
   console.log('\nTablero ALEPH e2e: OK');
-  client.disconnect();
+} catch (err) {
+  console.error('\nTablero ALEPH e2e: FAILED');
+  console.error(err);
+  process.exitCode = 1;
 } finally {
-  if (player) await player.close();
-  for (const h of lineaHandles) {
-    if (h?.close) await h.close();
-  }
   lineaServers.espana.port = origPorts.espana;
   lineaServers.wpHistoria.port = origPorts.wpHistoria;
+  await shutdownE2E({ lineaHandles, player, sockets: client ? [client] : [] });
   fs.rmSync(dataDir, { recursive: true, force: true });
+  if (process.exitCode) process.exit(process.exitCode);
 }

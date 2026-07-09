@@ -139,7 +139,12 @@ export async function createPlayerServer(options = {}) {
   const discoverySources = resolveDiscoverySources({
     dataDir,
     localDiscovery: options.discoveryUrls
-      ? { ...config.discovery, urls: options.discoveryUrls }
+      ? {
+          ...config.discovery,
+          urls: options.discoveryUrls,
+          exclusiveUrls: options.discoveryExclusive !== false,
+          timeoutMs: options.discoveryTimeoutMs ?? 5000
+        }
       : config.discovery
   });
   const actor = createActor(sessionMachine);
@@ -637,14 +642,7 @@ export async function createPlayerServer(options = {}) {
     }, 1000);
   }
 
-  io.of('/session').on('connection', async (socket) => {
-    try {
-      const servers = await listServers();
-      socket.emit('catalog:servers', servers);
-    } catch (error) {
-      console.error('Discovery on connect failed:', error.message);
-      socket.emit('catalog:servers', []);
-    }
+  io.of('/session').on('connection', (socket) => {
     socket.emit('session:state', snapshotFromActor(actor));
 
     socket.on('deck:load', (payload) => {
@@ -698,6 +696,13 @@ export async function createPlayerServer(options = {}) {
       actor.send({ type: 'CASO_SET', casoId });
       broadcastState(io);
     });
+
+    listServers()
+      .then((servers) => socket.emit('catalog:servers', servers))
+      .catch((error) => {
+        console.error('Discovery on connect failed:', error.message);
+        socket.emit('catalog:servers', []);
+      });
   });
 
   const started = await new Promise((resolve, reject) => {
@@ -726,7 +731,19 @@ export async function createPlayerServer(options = {}) {
       actor.send({ type: 'SESSION_CLOSE' });
       actor.stop();
       await registry.close();
-      await new Promise((res, rej) => httpServer.close(err => (err ? rej(err) : res())));
+      await new Promise((res) => {
+        if (!httpServer.listening) {
+          res();
+          return;
+        }
+        httpServer.close((err) => {
+          if (err?.code === 'ERR_SERVER_NOT_RUNNING') {
+            res();
+            return;
+          }
+          res();
+        });
+      });
     }
   };
 }
