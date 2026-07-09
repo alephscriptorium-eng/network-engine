@@ -92,7 +92,10 @@ export function resolveVolume(id) {
   const monorepoRoot = MONOREPO_ROOT;
 
   let absPath;
-  if (entry.pathOverride) {
+  const lineasEnvOverride = id === 'lineas' ? process.env.ZEUS_VOLUME_LINEAS : null;
+  if (lineasEnvOverride) {
+    absPath = resolve(lineasEnvOverride);
+  } else if (entry.pathOverride) {
     absPath = resolveRelative(monorepoRoot, entry.pathOverride);
   } else if (entry.path) {
     absPath = join(volumesRoot, entry.path);
@@ -116,11 +119,19 @@ export function resolveVolume(id) {
     const defaultRemote = entry.source.defaultRemotePath
       ? resolveRelative(monorepoRoot, entry.source.defaultRemotePath)
       : null;
+    const defaultSource = entry.source.defaultSourcePath
+      ? resolveRelative(monorepoRoot, entry.source.defaultSourcePath)
+      : null;
     resolved.source = {
       ...entry.source,
       remotePath: expandEnvVar(entry.source.remotePath, defaultRemote),
       defaultRemotePath: defaultRemote,
+      sourcePath: expandEnvVar(entry.source.sourcePath, defaultSource),
+      defaultSourcePath: defaultSource,
     };
+    if (defaultSource || resolved.source.sourcePath) {
+      resolved.sourceRoot = resolve(resolved.source.sourcePath || defaultSource);
+    }
   }
 
   return resolved;

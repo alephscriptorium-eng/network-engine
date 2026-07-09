@@ -6,16 +6,24 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'yaml';
+import { resolveLineasSourceRoot } from '@zeus/presets-sdk';
 import { packageDir } from './config.mjs';
 
 const ZEUS_ROOT = path.resolve(packageDir, '../..');
 const NETWORK_ENGINE = path.resolve(ZEUS_ROOT, '..');
 const SCRIPTORIUM_ROOT = path.resolve(NETWORK_ENGINE, '..');
-const LINEAS_PODER_BASE = path.join(NETWORK_ENGINE, 'lineas-poder');
+
+function lineasSourceRoot() {
+  return resolveLineasSourceRoot();
+}
 
 const DEFAULT_PATHS = {
-  manifest: path.join(LINEAS_PODER_BASE, 'espana/manifest.json'),
-  waveAAnchors: path.join(LINEAS_PODER_BASE, 'scripts/fetch-priority-viaje1.json'),
+  get manifest() {
+    return path.join(lineasSourceRoot(), 'espana/manifest.json');
+  },
+  get waveAAnchors() {
+    return path.join(lineasSourceRoot(), 'scripts/fetch-priority-viaje1.json');
+  },
   medidorCasos: path.join(SCRIPTORIUM_ROOT, 'medidor-poder-politico/data/casos'),
   prensaBase: '/prensa/caso'
 };
@@ -52,7 +60,7 @@ export function resolveAlephPaths(paths = {}) {
 
 export function loadLineaRegistry() {
   if (registryCache) return registryCache;
-  const registryPath = path.join(LINEAS_PODER_BASE, 'registry.yaml');
+  const registryPath = path.join(lineasSourceRoot(), 'registry.yaml');
   if (!fs.existsSync(registryPath)) {
     return { error: `file not found: ${registryPath}` };
   }
@@ -90,12 +98,12 @@ export function findLineaEntry(lineaId) {
 export function resolveLineaPaths(lineaId, entry = null) {
   const linea = entry || findLineaEntry(lineaId);
   if (linea.error) return linea;
-  const lineaDir = path.join(LINEAS_PODER_BASE, linea.path);
+  const lineaDir = path.join(lineasSourceRoot(), linea.path);
   return {
     lineaId: linea.id,
     manifest: path.join(lineaDir, 'manifest.json'),
     waveAAnchors: path.join(lineaDir, 'wave-a-anchors.json'),
-    globalWaveAAnchors: path.join(LINEAS_PODER_BASE, 'scripts/fetch-priority-viaje1.json')
+    globalWaveAAnchors: path.join(lineasSourceRoot(), 'scripts/fetch-priority-viaje1.json')
   };
 }
 

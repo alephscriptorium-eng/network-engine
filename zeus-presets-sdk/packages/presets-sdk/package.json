@@ -8,7 +8,8 @@
     ".": "./src/index.mjs",
     "./volumes": "./src/volumes.mjs",
     "./browse-core": "./src/browse-core.mjs",
-    "./firehose-paths": "./src/firehose-paths.mjs"
+    "./firehose-paths": "./src/firehose-paths.mjs",
+    "./lineas-paths": "./src/lineas-paths.mjs"
   },
   "scripts": {
     "test": "node test/json-path.mjs && node test/smoke.mjs"

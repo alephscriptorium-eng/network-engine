@@ -17,7 +17,7 @@
     "timeoutMs": 2000
   },
   "lineas": {
-    "basePath": "../../../lineas-poder"
+    "basePath": null
   },
   "lineaServers": {
     "espana": {

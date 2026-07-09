@@ -4,11 +4,11 @@
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveLineasBasePath } from '@zeus/presets-sdk';
 import { createViewServer } from '../packages/view-ui/src/server.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const repoRoot = path.resolve(__dirname, '..');
-const lineasBase = path.join(repoRoot, '..', 'lineas-poder');
+const lineasBase = resolveLineasBasePath();
 
 const VIEW_PORT = 13015;
 

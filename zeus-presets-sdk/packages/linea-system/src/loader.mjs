@@ -7,9 +7,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import yaml from 'yaml';
 import { SATELITE_COVERAGE, TRONCO_COVERAGE } from './lineas.mjs';
+import {
+  resolveLineasBasePath,
+  resolveLineasSatCacheDir
+} from '@zeus/presets-sdk';
 
 const PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const DEFAULT_BASE_PATH = path.resolve(PACKAGE_ROOT, '../../../lineas-poder');
+export const DEFAULT_BASE_PATH = resolveLineasBasePath();
 
 const MONTHS = {
   ene: 0,
@@ -137,7 +141,7 @@ async function loadWpHistoriaIndex(satDir) {
     .filter((entry) => entry.dateMs != null)
     .sort((a, b) => a.dateMs - b.dateMs);
 
-  const cacheDir = path.join(satDir, 'cache/snapshots');
+  const cacheDir = path.join(resolveLineasSatCacheDir(satDir), 'snapshots');
   const registrosDir = path.join(satDir, 'registros');
 
   let cachedOldids = [];
@@ -332,7 +336,7 @@ export function resolveOldid(satellite, year) {
  * @param {object} satellite
  */
 export async function rescanSatelliteCache(satellite) {
-  const cacheDir = path.join(satellite.satDir, 'cache/snapshots');
+  const cacheDir = path.join(resolveLineasSatCacheDir(satellite.satDir), 'snapshots');
   let cachedOldids = [];
   let cachedWikitexts = 0;
 
@@ -387,8 +391,9 @@ export async function readWikitext(satellite, oldid) {
     };
   }
 
-  const wikitextPath = path.join(satellite.satDir, `cache/snapshots/${oid}.wikitext`);
-  const metaPath = path.join(satellite.satDir, `cache/snapshots/${oid}.meta.json`);
+  const cacheRoot = resolveLineasSatCacheDir(satellite.satDir);
+  const wikitextPath = path.join(cacheRoot, `snapshots/${oid}.wikitext`);
+  const metaPath = path.join(cacheRoot, `snapshots/${oid}.meta.json`);
 
   try {
     const wikitext = await fs.readFile(wikitextPath, 'utf8');

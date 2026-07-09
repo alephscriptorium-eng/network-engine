@@ -85,3 +85,15 @@ export {
   buildFirehoseDeepLink,
   toFirehoseLinkItem
 } from './firehose-paths.mjs';
+
+export {
+  LINEAS_VOLUME_ID,
+  isLineasCachePath,
+  resolveLineasSourceRoot,
+  resolveLineasBasePath,
+  resolveLineasVolumeRoot,
+  resolveLineasSourcePath,
+  resolveLineasVolumePath,
+  resolveLineasLineFilePath,
+  resolveLineasSatCacheDir
+} from './lineas-paths.mjs';

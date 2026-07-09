@@ -5,7 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { DEFAULT_ZEUS_DISCOVERY } from '@zeus/presets-sdk';
+import { DEFAULT_ZEUS_DISCOVERY, resolveLineasBasePath } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -36,7 +36,7 @@ const DEFAULT_CONFIG = {
     timeoutMs: DEFAULT_ZEUS_DISCOVERY.timeoutMs
   },
   lineas: {
-    basePath: '../../../lineas-poder'
+    basePath: null
   },
   lineaServers: {
     espana: { tronco: 'linea-espana', satelite: 'linea-wp-historia' }
@@ -76,8 +76,13 @@ export function setTheme(themeName) {
 }
 
 export function resolveBasePath(config = getConfig()) {
-  const rel = config.lineas?.basePath || DEFAULT_CONFIG.lineas.basePath;
-  return path.resolve(packageDir, rel);
+  const override = config.lineas?.basePath;
+  if (override) {
+    return path.isAbsolute(override)
+      ? override
+      : path.resolve(packageDir, override);
+  }
+  return resolveLineasBasePath();
 }
 
 export function resolveDataDir(config = getConfig()) {

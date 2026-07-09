@@ -8,7 +8,7 @@ import fsSync from 'node:fs';
 import path from 'node:path';
 import yaml from 'yaml';
 import { loadLineaData, DEFAULT_BASE_PATH } from '@zeus/linea-system/src/loader.mjs';
-import { wikitextPath as buildWikitextRelPath, DEFAULT_SATELITE_WP, normalizeSatRel } from '@zeus/presets-sdk';
+import { wikitextPath as buildWikitextRelPath, DEFAULT_SATELITE_WP, normalizeSatRel, resolveLineasLineFilePath, isLineasCachePath } from '@zeus/presets-sdk';
 import { getViewersConfig } from './config.mjs';
 
 const ANCHOR_INDEX_NAMES = new Set(['fetch-priority-viaje1.json', 'wave-a-anchors.json']);
@@ -73,10 +73,14 @@ export function getLineaInstance(data, lineaId) {
 export function resolveLineFilePath(line, relPath) {
   const sanitized = sanitizeRelativePath(relPath);
   if (sanitized.error) return sanitized;
-  const abs = path.resolve(line.linePath, sanitized.path || '.');
-  const root = path.resolve(line.linePath);
-  if (!abs.startsWith(root + path.sep) && abs !== root) {
-    return { error: 'path outside line root' };
+  const abs = resolveLineasLineFilePath(line.linePath, sanitized.path || '.');
+  if (!isLineasCachePath(sanitized.path || '')) {
+    const sourceLineRoot = path.resolve(line.linePath);
+    const underSource =
+      abs.startsWith(sourceLineRoot + path.sep) || abs === sourceLineRoot;
+    if (!underSource) {
+      return { error: 'path outside line root' };
+    }
   }
   return { absPath: abs, relPath: sanitized.path };
 }
