@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "sun-mcp-server": {
+      "url": "http://localhost:4101/mcp"
+    },
+    "moon-mcp-server": {
+      "url": "http://localhost:4102/mcp"
+    },
+    "earth-mcp-server": {
+      "url": "http://localhost:4103/mcp"
+    },
+    "linea-espana-mcp-server": {
+      "url": "http://localhost:4111/mcp"
+    },
+    "linea-wp-historia-mcp-server": {
+      "url": "http://localhost:4112/mcp"
+    },
+    "player-ui-debug-mcp-server": {
+      "url": "http://localhost:3014/mcp"
+    }
+  }
+}

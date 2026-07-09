@@ -1,6 +1,14 @@
 /* Base styles for Zeus MCP Mesh SDK */
 /* Following diogenes design patterns */
 
+/* Theme fallbacks (loaded after theme CSS) */
+:root {
+  --font-mono: var(--font-monospace, monospace);
+  --nav-link-color: var(--primary-text, #ffffff);
+  --nav-link-hover-bg: rgba(255, 255, 255, 0.1);
+  --nav-link-active-bg: rgba(255, 255, 255, 0.2);
+}
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -57,7 +65,7 @@ body {
 nav ul li a {
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--nav-link-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
@@ -65,11 +73,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--nav-link-hover-bg);
 }
 
 nav ul li a.current {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--nav-link-active-bg);
   font-weight: 600;
 }
 
@@ -142,6 +150,28 @@ nav ul li a.current {
 .btn-secondary {
   background-color: var(--text-secondary);
   color: var(--background-primary);
+}
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: var(--primary-text);
+  border-color: var(--primary-color);
+}
+
+.btn-outline.btn-small {
+  padding: 0.35rem 0.75rem;
+  font-size: var(--font-size-small);
 }
 
 /* Form elements */

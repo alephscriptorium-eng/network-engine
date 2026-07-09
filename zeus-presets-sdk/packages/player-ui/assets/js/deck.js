@@ -28,6 +28,9 @@
   let anchorCells = [];
   let currentMedicion = null;
   let selectedRegistroOldid = null;
+
+  const LED_STATUS_CLASS = { cached: 'success', stub: 'warning', missing: 'neutral' };
+  const BADGE_VARIANT = { anchor: 'primary', cached: 'success', milestone: 'accent', curated: 'warning' };
   let wikitextPollTimer = null;
   let wikitextPollOldid = null;
   const WIKITEXT_POLL_MS = 2000;
@@ -168,7 +171,8 @@
   }
 
   function badgeHtml(label, cls) {
-    return `<span class="registro-badge badge-${cls}">${label}</span>`;
+    const variant = BADGE_VARIANT[cls] || cls;
+    return `<span class="badge badge-${variant}">${label}</span>`;
   }
 
   function renderRegistrosList(deckId, resolved) {
@@ -178,12 +182,12 @@
 
     const reg = resolved?.registros;
     if (!reg || reg.error) {
-      listEl.innerHTML = `<p class="registros-empty">${reg?.error || 'Sin datos de registros'}</p>`;
+      listEl.innerHTML = `<p class="list-empty">${reg?.error || 'Sin datos de registros'}</p>`;
       if (previewEl) previewEl.textContent = '';
       return;
     }
     if (reg.total === 0) {
-      listEl.innerHTML = '<p class="registros-empty">No hay registros para las secciones mapeadas</p>';
+      listEl.innerHTML = '<p class="list-empty">No hay registros para las secciones mapeadas</p>';
       if (previewEl) previewEl.textContent = '';
       return;
     }
@@ -196,7 +200,7 @@
       if (item.milestone) badges.push(badgeHtml('milestone', 'milestone'));
       if (item.curated) badges.push(badgeHtml('curated', 'curated'));
       const selected = selectedRegistroOldid === item.oldid ? ' selected' : '';
-      return `<button type="button" class="registro-item${selected}${item.is_anchor ? ' is-anchor' : ''}"
+      return `<button type="button" class="list-item registro-item${selected}${item.is_anchor ? ' is-highlight' : ''}"
         data-oldid="${item.oldid}" data-registro-id="${item.registro_id || ''}"
         data-cached="${item.cached ? 'true' : 'false'}"
         title="${item.section || ''}">
@@ -285,12 +289,13 @@
       const title = cell.note
         ? `${cell.note} · hist ${cell.year}${cell.wp_year ? ` · WP ${cell.wp_year}` : ''}`
         : cell.nodo_id;
-      return `<button type="button" class="anchor-led status-${cell.status}"
+      const ledStatus = LED_STATUS_CLASS[cell.status] || 'neutral';
+      return `<button type="button" class="status-led status-${ledStatus}"
         data-px="${cell.nodo_id}" data-year="${cell.year || ''}" data-oldid="${cell.oldid}"
         title="${title}">${cell.nodo_id.replace('P', '')}</button>`;
     }).join('');
 
-    anchorStrip.querySelectorAll('.anchor-led').forEach(btn => {
+    anchorStrip.querySelectorAll('.status-led').forEach(btn => {
       btn.addEventListener('click', () => {
         const year = Number(btn.dataset.year);
         const oldid = Number(btn.dataset.oldid);

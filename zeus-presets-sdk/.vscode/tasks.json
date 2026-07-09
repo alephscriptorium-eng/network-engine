@@ -1,0 +1,214 @@
+{
+  "version": "2.0.0",
+  "windows": {
+    "options": {
+      "shell": {
+        "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "args": ["-c"]
+      }
+    }
+  },
+  "options": {
+    "cwd": "${workspaceFolder}"
+  },
+  "presentation": {
+    "echo": true,
+    "reveal": "always",
+    "revealProblems": "onProblem",
+    "clear": false
+  },
+  "tasks": [
+    {
+      "label": "Start ▸ ALL",
+      "detail": "Arranca solar + lineas + editor + player en paralelo (paneles dedicados).",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Start ▸ solar-system",
+        "Start ▸ lineas",
+        "Start ▸ editor-ui",
+        "Start ▸ player-ui (DJ)"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ Tablero ALEPH",
+      "detail": "Seed presets ALEPH y luego lineas + player + debug monitor en paralelo.",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Seed ▸ aleph presets",
+        "Start ▸ Tablero servidores"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ Tablero servidores",
+      "detail": "Solo servidores: lineas :4111-4112 + player :3013 + debug monitor (sin seed).",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Start ▸ lineas",
+        "Start ▸ player-ui (DJ)",
+        "Start ▸ player-ui-debug"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ solar-system",
+      "detail": "MCP servers sun/moon/earth · puertos 4101-4103.",
+      "type": "shell",
+      "command": "npm run start:solar",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ lineas",
+      "detail": "MCP servers linea-espana/linea-wp-historia · puertos 4111-4112.",
+      "type": "shell",
+      "command": "npm run start:lineas",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ editor-ui",
+      "detail": "Editor de presets · http://localhost:3012.",
+      "type": "shell",
+      "command": "npm run start:editor",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ player-ui (DJ)",
+      "detail": "Tablero ALEPH · Mesa DJ · http://localhost:3013.",
+      "type": "shell",
+      "command": "npm run start:player",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ player-ui-debug",
+      "detail": "TOP console monitor + MCP server on :3014 (socket/REST → player-ui :3013).",
+      "type": "shell",
+      "command": "npm run start:player-debug",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Seed ▸ aleph presets",
+      "detail": "Carga presets ALEPH en el store local (una vez o tras cambios).",
+      "type": "shell",
+      "command": "npm run seed:aleph",
+      "presentation": { "group": "zeus-start", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+
+    {
+      "label": "Stop ■ ALL (kill all ports)",
+      "detail": "Mata cualquier proceso escuchando en 4101-4103, 4111-4112, 3012-3014.",
+      "type": "shell",
+      "command": "for p in 4101 4102 4103 4111 4112 3012 3013 3014; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'Zeus: all ports stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ solar-system",
+      "detail": "Libera puertos 4101-4103.",
+      "type": "shell",
+      "command": "for p in 4101 4102 4103; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'solar-system stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ lineas",
+      "detail": "Libera puertos 4111-4112.",
+      "type": "shell",
+      "command": "for p in 4111 4112; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'lineas stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ editor-ui",
+      "detail": "Libera el puerto 3012.",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3012 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3012 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'editor-ui stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ player-ui (DJ)",
+      "detail": "Libera el puerto 3013.",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3013 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3013 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'player-ui stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ player-ui-debug",
+      "detail": "Libera el puerto 3014 (monitor TOP + MCP).",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3014 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3014 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'player-ui-debug stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+
+    {
+      "label": "Test ✓ smoke solar-system",
+      "detail": "node test/smoke.mjs en @zeus/solar-system.",
+      "type": "shell",
+      "command": "npm run test:solar",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ smoke lineas",
+      "detail": "node test/smoke.mjs en @zeus/linea-system.",
+      "type": "shell",
+      "command": "npm run test:lineas",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e catalog demo",
+      "detail": "node e2e/demo.mjs (servidores + catálogo + preset).",
+      "type": "shell",
+      "command": "npm run e2e",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e deck demo",
+      "detail": "node e2e/deck-demo.mjs (flujo DJ sobre lineas).",
+      "type": "shell",
+      "command": "npm run e2e:deck",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e tablero aleph",
+      "detail": "node e2e/tablero-aleph-demo.mjs (puente A↔B + presets ALEPH).",
+      "type": "shell",
+      "command": "npm run e2e:tablero",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ player-ui-debug smoke",
+      "detail": "Smoke in-process del MCP monitor en :3014.",
+      "type": "shell",
+      "command": "npm test -w @zeus/player-ui-debug",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -13,6 +13,8 @@
   --accent-hover: #1a1a1a;
   --success-color: #111111;
   --warning-color: #555555;
+  --on-success-color: #ffffff;
+  --on-warning-color: #ffffff;
   --danger-color: #000000;
   --danger-hover: #1a1a1a;
   --danger-text: #ffffff;
@@ -86,6 +88,9 @@ body {
   background: #000000;
   border-bottom: 2px solid #000000;
   box-shadow: none;
+  --nav-link-color: #ffffff;
+  --nav-link-hover-bg: rgba(255, 255, 255, 0.12);
+  --nav-link-active-bg: rgba(255, 255, 255, 0.22);
 }
 
 .section-content,
@@ -130,6 +135,18 @@ body {
 .btn-secondary:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.btn-outline:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
 input,

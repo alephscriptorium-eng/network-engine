@@ -66,6 +66,9 @@ h1, h2, h3, .section-title {
 .main-navigation {
   border-bottom: 1px solid var(--border-color);
   background: var(--background-secondary);
+  --nav-link-color: var(--text-primary);
+  --nav-link-hover-bg: var(--background-hover);
+  --nav-link-active-bg: var(--background-tertiary);
 }
 
 .main-footer {

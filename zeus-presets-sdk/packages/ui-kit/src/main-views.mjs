@@ -53,6 +53,7 @@ export const template = (pageTitle, content, options = {}) => {
       title(`${pageTitle} - ${brand.title}`),
       link({ rel: 'stylesheet', href: `/assets/themes/${theme}.css` }),
       link({ rel: 'stylesheet', href: '/assets/styles/base.css' }),
+      link({ rel: 'stylesheet', href: '/assets/styles/components.css' }),
       ...styles.map(href => link({ rel: 'stylesheet', href }))
     ),
     body({ class: `theme-${theme} ${currentPage ? currentPage + '-page' : ''}` },

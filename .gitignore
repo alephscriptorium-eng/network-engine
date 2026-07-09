@@ -15,7 +15,6 @@ _venv_nengine/
 # Editor
 .DS_Store
 .idea/
-.vscode/
 
 # Not ignored: public/ (committed for GitHub Pages, like MEDIDOR)
 

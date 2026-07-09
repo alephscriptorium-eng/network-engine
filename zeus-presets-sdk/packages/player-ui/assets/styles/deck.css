@@ -80,21 +80,6 @@
   flex-wrap: wrap;
 }
 
-.transport-controls .btn {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  background: var(--background-primary);
-  color: var(--text-primary);
-  cursor: pointer;
-  font-family: var(--font-primary);
-}
-
-.transport-controls .btn:hover {
-  background: var(--primary-color);
-  color: var(--primary-text, #000);
-}
-
 .playhead-control label {
   display: block;
   font-weight: 600;
@@ -125,77 +110,9 @@
   gap: 0.25rem;
 }
 
-.cue-mark {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  cursor: pointer;
-  padding: 0.15rem 0.35rem;
-  border-radius: 4px;
-  border: none;
-  background: transparent;
-  font-family: var(--font-primary);
-}
-
-.cue-mark:hover {
-  background: var(--background-tertiary);
-  color: var(--primary-color);
-}
-
-/* LED strip wave-A */
+/* Wave A section spacing */
 .anchor-strip-section {
   margin-bottom: 1.25rem;
-}
-
-.anchor-strip {
-  display: grid;
-  grid-template-columns: repeat(24, minmax(28px, 1fr));
-  gap: 4px;
-  overflow-x: auto;
-  padding: 0.5rem 0;
-}
-
-.anchor-led {
-  min-width: 28px;
-  height: 32px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-  cursor: pointer;
-  font-family: var(--font-mono);
-  padding: 0;
-}
-
-.anchor-led.status-cached {
-  background: var(--success-color);
-  color: #000;
-  border-color: var(--success-color);
-}
-
-.anchor-led.status-stub {
-  background: var(--warning-color);
-  color: #000;
-  border-color: var(--warning-color);
-}
-
-.anchor-led.status-missing {
-  background: var(--background-tertiary);
-  color: var(--text-secondary);
-}
-
-.anchor-led:hover {
-  filter: brightness(1.15);
-}
-
-.anchor-summary {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-top: 0.35rem;
-}
-
-.anchor-loading {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
 }
 
 .decks-grid {
@@ -218,8 +135,8 @@
 }
 
 @keyframes deck-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 170, 0, 0.3); }
-  50% { box-shadow: 0 0 8px 2px rgba(255, 170, 0, 0.4); }
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--warning-color) 30%, transparent); }
+  50% { box-shadow: 0 0 8px 2px color-mix(in srgb, var(--warning-color) 40%, transparent); }
 }
 
 .deck-title {
@@ -244,25 +161,9 @@
   color: var(--text-primary);
 }
 
-.deck-state {
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: var(--background-primary);
-  border: 1px solid var(--border-color);
-}
-
-.deck-state[data-state='playing'] {
-  border-color: var(--success-color);
-  color: var(--success-color);
-}
-
-.deck-state[data-state='degraded'] {
-  border-color: var(--warning-color);
-  color: var(--warning-color);
+.deck-actions {
+  margin: 0.25rem 0 0.75rem;
+  padding-top: 0.25rem;
 }
 
 .deck-resolved {
@@ -294,52 +195,9 @@
   margin-top: 0.5rem;
 }
 
-.registros-list {
-  max-height: 220px;
-  overflow-y: auto;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  background: var(--background-primary);
-}
-
-.registros-empty {
-  padding: 0.75rem;
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
 .registro-item {
-  display: grid;
   grid-template-columns: 4rem 1fr auto;
   gap: 0.35rem 0.5rem;
-  width: 100%;
-  text-align: left;
-  padding: 0.45rem 0.6rem;
-  border: none;
-  border-bottom: 1px solid var(--border-color);
-  background: transparent;
-  color: var(--text-primary);
-  cursor: pointer;
-  font-family: var(--font-primary);
-  font-size: 0.78rem;
-}
-
-.registro-item:last-child {
-  border-bottom: none;
-}
-
-.registro-item:hover {
-  background: var(--background-tertiary);
-}
-
-.registro-item.selected {
-  background: rgba(0, 200, 120, 0.12);
-  outline: 1px solid var(--success-color);
-}
-
-.registro-item.is-anchor {
-  border-left: 3px solid var(--primary-color);
 }
 
 .registro-id {
@@ -361,24 +219,7 @@
   justify-content: flex-end;
 }
 
-.registro-badge {
-  font-size: 0.65rem;
-  padding: 0.1rem 0.35rem;
-  border-radius: 3px;
-  border: 1px solid var(--border-color);
-  text-transform: uppercase;
-}
-
-.badge-anchor { border-color: var(--primary-color); color: var(--primary-color); }
-.badge-cached { border-color: var(--success-color); color: var(--success-color); }
-.badge-milestone { border-color: var(--accent-color); color: var(--accent-color); }
-.badge-curated { border-color: var(--warning-color); color: var(--warning-color); }
-
 .wikitext-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 0.75rem;
   margin-top: 0.75rem;
 }
 
@@ -386,13 +227,11 @@
   font-size: 0.85rem;
   color: var(--text-secondary);
   flex: 1 1 auto;
-  min-width: 12rem;
+  min-width: 10rem;
 }
 
 .btn-cache-wikitext {
   flex: 0 0 auto;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.6rem;
 }
 
 .wikitext-preview {
@@ -548,17 +387,8 @@
 }
 
 .service-node .badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  padding: 0.1rem 0.4rem;
   margin-top: 0.25rem;
-  border: 1px solid var(--border-color);
 }
-
-.badge-tronco { color: var(--success-color); }
-.badge-satelite { color: var(--accent-color); }
-.badge-disco { color: var(--text-secondary); }
-.badge-python-only { color: var(--warning-color); }
 
 .node-port, .node-cov {
   font-size: 0.75rem;
@@ -613,9 +443,6 @@
 }
 
 @media (max-width: 640px) {
-  .anchor-strip {
-    grid-template-columns: repeat(12, minmax(28px, 1fr));
-  }
   .topology-lanes {
     grid-template-columns: 1fr;
   }

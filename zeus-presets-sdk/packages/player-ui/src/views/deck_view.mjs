@@ -48,9 +48,9 @@ export function deckView(viewData = {}) {
           div({ class: 'deck-container' },
             div({ class: 'transport-bar' },
               div({ class: 'transport-controls' },
-                button({ id: 'transport-play', type: 'button', class: 'btn' }, 'Play'),
-                button({ id: 'transport-pause', type: 'button', class: 'btn' }, 'Pause'),
-                button({ id: 'sync-toggle', type: 'button', class: 'btn' }, 'Sync: ON')
+                button({ id: 'transport-play', type: 'button', class: 'btn btn-outline' }, 'Play'),
+                button({ id: 'transport-pause', type: 'button', class: 'btn btn-outline' }, 'Pause'),
+                button({ id: 'sync-toggle', type: 'button', class: 'btn btn-outline' }, 'Sync: ON')
               ),
               div({ class: 'playhead-control' },
                 label({ for: 'playhead-slider' }, 'Año histórico'),
@@ -69,7 +69,7 @@ export function deckView(viewData = {}) {
                   cues.map(cue =>
                     button({
                       type: 'button',
-                      class: 'cue-mark',
+                      class: 'btn-ghost btn-ghost-sm cue-mark',
                       'data-year': String(cue.year),
                       title: `Ir al año ${cue.year}`
                     }, `Parte ${cue.id} · ${cue.year}`)
@@ -79,10 +79,10 @@ export function deckView(viewData = {}) {
             ),
             section({ class: 'anchor-strip-section' },
               h3({ class: 'subsection-title' }, 'Wave A — anclas P01–P24'),
-              div({ id: 'anchor-strip', class: 'anchor-strip' },
-                p({ class: 'anchor-loading' }, 'Cargando anclas…')
+              div({ id: 'anchor-strip', class: 'status-led-grid status-led-grid--24' },
+                p({ class: 'list-empty anchor-loading' }, 'Cargando anclas…')
               ),
-              div({ id: 'anchor-summary', class: 'anchor-summary' }, '')
+              div({ id: 'anchor-summary', class: 'status-led-summary' }, '')
             ),
             div({ class: 'decks-grid' },
               deckPanel('A', servers, presets, 'linea-espana', defaultPresetA),
@@ -221,9 +221,9 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
     label({ class: 'deck-field' }, 'Preset (filtro)',
       select({ class: 'deck-preset', 'data-deck': deckId }, presetOptions)
     ),
-    button({ type: 'button', class: 'btn deck-load', 'data-deck': deckId }, 'Cargar plato'),
-    div({ class: 'deck-status-row' },
-      span({ class: 'deck-state', 'data-deck': deckId, 'data-state': 'empty' }, 'empty')
+    div({ class: 'action-row deck-actions' },
+      button({ type: 'button', class: 'btn btn-outline deck-load', 'data-deck': deckId }, 'Cargar plato'),
+      span({ class: 'state-badge deck-state', 'data-deck': deckId, 'data-state': 'empty' }, 'empty')
     ),
     div({ class: 'deck-resolved', 'data-deck': deckId },
       deckId === 'B'
@@ -231,15 +231,15 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
             div({ class: 'deck-b-summary', 'data-deck': deckId }, '—'),
             div({ class: 'registros-list-wrap' },
               h4({ class: 'registros-title' }, 'Revisiones WP temáticas'),
-              div({ class: 'registros-list', 'data-deck': deckId },
-                p({ class: 'registros-empty' }, 'Cargar plato para ver registros')
+              div({ class: 'registros-list list-panel', 'data-deck': deckId },
+                p({ class: 'list-empty registros-empty' }, 'Cargar plato para ver registros')
               )
             ),
-            div({ class: 'wikitext-bar', 'data-deck': deckId },
+            div({ class: 'inset-panel action-row wikitext-bar', 'data-deck': deckId },
               span({ class: 'wikitext-status', 'data-deck': deckId }, ''),
               button({
                 type: 'button',
-                class: 'btn btn-cache-wikitext',
+                class: 'btn btn-outline btn-small btn-cache-wikitext',
                 'data-deck': deckId,
                 hidden: 'hidden'
               }, 'Cachear'),
