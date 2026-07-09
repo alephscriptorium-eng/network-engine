@@ -1,0 +1,17 @@
+{
+  "name": "@zeus/linea-firehose",
+  "version": "0.1.0",
+  "description": "Firehose volume loader — Jetstream post schema, corpus browse, micropost preview",
+  "type": "module",
+  "main": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./schema": "./src/schema.mjs",
+    "./loader": "./src/loader.mjs",
+    "./browse": "./src/browse.mjs"
+  },
+  "license": "AIPLv1",
+  "dependencies": {
+    "@zeus/presets-sdk": "0.1.0"
+  }
+}

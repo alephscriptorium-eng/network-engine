@@ -66,6 +66,7 @@ Native reads SHOULD use `extractor.readResource(uri)` from `@zeus/presets-sdk`. 
 | `@zeus/player-ui` | **3013** |
 | `@zeus/player-ui-debug` MCP | **3014** |
 | `@zeus/view-ui` | **3015** |
+| `@zeus/firehose-view-ui` | **3016** |
 
 ## MCP server discovery
 
@@ -100,6 +101,7 @@ Shell global (`@zeus/ui-kit`) resolves links between Zeus UIs via `resolveUiMesh
 | `editor` | 3012 | `/` | Editor |
 | `player` | 3013 | `/` | Tablero |
 | `view` | 3015 | `/` | Cache |
+| `firehose` | 3016 | `/` | Firehose |
 | `session` | 3013 | `/session` | Sesión |
 
 Use `resolveUiMesh({ dataDir, localConfig, selfUiId })` in each package `main_views.mjs`. Editor-ui adds a local sub-nav (Home, Presets, MCP Editor, Settings).

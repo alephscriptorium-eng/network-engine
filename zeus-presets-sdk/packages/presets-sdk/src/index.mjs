@@ -2,7 +2,13 @@ export { MCPToolsExtractor } from './extractor.mjs';
 export { ServerRegistry } from './registry.mjs';
 export { discoverServers } from './discovery.mjs';
 export { syncDiscoveredServers } from './discovery-sync.mjs';
-export { DEFAULT_ZEUS_DISCOVERY, DEFAULT_ZEUS_UI_MESH, resolveDiscoverySources, resolveUiMesh, buildUiHref } from './discovery-config.mjs';
+export {
+  DEFAULT_ZEUS_DISCOVERY,
+  DEFAULT_ZEUS_UI_MESH,
+  resolveDiscoverySources,
+  resolveUiMesh,
+  buildUiHref
+} from './discovery-config.mjs';
 export {
   DEFAULT_SATELITE_WP,
   normalizeSatRel,
@@ -43,5 +49,39 @@ export {
   typeOfValue
 } from './json-path.mjs';
 export { mountMCPRoute, createMcpHttpStart } from './stateless-mcp-route.mjs';
-export { registerCommonMCP, jsonContent, renderPromptText, promptMessages, getMcpCapabilities } from './register-bridge-tools.mjs';
-export { buildServerCard, createServerCardResource, updateServerCard, SERVER_CARD_URI } from './server-card.mjs';
+export {
+  registerCommonMCP,
+  jsonContent,
+  renderPromptText,
+  promptMessages,
+  getMcpCapabilities
+} from './register-bridge-tools.mjs';
+export {
+  buildServerCard,
+  createServerCardResource,
+  updateServerCard,
+  SERVER_CARD_URI
+} from './server-card.mjs';
+
+export {
+  loadVolumesConfig,
+  resolveVolumesRoot,
+  resolveVolume,
+  listVolumes,
+  resetVolumesCache
+} from './volumes.mjs';
+
+export {
+  sanitizeRelativePath,
+  resolveVolumePath,
+  browseVolume,
+  readVolumeFile
+} from './browse-core.mjs';
+
+export {
+  FIREHOSE_VOLUME_ID,
+  TRIAGE_MANIFEST_PATH,
+  corpusRelPath,
+  buildFirehoseDeepLink,
+  toFirehoseLinkItem
+} from './firehose-paths.mjs';

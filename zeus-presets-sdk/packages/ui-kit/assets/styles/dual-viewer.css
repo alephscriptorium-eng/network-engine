@@ -1,0 +1,65 @@
+/* Generic dual-viewer layout — tree panel + viewer panel */
+
+.zeus-dual-viewer {
+  display: grid;
+  grid-template-columns: minmax(220px, 32%) 1fr;
+  gap: 1rem;
+  min-height: 60vh;
+  align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .zeus-dual-viewer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.zeus-dual-viewer-tree-panel,
+.zeus-dual-viewer-viewer-panel {
+  border: 1px solid var(--border-color, rgba(128, 128, 128, 0.35));
+  border-radius: 6px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 320px;
+}
+
+.zeus-dual-viewer-tree-host {
+  overflow: auto;
+  flex: 1;
+  font-size: 0.88rem;
+}
+
+.zeus-dual-viewer-viewer-host {
+  flex: 1;
+  overflow: auto;
+  min-height: 200px;
+}
+
+.zeus-dual-viewer-placeholder,
+.zeus-dual-viewer-loading,
+.zeus-dual-viewer-error {
+  opacity: 0.8;
+  padding: 0.5rem 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.zeus-dual-viewer-error {
+  color: var(--warning-color);
+}
+
+.zeus-dual-viewer-panel-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.zeus-dual-viewer-meta {
+  border-top: 1px solid var(--border-color, rgba(128, 128, 128, 0.25));
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}

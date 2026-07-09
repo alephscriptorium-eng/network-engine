@@ -39,6 +39,13 @@ export const DEFAULT_ZEUS_UI_MESH = {
     label: 'Cache',
     emoji: '📂'
   },
+  firehose: {
+    host: 'localhost',
+    port: 3016,
+    path: '/',
+    label: 'Firehose',
+    emoji: '🔥'
+  },
   session: {
     host: 'localhost',
     port: 3013,
@@ -48,7 +55,7 @@ export const DEFAULT_ZEUS_UI_MESH = {
   }
 };
 
-const GLOBAL_NAV_ORDER = ['editor', 'player', 'view', 'session'];
+const GLOBAL_NAV_ORDER = ['editor', 'player', 'view', 'firehose', 'session'];
 
 const DISCOVERY_FILENAME = 'zeus-discovery.json';
 
@@ -84,7 +91,7 @@ function mergeUiRecord(base = {}, override = {}) {
 
 function localConfigToUiMesh(localConfig = {}) {
   const out = { ...(localConfig.uiMesh || {}) };
-  for (const id of ['editor', 'player', 'view']) {
+  for (const id of ['editor', 'player', 'view', 'firehose']) {
     const block = localConfig[id];
     if (block && (block.host || block.port || block.path || block.url)) {
       out[id] = { ...(out[id] || {}), ...block };

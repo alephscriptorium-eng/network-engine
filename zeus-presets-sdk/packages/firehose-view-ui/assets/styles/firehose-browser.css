@@ -1,0 +1,164 @@
+/* Firehose explorer — tree, corpus tabs, preview layout */
+
+.firehose-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.firehose-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.firehose-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.firehose-tag {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.firehose-corpus-nav {
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.firehose-corpus-tab.active,
+.firehose-corpus-tab[aria-selected='true'] {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.firehose-toolbar-row {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.firehose-breadcrumb {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.85rem;
+}
+
+.firehose-mode-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.firehose-mode-toggle {
+  gap: 0.75rem;
+}
+
+.firehose-mode-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.firehose-tree-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.firehose-tree-item {
+  margin: 0;
+}
+
+.firehose-tree-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.firehose-tree-toggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 1.25rem;
+  padding: 0;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.firehose-tree-label {
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.2rem 0.35rem;
+  font-size: 0.85rem;
+  font-family: var(--font-mono, monospace);
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.firehose-tree-label:hover {
+  color: var(--accent-color);
+}
+
+.firehose-tree-children {
+  margin-left: 1.1rem;
+  border-left: 1px solid var(--border-color);
+  padding-left: 0.35rem;
+}
+
+.firehose-tree-more {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.5rem;
+}
+
+.firehose-preview-host {
+  display: grid;
+  grid-template-columns: minmax(180px, 38%) 1fr;
+  gap: 0.75rem;
+  min-height: 240px;
+}
+
+@media (max-width: 800px) {
+  .firehose-preview-host {
+    grid-template-columns: 1fr;
+  }
+}
+
+.firehose-micropost-list-host,
+.firehose-micropost-card-host {
+  min-height: 0;
+}
+
+.firehose-empty-state {
+  padding: 2rem 1rem;
+  text-align: center;
+  border: 1px dashed var(--border-color);
+  border-radius: 6px;
+}
+
+.firehose-empty-title {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.firehose-empty-desc {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.firehose-raw-text {
+  margin: 0;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@zeus/firehose-view-ui",
+  "version": "0.1.0",
+  "description": "Firehose volume browser with micropost preview on DISK_01",
+  "type": "module",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs"
+  },
+  "license": "AIPLv1",
+  "dependencies": {
+    "@zeus/linea-firehose": "0.1.0",
+    "@zeus/presets-sdk": "0.1.0",
+    "@zeus/ui-kit": "0.1.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "hyperaxe": "^3.0.2"
+  }
+}

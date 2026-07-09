@@ -1,0 +1,25 @@
+{
+  "server": {
+    "port": 3016,
+    "host": "localhost"
+  },
+  "theme": {
+    "current": "Black-White-MCP"
+  },
+  "discovery": {
+    "urls": [
+      "http://localhost:4101",
+      "http://localhost:4102",
+      "http://localhost:4103",
+      "http://localhost:4111",
+      "http://localhost:4112"
+    ],
+    "timeoutMs": 2000
+  },
+  "defaultCorpus": "candidate",
+  "branding": {
+    "title": "Firehose Explorer",
+    "tag": "Zeus Firehose · Scriptorium"
+  },
+  "debug": false
+}
