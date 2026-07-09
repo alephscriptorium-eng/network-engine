@@ -51,6 +51,13 @@
     ]
   },
   "aleph": {
+    "defaultLinea": "espana",
+    "lineaServers": {
+      "espana": {
+        "tronco": "linea-espana",
+        "satelite": "linea-wp-historia"
+      }
+    },
     "defaultPresets": {
       "A": "aleph-tronco-puro",
       "B": "aleph-wp-cache"

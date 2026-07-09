@@ -80,11 +80,7 @@ export function deckView(viewData = {}) {
               )
             ),
             section({ class: 'anchor-strip-section' },
-              h3({ class: 'subsection-title' }, 'Wave A — anclas P01–P24'),
-              div({ id: 'anchor-strip', class: 'status-led-grid status-led-grid--24' },
-                p({ class: 'list-empty anchor-loading' }, 'Cargando anclas…')
-              ),
-              div({ id: 'anchor-summary', class: 'status-led-summary' }, '')
+              div({ id: 'anchors-explorer-host' })
             ),
             div({ class: 'decks-grid' },
               deckPanel('A', servers, presets, 'linea-espana', defaultPresetA),
@@ -159,8 +155,12 @@ export function deckView(viewData = {}) {
     {
       currentPage: 'deck',
       theme: config.theme?.current || aleph.theme || 'Scriptorium-Skins',
-      styles: ['/assets/styles/deck.css'],
-      scripts: ['/socket.io/socket.io.js', '/assets/js/deck.js']
+      styles: ['/assets/styles/anchors-explorer.css', '/assets/styles/deck.css'],
+      scripts: [
+        '/assets/js/anchors-explorer.js',
+        '/socket.io/socket.io.js',
+        '/assets/js/deck.js'
+      ]
     }
   );
 }

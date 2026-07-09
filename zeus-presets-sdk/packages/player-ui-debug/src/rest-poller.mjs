@@ -2,11 +2,12 @@
  * REST poller for player-ui health and ALEPH endpoints.
  */
 
-export function createRestPoller({ baseUrl, defaultCaso, intervalMs = 7000 }) {
+export function createRestPoller({ baseUrl, defaultCaso, defaultLinea = 'espana', intervalMs = 7000 }) {
   const state = {
     health: null,
     servers: null,
     anchors: null,
+    anchorsLineaId: defaultLinea,
     medicion: null,
     alephConfig: null,
     alephTopology: null,
@@ -45,7 +46,7 @@ export function createRestPoller({ baseUrl, defaultCaso, intervalMs = 7000 }) {
       ] = await Promise.allSettled([
         fetchJson('/health'),
         fetchJson('/api/servers'),
-        fetchJson('/api/aleph/anchors'),
+        fetchJson(`/api/aleph/anchors?linea=${encodeURIComponent(state.anchorsLineaId)}`),
         fetchJson(`/api/aleph/medicion/${encodeURIComponent(defaultCaso)}`),
         fetchJson('/api/aleph/config'),
         fetchJson('/api/aleph/topology'),
@@ -89,6 +90,17 @@ export function createRestPoller({ baseUrl, defaultCaso, intervalMs = 7000 }) {
       }
     },
     pollOnce,
+    async fetchAnchors(lineaId = state.anchorsLineaId || defaultLinea) {
+      try {
+        const data = await fetchJson(`/api/aleph/anchors?linea=${encodeURIComponent(lineaId)}`);
+        state.anchors = data;
+        state.anchorsLineaId = lineaId;
+        notify();
+        return data;
+      } catch (err) {
+        return { error: err.message, linea: { id: lineaId } };
+      }
+    },
     async fetchMedicion(casoId) {
       if (casoId === defaultCaso && state.medicion) return state.medicion;
       if (state.medicionByCaso?.[casoId]) return state.medicionByCaso[casoId];

@@ -101,7 +101,7 @@ Mirror monitor for agents. Poll `player://snapshot` for live Tablero state. Nati
 | `player://health` | Socket connected + REST health |
 | `player://events` | Typed event ring buffer |
 | `player://servers` | Merged socket `catalog:servers` + REST `/api/servers` |
-| `player://aleph/anchors` | `/api/aleph/anchors` |
+| `player://aleph/anchors` | `/api/aleph/anchors?linea={anchorsLineaId}` (poller default `espana`) |
 | `player://aleph/medicion` | Default caso medicion |
 | `server://card` | Server card (name, version, port, capabilities) |
 
@@ -148,6 +148,7 @@ Config: `debugMonitor.enabled`, `debugMonitor.baseUrl` (default `http://localhos
 | `deck_load` | `deck:load` |
 | `registro_select` | `registro:select` |
 | `wikitext_cache` / `wikitext_poll` | `wikitext:cache` / `wikitext:poll` |
+| `cache_anchor` | `ZeusAnchorsExplorer` Cachear — lookup nodo in `player://aleph/anchors`, then cache+poll on deck B |
 | `refresh_snapshot` | Force REST poll + return snapshot |
 | `session_inspect` | Read `player://snapshot/at/{path}` metadata for focus navigation |
 
@@ -159,7 +160,7 @@ High-level composite tools for collaborative DJ sessions (no Playwright). Each r
 |------|----------|
 | `bootstrap_decks` | Browser `autoLoadDecks` (A: linea-espana, B: linea-wp-historia) |
 | `goto_parte` | Click Parte I–IV cue mark |
-| `goto_anchor` | Click anchor LED P01–P24 |
+| `goto_anchor` | `ZeusAnchorsExplorer` navigate — optional `lineaId` (default `espana`) |
 | `goto_year` | Playhead slider / year jump |
 | `ensure_wikitext` | Cache + poll loop until wikitext cached |
 | `select_caso` | `#caso-select` change (syncs operator VU meters) |
@@ -220,8 +221,9 @@ Read-only routes on player-ui (no socket contract change):
 
 | Route | Purpose |
 |-------|---------|
-| `GET /api/aleph/config` | Casos, presets default, branding |
-| `GET /api/aleph/anchors` | P01–P24 grid + live cache/stats |
+| `GET /api/aleph/config` | Casos, presets default, branding, `defaultLinea`, `lineaServers` |
+| `GET /api/aleph/lineas` | Registry of line instances (`id`, `etiqueta`, `nodo_count`, …) |
+| `GET /api/aleph/anchors?linea=espana` | Wave A anchor grid + live cache/stats for a línea (default `espana`) |
 | `GET /api/aleph/medicion/:casoId` | `estado.json` summary |
 | `GET /api/aleph/topology` | MCP server cards + Composer/Reader lanes |
 

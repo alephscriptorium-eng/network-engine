@@ -96,7 +96,7 @@ function getResourceRegistry(stateStore, config, poller) {
       uri: 'player://aleph/anchors',
       title: 'ALEPH anchors grid',
       mimeType: 'application/json',
-      description: 'REST /api/aleph/anchors — P01–P24 grid and cache stats.',
+      description: 'REST /api/aleph/anchors?linea= — Wave A grid and cache stats per línea.',
       read: () => stateStore.getAnchors()
     },
     {
@@ -226,7 +226,7 @@ function getPromptRegistry(config) {
           '3. Read player://health for socket + REST status.',
           '4. Inspect recent player://events/16 for deck:resolved and wikitext errors.',
           '5. Report: phase, serverName, nodo, registros count, wikitext cached/miss, last resolve timing.',
-          '6. Suggest fixes (reconnect server, reload deck, cache wikitext via wikitext_cache tool).'
+          '6. Suggest fixes (reconnect server, reload deck, cache wikitext via wikitext_cache or cache_anchor tool).'
         ];
         return promptMessages(steps.join('\n'));
       }
@@ -267,9 +267,10 @@ function getPromptRegistry(config) {
           '4. To change crossover caso/VU meters for the operator: select_caso.',
           '5. After each action, call session_report again and compare with what the operator sees.',
           '6. Use wait_for_session when you need to block until year/nodo/phase matches.',
-          '7. For wikitext gaps on deck B, use ensure_wikitext instead of manual cache+poll.',
-          '8. Low-level socket tools (set_playhead, deck_load, …) remain available from logic.mjs when needed.',
-          '9. Never invent state if health.socket.connected is false.'
+          '7. For missing Wave A anchors, use cache_anchor (nodoId) — mirrors the Tablero Cachear button.',
+          '8. For other wikitext gaps on deck B, use ensure_wikitext instead of manual cache+poll.',
+          '9. Low-level socket tools (set_playhead, deck_load, …) remain available from logic.mjs when needed.',
+          '10. Never invent state if health.socket.connected is false.'
         ];
         return promptMessages(steps.join('\n'));
       }

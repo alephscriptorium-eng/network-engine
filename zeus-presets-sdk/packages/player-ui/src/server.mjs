@@ -31,8 +31,10 @@ import { sessionView } from './views/session_view.mjs';
 import {
   getAlephConfig,
   loadMedicion,
+  loadLineaRegistry,
   buildAnchorGrid,
-  buildTopology
+  buildTopology,
+  resolveLineaServers
 } from './aleph-bridge.mjs';
 
 const DEBUG_FETCH_MS = 800;
@@ -419,22 +421,39 @@ export async function createPlayerServer(options = {}) {
     res.json(getAlephConfig(config));
   });
 
+  app.get('/api/aleph/lineas', (req, res) => {
+    const registry = loadLineaRegistry();
+    if (registry.error) {
+      res.status(500).json(registry);
+      return;
+    }
+    res.json(registry);
+  });
+
   app.get('/api/aleph/anchors', async (req, res) => {
     try {
-      const alephPaths = config.aleph?.paths;
+      const lineaId = String(req.query.linea || config.aleph?.defaultLinea || 'espana');
+      const servers = resolveLineaServers(config, lineaId);
       let cacheStats = null;
-      const extractor = registry.extractors.get('linea-wp-historia');
+      const sateliteName = servers?.satelite || 'linea-wp-historia';
+      const extractor = registry.extractors.get(sateliteName);
       if (extractor) {
         try {
           const statsRes = await extractor.readResource('linea://cache/stats');
           cacheStats = parseResourceJson(statsRes);
         } catch {
-          cacheStats = { error: 'linea-wp-historia unavailable' };
+          cacheStats = { error: `${sateliteName} unavailable` };
         }
+      } else {
+        cacheStats = { error: `${sateliteName} not registered` };
       }
       const cachedOldids = cacheStats?.cached_oldids || [];
-      const grid = buildAnchorGrid(cachedOldids, null, alephPaths);
-      res.json({ cacheStats, grid });
+      const grid = buildAnchorGrid(cachedOldids, null, { lineaId });
+      if (grid.error) {
+        res.status(404).json(grid);
+        return;
+      }
+      res.json({ linea: grid.linea, cacheStats, grid: { cells: grid.cells, summary: grid.summary } });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }

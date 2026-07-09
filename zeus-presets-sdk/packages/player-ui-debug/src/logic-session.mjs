@@ -148,20 +148,22 @@ export function buildMcp(server, { client, poller, stateStore }) {
         'Jump to an ALEPH anchor (P01–P24): set playhead year and select registro on deck B, mirroring anchor LED click.',
       inputSchema: {
         nodoId: z.string().describe('Anchor nodo id, e.g. P23 or 23.'),
+        lineaId: z.string().optional().describe('Linea id from registry (default espana).'),
         timeoutMs: z.number().optional().describe('Wait timeout (default 8000).')
       }
     },
-    async ({ nodoId, timeoutMs = DEFAULT_TIMEOUT_MS }) => {
+    async ({ nodoId, lineaId = 'espana', timeoutMs = DEFAULT_TIMEOUT_MS }) => {
       const before = buildSessionReport(stateStore);
-      await poller.pollOnce();
+      await poller.fetchAnchors(lineaId);
       const cell = findAnchorCell(stateStore.getAnchors(), nodoId);
       if (!cell?.year) {
         return jsonContent({
           ok: false,
-          action: 'goto_anchor',
-          reason: 'anchor_not_found',
-          nodoId: normalizeNodoId(nodoId),
-          before
+        action: 'goto_anchor',
+        reason: 'anchor_not_found',
+        nodoId: normalizeNodoId(nodoId),
+        lineaId,
+        before
         });
       }
       const year = Number(cell.year);
@@ -178,6 +180,7 @@ export function buildMcp(server, { client, poller, stateStore }) {
         ok: playOk && regOk && playheadWait.ok,
         action: 'goto_anchor',
         nodoId: normalizeNodoId(nodoId),
+        lineaId,
         year,
         oldid: oldid || null,
         waitedMs: playheadWait.waitedMs,

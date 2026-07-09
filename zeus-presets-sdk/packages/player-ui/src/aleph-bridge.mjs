@@ -5,23 +5,32 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import yaml from 'yaml';
 import { packageDir } from './config.mjs';
 
 const ZEUS_ROOT = path.resolve(packageDir, '../..');
 const NETWORK_ENGINE = path.resolve(ZEUS_ROOT, '..');
 const SCRIPTORIUM_ROOT = path.resolve(NETWORK_ENGINE, '..');
+const LINEAS_PODER_BASE = path.join(NETWORK_ENGINE, 'lineas-poder');
 
 const DEFAULT_PATHS = {
-  manifest: path.join(NETWORK_ENGINE, 'lineas-poder/espana/manifest.json'),
-  waveAAnchors: path.join(NETWORK_ENGINE, 'lineas-poder/scripts/fetch-priority-viaje1.json'),
+  manifest: path.join(LINEAS_PODER_BASE, 'espana/manifest.json'),
+  waveAAnchors: path.join(LINEAS_PODER_BASE, 'scripts/fetch-priority-viaje1.json'),
   medidorCasos: path.join(SCRIPTORIUM_ROOT, 'medidor-poder-politico/data/casos'),
   prensaBase: '/prensa/caso'
 };
 
+const DEFAULT_LINEA_SERVERS = {
+  espana: { tronco: 'linea-espana', satelite: 'linea-wp-historia' }
+};
+
 const STUB_BYTE_THRESHOLD = 100;
 
-let manifestCache = null;
-let anchorsCache = null;
+/** @type {Map<string, object>} */
+const manifestCacheByLinea = new Map();
+/** @type {Map<string, object[]>} */
+const anchorsCacheByLinea = new Map();
+let registryCache = null;
 
 function readJson(filePath) {
   if (!fs.existsSync(filePath)) {
@@ -41,25 +50,104 @@ export function resolveAlephPaths(paths = {}) {
   return { ...DEFAULT_PATHS, ...paths };
 }
 
-export function loadManifest(paths = {}) {
-  if (manifestCache) return manifestCache;
-  const p = resolveAlephPaths(paths).manifest;
-  const data = readJson(p);
-  if (data.error) return data;
-  manifestCache = data;
+export function loadLineaRegistry() {
+  if (registryCache) return registryCache;
+  const registryPath = path.join(LINEAS_PODER_BASE, 'registry.yaml');
+  if (!fs.existsSync(registryPath)) {
+    return { error: `file not found: ${registryPath}` };
+  }
+  try {
+    const raw = yaml.parse(fs.readFileSync(registryPath, 'utf8'));
+    const lineas = Array.isArray(raw) ? raw : [];
+    registryCache = {
+      lineas: lineas.map((entry) => ({
+        id: entry.id,
+        path: entry.path,
+        etiqueta: entry.etiqueta,
+        nodo_prefix: entry.nodo_prefix || 'P',
+        nodo_count: entry.nodo_count ?? 24,
+        referencia_wp_cima: entry.referencia_wp_cima ?? null
+      }))
+    };
+    return registryCache;
+  } catch (err) {
+    return { error: err.message };
+  }
+}
+
+export function findLineaEntry(lineaId) {
+  const registry = loadLineaRegistry();
+  if (registry.error) return registry;
+  const entry = registry.lineas.find((l) => l.id === lineaId);
+  if (!entry) return { error: `unknown linea "${lineaId}"` };
+  return entry;
+}
+
+/**
+ * @param {string} lineaId
+ * @param {object} [entry]
+ */
+export function resolveLineaPaths(lineaId, entry = null) {
+  const linea = entry || findLineaEntry(lineaId);
+  if (linea.error) return linea;
+  const lineaDir = path.join(LINEAS_PODER_BASE, linea.path);
+  return {
+    lineaId: linea.id,
+    manifest: path.join(lineaDir, 'manifest.json'),
+    waveAAnchors: path.join(lineaDir, 'wave-a-anchors.json'),
+    globalWaveAAnchors: path.join(LINEAS_PODER_BASE, 'scripts/fetch-priority-viaje1.json')
+  };
+}
+
+function buildNodoIdSet(prefix, count) {
+  const ids = new Set();
+  for (let i = 1; i <= count; i++) {
+    ids.add(`${prefix}${String(i).padStart(2, '0')}`);
+  }
+  return ids;
+}
+
+export function loadManifestForLinea(lineaId = 'espana', paths = {}) {
+  if (manifestCacheByLinea.has(lineaId)) {
+    return manifestCacheByLinea.get(lineaId);
+  }
+  const lineaPaths = resolveLineaPaths(lineaId);
+  if (lineaPaths.error) return lineaPaths;
+  const manifestPath = paths.manifest || lineaPaths.manifest;
+  const data = readJson(manifestPath);
+  if (!data.error) manifestCacheByLinea.set(lineaId, data);
   return data;
 }
 
-export function loadWaveAAnchors(paths = {}) {
-  if (anchorsCache) return anchorsCache;
-  const p = resolveAlephPaths(paths).waveAAnchors;
-  const raw = readJson(p);
+export function loadWaveAAnchorsForLinea(lineaId = 'espana', paths = {}) {
+  if (anchorsCacheByLinea.has(lineaId)) {
+    return anchorsCacheByLinea.get(lineaId);
+  }
+  const entry = findLineaEntry(lineaId);
+  if (entry.error) return entry;
+  const lineaPaths = resolveLineaPaths(lineaId, entry);
+  const perLineaPath = paths.waveAAnchors || lineaPaths.waveAAnchors;
+  let raw = readJson(perLineaPath);
+  if (raw.error || !Array.isArray(raw) || raw.length === 0) {
+    raw = readJson(paths.globalWaveAAnchors || lineaPaths.globalWaveAAnchors);
+  }
   if (raw.error) return raw;
+  const allowedIds = buildNodoIdSet(entry.nodo_prefix, entry.nodo_count);
   const anchors = Array.isArray(raw)
-    ? raw.filter(e => e.tier === 'nodo-anchor' && e.nodo_id)
+    ? raw.filter((e) => e.tier === 'nodo-anchor' && e.nodo_id && allowedIds.has(e.nodo_id))
     : [];
-  anchorsCache = anchors;
+  anchorsCacheByLinea.set(lineaId, anchors);
   return anchors;
+}
+
+/** @deprecated use loadManifestForLinea */
+export function loadManifest(paths = {}) {
+  return loadManifestForLinea('espana', paths);
+}
+
+/** @deprecated use loadWaveAAnchorsForLinea */
+export function loadWaveAAnchors(paths = {}) {
+  return loadWaveAAnchorsForLinea('espana', paths);
 }
 
 export function loadMedicion(casoId, paths = {}) {
@@ -99,11 +187,21 @@ function parseAnchorYear(note) {
 
 /**
  * @param {number[]} cachedOldids
- * @param {Map<number, number>} [wikitextLengths] - oldid -> byte length (optional)
+ * @param {Map<number, number>} [wikitextLengths]
+ * @param {object} [options] - { lineaId?, paths? }
  */
-export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, paths = {}) {
-  const manifest = loadManifest(paths);
-  const anchors = loadWaveAAnchors(paths);
+export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, options = {}) {
+  const opts = options?.lineaId != null || options?.paths != null
+    ? options
+    : { lineaId: 'espana', paths: options };
+  const lineaId = opts.lineaId || 'espana';
+  const paths = opts.paths || {};
+
+  const lineaEntry = findLineaEntry(lineaId);
+  if (lineaEntry.error) return { error: lineaEntry.error };
+
+  const manifest = loadManifestForLinea(lineaId, paths);
+  const anchors = loadWaveAAnchorsForLinea(lineaId, paths);
   if (manifest.error) return { error: manifest.error };
   if (anchors.error) return { error: anchors.error };
 
@@ -124,6 +222,7 @@ export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, paths
       year: nodo.año_ini ?? null,
       wp_year: parseAnchorYear(anchor.note),
       note: anchor.note,
+      etiqueta: nodo.etiqueta ?? null,
       status
     };
   });
@@ -135,7 +234,21 @@ export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, paths
     missing: cells.filter(c => c.status === 'missing').length
   };
 
-  return { cells, summary };
+  return {
+    linea: {
+      id: lineaEntry.id,
+      etiqueta: lineaEntry.etiqueta,
+      nodo_prefix: lineaEntry.nodo_prefix,
+      nodo_count: lineaEntry.nodo_count
+    },
+    cells,
+    summary
+  };
+}
+
+export function resolveLineaServers(config = {}, lineaId = 'espana') {
+  const map = config.aleph?.lineaServers || DEFAULT_LINEA_SERVERS;
+  return map[lineaId] || DEFAULT_LINEA_SERVERS[lineaId] || null;
 }
 
 export function getAlephConfig(config = {}) {
@@ -144,12 +257,14 @@ export function getAlephConfig(config = {}) {
   return {
     defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
     defaultCaso: aleph.defaultCaso || 'aeo-p24-linea',
+    defaultLinea: aleph.defaultLinea || 'espana',
     casos: aleph.casos || ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: aleph.theme || 'Scriptorium-Skins',
     branding: aleph.branding || {
       title: 'Tablero ALEPH',
       tag: 'Animus Iocandi · Scriptorium Skins'
     },
+    lineaServers: aleph.lineaServers || DEFAULT_LINEA_SERVERS,
     prensa: {
       baseUrl: aleph.prensaBaseUrl || 'http://localhost:8080/prensa/caso',
       publicaciones: aleph.prensaLinks || [
@@ -214,7 +329,13 @@ export function buildTopology(cards = {}) {
   };
 }
 
-export function clearAlephCache() {
-  manifestCache = null;
-  anchorsCache = null;
+export function clearAlephCache(lineaId = null) {
+  if (lineaId) {
+    manifestCacheByLinea.delete(lineaId);
+    anchorsCacheByLinea.delete(lineaId);
+    return;
+  }
+  manifestCacheByLinea.clear();
+  anchorsCacheByLinea.clear();
+  registryCache = null;
 }
