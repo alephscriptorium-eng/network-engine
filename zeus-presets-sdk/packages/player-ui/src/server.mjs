@@ -110,8 +110,24 @@ export async function createPlayerServer(options = {}) {
   const catalog = createCatalogService({ registry });
   const actor = createActor(sessionMachine);
   actor.start();
+  const alephConfig = getAlephConfig(config);
+  actor.send({ type: 'CASO_SET', casoId: alephConfig.defaultCaso || 'aeo-p24-linea' });
+
+  const debugEnabled = config.debug === true;
+  const debugStats = {
+    startedAt: Date.now(),
+    eventCounts: {},
+    lastResolveMs: { A: null, B: null },
+    resolveCount: { A: 0, B: 0 }
+  };
+
+  const bumpDebugEvent = (event) => {
+    if (!debugEnabled) return;
+    debugStats.eventCounts[event] = (debugStats.eventCounts[event] || 0) + 1;
+  };
 
   const broadcastState = (io) => {
+    bumpDebugEvent('session:state');
     io.of('/session').emit('session:state', snapshotFromActor(actor));
   };
 
@@ -183,11 +199,13 @@ export async function createPlayerServer(options = {}) {
     return { deck, entry, extractor };
   }
 
-  async function resolveDeck(deckId, year, selectedOldid = null) {
+  async function resolveDeck(deckId, year, selectedOldid = null, io = null) {
     const deck = actor.getSnapshot().context.decks[deckId];
     if (!deck || !deck.serverName || deck.phase === 'empty' || deck.phase === 'loading') {
       return null;
     }
+
+    const resolveStarted = debugEnabled ? performance.now() : 0;
 
     const entry = await catalog.getServerEntry(deck.serverName);
     if (!entry || entry.isConnected === false) {
@@ -265,12 +283,21 @@ export async function createPlayerServer(options = {}) {
 
     const resolved = { year, nodo, oldid, registros: registrosPayload, selected, wikitext };
     actor.send({ type: 'DECK_RESOLVED', deckId, phase: 'playing', resolved });
+
+    if (debugEnabled && io) {
+      const ms = performance.now() - resolveStarted;
+      debugStats.lastResolveMs[deckId] = ms;
+      debugStats.resolveCount[deckId] = (debugStats.resolveCount[deckId] || 0) + 1;
+      bumpDebugEvent('deck:resolved');
+      io.of('/session').emit('debug:resolve-timing', { deckId, year, ms });
+    }
+
     return { deckId, ...resolved };
   }
 
   async function handleRegistroSelect(io, { deckId = 'B', oldid, registro_id }) {
     const year = actor.getSnapshot().context.playhead.year;
-    const resolved = await resolveDeck(deckId, year, oldid);
+    const resolved = await resolveDeck(deckId, year, oldid, io);
     if (resolved) {
       io.of('/session').emit('deck:resolved', resolved);
       broadcastState(io);
@@ -340,7 +367,7 @@ export async function createPlayerServer(options = {}) {
         continue;
       }
 
-      const resolved = await resolveDeck(deckId, year);
+      const resolved = await resolveDeck(deckId, year, null, io);
       if (resolved) {
         results.push(resolved);
         io.of('/session').emit('deck:resolved', resolved);
@@ -481,6 +508,18 @@ export async function createPlayerServer(options = {}) {
   const httpServer = http.createServer(app);
   const io = new SocketIOServer(httpServer, { cors: { origin: true } });
 
+  let debugHeartbeat = null;
+  if (debugEnabled) {
+    debugHeartbeat = setInterval(() => {
+      io.of('/session').emit('debug:stats', {
+        uptime: Date.now() - debugStats.startedAt,
+        lastResolveMs: { ...debugStats.lastResolveMs },
+        resolveCount: { ...debugStats.resolveCount },
+        eventCounts: { ...debugStats.eventCounts }
+      });
+    }, 1000);
+  }
+
   io.of('/session').on('connection', async (socket) => {
     try {
       const servers = await listServers();
@@ -492,39 +531,54 @@ export async function createPlayerServer(options = {}) {
     socket.emit('session:state', snapshotFromActor(actor));
 
     socket.on('deck:load', (payload) => {
+      bumpDebugEvent('deck:load');
       handleDeckLoad(io, payload).catch(err => console.error('deck:load error:', err));
     });
 
     socket.on('playhead:set', async ({ year }) => {
+      bumpDebugEvent('playhead:set');
       actor.send({ type: 'PLAYHEAD_SET', year: Number(year) });
       broadcastState(io);
       await resolveAllDecks(io);
     });
 
     socket.on('registro:select', (payload) => {
+      bumpDebugEvent('registro:select');
       handleRegistroSelect(io, payload).catch(err => console.error('registro:select error:', err));
     });
 
     socket.on('wikitext:cache', (payload) => {
+      bumpDebugEvent('wikitext:cache');
       handleWikitextCache(socket, payload).catch(err => console.error('wikitext:cache error:', err));
     });
 
     socket.on('wikitext:poll', (payload) => {
+      bumpDebugEvent('wikitext:poll');
       handleWikitextPoll(io, socket, payload).catch(err => console.error('wikitext:poll error:', err));
     });
 
     socket.on('sync:toggle', () => {
+      bumpDebugEvent('sync:toggle');
       actor.send({ type: 'SYNC_TOGGLE' });
       broadcastState(io);
     });
 
     socket.on('transport:play', () => {
+      bumpDebugEvent('transport:play');
       actor.send({ type: 'TRANSPORT_PLAY' });
       broadcastState(io);
     });
 
     socket.on('transport:pause', () => {
+      bumpDebugEvent('transport:pause');
       actor.send({ type: 'TRANSPORT_PAUSE' });
+      broadcastState(io);
+    });
+
+    socket.on('caso:set', ({ casoId }) => {
+      if (!casoId || typeof casoId !== 'string') return;
+      bumpDebugEvent('caso:set');
+      actor.send({ type: 'CASO_SET', casoId });
       broadcastState(io);
     });
   });
@@ -551,6 +605,7 @@ export async function createPlayerServer(options = {}) {
       broadcastState(io);
     },
     close: async () => {
+      if (debugHeartbeat) clearInterval(debugHeartbeat);
       actor.send({ type: 'SESSION_CLOSE' });
       actor.stop();
       await registry.close();

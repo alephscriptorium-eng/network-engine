@@ -17,6 +17,7 @@ Desde VS Code (`Ctrl+Shift+P` → *Tasks: Run Task*), usando las tareas del work
 | Todo el escenario Zeus | `Start ▸ ALL` |
 | Solo las fuentes del DJ | `Start ▸ lineas` (puertos 4111-4112) |
 | La mesa / Tablero | `Start ▸ player-ui (DJ)` (puerto 3013) |
+| Monitor TOP de sesión | `Start ▸ player-ui-debug` (consola TUI + MCP :3014) |
 | Presets ALEPH (una vez o tras cambios) | `Seed ▸ aleph presets` |
 | Apagar la mesa | `Stop ■ player-ui (DJ)` |
 | Apagar las fuentes | `Stop ■ lineas` |
@@ -25,7 +26,35 @@ Desde VS Code (`Ctrl+Shift+P` → *Tasks: Run Task*), usando las tareas del work
 
 El player hace *discovery* al arrancar contra los puertos configurados en [`src/config.json`](src/config.json) (`discovery.urls`), así que las fuentes deben estar arriba **antes** para aparecer en los desplegables de cada plato.
 
-Orden mínimo Tablero ALEPH: `Seed ▸ aleph presets` → `Start ▸ lineas` → `Start ▸ player-ui (DJ)` — o la tarea compuesta `Start ▸ Tablero ALEPH` (seed y luego lineas + player en paralelo).
+Orden mínimo Tablero ALEPH: `Seed ▸ aleph presets` → `Start ▸ lineas` → `Start ▸ player-ui (DJ)` — o la tarea compuesta `Start ▸ Tablero ALEPH` (seed y luego lineas + player + debug en paralelo).
+
+### Monitor de depuración (`@zeus/player-ui-debug`)
+
+Consola estilo **TOP** + **servidor MCP** (`:3014`) en un solo proceso. Conecta al namespace socket `/session`, hace polling REST y expone el mismo estado a agentes Cursor vía `player://snapshot`.
+
+| Acción | Cómo |
+|--------|------|
+| Arrancar monitor + MCP | `Start ▸ player-ui-debug` o `npm run start:player-debug` |
+| Con Tablero completo | `Start ▸ Tablero ALEPH` (incluye monitor en paralelo) |
+| URL alternativa player-ui | `PLAYER_UI_URL=http://localhost:3013 npm run start:player-debug` |
+| Puerto MCP alternativo | `PLAYER_DEBUG_MCP_PORT=3014 npm run start:player-debug` |
+| Registrar en Cursor | Ver [`docs/cursor-mcp-player-debug.md`](../../docs/cursor-mcp-player-debug.md) |
+| Métricas servidor | Pon `"debug": true` en [`src/config.json`](src/config.json) y reinicia player-ui |
+
+**Teclas TUI** (terminal con foco): `q` salir · `r` reconectar · `p` pausar transporte · `1`–`4` saltar a cues (450, 1350, 1808, 1978).
+
+**Agentes MCP**: poll `player://snapshot`; tools de bajo nivel (`set_playhead`, `deck_load`, …) hacen proxy al socket; tools de sesión (`goto_parte`, `goto_anchor`, `bootstrap_decks`, `session_report`, …) emulan acciones del operador. Prompts `sync-with-operator` y `pinch-session` documentan alineación colaborativa sin Playwright.
+
+### Pinchar sesión en conjunto
+
+| Rol | Canal | Acciones típicas |
+|-----|-------|------------------|
+| **Operador** | Browser `:3013` | Cues Parte, anchor LEDs, slider, selector Caso |
+| **Agente** | MCP `:3014` | `session_report`, `goto_parte`, `goto_anchor`, `select_caso` |
+
+Ambos comparten el mismo `session:state` por socket. Tras cada movimiento del agente, el operador ve el cambio en el Tablero sin recargar. El agente confirma con `session_report` — nunca Playwright.
+
+> El monitor mata su propio proceso con Ctrl+C / `q`; no apaga player-ui ni las fuentes lineas.
 
 > Si arrancas el player con las fuentes caídas, los platos podrán cargarse pero quedarán en estado `degraded` hasta que refresques el discovery (reinicia el player).
 
@@ -155,3 +184,4 @@ Todo viaja por socket.io (`/session`). Eventos que emite la UI: `deck:load`, `pl
 | lineas | 4111-4112 | Fuentes por defecto de los platos A/B |
 | editor-ui | 3012 | Crear/editar presets (los filtros) |
 | player-ui (DJ) | 3013 | **La mesa** |
+| player-ui-debug MCP | 3014 | Monitor + agentes Cursor (`player://snapshot`) |

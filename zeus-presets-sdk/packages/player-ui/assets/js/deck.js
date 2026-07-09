@@ -417,6 +417,10 @@
     if (slider && state.playhead && !sliderDragging) {
       slider.value = String(state.playhead.year);
     }
+    if (casoSelect && state.activeCaso && casoSelect.value !== state.activeCaso) {
+      casoSelect.value = state.activeCaso;
+      loadMedicion(state.activeCaso);
+    }
     if (syncBtn) {
       syncBtn.textContent = state.sync ? 'Sync: ON' : 'Sync: OFF';
     }
@@ -594,7 +598,11 @@
   });
 
   if (casoSelect) {
-    casoSelect.addEventListener('change', () => loadMedicion(casoSelect.value));
+    casoSelect.addEventListener('change', () => {
+      const casoId = casoSelect.value;
+      loadMedicion(casoId);
+      socket.emit('caso:set', { casoId });
+    });
   }
 
   document.querySelectorAll('.drawer-tab').forEach(tab => {

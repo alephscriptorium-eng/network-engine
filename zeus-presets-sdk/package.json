@@ -15,15 +15,19 @@
     "start:lineas": "npm run start -w @zeus/linea-system",
     "start:editor": "npm run start -w @zeus/editor-ui",
     "start:player": "npm run start -w @zeus/player-ui",
+    "start:player-debug": "npm run start -w @zeus/player-ui-debug",
     "test:sdk": "npm test -w @zeus/presets-sdk",
     "test:solar": "npm test -w @zeus/solar-system",
     "test:lineas": "npm test -w @zeus/linea-system",
+    "test:player-debug": "npm test -w @zeus/player-ui-debug",
     "seed:aleph": "node scripts/seed-aleph-presets.mjs",
     "e2e": "node e2e/demo.mjs",
     "e2e:deck": "node e2e/deck-demo.mjs",
     "e2e:tablero": "node e2e/tablero-aleph-demo.mjs"
   },
   "devDependencies": {
+    "chalk": "^5.4.1",
+    "log-update": "^6.1.0",
     "socket.io-client": "^4.8.1"
   },
   "license": "AIPLv1"

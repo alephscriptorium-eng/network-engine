@@ -64,6 +64,70 @@ Native reads SHOULD use `extractor.readResource(uri)` from `@zeus/presets-sdk`. 
 | Solar bodies (unchanged) | 4101–4103 |
 | `@zeus/editor-ui` | **3012** |
 | `@zeus/player-ui` | **3013** |
+| `@zeus/player-ui-debug` MCP | **3014** |
+
+## MCP URI scheme — `player://` (player-ui-debug)
+
+Mirror monitor for agents. Poll `player://snapshot` for live Tablero state. Native reads SHOULD use MCP `readResource`; bridge via `getResourceByUri`.
+
+### Fixed resources
+
+| URI | Content |
+|-----|---------|
+| `player://info` | Monitor metadata (URLs, poll intervals, MCP port) |
+| `player://snapshot` | **Canonical composite** — session, decks, health, infrastructure, events |
+| `player://session` | Full `session:state` payload |
+| `player://health` | Socket connected + REST health |
+| `player://events` | Typed event ring buffer |
+| `player://servers` | Merged socket `catalog:servers` + REST `/api/servers` |
+| `player://aleph/anchors` | `/api/aleph/anchors` |
+| `player://aleph/medicion` | Default caso medicion |
+| `server://card` | Server card (name, version, port, capabilities) |
+
+### Resource templates
+
+| URI template | Content |
+|--------------|---------|
+| `player://deck/{deckId}` | Deck A/B with `resolved` |
+| `player://aleph/medicion/{casoId}` | Medicion by caso |
+| `player://events/{limit}` | Last N events |
+
+### Tools (socket proxy to player-ui)
+
+| Tool | Socket event |
+|------|--------------|
+| `set_playhead` | `playhead:set` |
+| `transport_play` / `transport_pause` | `transport:play` / `transport:pause` |
+| `sync_toggle` | `sync:toggle` |
+| `deck_load` | `deck:load` |
+| `registro_select` | `registro:select` |
+| `wikitext_cache` / `wikitext_poll` | `wikitext:cache` / `wikitext:poll` |
+| `refresh_snapshot` | Force REST poll + return snapshot |
+
+### Tools (session orchestration — logic-session.mjs)
+
+High-level composite tools for collaborative DJ sessions (no Playwright). Each returns `{ ok, action, before, after, waitedMs }`.
+
+| Tool | Emulates |
+|------|----------|
+| `bootstrap_decks` | Browser `autoLoadDecks` (A: linea-espana, B: linea-wp-historia) |
+| `goto_parte` | Click Parte I–IV cue mark |
+| `goto_anchor` | Click anchor LED P01–P24 |
+| `goto_year` | Playhead slider / year jump |
+| `ensure_wikitext` | Cache + poll loop until wikitext cached |
+| `select_caso` | `#caso-select` change (syncs operator VU meters) |
+| `wait_for_session` | Block until year/nodo/phase matches |
+| `session_report` | Structured summary for operator alignment |
+
+### Prompts
+
+| Prompt | Purpose |
+|--------|---------|
+| `explore-monitor` | Onboarding: info + server card + capabilities |
+| `report-session` | Summarize snapshot for operator alignment |
+| `diagnose-deck` | Inspect deck errors and wikitext |
+| `sync-with-operator` | Poll snapshot each turn before commenting |
+| `pinch-session` | Collaborative DJ: session_report + goto_* + bootstrap |
 
 ## Socket.io — namespace `/session`
 
@@ -78,13 +142,22 @@ Transport: Socket.IO attached to the player-ui HTTP server.
 | `sync:toggle` | _(none)_ | Toggle linked playhead between decks |
 | `transport:play` | _(none)_ | Start playhead transport |
 | `transport:pause` | _(none)_ | Pause playhead transport |
+| `registro:select` | `{ deckId?, oldid, registro_id? }` | Select a registro revision on a deck; re-resolves wikitext |
+| `wikitext:cache` | `{ deckId?, oldid }` | Call `cache_wikitext` on deck server (when preset allows) |
+| `wikitext:poll` | `{ deckId?, oldid }` | Poll wikitext cache; auto-selects when cached |
+| `caso:set` | `{ casoId }` | Set active ALEPH caso (syncs crossover VU meters across clients) |
 
 ### Server → clients
 
 | Event | Payload | Effect |
 |-------|---------|--------|
-| `session:state` | Snapshot: machine value, playhead, decks | Full session broadcast after every transition |
-| `deck:resolved` | `{ deckId, year, nodo?, oldid?, wikitext? }` | Deterministic resolution for one deck at current playhead |
+| `session:state` | Snapshot: machine value, playhead, decks, parteCues | Full session broadcast after every transition |
+| `deck:resolved` | `{ deckId, year, nodo?, oldid?, registros?, selected?, wikitext? }` | Deterministic resolution for one deck at current playhead |
+| `catalog:servers` | Server catalog array | Sent on connect; same shape as `GET /api/servers` |
+| `wikitext:cache-result` | `{ ok, oldid, error?, … }` | Result of `wikitext:cache` |
+| `wikitext:poll-result` | `{ cached, oldid, error?, action? }` | Result of `wikitext:poll` |
+| `debug:stats` | `{ uptime, lastResolveMs, resolveCount, eventCounts }` | Heartbeat (~1s) when `config.debug=true` |
+| `debug:resolve-timing` | `{ deckId, year, ms }` | Per-resolve timing when `config.debug=true` |
 
 `wikitext` (optional, Tablero ALEPH): when preset exposes `linea-wikitext` and oldid resolves:
 

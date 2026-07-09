@@ -93,6 +93,9 @@ export const sessionMachine = setup({
     }),
     toggleSync: assign({
       sync: ({ context }) => !context.sync
+    }),
+    assignCaso: assign({
+      activeCaso: ({ event }) => event.casoId
     })
   },
   guards: {
@@ -105,12 +108,14 @@ export const sessionMachine = setup({
   context: {
     playhead: { year: 2010, playing: false },
     sync: true,
+    activeCaso: 'aeo-p24-linea',
     decks: { A: emptyDeck(), B: emptyDeck() }
   },
   states: {
     idle: {
       on: {
-        DECK_LOADING: { target: 'preparada', actions: 'assignDeckLoading' }
+        DECK_LOADING: { target: 'preparada', actions: 'assignDeckLoading' },
+        CASO_SET: { actions: 'assignCaso' }
       }
     },
     preparada: {
@@ -126,6 +131,7 @@ export const sessionMachine = setup({
         SYNC_TOGGLE: { actions: 'toggleSync' },
         TRANSPORT_PLAY: { target: 'activa', actions: 'setPlaying' },
         TRANSPORT_PAUSE: { actions: 'setPaused' },
+        CASO_SET: { actions: 'assignCaso' },
         SESSION_CLOSE: 'cierre'
       }
     },
@@ -139,6 +145,7 @@ export const sessionMachine = setup({
         SYNC_TOGGLE: { actions: 'toggleSync' },
         TRANSPORT_PLAY: { actions: 'setPlaying' },
         TRANSPORT_PAUSE: { target: 'preparada', actions: 'setPaused' },
+        CASO_SET: { actions: 'assignCaso' },
         SESSION_CLOSE: 'cierre'
       }
     },
@@ -155,6 +162,7 @@ export function snapshotFromActor(actor) {
     phase: value,
     playhead: context.playhead,
     sync: context.sync,
+    activeCaso: context.activeCaso,
     decks: context.decks,
     parteCues: PARTE_CUES
   };
