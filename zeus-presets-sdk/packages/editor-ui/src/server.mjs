@@ -17,7 +17,8 @@ import cors from 'cors';
 import {
   ServerRegistry,
   PresetStore,
-  discoverServers,
+  syncDiscoveredServers,
+  resolveDiscoverySources,
   createPresetRoutes,
   createCatalogService
 } from '@zeus/presets-sdk';
@@ -44,32 +45,29 @@ const themeHandler = new ThemeHandler();
 
 console.log(`Preset store: ${dataDir} (${store.count()} preset(s) loaded)`);
 
-// Background discovery: probe configured URLs and register whatever answers.
-// Non-blocking so the UI boots even when no MCP servers are up.
-async function runDiscovery() {
-  const discovery = config.discovery || {};
+async function refreshDiscovery() {
+  const cfg = getConfig();
+  const sources = resolveDiscoverySources({
+    dataDir,
+    localDiscovery: cfg.discovery
+  });
   try {
-    const found = await discoverServers({
-      urls: discovery.urls || [],
-      timeoutMs: discovery.timeoutMs || 2000
+    const result = await syncDiscoveredServers(registry, sources, {
+      catalog,
+      pruneStale: false,
+      registerMode: 'strict'
     });
-
-    for (const server of found) {
-      try {
-        await registry.registerServer(server.name, server.url, server.transport || 'http');
-      } catch (error) {
-        console.error(`Failed to register server ${server.name}:`, error.message);
-      }
-    }
-
-    await catalog.refreshCatalog();
-    console.log(`Discovery complete: ${found.length} server(s) found, catalog refreshed`);
+    console.log(
+      `Discovery complete: ${result.found.length} server(s) found, ${result.registered.length} registered`
+    );
+    return result;
   } catch (error) {
     console.error('Discovery failed:', error.message);
+    throw error;
   }
 }
 
-runDiscovery();
+refreshDiscovery().catch(() => {});
 
 // Initialize Express app
 const app = express();
@@ -191,7 +189,7 @@ app.get('/settings', async (req, res) => {
       theme: cfg.theme || getSectionDefaults('theme'),
       ui: cfg.ui || getSectionDefaults('ui'),
       features: cfg.features || getSectionDefaults('features'),
-      mcp: cfg.mcp || getSectionDefaults('mcp'),
+      discovery: cfg.discovery || getSectionDefaults('discovery'),
       presets: cfg.presets || getSectionDefaults('presets')
     };
 
@@ -210,7 +208,7 @@ app.get('/settings', async (req, res) => {
 app.use(createPresetRoutes({ registry, store }));
 
 // UI API routes (presets/mcp/config/theme/settings blocks)
-app.use('/api', createApiRoutes({ store, catalog, themeHandler }));
+app.use('/api', createApiRoutes({ store, catalog, themeHandler, refreshDiscovery }));
 
 // Basic error handling middleware
 app.use((err, req, res, next) => {

@@ -127,8 +127,9 @@ export { enrichPreset, normalizeItems, primaryServerId, CATEGORIES };
  * @param {import('@zeus/presets-sdk').PresetStore} deps.store
  * @param {ReturnType<import('./catalog.mjs').createCatalogService>} deps.catalog
  * @param {import('./theme-handler.mjs').ThemeHandler} deps.themeHandler
+ * @param {() => Promise<object>} [deps.refreshDiscovery]
  */
-export function createApiRoutes({ store, catalog, themeHandler }) {
+export function createApiRoutes({ store, catalog, themeHandler, refreshDiscovery }) {
   const router = express.Router();
 
   // ===========================================
@@ -211,10 +212,7 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
         theme: config.theme,
         ui: config.ui,
         features: config.features,
-        mcp: {
-          servers: config.mcp?.servers || [],
-          timeout: config.mcp?.timeout
-        },
+        discovery: config.discovery,
         presets: config.presets,
         server: {
           port: config.server?.port,
@@ -228,12 +226,12 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
     }
   });
 
-  router.put('/settings/:section', (req, res) => {
+  router.put('/settings/:section', async (req, res) => {
     try {
       const { section } = req.params;
       const updates = req.body;
 
-      const validSections = ['theme', 'ui', 'features', 'mcp', 'presets', 'server', 'discovery'];
+      const validSections = ['theme', 'ui', 'features', 'presets', 'server', 'discovery'];
       if (!validSections.includes(section)) {
         return res.status(400).json({
           error: `Invalid section: ${section}. Valid sections: ${validSections.join(', ')}`
@@ -260,6 +258,10 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
 
       const updatedSection = { ...config[section], ...updates };
       const savedConfig = updateConfig({ ...config, [section]: updatedSection });
+
+      if (section === 'discovery' && refreshDiscovery) {
+        await refreshDiscovery();
+      }
 
       res.json({
         success: true,
@@ -549,6 +551,35 @@ export function createApiRoutes({ store, catalog, themeHandler }) {
   // ===========================================
   // MCP EDITOR APIs
   // ===========================================
+
+  /**
+   * POST /api/mcp/refresh - Re-probe MCP servers and refresh catalog
+   */
+  router.post('/mcp/refresh', async (req, res) => {
+    try {
+      if (!refreshDiscovery) {
+        return res.status(503).json({
+          success: false,
+          error: 'Discovery refresh not available'
+        });
+      }
+      const result = await refreshDiscovery();
+      res.json({
+        success: true,
+        found: result.found.length,
+        registered: result.registered.length,
+        pruned: result.pruned.length,
+        errors: result.errors
+      });
+    } catch (error) {
+      console.error('Error refreshing MCP discovery:', error);
+      res.status(500).json({
+        success: false,
+        error: 'Failed to refresh MCP discovery',
+        message: error.message
+      });
+    }
+  });
 
   /**
    * GET /api/mcp/servers - List MCP servers from the live catalog

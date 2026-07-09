@@ -3,7 +3,8 @@ import cors from 'cors';
 
 import { ServerRegistry } from './registry.mjs';
 import { PresetStore } from './preset-store.mjs';
-import { discoverServers } from './discovery.mjs';
+import { createCatalogService } from './catalog-service.mjs';
+import { syncDiscoveredServers } from './discovery-sync.mjs';
 import { createPresetRoutes } from './routes.mjs';
 
 /**
@@ -14,17 +15,19 @@ import { createPresetRoutes } from './routes.mjs';
  * Discovery/registration runs in the background so listen() is not blocked,
  * mirroring the lazy ensureServersLoaded pattern of the original service.
  *
- * Returns { app, server, registry, store, port }. Stop with server.close()
+ * Returns { app, server, registry, store, catalog, port }. Stop with server.close()
  * (plus registry.close() to drop MCP connections).
  */
 export async function createPresetService({
   port = 4001,
   dataDir,
   sources = {},
-  prefix = '/api/mcp'
+  prefix = '/api/mcp',
+  pruneStale = false
 } = {}) {
   const registry = new ServerRegistry();
   const store = new PresetStore({ dataDir });
+  const catalog = createCatalogService({ registry });
 
   const app = express();
   app.use(cors());
@@ -43,24 +46,16 @@ export async function createPresetService({
 
   app.use(createPresetRoutes({ registry, store, prefix }));
 
-  // Discover and register servers in the background without blocking listen
   const discovery = (async () => {
     try {
-      const found = await discoverServers(sources);
-      console.log(`Discovery: ${found.length} server(s) found`);
-
-      const registrations = found.map(async ({ name, url, transport }) => {
-        try {
-          return await registry.registerServer(name, url, transport || 'http');
-        } catch (err) {
-          console.error(`Error registering server ${name}:`, err.message);
-          return null;
-        }
+      const result = await syncDiscoveredServers(registry, sources, {
+        catalog,
+        pruneStale,
+        registerMode: 'safe'
       });
-
-      const results = await Promise.all(registrations);
-      const ok = results.filter(Boolean).length;
-      console.log(`Servers registered: ${ok}/${found.length}`);
+      console.log(
+        `Discovery: ${result.found.length} server(s) found, ${result.registered.filter((r) => r.connected !== false).length} registered`
+      );
     } catch (error) {
       console.error('Error during server discovery:', error.message);
     } finally {
@@ -77,5 +72,5 @@ export async function createPresetService({
   const actualPort = server.address().port;
   console.log(`Preset service listening on port ${actualPort}`);
 
-  return { app, server, registry, store, port: actualPort };
+  return { app, server, registry, store, catalog, port: actualPort };
 }

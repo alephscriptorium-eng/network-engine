@@ -66,6 +66,27 @@ Native reads SHOULD use `extractor.readResource(uri)` from `@zeus/presets-sdk`. 
 | `@zeus/player-ui` | **3013** |
 | `@zeus/player-ui-debug` MCP | **3014** |
 
+## MCP server discovery
+
+Orchestration lives in `@zeus/presets-sdk`: `discoverServers()` probes `/mcp/health`; `syncDiscoveredServers()` registers results on a `ServerRegistry` and optionally refreshes `createCatalogService`.
+
+### Config merge order
+
+| Layer | Source |
+|-------|--------|
+| 1 | `DEFAULT_ZEUS_DISCOVERY` in SDK |
+| 2 | [`data/zeus-discovery.json`](../../data/zeus-discovery.json) (shared workspace) |
+| 3 | Per-UI `config.json` → `discovery` section |
+
+Use `resolveDiscoverySources({ dataDir, localDiscovery })` before calling `syncDiscoveredServers`.
+
+### UI policies
+
+| UI | `pruneStale` | Refresh trigger |
+|----|--------------|-----------------|
+| editor-ui | `false` | Boot; `POST /api/mcp/refresh`; after `PUT /api/settings/discovery` |
+| player-ui | `true` | Boot; every `GET /api/servers` / socket `catalog:servers` |
+
 ## MCP URI scheme — `player://` (player-ui-debug)
 
 Mirror monitor for agents. Poll `player://snapshot` for live Tablero state. Native reads SHOULD use MCP `readResource`; bridge via `getResourceByUri`.

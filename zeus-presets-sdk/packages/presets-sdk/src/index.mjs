@@ -1,6 +1,8 @@
 export { MCPToolsExtractor } from './extractor.mjs';
 export { ServerRegistry } from './registry.mjs';
 export { discoverServers } from './discovery.mjs';
+export { syncDiscoveredServers } from './discovery-sync.mjs';
+export { DEFAULT_ZEUS_DISCOVERY, resolveDiscoverySources } from './discovery-config.mjs';
 export { PresetStore, validateSelectedItems, countPresetItems } from './preset-store.mjs';
 export {
   sanitizeSlug,

@@ -15,7 +15,8 @@ import { createActor } from 'xstate';
 import {
   ServerRegistry,
   PresetStore,
-  discoverServers,
+  syncDiscoveredServers,
+  resolveDiscoverySources,
   createCatalogService,
   applyPresetFilter
 } from '@zeus/presets-sdk';
@@ -102,12 +103,17 @@ export async function createPlayerServer(options = {}) {
   const port = options.port ?? config.server?.port ?? 3013;
   const host = options.host ?? config.server?.host ?? 'localhost';
   const dataDir = options.dataDir ?? resolveDataDir(config);
-  const discoveryUrls = options.discoveryUrls ?? config.discovery?.urls ?? [];
   const themeHandler = new ThemeHandler();
 
   const store = new PresetStore({ dataDir });
   const registry = new ServerRegistry();
   const catalog = createCatalogService({ registry });
+  const discoverySources = resolveDiscoverySources({
+    dataDir,
+    localDiscovery: options.discoveryUrls
+      ? { ...config.discovery, urls: options.discoveryUrls }
+      : config.discovery
+  });
   const actor = createActor(sessionMachine);
   actor.start();
   const alephConfig = getAlephConfig(config);
@@ -132,34 +138,11 @@ export async function createPlayerServer(options = {}) {
   };
 
   async function runDiscovery() {
-    const found = await discoverServers({
-      urls: discoveryUrls,
-      timeoutMs: config.discovery?.timeoutMs || 2000
+    return syncDiscoveredServers(registry, discoverySources, {
+      catalog,
+      pruneStale: true,
+      registerMode: 'strict'
     });
-    const foundByName = new Map(found.map(s => [s.name, s]));
-
-    for (const [name, extractor] of [...registry.extractors.entries()]) {
-      if (!foundByName.has(name)) {
-        await extractor.disconnect();
-        registry.extractors.delete(name);
-        const known = registry.knownServers.get(name);
-        registry.failedServers.set(name, {
-          serverConfig: known?.url,
-          transportType: known?.transport || 'http',
-          error: 'not responding'
-        });
-      }
-    }
-
-    for (const server of found) {
-      try {
-        await registry.registerServer(server.name, server.url, server.transport || 'http');
-      } catch (error) {
-        console.error(`Failed to register ${server.name}:`, error.message);
-      }
-    }
-    await catalog.refreshCatalog();
-    return found;
   }
 
   async function listServers() {

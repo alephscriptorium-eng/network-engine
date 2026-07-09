@@ -228,6 +228,7 @@ class MCPEditor {
     this.setLoadingState(true);
     
     try {
+      await fetch('/api/mcp/refresh', { method: 'POST' });
       const response = await fetch('/api/mcp/servers');
       const data = await response.json();
       

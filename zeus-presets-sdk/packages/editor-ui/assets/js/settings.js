@@ -430,7 +430,7 @@ const ZeusSettings = {
     const formData = {};
     
     // Collect data by sections (no 'ai' section in this build)
-    const sections = ['theme', 'ui', 'features', 'mcp', 'presets'];
+    const sections = ['theme', 'ui', 'features', 'discovery', 'presets'];
     
     sections.forEach(section => {
       formData[section] = {};

@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DEFAULT_ZEUS_DISCOVERY } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -29,21 +30,13 @@ const DEFAULT_CONFIG = {
     current: 'Black-White-MCP'
   },
   discovery: {
-    urls: [
-      'http://localhost:4101',
-      'http://localhost:4102',
-      'http://localhost:4103'
-    ],
-    timeoutMs: 2000
+    urls: [...DEFAULT_ZEUS_DISCOVERY.urls],
+    timeoutMs: DEFAULT_ZEUS_DISCOVERY.timeoutMs
   },
   presets: {
     dataDir: '../../data',
     library: 'default',
     autoLoad: true
-  },
-  mcp: {
-    servers: [],
-    timeout: 30000
   },
   ui: {
     language: 'en',

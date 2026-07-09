@@ -42,6 +42,31 @@ export class ServerRegistry {
     }
   }
 
+  /**
+   * Disconnect extractors whose server name is not in keepNames.
+   * @param {string[]} keepNames
+   * @returns {Promise<string[]>} names that were pruned
+   */
+  async disconnectMissing(keepNames) {
+    const keep = new Set(keepNames);
+    const pruned = [];
+
+    for (const [name, extractor] of [...this.extractors.entries()]) {
+      if (keep.has(name)) continue;
+      await extractor.disconnect();
+      this.extractors.delete(name);
+      const known = this.knownServers.get(name);
+      this.failedServers.set(name, {
+        serverConfig: known?.url,
+        transportType: known?.transport || 'http',
+        error: 'not responding'
+      });
+      pruned.push(name);
+    }
+
+    return pruned;
+  }
+
   get serverNames() {
     const names = new Set([
       ...this.extractors.keys(),

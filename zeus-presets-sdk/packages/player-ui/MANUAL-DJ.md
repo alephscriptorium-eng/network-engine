@@ -24,7 +24,9 @@ Desde VS Code (`Ctrl+Shift+P` → *Tasks: Run Task*), usando las tareas del work
 | Pánico / liberar todo | `Stop ■ ALL (kill all ports)` |
 | Validar Tablero (e2e) | `Test ✓ e2e tablero aleph` |
 
-El player hace *discovery* al arrancar contra los puertos configurados en [`src/config.json`](src/config.json) (`discovery.urls`), así que las fuentes deben estar arriba **antes** para aparecer en los desplegables de cada plato.
+El player hace *discovery* al arrancar y **re-descubre en cada listado de servidores** (`GET /api/servers`, socket `catalog:servers`). Las URLs se resuelven en este orden: defaults SDK → [`data/zeus-discovery.json`](../../data/zeus-discovery.json) → [`src/config.json`](src/config.json) `discovery`. Las fuentes deben estar arriba **antes** para aparecer en los desplegables de cada plato.
+
+El **editor-ui** (`:3012`) usa la misma config compartida pero refresca bajo demanda: `POST /api/mcp/refresh` o botón refresh del MCP Explorer.
 
 Orden mínimo Tablero ALEPH: `Seed ▸ aleph presets` → `Start ▸ lineas` → `Start ▸ player-ui (DJ)` — o la tarea compuesta `Start ▸ Tablero ALEPH` (seed y luego lineas + player + debug en paralelo).
 

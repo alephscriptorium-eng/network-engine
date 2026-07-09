@@ -17,7 +17,7 @@ export const settingsView = (settings = {}) => {
     theme = getSectionDefaults('theme'),
     ui = getSectionDefaults('ui'),
     features = getSectionDefaults('features'),
-    mcp = getSectionDefaults('mcp'),
+    discovery = getSectionDefaults('discovery'),
     presets = getSectionDefaults('presets')
   } = settings;
 
@@ -78,7 +78,7 @@ export const settingsView = (settings = {}) => {
             'Advanced',
             'MCP server and preset configuration',
             div({ class: 'settings-group' },
-              mcpConfiguration(mcp),
+              discoveryConfiguration(discovery),
               presetConfiguration(presets)
             )
           ),
@@ -301,34 +301,34 @@ export const featureToggles = (features) => {
 };
 
 /**
- * MCP Configuration Component
+ * MCP discovery configuration
  */
-const mcpConfiguration = (mcp) => {
-  return div({ class: 'mcp-configuration' },
-    h3({ class: 'subsection-title' }, 'MCP Server Configuration'),
+const discoveryConfiguration = (discovery) => {
+  return div({ class: 'discovery-configuration' },
+    h3({ class: 'subsection-title' }, 'MCP Discovery'),
 
     div({ class: 'setting-item' },
-      label({ for: 'mcp-timeout', class: 'setting-label' },
-        strong('Connection Timeout'),
-        span({ class: 'setting-description' }, 'Timeout in milliseconds for MCP connections')
+      label({ for: 'discovery-timeout', class: 'setting-label' },
+        strong('Probe Timeout'),
+        span({ class: 'setting-description' }, 'Timeout in milliseconds for /mcp/health probes')
       ),
       input({
         type: 'number',
-        id: 'mcp-timeout',
-        name: 'timeout',
+        id: 'discovery-timeout',
+        name: 'timeoutMs',
         class: 'form-input',
-        'data-section': 'mcp',
-        'data-field': 'timeout',
-        value: mcp.timeout,
-        min: '1000',
+        'data-section': 'discovery',
+        'data-field': 'timeoutMs',
+        value: discovery.timeoutMs ?? 2000,
+        min: '500',
         max: '60000',
-        step: '1000'
+        step: '500'
       })
     ),
 
     div({ class: 'setting-note' },
       span({ class: 'note-icon' }, '🔧'),
-      'MCP server discovery is configured in config.json (discovery.urls).'
+      'Shared URLs: data/zeus-discovery.json. Per-UI override: config.json discovery.urls. Refresh servers via POST /api/mcp/refresh or the MCP Editor refresh button.'
     )
   );
 };

@@ -15,7 +15,9 @@
     "urls": [
       "http://localhost:4101",
       "http://localhost:4102",
-      "http://localhost:4103"
+      "http://localhost:4103",
+      "http://localhost:4111",
+      "http://localhost:4112"
     ],
     "timeoutMs": 2000
   },
@@ -23,10 +25,6 @@
     "dataDir": "../../data",
     "library": "default",
     "autoLoad": true
-  },
-  "mcp": {
-    "servers": [],
-    "timeout": 30000
   },
   "ui": {
     "language": "es",

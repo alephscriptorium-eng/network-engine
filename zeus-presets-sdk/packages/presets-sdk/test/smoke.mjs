@@ -7,6 +7,10 @@ import http from 'node:http';
 import {
   PresetStore,
   discoverServers,
+  syncDiscoveredServers,
+  resolveDiscoverySources,
+  DEFAULT_ZEUS_DISCOVERY,
+  ServerRegistry,
   createPresetService,
   sanitizeSlug,
   buildManifest,
@@ -196,6 +200,99 @@ try {
   } finally {
     await new Promise(resolve => healthServer.close(resolve));
   }
+
+  // 2b. resolveDiscoverySources merge
+  step('resolveDiscoverySources');
+
+  const mergeDir = fs.mkdtempSync(path.join(os.tmpdir(), 'presets-sdk-discovery-'));
+  fs.writeFileSync(
+    path.join(mergeDir, 'zeus-discovery.json'),
+    JSON.stringify({ urls: ['http://localhost:4999'], timeoutMs: 3000 }),
+    'utf8'
+  );
+
+  const merged = resolveDiscoverySources({
+    dataDir: mergeDir,
+    localDiscovery: { urls: ['http://localhost:5000'], timeoutMs: 1500 }
+  });
+  assert.ok(merged.urls.includes('http://localhost:4101'), 'includes SDK default');
+  assert.ok(merged.urls.includes('http://localhost:4999'), 'includes shared file');
+  assert.ok(merged.urls.includes('http://localhost:5000'), 'includes local override');
+  assert.equal(merged.timeoutMs, 1500, 'local timeout wins');
+  fs.rmSync(mergeDir, { recursive: true, force: true });
+
+  const defaultsOnly = resolveDiscoverySources({});
+  assert.deepEqual(defaultsOnly.urls, DEFAULT_ZEUS_DISCOVERY.urls);
+  assert.equal(defaultsOnly.timeoutMs, DEFAULT_ZEUS_DISCOVERY.timeoutMs);
+
+  console.log('resolveDiscoverySources: OK');
+
+  // 2c. syncDiscoveredServers + disconnectMissing
+  step('syncDiscoveredServers');
+
+  const healthServer2 = http.createServer((req, res) => {
+    if (req.url === '/mcp/health') {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ status: 'ok', server: 'test-moon' }));
+    } else {
+      res.writeHead(404);
+      res.end();
+    }
+  });
+  await new Promise(resolve => healthServer2.listen(0, '127.0.0.1', resolve));
+  const healthUrl2 = `http://127.0.0.1:${healthServer2.address().port}`;
+
+  const syncMockRegistry = {
+    extractors: new Map([['stale-server', { disconnect: async () => {} }]]),
+    knownServers: new Map([['stale-server', { url: 'http://127.0.0.1:9', transport: 'http' }]]),
+    failedServers: new Map(),
+    async disconnectMissing(keepNames) {
+      const keep = new Set(keepNames);
+      const pruned = [];
+      for (const [name] of [...this.extractors.entries()]) {
+        if (!keep.has(name)) {
+          this.extractors.delete(name);
+          pruned.push(name);
+        }
+      }
+      return pruned;
+    },
+    async registerServerSafe(name, url, transport) {
+      return { serverName: name, connected: true, url, transport };
+    }
+  };
+
+  let catalogRefreshed = false;
+  const mockCatalogForSync = { refreshCatalog: async () => { catalogRefreshed = true; } };
+
+  try {
+    const syncResult = await syncDiscoveredServers(
+      syncMockRegistry,
+      { urls: [healthUrl2], timeoutMs: 1500 },
+      { catalog: mockCatalogForSync, pruneStale: true, registerMode: 'safe' }
+    );
+    assert.equal(syncResult.found.length, 1);
+    assert.equal(syncResult.found[0].name, 'test-moon');
+    assert.deepEqual(syncResult.pruned, ['stale-server']);
+    assert.equal(syncResult.registered.length, 1);
+    assert.equal(catalogRefreshed, true);
+    console.log('syncDiscoveredServers: OK');
+  } finally {
+    await new Promise(resolve => healthServer2.close(resolve));
+  }
+
+  const realRegistry = new ServerRegistry();
+  realRegistry.extractors.set('gone', {
+    disconnect: async () => {}
+  });
+  realRegistry.knownServers.set('gone', { url: 'http://127.0.0.1:9', transport: 'http' });
+  const pruned = await realRegistry.disconnectMissing(['other']);
+  assert.deepEqual(pruned, ['gone']);
+  assert.equal(realRegistry.extractors.has('gone'), false);
+  assert.equal(realRegistry.failedServers.get('gone')?.error, 'not responding');
+  await realRegistry.close();
+
+  console.log('registry.disconnectMissing: OK');
 
   // 3. createPresetService boots and mounts routes
   step('createPresetService');
