@@ -1,0 +1,106 @@
+.viewer-launcher-slot {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.viewer-launcher,
+.viewer-launcher-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.viewer-launcher-link:hover {
+  text-decoration: underline;
+}
+
+.viewer-launcher--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.viewer-launcher-icon {
+  padding: 0.1rem 0.35rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  line-height: 1.2;
+}
+
+.viewer-launcher-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.viewer-launcher-menu--empty .viewer-launcher-menu-label {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.viewer-launcher-menu-trigger {
+  cursor: pointer;
+  list-style: none;
+}
+
+.viewer-launcher-menu-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.viewer-launcher-menu[open] .viewer-launcher-menu-list {
+  display: block;
+}
+
+.viewer-launcher-menu-list {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  min-width: 14rem;
+  max-width: 22rem;
+  max-height: 16rem;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.35rem 0;
+  list-style: none;
+  border: 1px solid var(--border-color, #444);
+  background: var(--panel-bg, #111);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.viewer-launcher-menu-item {
+  margin: 0;
+  padding: 0.2rem 0.6rem;
+}
+
+.viewer-launcher-menu-item .viewer-launcher-link {
+  display: block;
+  padding: 0.15rem 0;
+}
+
+.registro-viewer-links {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-left: 0.35rem;
+}
+
+.deck-b-header,
+.deck-a-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.wikitext-bar {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.wikitext-viewer-launcher {
+  margin-left: auto;
+}

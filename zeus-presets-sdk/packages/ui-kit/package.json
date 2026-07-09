@@ -9,6 +9,7 @@
   },
   "license": "AIPLv1",
   "dependencies": {
+    "express": "^5.2.1",
     "hyperaxe": "^3.0.2"
   }
 }

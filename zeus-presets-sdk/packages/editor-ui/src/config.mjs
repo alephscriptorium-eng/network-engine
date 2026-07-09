@@ -47,6 +47,10 @@ const DEFAULT_CONFIG = {
     host: 'localhost',
     port: 3013
   },
+  view: {
+    host: 'localhost',
+    port: 3015
+  },
   debug: false
 };
 

@@ -11,11 +11,15 @@ packages/solar-system  Demo MCP: sun, moon, earth (ports 4101–4103)
 packages/linea-system  Linea MCP: linea-espana, linea-wp-historia (4111–4112)
 packages/editor-ui     Preset editor + MCP explorer (:3012)
 packages/player-ui     DJ deck: 2 platos, playhead, socket.io session (:3013)
+packages/view-ui       Cache explorer: lineas-poder filesystem browser (:3015)
 e2e/demo.mjs           Solar-system-observer validation
 e2e/deck-demo.mjs      Linea deck sync + degraded validation
 e2e/tablero-aleph-demo.mjs  Tablero ALEPH REST + wikitext validation
+e2e/view-demo.mjs      Cache explorer browse + file API validation
 docs/deck-contract.md  Block-0 interface for deck/linea/player
 docs/tablero-aleph.md  Tablero ALEPH operator manual (ALEPH et OMEGA)
+docs/view-ui.md        Cache Explorer operator manual
+docs/view-contract.md  view-ui REST + view:// contract
 ```
 
 Data flow:

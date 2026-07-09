@@ -65,6 +65,7 @@ Native reads SHOULD use `extractor.readResource(uri)` from `@zeus/presets-sdk`. 
 | `@zeus/editor-ui` | **3012** |
 | `@zeus/player-ui` | **3013** |
 | `@zeus/player-ui-debug` MCP | **3014** |
+| `@zeus/view-ui` | **3015** |
 
 ## MCP server discovery
 
@@ -79,6 +80,33 @@ Orchestration lives in `@zeus/presets-sdk`: `discoverServers()` probes `/mcp/hea
 | 3 | Per-UI `config.json` → `discovery` section |
 
 Use `resolveDiscoverySources({ dataDir, localDiscovery })` before calling `syncDiscoveredServers`.
+
+## UI mesh (cross-package navigation)
+
+Shell global (`@zeus/ui-kit`) resolves links between Zeus UIs via `resolveUiMesh()` in presets-sdk.
+
+### Config merge order
+
+| Layer | Source |
+|-------|--------|
+| 1 | `DEFAULT_ZEUS_UI_MESH` in SDK |
+| 2 | [`data/zeus-discovery.json`](../../data/zeus-discovery.json) → `uis` section |
+| 3 | Per-UI `config.json` → `uiMesh` or `editor` / `player` / `view` host/port blocks |
+
+### Default `uis` entries
+
+| id | Port | Path | Label |
+|----|------|------|-------|
+| `editor` | 3012 | `/` | Editor |
+| `player` | 3013 | `/` | Tablero |
+| `view` | 3015 | `/` | Cache |
+| `session` | 3013 | `/session` | Sesión |
+
+Use `resolveUiMesh({ dataDir, localConfig, selfUiId })` in each package `main_views.mjs`. Editor-ui adds a local sub-nav (Home, Presets, MCP Editor, Settings).
+
+### Theme contract (shell)
+
+All UIs expose `GET /api/themes`, `POST /api/theme/switch` (via `@zeus/ui-kit` `createThemeRoutes`). Header `#zeus-theme-select` is wired by `shell.js`.
 
 ### UI policies
 
@@ -221,13 +249,44 @@ Read-only routes on player-ui (no socket contract change):
 
 | Route | Purpose |
 |-------|---------|
-| `GET /api/aleph/config` | Casos, presets default, branding, `defaultLinea`, `lineaServers` |
+| `GET /api/aleph/config` | Casos, presets default, branding, `defaultLinea`, `satelite_wp`, `view` mesh |
+| `GET /api/aleph/view-links?deckId=A\|B` | Deep links a `@zeus/view-ui` derivados del `deck.resolved` en sesión |
 | `GET /api/aleph/lineas` | Registry of line instances (`id`, `etiqueta`, `nodo_count`, …) |
 | `GET /api/aleph/anchors?linea=espana` | Wave A anchor grid + live cache/stats for a línea (default `espana`) |
 | `GET /api/aleph/medicion/:casoId` | `estado.json` summary |
 | `GET /api/aleph/topology` | MCP server cards + Composer/Reader lanes |
 
 See `docs/tablero-aleph.md`.
+
+### Viewer launcher (Tablero → Cache)
+
+Controles genéricos en `@zeus/ui-kit` (`openViewerLink`, `openViewerButton`, `viewerLauncherMenu`, `Zeus.ViewerLauncher`). El Tablero monta slots en Plato A/B y consume `GET /api/aleph/view-links`.
+
+**Respuesta** `GET /api/aleph/view-links?deckId=B`:
+
+```json
+{
+  "linea": "espana",
+  "items": [
+    { "id": "wikitext-active-2118229", "label": "Abrir wikitext completo", "href": "http://localhost:3015/?linea=espana&path=...", "kind": "wikitext", "path": "wp/historia/cache/snapshots/2118229.wikitext" }
+  ],
+  "wikitext": { "id": "wikitext-active-2118229", "label": "Abrir wikitext completo", "href": "..." },
+  "byOldid": {
+    "2118229": [{ "id": "wikitext-2118229", "label": "↗", "href": "...", "kind": "wikitext" }]
+  }
+}
+```
+
+**Puntos UI en Tablero:**
+
+| Plato | Slot | Control |
+|-------|------|---------|
+| A | `.deck-a-viewer-launcher` | Menú Referencias (meta nodo) |
+| B | `.deck-b-viewer-launcher` | Menú agregado del playhead |
+| B | `.wikitext-viewer-launcher` | Botón «Abrir en Cache» |
+| B | `.registro-viewer-links` | Iconos ↗ por fila de registro |
+
+Recetas de path en `@zeus/presets-sdk` (`buildViewLinksResponse`, `wikitextPath`, `nodoMetaPath`). Ver `docs/view-contract.md`.
 
 Resolution logic lives in **player-ui server** via in-process SDK (`readResource`, `applyPresetFilter`). Clients render; they do not resolve URIs themselves.
 

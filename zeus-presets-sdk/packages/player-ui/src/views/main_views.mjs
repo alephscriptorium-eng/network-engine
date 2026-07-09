@@ -1,5 +1,5 @@
 /**
- * Player-ui wrapper around @zeus/ui-kit layout components.
+ * Player-ui wrapper around @zeus/ui-kit shell.
  */
 
 import {
@@ -9,42 +9,43 @@ import {
   pageContainer,
   contentSection
 } from '@zeus/ui-kit';
-import { getConfig } from '../config.mjs';
+import { resolveUiMesh } from '@zeus/presets-sdk';
+import { getConfig, resolveDataDir } from '../config.mjs';
 import { getAlephConfig } from '../aleph-bridge.mjs';
 
 export { navLink, pageContainer, contentSection };
 
-function editorUrl(config) {
-  const host = config.editor?.host || 'localhost';
-  const port = config.editor?.port || 3012;
-  return `http://${host}:${port}`;
-}
-
-function buildNavEntries(config) {
-  return [
-    { href: '/', emoji: '🎛️', text: 'Tablero', pageKey: 'deck' },
-    { href: '/session', emoji: '🔍', text: 'Sesión', pageKey: 'session' },
-    { href: editorUrl(config), emoji: '🔧', text: 'Editor', external: true }
-  ];
+function shellOptions(options = {}) {
+  const config = getConfig();
+  const aleph = getAlephConfig(config);
+  const dataDir = resolveDataDir(config);
+  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'player' });
+  return {
+    uiId: 'player',
+    meshEntries: mesh.entries,
+    localNavEntries: [],
+    theme: options.theme || config.theme?.current || aleph.theme || 'Scriptorium-Skins',
+    themes: options.themes || [],
+    showThemeSelector: true,
+    brand: {
+      title: aleph.branding?.title || 'Tablero ALEPH',
+      tag: 'Zeus Player',
+      footer: `${aleph.branding?.tag || 'Scriptorium Skins'} · GPL-3.0`
+    },
+    currentPage: options.currentPage || 'deck'
+  };
 }
 
 export const template = (pageTitle, content, options = {}) => {
-  const config = getConfig();
-  const aleph = getAlephConfig(config);
-  const theme = options.theme || config.theme?.current || aleph.theme || 'Scriptorium-Skins';
   return uiTemplate(pageTitle, content, {
-    ...options,
-    theme,
-    brand: {
-      title: `${aleph.branding?.title || 'Tablero ALEPH'} · Zeus Player`,
-      footer: `${aleph.branding?.tag || 'Scriptorium Skins'} · GPL-3.0`
-    },
-    navEntries: buildNavEntries(config),
-    currentPage: options.currentPage || 'deck'
+    ...shellOptions(options),
+    ...options
   });
 };
 
 export const navigation = (currentPage = 'deck') => {
   const config = getConfig();
-  return uiNavigation(currentPage, buildNavEntries(config));
+  const dataDir = resolveDataDir(config);
+  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'player' });
+  return uiNavigation(currentPage, mesh.entries);
 };

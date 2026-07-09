@@ -1,6 +1,6 @@
 /**
- * Shared Zeus ecosystem MCP discovery configuration.
- * Merge order: DEFAULT_ZEUS_DISCOVERY → data/zeus-discovery.json → local config.json discovery section.
+ * Shared Zeus ecosystem MCP discovery + UI mesh configuration.
+ * Merge order: DEFAULT → data/zeus-discovery.json → local config.json.
  */
 
 import fs from 'node:fs';
@@ -16,6 +16,39 @@ export const DEFAULT_ZEUS_DISCOVERY = {
   ],
   timeoutMs: 2000
 };
+
+export const DEFAULT_ZEUS_UI_MESH = {
+  editor: {
+    host: 'localhost',
+    port: 3012,
+    path: '/',
+    label: 'Editor',
+    emoji: '🔧'
+  },
+  player: {
+    host: 'localhost',
+    port: 3013,
+    path: '/',
+    label: 'Tablero',
+    emoji: '🎛️'
+  },
+  view: {
+    host: 'localhost',
+    port: 3015,
+    path: '/',
+    label: 'Cache',
+    emoji: '📂'
+  },
+  session: {
+    host: 'localhost',
+    port: 3013,
+    path: '/session',
+    label: 'Sesión',
+    emoji: '🔍'
+  }
+};
+
+const GLOBAL_NAV_ORDER = ['editor', 'player', 'view', 'session'];
 
 const DISCOVERY_FILENAME = 'zeus-discovery.json';
 
@@ -38,6 +71,89 @@ function loadSharedDiscoveryFile(dataDir) {
     // fall through
   }
   return {};
+}
+
+function mergeUiRecord(base = {}, override = {}) {
+  const merged = { ...base };
+  for (const [id, entry] of Object.entries(override)) {
+    if (!entry || typeof entry !== 'object') continue;
+    merged[id] = { ...merged[id], ...entry };
+  }
+  return merged;
+}
+
+function localConfigToUiMesh(localConfig = {}) {
+  const out = { ...(localConfig.uiMesh || {}) };
+  for (const id of ['editor', 'player', 'view']) {
+    const block = localConfig[id];
+    if (block && (block.host || block.port || block.path || block.url)) {
+      out[id] = { ...(out[id] || {}), ...block };
+    }
+  }
+  return out;
+}
+
+/**
+ * @param {object} entry
+ */
+export function buildUiHref(entry) {
+  if (entry.url) {
+    const base = String(entry.url).replace(/\/$/, '');
+    const p = entry.path || '/';
+    return p === '/' ? `${base}/` : `${base}${p.startsWith('/') ? p : `/${p}`}`;
+  }
+  const host = entry.host || 'localhost';
+  const port = entry.port;
+  const p = entry.path || '/';
+  return `http://${host}:${port}${p === '/' ? '/' : p}`;
+}
+
+/**
+ * @param {object} entry
+ * @param {string|null} selfUiId
+ */
+export function resolveNavHref(entry, selfUiId) {
+  const id = entry.id;
+  if (id === 'session' && selfUiId === 'player') {
+    return entry.path || '/session';
+  }
+  if (id === selfUiId) {
+    return entry.path || '/';
+  }
+  return buildUiHref(entry);
+}
+
+/**
+ * @param {string|null} selfUiId
+ * @param {string} entryId
+ */
+export function isNavExternal(selfUiId, entryId) {
+  if (entryId === 'session') return selfUiId !== 'player';
+  return entryId !== selfUiId;
+}
+
+/**
+ * Resolve UI mesh from layered config.
+ * @param {{ dataDir?: string, localConfig?: object, selfUiId?: string|null }} opts
+ */
+export function resolveUiMesh({ dataDir, localConfig = {}, selfUiId = null } = {}) {
+  const shared = loadSharedDiscoveryFile(dataDir);
+  let uis = mergeUiRecord(DEFAULT_ZEUS_UI_MESH, shared.uis || {});
+  uis = mergeUiRecord(uis, localConfigToUiMesh(localConfig));
+
+  const entries = GLOBAL_NAV_ORDER.filter((id) => uis[id]).map((id) => {
+    const raw = { id, ...uis[id] };
+    return {
+      id,
+      href: resolveNavHref(raw, selfUiId),
+      label: raw.label || id,
+      emoji: raw.emoji || '',
+      external: isNavExternal(selfUiId, id),
+      pageKey: id
+    };
+  });
+
+  return { uis, entries, selfUiId };
 }
 
 /**

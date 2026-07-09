@@ -20,13 +20,25 @@
   "tasks": [
     {
       "label": "Start ▸ ALL",
-      "detail": "Arranca solar + lineas + editor + player en paralelo (paneles dedicados).",
+      "detail": "Arranca solar + lineas + editor + player + view-ui en paralelo (paneles dedicados).",
       "dependsOrder": "parallel",
       "dependsOn": [
         "Start ▸ solar-system",
         "Start ▸ lineas",
         "Start ▸ editor-ui",
-        "Start ▸ player-ui (DJ)"
+        "Start ▸ player-ui (DJ)",
+        "Start ▸ view-ui"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start ▸ Cache Explorer",
+      "detail": "lineas :4111-4112 + view-ui :3015 — navegador de cache lineas-poder (stats MCP opcionales).",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Start ▸ lineas",
+        "Start ▸ view-ui"
       ],
       "group": "build",
       "problemMatcher": []
@@ -99,6 +111,15 @@
       "problemMatcher": []
     },
     {
+      "label": "Start ▸ view-ui",
+      "detail": "Cache Explorer · navegador lineas-poder · http://localhost:3015.",
+      "type": "shell",
+      "command": "npm run start:view",
+      "isBackground": true,
+      "presentation": { "group": "zeus-start", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
       "label": "Seed ▸ aleph presets",
       "detail": "Carga presets ALEPH en el store local (una vez o tras cambios).",
       "type": "shell",
@@ -109,9 +130,9 @@
 
     {
       "label": "Stop ■ ALL (kill all ports)",
-      "detail": "Mata cualquier proceso escuchando en 4101-4103, 4111-4112, 3012-3014.",
+      "detail": "Mata cualquier proceso escuchando en 4101-4103, 4111-4112, 3012-3015.",
       "type": "shell",
-      "command": "for p in 4101 4102 4103 4111 4112 3012 3013 3014; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'Zeus: all ports stopped'",
+      "command": "for p in 4101 4102 4103 4111 4112 3012 3013 3014 3015; do for pid in $(netstat -ano | grep -E \":$p .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :$p -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; done; echo 'Zeus: all ports stopped'",
       "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
       "problemMatcher": []
     },
@@ -152,6 +173,14 @@
       "detail": "Libera el puerto 3014 (monitor TOP + MCP).",
       "type": "shell",
       "command": "for pid in $(netstat -ano | grep -E \":3014 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3014 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'player-ui-debug stopped'",
+      "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stop ■ view-ui",
+      "detail": "Libera el puerto 3015 (Cache Explorer).",
+      "type": "shell",
+      "command": "for pid in $(netstat -ano | grep -E \":3015 .*LISTENING\" | awk '{print $NF}' | sort -u); do echo \"killing :3015 -> PID $pid\"; taskkill //F //PID $pid >/dev/null 2>&1; done; echo 'view-ui stopped'",
       "presentation": { "group": "zeus-stop", "panel": "shared", "clear": true },
       "problemMatcher": []
     },
@@ -197,6 +226,15 @@
       "detail": "node e2e/tablero-aleph-demo.mjs (puente A↔B + presets ALEPH).",
       "type": "shell",
       "command": "npm run e2e:tablero",
+      "group": "test",
+      "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test ✓ e2e view-ui",
+      "detail": "node e2e/view-demo.mjs (browse API + manifest + wikitext + anchors + focus).",
+      "type": "shell",
+      "command": "npm run e2e:view",
       "group": "test",
       "presentation": { "group": "zeus-test", "panel": "shared", "clear": true },
       "problemMatcher": []

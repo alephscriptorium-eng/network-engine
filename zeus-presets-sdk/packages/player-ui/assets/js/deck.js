@@ -24,6 +24,8 @@
   let anchorsExplorer = null;
   let currentMedicion = null;
   let selectedRegistroOldid = null;
+  /** @type {Record<string, object>} */
+  const viewLinksCache = {};
 
   const BADGE_VARIANT = { anchor: 'primary', cached: 'success', milestone: 'accent', curated: 'warning' };
   let wikitextPollTimer = null;
@@ -78,6 +80,62 @@
     cacheBtn.disabled = false;
     cacheBtn.textContent = 'Cachear';
     cacheBtn.dataset.oldid = visible && oldid != null ? String(oldid) : '';
+  }
+
+  function mountDeckViewLinks(deckId, payload) {
+    const launcher = global.Zeus?.ViewerLauncher;
+    if (!launcher || !payload) return;
+
+    if (deckId === 'B') {
+      launcher.mountMenu(`.deck-b-viewer-launcher[data-deck="${deckId}"]`, {
+        label: 'Referencias',
+        items: payload.items || []
+      });
+      launcher.renderButton(`.wikitext-viewer-launcher[data-deck="${deckId}"]`, {
+        label: 'Abrir en Cache',
+        item: payload.wikitext || null
+      });
+      return;
+    }
+
+    if (deckId === 'A') {
+      launcher.mountMenu(`.deck-a-viewer-launcher[data-deck="${deckId}"]`, {
+        label: 'Referencias',
+        items: payload.items || []
+      });
+    }
+  }
+
+  async function refreshViewLinks(deckId, resolved) {
+    if (!resolved) {
+      viewLinksCache[deckId] = null;
+      mountDeckViewLinks(deckId, { items: [], wikitext: null, byOldid: {} });
+      return;
+    }
+    try {
+      const res = await fetch(`/api/aleph/view-links?deckId=${encodeURIComponent(deckId)}`);
+      if (!res.ok) return;
+      const payload = await res.json();
+      viewLinksCache[deckId] = payload;
+      mountDeckViewLinks(deckId, payload);
+      if (deckId === 'B') {
+        renderRegistroViewerLinks();
+      }
+    } catch (err) {
+      console.error('view-links fetch failed:', err);
+    }
+  }
+
+  function renderRegistroViewerLinks() {
+    const launcher = global.Zeus?.ViewerLauncher;
+    const byOldid = viewLinksCache.B?.byOldid || {};
+    if (!launcher) return;
+    document.querySelectorAll('.registro-item').forEach((btn) => {
+      const slot = btn.querySelector('.registro-viewer-links');
+      if (!slot) return;
+      const oldid = btn.dataset.oldid;
+      launcher.renderItemRow(slot, byOldid[oldid] || []);
+    });
   }
 
   function stopWikitextPoll() {
@@ -218,6 +276,7 @@
         <span class="registro-id">${item.registro_id}</span>
         <span class="registro-meta">${item.timestamp || ''} · ${item.section || '—'}</span>
         <span class="registro-badges">${badges.join('')}</span>
+        <span class="registro-viewer-links viewer-launcher-slot"></span>
       </button>`;
     }).join('');
 
@@ -238,6 +297,7 @@
     });
 
     updateWikitextBar(deckId, resolved);
+    renderRegistroViewerLinks();
   }
 
   function formatResolved(resolved, deckId) {
@@ -422,6 +482,15 @@
     if (deckId === 'B') {
       if (summaryEl) summaryEl.textContent = formatDeckBSummary(resolved);
       renderRegistrosList(deckId, resolved);
+      refreshViewLinks(deckId, resolved);
+    } else if (deckId === 'A') {
+      const deckASummary = document.querySelector(`.deck-a-summary[data-deck="${deckId}"]`);
+      if (deckASummary) {
+        deckASummary.textContent = formatDeckASummary(resolved);
+      } else if (resolvedEl) {
+        resolvedEl.textContent = formatResolved(resolved, deckId);
+      }
+      refreshViewLinks(deckId, resolved);
     } else if (resolvedEl) {
       resolvedEl.textContent = formatResolved(resolved, deckId);
     }
@@ -674,15 +743,5 @@
   const hash = window.location.hash.replace('#', '');
   if (hash && ['viaje', 'mcp', 'prensa'].includes(hash)) {
     document.querySelector(`.drawer-tab[data-tab="${hash}"]`)?.click();
-  }
-
-  const themeSelect = document.getElementById('nav-theme-select');
-  if (themeSelect) {
-    themeSelect.addEventListener('change', async (e) => {
-      const themeName = e.target.value;
-      if (window.Zeus && typeof window.Zeus.switchTheme === 'function') {
-        await window.Zeus.switchTheme(themeName);
-      }
-    });
   }
 })();

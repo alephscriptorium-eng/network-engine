@@ -2,7 +2,23 @@ export { MCPToolsExtractor } from './extractor.mjs';
 export { ServerRegistry } from './registry.mjs';
 export { discoverServers } from './discovery.mjs';
 export { syncDiscoveredServers } from './discovery-sync.mjs';
-export { DEFAULT_ZEUS_DISCOVERY, resolveDiscoverySources } from './discovery-config.mjs';
+export { DEFAULT_ZEUS_DISCOVERY, DEFAULT_ZEUS_UI_MESH, resolveDiscoverySources, resolveUiMesh, buildUiHref } from './discovery-config.mjs';
+export {
+  DEFAULT_SATELITE_WP,
+  normalizeSatRel,
+  wikitextPath,
+  nodoMetaPath,
+  registroMdPath,
+  registrosBrowsePath,
+  buildViewDeepLink,
+  toViewLinkItem
+} from './view-paths.mjs';
+export {
+  extractNodoId,
+  buildViewLinkItems,
+  buildRegistroViewLinks,
+  buildViewLinksResponse
+} from './view-link-recipes.mjs';
 export { PresetStore, validateSelectedItems, countPresetItems } from './preset-store.mjs';
 export {
   sanitizeSlug,

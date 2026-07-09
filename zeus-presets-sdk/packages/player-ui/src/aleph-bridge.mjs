@@ -251,13 +251,25 @@ export function resolveLineaServers(config = {}, lineaId = 'espana') {
   return map[lineaId] || DEFAULT_LINEA_SERVERS[lineaId] || null;
 }
 
+import { normalizeSatRel } from '@zeus/presets-sdk';
+
+const DEFAULT_SATELITE_WP = 'wp/historia';
+
+export function getSateliteWp(lineaId = 'espana', paths = {}) {
+  const manifest = loadManifestForLinea(lineaId, paths);
+  if (manifest.error) return DEFAULT_SATELITE_WP;
+  return normalizeSatRel(manifest.meta?.satelite_wp);
+}
+
 export function getAlephConfig(config = {}) {
   const aleph = config.aleph || {};
   const paths = resolveAlephPaths(aleph.paths);
+  const defaultLinea = aleph.defaultLinea || 'espana';
   return {
     defaultPresets: aleph.defaultPresets || { A: 'aleph-tronco-puro', B: 'aleph-wp-cache' },
     defaultCaso: aleph.defaultCaso || 'aeo-p24-linea',
-    defaultLinea: aleph.defaultLinea || 'espana',
+    defaultLinea,
+    satelite_wp: getSateliteWp(defaultLinea, paths),
     casos: aleph.casos || ['aeo-p24-linea', 'aeo-tronco-caso1', 'aeo-caso2-2026'],
     theme: aleph.theme || 'Scriptorium-Skins',
     branding: aleph.branding || {
@@ -265,6 +277,11 @@ export function getAlephConfig(config = {}) {
       tag: 'Animus Iocandi · Scriptorium Skins'
     },
     lineaServers: aleph.lineaServers || DEFAULT_LINEA_SERVERS,
+    view: {
+      host: config.view?.host || 'localhost',
+      port: config.view?.port || 3015,
+      path: '/'
+    },
     prensa: {
       baseUrl: aleph.prensaBaseUrl || 'http://localhost:8080/prensa/caso',
       publicaciones: aleph.prensaLinks || [

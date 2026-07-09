@@ -9,16 +9,6 @@ import { template, pageContainer, contentSection } from './main_views.mjs';
 import { getConfig } from '../config.mjs';
 import { getAlephConfig } from '../aleph-bridge.mjs';
 
-const THEME_LABELS = {
-  'Black-White-MCP': 'Black & White MCP',
-  'Clear-MCP': 'Clear MCP',
-  'Dark-MCP': 'Dark MCP',
-  'Matrix-MCP': 'Matrix MCP',
-  'Purple-MCP': 'Purple MCP',
-  'Orange-Dark-MCP': 'Orange Dark MCP',
-  'Scriptorium-Skins': 'Scriptorium Skins'
-};
-
 /**
  * @param {object} viewData
  * @param {Array} viewData.servers
@@ -43,7 +33,7 @@ export function deckView(viewData = {}) {
     'Tablero ALEPH',
     pageContainer(
       div({ class: 'tablero-container' },
-        headerAleph(aleph, themes, currentTheme),
+        headerAleph(aleph),
         contentSection(null,
           div({ class: 'deck-container' },
             div({ class: 'transport-bar' },
@@ -154,7 +144,8 @@ export function deckView(viewData = {}) {
     ),
     {
       currentPage: 'deck',
-      theme: config.theme?.current || aleph.theme || 'Scriptorium-Skins',
+      theme: currentTheme || config.theme?.current || aleph.theme || 'Scriptorium-Skins',
+      themes,
       styles: ['/assets/styles/anchors-explorer.css', '/assets/styles/deck.css'],
       scripts: [
         '/assets/js/anchors-explorer.js',
@@ -165,23 +156,12 @@ export function deckView(viewData = {}) {
   );
 }
 
-function headerAleph(aleph, themes = [], currentTheme = 'Scriptorium-Skins') {
+function headerAleph(aleph) {
   return section({ class: 'tablero-header' },
     div({ class: 'tablero-header-row' },
       div({ class: 'tablero-header-titles' },
         h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
         p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
-      ),
-      label({ class: 'theme-nav-label', for: 'nav-theme-select' },
-        span({ class: 'theme-nav-label-text' }, 'Tema'),
-        select({ id: 'nav-theme-select', class: 'nav-theme-select', name: 'theme' },
-          themes.map(themeName =>
-            option({
-              value: themeName,
-              ...(themeName === currentTheme ? { selected: 'selected' } : {})
-            }, THEME_LABELS[themeName] || themeName)
-          )
-        )
       )
     )
   );
@@ -223,7 +203,10 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
     div({ class: 'deck-resolved', 'data-deck': deckId },
       deckId === 'B'
         ? div({ class: 'deck-b-content' },
-            div({ class: 'deck-b-summary', 'data-deck': deckId }, '—'),
+            div({ class: 'deck-b-header' },
+              div({ class: 'deck-b-summary', 'data-deck': deckId }, '—'),
+              div({ class: 'deck-b-viewer-launcher viewer-launcher-slot', 'data-deck': deckId })
+            ),
             div({ class: 'registros-list-wrap' },
               h4({ class: 'registros-title' }, 'Revisiones WP temáticas'),
               div({ class: 'registros-list list-panel', 'data-deck': deckId },
@@ -232,6 +215,7 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
             ),
             div({ class: 'inset-panel action-row wikitext-bar', 'data-deck': deckId },
               span({ class: 'wikitext-status', 'data-deck': deckId }, ''),
+              div({ class: 'wikitext-viewer-launcher viewer-launcher-slot', 'data-deck': deckId }),
               button({
                 type: 'button',
                 class: 'btn btn-outline btn-small btn-cache-wikitext',
@@ -241,7 +225,10 @@ function deckPanel(deckId, servers, presets, defaultServer, defaultPresetId) {
               pre({ class: 'wikitext-preview', 'data-deck': deckId }, '')
             )
           )
-        : '—'
+        : div({ class: 'deck-a-content' },
+            pre({ class: 'deck-a-summary', 'data-deck': deckId }, '—'),
+            div({ class: 'deck-a-viewer-launcher viewer-launcher-slot', 'data-deck': deckId })
+          )
     )
   );
 }

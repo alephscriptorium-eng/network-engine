@@ -33,6 +33,10 @@ const DEFAULT_CONFIG = {
     host: 'localhost',
     port: 3012
   },
+  view: {
+    host: 'localhost',
+    port: 3015
+  },
   deck: {
     defaultYear: 2010,
     troncoRange: { min: 450, max: 2026 },

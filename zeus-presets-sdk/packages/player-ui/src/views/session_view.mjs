@@ -7,16 +7,6 @@ import { template, pageContainer, contentSection } from './main_views.mjs';
 import { getConfig } from '../config.mjs';
 import { getAlephConfig } from '../aleph-bridge.mjs';
 
-const THEME_LABELS = {
-  'Black-White-MCP': 'Black & White MCP',
-  'Clear-MCP': 'Clear MCP',
-  'Dark-MCP': 'Dark MCP',
-  'Matrix-MCP': 'Matrix MCP',
-  'Purple-MCP': 'Purple MCP',
-  'Orange-Dark-MCP': 'Orange Dark MCP',
-  'Scriptorium-Skins': 'Scriptorium Skins'
-};
-
 /**
  * @param {object} [viewData]
  * @param {string[]} [viewData.themes]
@@ -67,6 +57,7 @@ export function sessionView(viewData = {}) {
     {
       currentPage: 'session',
       theme: currentTheme || aleph.theme || 'Scriptorium-Skins',
+      themes,
       styles: [
         '/assets/styles/object-explorer.css',
         '/assets/styles/mcp-monitor.css',

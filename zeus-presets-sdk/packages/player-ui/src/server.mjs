@@ -13,12 +13,8 @@ import cors from 'cors';
 import { Server as SocketIOServer } from 'socket.io';
 import { createActor } from 'xstate';
 import {
-  ServerRegistry,
-  PresetStore,
-  syncDiscoveredServers,
-  resolveDiscoverySources,
-  createCatalogService,
-  applyPresetFilter
+  buildViewLinksResponse,
+  normalizeSatRel
 } from '@zeus/presets-sdk';
 import { assetsDir as uiKitAssetsDir } from '@zeus/ui-kit';
 
@@ -32,6 +28,7 @@ import {
   getAlephConfig,
   loadMedicion,
   loadLineaRegistry,
+  loadManifestForLinea,
   buildAnchorGrid,
   buildTopology,
   resolveLineaServers
@@ -419,6 +416,42 @@ export async function createPlayerServer(options = {}) {
 
   app.get('/api/aleph/config', (req, res) => {
     res.json(getAlephConfig(config));
+  });
+
+  app.get('/api/aleph/view-links', (req, res) => {
+    try {
+      const deckId = String(req.query.deckId || 'B').toUpperCase();
+      if (deckId !== 'A' && deckId !== 'B') {
+        res.status(400).json({ error: 'deckId must be A or B' });
+        return;
+      }
+
+      const snapshot = actor.getSnapshot().context;
+      const resolved = snapshot.decks[deckId]?.resolved;
+      const lineaId = alephConfig.defaultLinea || 'espana';
+      const manifest = loadManifestForLinea(lineaId, alephConfig.paths);
+      const satRel = normalizeSatRel(manifest?.meta?.satelite_wp);
+      const viewEntry = {
+        host: config.view?.host || 'localhost',
+        port: config.view?.port || 3015,
+        path: '/'
+      };
+
+      if (!resolved) {
+        res.json({ linea: lineaId, items: [], wikitext: null, byOldid: {} });
+        return;
+      }
+
+      res.json(buildViewLinksResponse({
+        lineaId,
+        satRel,
+        viewEntry,
+        deckId,
+        resolved
+      }));
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   });
 
   app.get('/api/aleph/lineas', (req, res) => {
