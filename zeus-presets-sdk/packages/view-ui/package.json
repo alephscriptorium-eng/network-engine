@@ -1,17 +1,19 @@
 {
   "name": "@zeus/view-ui",
   "version": "0.1.0",
-  "description": "Cache filesystem browser for lineas-poder with double-viewer dispatch",
+  "description": "Cache filesystem browser for DISK_02/LINEAS with double-viewer dispatch",
   "type": "module",
   "main": "src/server.mjs",
   "scripts": {
     "start": "node src/server.mjs"
   },
   "license": "AIPLv1",
+  "zeus": { "role": "app", "ui": "view" },
   "dependencies": {
-    "@zeus/linea-system": "0.1.0",
-    "@zeus/presets-sdk": "0.1.0",
-    "@zeus/ui-kit": "0.1.0",
+    "@zeus/app-shell": "*",
+    "@zeus/linea-system": "*",
+    "@zeus/presets-sdk": "*",
+    "@zeus/ui-kit": "*",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "hyperaxe": "^3.0.2",

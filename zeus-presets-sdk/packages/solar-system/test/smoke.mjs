@@ -10,30 +10,24 @@
  */
 
 import assert from 'node:assert/strict';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { bodies } from '../src/bodies.mjs';
+import { connectMcp, toolResultJson } from '@zeus/test-utils';
 import { startAll } from '../src/start-all.mjs';
 
 const FIXED_TIMESTAMP = 1700000000000;
 const POSITION_URI = `body://position/${FIXED_TIMESTAMP}`;
 const TEST_PORTS = { sun: 14101, moon: 14102, earth: 14103 };
-const ORIGINAL_PORTS = { sun: 4101, moon: 4102, earth: 4103 };
+const PREV_ENV = {
+  sun: process.env.ZEUS_MCP_SUN,
+  moon: process.env.ZEUS_MCP_MOON,
+  earth: process.env.ZEUS_MCP_EARTH
+};
 
-for (const [name, port] of Object.entries(TEST_PORTS)) {
-  bodies[name].port = port;
-}
+process.env.ZEUS_MCP_SUN = String(TEST_PORTS.sun);
+process.env.ZEUS_MCP_MOON = String(TEST_PORTS.moon);
+process.env.ZEUS_MCP_EARTH = String(TEST_PORTS.earth);
 
 async function connect(port) {
-  const client = new Client({ name: 'smoke-test', version: '1.0.0' });
-  const transport = new StreamableHTTPClientTransport(new URL(`http://localhost:${port}/mcp`));
-  await client.connect(transport);
-  return client;
-}
-
-function toolResultJson(result) {
-  assert.equal(result.content[0].type, 'text');
-  return JSON.parse(result.content[0].text);
+  return connectMcp(port);
 }
 
 let handles = [];
@@ -326,9 +320,12 @@ try {
   console.error('SMOKE TEST FAILED');
   console.error(err);
 } finally {
-  for (const [name, port] of Object.entries(ORIGINAL_PORTS)) {
-    bodies[name].port = port;
-  }
+  if (PREV_ENV.sun == null) delete process.env.ZEUS_MCP_SUN;
+  else process.env.ZEUS_MCP_SUN = PREV_ENV.sun;
+  if (PREV_ENV.moon == null) delete process.env.ZEUS_MCP_MOON;
+  else process.env.ZEUS_MCP_MOON = PREV_ENV.moon;
+  if (PREV_ENV.earth == null) delete process.env.ZEUS_MCP_EARTH;
+  else process.env.ZEUS_MCP_EARTH = PREV_ENV.earth;
   await Promise.allSettled(clients.map((c) => c.close()));
   await Promise.allSettled(handles.map((h) => h.close()));
 }

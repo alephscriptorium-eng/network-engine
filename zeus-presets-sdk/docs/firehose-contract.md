@@ -11,7 +11,7 @@ Block-0 interface for `@zeus/firehose-view-ui` and `@zeus/linea-firehose`.
 
 ## MCP disk server (`:3008`)
 
-Read-only MCP over `VOLUMES/DISK_01/FIREHOSE`. **Not** the legacy MCPGallery Jetstream live server.
+Read-only MCP over `VOLUMES/DISK_01/FIREHOSE`. **Not** the external MCPGallery Jetstream server (outside Zeus).
 
 | Route | Content |
 |-------|---------|
@@ -37,7 +37,7 @@ Start: `npm run start:firehose-mcp`. Cursor: see `docs/cursor-mcp-firehose.md`.
 | `firehose://corpus/{corpusId}` | Corpus metadata |
 | `firehose://post/{corpusId}/{batch}/{filename}` | Normalized post |
 
-Env: `FIREHOSE_MCP_PORT` (default 3008).
+Env: `ZEUS_MCP_FIREHOSE` (default 3008).
 
 ## Volume
 

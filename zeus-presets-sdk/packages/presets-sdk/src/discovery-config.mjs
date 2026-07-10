@@ -5,18 +5,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-
-export const DEFAULT_ZEUS_DISCOVERY = {
-  urls: [
-    'http://localhost:4101',
-    'http://localhost:4102',
-    'http://localhost:4103',
-    'http://localhost:4111',
-    'http://localhost:4112',
-    'http://localhost:3008'
-  ],
-  timeoutMs: 2000
-};
+import { applyEnvToMcp, applyEnvToUis, mcpToUrls } from './zeus-env.mjs';
 
 export const DEFAULT_ZEUS_UI_MESH = {
   editor: {
@@ -55,6 +44,20 @@ export const DEFAULT_ZEUS_UI_MESH = {
     emoji: '🔍'
   }
 };
+
+export const DEFAULT_ZEUS_MCP = {
+  solar: { sun: 4101, moon: 4102, earth: 4103 },
+  lineas: { espana: 4111, wpHistoria: 4112 },
+  firehose: { disk: 3008 },
+  playerDebug: { monitor: 3014 }
+};
+
+export const DEFAULT_ZEUS_DISCOVERY = {
+  timeoutMs: 2000,
+  urls: []
+};
+
+DEFAULT_ZEUS_DISCOVERY.urls = mcpToUrls('localhost', DEFAULT_ZEUS_MCP);
 
 const GLOBAL_NAV_ORDER = ['editor', 'player', 'view', 'firehose', 'session'];
 
@@ -147,6 +150,7 @@ export function isNavExternal(selfUiId, entryId) {
 export function resolveUiMesh({ dataDir, localConfig = {}, selfUiId = null } = {}) {
   const shared = loadSharedDiscoveryFile(dataDir);
   let uis = mergeUiRecord(DEFAULT_ZEUS_UI_MESH, shared.uis || {});
+  uis = applyEnvToUis(uis, shared.host);
   uis = mergeUiRecord(uis, localConfigToUiMesh(localConfig));
 
   const entries = GLOBAL_NAV_ORDER.filter((id) => uis[id]).map((id) => {
@@ -180,8 +184,11 @@ export function resolveDiscoverySources({ dataDir, localDiscovery = {} } = {}) {
   }
 
   const shared = loadSharedDiscoveryFile(dataDir);
+  const mcpBlock = { ...DEFAULT_ZEUS_MCP, ...shared.mcp };
+  const { host, mcp } = applyEnvToMcp(mcpBlock, shared.host);
+  const derivedUrls = mcpToUrls(host, mcp);
   const urls = mergeUrls(
-    mergeUrls(DEFAULT_ZEUS_DISCOVERY.urls, shared.urls || []),
+    mergeUrls(derivedUrls, shared.urls || []),
     localDiscovery.urls || []
   );
   return { urls, timeoutMs };

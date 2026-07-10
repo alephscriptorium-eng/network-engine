@@ -1,5 +1,5 @@
 {
-  "servers": {
+  "mcpServers": {
     "sun-mcp-server": {
       "url": "http://localhost:4101/mcp"
     },

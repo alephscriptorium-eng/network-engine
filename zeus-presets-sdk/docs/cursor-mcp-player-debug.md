@@ -8,11 +8,11 @@ Register the Tablero ALEPH **monitor MCP** so Cursor agents can poll live sessio
 2. **player-ui-debug** running — starts TUI + MCP in one process:
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm run start:player-debug
 ```
 
-MCP listens at `http://localhost:3014/mcp` (override with `PLAYER_DEBUG_MCP_PORT`).
+MCP listens at `http://localhost:3014/mcp` (override with `ZEUS_PORT_PLAYER_DEBUG` in `.env`).
 
 ## Cursor registration
 
@@ -30,7 +30,7 @@ Add to workspace `.cursor/mcp.json` and `.vscode/mcp.json`:
 
 Reload Cursor MCP after starting the debug service.
 
-**Workspace root:** `.cursor/mcp.json` at `SCRIPTORIUM_V0` (or `zeus-presets-sdk/.cursor/mcp.json` if that folder is your workspace). Enable `player-ui-debug-mcp-server` in Cursor Settings → MCP.
+**Workspace root:** `.cursor/mcp.json` en la raíz del repositorio (o `.vscode/mcp.json`). Tras cambiar puertos en `.env`, ejecutar `npm run env:sync-mcp`. Enable `player-ui-debug-mcp-server` in Cursor Settings → MCP.
 
 ## Agent workflow
 
@@ -72,9 +72,14 @@ curl http://localhost:3014/mcp/health
 
 ## Environment
 
+Set ports in the monorepo root `.env` (copy from `.env.example`). Canonical names:
+
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `PLAYER_UI_URL` | `http://localhost:3013` | Target player-ui base URL |
-| `PLAYER_DEBUG_MCP_PORT` | `3014` | MCP HTTP port |
+| `ZEUS_HOST` | `localhost` | Shared host for UIs and MCP |
+| `ZEUS_PORT_PLAYER` | `3013` | Target player-ui HTTP port |
+| `ZEUS_PORT_PLAYER_DEBUG` | `3014` | MCP HTTP port |
+
+Player-ui URL is derived from `ZEUS_HOST` + `ZEUS_PORT_PLAYER`.
 
 See also [`deck-contract.md`](deck-contract.md) for full `player://` scheme and socket contract.

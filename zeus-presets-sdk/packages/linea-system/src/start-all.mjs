@@ -4,9 +4,18 @@
  */
 
 import { pathToFileURL } from 'node:url';
+import { resolveZeusMcpPorts } from '@zeus/presets-sdk';
 import { createServer } from './linea-server.mjs';
 import { loadLineaData } from './loader.mjs';
 import { lineaServers } from './lineas.mjs';
+
+function lineaServersWithEnvPorts() {
+  const mcp = resolveZeusMcpPorts();
+  return {
+    espana: { ...lineaServers.espana, port: mcp.lineas.espana },
+    wpHistoria: { ...lineaServers.wpHistoria, port: mcp.lineas.wpHistoria }
+  };
+}
 
 /**
  * Starts both linea servers. Resolves to an array of
@@ -15,13 +24,14 @@ import { lineaServers } from './lineas.mjs';
  * @param {string} [basePath]
  */
 export async function startAll(basePath) {
+  const servers = lineaServersWithEnvPorts();
   const { lineas } = await loadLineaData(basePath);
-  const espanaData = lineas[lineaServers.espana.lineaId];
+  const espanaData = lineas[servers.espana.lineaId];
   if (!espanaData) {
-    throw new Error(`Line data not found for "${lineaServers.espana.lineaId}"`);
+    throw new Error(`Line data not found for "${servers.espana.lineaId}"`);
   }
 
-  const configs = [lineaServers.espana, lineaServers.wpHistoria];
+  const configs = [servers.espana, servers.wpHistoria];
   const handles = [];
 
   for (const config of configs) {

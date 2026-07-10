@@ -1,11 +1,23 @@
 /**
  * Configuration for @zeus/player-ui-debug.
- * Reads PLAYER_UI_URL env or falls back to player-ui config.json.
+ * Reads ZEUS_* env or falls back to player-ui config.json.
  */
 
+import { createAppConfig } from '@zeus/app-shell';
+import {
+  readEnvPort,
+  resolvePlayerUiEndpoint,
+  resolveZeusHost
+} from '@zeus/presets-sdk';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+export const { packageDir } = createAppConfig({
+  appId: 'debug',
+  importMetaUrl: import.meta.url,
+  skipConfigFile: true
+});
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const playerUiConfigPath = path.resolve(__dirname, '../../player-ui/src/config.json');
@@ -37,34 +49,23 @@ export function loadPlayerUiConfig() {
  */
 export function getDebugConfig(overrides = {}) {
   const playerConfig = loadPlayerUiConfig();
-  const envUrl = process.env.PLAYER_UI_URL;
+  const zeusHost = resolveZeusHost();
+  const playerEndpoint = resolvePlayerUiEndpoint(DEFAULTS.port);
 
-  let host = playerConfig.server?.host ?? DEFAULTS.host;
-  let port = playerConfig.server?.port ?? DEFAULTS.port;
-
-  if (envUrl) {
-    try {
-      const parsed = new URL(envUrl);
-      host = parsed.hostname || host;
-      port = parsed.port ? Number(parsed.port) : parsed.protocol === 'https:' ? 443 : 80;
-    } catch {
-      // keep defaults from config.json
-    }
-  }
-
-  const baseUrl = envUrl?.replace(/\/$/, '') || `http://${host}:${port}`;
+  const host = playerEndpoint.host || playerConfig.server?.host || DEFAULTS.host;
+  const port = playerEndpoint.port || playerConfig.server?.port || DEFAULTS.port;
+  const baseUrl = playerEndpoint.baseUrl;
   const sessionUrl = `${baseUrl}/session`;
 
   const mcpPort =
-    overrides.mcpPort ??
-    (process.env.PLAYER_DEBUG_MCP_PORT ? Number(process.env.PLAYER_DEBUG_MCP_PORT) : DEFAULTS.mcpPort);
+    overrides.mcpPort ?? readEnvPort('ZEUS_PORT_PLAYER_DEBUG', DEFAULTS.mcpPort);
 
   return {
     baseUrl,
     sessionUrl,
     host,
     port,
-    mcpHost: DEFAULTS.mcpHost,
+    mcpHost: zeusHost,
     mcpPort,
     defaultCaso: playerConfig.aleph?.defaultCaso ?? 'aeo-p24-linea',
     refreshHz: DEFAULTS.refreshHz,

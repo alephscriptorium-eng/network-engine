@@ -5,7 +5,7 @@ Extensión transmedia de la **Mesa DJ Zeus** para el juego ALEPH et OMEGA (Scrip
 ## Arranque
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm install
 npm run start:lineas      # :4111 espana, :4112 wp-historia
 npm run seed:aleph        # presets ALEPH en data/presets.json
@@ -21,7 +21,7 @@ Orden: **lineas primero**, luego player.
 | Plato A | Medios — tronco Villacañas | `linea-espana`, preset `aleph-tronco-puro` |
 | Plato B | Agudos — revisiones WP temáticas | `linea-wp-historia`, preset `aleph-wp-cache` |
 | LED strip | Wave A anclas P01–P24 | `/api/aleph/anchors` |
-| Crossover | Graves (blockchain) + VU medidor | `/api/aleph/medicion/:casoId` |
+| Crossover | Graves (blockchain) + VU medidor | `/api/aleph/medicion/:casoId` (lee `DISK_02/LINEAS/espana/etiquetados/{casoId}/estado.json`) |
 | Drawer Viaje | Block-4 — sin fetch | `#viaje` |
 | Drawer MCP | Block-5 — topología | `#mcp` |
 
@@ -99,7 +99,7 @@ El browser arranca un timer (~2s) de `wikitext:poll` hasta cached o timeout 60s.
 - Story board: `scriptorium-network-games/ALEPH_ET_OMEGA/readerapp/aleph-et-omega-story-board.json`
 - Spec uichain: `ALEPH_ET_OMEGA/uichain/tablero-aleph.prompt.md`
 - Manual DJ base: `packages/player-ui/MANUAL-DJ.md`
-- Mapa nodo↔secciones: `lineas-poder/espana/wp/historia/nodo-sections.json`
+- Mapa nodo↔secciones: `VOLUMES/DISK_02/LINEAS/espana/wp/historia/nodo-sections.json`
 
 ## Tests
 

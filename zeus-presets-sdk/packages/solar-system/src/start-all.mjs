@@ -4,8 +4,25 @@
  */
 
 import { pathToFileURL } from 'node:url';
+import { resolveZeusMcpPorts } from '@zeus/presets-sdk';
 import { createBodyServer } from './body-server.mjs';
 import { bodies } from './bodies.mjs';
+
+const MCP_PORT_KEYS = {
+  sun: 'sun',
+  moon: 'moon',
+  earth: 'earth'
+};
+
+function bodiesWithEnvPorts() {
+  const mcp = resolveZeusMcpPorts();
+  return Object.fromEntries(
+    Object.entries(bodies).map(([key, body]) => [
+      key,
+      { ...body, port: mcp.solar[MCP_PORT_KEYS[key]] ?? body.port }
+    ])
+  );
+}
 
 /**
  * Starts all three servers. Resolves to an array of
@@ -14,7 +31,7 @@ import { bodies } from './bodies.mjs';
  */
 export async function startAll() {
   const handles = [];
-  for (const body of Object.values(bodies)) {
+  for (const body of Object.values(bodiesWithEnvPorts())) {
     try {
       handles.push(await createBodyServer(body).start());
     } catch (err) {

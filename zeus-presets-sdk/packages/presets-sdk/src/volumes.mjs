@@ -1,30 +1,18 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join, resolve, isAbsolute } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import dotenv from 'dotenv';
+import { loadZeusEnv, MONOREPO_ROOT } from './load-zeus-env.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PACKAGE_ROOT = join(__dirname, '..');
-const MONOREPO_ROOT = join(PACKAGE_ROOT, '../..');
 
-let _dotenvLoaded = false;
 let _configCache = null;
-
-function ensureDotenv() {
-  if (_dotenvLoaded) return;
-  _dotenvLoaded = true;
-  const envPath = join(MONOREPO_ROOT, '.env');
-  if (existsSync(envPath)) {
-    dotenv.config({ path: envPath });
-  }
-}
 
 /**
  * Resolve the VOLUMES root directory.
  * Honors ZEUS_VOLUMES_ROOT; defaults to MONOREPO_ROOT/VOLUMES.
  */
 export function resolveVolumesRoot() {
-  ensureDotenv();
+  loadZeusEnv();
   const override = process.env.ZEUS_VOLUMES_ROOT;
   if (override) {
     return resolve(override);
@@ -81,7 +69,7 @@ export function listVolumes() {
  * Resolve a volume by id, merging config and computing absPath.
  */
 export function resolveVolume(id) {
-  ensureDotenv();
+  loadZeusEnv();
   const config = loadVolumesConfig();
   const entry = config.volumes[id];
   if (!entry) {
@@ -92,10 +80,7 @@ export function resolveVolume(id) {
   const monorepoRoot = MONOREPO_ROOT;
 
   let absPath;
-  const lineasEnvOverride = id === 'lineas' ? process.env.ZEUS_VOLUME_LINEAS : null;
-  if (lineasEnvOverride) {
-    absPath = resolve(lineasEnvOverride);
-  } else if (entry.pathOverride) {
+  if (entry.pathOverride) {
     absPath = resolveRelative(monorepoRoot, entry.pathOverride);
   } else if (entry.path) {
     absPath = join(volumesRoot, entry.path);

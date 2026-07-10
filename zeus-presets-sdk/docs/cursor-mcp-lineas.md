@@ -5,7 +5,7 @@ Register `linea-espana` and `linea-wp-historia` as Streamable HTTP MCP servers i
 ## Prerequisites
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm run start:lineas
 ```
 

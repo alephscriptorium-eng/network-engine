@@ -6,12 +6,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import yaml from 'yaml';
-import { resolveLineasBasePath } from '@zeus/presets-sdk';
-import { packageDir } from './config.mjs';
-
-const ZEUS_ROOT = path.resolve(packageDir, '../..');
-const NETWORK_ENGINE = path.resolve(ZEUS_ROOT, '..');
-const SCRIPTORIUM_ROOT = path.resolve(NETWORK_ENGINE, '..');
+import { resolveLineasBasePath, resolveMedidorCasosPath, resolveZeusMcpPorts, resolveZeusUiPorts } from '@zeus/presets-sdk';
+import { buildAnchorGrid } from '@zeus/presets-sdk/anchor-grid';
+import { formatShellTag } from '@zeus/ui-kit';
 
 function lineasSourceRoot() {
   return resolveLineasBasePath();
@@ -24,15 +21,15 @@ const DEFAULT_PATHS = {
   get waveAAnchors() {
     return path.join(lineasSourceRoot(), 'scripts/fetch-priority-viaje1.json');
   },
-  medidorCasos: path.join(SCRIPTORIUM_ROOT, 'medidor-poder-politico/data/casos'),
+  get medidorCasos() {
+    return resolveMedidorCasosPath('espana');
+  },
   prensaBase: '/prensa/caso'
 };
 
 const DEFAULT_LINEA_SERVERS = {
   espana: { tronco: 'linea-espana', satelite: 'linea-wp-historia' }
 };
-
-const STUB_BYTE_THRESHOLD = 100;
 
 /** @type {Map<string, object>} */
 const manifestCacheByLinea = new Map();
@@ -148,16 +145,6 @@ export function loadWaveAAnchorsForLinea(lineaId = 'espana', paths = {}) {
   return anchors;
 }
 
-/** @deprecated use loadManifestForLinea */
-export function loadManifest(paths = {}) {
-  return loadManifestForLinea('espana', paths);
-}
-
-/** @deprecated use loadWaveAAnchorsForLinea */
-export function loadWaveAAnchors(paths = {}) {
-  return loadWaveAAnchorsForLinea('espana', paths);
-}
-
 export function loadMedicion(casoId, paths = {}) {
   const base = resolveAlephPaths(paths).medidorCasos;
   const estadoPath = path.join(base, casoId, 'estado.json');
@@ -187,72 +174,7 @@ export function loadMedicion(casoId, paths = {}) {
   };
 }
 
-function parseAnchorYear(note) {
-  if (!note || typeof note !== 'string') return null;
-  const match = note.match(/WP\s+(\d{4})/);
-  return match ? Number(match[1]) : null;
-}
-
-/**
- * @param {number[]} cachedOldids
- * @param {Map<number, number>} [wikitextLengths]
- * @param {object} [options] - { lineaId?, paths? }
- */
-export function buildAnchorGrid(cachedOldids = [], wikitextLengths = null, options = {}) {
-  const opts = options?.lineaId != null || options?.paths != null
-    ? options
-    : { lineaId: 'espana', paths: options };
-  const lineaId = opts.lineaId || 'espana';
-  const paths = opts.paths || {};
-
-  const lineaEntry = findLineaEntry(lineaId);
-  if (lineaEntry.error) return { error: lineaEntry.error };
-
-  const manifest = loadManifestForLinea(lineaId, paths);
-  const anchors = loadWaveAAnchorsForLinea(lineaId, paths);
-  if (manifest.error) return { error: manifest.error };
-  if (anchors.error) return { error: anchors.error };
-
-  const cachedSet = new Set(cachedOldids.map(Number));
-  const nodosById = Object.fromEntries((manifest.nodos || []).map(n => [n.id, n]));
-
-  const cells = anchors.map(anchor => {
-    const oid = Number(anchor.oldid);
-    const nodo = nodosById[anchor.nodo_id] || {};
-    let status = 'missing';
-    if (cachedSet.has(oid)) {
-      const len = wikitextLengths?.get(oid);
-      status = len != null && len < STUB_BYTE_THRESHOLD ? 'stub' : 'cached';
-    }
-    return {
-      nodo_id: anchor.nodo_id,
-      oldid: oid,
-      year: nodo.año_ini ?? null,
-      wp_year: parseAnchorYear(anchor.note),
-      note: anchor.note,
-      etiqueta: nodo.etiqueta ?? null,
-      status
-    };
-  });
-
-  const summary = {
-    total: cells.length,
-    cached: cells.filter(c => c.status === 'cached').length,
-    stub: cells.filter(c => c.status === 'stub').length,
-    missing: cells.filter(c => c.status === 'missing').length
-  };
-
-  return {
-    linea: {
-      id: lineaEntry.id,
-      etiqueta: lineaEntry.etiqueta,
-      nodo_prefix: lineaEntry.nodo_prefix,
-      nodo_count: lineaEntry.nodo_count
-    },
-    cells,
-    summary
-  };
-}
+export { buildAnchorGrid };
 
 export function resolveLineaServers(config = {}, lineaId = 'espana') {
   const map = config.aleph?.lineaServers || DEFAULT_LINEA_SERVERS;
@@ -287,12 +209,12 @@ export function getAlephConfig(config = {}) {
     theme: aleph.theme || 'Scriptorium-Skins',
     branding: aleph.branding || {
       title: 'Tablero ALEPH',
-      tag: 'Animus Iocandi · Scriptorium Skins'
+      tag: formatShellTag()
     },
     lineaServers: aleph.lineaServers || DEFAULT_LINEA_SERVERS,
     view: {
-      host: config.view?.host || 'localhost',
-      port: config.view?.port || 3015,
+      host: config.view?.host || resolveZeusUiPorts().view.host,
+      port: config.view?.port || resolveZeusUiPorts().view.port,
       path: '/'
     },
     prensa: {
@@ -314,18 +236,22 @@ export function getAlephConfig(config = {}) {
 }
 
 export function buildTopology(cards = {}) {
+  const mcp = resolveZeusMcpPorts();
+  const uis = resolveZeusUiPorts();
+  const firehoseUiPort = uis.firehose.port;
+
   return {
     nodes: [
       {
         id: 'linea-espana',
-        port: 4111,
+        port: mcp.lineas.espana,
         role: 'tronco',
         coverage: '450–2026',
         card: cards.espana || null
       },
       {
         id: 'linea-wp-historia',
-        port: 4112,
+        port: mcp.lineas.wpHistoria,
         role: 'satelite',
         coverage: '2001–2026',
         card: cards.wpHistoria || null
@@ -333,23 +259,23 @@ export function buildTopology(cards = {}) {
       {
         id: 'lineas-volume',
         role: 'disco',
-        path: 'network-engine/zeus-presets-sdk/VOLUMES/DISK_02/LINEAS/espana/'
+        path: 'DISK_02/LINEAS/espana/'
       },
       {
         id: 'fetch_batch',
         role: 'python-only',
-        path: 'network-engine/zeus-presets-sdk/VOLUMES/DISK_02/LINEAS/scripts/fetch_batch.py'
+        path: 'DISK_02/LINEAS/scripts/fetch_batch.py'
       },
       {
         id: 'firehose-mcp-server',
-        port: 3008,
+        port: mcp.firehose.disk,
         role: 'disco',
         coverage: 'DISK_01/FIREHOSE',
         card: cards.firehose || null
       },
       {
         id: 'firehose-view-ui',
-        port: 3016,
+        port: firehoseUiPort,
         role: 'reader',
         coverage: 'Explorer microposts',
         card: cards.firehoseUi || null
@@ -368,7 +294,7 @@ export function buildTopology(cards = {}) {
         'timeline-nodos',
         'report-nodo',
         'linea://cache/stats (lectura)',
-        'firehose-view-ui :3016',
+        `firehose-view-ui :${firehoseUiPort}`,
         'readerchain'
       ]
     }

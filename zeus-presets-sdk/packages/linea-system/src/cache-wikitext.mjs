@@ -1,5 +1,5 @@
 /**
- * Async wikitext cache fetch via fetch_snapshot.py (lineas-poder/scripts).
+ * Async wikitext cache fetch via fetch_snapshot.py (DISK_02/LINEAS/scripts).
  */
 
 import { spawn } from 'node:child_process';

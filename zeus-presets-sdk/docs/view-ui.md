@@ -5,7 +5,7 @@ Navegador de cache de líneas (`@zeus/view-ui`). Complementa el Tablero ALEPH si
 ## Arranque
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm install
 npm run start:view      # http://localhost:3015
 ```

@@ -6,6 +6,7 @@ import {
   div, h2, h3, h4, p, label, select, option, input, button, span, section, pre, a, ul, li
 } from 'hyperaxe';
 import { template, pageContainer, contentSection } from './main_views.mjs';
+import { formatShellTag } from '@zeus/ui-kit';
 import { getConfig } from '../config.mjs';
 import { getAlephConfig } from '../aleph-bridge.mjs';
 
@@ -170,7 +171,7 @@ function headerAleph(aleph) {
     div({ class: 'tablero-header-row' },
       div({ class: 'tablero-header-titles' },
         h2({ class: 'tablero-title' }, aleph.branding?.title || 'Tablero ALEPH'),
-        p({ class: 'tablero-tag' }, aleph.branding?.tag || 'Scriptorium Skins')
+        p({ class: 'tablero-tag' }, aleph.branding?.tag || formatShellTag())
       )
     )
   );

@@ -115,13 +115,7 @@ export interface PresetGetResponse {
     timestamp?: string;
 }
 
-/** Legacy body accepted by POST {prefix}/set */
-export interface PresetSetLegacyPayload {
-    presetName: string;
-    selectedItems: PresetItem[];
-}
-
-/** Rich body accepted by POST {prefix}/set */
+/** Body accepted by POST {prefix}/set */
 export interface PresetSetPayload {
     name: string;
     description?: string;

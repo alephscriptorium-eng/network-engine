@@ -19,7 +19,7 @@
   "defaultCorpus": "candidate",
   "branding": {
     "title": "Firehose Explorer",
-    "tag": "Zeus Firehose · Scriptorium"
+    "tag": "Scriptorium · Zeus SDK"
   },
   "debug": false
 }

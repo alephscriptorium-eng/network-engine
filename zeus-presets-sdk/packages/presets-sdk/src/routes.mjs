@@ -2,21 +2,10 @@ import express from 'express';
 import { validateSelectedItems, countPresetItems } from './preset-store.mjs';
 
 /**
- * Normalize a POST /set body to the rich preset schema.
- * Accepts both the legacy shape {presetName, selectedItems} and the
- * rich shape {name, description?, category?, prompt?, items}.
+ * Normalize a POST /set body to the canonical preset schema.
+ * @param {object} body
  */
 function normalizeSetBody(body = {}) {
-  if (body.presetName !== undefined || body.selectedItems !== undefined) {
-    return {
-      name: body.presetName,
-      description: body.description || '',
-      category: body.category || 'General',
-      prompt: body.prompt || '',
-      items: body.selectedItems
-    };
-  }
-
   return {
     name: body.name,
     description: body.description || '',
@@ -62,12 +51,20 @@ export function createPresetRoutes({ registry, store, prefix = '/api/mcp' } = {}
   // POST {prefix}/set - create or update-by-name a preset
   router.post(`${prefix}/set`, (req, res) => {
     try {
+      if (req.body?.presetName !== undefined || req.body?.selectedItems !== undefined) {
+        return res.status(400).json({
+          success: false,
+          error: 'Use name and items instead of presetName and selectedItems',
+          timestamp: new Date().toISOString()
+        });
+      }
+
       const data = normalizeSetBody(req.body);
 
       if (!data.name) {
         return res.status(400).json({
           success: false,
-          error: 'name (or presetName) is required',
+          error: 'name is required',
           timestamp: new Date().toISOString()
         });
       }

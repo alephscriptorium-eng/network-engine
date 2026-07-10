@@ -315,19 +315,19 @@ try {
     assert.deepEqual(presets.presets, []);
     assert.equal(presets.totalPresets, 0);
 
-    // create via legacy body, read back via rich routes
+    // create via canonical body, read back via rich routes
     const setRes = await fetch(`${base}/api/mcp/set`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        presetName: 'legacy-preset',
-        selectedItems: [{ serverName: 'sun', type: 'tool', name: 'get_position' }]
+        name: 'test-preset',
+        items: [{ serverName: 'sun', type: 'tool', name: 'get_position' }]
       })
     });
     assert.equal(setRes.status, 200);
     const setBody = await setRes.json();
     assert.equal(setBody.success, true);
-    assert.equal(setBody.preset.name, 'legacy-preset');
+    assert.equal(setBody.preset.name, 'test-preset');
     assert.deepEqual(setBody.preset.itemsCount, { tools: 1, resources: 0, resourceTemplates: 0, prompts: 0, total: 1 });
 
     const badSet = await fetch(`${base}/api/mcp/set`, {
@@ -337,7 +337,17 @@ try {
     });
     assert.equal(badSet.status, 400, 'invalid items rejected with 400');
 
-    const one = await (await fetch(`${base}/api/mcp/preset/legacy-preset`)).json();
+    const legacySet = await fetch(`${base}/api/mcp/set`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        presetName: 'old-shape',
+        selectedItems: [{ serverName: 'sun', type: 'tool', name: 'get_position' }]
+      })
+    });
+    assert.equal(legacySet.status, 400, 'legacy presetName/selectedItems rejected with 400');
+
+    const one = await (await fetch(`${base}/api/mcp/preset/test-preset`)).json();
     assert.equal(one.preset.category, 'General');
 
     const missing = await fetch(`${base}/api/mcp/preset/nope`);

@@ -7,10 +7,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveVolume, resetVolumesCache } from '@zeus/presets-sdk';
+import { resolveVolume, resetVolumesCache, loadZeusEnv } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
+loadZeusEnv(REPO_ROOT);
 const VOLUMES_JSON_PATH = path.join(REPO_ROOT, 'VOLUMES', 'volumes.json');
 
 const args = new Set(process.argv.slice(2));

@@ -1,11 +1,11 @@
 # Cursor MCP bridge — firehose disk server
 
-Register `firehose-mcp-server` as a Streamable HTTP MCP server in Cursor. This is the **Zeus read-only disk MCP** over `VOLUMES/DISK_01/FIREHOSE` — not the legacy MCPGallery Jetstream live server.
+Register `firehose-mcp-server` as a Streamable HTTP MCP server in Cursor. This is the **Zeus read-only disk MCP** over `VOLUMES/DISK_01/FIREHOSE` — not the external MCPGallery Jetstream server (outside Zeus).
 
 ## Prerequisites
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm run start:firehose-mcp
 ```
 
@@ -20,7 +20,7 @@ npm run start:firehose
 | firehose-mcp-server | http://localhost:3008/mcp/health | http://localhost:3008/mcp |
 | firehose-view-ui | http://localhost:3016/health | (REST only, no `/mcp`) |
 
-Override port with `FIREHOSE_MCP_PORT` (default **3008**).
+Override port with `ZEUS_MCP_FIREHOSE` in `.env` (default **3008**). Host: `ZEUS_HOST`.
 
 ## Cursor configuration
 

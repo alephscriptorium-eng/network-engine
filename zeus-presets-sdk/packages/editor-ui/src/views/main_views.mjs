@@ -1,18 +1,6 @@
-/**
- * Editor-ui wrapper around @zeus/ui-kit shell.
- */
-
-import {
-  template as uiTemplate,
-  navigation as uiNavigation,
-  navLink,
-  pageContainer,
-  contentSection
-} from '@zeus/ui-kit';
-import { resolveUiMesh } from '@zeus/presets-sdk';
-import { getConfig, resolveDataDir } from '../config.mjs';
-
-export { navLink, pageContainer, contentSection };
+import { createShellViews } from '@zeus/app-shell';
+import { defaultShellBrand } from '@zeus/ui-kit';
+import { getAppConfig, resolveDataDir } from '../config.mjs';
 
 function buildLocalNavEntries() {
   return [
@@ -23,36 +11,11 @@ function buildLocalNavEntries() {
   ];
 }
 
-function shellOptions(options = {}) {
-  const config = getConfig();
-  const dataDir = resolveDataDir(config);
-  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'editor' });
-  return {
-    uiId: 'editor',
-    meshEntries: mesh.entries,
-    localNavEntries: buildLocalNavEntries(),
-    theme: options.theme || config.theme?.current || 'Black-White-MCP',
-    themes: options.themes || [],
-    showThemeSelector: true,
-    brand: {
-      title: 'Zeus Presets Editor',
-      tag: 'MCP catalog & presets',
-      footer: '© 2025 Zeus Team · Zeus Presets Editor · GPL-3.0'
-    },
-    currentPage: options.currentPage || ''
-  };
-}
-
-export const template = (pageTitle, content, options = {}) => {
-  return uiTemplate(pageTitle, content, {
-    ...shellOptions(options),
-    ...options
-  });
-};
-
-export const navigation = (currentPage = '') => {
-  const config = getConfig();
-  const dataDir = resolveDataDir(config);
-  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'editor' });
-  return uiNavigation(currentPage, mesh.entries);
-};
+export const { template, navLink, pageContainer, contentSection } = createShellViews({
+  uiId: 'editor',
+  getAppConfig,
+  resolveDataDir,
+  buildLocalNavEntries,
+  defaultTheme: 'Black-White-MCP',
+  getBrand: () => defaultShellBrand('Zeus Presets Editor')
+});

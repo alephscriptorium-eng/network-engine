@@ -1,132 +1,44 @@
-# ZEUS Presets Editor
+# ZEUS Presets SDK
 
-Self-contained monorepo for MCP catalog discovery, preset management, solar/linea demo servers, editor UI, and DJ deck player. Decoupled from MCPGallery and NETWORK-ENGINE (those repos are read-only sources).
+Monorepo autocontenido para descubrimiento de catálogo MCP, gestión de presets, servidores demo (solar, líneas, firehose) y UIs de editor, player, view y firehose. Desacoplado de MCPGallery y NETWORK-ENGINE (esos repos son fuentes de solo lectura).
 
-## Architecture
+## Requisitos
 
-```text
-packages/presets-sdk   Core: discovery, catalog, preset-store, catalog-service, preset-filter, readResource
-packages/ui-kit        Shared shell: template, nav, themes, base.css, base.js
-packages/solar-system  Demo MCP: sun, moon, earth (ports 4101–4103)
-packages/linea-system  Linea MCP: linea-espana, linea-wp-historia (4111–4112)
-packages/editor-ui     Preset editor + MCP explorer (:3012)
-packages/player-ui     DJ deck: 2 platos, playhead, socket.io session (:3013)
-packages/view-ui       Cache explorer: lineas-poder filesystem browser (:3015)
-e2e/demo.mjs           Solar-system-observer validation
-e2e/deck-demo.mjs      Linea deck sync + degraded validation
-e2e/tablero-aleph-demo.mjs  Tablero ALEPH REST + wikitext validation
-e2e/view-demo.mjs      Cache explorer browse + file API validation
-docs/deck-contract.md  Block-0 interface for deck/linea/player
-docs/tablero-aleph.md  Tablero ALEPH operator manual (ALEPH et OMEGA)
-docs/view-ui.md        Cache Explorer operator manual
-docs/view-contract.md  view-ui REST + view:// contract
-```
+- Node.js ≥ 18 (ver `engines` en [`package.json`](package.json))
+- En Windows, Git Bash para tareas VS Code (ver [`.vscode/tasks.json`](.vscode/tasks.json))
 
-Data flow:
-
-1. **Solar** (`4101–4103`) and **lineas** (`4111–4112`) expose `POST /mcp` + `GET /mcp/health`
-2. **presets-sdk** discovers servers, builds catalog, filters presets via `applyPresetFilter`
-3. **editor-ui** and **player-ui** use the SDK in-process; share `data/presets.json`
-4. **player-ui** resolves `linea://nodo/{year}` and `linea://oldid/{year}` on playhead ticks via `readResource`
-
-## Quickstart
+## Instalación
 
 ```bash
-cd network-engine/zeus-presets-sdk
+cp .env.example .env   # ajustar ZEUS_* según tu entorno
 npm install
-
-# Terminal 1: solar demo
-npm run start:solar
-
-# Terminal 2: linea servers (read-only lineas-poder data)
-npm run start:lineas
-
-# Terminal 3: editor
-npm run start:editor
-
-# Terminal 4: DJ deck player
-npm run start:player
 ```
 
-Open http://localhost:3012 (editor) and http://localhost:3013 (deck). Nav cross-links Editor ↔ Player.
+Volúmenes opcionales: ver [docs/volumes-contract.md](docs/volumes-contract.md) y scripts `volumes:init:lineas` / `volumes:sync:firehose` en [`package.json`](package.json). Contrato de variables: [`ZEUS_ENV_CONTRACT`](packages/presets-sdk/src/zeus-env.mjs).
 
-### Tablero ALEPH (ALEPH et OMEGA)
+## Uso rápido
 
-```bash
-npm run start:lineas
-npm run seed:aleph
-npm run start:player   # http://localhost:3013 — Scriptorium-Skins theme
-```
+Tarea VS Code **Start ▸ ALL** (Terminal → Run Task) o los scripts `start:*` en [`package.json`](package.json). Las URLs siguen `http://${ZEUS_HOST}:${ZEUS_PORT_*}`; valores por defecto en [`.env.example`](.env.example).
 
-- LED strip P01–P24 (wave A cache status)
-- Crossover medidor (graves/medios/agudos) from `estado.json`
-- Drawer: `#viaje` (block-4) · `#mcp` (block-5) · prensa links
+## Escenarios
 
-See [`docs/tablero-aleph.md`](docs/tablero-aleph.md) and `ALEPH_ET_OMEGA/uichain/tablero-aleph.prompt.md`.
+| Escenario | Arranque | Manual |
+|-----------|----------|--------|
+| Editor + presets | `npm run start:editor` | [docs/README.md](docs/README.md) |
+| Mesa DJ / Tablero ALEPH | `start:lineas` + `start:player` (+ `seed:aleph` si aplica) | [docs/tablero-aleph.md](docs/tablero-aleph.md), [MANUAL-DJ](packages/player-ui/MANUAL-DJ.md) |
+| Cache Explorer | Tarea **Start ▸ Cache Explorer** | [docs/view-ui.md](docs/view-ui.md) |
+| Firehose Explorer | Tarea **Start ▸ Firehose Explorer** | [docs/firehose-contract.md](docs/firehose-contract.md) |
+| Solar demo | `npm run start:solar` | [e2e/demo.mjs](e2e/demo.mjs) |
+| Cursor MCP | Tras levantar servidores | [docs/cursor-mcp-lineas.md](docs/cursor-mcp-lineas.md) y guías relacionadas en [docs/README.md](docs/README.md) |
 
-```bash
-npm run e2e:tablero
-```
+## Arquitectura
 
-## DJ deck (player-ui)
+El catálogo MCP se descubre vía `@zeus/presets-sdk`; los presets viven en `data/presets.json`. Mapa de paquetes, contratos block-0 y topología: **[docs/README.md](docs/README.md)**. Vista en vivo: `npm run canvas:generate` → `canvases/SPRINT0.canvas.tsx`.
 
-- Two decks (A/B): pick MCP server + optional preset filter
-- Shared playhead in **historical years** (450–2026 tronco; 2001–2026 WP oldid)
-- Parte I–IV cue marks on the slider
-- Socket.io namespace `/session` — see `docs/deck-contract.md`
+## Desarrollo
 
-```bash
-npm run e2e:deck   # automated sync + degraded test
-```
+Scripts y tests en [`package.json`](package.json); CI en [`.github/workflows/ci.yml`](.github/workflows/ci.yml). Tras añadir un paquete workspace, ejecutar `npm run docs:index`.
 
-## linea-system
+## Licencia
 
-| Server | Port | Templates |
-|--------|------|-----------|
-| linea-espana | 4111 | `linea://nodo/{year}`, `linea://parte/{id}` |
-| linea-wp-historia | 4112 | + `linea://oldid/{year}` |
-
-Smoke: year 1300 → P06 «Transfiguración carismática»; year 2010 → oldid on satellite.
-
-## Preset schema
-
-```json
-{
-  "items": [
-    { "serverName": "linea-espana", "type": "tool", "name": "get_nodo" },
-    { "serverName": "linea-wp-historia", "type": "resourceTemplate", "name": "linea-oldid" }
-  ]
-}
-```
-
-Item `type`: `tool`, `resource`, `resourceTemplate`, `prompt`.
-
-Presets persist to `data/presets.json` (shared by editor and player).
-
-## SDK additions
-
-- `extractor.readResource(uri)` — native MCP resource reads
-- `createCatalogService({ registry })` — TTL catalog cache (moved from editor-ui)
-- `applyPresetFilter(serverEntry, preset)` — preset ∩ catalog intersection
-
-## Cursor MCP bridge
-
-See `docs/cursor-mcp-lineas.md` for registering linea servers in Cursor (`http://localhost:4111/mcp`, `http://localhost:4112/mcp`).
-
-## Tests
-
-```bash
-npm run test:sdk
-npm run test:solar
-npm run test:lineas
-npm run e2e
-npm run e2e:deck
-npm run e2e:tablero
-```
-
-## Manual validation
-
-1. `npm run start:lineas` + `npm run start:player`
-2. Deck A → linea-espana; Deck B → linea-wp-historia; move playhead to 1300 → P06 on A
-3. `npm run start:editor` — create a preset; confirm it appears in player preset dropdown
-4. Editor nav **Player** link → :3013; Player nav **Editor** → :3012
+[Animus Iocandi AIPLv1](LICENSE-ANIMUS-IOCATI.md) — licencia compuesta (GPL-3.0-or-later + capa Animus Iocandi). Declarada como `AIPLv1` en [`package.json`](package.json).

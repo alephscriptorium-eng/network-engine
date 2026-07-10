@@ -9,8 +9,10 @@
     "test": "node test/session-wait.mjs && node test/smoke.mjs"
   },
   "license": "AIPLv1",
+  "zeus": { "role": "mcp", "mcp": "playerDebug" },
   "dependencies": {
-    "@zeus/presets-sdk": "0.1.0",
+    "@zeus/app-shell": "*",
+    "@zeus/presets-sdk": "*",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "chalk": "^5.4.1",
     "cors": "^2.8.6",
@@ -18,5 +20,8 @@
     "log-update": "^6.1.0",
     "socket.io-client": "^4.8.1",
     "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@zeus/test-utils": "*"
   }
 }

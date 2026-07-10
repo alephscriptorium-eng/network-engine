@@ -1,50 +1,15 @@
-/**
- * view-ui wrapper around @zeus/ui-kit shell.
- */
+import { createShellViews } from '@zeus/app-shell';
+import { defaultShellBrand } from '@zeus/ui-kit';
+import { getAppConfig, resolveDataDir } from '../config.mjs';
 
-import {
-  template as uiTemplate,
-  navigation as uiNavigation,
-  navLink,
-  pageContainer,
-  contentSection
-} from '@zeus/ui-kit';
-import { resolveUiMesh } from '@zeus/presets-sdk';
-import { getConfig, resolveDataDir } from '../config.mjs';
-
-export { navLink, pageContainer, contentSection };
-
-function shellOptions(options = {}) {
-  const config = getConfig();
-  const branding = config.branding || {};
-  const dataDir = resolveDataDir(config);
-  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'view' });
-  return {
-    uiId: 'view',
-    meshEntries: mesh.entries,
-    localNavEntries: [],
-    theme: options.theme || config.theme?.current || 'Black-White-MCP',
-    themes: options.themes || [],
-    showThemeSelector: true,
-    brand: {
-      title: branding.title || 'Cache Explorer',
-      tag: 'Zeus View',
-      footer: `${branding.tag || 'Scriptorium'} · GPL-3.0`
-    },
-    currentPage: options.currentPage || 'cache'
-  };
-}
-
-export const template = (pageTitle, content, options = {}) => {
-  return uiTemplate(pageTitle, content, {
-    ...shellOptions(options),
-    ...options
-  });
-};
-
-export const navigation = (currentPage = 'cache') => {
-  const config = getConfig();
-  const dataDir = resolveDataDir(config);
-  const mesh = resolveUiMesh({ dataDir, localConfig: config, selfUiId: 'view' });
-  return uiNavigation(currentPage, mesh.entries);
-};
+export const { template, navLink, pageContainer, contentSection } = createShellViews({
+  uiId: 'view',
+  getAppConfig,
+  resolveDataDir,
+  defaultCurrentPage: 'cache',
+  defaultTheme: 'Black-White-MCP',
+  getBrand: (config) => {
+    const branding = config.branding || {};
+    return defaultShellBrand(branding.title || 'Cache Explorer');
+  }
+});

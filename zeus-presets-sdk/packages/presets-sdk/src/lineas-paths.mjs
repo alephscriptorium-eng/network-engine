@@ -6,6 +6,8 @@ import { join } from 'node:path';
 import { resolveVolume } from './volumes.mjs';
 
 export const LINEAS_VOLUME_ID = 'lineas';
+/** Relative path under DISK_02/LINEAS for medidor casos (Tablero crossover). */
+export const MEDIDOR_ETIQUETADOS_REL = 'espana/etiquetados';
 const CACHE_SEGMENT = '/cache/';
 
 /**
@@ -18,7 +20,7 @@ export function isLineasCachePath(relPath) {
 
 /**
  * Primary base path for loaders, view-ui, and player-ui.
- * Honors ZEUS_VOLUME_LINEAS via resolveVolume.
+ * Derived from ZEUS_VOLUMES_ROOT + volumes.json path (DISK_02/LINEAS).
  */
 export function resolveLineasBasePath() {
   return resolveVolume(LINEAS_VOLUME_ID).absPath;
@@ -42,11 +44,6 @@ export function resolveLineasVolumePath(relPath) {
     : resolveLineasVolumeRoot();
 }
 
-/** @deprecated Use resolveLineasVolumePath */
-export function resolveLineasSourcePath(relPath) {
-  return resolveLineasVolumePath(relPath);
-}
-
 /**
  * Resolve a file path within a line instance.
  * @param {string} linePath - absolute line root (e.g. .../DISK_02/LINEAS/espana)
@@ -63,4 +60,12 @@ export function resolveLineasLineFilePath(linePath, relPath) {
  */
 export function resolveLineasSatCacheDir(satDir) {
   return join(satDir, 'cache');
+}
+
+/**
+ * Absolute path to medidor casos for a line instance (e.g. espana/etiquetados).
+ * @param {string} [lineaId='espana']
+ */
+export function resolveMedidorCasosPath(lineaId = 'espana') {
+  return resolveLineasVolumePath(`${lineaId}/etiquetados`);
 }

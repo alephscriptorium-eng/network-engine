@@ -6,13 +6,13 @@
 import fs from 'node:fs/promises';
 import fsSync from 'node:fs';
 import path from 'node:path';
-import yaml from 'yaml';
-import { loadLineaData, DEFAULT_BASE_PATH } from '@zeus/linea-system/src/loader.mjs';
+import { loadLineaData, DEFAULT_BASE_PATH } from '@zeus/linea-system/loader';
+import { sanitizeRelativePath as sanitizePathCore } from '@zeus/presets-sdk/browse-core';
+import { buildAnchorGrid } from '@zeus/presets-sdk/anchor-grid';
 import { wikitextPath as buildWikitextRelPath, DEFAULT_SATELITE_WP, normalizeSatRel } from '@zeus/presets-sdk';
 import { getViewersConfig } from './config.mjs';
 
 const ANCHOR_INDEX_NAMES = new Set(['fetch-priority-viaje1.json', 'wave-a-anchors.json']);
-const STUB_BYTE_THRESHOLD = 100;
 
 /** @type {object|null} */
 let lineaDataCache = null;
@@ -23,15 +23,12 @@ let cachedBasePath = null;
  * @param {string} relPath
  */
 export function sanitizeRelativePath(relPath) {
-  const raw = relPath == null ? '' : String(relPath).trim().replace(/\\/g, '/');
-  if (raw.startsWith('/') || /^[a-zA-Z]:/.test(raw)) {
-    return { error: 'absolute paths not allowed' };
+  try {
+    const safePath = sanitizePathCore(relPath);
+    return { path: safePath };
+  } catch (err) {
+    return { error: err.message };
   }
-  const segments = raw.split('/').filter((s) => s.length > 0);
-  if (segments.some((s) => s === '..')) {
-    return { error: 'path traversal not allowed' };
-  }
-  return { path: segments.join('/') };
 }
 
 /**
@@ -280,20 +277,6 @@ export async function readLineFile(basePath, lineaId, relPath, options = {}) {
   }
 }
 
-function parseAnchorYear(note) {
-  if (!note || typeof note !== 'string') return null;
-  const match = note.match(/WP\s+(\d{4})/);
-  return match ? Number(match[1]) : null;
-}
-
-function buildNodoIdSet(prefix, count) {
-  const ids = new Set();
-  for (let i = 1; i <= count; i++) {
-    ids.add(`${prefix}${String(i).padStart(2, '0')}`);
-  }
-  return ids;
-}
-
 /**
  * @param {string} basePath
  * @param {string} lineaId
@@ -324,96 +307,20 @@ export async function buildAnchorsGrid(basePath, lineaId) {
   const line = getLineaInstance(data, lineaId);
   if (line.error) return line;
 
-  const entry = line.entry;
-  const manifest = line.manifest;
   const cachedOldids = line.satellite?.cacheStats?.cached_oldids || [];
-
-  const lineaDir = line.linePath;
-  const lineasRoot = data.basePath;
-  const anchorPaths = [
-    path.join(lineaDir, 'wave-a-anchors.json'),
-    path.join(lineasRoot, 'scripts/fetch-priority-viaje1.json')
-  ];
-
-  let raw = null;
-  for (const p of anchorPaths) {
-    if (!fsSync.existsSync(p)) continue;
-    try {
-      const parsed = JSON.parse(fsSync.readFileSync(p, 'utf8'));
-      if (Array.isArray(parsed) && parsed.length > 0) {
-        raw = parsed;
-        break;
-      }
-    } catch {
-      // try next
-    }
-  }
-
-  if (!raw) {
-    return { error: 'no anchor index found for linea' };
-  }
-
-  const allowedIds = buildNodoIdSet(entry.nodo_prefix || 'P', entry.nodo_count ?? 24);
-  const anchors = raw.filter((e) => e.tier === 'nodo-anchor' && e.nodo_id && allowedIds.has(e.nodo_id));
-
-  const wikitextLengths = new Map();
   const cacheDir = line.satellite
     ? path.join(line.satellite.satDir, 'cache/snapshots')
     : null;
-  if (cacheDir && fsSync.existsSync(cacheDir)) {
-    for (const oid of cachedOldids) {
-      const wtPath = path.join(cacheDir, `${oid}.wikitext`);
-      if (fsSync.existsSync(wtPath)) {
-        try {
-          wikitextLengths.set(Number(oid), fsSync.statSync(wtPath).size);
-        } catch {
-          // skip
-        }
-      }
-    }
-  }
 
-  const cachedSet = new Set(cachedOldids.map(Number));
-  const nodosById = Object.fromEntries((manifest.nodos || []).map((n) => [n.id, n]));
-
-  const cells = anchors.map((anchor) => {
-    const oid = Number(anchor.oldid);
-    const nodo = nodosById[anchor.nodo_id] || {};
-    let status = 'missing';
-    if (cachedSet.has(oid)) {
-      const len = wikitextLengths.get(oid);
-      status = len != null && len < STUB_BYTE_THRESHOLD ? 'stub' : 'cached';
-    }
-    const satRel = normalizeSatRel(manifest.meta?.satelite_wp);
-    return {
-      nodo_id: anchor.nodo_id,
-      oldid: oid,
-      year: nodo.año_ini ?? null,
-      wp_year: parseAnchorYear(anchor.note),
-      note: anchor.note,
-      etiqueta: nodo.etiqueta ?? null,
-      status,
-      wikitextPath: buildWikitextRelPath(satRel, oid)
-    };
+  return buildAnchorGrid({
+    lineaId,
+    basePath: data.basePath,
+    cachedOldids,
+    lineaEntry: line.entry,
+    manifest: line.manifest,
+    cacheDir,
+    includeWikitextPath: true
   });
-
-  const summary = {
-    total: cells.length,
-    cached: cells.filter((c) => c.status === 'cached').length,
-    stub: cells.filter((c) => c.status === 'stub').length,
-    missing: cells.filter((c) => c.status === 'missing').length
-  };
-
-  return {
-    linea: {
-      id: entry.id,
-      etiqueta: entry.etiqueta,
-      nodo_prefix: entry.nodo_prefix,
-      nodo_count: entry.nodo_count
-    },
-    cells,
-    summary
-  };
 }
 
 /**

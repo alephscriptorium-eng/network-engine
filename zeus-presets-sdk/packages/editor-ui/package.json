@@ -8,9 +8,11 @@
     "start": "node src/server.mjs"
   },
   "license": "AIPLv1",
+  "zeus": { "role": "app", "ui": "editor" },
   "dependencies": {
-    "@zeus/presets-sdk": "^0.1.0",
-    "@zeus/ui-kit": "^0.1.0",
+    "@zeus/app-shell": "*",
+    "@zeus/presets-sdk": "*",
+    "@zeus/ui-kit": "*",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "hyperaxe": "^3.0.2"

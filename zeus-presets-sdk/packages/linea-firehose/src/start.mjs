@@ -1,5 +1,5 @@
 /**
- * CLI entry: npm start — firehose MCP server on :3008 (or FIREHOSE_MCP_PORT).
+ * CLI entry: npm start — firehose MCP server on ZEUS_MCP_FIREHOSE (default 3008).
  */
 
 import { pathToFileURL } from 'node:url';

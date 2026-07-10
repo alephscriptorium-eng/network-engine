@@ -8,7 +8,6 @@ export const assetsDir = path.resolve(__dirname, '..', 'assets');
 
 export {
   template,
-  navigation,
   navLink,
   pageContainer,
   contentSection
@@ -30,3 +29,12 @@ export {
   viewerLauncherMenu,
   viewerLauncherSlot
 } from './viewer-launcher.mjs';
+
+export {
+  ZEUS_COMPANY,
+  ZEUS_PRODUCT,
+  ZEUS_LICENSE_LABEL,
+  formatShellTag,
+  formatShellFooter,
+  defaultShellBrand
+} from './brand.mjs';

@@ -8,6 +8,7 @@
     ".": "./src/index.mjs"
   },
   "license": "AIPLv1",
+  "zeus": { "role": "lib" },
   "dependencies": {
     "express": "^5.2.1",
     "hyperaxe": "^3.0.2"

@@ -155,10 +155,3 @@
 .zeus-footer-legal {
   opacity: 0.85;
 }
-
-/* Legacy nav still supported */
-.main-navigation {
-  background-color: var(--primary-color);
-  height: var(--header-height);
-  box-shadow: var(--shadow-medium);
-}

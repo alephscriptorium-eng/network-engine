@@ -3,23 +3,14 @@
  */
 
 import assert from 'node:assert/strict';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+import { connectMcp, toolResultJson } from '@zeus/test-utils';
 import { browseCorpus, getFirehoseStats } from '../src/browse.mjs';
 import { startFirehoseMcp } from '../src/start.mjs';
 
 const TEST_PORT = 13008;
 
-function toolResultJson(result) {
-  assert.equal(result.content[0].type, 'text');
-  return JSON.parse(result.content[0].text);
-}
-
 async function connect(port) {
-  const client = new Client({ name: 'firehose-smoke-test', version: '1.0.0' });
-  const transport = new StreamableHTTPClientTransport(new URL(`http://localhost:${port}/mcp`));
-  await client.connect(transport);
-  return client;
+  return connectMcp(port);
 }
 
 let handle = null;

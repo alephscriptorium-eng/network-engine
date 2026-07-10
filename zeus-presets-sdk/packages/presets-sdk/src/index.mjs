@@ -9,6 +9,18 @@ export {
   resolveUiMesh,
   buildUiHref
 } from './discovery-config.mjs';
+export { loadZeusEnv, resetZeusEnvLoader, MONOREPO_ROOT } from './load-zeus-env.mjs';
+export {
+  resolveZeusHost,
+  resolveZeusMcpPorts,
+  resolveZeusUiPorts,
+  resolveAppPort,
+  resolvePlayerUiBaseUrl,
+  resolvePlayerUiEndpoint,
+  readEnvPort,
+  envPort,
+  ZEUS_ENV_CONTRACT
+} from './zeus-env.mjs';
 export {
   DEFAULT_SATELITE_WP,
   normalizeSatRel,
@@ -96,8 +108,9 @@ export {
   isLineasCachePath,
   resolveLineasBasePath,
   resolveLineasVolumeRoot,
-  resolveLineasSourcePath,
   resolveLineasVolumePath,
   resolveLineasLineFilePath,
-  resolveLineasSatCacheDir
+  resolveLineasSatCacheDir,
+  MEDIDOR_ETIQUETADOS_REL,
+  resolveMedidorCasosPath
 } from './lineas-paths.mjs';

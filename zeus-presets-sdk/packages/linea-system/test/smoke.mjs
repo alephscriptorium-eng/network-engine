@@ -8,28 +8,21 @@
  */
 
 import assert from 'node:assert/strict';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { resolveNodo, resolveOldid, resolveRegistrosForYear, validateNodoSectionMappings, loadLineaData } from '../src/loader.mjs';
-import { lineaServers } from '../src/lineas.mjs';
+import { connectMcp, toolResultJson } from '@zeus/test-utils';
+import { resolveNodo, resolveOldid, resolveRegistrosForYear, validateNodoSectionMappings, loadLineaData } from '@zeus/linea-system/loader';
 import { startAll } from '../src/start-all.mjs';
 
 const TEST_PORTS = { espana: 14111, wpHistoria: 14112 };
-const ORIGINAL_PORTS = { espana: 4111, wpHistoria: 4112 };
+const PREV_ENV = {
+  espana: process.env.ZEUS_MCP_LINEA_ESPAN,
+  wp: process.env.ZEUS_MCP_LINEA_WP
+};
 
-lineaServers.espana.port = TEST_PORTS.espana;
-lineaServers.wpHistoria.port = TEST_PORTS.wpHistoria;
+process.env.ZEUS_MCP_LINEA_ESPAN = String(TEST_PORTS.espana);
+process.env.ZEUS_MCP_LINEA_WP = String(TEST_PORTS.wpHistoria);
 
 async function connect(port) {
-  const client = new Client({ name: 'linea-smoke-test', version: '1.0.0' });
-  const transport = new StreamableHTTPClientTransport(new URL(`http://localhost:${port}/mcp`));
-  await client.connect(transport);
-  return client;
-}
-
-function toolResultJson(result) {
-  assert.equal(result.content[0].type, 'text');
-  return JSON.parse(result.content[0].text);
+  return connectMcp(port);
 }
 
 let handles = [];
@@ -339,8 +332,10 @@ try {
   console.error('SMOKE TEST FAILED');
   console.error(err);
 } finally {
-  lineaServers.espana.port = ORIGINAL_PORTS.espana;
-  lineaServers.wpHistoria.port = ORIGINAL_PORTS.wpHistoria;
+  if (PREV_ENV.espana == null) delete process.env.ZEUS_MCP_LINEA_ESPAN;
+  else process.env.ZEUS_MCP_LINEA_ESPAN = PREV_ENV.espana;
+  if (PREV_ENV.wp == null) delete process.env.ZEUS_MCP_LINEA_WP;
+  else process.env.ZEUS_MCP_LINEA_WP = PREV_ENV.wp;
   await Promise.allSettled(clients.map((c) => c.close()));
   await Promise.allSettled(handles.map((h) => h.close()));
 }

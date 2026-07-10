@@ -4,8 +4,8 @@
  */
 
 import assert from 'node:assert/strict';
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
+import { connectMcp, toolResultJson } from '@zeus/test-utils';
+import { resolveZeusUiPorts } from '@zeus/presets-sdk';
 import { startAll } from '../src/start-all.mjs';
 
 const TEST_MCP_PORT = 13014;
@@ -21,21 +21,14 @@ const SESSION_TOOLS = [
   'session_report'
 ];
 
-function toolResultJson(result) {
-  assert.equal(result.content[0].type, 'text');
-  return JSON.parse(result.content[0].text);
-}
-
 async function connect(port) {
-  const client = new Client({ name: 'player-debug-smoke', version: '1.0.0' });
-  const transport = new StreamableHTTPClientTransport(new URL(`http://localhost:${port}/mcp`));
-  await client.connect(transport);
-  return client;
+  return connectMcp(port);
 }
 
 async function isPlayerUiUp() {
+  const { host, port } = resolveZeusUiPorts().player;
   try {
-    const res = await fetch('http://localhost:3013/health', { signal: AbortSignal.timeout(1500) });
+    const res = await fetch(`http://${host}:${port}/health`, { signal: AbortSignal.timeout(1500) });
     return res.ok;
   } catch {
     return false;
@@ -55,7 +48,7 @@ try {
   const health = await healthRes.json();
   assert.equal(health.status, 'ok');
   assert.equal(health.server, 'player-ui-debug');
-  assert.deepEqual(health.capabilities, { tools: 23, resources: 9, resourceTemplates: 4, prompts: 5 });
+  assert.deepEqual(health.capabilities, { tools: 24, resources: 9, resourceTemplates: 4, prompts: 5 });
   console.log('Health check OK:', JSON.stringify(health.capabilities));
 
   const mcp = await connect(TEST_MCP_PORT);
@@ -155,7 +148,8 @@ try {
     assert.equal(gotoParte.year, 1978);
     console.log(`Integration OK: goto_parte IV ok=${gotoParte.ok} year=${gotoParte.year}`);
   } else {
-    console.log('Integration SKIP: player-ui :3013 not running');
+    const { port: playerPort } = resolveZeusUiPorts().player;
+    console.log(`Integration SKIP: player-ui :${playerPort} not running`);
   }
 
   console.log('SMOKE TEST PASSED');

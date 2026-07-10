@@ -39,14 +39,25 @@ Consola estilo **TOP** + **servidor MCP** (`:3014`) en un solo proceso. Conecta 
 |--------|------|
 | Arrancar monitor + MCP | `Start ▸ player-ui-debug` o `npm run start:player-debug` |
 | Con Tablero completo | `Start ▸ Tablero ALEPH` (incluye monitor en paralelo) |
-| URL alternativa player-ui | `PLAYER_UI_URL=http://localhost:3013 npm run start:player-debug` |
-| Puerto MCP alternativo | `PLAYER_DEBUG_MCP_PORT=3014 npm run start:player-debug` |
 | Registrar en Cursor | Ver [`docs/cursor-mcp-player-debug.md`](../../docs/cursor-mcp-player-debug.md) |
 | Métricas servidor | Pon `"debug": true` en [`src/config.json`](src/config.json) y reinicia player-ui |
 
 **Teclas TUI** (terminal con foco): `q` salir · `r` reconectar · `p` pausar transporte · `1`–`4` saltar a cues (450, 1350, 1808, 1978).
 
 **Agentes MCP**: poll `player://snapshot`; tools de bajo nivel (`set_playhead`, `deck_load`, …) hacen proxy al socket; tools de sesión (`goto_parte`, `goto_anchor`, `bootstrap_decks`, `session_report`, …) emulan acciones del operador. Prompts `sync-with-operator` y `pinch-session` documentan alineación colaborativa sin Playwright.
+
+### Variables de entorno (`.env`)
+
+Puertos y host se leen del `.env` del monorepo (copiar desde `.env.example`). Tras cambiar puertos MCP, ejecutar `npm run env:sync-mcp`.
+
+| Variable | Uso |
+|----------|-----|
+| `ZEUS_HOST` | Host compartido UIs + MCP |
+| `ZEUS_PORT_PLAYER` | Tablero HTTP |
+| `ZEUS_PORT_PLAYER_DEBUG` | Monitor MCP |
+| `ZEUS_MCP_LINEA_ESPAN` / `ZEUS_MCP_LINEA_WP` | Fuentes linea |
+
+Player-ui URL: `http://${ZEUS_HOST}:${ZEUS_PORT_PLAYER}`.
 
 ### Pinchar sesión en conjunto
 

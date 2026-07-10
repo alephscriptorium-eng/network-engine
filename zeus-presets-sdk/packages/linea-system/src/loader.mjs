@@ -8,9 +8,12 @@ import { fileURLToPath } from 'node:url';
 import yaml from 'yaml';
 import { SATELITE_COVERAGE, TRONCO_COVERAGE } from './lineas.mjs';
 import {
+  loadZeusEnv,
   resolveLineasBasePath,
   resolveLineasSatCacheDir
 } from '@zeus/presets-sdk';
+
+loadZeusEnv();
 
 const PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const DEFAULT_BASE_PATH = resolveLineasBasePath();

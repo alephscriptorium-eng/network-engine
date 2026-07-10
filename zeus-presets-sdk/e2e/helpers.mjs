@@ -2,8 +2,9 @@
  * Shared helpers for zeus-presets-sdk e2e scripts.
  */
 
-import { resolveLineasBasePath } from '@zeus/presets-sdk';
+import { loadZeusEnv, resolveLineasBasePath } from '@zeus/presets-sdk';
 
+loadZeusEnv();
 export const lineasBasePath = resolveLineasBasePath();
 
 export function assert(cond, msg) {

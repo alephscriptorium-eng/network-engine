@@ -3,6 +3,7 @@
  */
 
 import { header, footer, div, nav, ul, li, a, span, select, option, label } from 'hyperaxe';
+import { ZEUS_PRODUCT, formatShellFooter, defaultShellBrand } from './brand.mjs';
 
 const nbsp = '\u00A0';
 
@@ -79,7 +80,7 @@ export function buildLocalNav(currentPage = '', localNavEntries = []) {
  */
 export function shellHeader(options = {}) {
   const {
-    brand = { title: 'Zeus', tag: '' },
+    brand = defaultShellBrand(),
     uiId = '',
     currentPage = '',
     meshEntries = [],
@@ -98,7 +99,7 @@ export function shellHeader(options = {}) {
   return header({ class: 'zeus-shell-header' },
     div({ class: 'zeus-shell-header-inner' },
       div({ class: 'zeus-shell-brand' },
-        span({ class: 'zeus-shell-brand-title' }, brand.title || 'Zeus'),
+        span({ class: 'zeus-shell-brand-title' }, brand.title || ZEUS_PRODUCT),
         brand.tag ? span({ class: 'zeus-shell-brand-tag' }, brand.tag) : null
       ),
       nav({ class: 'zeus-shell-global-nav' },
@@ -126,7 +127,7 @@ export function shellHeader(options = {}) {
  */
 export function shellFooter(options = {}) {
   const {
-    brand = { footer: 'Zeus · GPL-3.0' },
+    brand = defaultShellBrand(),
     meshEntries = []
   } = options;
 
@@ -146,7 +147,7 @@ export function shellFooter(options = {}) {
   return footer({ class: 'zeus-shell-footer' },
     div({ class: 'zeus-shell-footer-inner' },
       div({ class: 'zeus-footer-mesh' }, ...meshLinks),
-      div({ class: 'zeus-footer-legal' }, brand.footer || 'Zeus · GPL-3.0')
+      div({ class: 'zeus-footer-legal' }, brand.footer || formatShellFooter())
     )
   );
 }

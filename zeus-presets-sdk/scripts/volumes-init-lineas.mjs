@@ -7,17 +7,18 @@
  * Usage:
  *   node scripts/volumes-init-lineas.mjs [--verify]     # validate canonical tree (default action)
  *   node scripts/volumes-init-lineas.mjs --stats        # print dest metrics only
- *   node scripts/volumes-init-lineas.mjs --import       # copy from LINEAS_LEGACY_SOURCE env
+ *   node scripts/volumes-init-lineas.mjs --import       # copy from ZEUS_LINEAS_IMPORT_SOURCE env
  *   node scripts/volumes-init-lineas.mjs --dry-run      # with --import: preview only
  */
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveVolume, resetVolumesCache } from '@zeus/presets-sdk';
+import { resolveVolume, resetVolumesCache, loadZeusEnv } from '@zeus/presets-sdk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '..');
+loadZeusEnv(REPO_ROOT);
 
 const args = new Set(process.argv.slice(2));
 const verifyOnly = args.has('--verify') || (!args.has('--import') && !args.has('--stats'));
@@ -128,7 +129,7 @@ ${path.relative(REPO_ROOT, dest).replace(/\\/g, '/')}
 - **DISK_02/LINEAS** is the sole canonical read root for all lineas data.
 - \`resolveVolume('lineas')\` and \`resolveLineasBasePath()\` → DISK_02/LINEAS.
 - Legacy \`lineas-poder\` removed **2026-07-09**; no duplicate backup on disk.
-- Optional re-import: set \`LINEAS_LEGACY_SOURCE\` and run \`npm run volumes:init:lineas -- --import\`.
+- Optional re-import: set \`ZEUS_LINEAS_IMPORT_SOURCE\` and run \`npm run volumes:init:lineas -- --import\`.
 
 Verify: \`npm run volumes:init:lineas -- --verify\`
 `;
@@ -142,10 +143,10 @@ async function main() {
   console.log(`Dest: ${dest}`);
 
   if (doImport) {
-    const source = process.env.LINEAS_LEGACY_SOURCE;
+    const source = process.env.ZEUS_LINEAS_IMPORT_SOURCE;
     if (!source) {
       throw new Error(
-        'LINEAS_LEGACY_SOURCE env required for --import (absolute path to external lineas tree)'
+        'ZEUS_LINEAS_IMPORT_SOURCE env required for --import (absolute path to external lineas tree)'
       );
     }
     try {
@@ -184,7 +185,7 @@ async function main() {
         dest,
         destStats: stats,
         syncedAt: new Date().toISOString(),
-        mode: doImport ? 'import from LINEAS_LEGACY_SOURCE' : 'dest-only verify'
+        mode: doImport ? 'import from ZEUS_LINEAS_IMPORT_SOURCE' : 'dest-only verify'
       });
       await fs.writeFile(reportPath, report, 'utf8');
       console.log(`Report written: ${reportPath}`);

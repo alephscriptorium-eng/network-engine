@@ -609,7 +609,7 @@ export async function createPlayerServer(options = {}) {
         cacheStats = { error: `${sateliteName} not registered` };
       }
       const cachedOldids = cacheStats?.cached_oldids || [];
-      const grid = buildAnchorGrid(cachedOldids, null, { lineaId });
+      const grid = buildAnchorGrid({ lineaId, cachedOldids });
       if (grid.error) {
         res.status(404).json(grid);
         return;

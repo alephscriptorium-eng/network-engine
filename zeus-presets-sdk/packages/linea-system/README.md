@@ -1,11 +1,11 @@
 # @zeus/linea-system
 
-MCP servers for `lineas-poder`: **linea-espana** (tronco, :4111) and **linea-wp-historia** (satélite, :4112).
+MCP servers for `VOLUMES/DISK_02/LINEAS`: **linea-espana** (tronco, :4111) and **linea-wp-historia** (satélite, :4112).
 
 ## Start
 
 ```bash
-cd network-engine/zeus-presets-sdk
+# Desde la raíz del repositorio
 npm run start:lineas
 ```
 
@@ -25,7 +25,7 @@ npm run start:lineas
 
 Respuesta `not cached` en `linea://wikitext/{oldid}` incluye `action.tool = cache_wikitext` para Tablero.
 
-Datos del puente: `lineas-poder/espana/wp/historia/nodo-sections.json`.
+Datos del puente: `DISK_02/LINEAS/espana/wp/historia/nodo-sections.json`.
 
 ## Test
 
